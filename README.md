@@ -6,6 +6,8 @@ De werkversie is hier te bekijken: https://geonovum.github.io/disgeo-im
 
 Deze werkversie is in ontwikkeling en kan op elk moment veranderen.
 
+Andere documenten die raken aan de ontwikkeling van het informatiemodel, zoals modelleerprincipes en uitwerking van algemene modelleerzaken, staan in de [disgeo-imsor repository](https://github.com/geonovum/disgeo-imsor). 
+
 ## Versionering
 
 ### Semantic versioning
