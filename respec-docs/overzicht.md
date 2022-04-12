@@ -42,7 +42,6 @@ De volgende documenten zijn gehanteerd bij de totstandkoming van dit document:
 
 | **Termen**                       | **Definities**                                                           |
 |----------------------------------|--------------------------------------------------------------------------|
-
 | **Annotatie**                    | Elke toevoeging op een kaartbeeld voor verduidelijking                                                                                                                                                                     |
 | **Applicatieschema**             | Informatiemodel dat gegevens beschrijft die worden gebruikt door een of meer applicaties.                                                                                                                                  |
 | **Relatie**                      | Semantische relatie tussen twee of meer geo-objecten die samenhang tussen hun instanties weergeeft.                                                                                                                        |
