@@ -77,18 +77,13 @@ dataspecificatie.
 
 | **Afkortingen** | **Betekenissen**                                      |
 |-----------------|-------------------------------------------------------|
-<!-- | **AREG**        | Aanvullingsregeling geluid (Omgevingsregeling geluid) | -->
-<!-- | **BAG**         | Basisregistratie Adressen en Gebouwen                 | -->
-<!-- | **BGE**         | Basisgeluidemissie                                    | -->
-<!-- | **CVGG**        | Centrale Voorziening Geluidgegevens                   | -->
 | **GML**         | Geography Markup Language                             |
-<!-- | **GPP**         | Geluidproductieplafond                                | -->
-<!-- | **INSPIRE**     | Infrastructure for Spatial Information in Europe      | -->
 | **MIM**         | Metamodel Informatie Modellering                      |
-<!-- | **RIVM**        | Rijksinstituut voor Volksgezondheid en Milieu         | -->
 | **UML**         | Unified Modeling Language                             |
 | **WFS**         | Web Feature Service                                   |
 | **XML**         | Extensible Markup Language                            |
+| **BAG**         | Basisregistratie Adressen en Gebouwen                 |
+| **INSPIRE**     | Infrastructure For Spatial Information In Europe      |
 
 ## Gegevensuitwisseling met GML
 ...
