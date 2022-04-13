@@ -9,7 +9,7 @@ IMDiSGeo - Dataspecificatie voor Doorontwikkeling in Samenhang van de Geobasisre
 
 Het informatiemodel Samenhangende Objectenregistratie  zorgt ervoor dat alle gegevens die de voorziening beschikbaar stelt eenduidig interpreteerbaar zijn en op een standaard manier kunnen worden uitgewisseld met andere systemen.
 
-<aside class="issue">Deze omschrijving dekt de lading niet. Graag verder aanvullen. Het doel is om de basisregistraties in samenhang te kunnen bevragen.<aside>
+<aside class="issue">Deze omschrijving dekt de lading niet. Graag verder aanvullen. Het doel is om de basisregistraties in samenhang te kunnen bevragen.</aside>
 
 <aside class="note">Suggestie: bovenstaande tekst verplaatsen naar beschrijving</aside>
 
