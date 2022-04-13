@@ -2,11 +2,13 @@
 
 ## Naam en Acroniemen
 
-IMSOR - Dataspecificatie voor Doorontwikkeling in Samenhang van de Geobasisregistraties (DiSGeo)
+IMDiSGeo - Dataspecificatie voor Doorontwikkeling in Samenhang van de Geobasisregistraties (DiSGeo)
 
 ## Definitie
 
 Het informatiemodel Samenhangende Objectenregistratie  zorgt ervoor dat alle gegevens die de voorziening beschikbaar stelt eenduidig interpreteerbaar zijn en op een standaard manier kunnen worden uitgewisseld met andere systemen.
+
+<remark>Verder aanvullen. Doel is basisregistraties in samenhang kunnen bevragen.<remark>
 
 ## Beschrijving
 
