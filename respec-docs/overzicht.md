@@ -15,6 +15,16 @@ Het informatiemodel Samenhangende Objectenregistratie  zorgt ervoor dat alle geg
 
 ## Beschrijving
 
+### Bestuurlijk gebied
+Bij het modelleren van besuturlijke gebieden, bleek dat er een belangrijke relatie is tussen een bestuurlijk gebied en een openbaar lichaam. Een bestuurlijk gebied is namelijk niet hetzelfde als het voor het gebied verantwoordelijke bestuursorgaan. Het gebied en het bestuursorgaan zijn weliswaar aan elkaar gerelateerd, maar hebben hun eigen unieke eigenschappen. Het model maakt dit verschil zichtbaar; het onderscheidt bestuurlijke gebieden apart van openbare lichamen.
+
+Zo heeft het gebied waarop het bestuursorgaan haar invloed uitoefent geen naam, maar alleen een ruimtelijke aanduiding in de vorm van een geometrie. De naam waarmee men in het dagelijkse spraakgebruik het gebied associeert, is de formele naam van openbare lichaam, bijvoorbeeld 'Apeldoorn' of 'Zeeland'.
+
+Dat het model dit onderscheid maakt, wil niet zeggen dat openbare lichamen ook automatische onderdeel zijn van het uiteindelijke model. Op deze plek brengen we dit onderscheid in de  plaats voor het voetlicht. Of en zo ja, op welke manier openbare lichamen in het model belanden, is onderdeel van discussie. 
+
+### Gemeentegebied
+De term "gemeente" heeft in het dagelijks spraakgebruik twee betekenissen: een bestuurlijke en een territoriale. Deze betekenissen lopen vaak door elkaar. Maar in het model onderscheiden we de gemeente als het openbare lichaam dat het bestuursorgaan vormt van het haar toebehorende  territorium: het gemeentegebied.
+
 ## Normatieve referenties
 
 De volgende documenten zijn gehanteerd bij de totstandkoming van dit document:
@@ -32,7 +42,9 @@ De volgende documenten zijn gehanteerd bij de totstandkoming van dit document:
 
 ### Bestuurlijke gebieden
 
-<aside class="issue">Verwijzen naar begrippenkader Bestuurlijke gebieden op begrippen.geostandaarden.nl</aside>
+<aside class="issue">Verwijzen naar <a href="https://begrippen.geostandaarden.nl/sor/nl/">DiSGeo thesaurus</aside>
+
+<aside class="note">Let op: de term "*bestuurlijk gebied*" ontbreekt op dit moment nog.</aside>
 
 | **Termen**                       | **Definities**                                                           |
 |----------------------------------|--------------------------------------------------------------------------|
@@ -48,7 +60,7 @@ De volgende documenten zijn gehanteerd bij de totstandkoming van dit document:
 
 ### Informatiemodeldomein
 
-<aside class="issue">Verwijzen naar algemeen begrippenkader op begrippen.geostandaarden.nl</aside>
+<aside class="issue">Verwijzen naar <a href="https://begrippen.geostandaarden.nl/nen3610/nl/"> NEN3610 thesaurus</a>.</aside>
 
 | **Termen**                       | **Definities**                                                           |
 |----------------------------------|--------------------------------------------------------------------------|
