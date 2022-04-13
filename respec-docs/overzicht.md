@@ -5,10 +5,13 @@
 IMDiSGeo - Dataspecificatie voor Doorontwikkeling in Samenhang van de Geobasisregistraties (DiSGeo)
 
 ## Definitie
+<aside class="note">Hebben we deze kop nodig? Liefst verwijzen naar begrippenkader</aside>
 
 Het informatiemodel Samenhangende Objectenregistratie  zorgt ervoor dat alle gegevens die de voorziening beschikbaar stelt eenduidig interpreteerbaar zijn en op een standaard manier kunnen worden uitgewisseld met andere systemen.
 
 <aside class="issue">Deze omschrijving dekt de lading niet. Graag verder aanvullen. Het doel is om de basisregistraties in samenhang te kunnen bevragen.<aside>
+
+<aside class="note">Suggestie: bovenstaande tekst verplaatsen naar beschrijving</aside>
 
 ## Beschrijving
 
@@ -21,11 +24,15 @@ De volgende documenten zijn gehanteerd bij de totstandkoming van dit document:
  - ~~[NEN 3610:2011/A1:2016 Basismodel Geo-informatie](https://geonovum.github.io/bmgi/docs/#dataproductspecificatie-nl)~~
  - [ISO-19107-2003: Geographic information – Spatial schema](url)
 
-<!-- ## Mapping met INSPIRE -->
+## Mapping met INSPIRE
+
+<aside class="note">Is er sprake van een INSPIRE mapping? Is hierover al informatie beschikbaar?</aside>
 
 ## Algemene Termen en definities
 
-## Bestuurlijke gebieden
+### Bestuurlijke gebieden
+
+<aside class="issue">Verwijzen naar begrippenkader Bestuurlijke gebieden op begrippen.geostandaarden.nl</aside>
 
 | **Termen**                       | **Definities**                                                           |
 |----------------------------------|--------------------------------------------------------------------------|
@@ -40,6 +47,8 @@ De volgende documenten zijn gehanteerd bij de totstandkoming van dit document:
 | **Rijksgebied**                  | ... |
 
 ### Informatiemodeldomein
+
+<aside class="issue">Verwijzen naar algemeen begrippenkader op begrippen.geostandaarden.nl</aside>
 
 | **Termen**                       | **Definities**                                                           |
 |----------------------------------|--------------------------------------------------------------------------|
@@ -74,6 +83,7 @@ De volgende documenten zijn gehanteerd bij de totstandkoming van dit document:
 
 ## Algemene Symbolen en afkortingen
 
+
 Lijst van afkortingen en acroniemen die worden gehanteerd in deze
 dataspecificatie.
 
@@ -86,6 +96,8 @@ dataspecificatie.
 | **XML**         | Extensible Markup Language                            |
 | **BAG**         | Basisregistratie Adressen en Gebouwen                 |
 | **INSPIRE**     | Infrastructure For Spatial Information In Europe      |
+
+<aside class="issue">Verwijzen naar algemeen begrippenkader op begrippen.geostandaarden.nl</aside>
 
 ## Gegevensuitwisseling met GML
 ...
