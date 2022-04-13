@@ -8,7 +8,7 @@ IMDiSGeo - Dataspecificatie voor Doorontwikkeling in Samenhang van de Geobasisre
 
 Het informatiemodel Samenhangende Objectenregistratie  zorgt ervoor dat alle gegevens die de voorziening beschikbaar stelt eenduidig interpreteerbaar zijn en op een standaard manier kunnen worden uitgewisseld met andere systemen.
 
-<remark>Verder aanvullen. Doel is basisregistraties in samenhang kunnen bevragen.<remark>
+<aside class="issue">Deze omschrijving dekt de lading niet. Graag verder aanvullen. Het doel is om de basisregistraties in samenhang te kunnen bevragen.<aside>
 
 ## Beschrijving
 
@@ -41,7 +41,6 @@ De volgende documenten zijn gehanteerd bij de totstandkoming van dit document:
 
 ### Informatiemodeldomein
 
-
 | **Termen**                       | **Definities**                                                           |
 |----------------------------------|--------------------------------------------------------------------------|
 | **Annotatie**                    | Elke toevoeging op een kaartbeeld voor verduidelijking                                                                                                                                                                     |
@@ -72,6 +71,7 @@ De volgende documenten zijn gehanteerd bij de totstandkoming van dit document:
 | **Waardelijst**                  | Lijst van waarden.                                                                                                                                                                                                         |
 | **Werkelijkheid**                | Beeld van de echte of hypothetische wereld die alles van belang omvat.                                                                                                                                                     |
 |                                  |                                                                                                                                          
+
 ## Algemene Symbolen en afkortingen
 
 Lijst van afkortingen en acroniemen die worden gehanteerd in deze
