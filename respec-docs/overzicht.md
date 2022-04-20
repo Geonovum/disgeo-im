@@ -25,6 +25,31 @@ Dat het model dit onderscheid maakt, wil niet zeggen dat openbare lichamen ook a
 ### Gemeentegebied
 De term "gemeente" heeft in het dagelijks spraakgebruik twee betekenissen: een bestuurlijke en een territoriale. Deze betekenissen lopen vaak door elkaar. Maar in het model onderscheiden we de gemeente als het openbare lichaam dat het bestuursorgaan vormt van het haar toebehorende  territorium: het gemeentegebied.
 
+### Provinciegebied
+
+<aside class="note">Tekst schrijven</aside>
+
+### Rijksgebied
+
+<aside class="note">Tekst schrijven</aside>
+
+### Openbaar lichaam
+
+<aside class="note">Onderstaande tekst editen
+
+Wikipedia geeft een zeer bruikbare definitie: Een openbaar lichaam is, in de bestuurlijke indeling van het Koninkrijk der Nederlanden, een overheid die bepaalde taken uitvoert binnen een bepaald ruimtelijk gebied of op een bepaald inhoudelijk gebied. De belangrijkste openbare lichamen zijn het Rijk, de provincies, de gemeenten en de waterschappen.
+
+Je kunt uit bv artikel 6 in combinatie met de artikelen 1 en 2 van de Bekendmakingswet afleiden wat een openbaar lichaam is, maar daar wordt geen definitie van het begrip gegeven. Artikel 6 Bmw: "Algemeen verbindende voorschriften, (...) vastgesteld door een bestuursorgaan dat behoort tot een van de in artikel 2, eerste tot en met vierde lid, genoemde openbare lichamen, of de in artikel 2, vijfde lid, genoemde openbare lichamen, (...), worden bekendgemaakt door plaatsing in het door dat openbaar lichaam, (...) uitgegeven publicatieblad."
+
+Openbaar lichaam is een bruikbare term als je bv de gemeente als volledige bestuurlijke organisatie wilt benoemen. Bestuursorgaan is de term voor een deel daarvan. Dan heb je het over de gemeenteraad, het college van burgemeester en wethouders en de burgemeester. In artikel 6 Bmw gaat het om het publicatieblad van bv de gemeente, niet om het publicatieblad van de gemeenteraad.
+
+Bestuurslaag is de term voor de verzameling van alle gemeenten, de verzameling van alle provincies, de verzameling van alle waterschappen of de verzameling van alle ministeries.
+
+Naast deze bekende openbare lichamen zijn er ook minder bekende, zoals wanneer voor de heffing of de invordering van gemeentelijke belastingen een gemeenschappelijke regeling is getroffen en bij die regeling een openbaar lichaam is ingesteld. Dat betekent dat een aantal gemeenten samenwerken om de gemeentelijke belastingen binnen te halen en daarvoor een gezamenlijke organisatie hebben opgericht.
+
+Overigens is een gemeente, net als een provincie en een waterschap, ook nog een (publiekrechtelijke) rechtspersoon.
+</aside>
+
 ## Normatieve referenties
 
 De volgende documenten zijn gehanteerd bij de totstandkoming van dit document:
