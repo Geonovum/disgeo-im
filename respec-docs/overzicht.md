@@ -14,24 +14,14 @@ Het informatiemodel Samenhangende Objectenregistratie  zorgt ervoor dat alle geg
 <aside class="note">Suggestie: bovenstaande tekst verplaatsen naar beschrijving</aside>
 
 ## Beschrijving
+Bij het modelleren van bestuurlijke gebieden, bleek dat er een belangrijke relatie is tussen een [bestuurlijk gebied](https://geonovum.github.io/disgeo-im/#global_class_BestuurlijkeGebieden_BestuurlijkGebied) en een [openbaar lichaam](https://geonovum.github.io/disgeo-im/#global_class_BestuurlijkeGebieden_OpenbaarLichaam). Een bestuurlijk gebied is namelijk niet hetzelfde als het voor het gebied verantwoordelijke bestuursorgaan. Het gebied en het bestuursorgaan zijn weliswaar aan elkaar gerelateerd, maar hebben hun eigen unieke eigenschappen. Het model maakt dit verschil zichtbaar; het onderscheidt bestuurlijke gebieden apart van openbare lichamen.
+
+Dat het model dit onderscheid maakt, wil niet zeggen dat openbare lichamen vanzelfsprekend onderdeel zijn van het uiteindelijke model. Het informatiemodel brengt dit onderscheid in de eerste plaats voor het voetlicht. Of, en zo ja, op welke manier openbare lichamen in het model belanden, is onderdeel van discussie.
+
+Dit onderscheid werkt door bij alle overheden: Rijk, provincies, gemeenten, waterschappen en veiligheidsregio's.
 
 ### Bestuurlijk gebied
-Bij het modelleren van besuturlijke gebieden, bleek dat er een belangrijke relatie is tussen een bestuurlijk gebied en een openbaar lichaam. Een bestuurlijk gebied is namelijk niet hetzelfde als het voor het gebied verantwoordelijke bestuursorgaan. Het gebied en het bestuursorgaan zijn weliswaar aan elkaar gerelateerd, maar hebben hun eigen unieke eigenschappen. Het model maakt dit verschil zichtbaar; het onderscheidt bestuurlijke gebieden apart van openbare lichamen.
-
-Zo heeft het gebied waarop het bestuursorgaan haar invloed uitoefent geen naam, maar alleen een ruimtelijke aanduiding in de vorm van een geometrie. De naam waarmee men in het dagelijkse spraakgebruik het gebied associeert, is de formele naam van openbare lichaam, bijvoorbeeld 'Apeldoorn' of 'Zeeland'.
-
-Dat het model dit onderscheid maakt, wil niet zeggen dat openbare lichamen ook automatische onderdeel zijn van het uiteindelijke model. Op deze plek brengen we dit onderscheid in de  plaats voor het voetlicht. Of en zo ja, op welke manier openbare lichamen in het model belanden, is onderdeel van discussie. 
-
-### Gemeentegebied
-De term "gemeente" heeft in het dagelijks spraakgebruik twee betekenissen: een bestuurlijke en een territoriale. Deze betekenissen lopen vaak door elkaar. Maar in het model onderscheiden we de gemeente als het openbare lichaam dat het bestuursorgaan vormt van het haar toebehorende  territorium: het gemeentegebied.
-
-### Provinciegebied
-
-<aside class="note">Tekst schrijven</aside>
-
-### Rijksgebied
-
-<aside class="note">Tekst schrijven</aside>
+Het grondgebied waarover het bestuursorgaan haar invloed uitoefent heet het *bestuurlijk gebied*. Dit gebied heeft zelf geen naam, maar alleen een ruimtelijke aanduiding in de vorm van een geometrie. De naam waarmee men in het dagelijkse spraakgebruik het grondgebied associeert, is de formele naam van het openbare lichaam, bijvoorbeeld 'Apeldoorn' of 'Zeeland'.
 
 ### Openbaar lichaam
 
@@ -49,6 +39,29 @@ Naast deze bekende openbare lichamen zijn er ook minder bekende, zoals wanneer v
 
 Overigens is een gemeente, net als een provincie en een waterschap, ook nog een (publiekrechtelijke) rechtspersoon.
 </aside>
+
+### Gemeente en gemeentegebied
+Het Europese deel van Nederland bestaat uit per 24 maart 2022 uit [344 gemeenten](https://www.rijksoverheid.nl/onderwerpen/gemeenten/gemeentelijke-herindeling). Het model onderscheidt de gemeente als het openbare lichaam dat het bestuursorgaan vormt van het haar toebehorende territorium: het gemeentegebied.
+
+<aside class="note">Aanscherpen/aanvullen</aside>
+
+### Provincie en provinciegebied
+Het Europese deel van Nederland bestaat uit 12 provincies. Zij vormen de bestuurslaag tussen de rijksoverheid en de Nederlandse gemeenten. De bestuurslaag duidt het informatiemodel aan met 'provincie'. Het gebied waarover de provincie het bestuur uitoefent heet het provinciegebied.
+
+<aside class="note">Aanscherpen/aanvullen</aside>
+
+### Rijk en rijksgebied
+
+Het Rijk, ook wel de Rijksoverheid, voert de wettelijke taken uit op nationaal niveau. De bestuurslaag 'Rijk' bestaat uit alle ministeries, de daartoe behorende uitvoerings uitvoeringsorganisaties, inspecties en Hoge colleges van Staat. Het grondgebied waarover de het Rijk regeert is in het model het Rijksgebied.
+
+<aside class="note">Aanscherpen/aanvullen</aside>
+
+### Waterschappen
+<aside class="note">Tekst schrijven</aside>
+
+### Veiligheidsregio's
+
+<aside class="note">Tekst schrijven</aside>
 
 ## Normatieve referenties
 
