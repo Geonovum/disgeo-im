@@ -18,6 +18,8 @@ Bij het modelleren van bestuurlijke gebieden, bleek dat er een belangrijke relat
 
 Dat het model dit onderscheid maakt, wil niet zeggen dat openbare lichamen vanzelfsprekend onderdeel zijn van het uiteindelijke model. Het informatiemodel brengt dit onderscheid in de eerste plaats voor het voetlicht. Of, en zo ja, op welke manier openbare lichamen in het model belanden, is onderdeel van discussie.
 
+<aside class="issue">Bovenstaande alinea aanscherpen. Binnen EMSO worden eisen gesteld aan bestuurlijke gebieden die strikt genomen geen bestuurlijke geibeden zijn, maar openbare lichamen. Om die reden nemen we de openbare lichamen op, maar met alleen die eigenschappen die het EMSO noemt.</aside>
+
 Dit onderscheid werkt door bij alle overheden: Rijk, provincies, gemeenten, waterschappen en veiligheidsregio's.
 
 ### Bestuurlijk gebied
