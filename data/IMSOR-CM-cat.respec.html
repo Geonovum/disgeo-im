@@ -1,7 +1,7 @@
 
 <!DOCTYPE HTML><section id="cat" class="normative">
    <h2>Gegevensdefinitie</h2>
-   <!--MIMCM-IMSOR-CM-1.0.0-0-20210512-20220511-120915 imvertor 1.65.4--><a class="anchor" id="global_package_NEN3610"></a><section id="global_package_NEN3610">
+   <!--MIMCM-IMSOR-CM-1.0.0-0-20210512-20220511-160457 imvertor 1.65.4--><a class="anchor" id="global_package_NEN3610"></a><section id="global_package_NEN3610">
       <h3>Domein   NEN3610</h3>
       <section id="">
          <h4>Objecttypen   </h4>
@@ -1253,27 +1253,39 @@
       <h3>Domein   Bestuurlijke Gebieden</h3>
       <section id="EAID_1ADC0868_BDA7_4793_9671_6EAD9ECD8B08">
          <h4>   Bestuurlijke gebieden op land - overzicht</h4>
-         <div class="imageinfo overview"><img src="data/Images/EAID_1ADC0868_BDA7_4793_9671_6EAD9ECD8B08.png" usemap="#imagemap-EAID_1ADC0868_BDA7_4793_9671_6EAD9ECD8B08" alt="Diagram &#xA;                        Dit is het overzichtsdiagram van het conceptuele informatiemodel Bestuurlijke Gebieden. Hierin staan alle objecten, inclusief hun eigenschappen en onderlinge relaties weergegeven.&#xA;                        &#xA;                        &#xA;                           Een bestuurlijk gebied is een specialisatie van het NEN3610:2022-objecttype 'Registratieve Ruimte'.&#xA;                           Een 'Registratieve Ruimte is een specialisatie van een NEN3610:2022-objecttype 'Geo-object'.&#xA;                           Een bestuurlijk gebied wordt altijd bestuurt door openbaar lichaam van hetzelfde type.&#xA;                        &#xA;                        &#xA;                        Een verdere toelichting op de gemaakte modelleerkeuzes per type bestuurlijk gebied, is terug te vinden in de detaildiagrammen die in dit document zijn opgenomen.&#xA;                     "><map name="imagemap-EAID_1ADC0868_BDA7_4793_9671_6EAD9ECD8B08"><area shape="rect" alt="Waterschap" coords="677,1209,907,1313" href="#graph_EAID_D9D10C7B_43CB_4751_9C2A_C98332726B3C"><area shape="rect" alt="Veiligheidsregio" coords="677,1391,907,1494" href="#graph_EAID_634C2628_23D1_487f_A295_7710459A6E8D"><area shape="rect" alt="Veiligheidsregiogebied" coords="311,1373,542,1494" href="#graph_EAID_FD267964_76E6_4b4c_AE22_9653BF8A950A"><area shape="rect" alt="Waterschapsgebied" coords="311,1209,542,1313" href="#graph_EAID_7AC1D651_6C58_444a_AB53_769E43183A02"><area shape="rect" alt="Rijk" coords="677,1044,907,1148" href="#graph_EAID_51326090_515A_406a_A0BB_3AC60FFC061A"><area shape="rect" alt="Rijksgebied" coords="311,1044,542,1148" href="#graph_EAID_ACF0E2D6_7DF9_4fb1_A309_A0E38FBB28F0"><area shape="rect" alt="Provincie" coords="677,846,907,950" href="#graph_EAID_4F72812D_C1EC_488e_B83E_182F11746255"><area shape="rect" alt="GeoObject" coords="311,63,542,184" href="#graph_EAID_5F28982A_92F2_4338_97FC_9C1AA451286E"><area shape="rect" alt="Vlak of Multivlak" coords="48,838,239,959" href="#graph_EAID_CB47144F_F944_4037_8ECB_EA023608F3FD"><area shape="rect" alt="Gemeente" coords="677,643,899,746" href="#graph_EAID_834A86E2_38DD_46e9_8A3B_75EB0C312F6E"><area shape="rect" alt="Openbaar Lichaam" coords="677,446,899,550" href="#graph_EAID_C60CE19D_EF1D_4c45_BD31_D4E19145AAA8"><area shape="rect" alt="Registratieve ruimte" coords="311,252,542,374" href="#graph_EAID_F4EA655E_C546_437f_9846_89189D849130"><area shape="rect" alt="Status registratieve ruimte" coords="71,252,262,437" href="#graph_EAID_4C474734_5C1D_4344_8776_29ACD288EEB8"><area shape="rect" alt="Provinciegebied" coords="311,846,542,950" href="#graph_EAID_3C488FE1_753E_40b8_9C2F_2E521B28DC18"><area shape="rect" alt="Gemeentegebied" coords="311,643,542,746" href="#graph_EAID_80F9B049_91FE_4978_B5B1_FDCE5AD8F0A9"><area shape="rect" alt="Bestuurlijk gebied" coords="311,446,542,550" href="#graph_EAID_CE4A19B0_E8ED_4517_A5F2_DACF596D2421"></map><p><b>Bestuurlijke gebieden op land - overzicht</b>
+         <div class="imageinfo overview"><img src="data/Images/EAID_1ADC0868_BDA7_4793_9671_6EAD9ECD8B08.png" usemap="#imagemap-EAID_1ADC0868_BDA7_4793_9671_6EAD9ECD8B08" alt="Diagram &#xA;                        Dit is het overzichtsdiagram van het conceptuele informatiemodel Bestuurlijke Gebieden. Hierin staan alle objecten, inclusief hun eigenschappen en onderlinge relaties weergegeven. Daarbij zijn de volgende principes gehanteerd:&#xA;                        &#xA;                        &#xA;                           Een 'Registratieve Ruimte is een specialisatie van een NEN3610:2022-objecttype 'Geo-object'.&#xA;                           Het 'Geo-object' voorziet alle onderliggende objecten van identificatie.&#xA;                           Openbare lichamen zijn geen subklassen van het 'Geo-object' en hebben daarom in dit model geen identificatie.&#xA;                           Een 'Bestuurlijk gebied' is een specialisatie van het NEN3610:2022-objecttype 'Registratieve Ruimte'.&#xA;                           Een registratieve ruimte heeft een eigenschap 'status' waarme de levenscyclus van het object en alle onderliggende objecten beschreven wordt.&#xA;                           Een 'Bestuurlijk gebied' wordt altijd bestuurt door openbaar lichaam van hetzelfde type (bijv. 'Gemeente' bestuurt een 'Gemeentegebied').&#xA;                        &#xA;                        &#xA;                        Een verdere toelichting op de gemaakte modelleerkeuzes per type bestuurlijk gebied, is terug te vinden in de detaildiagrammen die in dit document zijn opgenomen.&#xA;                        &#xA;                     "><map name="imagemap-EAID_1ADC0868_BDA7_4793_9671_6EAD9ECD8B08"><area shape="rect" alt="Waterschap" coords="707,1209,950,1313" href="#graph_EAID_D9D10C7B_43CB_4751_9C2A_C98332726B3C"><area shape="rect" alt="Veiligheidsregio" coords="707,1391,950,1494" href="#graph_EAID_634C2628_23D1_487f_A295_7710459A6E8D"><area shape="rect" alt="Veiligheidsregiogebied" coords="341,1373,572,1494" href="#graph_EAID_FD267964_76E6_4b4c_AE22_9653BF8A950A"><area shape="rect" alt="Waterschapsgebied" coords="341,1209,572,1313" href="#graph_EAID_7AC1D651_6C58_444a_AB53_769E43183A02"><area shape="rect" alt="Rijk" coords="707,1044,950,1148" href="#graph_EAID_51326090_515A_406a_A0BB_3AC60FFC061A"><area shape="rect" alt="Rijksgebied" coords="341,1044,572,1148" href="#graph_EAID_ACF0E2D6_7DF9_4fb1_A309_A0E38FBB28F0"><area shape="rect" alt="Provincie" coords="707,846,950,950" href="#graph_EAID_4F72812D_C1EC_488e_B83E_182F11746255"><area shape="rect" alt="GeoObject" coords="341,63,572,184" href="#graph_EAID_5F28982A_92F2_4338_97FC_9C1AA451286E"><area shape="rect" alt="Vlak of Multivlak" coords="48,846,262,968" href="#graph_EAID_CB47144F_F944_4037_8ECB_EA023608F3FD"><area shape="rect" alt="Gemeente" coords="707,643,950,746" href="#graph_EAID_834A86E2_38DD_46e9_8A3B_75EB0C312F6E"><area shape="rect" alt="Openbaar Lichaam" coords="707,446,950,550" href="#graph_EAID_C60CE19D_EF1D_4c45_BD31_D4E19145AAA8"><area shape="rect" alt="Registratieve ruimte" coords="341,252,572,374" href="#graph_EAID_F4EA655E_C546_437f_9846_89189D849130"><area shape="rect" alt="Status registratieve ruimte" coords="48,252,262,437" href="#graph_EAID_4C474734_5C1D_4344_8776_29ACD288EEB8"><area shape="rect" alt="Provinciegebied" coords="341,846,572,950" href="#graph_EAID_3C488FE1_753E_40b8_9C2F_2E521B28DC18"><area shape="rect" alt="Gemeentegebied" coords="341,643,572,746" href="#graph_EAID_80F9B049_91FE_4978_B5B1_FDCE5AD8F0A9"><area shape="rect" alt="Bestuurlijk gebied" coords="341,446,572,550" href="#graph_EAID_CE4A19B0_E8ED_4517_A5F2_DACF596D2421"></map><p><b>Bestuurlijke gebieden op land - overzicht</b>
                
                <p>Dit is het overzichtsdiagram van het conceptuele informatiemodel Bestuurlijke Gebieden.
-                  Hierin staan alle objecten, inclusief hun eigenschappen en onderlinge relaties weergegeven.</p>
+                  Hierin staan alle objecten, inclusief hun eigenschappen en onderlinge relaties weergegeven.
+                  Daarbij zijn de volgende principes gehanteerd:</p>
                
                <p></p>
                
                <ol>
                   
-                  <li>Een bestuurlijk gebied is een specialisatie van het NEN3610:2022-objecttype 'Registratieve
-                     Ruimte'.</li>
-                  
                   <li>Een 'Registratieve Ruimte is een specialisatie van een NEN3610:2022-objecttype 'Geo-object'.</li>
                   
-                  <li>Een bestuurlijk gebied wordt altijd bestuurt door openbaar lichaam van hetzelfde type.</li>
+                  <li>Het 'Geo-object' voorziet alle onderliggende objecten van identificatie.</li>
+                  
+                  <li>Openbare lichamen zijn geen subklassen van het 'Geo-object' en hebben daarom in dit
+                     model geen identificatie.</li>
+                  
+                  <li>Een 'Bestuurlijk gebied' is een specialisatie van het NEN3610:2022-objecttype 'Registratieve
+                     Ruimte'.</li>
+                  
+                  <li>Een registratieve ruimte heeft een eigenschap 'status' waarme de levenscyclus van
+                     het object en alle onderliggende objecten beschreven wordt.</li>
+                  
+                  <li>Een 'Bestuurlijk gebied' wordt altijd bestuurt door openbaar lichaam van hetzelfde
+                     type (bijv. 'Gemeente' bestuurt een 'Gemeentegebied').</li>
                   </ol>
                
                <p></p>
                
                <p>Een verdere toelichting op de gemaakte modelleerkeuzes per type bestuurlijk gebied,
                   is terug te vinden in de detaildiagrammen die in dit document zijn opgenomen.</p>
+               
+               <p></p>
                </p>
          </div>
       </section>
@@ -1361,24 +1373,56 @@
       </section>
       <section id="EAID_D8CB3832_989A_4b50_9FF3_165A3C273B65">
          <h4>   Waterschap - detail</h4>
-         <div class="imageinfo "><img src="data/Images/EAID_D8CB3832_989A_4b50_9FF3_165A3C273B65.png" usemap="#imagemap-EAID_D8CB3832_989A_4b50_9FF3_165A3C273B65" alt="Diagram &#xA;                        (Toelichtende tekst opnemen)&#xA;                     "><map name="imagemap-EAID_D8CB3832_989A_4b50_9FF3_165A3C273B65"><area shape="rect" alt="Waterschap" coords="654,254,884,358" href="#graph_EAID_D9D10C7B_43CB_4751_9C2A_C98332726B3C"><area shape="rect" alt="Waterschapsgebied" coords="288,254,519,358" href="#graph_EAID_7AC1D651_6C58_444a_AB53_769E43183A02"><area shape="rect" alt="Vlak of Multivlak" coords="48,236,239,358" href="#graph_EAID_CB47144F_F944_4037_8ECB_EA023608F3FD"><area shape="rect" alt="Openbaar Lichaam" coords="654,63,876,167" href="#graph_EAID_C60CE19D_EF1D_4c45_BD31_D4E19145AAA8"><area shape="rect" alt="Bestuurlijk gebied" coords="288,63,519,167" href="#graph_EAID_CE4A19B0_E8ED_4517_A5F2_DACF596D2421"></map><p><b>Waterschap - detail</b>
+         <div class="imageinfo "><img src="data/Images/EAID_D8CB3832_989A_4b50_9FF3_165A3C273B65.png" usemap="#imagemap-EAID_D8CB3832_989A_4b50_9FF3_165A3C273B65" alt="Diagram &#xA;                        Bij het modelleren van waterschapsgebieden, zijn de volgende principes gehanteerd:&#xA;                        &#xA;                        &#xA;                           Het openbare lichaam 'waterschap' voert het bestuur over één 'waterschapsgebied'.&#xA;                           Een waterschap heeft een unieke waterschapscode.&#xA;                           Een waterschapsgebied wordt aangeduid met een geometrie die bestaat uit één of meerdere vlakken.&#xA;                           Een waterschapsgebied wordt onafhankelijk van andere bestuurlijke gebieden samengesteld.&#xA;                        &#xA;                        &#xA;                     "><map name="imagemap-EAID_D8CB3832_989A_4b50_9FF3_165A3C273B65"><area shape="rect" alt="Waterschap" coords="413,252,656,356" href="#graph_EAID_D9D10C7B_43CB_4751_9C2A_C98332726B3C"><area shape="rect" alt="Waterschapsgebied" coords="48,252,278,356" href="#graph_EAID_7AC1D651_6C58_444a_AB53_769E43183A02"><area shape="rect" alt="Vlak of Multivlak" coords="48,374,278,495" href="#graph_EAID_CB47144F_F944_4037_8ECB_EA023608F3FD"><area shape="rect" alt="Openbaar Lichaam" coords="413,63,656,166" href="#graph_EAID_C60CE19D_EF1D_4c45_BD31_D4E19145AAA8"><area shape="rect" alt="Bestuurlijk gebied" coords="48,63,278,166" href="#graph_EAID_CE4A19B0_E8ED_4517_A5F2_DACF596D2421"></map><p><b>Waterschap - detail</b>
                
-               <p>(Toelichtende tekst opnemen)</p>
+               <p>Bij het modelleren van waterschapsgebieden, zijn de volgende principes gehanteerd:</p>
+               
+               <p></p>
+               
+               <ol>
+                  
+                  <li>Het openbare lichaam 'waterschap' voert het bestuur over één 'waterschapsgebied'.</li>
+                  
+                  <li>Een waterschap heeft een unieke waterschapscode.</li>
+                  
+                  <li>Een waterschapsgebied wordt aangeduid met een geometrie die bestaat uit één of meerdere
+                     vlakken.</li>
+                  
+                  <li>Een waterschapsgebied wordt onafhankelijk van andere bestuurlijke gebieden samengesteld.</li>
+                  </ol>
+               
+               <p></p>
                </p>
          </div>
       </section>
       <section id="EAID_BD9DCA70_1461_4ce5_A2A1_49F01B87170B">
          <h4>   Veiligheidsregio - detail</h4>
-         <div class="imageinfo "><img src="data/Images/EAID_BD9DCA70_1461_4ce5_A2A1_49F01B87170B.png" usemap="#imagemap-EAID_BD9DCA70_1461_4ce5_A2A1_49F01B87170B" alt="Diagram &#xA;                        (Toelichtende tekst opnemen)&#xA;                     "><map name="imagemap-EAID_BD9DCA70_1461_4ce5_A2A1_49F01B87170B"><area shape="rect" alt="Veiligheidsregio" coords="667,467,914,570" href="#graph_EAID_634C2628_23D1_487f_A295_7710459A6E8D"><area shape="rect" alt="Veiligheidsregiogebied" coords="302,450,532,572" href="#graph_EAID_FD267964_76E6_4b4c_AE22_9653BF8A950A"><area shape="rect" alt="Vlak of Multivlak" coords="48,251,239,373" href="#graph_EAID_CB47144F_F944_4037_8ECB_EA023608F3FD"><area shape="rect" alt="Gemeente" coords="667,259,914,363" href="#graph_EAID_834A86E2_38DD_46e9_8A3B_75EB0C312F6E"><area shape="rect" alt="Openbaar Lichaam" coords="667,63,914,166" href="#graph_EAID_C60CE19D_EF1D_4c45_BD31_D4E19145AAA8"><area shape="rect" alt="Gemeentegebied" coords="302,259,532,363" href="#graph_EAID_80F9B049_91FE_4978_B5B1_FDCE5AD8F0A9"><area shape="rect" alt="Bestuurlijk gebied" coords="302,63,532,166" href="#graph_EAID_CE4A19B0_E8ED_4517_A5F2_DACF596D2421"></map><p><b>Veiligheidsregio - detail</b>
+         <div class="imageinfo "><img src="data/Images/EAID_BD9DCA70_1461_4ce5_A2A1_49F01B87170B.png" usemap="#imagemap-EAID_BD9DCA70_1461_4ce5_A2A1_49F01B87170B" alt="Diagram &#xA;                        Bij het modelleren van waterschapsgebieden, zijn de volgende principes gehanteerd:&#xA;                        &#xA;                        &#xA;                           Het openbare lichaam 'Veiligheidsregio' voert het bestuur over één 'Veiligheidsregiogebied'.&#xA;                           Een 'Veiligheidsregio' heeft een unieke 'veiligheidsregiocode'.&#xA;                           Een 'Veiligheidsregiogebied' wordt aangeduid met een geometrie die bestaat uit één of meerdere vlakken.&#xA;                           Een 'Veiligheidsregiogebied' hoort altijd bij één of meerdere 'Gemeentegebieden'.&#xA;                        &#xA;                        &#xA;                     "><map name="imagemap-EAID_BD9DCA70_1461_4ce5_A2A1_49F01B87170B"><area shape="rect" alt="Veiligheidsregio" coords="445,468,688,572" href="#graph_EAID_634C2628_23D1_487f_A295_7710459A6E8D"><area shape="rect" alt="Veiligheidsregiogebied" coords="79,450,310,572" href="#graph_EAID_FD267964_76E6_4b4c_AE22_9653BF8A950A"><area shape="rect" alt="Vlak of Multivlak" coords="79,595,310,716" href="#graph_EAID_CB47144F_F944_4037_8ECB_EA023608F3FD"><area shape="rect" alt="Openbaar Lichaam" coords="448,63,690,166" href="#graph_EAID_C60CE19D_EF1D_4c45_BD31_D4E19145AAA8"><area shape="rect" alt="Gemeentegebied" coords="82,259,312,363" href="#graph_EAID_80F9B049_91FE_4978_B5B1_FDCE5AD8F0A9"><area shape="rect" alt="Bestuurlijk gebied" coords="82,63,312,166" href="#graph_EAID_CE4A19B0_E8ED_4517_A5F2_DACF596D2421"></map><p><b>Veiligheidsregio - detail</b>
                
-               <p>(Toelichtende tekst opnemen)</p>
+               <p>Bij het modelleren van waterschapsgebieden, zijn de volgende principes gehanteerd:</p>
+               
+               <p></p>
+               
+               <ol>
+                  
+                  <li>Het openbare lichaam 'Veiligheidsregio' voert het bestuur over één 'Veiligheidsregiogebied'.</li>
+                  
+                  <li>Een 'Veiligheidsregio' heeft een unieke 'veiligheidsregiocode'.</li>
+                  
+                  <li>Een 'Veiligheidsregiogebied' wordt aangeduid met een geometrie die bestaat uit één
+                     of meerdere vlakken.</li>
+                  
+                  <li>Een 'Veiligheidsregiogebied' hoort altijd bij één of meerdere 'Gemeentegebieden'.</li>
+                  </ol>
+               
+               <p></p>
                </p>
          </div>
       </section>
       <section id="">
          <h4>Objecttypen   </h4>
-         <a class="anchor" id="graph_EAID_51326090_515A_406a_A0BB_3AC60FFC061A"></a><a class="anchor" id="global_class_BestuurlijkeGebieden_Rijk"></a><section id="global_class_BestuurlijkeGebieden_Rijk">
-            <h5>   Rijk</h5>
+         <a class="anchor" id="graph_EAID_C60CE19D_EF1D_4c45_BD31_D4E19145AAA8"></a><a class="anchor" id="global_class_BestuurlijkeGebieden_OpenbaarLichaam"></a><section id="global_class_BestuurlijkeGebieden_OpenbaarLichaam">
+            <h5>   Openbaar Lichaam</h5>
             
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -1386,18 +1430,19 @@
                <tbody>
                   <tr>
                      <th>Naam</th>
-                     <td>Rijk</td>
+                     <td>Openbaar Lichaam</td>
                   </tr>
                   <tr>
                      <th>Herkomst</th>
-                     <td>IMDi­SGeo</td>
+                     <td>EMSO</td>
                   </tr>
                   <tr>
                      <th>Definitie</th>
                      <td>
                         
-                        <p>Het onderdeel van de Nederlandse overheid dat wettelijke taken heeft op landelijk
-                           niveau: de 'centrale overheid'.</p>
+                        <p>In de bestuurlijke indeling van het Koninkrijk der Nederlanden, een overheid die bepaalde
+                           taken uitvoert binnen een bepaald ruimtelijk gebied of op een bepaald inhoudelijk
+                           gebied.</p>
                         </td>
                   </tr>
                   <tr>
@@ -1406,10 +1451,9 @@
                   </tr>
                   <tr>
                      <th>Toelichting</th>
-                     <td>Het Rijk wordt gevormd door alle ministeries, de uitvoeringsorganisaties die onder
-                        de verantwoordelijkheid van een ministerie vallen, inspecties en Hoge Colleges van
-                        Staat en houdt zich bezig met de voorbereiding en de uitvoering van plannen van de
-                        regering en het parlement.</td>
+                     <td>De belangrijkste openbare lichamen zijn het Rijk, de provincies, de gemeenten en de
+                        waterschappen. De provincies en gemeenten worden in artikel 123 en verder van de Nederlandse
+                        Grondwet geregeld. De waterschappen in artikel 133.</td>
                   </tr>
                </tbody>
             </table>
@@ -1430,11 +1474,13 @@
                   </tr>
                   <tr>
                      <td>
-                        <a class="link" href="#detail_attribute_BestuurlijkeGebieden_Rijk_landcode">landcode</a>
+                        <a class="link" href="#detail_attribute_BestuurlijkeGebieden_OpenbaarLichaam_formeleNaam">formele naam</a>
                         </td>
                      <td>
                         
-                        <p>Codering van het land zoals deze door de RVIG wordt gebruikt </p>
+                        <p>Naam van een gemeente zoals formeel benoemd door het bevoegd gezag.</p>
+                        
+                        <p>Naam van een provincie zoals formeel benoemd door het bevoegd gezag </p>
                         </td>
                      <td>
                         Character­String
@@ -1444,53 +1490,9 @@
                </tbody>
             </table>
             
-            
-            <h6>Overzicht relaties  </h6>
-            
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 50%;"></colgroup>
-               <colgroup style="width: 50%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Rol naam met kardinaliteiten</th>
-                     <th>Definitie</th>
-                  </tr>
-                  <tr>
-                     <td>
-                        Rijk
-                        [ 1 ]
-                        
-                        <a class="link" href="#detail_association_BestuurlijkeGebieden_Rijk_bestuurde">bestuurt: bestuurde</a>
-                        
-                        
-                        <a class="link" href="#global_class_BestuurlijkeGebieden_Rijksgebied">Rijksgebied</a>
-                        
-                        [ 1 ]
-                        </td>
-                     <td></td>
-                  </tr>
-                  <tr>
-                     <td>
-                        Rijk
-                        is specialisatie van
-                        
-                        <a class="link" href="#global_class_BestuurlijkeGebieden_OpenbaarLichaam">Openbaar Lichaam</a>
-                        
-                        </td>
-                     <td>
-                        
-                        <p>In de bestuurlijke indeling van het Koninkrijk der Nederlanden, een overheid die bepaalde
-                           taken uitvoert binnen een bepaald ruimtelijk gebied of op een bepaald inhoudelijk
-                           gebied.</p>
-                        </td>
-                  </tr>
-               </tbody>
-            </table>
-            
             </section>
-         <a class="anchor" id="graph_EAID_ACF0E2D6_7DF9_4fb1_A309_A0E38FBB28F0"></a><a class="anchor" id="global_class_BestuurlijkeGebieden_Rijksgebied"></a><section id="global_class_BestuurlijkeGebieden_Rijksgebied">
-            <h5>   Rijksgebied</h5>
+         <a class="anchor" id="graph_EAID_CE4A19B0_E8ED_4517_A5F2_DACF596D2421"></a><a class="anchor" id="global_class_BestuurlijkeGebieden_BestuurlijkGebied"></a><section id="global_class_BestuurlijkeGebieden_BestuurlijkGebied">
+            <h5>   Bestuurlijk gebied</h5>
             
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -1498,7 +1500,7 @@
                <tbody>
                   <tr>
                      <th>Naam</th>
-                     <td>Rijksgebied</td>
+                     <td>Bestuurlijk gebied</td>
                   </tr>
                   <tr>
                      <th>Herkomst</th>
@@ -1508,7 +1510,8 @@
                      <th>Definitie</th>
                      <td>
                         
-                        <p>Het grondgebied van het Koninkrijk der Nederlanden</p>
+                        <p>Bestuurlijke gebieden zijn registratieve ruimten die op basis van wet- of regelgeving
+                           als eenheid gelden van politiek/bestuurlijke verantwoordelijkheid.</p>
                         </td>
                   </tr>
                   <tr>
@@ -1517,41 +1520,13 @@
                   </tr>
                   <tr>
                      <th>Toelichting</th>
-                     <td>Dit betreft het Europese deel van het Koninkrijk der Nederlanden.</td>
+                     <td>Dit betreft bijvoorbeeld de gebieden behorende bij de vier formele bestuurslagen uit
+                        de Grondwet (Rijk, provincie, waterschap, gemeente), maar kan ook gebieden van bestuurlijke
+                        samenwerkingsverbanden met eigen politiek/bestuurlijke verantwoordelijkheid omvatten.
+                        Een voorbeeld daarvan betreft de veiligheidsregio’s.</td>
                   </tr>
                </tbody>
             </table>
-            
-            <h6>Overzicht attributen  </h6>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 50%;"></colgroup>
-               <colgroup style="width: 10%;"></colgroup>
-               <colgroup style="width: 10%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Attribuutnaam</th>
-                     <th>Definitie</th>
-                     <th>Formaat</th>
-                     <th>Card</th>
-                  </tr>
-                  <tr>
-                     <td>
-                        <a class="link" href="#detail_attribute_BestuurlijkeGebieden_Rijksgebied_geometrie">geometrie</a>
-                        </td>
-                     <td>
-                        
-                        <p>Geometrische representatie van het gebied dat als Rijk is benoemd</p>
-                        </td>
-                     <td>
-                        <a class="link" href="#global_class_BestuurlijkeGebieden_VlakOfMultivlak">Vlak of Multivlak</a>
-                        </td>
-                     <td>1</td>
-                  </tr>
-               </tbody>
-            </table>
-            
             
             <h6>Overzicht relaties  </h6>
             
@@ -1566,52 +1541,24 @@
                   </tr>
                   <tr>
                      <td>
-                        
-                        <a class="link" href="#global_class_BestuurlijkeGebieden_Rijk">Rijk</a>
-                        
-                        [ 1 ]
-                        
-                        <a class="link" href="#detail_association_BestuurlijkeGebieden_Rijk_bestuurde">bestuurt: bestuurde</a>
-                        
-                        Rijksgebied
-                        [ 1 ]
-                        </td>
-                     <td></td>
-                  </tr>
-                  <tr>
-                     <td>
-                        
-                        <a class="link" href="#global_class_BestuurlijkeGebieden_Provinciegebied">Provinciegebied</a>
-                        
-                        [ 1 .. * ]
-                        
-                        <a class="link" href="#detail_association_BestuurlijkeGebieden_Provinciegebied_gerelateerdRijksgebied">ligt in: gerelateerd rijksgebied</a>
-                        
-                        Rijksgebied
-                        [ 1 ]
-                        </td>
-                     <td></td>
-                  </tr>
-                  <tr>
-                     <td>
-                        Rijksgebied
+                        Bestuurlijk gebied
                         is specialisatie van
                         
-                        <a class="link" href="#global_class_BestuurlijkeGebieden_BestuurlijkGebied">Bestuurlijk gebied</a>
+                        <a class="link" href="#global_class_BestuurlijkeGebieden_RegistratieveRuimte">Registratieve ruimte</a>
                         
                         </td>
                      <td>
                         
-                        <p>Bestuurlijke gebieden zijn registratieve ruimten die op basis van wet- of regelgeving
-                           als eenheid gelden van politiek/bestuurlijke verantwoordelijkheid.</p>
+                        <p>Op basis van wet- of regelgeving afgebakend object dat als eenheid geldt van politiek/bestuurlijke
+                           verantwoordelijkheid of voor bedrijfsvoering.</p>
                         </td>
                   </tr>
                </tbody>
             </table>
             
             </section>
-         <a class="anchor" id="graph_EAID_7AC1D651_6C58_444a_AB53_769E43183A02"></a><a class="anchor" id="global_class_BestuurlijkeGebieden_Waterschapsgebied"></a><section id="global_class_BestuurlijkeGebieden_Waterschapsgebied">
-            <h5>   Waterschapsgebied</h5>
+         <a class="anchor" id="graph_EAID_F4EA655E_C546_437f_9846_89189D849130"></a><a class="anchor" id="global_class_BestuurlijkeGebieden_RegistratieveRuimte"></a><section id="global_class_BestuurlijkeGebieden_RegistratieveRuimte">
+            <h5>   Registratieve ruimte</h5>
             
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -1619,7 +1566,7 @@
                <tbody>
                   <tr>
                      <th>Naam</th>
-                     <td>Waterschapsgebied</td>
+                     <td>Registratieve ruimte</td>
                   </tr>
                   <tr>
                      <th>Herkomst</th>
@@ -1629,25 +1576,18 @@
                      <th>Definitie</th>
                      <td>
                         
-                        <p>Afgebakend gedeelte van het grondgebied van Nederland, onder zeggenschap van een openbaar
-                           lichaam welke de waterstaatskundige verzorging van dat gebied ten doel heeft, ingesteld
-                           op basis van artikel 133 van de Grondwet en de Waterschapswet</p>
+                        <p>Op basis van wet- of regelgeving afgebakend object dat als eenheid geldt van politiek/bestuurlijke
+                           verantwoordelijkheid of voor bedrijfsvoering.</p>
                         </td>
                   </tr>
                   <tr>
                      <th>Herkomst definitie</th>
-                     <td>Grondwet, Waterschapswet en INSPIRE</td>
+                     <td>EMSO</td>
                   </tr>
                   <tr>
                      <th>Toelichting</th>
-                     <td>
-                        
-                        <p>Het Administratief gebied betreft de geografische representatie van de verkiezingsgrenzen
-                           zoals die door de waterschappen zijn vastgelegd. Het gaat bij dit begrip nadrukkelijk
-                           om het grondgebied en niet om de juridische entiteit (bevoegd gezag).</p>
-                        
-                        <p></p>
-                        </td>
+                     <td>Het gaat vaak om gebieden waarin sprake is van een eenheid van politiek/bestuurlijke
+                        verantwoordelijkheid. Denk hierbij aan de begrenzing van provincies en gemeenten.</td>
                   </tr>
                </tbody>
             </table>
@@ -1668,103 +1608,14 @@
                   </tr>
                   <tr>
                      <td>
-                        <a class="link" href="#detail_attribute_BestuurlijkeGebieden_Waterschapsgebied_geometrie">geometrie</a>
+                        <a class="link" href="#detail_attribute_BestuurlijkeGebieden_RegistratieveRuimte_status">status</a>
                         </td>
                      <td>
                         
-                        <p>Geometrische representatie van het administratieve gebied van een waterschap.</p>
+                        <p>Fase van de levenscyclus waarin een bestuurlijk gebied zich bevindt.</p>
                         </td>
                      <td>
-                        <a class="link" href="#global_class_BestuurlijkeGebieden_VlakOfMultivlak">Vlak of Multivlak</a>
-                        </td>
-                     <td>1</td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            
-            <h6>Overzicht relaties  </h6>
-            
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 50%;"></colgroup>
-               <colgroup style="width: 50%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Rol naam met kardinaliteiten</th>
-                     <th>Definitie</th>
-                  </tr>
-                  <tr>
-                     <td>
-                        
-                        <a class="link" href="#global_class_BestuurlijkeGebieden_Waterschap">Waterschap</a>
-                        
-                        [ 1 ]
-                        
-                        <a class="link" href="#detail_association_BestuurlijkeGebieden_Waterschap_bestuurde">bestuurt: bestuurde</a>
-                        
-                        Waterschapsgebied
-                        [ 1 ]
-                        </td>
-                     <td></td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            </section>
-         <a class="anchor" id="graph_EAID_D9D10C7B_43CB_4751_9C2A_C98332726B3C"></a><a class="anchor" id="global_class_BestuurlijkeGebieden_Waterschap"></a><section id="global_class_BestuurlijkeGebieden_Waterschap">
-            <h5>   Waterschap</h5>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Naam</th>
-                     <td>Waterschap</td>
-                  </tr>
-                  <tr>
-                     <th>Herkomst</th>
-                     <td>IMDi­SGeo</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        <p>(nog opnemen)</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Toelichting</th>
-                     <td>(nog opnemen)</td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            <h6>Overzicht attributen  </h6>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 50%;"></colgroup>
-               <colgroup style="width: 10%;"></colgroup>
-               <colgroup style="width: 10%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Attribuutnaam</th>
-                     <th>Definitie</th>
-                     <th>Formaat</th>
-                     <th>Card</th>
-                  </tr>
-                  <tr>
-                     <td>
-                        <a class="link" href="#detail_attribute_BestuurlijkeGebieden_Waterschap_waterschapscode">waterschapscode</a>
-                        </td>
-                     <td>
-                        
-                        <p>Codering van een waterschap zoals deze door het CBS wordt gebruikt.</p>
-                        </td>
-                     <td>
-                        Character­String
+                        <a class="link" href="#global_class_BestuurlijkeGebieden_StatusRegistratieveRuimte">Status registratieve ruimte</a>
                         </td>
                      <td>1</td>
                   </tr>
@@ -1785,243 +1636,11 @@
                   </tr>
                   <tr>
                      <td>
-                        Waterschap
-                        [ 1 ]
-                        
-                        <a class="link" href="#detail_association_BestuurlijkeGebieden_Waterschap_bestuurde">bestuurt: bestuurde</a>
-                        
-                        
-                        <a class="link" href="#global_class_BestuurlijkeGebieden_Waterschapsgebied">Waterschapsgebied</a>
-                        
-                        [ 1 ]
-                        </td>
-                     <td></td>
-                  </tr>
-                  <tr>
-                     <td>
-                        Waterschap
+                        Registratieve ruimte
                         is specialisatie van
                         
-                        <a class="link" href="#global_class_BestuurlijkeGebieden_OpenbaarLichaam">Openbaar Lichaam</a>
+                        <a class="link" href="#global_class_NEN3610_GeoObject">Geo­Object</a>
                         
-                        </td>
-                     <td>
-                        
-                        <p>In de bestuurlijke indeling van het Koninkrijk der Nederlanden, een overheid die bepaalde
-                           taken uitvoert binnen een bepaald ruimtelijk gebied of op een bepaald inhoudelijk
-                           gebied.</p>
-                        </td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            </section>
-         <a class="anchor" id="graph_EAID_634C2628_23D1_487f_A295_7710459A6E8D"></a><a class="anchor" id="global_class_BestuurlijkeGebieden_Veiligheidsregio"></a><section id="global_class_BestuurlijkeGebieden_Veiligheidsregio">
-            <h5>   Veiligheidsregio</h5>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Naam</th>
-                     <td>Veiligheidsregio</td>
-                  </tr>
-                  <tr>
-                     <th>Herkomst</th>
-                     <td>IMDi­SGeo</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        <p>(nog opnemen)</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Toelichting</th>
-                     <td>(nog opnemen)</td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            <h6>Overzicht attributen  </h6>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 50%;"></colgroup>
-               <colgroup style="width: 10%;"></colgroup>
-               <colgroup style="width: 10%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Attribuutnaam</th>
-                     <th>Definitie</th>
-                     <th>Formaat</th>
-                     <th>Card</th>
-                  </tr>
-                  <tr>
-                     <td>
-                        <a class="link" href="#detail_attribute_BestuurlijkeGebieden_Veiligheidsregio_veiligheidsregiocode">veiligheidsregiocode</a>
-                        </td>
-                     <td>
-                        
-                        <p>Codering van een veiligheidsregio zoals deze door het CBS wordt gebruikt.</p>
-                        </td>
-                     <td>
-                        Character­String
-                        </td>
-                     <td>1</td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            
-            <h6>Overzicht relaties  </h6>
-            
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 50%;"></colgroup>
-               <colgroup style="width: 50%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Rol naam met kardinaliteiten</th>
-                     <th>Definitie</th>
-                  </tr>
-                  <tr>
-                     <td>
-                        Veiligheidsregio
-                        [ 1 ]
-                        
-                        <a class="link" href="#detail_association_BestuurlijkeGebieden_Veiligheidsregio_bestuurde">bestuurt: bestuurde</a>
-                        
-                        
-                        <a class="link" href="#global_class_BestuurlijkeGebieden_Veiligheidsregiogebied">Veiligheidsregiogebied</a>
-                        
-                        [ 1 ]
-                        </td>
-                     <td></td>
-                  </tr>
-                  <tr>
-                     <td>
-                        Veiligheidsregio
-                        is specialisatie van
-                        
-                        <a class="link" href="#global_class_BestuurlijkeGebieden_OpenbaarLichaam">Openbaar Lichaam</a>
-                        
-                        </td>
-                     <td>
-                        
-                        <p>In de bestuurlijke indeling van het Koninkrijk der Nederlanden, een overheid die bepaalde
-                           taken uitvoert binnen een bepaald ruimtelijk gebied of op een bepaald inhoudelijk
-                           gebied.</p>
-                        </td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            </section>
-         <a class="anchor" id="graph_EAID_FD267964_76E6_4b4c_AE22_9653BF8A950A"></a><a class="anchor" id="global_class_BestuurlijkeGebieden_Veiligheidsregiogebied"></a><section id="global_class_BestuurlijkeGebieden_Veiligheidsregiogebied">
-            <h5>   Veiligheidsregiogebied</h5>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Naam</th>
-                     <td>Veiligheidsregiogebied</td>
-                  </tr>
-                  <tr>
-                     <th>Herkomst</th>
-                     <td>IMDi­SGeo</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        <p>Afgebakend gedeelte van het grondgebied van Nederland, onder zeggenschap van een openbaar
-                           lichaam met diverse bestuurlijke taken, ingesteld op basis van artikel 9 van de Wet
-                           Veiligheidsregio’s</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Herkomst definitie</th>
-                     <td>Wet Veiligheidsregio’s</td>
-                  </tr>
-                  <tr>
-                     <th>Toelichting</th>
-                     <td>geen toelichting</td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            <h6>Overzicht attributen  </h6>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 50%;"></colgroup>
-               <colgroup style="width: 10%;"></colgroup>
-               <colgroup style="width: 10%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Attribuutnaam</th>
-                     <th>Definitie</th>
-                     <th>Formaat</th>
-                     <th>Card</th>
-                  </tr>
-                  <tr>
-                     <td>
-                        <a class="link" href="#detail_attribute_BestuurlijkeGebieden_Veiligheidsregiogebied_geometrie">geometrie</a>
-                        </td>
-                     <td>
-                        
-                        <p>Geometrische representatie van een veiligheidsregio.</p>
-                        </td>
-                     <td>
-                        <a class="link" href="#global_class_BestuurlijkeGebieden_VlakOfMultivlak">Vlak of Multivlak</a>
-                        </td>
-                     <td>1</td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            
-            <h6>Overzicht relaties  </h6>
-            
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 50%;"></colgroup>
-               <colgroup style="width: 50%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Rol naam met kardinaliteiten</th>
-                     <th>Definitie</th>
-                  </tr>
-                  <tr>
-                     <td>
-                        Veiligheidsregiogebied
-                        [ 1 ]
-                        
-                        <a class="link" href="#detail_association_BestuurlijkeGebieden_Veiligheidsregiogebied_gerelateerdGemeentegebied">hoort bij: gerelateerd gemeentegebied</a>
-                        
-                        
-                        <a class="link" href="#global_class_BestuurlijkeGebieden_Gemeentegebied">Gemeentegebied</a>
-                        
-                        [ 1 .. * ]
-                        </td>
-                     <td></td>
-                  </tr>
-                  <tr>
-                     <td>
-                        
-                        <a class="link" href="#global_class_BestuurlijkeGebieden_Veiligheidsregio">Veiligheidsregio</a>
-                        
-                        [ 1 ]
-                        
-                        <a class="link" href="#detail_association_BestuurlijkeGebieden_Veiligheidsregio_bestuurde">bestuurt: bestuurde</a>
-                        
-                        Veiligheidsregiogebied
-                        [ 1 ]
                         </td>
                      <td></td>
                   </tr>
@@ -2124,20 +1743,6 @@
                   <tr>
                      <td>
                         
-                        <a class="link" href="#global_class_BestuurlijkeGebieden_Veiligheidsregiogebied">Veiligheidsregiogebied</a>
-                        
-                        [ 1 ]
-                        
-                        <a class="link" href="#detail_association_BestuurlijkeGebieden_Veiligheidsregiogebied_gerelateerdGemeentegebied">hoort bij: gerelateerd gemeentegebied</a>
-                        
-                        Gemeentegebied
-                        [ 1 .. * ]
-                        </td>
-                     <td></td>
-                  </tr>
-                  <tr>
-                     <td>
-                        
                         <a class="link" href="#global_class_BestuurlijkeGebieden_Gemeente">Gemeente</a>
                         
                         [ 1 ]
@@ -2146,6 +1751,20 @@
                         
                         Gemeentegebied
                         [ 1 ]
+                        </td>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <td>
+                        
+                        <a class="link" href="#global_class_BestuurlijkeGebieden_Veiligheidsregiogebied">Veiligheidsregiogebied</a>
+                        
+                        [ 1 ]
+                        
+                        <a class="link" href="#detail_association_BestuurlijkeGebieden_Veiligheidsregiogebied_gerelateerdGemeentegebied">hoort bij: gerelateerd gemeentegebied</a>
+                        
+                        Gemeentegebied
+                        [ 1 .. * ]
                         </td>
                      <td></td>
                   </tr>
@@ -2517,8 +2136,8 @@
             </table>
             
             </section>
-         <a class="anchor" id="graph_EAID_C60CE19D_EF1D_4c45_BD31_D4E19145AAA8"></a><a class="anchor" id="global_class_BestuurlijkeGebieden_OpenbaarLichaam"></a><section id="global_class_BestuurlijkeGebieden_OpenbaarLichaam">
-            <h5>   Openbaar Lichaam</h5>
+         <a class="anchor" id="graph_EAID_51326090_515A_406a_A0BB_3AC60FFC061A"></a><a class="anchor" id="global_class_BestuurlijkeGebieden_Rijk"></a><section id="global_class_BestuurlijkeGebieden_Rijk">
+            <h5>   Rijk</h5>
             
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -2526,19 +2145,18 @@
                <tbody>
                   <tr>
                      <th>Naam</th>
-                     <td>Openbaar Lichaam</td>
+                     <td>Rijk</td>
                   </tr>
                   <tr>
                      <th>Herkomst</th>
-                     <td>EMSO</td>
+                     <td>IMDi­SGeo</td>
                   </tr>
                   <tr>
                      <th>Definitie</th>
                      <td>
                         
-                        <p>In de bestuurlijke indeling van het Koninkrijk der Nederlanden, een overheid die bepaalde
-                           taken uitvoert binnen een bepaald ruimtelijk gebied of op een bepaald inhoudelijk
-                           gebied.</p>
+                        <p>Het onderdeel van de Nederlandse overheid dat wettelijke taken heeft op landelijk
+                           niveau: de 'centrale overheid'.</p>
                         </td>
                   </tr>
                   <tr>
@@ -2547,9 +2165,10 @@
                   </tr>
                   <tr>
                      <th>Toelichting</th>
-                     <td>De belangrijkste openbare lichamen zijn het Rijk, de provincies, de gemeenten en de
-                        waterschappen. De provincies en gemeenten worden in artikel 123 en verder van de Nederlandse
-                        Grondwet geregeld. De waterschappen in artikel 133.</td>
+                     <td>Het Rijk wordt gevormd door alle ministeries, de uitvoeringsorganisaties die onder
+                        de verantwoordelijkheid van een ministerie vallen, inspecties en Hoge Colleges van
+                        Staat en houdt zich bezig met de voorbereiding en de uitvoering van plannen van de
+                        regering en het parlement.</td>
                   </tr>
                </tbody>
             </table>
@@ -2570,13 +2189,11 @@
                   </tr>
                   <tr>
                      <td>
-                        <a class="link" href="#detail_attribute_BestuurlijkeGebieden_OpenbaarLichaam_formeleNaam">formele naam</a>
+                        <a class="link" href="#detail_attribute_BestuurlijkeGebieden_Rijk_landcode">landcode</a>
                         </td>
                      <td>
                         
-                        <p>Naam van een gemeente zoals formeel benoemd door het bevoegd gezag.</p>
-                        
-                        <p>Naam van een provincie zoals formeel benoemd door het bevoegd gezag </p>
+                        <p>Codering van het land zoals deze door de RVIG wordt gebruikt </p>
                         </td>
                      <td>
                         Character­String
@@ -2586,43 +2203,6 @@
                </tbody>
             </table>
             
-            </section>
-         <a class="anchor" id="graph_EAID_CE4A19B0_E8ED_4517_A5F2_DACF596D2421"></a><a class="anchor" id="global_class_BestuurlijkeGebieden_BestuurlijkGebied"></a><section id="global_class_BestuurlijkeGebieden_BestuurlijkGebied">
-            <h5>   Bestuurlijk gebied</h5>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Naam</th>
-                     <td>Bestuurlijk gebied</td>
-                  </tr>
-                  <tr>
-                     <th>Herkomst</th>
-                     <td>IMDi­SGeo</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        <p>Bestuurlijke gebieden zijn registratieve ruimten die op basis van wet- of regelgeving
-                           als eenheid gelden van politiek/bestuurlijke verantwoordelijkheid.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Herkomst definitie</th>
-                     <td>EMSO</td>
-                  </tr>
-                  <tr>
-                     <th>Toelichting</th>
-                     <td>Dit betreft bijvoorbeeld de gebieden behorende bij de vier formele bestuurslagen uit
-                        de Grondwet (Rijk, provincie, waterschap, gemeente), maar kan ook gebieden van bestuurlijke
-                        samenwerkingsverbanden met eigen politiek/bestuurlijke verantwoordelijkheid omvatten.
-                        Een voorbeeld daarvan betreft de veiligheidsregio’s.</td>
-                  </tr>
-               </tbody>
-            </table>
             
             <h6>Overzicht relaties  </h6>
             
@@ -2637,24 +2217,39 @@
                   </tr>
                   <tr>
                      <td>
-                        Bestuurlijk gebied
+                        Rijk
+                        [ 1 ]
+                        
+                        <a class="link" href="#detail_association_BestuurlijkeGebieden_Rijk_bestuurde">bestuurt: bestuurde</a>
+                        
+                        
+                        <a class="link" href="#global_class_BestuurlijkeGebieden_Rijksgebied">Rijksgebied</a>
+                        
+                        [ 1 ]
+                        </td>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <td>
+                        Rijk
                         is specialisatie van
                         
-                        <a class="link" href="#global_class_BestuurlijkeGebieden_RegistratieveRuimte">Registratieve ruimte</a>
+                        <a class="link" href="#global_class_BestuurlijkeGebieden_OpenbaarLichaam">Openbaar Lichaam</a>
                         
                         </td>
                      <td>
                         
-                        <p>Op basis van wet- of regelgeving afgebakend object dat als eenheid geldt van politiek/bestuurlijke
-                           verantwoordelijkheid of voor bedrijfsvoering.</p>
+                        <p>In de bestuurlijke indeling van het Koninkrijk der Nederlanden, een overheid die bepaalde
+                           taken uitvoert binnen een bepaald ruimtelijk gebied of op een bepaald inhoudelijk
+                           gebied.</p>
                         </td>
                   </tr>
                </tbody>
             </table>
             
             </section>
-         <a class="anchor" id="graph_EAID_F4EA655E_C546_437f_9846_89189D849130"></a><a class="anchor" id="global_class_BestuurlijkeGebieden_RegistratieveRuimte"></a><section id="global_class_BestuurlijkeGebieden_RegistratieveRuimte">
-            <h5>   Registratieve ruimte</h5>
+         <a class="anchor" id="graph_EAID_ACF0E2D6_7DF9_4fb1_A309_A0E38FBB28F0"></a><a class="anchor" id="global_class_BestuurlijkeGebieden_Rijksgebied"></a><section id="global_class_BestuurlijkeGebieden_Rijksgebied">
+            <h5>   Rijksgebied</h5>
             
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -2662,7 +2257,7 @@
                <tbody>
                   <tr>
                      <th>Naam</th>
-                     <td>Registratieve ruimte</td>
+                     <td>Rijksgebied</td>
                   </tr>
                   <tr>
                      <th>Herkomst</th>
@@ -2672,8 +2267,7 @@
                      <th>Definitie</th>
                      <td>
                         
-                        <p>Op basis van wet- of regelgeving afgebakend object dat als eenheid geldt van politiek/bestuurlijke
-                           verantwoordelijkheid of voor bedrijfsvoering.</p>
+                        <p>Het grondgebied van het Koninkrijk der Nederlanden</p>
                         </td>
                   </tr>
                   <tr>
@@ -2682,8 +2276,7 @@
                   </tr>
                   <tr>
                      <th>Toelichting</th>
-                     <td>Het gaat vaak om gebieden waarin sprake is van een eenheid van politiek/bestuurlijke
-                        verantwoordelijkheid. Denk hierbij aan de begrenzing van provincies en gemeenten.</td>
+                     <td>Dit betreft het Europese deel van het Koninkrijk der Nederlanden.</td>
                   </tr>
                </tbody>
             </table>
@@ -2704,14 +2297,14 @@
                   </tr>
                   <tr>
                      <td>
-                        <a class="link" href="#detail_attribute_BestuurlijkeGebieden_RegistratieveRuimte_status">status</a>
+                        <a class="link" href="#detail_attribute_BestuurlijkeGebieden_Rijksgebied_geometrie">geometrie</a>
                         </td>
                      <td>
                         
-                        <p>Fase van de levenscyclus waarin een bestuurlijk gebied zich bevindt.</p>
+                        <p>Geometrische representatie van het gebied dat als Rijk is benoemd</p>
                         </td>
                      <td>
-                        <a class="link" href="#global_class_BestuurlijkeGebieden_StatusRegistratieveRuimte">Status registratieve ruimte</a>
+                        <a class="link" href="#global_class_BestuurlijkeGebieden_VlakOfMultivlak">Vlak of Multivlak</a>
                         </td>
                      <td>1</td>
                   </tr>
@@ -2732,13 +2325,492 @@
                   </tr>
                   <tr>
                      <td>
-                        Registratieve ruimte
-                        is specialisatie van
                         
-                        <a class="link" href="#global_class_NEN3610_GeoObject">Geo­Object</a>
+                        <a class="link" href="#global_class_BestuurlijkeGebieden_Provinciegebied">Provinciegebied</a>
                         
+                        [ 1 .. * ]
+                        
+                        <a class="link" href="#detail_association_BestuurlijkeGebieden_Provinciegebied_gerelateerdRijksgebied">ligt in: gerelateerd rijksgebied</a>
+                        
+                        Rijksgebied
+                        [ 1 ]
                         </td>
                      <td></td>
+                  </tr>
+                  <tr>
+                     <td>
+                        
+                        <a class="link" href="#global_class_BestuurlijkeGebieden_Rijk">Rijk</a>
+                        
+                        [ 1 ]
+                        
+                        <a class="link" href="#detail_association_BestuurlijkeGebieden_Rijk_bestuurde">bestuurt: bestuurde</a>
+                        
+                        Rijksgebied
+                        [ 1 ]
+                        </td>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <td>
+                        Rijksgebied
+                        is specialisatie van
+                        
+                        <a class="link" href="#global_class_BestuurlijkeGebieden_BestuurlijkGebied">Bestuurlijk gebied</a>
+                        
+                        </td>
+                     <td>
+                        
+                        <p>Bestuurlijke gebieden zijn registratieve ruimten die op basis van wet- of regelgeving
+                           als eenheid gelden van politiek/bestuurlijke verantwoordelijkheid.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            </section>
+         <a class="anchor" id="graph_EAID_7AC1D651_6C58_444a_AB53_769E43183A02"></a><a class="anchor" id="global_class_BestuurlijkeGebieden_Waterschapsgebied"></a><section id="global_class_BestuurlijkeGebieden_Waterschapsgebied">
+            <h5>   Waterschapsgebied</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>Waterschapsgebied</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td>IMDi­SGeo</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>Afgebakend gedeelte van het grondgebied van Nederland, onder zeggenschap van een openbaar
+                           lichaam welke de waterstaatskundige verzorging van dat gebied ten doel heeft, ingesteld
+                           op basis van artikel 133 van de Grondwet en de Waterschapswet</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst definitie</th>
+                     <td>Grondwet, Waterschapswet en INSPIRE</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>
+                        
+                        <p>Het Administratief gebied betreft de geografische representatie van de verkiezingsgrenzen
+                           zoals die door de waterschappen zijn vastgelegd. Het gaat bij dit begrip nadrukkelijk
+                           om het grondgebied en niet om de juridische entiteit (bevoegd gezag).</p>
+                        
+                        <p></p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overzicht attributen  </h6>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Attribuutnaam</th>
+                     <th>Definitie</th>
+                     <th>Formaat</th>
+                     <th>Card</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_BestuurlijkeGebieden_Waterschapsgebied_geometrie">geometrie</a>
+                        </td>
+                     <td>
+                        
+                        <p>Geometrische representatie van het administratieve gebied van een waterschap.</p>
+                        </td>
+                     <td>
+                        <a class="link" href="#global_class_BestuurlijkeGebieden_VlakOfMultivlak">Vlak of Multivlak</a>
+                        </td>
+                     <td>1</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            
+            <h6>Overzicht relaties  </h6>
+            
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Rol naam met kardinaliteiten</th>
+                     <th>Definitie</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        
+                        <a class="link" href="#global_class_BestuurlijkeGebieden_Waterschap">Waterschap</a>
+                        
+                        [ 1 ]
+                        
+                        <a class="link" href="#detail_association_BestuurlijkeGebieden_Waterschap_bestuurde">bestuurt: bestuurde</a>
+                        
+                        Waterschapsgebied
+                        [ 1 ]
+                        </td>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <td>
+                        Waterschapsgebied
+                        is specialisatie van
+                        
+                        <a class="link" href="#global_class_BestuurlijkeGebieden_BestuurlijkGebied">Bestuurlijk gebied</a>
+                        
+                        </td>
+                     <td>
+                        
+                        <p>Bestuurlijke gebieden zijn registratieve ruimten die op basis van wet- of regelgeving
+                           als eenheid gelden van politiek/bestuurlijke verantwoordelijkheid.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            </section>
+         <a class="anchor" id="graph_EAID_D9D10C7B_43CB_4751_9C2A_C98332726B3C"></a><a class="anchor" id="global_class_BestuurlijkeGebieden_Waterschap"></a><section id="global_class_BestuurlijkeGebieden_Waterschap">
+            <h5>   Waterschap</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>Waterschap</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td>IMDi­SGeo</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>(nog opnemen)</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>(nog opnemen)</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overzicht attributen  </h6>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Attribuutnaam</th>
+                     <th>Definitie</th>
+                     <th>Formaat</th>
+                     <th>Card</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_BestuurlijkeGebieden_Waterschap_waterschapscode">waterschapscode</a>
+                        </td>
+                     <td>
+                        
+                        <p>Codering van een waterschap zoals deze door het CBS wordt gebruikt.</p>
+                        </td>
+                     <td>
+                        Character­String
+                        </td>
+                     <td>1</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            
+            <h6>Overzicht relaties  </h6>
+            
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Rol naam met kardinaliteiten</th>
+                     <th>Definitie</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        Waterschap
+                        [ 1 ]
+                        
+                        <a class="link" href="#detail_association_BestuurlijkeGebieden_Waterschap_bestuurde">bestuurt: bestuurde</a>
+                        
+                        
+                        <a class="link" href="#global_class_BestuurlijkeGebieden_Waterschapsgebied">Waterschapsgebied</a>
+                        
+                        [ 1 ]
+                        </td>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <td>
+                        Waterschap
+                        is specialisatie van
+                        
+                        <a class="link" href="#global_class_BestuurlijkeGebieden_OpenbaarLichaam">Openbaar Lichaam</a>
+                        
+                        </td>
+                     <td>
+                        
+                        <p>In de bestuurlijke indeling van het Koninkrijk der Nederlanden, een overheid die bepaalde
+                           taken uitvoert binnen een bepaald ruimtelijk gebied of op een bepaald inhoudelijk
+                           gebied.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            </section>
+         <a class="anchor" id="graph_EAID_634C2628_23D1_487f_A295_7710459A6E8D"></a><a class="anchor" id="global_class_BestuurlijkeGebieden_Veiligheidsregio"></a><section id="global_class_BestuurlijkeGebieden_Veiligheidsregio">
+            <h5>   Veiligheidsregio</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>Veiligheidsregio</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td>IMDi­SGeo</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>(nog opnemen)</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>(nog opnemen)</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overzicht attributen  </h6>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Attribuutnaam</th>
+                     <th>Definitie</th>
+                     <th>Formaat</th>
+                     <th>Card</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_BestuurlijkeGebieden_Veiligheidsregio_veiligheidsregiocode">veiligheidsregiocode</a>
+                        </td>
+                     <td>
+                        
+                        <p>Codering van een veiligheidsregio zoals deze door het CBS wordt gebruikt.</p>
+                        </td>
+                     <td>
+                        Character­String
+                        </td>
+                     <td>1</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            
+            <h6>Overzicht relaties  </h6>
+            
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Rol naam met kardinaliteiten</th>
+                     <th>Definitie</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        Veiligheidsregio
+                        [ 1 ]
+                        
+                        <a class="link" href="#detail_association_BestuurlijkeGebieden_Veiligheidsregio_bestuurde">bestuurt: bestuurde</a>
+                        
+                        
+                        <a class="link" href="#global_class_BestuurlijkeGebieden_Veiligheidsregiogebied">Veiligheidsregiogebied</a>
+                        
+                        [ 1 ]
+                        </td>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <td>
+                        Veiligheidsregio
+                        is specialisatie van
+                        
+                        <a class="link" href="#global_class_BestuurlijkeGebieden_OpenbaarLichaam">Openbaar Lichaam</a>
+                        
+                        </td>
+                     <td>
+                        
+                        <p>In de bestuurlijke indeling van het Koninkrijk der Nederlanden, een overheid die bepaalde
+                           taken uitvoert binnen een bepaald ruimtelijk gebied of op een bepaald inhoudelijk
+                           gebied.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            </section>
+         <a class="anchor" id="graph_EAID_FD267964_76E6_4b4c_AE22_9653BF8A950A"></a><a class="anchor" id="global_class_BestuurlijkeGebieden_Veiligheidsregiogebied"></a><section id="global_class_BestuurlijkeGebieden_Veiligheidsregiogebied">
+            <h5>   Veiligheidsregiogebied</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>Veiligheidsregiogebied</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td>IMDi­SGeo</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>Afgebakend gedeelte van het grondgebied van Nederland, onder zeggenschap van een openbaar
+                           lichaam met diverse bestuurlijke taken, ingesteld op basis van artikel 9 van de Wet
+                           Veiligheidsregio’s</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst definitie</th>
+                     <td>Wet Veiligheidsregio’s</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>geen toelichting</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overzicht attributen  </h6>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Attribuutnaam</th>
+                     <th>Definitie</th>
+                     <th>Formaat</th>
+                     <th>Card</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_BestuurlijkeGebieden_Veiligheidsregiogebied_geometrie">geometrie</a>
+                        </td>
+                     <td>
+                        
+                        <p>Geometrische representatie van een veiligheidsregio.</p>
+                        </td>
+                     <td>
+                        <a class="link" href="#global_class_BestuurlijkeGebieden_VlakOfMultivlak">Vlak of Multivlak</a>
+                        </td>
+                     <td>1</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            
+            <h6>Overzicht relaties  </h6>
+            
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Rol naam met kardinaliteiten</th>
+                     <th>Definitie</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        Veiligheidsregiogebied
+                        [ 1 ]
+                        
+                        <a class="link" href="#detail_association_BestuurlijkeGebieden_Veiligheidsregiogebied_gerelateerdGemeentegebied">hoort bij: gerelateerd gemeentegebied</a>
+                        
+                        
+                        <a class="link" href="#global_class_BestuurlijkeGebieden_Gemeentegebied">Gemeentegebied</a>
+                        
+                        [ 1 .. * ]
+                        </td>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <td>
+                        
+                        <a class="link" href="#global_class_BestuurlijkeGebieden_Veiligheidsregio">Veiligheidsregio</a>
+                        
+                        [ 1 ]
+                        
+                        <a class="link" href="#detail_association_BestuurlijkeGebieden_Veiligheidsregio_bestuurde">bestuurt: bestuurde</a>
+                        
+                        Veiligheidsregiogebied
+                        [ 1 ]
+                        </td>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <td>
+                        Veiligheidsregiogebied
+                        is specialisatie van
+                        
+                        <a class="link" href="#global_class_BestuurlijkeGebieden_BestuurlijkGebied">Bestuurlijk gebied</a>
+                        
+                        </td>
+                     <td>
+                        
+                        <p>Bestuurlijke gebieden zijn registratieve ruimten die op basis van wet- of regelgeving
+                           als eenheid gelden van politiek/bestuurlijke verantwoordelijkheid.</p>
+                        </td>
                   </tr>
                </tbody>
             </table>
@@ -2822,6 +2894,398 @@
          
          <section id="">
             <h5>Objecttype details  </h5>
+            <a class="anchor" id="detail_class_BestuurlijkeGebieden_OpenbaarLichaam"></a><section id="detail_class_BestuurlijkeGebieden_OpenbaarLichaam">
+               <h6>   Openbaar Lichaam</h6>
+               <a class="anchor" id="detail_attribute_BestuurlijkeGebieden_OpenbaarLichaam_formeleNaam"></a><div class="deepheader" id="detail_attribute_BestuurlijkeGebieden_OpenbaarLichaam_formeleNaam">
+                  <h7>Attribuutsoort details  <a href="#global_class_BestuurlijkeGebieden_OpenbaarLichaam">Openbaar Lichaam</a> formele naam</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>formele naam</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              <p>Naam van een gemeente zoals formeel benoemd door het bevoegd gezag.</p>
+                              
+                              <p>Naam van een provincie zoals formeel benoemd door het bevoegd gezag </p>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Toelichting</th>
+                           <td>Een inhoudelijke toelichting op de toepassing van het informatie-element.</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Patroon</th>
+                           <td>Niet van toepassing op het Rijk</td>
+                        </tr>
+                        <tr>
+                           <th>Type</th>
+                           <td>
+                              Character­String
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               </section>
+            
+            <a class="anchor" id="detail_class_BestuurlijkeGebieden_RegistratieveRuimte"></a><section id="detail_class_BestuurlijkeGebieden_RegistratieveRuimte">
+               <h6>   Registratieve ruimte</h6>
+               <a class="anchor" id="detail_attribute_BestuurlijkeGebieden_RegistratieveRuimte_status"></a><div class="deepheader" id="detail_attribute_BestuurlijkeGebieden_RegistratieveRuimte_status">
+                  <h7>Attribuutsoort details  <a href="#global_class_BestuurlijkeGebieden_RegistratieveRuimte">Registratieve ruimte</a> status</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>status</td>
+                        </tr>
+                        <tr>
+                           <th>Herkomst</th>
+                           <td>IMDi­SGeo</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              <p>Fase van de levenscyclus waarin een bestuurlijk gebied zich bevindt.</p>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Herkomst definitie</th>
+                           <td>EMSO</td>
+                        </tr>
+                        <tr>
+                           <th>Toelichting</th>
+                           <td>Een inhoudelijke toelichting op de toepassing van het informatie-element.</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Patroon</th>
+                           <td>De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat
+                              wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.</td>
+                        </tr>
+                        <tr>
+                           <th>Type</th>
+                           <td>
+                              <a class="link" href="#detail_class_BestuurlijkeGebieden_StatusRegistratieveRuimte">Status registratieve ruimte</a>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               </section>
+            <a class="anchor" id="detail_class_BestuurlijkeGebieden_Gemeentegebied"></a><section id="detail_class_BestuurlijkeGebieden_Gemeentegebied">
+               <h6>   Gemeentegebied</h6>
+               <a class="anchor" id="detail_attribute_BestuurlijkeGebieden_Gemeentegebied_geometrie"></a><div class="deepheader" id="detail_attribute_BestuurlijkeGebieden_Gemeentegebied_geometrie">
+                  <h7>Attribuutsoort details  <a href="#global_class_BestuurlijkeGebieden_Gemeentegebied">Gemeentegebied</a> geometrie</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>geometrie</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              <p>Geometrische representatie van het gebied dat als gemeente is benoemd </p>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Toelichting</th>
+                           <td>Een inhoudelijke toelichting op de toepassing van het informatie-element.</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Patroon</th>
+                           <td>De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat
+                              wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.</td>
+                        </tr>
+                        <tr>
+                           <th>Type</th>
+                           <td>
+                              <a class="link" href="#detail_class_BestuurlijkeGebieden_VlakOfMultivlak">Vlak of Multivlak</a>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               <a class="anchor" id="detail_association_BestuurlijkeGebieden_Gemeentegebied_gerelateerdProvinciegebied"></a><div class="deepheader" id="detail_association_BestuurlijkeGebieden_Gemeentegebied_gerelateerdProvinciegebied">
+                  <h7>Relatiesoort details  <a href="#global_class_BestuurlijkeGebieden_Gemeentegebied">Gemeentegebied</a> ligt in</h7>
+                  
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>ligt in</td>
+                        </tr>
+                        <tr>
+                           <th>Kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Gerelateerd objecttype</th>
+                           <td>
+                              <a class="link" href="#global_class_BestuurlijkeGebieden_Provinciegebied">Provinciegebied</a>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               </section>
+            <a class="anchor" id="detail_class_BestuurlijkeGebieden_Gemeente"></a><section id="detail_class_BestuurlijkeGebieden_Gemeente">
+               <h6>   Gemeente</h6>
+               <a class="anchor" id="detail_attribute_BestuurlijkeGebieden_Gemeente_gemeentecode"></a><div class="deepheader" id="detail_attribute_BestuurlijkeGebieden_Gemeente_gemeentecode">
+                  <h7>Attribuutsoort details  <a href="#global_class_BestuurlijkeGebieden_Gemeente">Gemeente</a> gemeentecode</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>gemeentecode</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              <p>Codering van een gemeente zoals deze door het CBS wordt gebruikt. </p>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Toelichting</th>
+                           <td>Een inhoudelijke toelichting op de toepassing van het informatie-element.</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Patroon</th>
+                           <td>De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat
+                              wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.</td>
+                        </tr>
+                        <tr>
+                           <th>Type</th>
+                           <td>
+                              Character­String
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               <a class="anchor" id="detail_association_BestuurlijkeGebieden_Gemeente_bestuurde"></a><div class="deepheader" id="detail_association_BestuurlijkeGebieden_Gemeente_bestuurde">
+                  <h7>Relatiesoort details  <a href="#global_class_BestuurlijkeGebieden_Gemeente">Gemeente</a> bestuurt</h7>
+                  
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>bestuurt</td>
+                        </tr>
+                        <tr>
+                           <th>Kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Gerelateerd objecttype</th>
+                           <td>
+                              <a class="link" href="#global_class_BestuurlijkeGebieden_Gemeentegebied">Gemeentegebied</a>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               </section>
+            <a class="anchor" id="detail_class_BestuurlijkeGebieden_Provinciegebied"></a><section id="detail_class_BestuurlijkeGebieden_Provinciegebied">
+               <h6>   Provinciegebied</h6>
+               <a class="anchor" id="detail_attribute_BestuurlijkeGebieden_Provinciegebied_geometrie"></a><div class="deepheader" id="detail_attribute_BestuurlijkeGebieden_Provinciegebied_geometrie">
+                  <h7>Attribuutsoort details  <a href="#global_class_BestuurlijkeGebieden_Provinciegebied">Provinciegebied</a> geometrie</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>geometrie</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              <p>Geometrische representatie van het gebied dat als Provincie is benoemd.</p>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Toelichting</th>
+                           <td>Een inhoudelijke toelichting op de toepassing van het informatie-element.</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Patroon</th>
+                           <td>De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat
+                              wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.</td>
+                        </tr>
+                        <tr>
+                           <th>Type</th>
+                           <td>
+                              <a class="link" href="#detail_class_BestuurlijkeGebieden_VlakOfMultivlak">Vlak of Multivlak</a>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               <a class="anchor" id="detail_association_BestuurlijkeGebieden_Provinciegebied_gerelateerdRijksgebied"></a><div class="deepheader" id="detail_association_BestuurlijkeGebieden_Provinciegebied_gerelateerdRijksgebied">
+                  <h7>Relatiesoort details  <a href="#global_class_BestuurlijkeGebieden_Provinciegebied">Provinciegebied</a> ligt in</h7>
+                  
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>ligt in</td>
+                        </tr>
+                        <tr>
+                           <th>Kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Gerelateerd objecttype</th>
+                           <td>
+                              <a class="link" href="#global_class_BestuurlijkeGebieden_Rijksgebied">Rijksgebied</a>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               </section>
+            <a class="anchor" id="detail_class_BestuurlijkeGebieden_Provincie"></a><section id="detail_class_BestuurlijkeGebieden_Provincie">
+               <h6>   Provincie</h6>
+               <a class="anchor" id="detail_attribute_BestuurlijkeGebieden_Provincie_provinciecode"></a><div class="deepheader" id="detail_attribute_BestuurlijkeGebieden_Provincie_provinciecode">
+                  <h7>Attribuutsoort details  <a href="#global_class_BestuurlijkeGebieden_Provincie">Provincie</a> provinciecode</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>provinciecode</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              <p>Codering van een provincie zoals deze door het CBS wordt gebruikt.</p>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Toelichting</th>
+                           <td>Een inhoudelijke toelichting op de toepassing van het informatie-element.</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Patroon</th>
+                           <td>De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat
+                              wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.</td>
+                        </tr>
+                        <tr>
+                           <th>Type</th>
+                           <td>
+                              Character­String
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               <a class="anchor" id="detail_association_BestuurlijkeGebieden_Provincie_bestuurde"></a><div class="deepheader" id="detail_association_BestuurlijkeGebieden_Provincie_bestuurde">
+                  <h7>Relatiesoort details  <a href="#global_class_BestuurlijkeGebieden_Provincie">Provincie</a> bestuurt</h7>
+                  
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>bestuurt</td>
+                        </tr>
+                        <tr>
+                           <th>Kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Gerelateerd objecttype</th>
+                           <td>
+                              <a class="link" href="#global_class_BestuurlijkeGebieden_Provinciegebied">Provinciegebied</a>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               </section>
             <a class="anchor" id="detail_class_BestuurlijkeGebieden_Rijk"></a><section id="detail_class_BestuurlijkeGebieden_Rijk">
                <h6>   Rijk</h6>
                <a class="anchor" id="detail_attribute_BestuurlijkeGebieden_Rijk_landcode"></a><div class="deepheader" id="detail_attribute_BestuurlijkeGebieden_Rijk_landcode">
@@ -3241,398 +3705,6 @@
                   </table>
                   </div>
                </section>
-            <a class="anchor" id="detail_class_BestuurlijkeGebieden_Gemeentegebied"></a><section id="detail_class_BestuurlijkeGebieden_Gemeentegebied">
-               <h6>   Gemeentegebied</h6>
-               <a class="anchor" id="detail_attribute_BestuurlijkeGebieden_Gemeentegebied_geometrie"></a><div class="deepheader" id="detail_attribute_BestuurlijkeGebieden_Gemeentegebied_geometrie">
-                  <h7>Attribuutsoort details  <a href="#global_class_BestuurlijkeGebieden_Gemeentegebied">Gemeentegebied</a> geometrie</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>geometrie</td>
-                        </tr>
-                        <tr>
-                           <th>Definitie</th>
-                           <td>
-                              
-                              <p>Geometrische representatie van het gebied dat als gemeente is benoemd </p>
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Toelichting</th>
-                           <td>Een inhoudelijke toelichting op de toepassing van het informatie-element.</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Kardinaliteit</th>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <th>Patroon</th>
-                           <td>De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat
-                              wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.</td>
-                        </tr>
-                        <tr>
-                           <th>Type</th>
-                           <td>
-                              <a class="link" href="#detail_class_BestuurlijkeGebieden_VlakOfMultivlak">Vlak of Multivlak</a>
-                              </td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               <a class="anchor" id="detail_association_BestuurlijkeGebieden_Gemeentegebied_gerelateerdProvinciegebied"></a><div class="deepheader" id="detail_association_BestuurlijkeGebieden_Gemeentegebied_gerelateerdProvinciegebied">
-                  <h7>Relatiesoort details  <a href="#global_class_BestuurlijkeGebieden_Gemeentegebied">Gemeentegebied</a> ligt in</h7>
-                  
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>ligt in</td>
-                        </tr>
-                        <tr>
-                           <th>Kardinaliteit</th>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <th>Gerelateerd objecttype</th>
-                           <td>
-                              <a class="link" href="#global_class_BestuurlijkeGebieden_Provinciegebied">Provinciegebied</a>
-                              </td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               </section>
-            <a class="anchor" id="detail_class_BestuurlijkeGebieden_Gemeente"></a><section id="detail_class_BestuurlijkeGebieden_Gemeente">
-               <h6>   Gemeente</h6>
-               <a class="anchor" id="detail_attribute_BestuurlijkeGebieden_Gemeente_gemeentecode"></a><div class="deepheader" id="detail_attribute_BestuurlijkeGebieden_Gemeente_gemeentecode">
-                  <h7>Attribuutsoort details  <a href="#global_class_BestuurlijkeGebieden_Gemeente">Gemeente</a> gemeentecode</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>gemeentecode</td>
-                        </tr>
-                        <tr>
-                           <th>Definitie</th>
-                           <td>
-                              
-                              <p>Codering van een gemeente zoals deze door het CBS wordt gebruikt. </p>
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Toelichting</th>
-                           <td>Een inhoudelijke toelichting op de toepassing van het informatie-element.</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Kardinaliteit</th>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <th>Patroon</th>
-                           <td>De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat
-                              wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.</td>
-                        </tr>
-                        <tr>
-                           <th>Type</th>
-                           <td>
-                              Character­String
-                              </td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               <a class="anchor" id="detail_association_BestuurlijkeGebieden_Gemeente_bestuurde"></a><div class="deepheader" id="detail_association_BestuurlijkeGebieden_Gemeente_bestuurde">
-                  <h7>Relatiesoort details  <a href="#global_class_BestuurlijkeGebieden_Gemeente">Gemeente</a> bestuurt</h7>
-                  
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>bestuurt</td>
-                        </tr>
-                        <tr>
-                           <th>Kardinaliteit</th>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <th>Gerelateerd objecttype</th>
-                           <td>
-                              <a class="link" href="#global_class_BestuurlijkeGebieden_Gemeentegebied">Gemeentegebied</a>
-                              </td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               </section>
-            <a class="anchor" id="detail_class_BestuurlijkeGebieden_Provinciegebied"></a><section id="detail_class_BestuurlijkeGebieden_Provinciegebied">
-               <h6>   Provinciegebied</h6>
-               <a class="anchor" id="detail_attribute_BestuurlijkeGebieden_Provinciegebied_geometrie"></a><div class="deepheader" id="detail_attribute_BestuurlijkeGebieden_Provinciegebied_geometrie">
-                  <h7>Attribuutsoort details  <a href="#global_class_BestuurlijkeGebieden_Provinciegebied">Provinciegebied</a> geometrie</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>geometrie</td>
-                        </tr>
-                        <tr>
-                           <th>Definitie</th>
-                           <td>
-                              
-                              <p>Geometrische representatie van het gebied dat als Provincie is benoemd.</p>
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Toelichting</th>
-                           <td>Een inhoudelijke toelichting op de toepassing van het informatie-element.</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Kardinaliteit</th>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <th>Patroon</th>
-                           <td>De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat
-                              wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.</td>
-                        </tr>
-                        <tr>
-                           <th>Type</th>
-                           <td>
-                              <a class="link" href="#detail_class_BestuurlijkeGebieden_VlakOfMultivlak">Vlak of Multivlak</a>
-                              </td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               <a class="anchor" id="detail_association_BestuurlijkeGebieden_Provinciegebied_gerelateerdRijksgebied"></a><div class="deepheader" id="detail_association_BestuurlijkeGebieden_Provinciegebied_gerelateerdRijksgebied">
-                  <h7>Relatiesoort details  <a href="#global_class_BestuurlijkeGebieden_Provinciegebied">Provinciegebied</a> ligt in</h7>
-                  
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>ligt in</td>
-                        </tr>
-                        <tr>
-                           <th>Kardinaliteit</th>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <th>Gerelateerd objecttype</th>
-                           <td>
-                              <a class="link" href="#global_class_BestuurlijkeGebieden_Rijksgebied">Rijksgebied</a>
-                              </td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               </section>
-            <a class="anchor" id="detail_class_BestuurlijkeGebieden_Provincie"></a><section id="detail_class_BestuurlijkeGebieden_Provincie">
-               <h6>   Provincie</h6>
-               <a class="anchor" id="detail_attribute_BestuurlijkeGebieden_Provincie_provinciecode"></a><div class="deepheader" id="detail_attribute_BestuurlijkeGebieden_Provincie_provinciecode">
-                  <h7>Attribuutsoort details  <a href="#global_class_BestuurlijkeGebieden_Provincie">Provincie</a> provinciecode</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>provinciecode</td>
-                        </tr>
-                        <tr>
-                           <th>Definitie</th>
-                           <td>
-                              
-                              <p>Codering van een provincie zoals deze door het CBS wordt gebruikt.</p>
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Toelichting</th>
-                           <td>Een inhoudelijke toelichting op de toepassing van het informatie-element.</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Kardinaliteit</th>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <th>Patroon</th>
-                           <td>De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat
-                              wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.</td>
-                        </tr>
-                        <tr>
-                           <th>Type</th>
-                           <td>
-                              Character­String
-                              </td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               <a class="anchor" id="detail_association_BestuurlijkeGebieden_Provincie_bestuurde"></a><div class="deepheader" id="detail_association_BestuurlijkeGebieden_Provincie_bestuurde">
-                  <h7>Relatiesoort details  <a href="#global_class_BestuurlijkeGebieden_Provincie">Provincie</a> bestuurt</h7>
-                  
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>bestuurt</td>
-                        </tr>
-                        <tr>
-                           <th>Kardinaliteit</th>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <th>Gerelateerd objecttype</th>
-                           <td>
-                              <a class="link" href="#global_class_BestuurlijkeGebieden_Provinciegebied">Provinciegebied</a>
-                              </td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               </section>
-            <a class="anchor" id="detail_class_BestuurlijkeGebieden_OpenbaarLichaam"></a><section id="detail_class_BestuurlijkeGebieden_OpenbaarLichaam">
-               <h6>   Openbaar Lichaam</h6>
-               <a class="anchor" id="detail_attribute_BestuurlijkeGebieden_OpenbaarLichaam_formeleNaam"></a><div class="deepheader" id="detail_attribute_BestuurlijkeGebieden_OpenbaarLichaam_formeleNaam">
-                  <h7>Attribuutsoort details  <a href="#global_class_BestuurlijkeGebieden_OpenbaarLichaam">Openbaar Lichaam</a> formele naam</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>formele naam</td>
-                        </tr>
-                        <tr>
-                           <th>Definitie</th>
-                           <td>
-                              
-                              <p>Naam van een gemeente zoals formeel benoemd door het bevoegd gezag.</p>
-                              
-                              <p>Naam van een provincie zoals formeel benoemd door het bevoegd gezag </p>
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Toelichting</th>
-                           <td>Een inhoudelijke toelichting op de toepassing van het informatie-element.</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Kardinaliteit</th>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <th>Patroon</th>
-                           <td>Niet van toepassing op het Rijk</td>
-                        </tr>
-                        <tr>
-                           <th>Type</th>
-                           <td>
-                              Character­String
-                              </td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               </section>
-            
-            <a class="anchor" id="detail_class_BestuurlijkeGebieden_RegistratieveRuimte"></a><section id="detail_class_BestuurlijkeGebieden_RegistratieveRuimte">
-               <h6>   Registratieve ruimte</h6>
-               <a class="anchor" id="detail_attribute_BestuurlijkeGebieden_RegistratieveRuimte_status"></a><div class="deepheader" id="detail_attribute_BestuurlijkeGebieden_RegistratieveRuimte_status">
-                  <h7>Attribuutsoort details  <a href="#global_class_BestuurlijkeGebieden_RegistratieveRuimte">Registratieve ruimte</a> status</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>status</td>
-                        </tr>
-                        <tr>
-                           <th>Herkomst</th>
-                           <td>IMDi­SGeo</td>
-                        </tr>
-                        <tr>
-                           <th>Definitie</th>
-                           <td>
-                              
-                              <p>Fase van de levenscyclus waarin een bestuurlijk gebied zich bevindt.</p>
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Herkomst definitie</th>
-                           <td>EMSO</td>
-                        </tr>
-                        <tr>
-                           <th>Toelichting</th>
-                           <td>Een inhoudelijke toelichting op de toepassing van het informatie-element.</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Kardinaliteit</th>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <th>Patroon</th>
-                           <td>De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat
-                              wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.</td>
-                        </tr>
-                        <tr>
-                           <th>Type</th>
-                           <td>
-                              <a class="link" href="#detail_class_BestuurlijkeGebieden_StatusRegistratieveRuimte">Status registratieve ruimte</a>
-                              </td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               </section>
             </section>
          
          
@@ -3698,7 +3770,7 @@
 </section>
 <section id="lis" class="normative">
    <h2>Inhoud van waardenlijsten</h2>
-   <!--MIMCM-IMSOR-CM-1.0.0-0-20210512-20220511-120915 imvertor 1.65.4-->
+   <!--MIMCM-IMSOR-CM-1.0.0-0-20210512-20220511-160457 imvertor 1.65.4-->
    <section id="">
       <h3>Referentielijst inhoud   </h3>
    </section>
