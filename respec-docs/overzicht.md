@@ -25,6 +25,8 @@ Dit onderscheid werkt door bij alle overheden: Rijk, provincies, gemeenten, wate
 ### Bestuurlijk gebied
 Het grondgebied waarover het bestuursorgaan haar invloed uitoefent heet het *bestuurlijk gebied*. Dit gebied heeft zelf geen naam, maar alleen een ruimtelijke aanduiding in de vorm van een geometrie. De naam waarmee men in het dagelijkse spraakgebruik het grondgebied associeert, is de formele naam van het openbare lichaam, bijvoorbeeld 'Apeldoorn' of 'Zeeland'.
 
+<aside class="issue">Relatie tussen <code>Bestuurlijk Gebied</code> en <code>NEN3610</code> toelichten.</aside>
+
 ### Openbaar lichaam
 
 <aside class="note">Onderstaande tekst editen
