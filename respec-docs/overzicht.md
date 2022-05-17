@@ -31,7 +31,7 @@ Het grondgebied waarover het bestuursorgaan haar invloed uitoefent heet het *bes
 
 In de bestuurlijke indeling van het Koninkrijk der Nederlanden is een openbaar lichaam een overheid die bepaalde taken uitvoert binnen een bepaald _ruimtelijk_ gebied óf op een bepaald _inhoudelijk_ gebied (bron: [Wikipedia](https://nl.wikipedia.org/wiki/Openbaar_lichaam).  De belangrijkste openbare lichamen zijn het Rijk, de provincies, de gemeenten en de waterschappen.
 
-Naast deze bekende openbare lichamen zijn er ook minder bekende, zoals wanneer voor de heffing of de invordering van gemeentelijke belastingen een gemeenschappelijke regeling is getroffen en bij die regeling een openbaar lichaam is ingesteld. Dat betekent dat een aantal gemeenten samenwerken om de gemeentelijke belastingen binnen te halen en daarvoor een gezamenlijke organisatie hebben opgericht.
+Naast deze bekende openbare lichamen zijn er ook minder bekende, zoals wanneer voor de heffing of de invordering van gemeentelijke belastingen een gemeenschappelijke regeling is getroffen en bij die regeling een openbaar lichaam is ingesteld. Dat betekent dat een aantal gemeenten samenwerken om de gemeentelijke belastingen binnen te halen en daarvoor een gezamenlijke organisatie hebben opgericht. Het informatiemodel laat deze typen openbare lichamen buiten beschouwing.
 
 Openbaar lichaam is een bruikbare term als je bv de gemeente als _volledige bestuurlijke organisatie_ wilt benoemen. Overigens is een gemeente, net als een provincie en een waterschap, ook nog een (publiekrechtelijke) rechtspersoon.
 
