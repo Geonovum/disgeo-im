@@ -37,8 +37,8 @@ Openbaar lichaam is een bruikbare term als je bv de gemeente als _volledige best
 
 In wetgeving komt de wordt een openbaar lichaam weliswaar niet gedefinieerd, maar het komt er wel in voor. Uit verschillende wetsartikelen valt af te leiden wat ermee bedoeld wordt (zie: voorbeeld).
 
-<aside class="example">Onderstaande tekst editen
-Uit artikel 6 in combinatie met de artikelen 1 en 2 van de Bekendmakingswet, valt af te leiden wat een openbaar lichaam is: "Algemeen verbindende voorschriften, (...) vastgesteld door een bestuursorgaan dat behoort tot een van de in artikel 2, eerste tot en met vierde lid, genoemde openbare lichamen, of de in artikel 2, vijfde lid, genoemde openbare lichamen, (...), worden bekendgemaakt door plaatsing in het door dat openbaar lichaam, (...) uitgegeven publicatieblad."
+<aside class="example">
+Uit <strong>artikel 6</strong> in combinatie met de artikelen 1 en 2 van de <strong>Bekendmakingswet</strong>, valt af te leiden wat een openbaar lichaam is: "<i>Algemeen verbindende voorschriften</i>, (...) <i>vastgesteld door een bestuursorgaan dat behoort tot een van de in artikel 2, eerste tot en met vierde lid, genoemde openbare lichamen, of de in artikel 2, vijfde lid, genoemde openbare lichamen,</i> (...), <i>worden bekendgemaakt door plaatsing in het door dat openbaar lichaam,</i> (...) <i>uitgegeven publicatieblad</i>."
 </aside>
 
 ### Bestuursorgaan
