@@ -29,25 +29,24 @@ Het grondgebied waarover het bestuursorgaan haar invloed uitoefent heet het *bes
 
 ### Openbaar lichaam
 
-In wetgeving komt de wordt de term weliswaar niet gedefinieerd, maar het komt er wel in voor. Uit verschillende wetsartikelen valt af te leiden wat ermee bedoeld wordt (zie: voorbeeld).
-
-<aside class="note">Onderstaande tekst editen
-Uit artikel 6 in combinatie met de artikelen 1 en 2 van de Bekendmakingswet, valt af te leiden wat een openbaar lichaam is: "Algemeen verbindende voorschriften, (...) vastgesteld door een bestuursorgaan dat behoort tot een van de in artikel 2, eerste tot en met vierde lid, genoemde openbare lichamen, of de in artikel 2, vijfde lid, genoemde openbare lichamen, (...), worden bekendgemaakt door plaatsing in het door dat openbaar lichaam, (...) uitgegeven publicatieblad."
-</aside>
-
-In de bestuurlijke indeling van het Koninkrijk der Nederlanden is een openbaar lichaam een overheid die bepaalde taken uitvoert binnen een bepaald _ruimtelijk_ gebied óf op een bepaald _inhoudelijk_ gebied (wikipedia).  De belangrijkste openbare lichamen zijn het Rijk, de provincies, de gemeenten en de waterschappen.
+In de bestuurlijke indeling van het Koninkrijk der Nederlanden is een openbaar lichaam een overheid die bepaalde taken uitvoert binnen een bepaald _ruimtelijk_ gebied óf op een bepaald _inhoudelijk_ gebied (bron: [Wikipedia](https://nl.wikipedia.org/wiki/Openbaar_lichaam).  De belangrijkste openbare lichamen zijn het Rijk, de provincies, de gemeenten en de waterschappen.
 
 Naast deze bekende openbare lichamen zijn er ook minder bekende, zoals wanneer voor de heffing of de invordering van gemeentelijke belastingen een gemeenschappelijke regeling is getroffen en bij die regeling een openbaar lichaam is ingesteld. Dat betekent dat een aantal gemeenten samenwerken om de gemeentelijke belastingen binnen te halen en daarvoor een gezamenlijke organisatie hebben opgericht.
 
-Openbaar lichaam is een bruikbare term als je bv de gemeente als volledige bestuurlijke organisatie wilt benoemen. Overigens is een gemeente, net als een provincie en een waterschap, ook nog een (publiekrechtelijke) rechtspersoon.
+Openbaar lichaam is een bruikbare term als je bv de gemeente als _volledige bestuurlijke organisatie_ wilt benoemen. Overigens is een gemeente, net als een provincie en een waterschap, ook nog een (publiekrechtelijke) rechtspersoon.
+
+In wetgeving komt de wordt een openbaar lichaam weliswaar niet gedefinieerd, maar het komt er wel in voor. Uit verschillende wetsartikelen valt af te leiden wat ermee bedoeld wordt (zie: voorbeeld).
+
+<aside class="example">Onderstaande tekst editen
+Uit artikel 6 in combinatie met de artikelen 1 en 2 van de Bekendmakingswet, valt af te leiden wat een openbaar lichaam is: "Algemeen verbindende voorschriften, (...) vastgesteld door een bestuursorgaan dat behoort tot een van de in artikel 2, eerste tot en met vierde lid, genoemde openbare lichamen, of de in artikel 2, vijfde lid, genoemde openbare lichamen, (...), worden bekendgemaakt door plaatsing in het door dat openbaar lichaam, (...) uitgegeven publicatieblad."
+</aside>
 
 ### Bestuursorgaan
-Bestuursorgaan is de term voor een deel daarvan. Dan heb je het over de gemeenteraad, het college van burgemeester en wethouders en de burgemeester. In artikel 6 Bmw gaat het om het publicatieblad van bv de gemeente, niet om het publicatieblad van de gemeenteraad.
+Bestuursorgaan is de term voor een deel van een openbaar lichaam, bijvoorbeeld: de gemeenteraad, het college van burgemeester en wethouders en de burgemeester. In het informatiemodel komt deze term niet voor.
 
 ### Bestuurslaag
 
-Dit is de term voor de verzameling van alle gemeenten, de verzameling van alle provincies, de verzameling van alle waterschappen of de verzameling van alle ministeries.
-
+Dit is de term voor de verzameling van alle gemeenten, de verzameling van alle provincies, de verzameling van alle waterschappen of de verzameling van alle ministeries. Een bestuurslaag wordt niet als apart element in het informatiemodel onderscheidden.
 
 ### Gemeente en gemeentegebied
 Het Europese deel van Nederland bestaat uit per 24 maart 2022 uit [344 gemeenten](https://www.rijksoverheid.nl/onderwerpen/gemeenten/gemeentelijke-herindeling). Het model onderscheidt de gemeente als het openbare lichaam dat het bestuursorgaan vormt van het haar toebehorende territorium: het gemeentegebied.
