@@ -126,10 +126,18 @@ var respecConfig =
       {
         title:      "Wat doen waterschappen?",
         href:       "https://www.waterschappen.nl/wat-doen-de-waterschappen/",
-        // status:     "versie van de publicatie",
-        publisher:  "waterschappen",
-        company:    "waterschappen",
-    },
+        publisher:  "De Unie van Waterschappen",
+        company:    "De Unie van Waterschappen",
+        date:       "2022-05-18", 
+      },
+    "Waterschap-2":
+      {
+        title:      "Openbaar Lichaam: waterschap",
+        href:       "https://www.rijksoverheid.nl/onderwerpen/waterschappen",
+        publisher:  "Rijksoverheid",
+        company:    "Rijksoverheid",
+        date:       "2022-05-18", 
+      },
   // {
   //   "CITAAT":
   //     {
