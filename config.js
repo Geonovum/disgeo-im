@@ -154,6 +154,14 @@ var respecConfig =
         company:    "Rijksoverheid",
         date:       "2022-05-18", 
       },
+    "Wikipedia":
+      {
+        title:      "Definitie: openbaar lichaam",
+        href:       "https://nl.wikipedia.org/wiki/Openbaar_lichaam",
+        publisher:  "Wikipedia",
+        company:    "Wikipedia",
+        date:       "2022-05-18", 
+      },
   
   // {
   //   "CITAAT":
