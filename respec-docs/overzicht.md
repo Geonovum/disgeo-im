@@ -9,6 +9,23 @@ Het informatiemodel Samenhangende Objectenregistratie  zorgt ervoor dat alle geg
 
 <aside class="issue">Deze omschrijving graag verder aanvullen. Het doel is om de basisregistraties in samenhang te kunnen bevragen.</aside>
 
+## Modelleertechnische uitgangspunten
+
+De volgende documenten zijn gehanteerd als uitgangspunt voor het informatiemodel DiSGeo:
+
+ - Metamodel Informatie Modellering 1.1.1 [[MIM11]]
+ - Raamwerk van geo-standaarden 3.0 [[raamwerk-geo]] (https://www.geonovum.nl/uploads/documents/Raamwerk%20Geo-Standaarden%20v3.0.pdf)
+ - Basismodel Geo-informatie [[nen3610-2022]]
+ - ISO-19107-2003: Geographic information – Spatial schema [[iso-19107-2003]]
+
+<aside class="issue">
+TODO: 
+
+Bibliografische referenties naar MIM, Raamwerk van geo-standaarden en NEN3610 moeten nog in `localBiblio` worden opgenomen.
+
+Aanvullen met oa Modelleerprincipes, EMSO. 
+</aside>
+
 ## Bestuurlijke gebieden
 Bij het modelleren van bestuurlijke gebieden, bleek dat er een belangrijke relatie is tussen een [bestuurlijk gebied](https://geonovum.github.io/disgeo-im/#global_class_BestuurlijkeGebieden_BestuurlijkGebied) en een [openbaar lichaam](https://geonovum.github.io/disgeo-im/#global_class_BestuurlijkeGebieden_OpenbaarLichaam). Een bestuurlijk gebied is namelijk niet hetzelfde als het voor het gebied verantwoordelijke bestuursorgaan. Het gebied en het bestuursorgaan zijn weliswaar aan elkaar gerelateerd, maar hebben hun eigen unieke eigenschappen. Het model maakt dit verschil zichtbaar; het onderscheidt bestuurlijke gebieden apart van openbare lichamen.
 
@@ -52,13 +69,3 @@ Naast dit bestuurlijke grondgebied, bestaan er nog ...
 ### Veiligheidsregio's
 
 <aside class="note">'<i>Nederland is verdeeld in 25 veiligheidsregio’s. Iedere veiligheidsregio zet zich in voor de veiligheid van de inwoners en bezoekers van dat gebied. Zo zorgt de veiligheidsregio ervoor dat er een brandweer is. Ook maakt de veiligheidsregio afspraken over de aanpak van rampen en crises.  Een goede samenwerking tussen hulpverleningsdiensten, overheden, bedrijven en burgers is daarbij belangrijk.</i>'</aside>
-
-## Normatieve referenties
-
-De volgende documenten zijn gehanteerd bij de totstandkoming van dit document:
-
- - [Metamodel Informatie Modellering 1.1.1](https://docs.geostandaarden.nl/mim/mim/)
- - [Raamwerk van geo-standaarden 3.0](https://www.geonovum.nl/uploads/documents/Raamwerk%20Geo-Standaarden%20v3.0.pdf)
- - ~~[NEN 3610:2011/A1:2016 Basismodel Geo-informatie](https://geonovum.github.io/bmgi/docs/#dataproductspecificatie-nl)~~
- - [ISO-19107-2003: Geographic information – Spatial schema](url)
-
