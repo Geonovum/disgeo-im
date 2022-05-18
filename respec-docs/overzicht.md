@@ -65,7 +65,8 @@ Het Rijk, ook wel de Rijksoverheid, voert de wettelijke taken uit op nationaal n
 <aside class="note">Aanscherpen/aanvullen</aside>
 
 ### Waterschappen
-<aside class="note">Tekst schrijven</aside>
+Net als de Rijksoverheid, de provincies en de gemeenten, is een waterschap een overheidsorganisatie. Het zorgt voor het waterbeheer in een bepaald gebied. Tot haar taken behoren het beschermen tegen overstromingen, het zorgen voor schoon water in sloten, rivieren, meren en beken én het beheren van de hoeveelheid water. De verzameling van bestuursorganen van een waterschap, wordne in dit model aangeduid met het openbare lichaam 'Waterschap'. Het grondgebied waarover het waterschap haar bestuur uitoefent, heet in het model het 'Waterschapsgebied'. (Bron: [Waterschappen](https://www.waterschappen.nl/wat-doen-de-waterschappen/)/[Rijksoverheid](https://www.rijksoverheid.nl/onderwerpen/waterschappen
+))
 
 ### Veiligheidsregio's
 
