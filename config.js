@@ -120,8 +120,16 @@ var respecConfig =
   
   //-- localBiblio: lokale bibliografie, voor verwijzigingen
   //-- NB: kijk eerst naar de beschikbare www.specref.org voor verwijziging 
-  // localBiblio: 
-  // {
+  localBiblio: 
+  {
+  "EMSO":
+  {
+    title:      "DiS Geo : Eisen aan model samenhangende objectenregistratie",
+    href:       "https://docs.geostandaarden.nl/disgeo/emso/",
+    status:     "Versie ter vaststelling",
+    date:       "2021-02-16",
+    publisher:  "Geonovum",
+  },
   //   "CITAAT":
   //     {
   //       title:      "Titel van het Citaat",
@@ -158,7 +166,7 @@ var respecConfig =
   //     publisher: "NEN",
   //     date: "2011-03-01"
   //   },
-  // },
+  },
   postProcess:[custGHPG],   //-- Optioneel voor een multi document repository
 
   //-- Voor dit blok geldt: alleen als er eerdere versies zijn en altijd beiden aan/uit! 
