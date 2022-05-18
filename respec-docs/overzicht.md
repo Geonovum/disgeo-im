@@ -66,10 +66,6 @@ De volgende documenten zijn gehanteerd bij de totstandkoming van dit document:
  - ~~[NEN 3610:2011/A1:2016 Basismodel Geo-informatie](https://geonovum.github.io/bmgi/docs/#dataproductspecificatie-nl)~~
  - [ISO-19107-2003: Geographic information – Spatial schema](url)
 
-## Mapping met INSPIRE
-
-<aside class="note">Is er sprake van een INSPIRE mapping? Is hierover al informatie beschikbaar?</aside>
-
 ## Algemene Termen en definities
 
 ### Bestuurlijke gebieden
@@ -142,6 +138,3 @@ dataspecificatie.
 | **INSPIRE**     | Infrastructure For Spatial Information In Europe      |
 
 <aside class="issue">Verwijzen naar algemeen begrippenkader op begrippen.geostandaarden.nl</aside>
-
-## Gegevensuitwisseling met GML
-...

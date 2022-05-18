@@ -122,6 +122,14 @@ var respecConfig =
   //-- NB: kijk eerst naar de beschikbare www.specref.org voor verwijziging 
   localBiblio: 
   {
+    "EMSO":
+  {
+    title:      "DiS Geo : Eisen aan model samenhangende objectenregistratie",
+    href:       "https://docs.geostandaarden.nl/disgeo/emso/",
+    status:     "Versie ter vaststelling",
+    date:       "2021-02-16",
+    publisher:  "Geonovum",
+  },
     "Waterschap-1":
       {
         title:      "Wat doen waterschappen?",

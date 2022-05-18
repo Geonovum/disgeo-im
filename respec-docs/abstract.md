@@ -1,0 +1,3 @@
+Dit document beschrijft het informatiemodel voor de samenhangende objectenregistratie van DiSGeo. Het informatiemodel wordt stap voor stap per thema ontwikkeld, maar beschrijft uiteindelijk het geheel aan geo-informatie die in samenhang beschikbaar moet komen. 
+
+<aside class="issue">TODO betere samenvatting maken. Moet een korte tekst zijn, liefst maar één alinea, die beschrijft wat er in het document staat.</aside>
