@@ -138,6 +138,15 @@ var respecConfig =
         company:    "Rijksoverheid",
         date:       "2022-05-18", 
       },
+    "Veiligheidsregio":
+      {
+        title:      "Openbaar Lichaam: waterschap",
+        href:       "https://www.rijksoverheid.nl/onderwerpen/veiligheidsregios-en-crisisbeheersing/veiligheidsregios",
+        publisher:  "Rijksoverheid",
+        company:    "Rijksoverheid",
+        date:       "2022-05-18", 
+      },
+  
   // {
   //   "CITAAT":
   //     {
