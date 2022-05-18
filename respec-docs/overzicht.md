@@ -55,7 +55,7 @@ Naast dit bestuurlijke grondgebied, bestaan er nog ...
 
 ### Veiligheidsregio's
 
-<aside class="note">'<i>Nederland is verdeeld in 25 veiligheidsregio’s. Iedere veiligheidsregio zet zich in voor de veiligheid van de inwoners en bezoekers van dat gebied. Zo zorgt de veiligheidsregio ervoor dat er een brandweer is. Ook maakt de veiligheidsregio afspraken over de aanpak van rampen en crises.  Een goede samenwerking tussen hulpverleningsdiensten, overheden, bedrijven en burgers is daarbij belangrijk.</i>'</aside>
+Nederland is opgedeeld in 25 veiligheidsregio's. Zij zorgen voor de veiligheid van de inwoners én bezoekers van het gebied. Dit doen zij door te zorgen voor de aanwezigheid van hulpverleningsdiensten, evenals het maken van afspraken over de aanpak van rampen en crises. Een 'Veiligheidsregio' is een openbaarlichaam, met het 'Veiligheidsregiogebied' als haar bestuurlijk gebied.
 
 ## Normatieve referenties
 
