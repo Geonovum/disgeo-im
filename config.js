@@ -120,7 +120,16 @@ var respecConfig =
   
   //-- localBiblio: lokale bibliografie, voor verwijzigingen
   //-- NB: kijk eerst naar de beschikbare www.specref.org voor verwijziging 
-  // localBiblio: 
+  localBiblio: 
+  {
+    "Waterschap-1":
+      {
+        title:      "Wat doen waterschappen?",
+        href:       "https://www.waterschappen.nl/wat-doen-de-waterschappen/",
+        // status:     "versie van de publicatie",
+        publisher:  "waterschappen",
+        company:    "waterschappen",
+    },
   // {
   //   "CITAAT":
   //     {
@@ -158,7 +167,7 @@ var respecConfig =
   //     publisher: "NEN",
   //     date: "2011-03-01"
   //   },
-  // },
+  },
   postProcess:[custGHPG],   //-- Optioneel voor een multi document repository
 
   //-- Voor dit blok geldt: alleen als er eerdere versies zijn en altijd beiden aan/uit! 
