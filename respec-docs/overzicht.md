@@ -4,16 +4,12 @@
 
 IMDiSGeo - Dataspecificatie voor Doorontwikkeling in Samenhang van de Geobasisregistraties (DiSGeo)
 
-## Definitie
-<aside class="note">Hebben we deze kop nodig? Liefst verwijzen naar begrippenkader</aside>
+## Algemene beschrijving van het DiSGeo informatiemodel
+Het informatiemodel Samenhangende Objectenregistratie  zorgt ervoor dat alle gegevens die de geo-basisregistraties beschikbaar zijn eenduidig interpreteerbaar zijn en in samenhang met elkaar kunnen worden gebruikt. 
 
-Het informatiemodel Samenhangende Objectenregistratie  zorgt ervoor dat alle gegevens die de voorziening beschikbaar stelt eenduidig interpreteerbaar zijn en op een standaard manier kunnen worden uitgewisseld met andere systemen.
+<aside class="issue">Deze omschrijving graag verder aanvullen. Het doel is om de basisregistraties in samenhang te kunnen bevragen.</aside>
 
-<aside class="issue">Deze omschrijving dekt de lading niet. Graag verder aanvullen. Het doel is om de basisregistraties in samenhang te kunnen bevragen.</aside>
-
-<aside class="note">Suggestie: bovenstaande tekst verplaatsen naar beschrijving</aside>
-
-## Beschrijving
+## Bestuurlijke gebieden
 Bij het modelleren van bestuurlijke gebieden, bleek dat er een belangrijke relatie is tussen een [bestuurlijk gebied](https://geonovum.github.io/disgeo-im/#global_class_BestuurlijkeGebieden_BestuurlijkGebied) en een [openbaar lichaam](https://geonovum.github.io/disgeo-im/#global_class_BestuurlijkeGebieden_OpenbaarLichaam). Een bestuurlijk gebied is namelijk niet hetzelfde als het voor het gebied verantwoordelijke bestuursorgaan. Het gebied en het bestuursorgaan zijn weliswaar aan elkaar gerelateerd, maar hebben hun eigen unieke eigenschappen. Het model maakt dit verschil zichtbaar; het onderscheidt bestuurlijke gebieden apart van openbare lichamen.
 
 Dat het model dit onderscheid maakt, wil niet zeggen dat openbare lichamen vanzelfsprekend onderdeel zijn van het uiteindelijke model. Het informatiemodel brengt dit onderscheid in de eerste plaats voor het voetlicht. Of, en zo ja, op welke manier openbare lichamen in het model belanden, is onderdeel van discussie.
@@ -55,7 +51,7 @@ Naast dit bestuurlijke grondgebied, bestaan er nog ...
 
 ### Veiligheidsregio's
 
-Nederland is opgedeeld in 25 veiligheidsregio's. Zij zorgen voor de veiligheid van de inwoners én bezoekers van het gebied. Dit doen zij door te zorgen voor de aanwezigheid van hulpverleningsdiensten, evenals het maken van afspraken over de aanpak van rampen en crises. Een 'Veiligheidsregio' is een openbaarlichaam, met het 'Veiligheidsregiogebied' als haar bestuurlijk gebied.
+<aside class="note">'<i>Nederland is verdeeld in 25 veiligheidsregio’s. Iedere veiligheidsregio zet zich in voor de veiligheid van de inwoners en bezoekers van dat gebied. Zo zorgt de veiligheidsregio ervoor dat er een brandweer is. Ook maakt de veiligheidsregio afspraken over de aanpak van rampen en crises.  Een goede samenwerking tussen hulpverleningsdiensten, overheden, bedrijven en burgers is daarbij belangrijk.</i>'</aside>
 
 ## Normatieve referenties
 
@@ -66,75 +62,3 @@ De volgende documenten zijn gehanteerd bij de totstandkoming van dit document:
  - ~~[NEN 3610:2011/A1:2016 Basismodel Geo-informatie](https://geonovum.github.io/bmgi/docs/#dataproductspecificatie-nl)~~
  - [ISO-19107-2003: Geographic information – Spatial schema](url)
 
-## Algemene Termen en definities
-
-### Bestuurlijke gebieden
-
-<aside class="issue">Verwijzen naar <a href="https://begrippen.geostandaarden.nl/sor/nl/">DiSGeo thesaurus</aside>
-
-<aside class="note">Let op: de term "*bestuurlijk gebied*" ontbreekt op dit moment nog.</aside>
-
-| **Termen**                       | **Definities**                                                           |
-|----------------------------------|--------------------------------------------------------------------------|
-| **Bestuurlijk gebied**           | ... | 
-| **Gemeente**                     | ... | 
-| **Gemeentegebied**               | ... | 
-| **Openbaar lichaam**             | ... | 
-| **Registratieve ruimte**         | ... |
-| **Provincie**                    | ... |
-| **Provinciegebied**              | ... |
-| **Rijk**                         | ... |
-| **Rijksgebied**                  | ... |
-
-### Informatiemodeldomein
-
-<aside class="issue">Verwijzen naar <a href="https://begrippen.geostandaarden.nl/nen3610/nl/"> NEN3610 thesaurus</a>.</aside>
-
-| **Termen**                       | **Definities**                                                           |
-|----------------------------------|--------------------------------------------------------------------------|
-| **Annotatie**                    | Elke toevoeging op een kaartbeeld voor verduidelijking                                                                                                                                                                     |
-| **Applicatieschema**             | Informatiemodel dat gegevens beschrijft die worden gebruikt door een of meer applicaties.                                                                                                                                  |
-| **Relatie**                      | Semantische relatie tussen twee of meer geo-objecten die samenhang tussen hun instanties weergeeft.                                                                                                                        |
-| **Attribuutsoort**               | Kenmerk van een geo-object.                                                                                                                                                                                                |
-| **Attribuutwaarde**              | Waarde die een attribuutsoort aanneemt.                                                                                                                                                                                    |
-| **Coördinaat**                   | Getal in een sequentie van n getallen om de positie van een punt in een n-dimensionale ruimte te bepalen.                                                                                                                  |
-| **Coördinaatreferentiesysteem**  | Coördinaatsysteem dat aan een object is gerelateerd door een datum.                                                                                                                                                        |
-| **Coördinaatsysteem**            | Set van wiskundige regels voor het toekennen van coördinaten aan punten.                                                                                                                                                   |
-| **Datatype**                     | Een beschrijving van de structuur waaraan een waarde, oftewel de data zelf, aan moet voldoen.                                                                                                                              |
-| **Diepte**                       | Afstand van een punt tot een gekozen referentievlak neerwaarts gemeten langs een lijn welke loodrecht op dat referentievlak staat.                                                                                         |
-| **Domeinmodel**                  | Formele definitie van een subset van objecten, attributen, relaties en regels in een bepaald domein.                                                                                                                       |
-| **Geo-informatie**               | Informatie met een directe of indirecte referentie naar een plaats ten opzichte van de aarde (bijvoorbeeld ten opzichte van het aardoppervlak) OPMERKING: Geo-informatie is synoniem aan geografische informatie.          |
-| **Geo-object**                   | Abstractie van een fenomeen in de werkelijkheid dat direct of indirect is geassocieerd met een locatie relatief ten opzichte van de aarde. (bijvoorbeeld ten opzichte van het aardoppervlak)                               |
-| **Georeferentie**                | Locatie van een ruimtelijk object vastgelegd in een ruimtelijk referentiesysteem.                                                                                                                                          |
-| **Informatiemodel**              | Formele definitie van objecten, attributen, relaties en regels in een bepaald domein. OPMERKING: Domein is in dit verband: een kennisgebied of activiteit gekarakteriseerd door een verzameling van concepten en begrippen |
-| **Instantie**                    | Benoemd, identificeerbaar object uit een objecttype.                                                                                                                                                                       |
-| **Keuze**                        | Een keuze tussen twee attribuutsoorten zoals bedoeld in het MIM.                                                                                                                                                           |
-| **Label**                        | Tekst of getal dat een eigenschap omschrijft of kwantificeert en als annotatie op een kaartbeeld wordt afgebeeld                                                                                                           |
-| **Namespace**                    | Collectie van namen die in XML documenten gebruikt worden als objecttype- en attribuutsoortnamen OPMERKING: Een namespace wordt geïdentificeerd door een URI.                                                              |
-| **Objecttype**                   | Verzameling van objecten met dezelfde eigenschappen. OPMERKING: Ook wel feature class genoemd.                                                                                                                             |
-| **Rasterformaat**                | Representatie van beeld middel een gewoonlijk rechthoekig patroon van parallelle lijnen.                                                                                                                                   |
-| **Registratie**                  | Op nationaal niveau geïdentificeerde en erkende gegevensverzameling. OPMERKING: Een basisregistratie is een registratie.                                                                                                   |
-| **Representatie**                | Inhoudelijk vastleggen van de werkelijkheid. OPMERKING: Het informatiemodel is een representatie van de werkelijkheid.                                                                                                     |
-| **Ruimtelijk referentiesysteem** | Model (systeem) voor identificatie van een positie (locatie) in de werkelijkheid OPMERKING: Identificatie van een positie kan door coördinaten (directe locatie) en door geografische identificatoren (indirecte locatie). |
-| **Vectorformaat**                | Representatie van geometrie middels geometrische primitieven.                                                                                                                                                              |
-| **Waardelijst**                  | Lijst van waarden.                                                                                                                                                                                                         |
-| **Werkelijkheid**                | Beeld van de echte of hypothetische wereld die alles van belang omvat.                                                                                                                                                     |
-|                                  |                                                                                                                                          
-
-## Algemene Symbolen en afkortingen
-
-
-Lijst van afkortingen en acroniemen die worden gehanteerd in deze
-dataspecificatie.
-
-| **Afkortingen** | **Betekenissen**                                      |
-|-----------------|-------------------------------------------------------|
-| **GML**         | Geography Markup Language                             |
-| **MIM**         | Metamodel Informatie Modellering                      |
-| **UML**         | Unified Modeling Language                             |
-| **WFS**         | Web Feature Service                                   |
-| **XML**         | Extensible Markup Language                            |
-| **BAG**         | Basisregistratie Adressen en Gebouwen                 |
-| **INSPIRE**     | Infrastructure For Spatial Information In Europe      |
-
-<aside class="issue">Verwijzen naar algemeen begrippenkader op begrippen.geostandaarden.nl</aside>
