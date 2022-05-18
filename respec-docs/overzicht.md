@@ -70,7 +70,7 @@ Net als de Rijksoverheid, de provincies en de gemeenten, is een waterschap een o
 
 ### Veiligheidsregio's
 
-<aside class="note">Tekst schrijven</aside>
+<aside class="note">'_Nederland is verdeeld in 25 veiligheidsregio’s. Iedere veiligheidsregio zet zich in voor de veiligheid van de inwoners en bezoekers van dat gebied. Zo zorgt de veiligheidsregio ervoor dat er een brandweer is. Ook maakt de veiligheidsregio afspraken over de aanpak van rampen en crises.  Een goede samenwerking tussen hulpverleningsdiensten, overheden, bedrijven en burgers is daarbij belangrijk._' </aside>
 
 ## Normatieve referenties
 
