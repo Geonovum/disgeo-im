@@ -48,29 +48,14 @@ Bestuursorgaan is de term voor een deel van een openbaar lichaam, bijvoorbeeld: 
 
 Dit is de term voor de verzameling van alle gemeenten, de verzameling van alle provincies, de verzameling van alle waterschappen of de verzameling van alle ministeries. Een bestuurslaag wordt niet als apart element in het informatiemodel onderscheidden.
 
-### Gemeente en gemeentegebied
-Het Europese deel van Nederland bestaat uit per 24 maart 2022 uit [344 gemeenten](https://www.rijksoverheid.nl/onderwerpen/gemeenten/gemeentelijke-herindeling). Het model onderscheidt de gemeente als het openbare lichaam dat het bestuursorgaan vormt van het haar toebehorende territorium: het gemeentegebied.
-
-<aside class="note">Aanscherpen/aanvullen</aside>
-
-### Provincie en provinciegebied
-Het Europese deel van Nederland bestaat uit 12 provincies. Zij vormen de bestuurslaag tussen de rijksoverheid en de Nederlandse gemeenten. De bestuurslaag duidt het informatiemodel aan met 'provincie'. Het gebied waarover de provincie het bestuur uitoefent heet het provinciegebied.
-
-<aside class="note">Aanscherpen/aanvullen</aside>
-
-### Rijk en rijksgebied
-
-Het Rijk, ook wel de Rijksoverheid, voert de wettelijke taken uit op nationaal niveau. De bestuurslaag 'Rijk' bestaat uit alle ministeries, de daartoe behorende uitvoerings uitvoeringsorganisaties, inspecties en Hoge colleges van Staat. Het grondgebied waarover de het Rijk regeert is in het model het Rijksgebied.
-
-<aside class="note">Aanscherpen/aanvullen</aside>
-
 ### Waterschappen
-Net als de Rijksoverheid, de provincies en de gemeenten, is een waterschap een overheidsorganisatie. Het zorgt voor het waterbeheer in een bepaald gebied. Tot haar taken behoren het beschermen tegen overstromingen, het zorgen voor schoon water in sloten, rivieren, meren en beken én het beheren van de hoeveelheid water. De verzameling van bestuursorganen van een waterschap, wordne in dit model aangeduid met het openbare lichaam 'Waterschap'. Het grondgebied waarover het waterschap haar bestuur uitoefent, heet in het model het 'Waterschapsgebied'. (Bron: [Waterschappen](https://www.waterschappen.nl/wat-doen-de-waterschappen/)/[Rijksoverheid](https://www.rijksoverheid.nl/onderwerpen/waterschappen
-))
+Net als de Rijksoverheid, de provincies en de gemeenten, is een waterschap een overheidsorganisatie. Het zorgt voor het waterbeheer in een bepaald gebied. Tot haar taken behoren het beschermen tegen overstromingen, het zorgen voor schoon water in sloten, rivieren, meren en beken én het beheren van de hoeveelheid water. De verzameling van bestuursorganen van een waterschap, wordne in dit model aangeduid met het openbare lichaam 'Waterschap'. Het grondgebied waarover het waterschap haar bestuur uitoefent, heet in het model het 'Waterschapsgebied' ([[Waterschap-1]], [[Waterschap-2]]).
+
+Naast dit bestuurlijke grondgebied, bestaan er nog ...
 
 ### Veiligheidsregio's
 
-<aside class="note">'_Nederland is verdeeld in 25 veiligheidsregio’s. Iedere veiligheidsregio zet zich in voor de veiligheid van de inwoners en bezoekers van dat gebied. Zo zorgt de veiligheidsregio ervoor dat er een brandweer is. Ook maakt de veiligheidsregio afspraken over de aanpak van rampen en crises.  Een goede samenwerking tussen hulpverleningsdiensten, overheden, bedrijven en burgers is daarbij belangrijk._' </aside>
+<aside class="note">'<i>Nederland is verdeeld in 25 veiligheidsregio’s. Iedere veiligheidsregio zet zich in voor de veiligheid van de inwoners en bezoekers van dat gebied. Zo zorgt de veiligheidsregio ervoor dat er een brandweer is. Ook maakt de veiligheidsregio afspraken over de aanpak van rampen en crises.  Een goede samenwerking tussen hulpverleningsdiensten, overheden, bedrijven en burgers is daarbij belangrijk.</i>'</aside>
 
 ## Normatieve referenties
 
