@@ -1,7 +1,7 @@
 
 <!DOCTYPE HTML><section id="cat" class="normative">
    <h2>Gegevensdefinitie</h2>
-   <!--MIMCM-IMSOR-CM-1.0.0-0-20210512-20220601-115236 imvertor 1.65.4--><a class="anchor" id="global_package_NEN3610"></a><section id="global_package_NEN3610">
+   <!--MIMCM-IMSOR-CM-1.0.0-0-20210512-20220601-152236 imvertor 1.65.4--><a class="anchor" id="global_package_NEN3610"></a><section id="global_package_NEN3610">
       <h3>Domein   NEN3610</h3>
       <section id="">
          <h4>Objecttypen   </h4>
@@ -1289,6 +1289,14 @@
                </p>
          </div>
       </section>
+      <section id="EAID_3D405F93_0F27_430b_B1B2_AEAD55CAEEC8">
+         <h4>   Bestuurlijke Gebieden op zee - overzicht</h4>
+         <div class="imageinfo overview"><img src="data/Images/EAID_3D405F93_0F27_430b_B1B2_AEAD55CAEEC8.png" usemap="#imagemap-EAID_3D405F93_0F27_430b_B1B2_AEAD55CAEEC8" alt="Diagram &#xA;                        (nog tekst opnemen)&#xA;                     "><map name="imagemap-EAID_3D405F93_0F27_430b_B1B2_AEAD55CAEEC8"><area shape="rect" alt="Rijk" coords="413,635,656,723" href="#graph_EAID_51326090_515A_406a_A0BB_3AC60FFC061A"><area shape="rect" alt="Nederlands Continentaal Plat" coords="851,1118,1082,1206" href="#graph_EAID_A7E300A9_D57F_4432_B990_8B0CD64C6B9C"><area shape="rect" alt="Nederlandse Exclusieve Economissche Zone" coords="851,957,1082,1045" href="#graph_EAID_35885A9F_6E1C_4871_B847_60B717F6C47E"><area shape="rect" alt="Nederlandse Aansluitende Zone" coords="851,796,1082,884" href="#graph_EAID_52F17654_D5AE_412d_9853_5B4E80FFA349"><area shape="rect" alt="Nederlandse Territoriale Zee" coords="851,635,1082,723" href="#graph_EAID_30B76B04_F4C3_4d83_956E_469DE8333008"><area shape="rect" alt="Bestuurlijk gebied op Zee" coords="851,446,1082,568" href="#graph_EAID_3A0ACAC0_3FAD_4cf8_8FC9_2D7B92134B10"><area shape="rect" alt="Vlak of Multivlak" coords="860,63,1074,184" href="#graph_EAID_CB47144F_F944_4037_8ECB_EA023608F3FD"><area shape="rect" alt="Bestuurlijk gebied" coords="48,446,278,568" href="#graph_EAID_CE4A19B0_E8ED_4517_A5F2_DACF596D2421"><area shape="rect" alt="GeoObject" coords="48,63,278,184" href="#graph_EAID_5F28982A_92F2_4338_97FC_9C1AA451286E"><area shape="rect" alt="Openbaar Lichaam" coords="413,446,656,568" href="#graph_EAID_C60CE19D_EF1D_4c45_BD31_D4E19145AAA8"><area shape="rect" alt="Registratieve ruimte" coords="48,252,278,374" href="#graph_EAID_F4EA655E_C546_437f_9846_89189D849130"><area shape="rect" alt="Status registratieve ruimte" coords="427,63,643,217" href="#graph_EAID_4C474734_5C1D_4344_8776_29ACD288EEB8"></map><p><b>Bestuurlijke Gebieden op zee - overzicht</b>
+               
+               <p>(nog tekst opnemen)</p>
+               </p>
+         </div>
+      </section>
       <section id="">
          <h4>Objecttypen   </h4>
          <a class="anchor" id="graph_EAID_F4EA655E_C546_437f_9846_89189D849130"></a><a class="anchor" id="global_class_BestuurlijkeGebieden_RegistratieveRuimte"></a><section id="global_class_BestuurlijkeGebieden_RegistratieveRuimte">
@@ -1401,8 +1409,8 @@
                      <th>Definitie</th>
                      <td>
                         
-                        <p>Bestuurlijke gebieden zijn registratieve ruimten die op basis van wet- of regelgeving
-                           als eenheid gelden van politiek/bestuurlijke verantwoordelijkheid.</p>
+                        <p>Registratieve ruimten op land die op basis van wet- of regelgeving als eenheid gelden
+                           van politiek/bestuurlijke verantwoordelijkheid.</p>
                         </td>
                   </tr>
                   <tr>
@@ -1439,8 +1447,8 @@
                         </td>
                      <td>
                         
-                        <p>Geometrische representatie van het gebied dat door een openbaar lichaam bestuurt.
-                           </p>
+                        <p>Geometrische representatie van een gebied op land dat door een openbaar lichaam wordt
+                           bestuurd.</p>
                         </td>
                      <td>
                         <a class="link" href="#global_class_BestuurlijkeGebieden_VlakOfMultivlak">Vlak of Multivlak</a>
@@ -1551,7 +1559,8 @@
                         </td>
                      <td>
                         
-                        <p>Codering van een openbaar lichaam zoals deze door het CBS wordt gebruikt. </p>
+                        <p>Codering van een openbaar lichaam zoals deze door het CBS (op land) of door het RVIG
+                           (op zee) wordt gebruikt.</p>
                         </td>
                      <td>
                         Character­String
@@ -1585,6 +1594,20 @@
                   <tr>
                      <th>Rol naam met kardinaliteiten</th>
                      <th>Definitie</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        Openbaar Lichaam
+                        [ 1 ]
+                        
+                        <a class="link" href="#detail_association_BestuurlijkeGebieden_OpenbaarLichaam_bestuurde">bestuurt: bestuurde</a>
+                        
+                        
+                        <a class="link" href="#global_class_BestuurlijkeGebieden_BestuurlijkGebiedOpZee">Bestuurlijk gebied op Zee</a>
+                        
+                        [ 1 ]
+                        </td>
+                     <td></td>
                   </tr>
                   <tr>
                      <td>
@@ -1724,8 +1747,8 @@
                         </td>
                      <td>
                         
-                        <p>Bestuurlijke gebieden zijn registratieve ruimten die op basis van wet- of regelgeving
-                           als eenheid gelden van politiek/bestuurlijke verantwoordelijkheid.</p>
+                        <p>Registratieve ruimten op land die op basis van wet- of regelgeving als eenheid gelden
+                           van politiek/bestuurlijke verantwoordelijkheid.</p>
                         </td>
                   </tr>
                </tbody>
@@ -1915,8 +1938,8 @@
                         </td>
                      <td>
                         
-                        <p>Bestuurlijke gebieden zijn registratieve ruimten die op basis van wet- of regelgeving
-                           als eenheid gelden van politiek/bestuurlijke verantwoordelijkheid.</p>
+                        <p>Registratieve ruimten op land die op basis van wet- of regelgeving als eenheid gelden
+                           van politiek/bestuurlijke verantwoordelijkheid.</p>
                         </td>
                   </tr>
                </tbody>
@@ -2086,8 +2109,8 @@
                         </td>
                      <td>
                         
-                        <p>Bestuurlijke gebieden zijn registratieve ruimten die op basis van wet- of regelgeving
-                           als eenheid gelden van politiek/bestuurlijke verantwoordelijkheid.</p>
+                        <p>Registratieve ruimten op land die op basis van wet- of regelgeving als eenheid gelden
+                           van politiek/bestuurlijke verantwoordelijkheid.</p>
                         </td>
                   </tr>
                </tbody>
@@ -2275,8 +2298,8 @@
                         </td>
                      <td>
                         
-                        <p>Bestuurlijke gebieden zijn registratieve ruimten die op basis van wet- of regelgeving
-                           als eenheid gelden van politiek/bestuurlijke verantwoordelijkheid.</p>
+                        <p>Registratieve ruimten op land die op basis van wet- of regelgeving als eenheid gelden
+                           van politiek/bestuurlijke verantwoordelijkheid.</p>
                         </td>
                   </tr>
                </tbody>
@@ -2452,8 +2475,8 @@
                         </td>
                      <td>
                         
-                        <p>Bestuurlijke gebieden zijn registratieve ruimten die op basis van wet- of regelgeving
-                           als eenheid gelden van politiek/bestuurlijke verantwoordelijkheid.</p>
+                        <p>Registratieve ruimten op land die op basis van wet- of regelgeving als eenheid gelden
+                           van politiek/bestuurlijke verantwoordelijkheid.</p>
                         </td>
                   </tr>
                </tbody>
@@ -2522,6 +2545,382 @@
                         <p>In de bestuurlijke indeling van het Koninkrijk der Nederlanden, een overheid die bepaalde
                            taken uitvoert binnen een bepaald ruimtelijk gebied of op een bepaald inhoudelijk
                            gebied.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            </section>
+         <a class="anchor" id="graph_EAID_30B76B04_F4C3_4d83_956E_469DE8333008"></a><a class="anchor" id="global_class_BestuurlijkeGebieden_NederlandseTerritorialeZee"></a><section id="global_class_BestuurlijkeGebieden_NederlandseTerritorialeZee">
+            <h5>   Nederlandse Territoriale Zee</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>Nederlandse Territoriale Zee</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td>IMDi­SGeo</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>Het gebied vanaf de laagwaterlijn tot 12 zeemijl uit de kust dat behoort bij het Rijk</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst definitie</th>
+                     <td>Wet grenzen Nederlandse territoriale zee</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>
+                        
+                        <p>Het betreft hier de territoriale zee zoals nu reeds wordt vastgelegd door de Dienst
+                           der Hydrografie. Dit was tot nu toe nog geen onderdeel van een basisregistratie.</p>
+                        
+                        <p></p>
+                        
+                        <p>Dit gebied is ook wel bekend als “de 12-mijlszone”. In het Eems-Dollard gebied is
+                           er tussen Nederland en Duitsland geen formeel grensverdrag en dus geen wederzijds
+                           bevestigde begrenzing van de territoriale zee.</p>
+                        
+                        <p></p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overzicht relaties  </h6>
+            
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Rol naam met kardinaliteiten</th>
+                     <th>Definitie</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        Nederlandse Territoriale Zee
+                        is specialisatie van
+                        
+                        <a class="link" href="#global_class_BestuurlijkeGebieden_BestuurlijkGebiedOpZee">Bestuurlijk gebied op Zee</a>
+                        
+                        </td>
+                     <td>
+                        
+                        <p>Registratieve ruimten op zee die op basis van wet- of regelgeving als eenheid gelden
+                           van politiek/bestuurlijke verantwoordelijkheid.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            </section>
+         <a class="anchor" id="graph_EAID_35885A9F_6E1C_4871_B847_60B717F6C47E"></a><a class="anchor" id="global_class_BestuurlijkeGebieden_NederlandseExclusieveEconomisscheZone"></a><section id="global_class_BestuurlijkeGebieden_NederlandseExclusieveEconomisscheZone">
+            <h5>   Nederlandse Exclusieve Economissche Zone</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>Nederlandse Exclusieve Economissche Zone</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td>IMDi­SGeo</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>Het gebied buiten en grenzend aan de territoriale zee dat zich niet verder uitstrekt
+                           dan tweehonderd zeemijlen vanaf de laagwaterlijn.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst definitie</th>
+                     <td>Rijkswet instelling exclusieve economische zone</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>Het betreft hier de Nederlandse exclusieve economische zone zoals nu reeds wordt vastgelegd
+                        door de Dienst der Hydrografie. Dit was tot nu toe nog geen onderdeel van een basisregistratie.</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overzicht relaties  </h6>
+            
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Rol naam met kardinaliteiten</th>
+                     <th>Definitie</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        Nederlandse Exclusieve Economissche Zone
+                        is specialisatie van
+                        
+                        <a class="link" href="#global_class_BestuurlijkeGebieden_BestuurlijkGebiedOpZee">Bestuurlijk gebied op Zee</a>
+                        
+                        </td>
+                     <td>
+                        
+                        <p>Registratieve ruimten op zee die op basis van wet- of regelgeving als eenheid gelden
+                           van politiek/bestuurlijke verantwoordelijkheid.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            </section>
+         <a class="anchor" id="graph_EAID_3A0ACAC0_3FAD_4cf8_8FC9_2D7B92134B10"></a><a class="anchor" id="global_class_BestuurlijkeGebieden_BestuurlijkGebiedOpZee"></a><section id="global_class_BestuurlijkeGebieden_BestuurlijkGebiedOpZee">
+            <h5>   Bestuurlijk gebied op Zee</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>Bestuurlijk gebied op Zee</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>Registratieve ruimten op zee die op basis van wet- of regelgeving als eenheid gelden
+                           van politiek/bestuurlijke verantwoordelijkheid.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>Een inhoudelijke toelichting op de toepassing van het informatie-element.</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overzicht attributen  </h6>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Attribuutnaam</th>
+                     <th>Definitie</th>
+                     <th>Formaat</th>
+                     <th>Card</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_BestuurlijkeGebieden_BestuurlijkGebiedOpZee_geometrie">geometrie</a>
+                        </td>
+                     <td>
+                        
+                        <p>Geometrische representatie van een gebied op zee dat door een openbaar lichaam wordt
+                           bestuurd.</p>
+                        </td>
+                     <td>
+                        <a class="link" href="#global_class_BestuurlijkeGebieden_VlakOfMultivlak">Vlak of Multivlak</a>
+                        </td>
+                     <td>1</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            
+            <h6>Overzicht relaties  </h6>
+            
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Rol naam met kardinaliteiten</th>
+                     <th>Definitie</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        
+                        <a class="link" href="#global_class_BestuurlijkeGebieden_OpenbaarLichaam">Openbaar Lichaam</a>
+                        
+                        [ 1 ]
+                        
+                        <a class="link" href="#detail_association_BestuurlijkeGebieden_OpenbaarLichaam_bestuurde">bestuurt: bestuurde</a>
+                        
+                        Bestuurlijk gebied op Zee
+                        [ 1 ]
+                        </td>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <td>
+                        Bestuurlijk gebied op Zee
+                        is specialisatie van
+                        
+                        <a class="link" href="#global_class_BestuurlijkeGebieden_RegistratieveRuimte">Registratieve ruimte</a>
+                        
+                        </td>
+                     <td>
+                        
+                        <p>Op basis van wet- of regelgeving afgebakend object dat als eenheid geldt van politiek/bestuurlijke
+                           verantwoordelijkheid of voor bedrijfsvoering.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            </section>
+         <a class="anchor" id="graph_EAID_52F17654_D5AE_412d_9853_5B4E80FFA349"></a><a class="anchor" id="global_class_BestuurlijkeGebieden_NederlandseAansluitendeZone"></a><section id="global_class_BestuurlijkeGebieden_NederlandseAansluitendeZone">
+            <h5>   Nederlandse Aansluitende Zone</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>Nederlandse Aansluitende Zone</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td>IMDi­SGeo</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>Het gebied buiten en grenzend aan de territoriale zee dat zich niet verder uitstrekt
+                           dan 24 zeemijlen vanaf de laagwaterlijn</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst definitie</th>
+                     <td>Rijkswet instelling aansluitende zone</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>Het betreft hier de aansluitende zone zoals nu reeds wordt vastgelegd door de Dienst
+                        der Hydrografie. Dit was tot nu toe nog geen onderdeel van een basisregistratie.</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overzicht relaties  </h6>
+            
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Rol naam met kardinaliteiten</th>
+                     <th>Definitie</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        Nederlandse Aansluitende Zone
+                        is specialisatie van
+                        
+                        <a class="link" href="#global_class_BestuurlijkeGebieden_BestuurlijkGebiedOpZee">Bestuurlijk gebied op Zee</a>
+                        
+                        </td>
+                     <td>
+                        
+                        <p>Registratieve ruimten op zee die op basis van wet- of regelgeving als eenheid gelden
+                           van politiek/bestuurlijke verantwoordelijkheid.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            </section>
+         <a class="anchor" id="graph_EAID_A7E300A9_D57F_4432_B990_8B0CD64C6B9C"></a><a class="anchor" id="global_class_BestuurlijkeGebieden_NederlandsContinentaalPlat"></a><section id="global_class_BestuurlijkeGebieden_NederlandsContinentaalPlat">
+            <h5>   Nederlands Continentaal Plat</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>Nederlands Continentaal Plat</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td>IMDi­SGeo</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>Het onder de Noordzee gelegen deel van de zeebodem en de ondergrond daarvan, waarop
+                           het Koninkrijk soevereine rechten heeft, en gelegen is buiten en grenzend aan de territoriale
+                           zee.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst definitie</th>
+                     <td>Mijnwet continentaal plat</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>
+                        
+                        <p>Het betreft hier het Nederlandse continentaal plat zoals nu reeds wordt vastgelegd
+                           door de Dienst der Hydrografie. Dit was tot nu toe nog geen onderdeel van een basisregistratie.</p>
+                        
+                        <p></p>
+                        
+                        <p>Binnen het Europese deel van het Rijk kent deze dezelfde contour als de Nederlandse
+                           Exclusieve Economische Zone.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overzicht relaties  </h6>
+            
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Rol naam met kardinaliteiten</th>
+                     <th>Definitie</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        Nederlands Continentaal Plat
+                        is specialisatie van
+                        
+                        <a class="link" href="#global_class_BestuurlijkeGebieden_BestuurlijkGebiedOpZee">Bestuurlijk gebied op Zee</a>
+                        
+                        </td>
+                     <td>
+                        
+                        <p>Registratieve ruimten op zee die op basis van wet- of regelgeving als eenheid gelden
+                           van politiek/bestuurlijke verantwoordelijkheid.</p>
                         </td>
                   </tr>
                </tbody>
@@ -2682,8 +3081,8 @@
                            <th>Definitie</th>
                            <td>
                               
-                              <p>Geometrische representatie van het gebied dat door een openbaar lichaam bestuurt.
-                                 </p>
+                              <p>Geometrische representatie van een gebied op land dat door een openbaar lichaam wordt
+                                 bestuurd.</p>
                               </td>
                         </tr>
                         <tr>
@@ -2735,7 +3134,8 @@
                            <th>Definitie</th>
                            <td>
                               
-                              <p>Codering van een openbaar lichaam zoals deze door het CBS wordt gebruikt. </p>
+                              <p>Codering van een openbaar lichaam zoals deze door het CBS (op land) of door het RVIG
+                                 (op zee) wordt gebruikt.</p>
                               </td>
                         </tr>
                         <tr>
@@ -2802,6 +3202,31 @@
                            <th>Type</th>
                            <td>
                               Character­String
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               <a class="anchor" id="detail_association_BestuurlijkeGebieden_OpenbaarLichaam_bestuurde"></a><div class="deepheader" id="detail_association_BestuurlijkeGebieden_OpenbaarLichaam_bestuurde">
+                  <h7>Relatiesoort details  <a href="#global_class_BestuurlijkeGebieden_OpenbaarLichaam">Openbaar Lichaam</a> bestuurt</h7>
+                  
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>bestuurt</td>
+                        </tr>
+                        <tr>
+                           <th>Kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Gerelateerd objecttype</th>
+                           <td>
+                              <a class="link" href="#global_class_BestuurlijkeGebieden_BestuurlijkGebiedOpZee">Bestuurlijk gebied op Zee</a>
                               </td>
                         </tr>
                      </tbody>
@@ -2922,6 +3347,58 @@
             
             
             
+            
+            
+            <a class="anchor" id="detail_class_BestuurlijkeGebieden_BestuurlijkGebiedOpZee"></a><section id="detail_class_BestuurlijkeGebieden_BestuurlijkGebiedOpZee">
+               <h6>   Bestuurlijk gebied op Zee</h6>
+               <a class="anchor" id="detail_attribute_BestuurlijkeGebieden_BestuurlijkGebiedOpZee_geometrie"></a><div class="deepheader" id="detail_attribute_BestuurlijkeGebieden_BestuurlijkGebiedOpZee_geometrie">
+                  <h7>Attribuutsoort details  <a href="#global_class_BestuurlijkeGebieden_BestuurlijkGebiedOpZee">Bestuurlijk gebied op Zee</a> geometrie</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>geometrie</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              <p>Geometrische representatie van een gebied op zee dat door een openbaar lichaam wordt
+                                 bestuurd.</p>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Toelichting</th>
+                           <td>Een inhoudelijke toelichting op de toepassing van het informatie-element.</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Patroon</th>
+                           <td>De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat
+                              wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.</td>
+                        </tr>
+                        <tr>
+                           <th>Type</th>
+                           <td>
+                              <a class="link" href="#detail_class_BestuurlijkeGebieden_VlakOfMultivlak">Vlak of Multivlak</a>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               </section>
+            
+            
             </section>
          
          
@@ -2987,7 +3464,7 @@
 </section>
 <section id="lis" class="normative">
    <h2>Inhoud van waardenlijsten</h2>
-   <!--MIMCM-IMSOR-CM-1.0.0-0-20210512-20220601-115236 imvertor 1.65.4-->
+   <!--MIMCM-IMSOR-CM-1.0.0-0-20210512-20220601-152236 imvertor 1.65.4-->
    <section id="">
       <h3>Referentielijst inhoud   </h3>
    </section>
