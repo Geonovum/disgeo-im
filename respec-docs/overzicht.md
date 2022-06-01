@@ -13,9 +13,9 @@ Het informatiemodel Samenhangende Objectenregistratie  zorgt ervoor dat alle geg
 
 De volgende documenten zijn gehanteerd als uitgangspunt voor het informatiemodel DiSGeo:
 
- - Metamodel Informatie Modellering 1.1.1 [[MIM11]]
- - Raamwerk van geo-standaarden 3.0 [[raamwerk-geo]] (https://www.geonovum.nl/uploads/documents/Raamwerk%20Geo-Standaarden%20v3.0.pdf)
- - Basismodel Geo-informatie [[nen3610-2022]]
+ - Metamodel Informatie Modellering 1.1.1 [[MIM]]
+ - Raamwerk van geo-standaarden 3.0 [[Raamwerk-Geo]]
+ - Basismodel Geo-informatie [[NEN3610-2022]]
  - ISO-19107-2003: Geographic information – Spatial schema [[iso-19107-2003]]
 
 <aside class="issue">

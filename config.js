@@ -56,14 +56,14 @@ var respecConfig =
   // publishDate: "2021-05-18",  	      // Format is "YYY-MM-DD"
   //-- de namen van de Editor(s) ------------------------------------------------------
   //-- vul in: per Editor: name:, company:, companyURL: -------------------------------
-  // editors: 
-  // [
-  //   {
-  //     name:       "",
-  //     company:    "Geonovum",
-  //     companyURL: "https://www.geonovum.nl"
-  //   }, 
-  // ],
+  editors: 
+  [
+    {
+      name:       "",
+      company:    "Geonovum",
+      companyURL: "https://www.geonovum.nl"
+    },
+  ],
   //-- de namen van de Author(s) ------------------------------------------------------
   //-- vul in: per Author: name:, company:, companyURL: -------------------------------
   authors: 
@@ -123,13 +123,37 @@ var respecConfig =
   localBiblio: 
   {
     "EMSO":
-  {
-    title:      "DiS Geo : Eisen aan model samenhangende objectenregistratie",
-    href:       "https://docs.geostandaarden.nl/disgeo/emso/",
-    status:     "Versie ter vaststelling",
-    date:       "2021-02-16",
-    publisher:  "Geonovum",
-  },
+      {
+        title:      "DiS Geo : Eisen aan model samenhangende objectenregistratie",
+        href:       "https://docs.geostandaarden.nl/disgeo/emso/",
+        status:     "Versie ter vaststelling",
+        date:       "2021-02-16",
+        publisher:  "Geonovum",
+      },
+    "MIM":
+      {
+        title:      "Meta-model Informatiemodellering, versie 1.1.1 ",
+        href:       "https://docs.geostandaarden.nl/mim/mim/",
+        status:     "Versie ter vaststelling",
+        date:       "2022-06-01",
+        publisher:  "Geonovum",
+      },
+      "Raamwerk-Geo":
+      {
+        title:      "Raamwerk Geostandaarden (v3.0)",
+        href:       "https://www.geonovum.nl/uploads/documents/Raamwerk%20Geo-Standaarden%20v3.0.pdf",
+        status:     "Versie ter vaststelling",
+        date:       "2022-06-01",
+        publisher:  "Geonovum",
+      },
+    "Veiligheidsregio":
+      {
+        title:      "Openbaar Lichaam: waterschap",
+        href:       "https://www.rijksoverheid.nl/onderwerpen/veiligheidsregios-en-crisisbeheersing/veiligheidsregios",
+        publisher:  "Rijksoverheid",
+        company:    "Rijksoverheid",
+        date:       "2022-05-18", 
+      },
     "Waterschap-1":
       {
         title:      "Wat doen waterschappen?",
@@ -142,14 +166,6 @@ var respecConfig =
       {
         title:      "Openbaar Lichaam: waterschap",
         href:       "https://www.rijksoverheid.nl/onderwerpen/waterschappen",
-        publisher:  "Rijksoverheid",
-        company:    "Rijksoverheid",
-        date:       "2022-05-18", 
-      },
-    "Veiligheidsregio":
-      {
-        title:      "Openbaar Lichaam: waterschap",
-        href:       "https://www.rijksoverheid.nl/onderwerpen/veiligheidsregios-en-crisisbeheersing/veiligheidsregios",
         publisher:  "Rijksoverheid",
         company:    "Rijksoverheid",
         date:       "2022-05-18", 
