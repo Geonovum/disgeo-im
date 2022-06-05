@@ -59,7 +59,7 @@ var respecConfig =
   editors: 
   [
     {
-      name:       "",
+      name:       "-",
       company:    "Geonovum",
       companyURL: "https://www.geonovum.nl"
     },
