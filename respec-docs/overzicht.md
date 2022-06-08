@@ -48,3 +48,5 @@ Uit <strong>artikel 6</strong> in combinatie met de artikelen 1 en 2 van de <str
 
 Verder zijn er naast de bekende openbare lichamen, ook minder bekende, zoals wanneer voor de heffing of de invordering van gemeentelijke belastingen een gemeenschappelijke regeling is getroffen en bij die regeling een openbaar lichaam is ingesteld. Dat betekent dat een aantal gemeenten samenwerken om de gemeentelijke belastingen binnen te halen en daarvoor een gezamenlijke organisatie hebben opgericht. Bovendien is een gemeente, net als een provincie en een waterschap, ook nog een (publiekrechtelijke) rechtspersoon. Het informatie blijven in het model buiten beschouwing.
 </aside>
+
+<aside class="issue">Alinea opnemen over <strong><i>Bestuurlijke gebieden op zee</i></strong> (Maritieme Zones)</aside>
