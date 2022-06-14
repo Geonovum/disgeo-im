@@ -69,8 +69,12 @@ Elke instantie van een openbaar lichaam heeft in de regel één bestuurlijk gebi
       <li><i>Continentaal plat</i> (de zeebodem)</li>
    </ul>
 
-   Daarnaast bestaan er nog de rechte basislijnen. Deze zijn door Nederland in 1985 vastgesteld in de Wet grenzen Nederlandse territoriale zee. Deze lijn scheidt de territoriale zee van het land en de binnenwateren [[Dienst Hydrografie]]
+   Daarnaast bestaan er nog de rechte basislijnen. Deze zijn door Nederland in 1985 vastgesteld in de Wet grenzen Nederlandse territoriale zee. Deze lijn scheidt de territoriale zee van het land en de binnenwateren [<cite><a class="bibref" href="#bib-dienst-hydrografie">Dienst Hydrografie</a></cite>].
 </aside> 
+
+
+
+         
 
 
 
