@@ -69,9 +69,16 @@ Elke instantie van een openbaar lichaam heeft in de regel één bestuurlijk gebi
       <li><i>Continentaal plat</i> (de zeebodem)</li>
    </ul>
 
+   <figure>
+      <a href="bestuurlijke_gebieden_maritieme_zones_nl.jpg" target="_blank">
+         <img src="bestuurlijke_gebieden_maritieme_zones_nl.jpg" alt="Infographic Stresstest">
+      </a>
+      <figcaption>Bestuurlijke gebieden op zee: Nederlandse maritieme zones</a>)
+      </figcaption>
+   </figure>
+
    Daarnaast bestaan er nog de rechte basislijnen. Deze zijn door Nederland in 1985 vastgesteld in de Wet grenzen Nederlandse territoriale zee. Deze lijn scheidt de territoriale zee van het land en de binnenwateren [<cite><a class="bibref" href="#bib-dienst-hydrografie">Dienst Hydrografie</a></cite>].
 </aside> 
-
 
 
          
