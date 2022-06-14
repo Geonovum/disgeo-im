@@ -122,7 +122,7 @@ var respecConfig =
   //-- NB: kijk eerst naar de beschikbare www.specref.org voor verwijziging 
   localBiblio: 
   {
-    "Dienst Hydrografie":
+    "Dienst-Hydrografie":
       {
         title:      "Maritieme Zones en Zeegrenzen",
         href:       "https://www.defensie.nl/onderwerpen/hydrografie/maritieme-zones-en-zeegrenzen",
@@ -146,7 +146,7 @@ var respecConfig =
         date:       "2022-06-01",
         publisher:  "Geonovum",
       },
-      "Raamwerk-Geo":
+    "Raamwerk-Geo":
       {
         title:      "Raamwerk Geostandaarden (v3.0)",
         href:       "https://www.geonovum.nl/uploads/documents/Raamwerk%20Geo-Standaarden%20v3.0.pdf",
