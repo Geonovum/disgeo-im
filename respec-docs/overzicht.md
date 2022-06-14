@@ -77,13 +77,5 @@ Elke instantie van een openbaar lichaam heeft in de regel één bestuurlijk gebi
       </figcaption>
    </figure>
 
-   Daarnaast bestaan er nog de rechte basislijnen. Deze zijn door Nederland in 1985 vastgesteld in de Wet grenzen Nederlandse territoriale zee. Deze lijn scheidt de territoriale zee van het land en de binnenwateren [<cite><a class="bibref" href="#bib-dienst-hydrografie">Dienst Hydrografie</a></cite>].
-</aside> 
-
-
-         
-
-
-
-<!-- Figuur invoegen (INSPIRE, ANNEX I, ADMINISTRATIVE UNITS, 2014, data specification on administrative units)
-bestuurlijke_gebieden_maritieme_zones.png -->
+   Daarnaast bestaan er nog de rechte basislijnen. Deze zijn door Nederland in 1985 vastgesteld in de Wet grenzen Nederlandse territoriale zee. Deze lijn scheidt de territoriale zee van het land en de binnenwateren [<cite><a class="bibref" href="#bib-dienst-hydrografie">Dienst-Hydrografie</a></cite>].
+</aside>
