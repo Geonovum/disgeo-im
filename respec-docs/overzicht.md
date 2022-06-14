@@ -70,8 +70,8 @@ Elke instantie van een openbaar lichaam heeft in de regel één bestuurlijk gebi
    </ul>
 
    <figure>
-      <a href="bestuurlijke_gebieden_maritieme_zones_nl.jpg" target="_blank">
-         <img src="bestuurlijke_gebieden_maritieme_zones_nl.jpg" alt="Infographic Stresstest">
+      <a href="media/bestuurlijke_gebieden_maritieme_zones_nl.jpg" target="_blank">
+         <img src="media/bestuurlijke_gebieden_maritieme_zones_nl.jpg" alt="Infographic Stresstest">
       </a>
       <figcaption>Bestuurlijke gebieden op zee: Nederlandse maritieme zones</a>)
       </figcaption>
