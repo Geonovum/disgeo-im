@@ -122,6 +122,14 @@ var respecConfig =
   //-- NB: kijk eerst naar de beschikbare www.specref.org voor verwijziging 
   localBiblio: 
   {
+    "Dienst Hydrografie":
+      {
+        title:      "Maritieme Zones en Zeegrenzen",
+        href:       "https://www.defensie.nl/onderwerpen/hydrografie/maritieme-zones-en-zeegrenzen",
+        status:     "Versie ter vaststelling",
+        date:       "2022-04-04",
+        publisher:  "Ministerie van Defensie",
+      },
     "EMSO":
       {
         title:      "DiS Geo : Eisen aan model samenhangende objectenregistratie",
