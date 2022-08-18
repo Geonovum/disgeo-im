@@ -59,7 +59,7 @@ var respecConfig =
   editors: 
   [
     {
-      name:       "-",
+      name:       "Gerard Trouborst",
       company:    "Geonovum",
       companyURL: "https://www.geonovum.nl"
     },
@@ -186,6 +186,15 @@ var respecConfig =
         company:    "Wikipedia",
         date:       "2022-05-18", 
       },
+      "NEN3610-2022": 
+      {
+        title:      "NEN-3610 Basismodel geo-informatie",
+        href:       "https://www.nen.nl/nen-3610-2022-nl-296137",
+        status:     "Definitief",
+        date:       "Juni 2022",
+        publisher:  "NEN",
+      },
+
   
   // {
   //   "CITAAT":
