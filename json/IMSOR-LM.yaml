@@ -1,0 +1,407 @@
+openapi: "3.0.0"
+info:
+  title: "IMSOR-LM"
+  description: "IMSOR-LM components/schema"
+  version: "1.0.0"
+paths:
+  /:
+    get:
+      description: "a path"
+      responses:
+        200:
+          description: "okay"
+          content:
+            text/plain:
+              schema:
+                type: "string"
+                example: "pong"
+components:
+  schemas:
+    BestuurlijkGebied:
+      title: "BestuurlijkGebied"
+      description: "Registratieve ruimten op land die op basis van wet- of regelgeving\
+        \ als eenheid gelden van politiek/bestuurlijke verantwoordelijkheid."
+      type: "object"
+      allOf:
+      - $ref: "#/components/schemas/RegistratieveRuimte"
+      - properties:
+          ligtInBestuurlijkGebied:
+            title: "ligtInBestuurlijkGebied"
+            type: "array"
+            items:
+              $ref: "#/components/schemas/BestuurlijkGebied"
+            minItems: "0"
+    BestuurlijkGebiedOpLand:
+      title: "BestuurlijkGebiedOpLand"
+      description: "Bestuurlijk gebied op land."
+    BestuurlijkGebiedOpZee:
+      title: "BestuurlijkGebiedOpZee"
+      description: "Bestuurlijk gebied op zee."
+    OpenbaarLichaam:
+      title: "OpenbaarLichaam"
+      description: "In de bestuurlijke indeling van het Koninkrijk der Nederlanden,\
+        \ een overheid die bepaalde taken uitvoert binnen een bepaald ruimtelijk gebied\
+        \ of op een bepaald inhoudelijk gebied."
+      type: "object"
+      required:
+      - "code"
+      - "formeleNaam"
+      - "bestuurtGebied"
+      properties:
+        code:
+          title: "code"
+          description: "Codering van een openbaar lichaam zoals deze door het CBS\
+            \ (op land) of door het RVIG (op zee) wordt gebruikt."
+          type: "string"
+          minItems: "1"
+        formeleNaam:
+          title: "formele naam"
+          description: "Naam van een gemeente zoals formeel benoemd door het bevoegd\
+            \ gezag."
+          type: "string"
+          minItems: "1"
+        bestuurtGebied:
+          title: "bestuurtGebied"
+          type: "array"
+          items:
+            $ref: "#/components/schemas/BestuurlijkGebied"
+          minItems: "1"
+    Gemeentegebied:
+      title: "Gemeentegebied"
+      description: "Afgebakend gedeelte van het grondgebied van Nederland, onder zeggenschap\
+        \ van een openbaar lichaam met diverse bestuurlijke taken, ingesteld op basis\
+        \ van artikel 123 en 124 van de Grondwet, artikel 2:1 Burgerlijk Wetboek en\
+        \ artikel 3 van de Wet algemene regels herindeling."
+      type: "object"
+      allOf:
+      - $ref: "#/components/schemas/BestuurlijkGebiedOpLand"
+      - required:
+        - "ligtInProvinciegebied"
+        - "ligtInVeiligheidsregiogebied"
+        properties:
+          ligtInProvinciegebied:
+            title: "ligtInProvinciegebied"
+            description: "De geometrische afbakening van het provinciegebied waarbinnen\
+              \ de geometrie van het gemeentegebied zich moet bevinden, en/of mee\
+              \ moet samenvallen."
+            $ref: "#/components/schemas/Provinciegebied"
+          ligtInVeiligheidsregiogebied:
+            title: "ligtInVeiligheidsregiogebied"
+            description: "De geometrische afbakening van het veiligheidsregiogebied\
+              \ waarbinnen de geometrie van het gemeentegebied zich moet bevinden,\
+              \ en/of mee moet samenvallen."
+            $ref: "#/components/schemas/Veiligheidsregiogebied"
+    Gemeente:
+      title: "Gemeente"
+      description: "Een overheidsorganisatie die een deel van een provincie bestuurt.\
+        \ De kleinste eenheid van territoriaal openbaar bestuur; publiekrechtelijke\
+        \ rechtspersoon met regelgevende bevoegdheid bestuurd door burgemeester en\
+        \ wethouders."
+      type: "object"
+      allOf:
+      - $ref: "#/components/schemas/OpenbaarLichaam"
+      - required:
+        - "bestuurtGemeentegebied"
+        properties:
+          bestuurtGemeentegebied:
+            title: "bestuurtGemeentegebied"
+            $ref: "#/components/schemas/Gemeentegebied"
+    GeoObject:
+      title: "GeoObject"
+      description: "Een fenomeen in de werkelijkheid dat direct of indirect is geassocieerd\
+        \ met een locatie relatief ten opzichte van de aarde."
+      type: "object"
+      required:
+      - "identificatie"
+      - "domein"
+      - "geregistreerdMet"
+      properties:
+        identificatie:
+          title: "identificatie"
+          description: "Unieke identificatiecode van een informatieobject binnen de\
+            \ context van een registratie. Toelichting: ‘identificatie’ is de\
+            \ identificatiecode die een object heeft binnen een registratie of binnen\
+            \ een ketenproces voor data-uitwisseling. Binnen de registratie of de\
+            \ data-uitwisseling is het object uniek identificeerbaar. In combinatie\
+            \ met het attribuut domein wordt een object hiermee uniek identificeerbaar\
+            \ op het niveau van verschillende registraties, uitwisselprocessen en\
+            \ ook wereldwijd uniek. De reguliere expressie voor de toegestane tekens\
+            \ is: [a-zA-Z|0-9|_|.|-|\\/|:|]"
+          type: "string"
+          minItems: "1"
+        domein:
+          title: "domein"
+          description: "Aanduiding van het domein waarbinnen de identificatie uniek\
+            \ is."
+          type: "string"
+          minItems: "1"
+        geregistreerdMet:
+          title: "geregistreerdMet"
+          $ref: "#/components/schemas/Registratie"
+    Provinciegebied:
+      title: "Provinciegebied"
+      description: "Afgebakend gedeelte van het grondgebied van Nederland, onder zeggenschap\
+        \ van een openbaar lichaam met diverse bestuurlijke taken, ingesteld op basis\
+        \ van artikel 123 en 124 van de Grondwet, artikel 2:1 Burgerlijk Wetboek en\
+        \ artikel 13 van de Wet algemene regels herindeling"
+      type: "object"
+      allOf:
+      - $ref: "#/components/schemas/BestuurlijkGebiedOpLand"
+      - required:
+        - "ligtInRijksgebied"
+        properties:
+          ligtInRijksgebied:
+            title: "ligtInRijksgebied"
+            description: "De geometrische afbakening van het rijksgebied waarbinnen\
+              \ de geometrie van het provinciegebied zich moet bevinden, en/of mee\
+              \ moet samenvallen."
+            $ref: "#/components/schemas/Rijksgebied"
+    Provincie:
+      title: "Provincie"
+      description: "De bestuurslaag tussen de rijksoverheid en de Nederlandse gemeenten."
+      type: "object"
+      allOf:
+      - $ref: "#/components/schemas/OpenbaarLichaam"
+      - required:
+        - "bestuurtProvinciegebied"
+        properties:
+          bestuurtProvinciegebied:
+            title: "bestuurtProvinciegebied"
+            $ref: "#/components/schemas/Provinciegebied"
+    Rijksgebied:
+      title: "Rijksgebied"
+      description: "Het grondgebied van het Koninkrijk der Nederlanden"
+    TerritorialeZee:
+      title: "TerritorialeZee"
+      description: "Het gebied vanaf de laagwaterlijn tot 12 zeemijl uit de kust dat\
+        \ behoort bij het Rijk"
+    AansluitendeZone:
+      title: "AansluitendeZone"
+      description: "Het gebied buiten en grenzend aan de territoriale zee dat zich\
+        \ niet verder uitstrekt dan 24 zeemijlen vanaf de laagwaterlijn"
+    ExclusieveEconomischeZone:
+      title: "ExclusieveEconomischeZone"
+      description: "Het gebied buiten en grenzend aan de territoriale zee dat zich\
+        \ niet verder uitstrekt dan tweehonderd zeemijlen vanaf de laagwaterlijn."
+    ContinentaalPlat:
+      title: "ContinentaalPlat"
+      description: "Het onder de Noordzee gelegen deel van de zeebodem en de ondergrond\
+        \ daarvan, waarop het Koninkrijk soevereine rechten heeft, en gelegen is buiten\
+        \ en grenzend aan de territoriale zee."
+    RegistratieveRuimte:
+      title: "RegistratieveRuimte"
+      description: "Op basis van wet- of regelgeving afgebakende ruimte die als eenheid\
+        \ geldt van politiek-bestuurlijke verantwoordelijkheid of voor bedrijfsvoering."
+      type: "object"
+      allOf:
+      - $ref: "#/components/schemas/VirtueleRuimte"
+      - required:
+        - "geometrie"
+        - "status"
+        properties:
+          geometrie:
+            title: "geometrie"
+            description: "Geometrische representatie van een gebied op land dat door\
+              \ een openbaar lichaam wordt bestuurd."
+            $ref: "#/components/schemas/VlakOfMultivlak"
+          status:
+            title: "status"
+            description: "Fase van de levenscyclus waarin een bestuurlijk gebied zich\
+              \ bevindt."
+            $ref: "#/components/schemas/StatusRegistratieveRuimte"
+    Rijk:
+      title: "Rijk"
+      description: "Het onderdeel van de Nederlandse overheid dat wettelijke taken\
+        \ heeft op landelijk niveau: de 'centrale overheid'."
+      type: "object"
+      allOf:
+      - $ref: "#/components/schemas/OpenbaarLichaam"
+      - required:
+        - "bestuurtAansluitendeZone"
+        - "bestuurtContinentaalPlat"
+        - "bestuurtExclusieveEconomischeZone"
+        - "bestuurtTerritorialeZee"
+        - "bestuurtRijksgebied"
+        properties:
+          bestuurtAansluitendeZone:
+            title: "bestuurtAansluitendeZone"
+            $ref: "#/components/schemas/AansluitendeZone"
+          bestuurtContinentaalPlat:
+            title: "bestuurtContinentaalPlat"
+            $ref: "#/components/schemas/ContinentaalPlat"
+          bestuurtExclusieveEconomischeZone:
+            title: "bestuurtExclusieveEconomischeZone"
+            $ref: "#/components/schemas/ExclusieveEconomischeZone"
+          bestuurtTerritorialeZee:
+            title: "bestuurtTerritorialeZee"
+            $ref: "#/components/schemas/TerritorialeZee"
+          bestuurtRijksgebied:
+            title: "bestuurtRijksgebied"
+            description: "..."
+            $ref: "#/components/schemas/Rijksgebied"
+    Waterschap:
+      title: "Waterschap"
+      description: "Een waterschap is een overheidsorganisatie die zorgt voor het\
+        \ waterbeheer in een bepaald gebied."
+      type: "object"
+      allOf:
+      - $ref: "#/components/schemas/OpenbaarLichaam"
+      - required:
+        - "bestuurtWaterschapsgebied"
+        properties:
+          bestuurtWaterschapsgebied:
+            title: "bestuurtWaterschapsgebied"
+            $ref: "#/components/schemas/Waterschapsgebied"
+    Veiligheidsregiogebied:
+      title: "Veiligheidsregiogebied"
+      description: "Afgebakend gedeelte van het grondgebied van Nederland, onder zeggenschap\
+        \ van een openbaar lichaam met diverse bestuurlijke taken, ingesteld op basis\
+        \ van artikel 9 van de Wet Veiligheidsregio’s"
+    Veiligheidsregio:
+      title: "Veiligheidsregio"
+      description: "Een veiligheidsregio is een gebied waarin wordt samenwerkt door\
+        \ verschillende besturen en diensten ten aanzien van taken op het terrein\
+        \ van brandweerzorg, rampenbeheersing, crisisbeheersing, geneeskundige hulpverlening\
+        \ en handhaving van de openbare orde en veiligheid."
+      type: "object"
+      allOf:
+      - $ref: "#/components/schemas/OpenbaarLichaam"
+      - required:
+        - "bestuurtVeiligheidsregiogebied"
+        properties:
+          bestuurtVeiligheidsregiogebied:
+            title: "bestuurtVeiligheidsregiogebied"
+            $ref: "#/components/schemas/Veiligheidsregiogebied"
+    StatusRegistratieveRuimte:
+      title: "StatusRegistratieveRuimte"
+      description: "Fasen van de levenscycli van een registratieve ruimte."
+      enum:
+      - "Ontwerp"
+      - "Vastgesteld"
+      - "Ingetrokken"
+    VirtueleRuimte:
+      title: "VirtueleRuimte"
+      description: "Geo-object dat zich geheel of gedeeltelijk niet-materieel manifesteert\
+        \ en dus slechts in abstracte en/of geregistreerde vorm bestaat."
+    VlakOfMultivlak:
+      title: "VlakOfMultivlak"
+      oneOf:
+      - $ref: "#/components/schemas/multivlak"
+      - $ref: "#/components/schemas/vlak"
+    multivlak:
+      title: "multivlak"
+      $ref: "#/components/schemas/multipolygonGeoJSON"
+    vlak:
+      title: "vlak"
+      $ref: "#/components/schemas/polygonGeoJSON"
+    Registratie:
+      title: "Registratie"
+      type: "object"
+      required:
+      - "status"
+      - "versie"
+      - "beginGeldigheid"
+      - "tijdstipRegistratie"
+      - "objectBeginTijd"
+      properties:
+        status:
+          title: "status"
+          $ref: "#/components/schemas/StatusRegistratie"
+        versie:
+          title: "versie"
+          description: "Versieaanduiding van een informatieobject."
+          type: "string"
+          minLength: "1"
+          minItems: "1"
+        beginGeldigheid:
+          title: "beginGeldigheid"
+          description: "Start van de periode waarop deze versie van het informatieobject\
+            \ geldig is."
+          type: "string"
+          format: "date-time"
+          minItems: "1"
+        eindGeldigheid:
+          title: "eindGeldigheid"
+          description: "Eind van de periode waarop deze versie van het informatieobject\
+            \ geldig is. De periode is tot aan deze tijdsaanduiding. Wanneer deze\
+            \ waarde niet is ingevuld, is de versie nog geldig."
+          type: "string"
+          format: "date-time"
+          minItems: "0"
+        tijdstipRegistratie:
+          title: "tijdstipRegistratie"
+          description: "Tijdsaanduiding van het moment waarop deze versie van het\
+            \ informatieobject is opgenomen in de registratie."
+          type: "string"
+          format: "date-time"
+          minItems: "1"
+        eindRegistratie:
+          title: "eindRegistratie"
+          description: "Eind van de periode dat deze versie van het informatieobject\
+            \ actueel is in de registratie. De periode is tot aan deze tijdsaanduiding.\
+            \ Wanneer deze waarde niet is ingevuld, is de versie nog actueel."
+          type: "string"
+          format: "date-time"
+          minItems: "0"
+        objectBeginTijd:
+          title: "objectBeginTijd"
+          description: "Tijdsaanduiding waarop het object in de werkelijkheid is ontstaan."
+          type: "string"
+          format: "date-time"
+          minItems: "1"
+        objectEindTijd:
+          title: "objectEindTijd"
+          description: "Tijdsaanduiding waarop het object in de werkelijkheid niet\
+            \ meer geldig is."
+          type: "string"
+          format: "date-time"
+          minItems: "0"
+    StatusRegistratie:
+      title: "StatusRegistratie"
+      enum:
+      - "Actief"
+      - "Afgevoerd"
+    Waterschapsgebied:
+      title: "Waterschapsgebied"
+    multipolygonGeoJSON:
+      type: "object"
+      required:
+      - "type"
+      - "coordinates"
+      properties:
+        type:
+          type: "string"
+          enum:
+          - "MultiPolygon"
+        coordinates:
+          type: "array"
+          items:
+            type: "array"
+            items:
+              type: "array"
+              minItems: 4
+              items:
+                type: "array"
+                minItems: 2
+                items:
+                  type: "number"
+    polygonGeoJSON:
+      type: "object"
+      required:
+      - "type"
+      - "coordinates"
+      properties:
+        type:
+          type: "string"
+          enum:
+          - "Polygon"
+        coordinates:
+          type: "array"
+          items:
+            type: "array"
+            minItems: 4
+            items:
+              type: "array"
+              minItems: 2
+              items:
+                type: "number"
