@@ -135,23 +135,23 @@ var respecConfig =
         title:      "DiS Geo : Eisen aan model samenhangende objectenregistratie",
         href:       "https://docs.geostandaarden.nl/disgeo/emso/",
         status:     "Versie ter vaststelling",
-        date:       "2021-02-16",
+        date:       "2021-06-16",
         publisher:  "Geonovum",
       },
     "MIM":
       {
         title:      "Meta-model Informatiemodellering, versie 1.1.1 ",
         href:       "https://docs.geostandaarden.nl/mim/mim/",
-        status:     "Versie ter vaststelling",
-        date:       "2022-06-01",
+        status:     "Vastgesteld",
+        date:       "2022-02-17",
         publisher:  "Geonovum",
       },
     "Raamwerk-Geo":
       {
         title:      "Raamwerk Geostandaarden (v3.0)",
         href:       "https://www.geonovum.nl/uploads/documents/Raamwerk%20Geo-Standaarden%20v3.0.pdf",
-        status:     "Versie ter vaststelling",
-        date:       "2022-06-01",
+        status:     "Vastgesteld",
+        date:       "2015-03-31",
         publisher:  "Geonovum",
       },
     "Veiligheidsregio":
