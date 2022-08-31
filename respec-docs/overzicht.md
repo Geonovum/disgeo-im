@@ -17,6 +17,7 @@ De volgende documenten zijn gehanteerd als uitgangspunt voor het informatiemodel
  - Raamwerk van geo-standaarden 3.0 [[Raamwerk-Geo]]
  - Basismodel Geo-informatie [[NEN3610-2022]]
  - ISO-19107-2003: Geographic information – Spatial schema [[iso-19107-2003]]
+ - Modelleerprincipes samenhangende objectenregistratie [[disgeo-mod]]
 
 <aside class="issue">
 TODO: 

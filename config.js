@@ -194,6 +194,14 @@ var respecConfig =
         date:       "Juni 2022",
         publisher:  "NEN",
       },
+      "disgeo-mod": 
+      {
+        title:      "Modelleerprincipes samenhangende objectenregistratie",
+        href:       "https://geonovum.github.io/disgeo-imsor/modelleerprincipes/",
+        status:     "Werkversie",
+        date:       "22 Augustus 2022",
+        publisher:  "Geonovum",
+      },
 
   
   // {
