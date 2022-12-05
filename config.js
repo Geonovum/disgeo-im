@@ -202,6 +202,25 @@ var respecConfig =
         date:       "22 Augustus 2022",
         publisher:  "Geonovum",
       },
+      "NLISO19115":
+        {
+          title:      "Nederlands metadata profiel op ISO 19115 voor geografie versie 2.1.0",
+          href:       "https://docs.geostandaarden.nl/md/mdprofiel-iso19115/",
+          status:     "Vastgestelde versie",
+          publisher:  "Geonovum",
+          date:       "30 juni 2020",
+      },
+      "CityGML3": 
+        {
+          title:    "OGC City Geography Markup Language (CityGML) Part 1: Conceptual Model Standard v3.0",
+          href:     "https://docs.ogc.org/is/20-010/20-010.html",
+          status:   "Published",
+          publisher:"Open Geospatial Consortium",
+          editors:  ["Thomas H. Kolbe", "Tatjana Kutzner", "Carl Stephen Smyth", "Claus Nagel", "Carsten Roensdorf", "Charles Heazel"],
+          date:     "2021-09-13",
+      },
+     
+     
 
   
   // {
