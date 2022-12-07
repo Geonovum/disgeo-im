@@ -1,0 +1,1326 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix gsp: <http://www.opengis.net/ont/geosparql#> .
+@prefix gml: <http://www.opengis.net/ont/gml#> .
+@prefix mim: <http://bp4mc2.org/def/mim#> .
+@prefix nen3610-beg: <http://definities.geostandaarden.nl/imso/id/begrip/> .
+@prefix nen3610: <http://modellen.geostandaarden.nl/def/imso#> .
+@prefix nen3610-sh: <http://modellen.geostandaarden.nl/imso/id/shape/> .
+
+nen3610-sh:Geometry a sh:NodeShape;
+  sh:targetClass gsp:Geometry;
+  sh:property [
+      sh:datatype gsp:wktLiteral;
+      sh:path gsp:asWKT;
+      sh:maxCount 1;
+      sh:nodeKind sh:Literal;
+      sh:minCount 1
+    ] .
+
+<http://modellen.geostandaarden.nl/def/imso> a owl:Ontology;
+  owl:imports <http://modellen.geostandaarden.nl/def/imso/Bestuurlijk%20gebied> .
+
+nen3610:identificatie a owl:DatatypeProperty, rdf:Property;
+  rdfs:label "identificatie" .
+
+nen3610:BestuurlijkGebied a owl:Class;
+  mim:herkomstDefinitie "EMSO";
+  rdfs:comment "Voorstel : Ruimte die op basis van wet- of regelgeving als eenheid geldt van politieke verantwoordelijkheid.";
+  mim:toelichting "Dit betreft bijvoorbeeld de gebieden behorende bij de vier formele bestuurslagen uit de Grondwet (Rijk, provincie, waterschap, gemeente), maar kan ook gebieden van bestuurlijke samenwerkingsverbanden met eigen politiek/bestuurlijke verantwoordelijkheid omvatten. Een voorbeeld daarvan betreft de veiligheidsregio’s.";
+  mim:datumOpname "23-03-2022";
+  rdfs:label "BestuurlijkGebied";
+  mim:herkomst "IMDiSGeo";
+  mim:populatie "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.";
+  rdfs:isDefinedBy <http://modellen.geostandaarden.nl/def/imso/Bestuurlijk%20gebied>;
+  rdfs:subClassOf nen3610:RegistratieveRuimte .
+
+<http://begrippen.geostandaarden.nl/disgeo/id/begrip/Ontwerp> a nen3610:StatusRegistratieveRuimte;
+  skos:notation "ontwerp";
+  skos:inScheme <http://begrippen.geostandaarden.nl/disgeo/id/scheme/StatusRegistratieveRuimte> .
+
+nen3610:ligtInBestuurlijkGebied a owl:ObjectProperty, rdf:Property;
+  rdfs:label "ligtInBestuurlijkGebied" .
+
+<http://begrippen.geostandaarden.nl/disgeo/id/begrip/Vastgesteld> a nen3610:StatusRegistratieveRuimte;
+  rdfs:comment "Object dat door het bevoegd gezag is benoemd of afgebakend op grond van wet- of regelgeving.";
+  skos:notation "vastgesteld";
+  skos:inScheme <http://begrippen.geostandaarden.nl/disgeo/id/scheme/StatusRegistratieveRuimte> .
+
+nen3610:StatusRegistratieveRuimte a owl:Class;
+  rdfs:comment "Fasen van de levenscycli van een registratieve ruimte.";
+  rdfs:label "StatusRegistratieveRuimte";
+  rdfs:subClassOf skos:Concept .
+
+<http://begrippen.geostandaarden.nl/disgeo/id/begrip/Ingetrokken> a nen3610:StatusRegistratieveRuimte;
+  rdfs:comment "Object dat door het bevoegd gezag is ingetrokken op grond van wet- of regelgeving.";
+  skos:notation "ingetrokken";
+  skos:inScheme <http://begrippen.geostandaarden.nl/disgeo/id/scheme/StatusRegistratieveRuimte> .
+
+nen3610-sh:BestuurlijkGebied a sh:NodeShape;
+  mim:herkomstDefinitie "EMSO";
+  sh:name "BestuurlijkGebied";
+  mim:indicatieAbstractObject false;
+  mim:datumOpname "23-03-2022";
+  sh:targetClass nen3610:BestuurlijkGebied;
+  rdfs:comment "Voorstel : Ruimte die op basis van wet- of regelgeving als eenheid geldt van politieke verantwoordelijkheid.";
+  mim:populatie "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.";
+  mim:herkomst "IMDiSGeo";
+  mim:toelichting "Dit betreft bijvoorbeeld de gebieden behorende bij de vier formele bestuurslagen uit de Grondwet (Rijk, provincie, waterschap, gemeente), maar kan ook gebieden van bestuurlijke samenwerkingsverbanden met eigen politiek/bestuurlijke verantwoordelijkheid omvatten. Een voorbeeld daarvan betreft de veiligheidsregio’s.";
+  rdfs:label "BestuurlijkGebied";
+  sh:property [
+      sh:nodeKind sh:IRI;
+      mim:indicatieAfleidbaar true;
+      rdfs:label "ligtInBestuurlijkGebied";
+      mim:indicatieMaterieleHistorie false;
+      sh:name "ligtInBestuurlijkGebied";
+      mim:toelichting "Afgeleide van 'ligtIn'-relaties van de concrete specialisaties van het objecttype 'Bestuurlijk gebied'.";
+      mim:herkomstDefinitie "IMDiSGeo";
+      mim:herkomst "IMDiSGeo";
+      mim:indicatieFormeleHistorie false;
+      rdfs:comment "De geometrische afbakening van het bevattendGebied, waarbinnen de geometrie van het bevatteGebied ,zich moet bevinden, en/of mee moet samenvallen.";
+      sh:path nen3610:ligtInBestuurlijkGebied;
+      mim:datumOpname "19-08-2022";
+      sh:class nen3610:BestuurlijkGebied
+    ], [
+      mim:indicatieFormeleHistorie false;
+      sh:minCount 1;
+      rdfs:comment "Fase van de levenscyclus waarin een bestuurlijk gebied zich bevindt.";
+      sh:path nen3610:status;
+      sh:name "status";
+      mim:indicatieAfleidbaar false;
+      sh:maxCount 1;
+      rdfs:label "status";
+      mim:patroon "De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel het waardenbereik, uitgedrukt in een specifieke structuur.";
+      mim:indicatieMaterieleHistorie false;
+      mim:identificerend "false";
+      sh:node nen3610-sh:StatusRegistratieveRuimte
+    ], [
+      mim:herkomstDefinitie "IMDiSGeo";
+      mim:indicatieFormeleHistorie false;
+      mim:toelichting "De enumaratiewaarden van dit attribuut worden afgeleid uit de concrete specialisaties van het objecttype 'Bestuurlijk gebied.";
+      sh:minCount 1;
+      rdfs:comment "Categorie waartoe het betreffende bestuurlijke gebied behoort.";
+      sh:path nen3610:type;
+      sh:name "type";
+      mim:indicatieAfleidbaar true;
+      sh:maxCount 1;
+      mim:herkomst "IMDiSGeo";
+      rdfs:label "type";
+      mim:patroon "De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel het waardenbereik, uitgedrukt in een specifieke structuur.";
+      mim:datumOpname "19-08-2022";
+      mim:indicatieMaterieleHistorie false;
+      mim:identificerend "false";
+      sh:node nen3610-sh:TypeBestuurlijkGebied
+    ], [
+      mim:indicatieFormeleHistorie false;
+      sh:minCount 1;
+      sh:datatype xsd:string;
+      rdfs:comment "Aanduiding van het domein waarbinnen de identificatie uniek is.";
+      sh:path nen3610:domein;
+      sh:name "domein";
+      mim:indicatieAfleidbaar false;
+      sh:maxCount 1;
+      rdfs:label "domein";
+      mim:patroon "De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel het waardenbereik, uitgedrukt in een specifieke structuur.";
+      mim:indicatieMaterieleHistorie false;
+      mim:identificerend "true"
+    ], [
+      mim:indicatieFormeleHistorie false;
+      sh:minCount 1;
+      rdfs:comment "Geometrische representatie van een gebied op land dat door een openbaar lichaam wordt bestuurd.";
+      sh:path nen3610:geometrie;
+      sh:name "geometrie";
+      mim:indicatieAfleidbaar false;
+      sh:maxCount 1;
+      rdfs:label "geometrie";
+      mim:patroon "De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel het waardenbereik, uitgedrukt in een specifieke structuur.";
+      mim:indicatieMaterieleHistorie false;
+      mim:identificerend "false";
+      sh:xone ([
+            sh:class gml:Surface
+          ] [
+            sh:class gml:MultiSurface
+          ])
+    ], [
+      mim:indicatieFormeleHistorie false;
+      skos:altLabel "identificatie";
+      sh:minCount 1;
+      sh:datatype xsd:string;
+      rdfs:comment "Unieke identificatiecode van een informatieobject binnen de context van een registratie. Toelichting: ‘identificatie’ is de identificatiecode die een object heeft binnen een registratie of binnen een ketenproces voor data-uitwisseling. Binnen de registratie of de data-uitwisseling is het object uniek identificeerbaar. In combinatie met het attribuut domein wordt een object hiermee uniek identificeerbaar op het niveau van verschillende registraties, uitwisselprocessen en ook wereldwijd uniek. De reguliere expressie voor de toegestane tekens is: [a-zA-Z|0-9|_|.|-|\\/|:|]";
+      sh:path nen3610:identificatie;
+      sh:name "identificatie";
+      mim:indicatieAfleidbaar false;
+      sh:maxCount 1;
+      rdfs:label "identificatie";
+      mim:patroon "De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel het waardenbereik, uitgedrukt in een specifieke structuur.";
+      mim:indicatieMaterieleHistorie false;
+      mim:identificerend "true"
+    ] .
+
+<http://begrippen.geostandaarden.nl/disgeo/id/begrip/Gemeente> a nen3610:TypeOpenbaarLichaam;
+  skos:notation "gemeente";
+  skos:inScheme <http://begrippen.geostandaarden.nl/disgeo/id/scheme/TypeOpenbaarLichaam> .
+
+nen3610-sh:StatusRegistratieveRuimte a sh:NodeShape;
+  rdfs:label "StatusRegistratieveRuimte";
+  sh:name "StatusRegistratieveRuimte";
+  sh:property [
+      sh:path skos:definition;
+      sh:name "StatusRegistratieveRuimte"
+    ], [
+      sh:hasValue <http://begrippen.geostandaarden.nl/disgeo/id/scheme/StatusRegistratieveRuimte>;
+      sh:path skos:inScheme;
+      sh:name "StatusRegistratieveRuimte"
+    ], [
+      sh:name "StatusRegistratieveRuimte";
+      sh:path rdfs:label
+    ], [
+      sh:path skos:notation;
+      sh:name "StatusRegistratieveRuimte"
+    ], [
+      sh:hasValue nen3610:StatusRegistratieveRuimte;
+      sh:path rdf:type;
+      sh:name "StatusRegistratieveRuimte"
+    ];
+  sh:targetClass nen3610:StatusRegistratieveRuimte;
+  rdfs:comment "Fasen van de levenscycli van een registratieve ruimte." .
+
+nen3610:ExclusieveEconomischeZone a owl:Class;
+  rdfs:isDefinedBy <http://modellen.geostandaarden.nl/def/imso/Bestuurlijk%20gebied>;
+  skos:altLabel "EEZ";
+  mim:herkomstDefinitie "Rijkswet instelling exclusieve economische zone";
+  rdfs:comment "Het gebied buiten en grenzend aan de territoriale zee dat zich niet verder uitstrekt dan tweehonderd zeemijlen vanaf de laagwaterlijn.";
+  mim:toelichting "Het betreft hier de Nederlandse exclusieve economische zone zoals nu reeds wordt vastgelegd door de Dienst der Hydrografie. Dit was tot nu toe nog geen onderdeel van een basisregistratie.";
+  mim:datumOpname "2022-06-01";
+  rdfs:label "ExclusieveEconomischeZone";
+  mim:herkomst "IMDiSGeo";
+  mim:populatie "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.";
+  rdfs:subClassOf nen3610:BestuurlijkGebiedOpZee .
+
+nen3610:OpenbaarLichaam a owl:Class;
+  rdfs:isDefinedBy <http://modellen.geostandaarden.nl/def/imso/Bestuurlijk%20gebied>;
+  mim:herkomstDefinitie "Wikipedia";
+  rdfs:comment "Een overheidsorganisatie die bij of krachtens wet -of regelgeving wordt ingesteld of opgeheven, waarvan de taken en de inrichting, de samenstelling en bevoegdheid van haar besturen, alsmede de openbaarheid van hun vergaderingen bij wet -of regelgeving wordt geregeld. Aan de besturen van een openbaar lichaam kan een bevoegdheid tot regeling en bestuur worden toegewezen.";
+  mim:toelichting "De belangrijkste openbare lichamen zijn het Rijk, de provincies, de gemeenten en de waterschappen. De provincies en gemeenten worden in artikel 123 en verder van de Nederlandse Grondwet geregeld. De waterschappen in artikel 133.";
+  mim:datumOpname "30-03-2022";
+  rdfs:label "OpenbaarLichaam";
+  mim:herkomst "EMSO";
+  mim:populatie "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.";
+  rdfs:subClassOf nen3610:Overheidsorganisatie .
+
+nen3610:Waterschap a owl:Class;
+  rdfs:isDefinedBy <http://modellen.geostandaarden.nl/def/imso/Bestuurlijk%20gebied>;
+  mim:herkomstDefinitie "https://www.rijksoverheid.nl/onderwerpen/waterschappen";
+  rdfs:comment "Bestuurlijk- en regelgevend verantwoordelijk openbaar lichaam die zorgt voor het waterbeheer in een bepaald gebied.";
+  mim:toelichting "(nog opnemen)";
+  mim:datumOpname "11-05-2022";
+  rdfs:label "Waterschap";
+  mim:herkomst "IMDiSGeo";
+  mim:populatie "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.";
+  rdfs:subClassOf nen3610:OpenbaarLichaam .
+
+nen3610:Rijksgebied a owl:Class;
+  rdfs:isDefinedBy <http://modellen.geostandaarden.nl/def/imso/Bestuurlijk%20gebied>;
+  mim:herkomstDefinitie "EMSO";
+  rdfs:comment "Het grondgebied van het Koninkrijk der Nederlanden";
+  mim:toelichting "Dit betreft het Europese deel van het Koninkrijk der Nederlanden.";
+  mim:datumOpname "20-04-2022";
+  rdfs:label "Rijksgebied";
+  mim:herkomst "IMDiSGeo";
+  mim:populatie "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.";
+  rdfs:subClassOf nen3610:BestuurlijkGebiedOpLand .
+
+nen3610:Waterschapsgebied a owl:Class;
+  rdfs:isDefinedBy <http://modellen.geostandaarden.nl/def/imso/Bestuurlijk%20gebied>;
+  rdfs:label "Waterschapsgebied";
+  rdfs:subClassOf nen3610:BestuurlijkGebiedOpLand .
+
+nen3610:Provincie a owl:Class;
+  rdfs:isDefinedBy <http://modellen.geostandaarden.nl/def/imso/Bestuurlijk%20gebied>;
+  mim:herkomstDefinitie "Grondwet en Provinciewet";
+  rdfs:comment "Bestuurlijk- en regelgevend verantwoordelijk openbaar lichaam met algemene bevoegdheden tussen gemeente en Rijk.";
+  mim:toelichting "Het Europese deel van Nederland is verdeeld in twaalf provincies die elk hun eigen volksvertegenwoordiging en bestuur hebben. Deze provincies zijn weer onderverdeeld in 344 gemeenten. De provincies hebben specifieke bevoegdheden en taken op een aantal onderwerpen, zoals ruimtelijke ordening, milieubescherming en cultuur. Daarnaast houden ze toezicht op de gemeenten en spelen ze op veel gebieden een coördinerende rol in samenwerking met gemeenten, andere instanties en particuliere organisaties.";
+  mim:datumOpname "20-04-2022";
+  rdfs:label "Provincie";
+  mim:herkomst "IMDiSGeo";
+  mim:populatie "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.";
+  rdfs:subClassOf nen3610:OpenbaarLichaam .
+
+nen3610:VirtueleRuimte a owl:Class;
+  rdfs:isDefinedBy <http://modellen.geostandaarden.nl/def/imso/Bestuurlijk%20gebied>;
+  skos:altLabel "Virtuele ruimte";
+  mim:herkomstDefinitie "nen 3610";
+  rdfs:comment "Geo-object dat zich geheel of gedeeltelijk niet-materieel manifesteert en dus slechts in abstracte en/of geregistreerde vorm bestaat.";
+  mim:toelichting "Virtuele ruimten bevatten geo-objecten waarvan de begrenzing of een gedeelte van de begrenzing niet tastbaar en dus ook niet zichtbaar aanwezig is. Het betreft veelal het administratief of wettelijk benoemen en vastleggen van ruimten. Voorbeelden zijn objecten voor bestuurlijke grenzen, eigendomsbegrenzing, beheerbegrenzingen, ruimtelijk beleid.";
+  mim:datumOpname "20220601";
+  rdfs:label "VirtueleRuimte";
+  mim:herkomst "nen 3610";
+  mim:populatie "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)­registratie voorhanden zijn.";
+  rdfs:subClassOf nen3610:GeoObject .
+
+nen3610:Registratie a owl:Class;
+  rdfs:isDefinedBy <http://modellen.geostandaarden.nl/def/imso/Bestuurlijk%20gebied>;
+  rdfs:label "Registratie" .
+
+nen3610:TerritorialeZee a owl:Class;
+  rdfs:isDefinedBy <http://modellen.geostandaarden.nl/def/imso/Bestuurlijk%20gebied>;
+  skos:altLabel "NTZ";
+  mim:herkomstDefinitie "Wet grenzen Nederlandse territoriale zee";
+  rdfs:comment "Het gebied vanaf de laagwaterlijn tot 12 zeemijl uit de kust dat behoort bij het Rijk";
+  mim:toelichting "Het betreft hier de territoriale zee zoals nu reeds wordt vastgelegd door de Dienst der Hydrografie. Dit was tot nu toe nog geen onderdeel van een basisregistratie. Dit gebied is ook wel bekend als “de 12-mijlszone”. In het Eems-Dollard gebied is er tussen Nederland en Duitsland geen formeel grensverdrag en dus geen wederzijds bevestigde begrenzing van de territoriale zee.";
+  mim:datumOpname "2022-06-01";
+  rdfs:label "TerritorialeZee";
+  mim:herkomst "IMDiSGeo";
+  mim:populatie "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.";
+  rdfs:subClassOf nen3610:BestuurlijkGebiedOpZee .
+
+nen3610:RegistratieveRuimte a owl:Class;
+  rdfs:isDefinedBy <http://modellen.geostandaarden.nl/def/imso/Bestuurlijk%20gebied>;
+  skos:altLabel "Registratieve ruimte";
+  mim:herkomstDefinitie "nen 3610";
+  rdfs:comment "Op basis van wet- of regelgeving afgebakende ruimte die als eenheid geldt van politiek-bestuurlijke verantwoordelijkheid of voor bedrijfsvoering.";
+  mim:toelichting "Registratieve ruimte omvat objecten die onder de wet- of regelgeving vallen of die voor bedrijfsvoering administratief van belang zijn. In veel gevallen zal een dergelijk gebied ook een registratieve aanduiding of registratief nummer hebben. Voorbeelden zijn: gemeente Delft, postcodegebied 2345, politieregio Haaglanden, veiligheidsregio Gelderland-Midden, Nationaal Park De Hoge Veluwe, kadastraal perceel.";
+  mim:datumOpname "20220601";
+  rdfs:label "RegistratieveRuimte";
+  mim:herkomst "nen 3610";
+  mim:populatie "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)­registratie voorhanden zijn.";
+  rdfs:subClassOf nen3610:VirtueleRuimte .
+
+nen3610:ContinentaalPlat a owl:Class;
+  rdfs:isDefinedBy <http://modellen.geostandaarden.nl/def/imso/Bestuurlijk%20gebied>;
+  skos:altLabel "NCP";
+  mim:herkomstDefinitie "Mijnwet continentaal plat";
+  rdfs:comment "Het onder de Noordzee gelegen deel van de zeebodem en de ondergrond daarvan, waarop het Koninkrijk soevereine rechten heeft, en gelegen is buiten en grenzend aan de territoriale zee.";
+  mim:toelichting "Het betreft hier het Nederlandse continentaal plat zoals nu reeds wordt vastgelegd door de Dienst der Hydrografie. Dit was tot nu toe nog geen onderdeel van een basisregistratie. Binnen het Europese deel van het Rijk kent deze dezelfde contour als de Nederlandse Exclusieve Economische Zone.";
+  mim:datumOpname "2022-06-01";
+  rdfs:label "ContinentaalPlat";
+  mim:herkomst "IMDiSGeo";
+  mim:populatie "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.";
+  rdfs:subClassOf nen3610:BestuurlijkGebiedOpZee .
+
+nen3610:Rijk a owl:Class;
+  rdfs:isDefinedBy <http://modellen.geostandaarden.nl/def/imso/Bestuurlijk%20gebied>;
+  skos:altLabel "De Rijksoverheid";
+  mim:herkomstDefinitie "Wikipedia";
+  rdfs:comment "Het onderdeel van de Nederlandse overheid dat wettelijke taken heeft op landelijk niveau: de 'centrale overheid'.";
+  mim:toelichting "Het Rijk wordt gevormd door alle ministeries, de uitvoeringsorganisaties die onder de verantwoordelijkheid van een ministerie vallen, inspecties en Hoge Colleges van Staat en houdt zich bezig met de voorbereiding en de uitvoering van plannen van de regering en het parlement.";
+  mim:datumOpname "20-04-2022";
+  rdfs:label "Rijk";
+  mim:herkomst "IMDiSGeo";
+  mim:populatie "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.";
+  rdfs:subClassOf nen3610:OpenbaarLichaam .
+
+nen3610:Provinciegebied a owl:Class;
+  rdfs:isDefinedBy <http://modellen.geostandaarden.nl/def/imso/Bestuurlijk%20gebied>;
+  mim:herkomstDefinitie "Grondwet en Provinciewet";
+  rdfs:comment "Afgebakend gedeelte van het grondgebied van Nederland, onder zeggenschap van een openbaar lichaam met diverse bestuurlijke taken, ingesteld op basis van artikel 123 en 124 van de Grondwet, artikel 2:1 Burgerlijk Wetboek en artikel 13 van de Wet algemene regels herindeling";
+  mim:toelichting "Het gaat bij dit begrip nadrukkelijk om het grondgebied en niet om de juridische entiteit (bevoegd gezag). Een provincie valt altijd volledig binnen het Europese deel van het Koninkrijk der Nederlanden. De geometrie van alle provincies moeten het Europese deel van het grondgebied van Nederland op land volledig bedekken. Provincies mogen niet overlappen.";
+  mim:datumOpname "29-03-2022";
+  rdfs:label "Provinciegebied";
+  mim:herkomst "IMDiSGeo";
+  mim:populatie "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.";
+  rdfs:subClassOf nen3610:BestuurlijkGebiedOpLand .
+
+nen3610:Gemeentegebied a owl:Class;
+  rdfs:isDefinedBy <http://modellen.geostandaarden.nl/def/imso/Bestuurlijk%20gebied>;
+  mim:herkomstDefinitie "Grondwet en Gemeentewet";
+  rdfs:comment "Afgebakend gedeelte van het grondgebied van Nederland, onder zeggenschap van een openbaar lichaam met diverse bestuurlijke taken, ingesteld op basis van artikel 123 en 124 van de Grondwet, artikel 2:1 Burgerlijk Wetboek en artikel 3 van de Wet algemene regels herindeling.";
+  mim:toelichting "Het gaat bij dit begrip nadrukkelijk om het grondgebied en niet om de juridische entiteit (bevoegd gezag). Een gemeente valt altijd volledig binnen een provincie. De geometrie van alle gemeenten in een provincie moeten de provincie volledig bedekken. Provincies mogen niet overlappen. Bij de verdere uitwerking zal er nader aandacht worden geschonken aan eventueel bestaande verschillen tussen de gemeentegrenzen en de gemeentegrenzen op basis van kadastrale percelen";
+  mim:datumOpname "23-03-2022";
+  rdfs:label "Gemeentegebied";
+  mim:herkomst "IMDiSGeo";
+  mim:populatie "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.";
+  rdfs:subClassOf nen3610:BestuurlijkGebiedOpLand .
+
+nen3610:Veiligheidsregiogebied a owl:Class;
+  rdfs:isDefinedBy <http://modellen.geostandaarden.nl/def/imso/Bestuurlijk%20gebied>;
+  mim:herkomstDefinitie "Wet Veiligheidsregio’s";
+  rdfs:comment "Afgebakend gedeelte van het grondgebied van Nederland, onder zeggenschap van een openbaar lichaam met diverse bestuurlijke taken, ingesteld op basis van artikel 9 van de Wet Veiligheidsregio’s";
+  mim:toelichting "geen toelichting";
+  mim:datumOpname "11-05-2022";
+  rdfs:label "Veiligheidsregiogebied";
+  mim:herkomst "IMDiSGeo";
+  mim:populatie "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.";
+  rdfs:subClassOf nen3610:BestuurlijkGebiedOpLand .
+
+nen3610:AansluitendeZone a owl:Class;
+  rdfs:isDefinedBy <http://modellen.geostandaarden.nl/def/imso/Bestuurlijk%20gebied>;
+  skos:altLabel "NAZ";
+  mim:herkomstDefinitie "Rijkswet instelling aansluitende zone";
+  rdfs:comment "Het gebied buiten en grenzend aan de territoriale zee dat zich niet verder uitstrekt dan 24 zeemijlen vanaf de laagwaterlijn";
+  mim:toelichting "Het betreft hier de aansluitende zone zoals nu reeds wordt vastgelegd door de Dienst der Hydrografie. Dit was tot nu toe nog geen onderdeel van een basisregistratie.";
+  mim:datumOpname "2022-06-01";
+  rdfs:label "AansluitendeZone";
+  mim:herkomst "IMDiSGeo";
+  mim:populatie "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.";
+  rdfs:subClassOf nen3610:BestuurlijkGebiedOpZee .
+
+nen3610:GeoObject a owl:Class;
+  rdfs:isDefinedBy <http://modellen.geostandaarden.nl/def/imso/Bestuurlijk%20gebied>;
+  skos:altLabel "Geo-object";
+  mim:herkomstDefinitie "nen 3610";
+  rdfs:comment "Een fenomeen in de werkelijkheid dat direct of indirect is geassocieerd met een locatie relatief ten opzichte van de aarde.";
+  mim:toelichting "Van dit objecttype worden geen directe instanties gemaakt. Indien een object een geo-object is, is het altijd een instantie van een subklasse van GeoObject. Alle subklassen van GeoObject hebben conform MIM het stereotype «Objecttype». Voor publicatie conform NEN-EN-ISO 19109:2015 is het stereotype «FeatureType» verplicht. Binnen de context van NEN 3610 is «Objecttype» het equivalent van «FeatureType».";
+  mim:datumOpname "20220601";
+  rdfs:label "GeoObject";
+  mim:herkomst "nen 3610";
+  mim:populatie "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)­registratie voorhanden zijn." .
+
+nen3610:Overheidsorganisatie a owl:Class;
+  rdfs:isDefinedBy <http://modellen.geostandaarden.nl/def/imso/Bestuurlijk%20gebied>;
+  mim:herkomstDefinitie "https://tardis.overheid.nl/manual/2.3_-_Overheidsorganisaties.html";
+  rdfs:comment "Een organisatie die namens de overheid taken uitvoert en onder het gezag en toezicht van de overheid valt.";
+  mim:datumOpname "2022-12-07";
+  rdfs:label "Overheidsorganisatie";
+  mim:herkomst "TOOI" .
+
+nen3610:BestuurlijkGebiedOpLand a owl:Class;
+  rdfs:isDefinedBy <http://modellen.geostandaarden.nl/def/imso/Bestuurlijk%20gebied>;
+  mim:herkomstDefinitie "IMDiSGeo";
+  rdfs:comment "Bestuurlijk gebied op land.";
+  mim:toelichting "Met deze klasse is het mogelijk de gebieden die het Rijk op zee bestuurt apart te kunnen onderscheiden van de gebieden op land. Zonder deze klasse is het alleen mogelijk dit onderscheid op basis van definities of domeinkennis te maken.";
+  mim:datumOpname "10-06-2022";
+  rdfs:label "BestuurlijkGebiedOpLand";
+  mim:herkomst "IMDiSGeo";
+  mim:populatie "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.";
+  rdfs:subClassOf nen3610:BestuurlijkGebied .
+
+nen3610:Veiligheidsregio a owl:Class;
+  rdfs:isDefinedBy <http://modellen.geostandaarden.nl/def/imso/Bestuurlijk%20gebied>;
+  mim:herkomstDefinitie "https://www.vrgooienvechtstreek.nl/onze-organisatie/de-veiligheidsregio";
+  rdfs:comment "Bestuurlijk- en regelgevend verantwoordelijk openbaar lichaam voor de samenwerking door verschillende besturen en diensten ten aanzien van taken op het terrein van brandweerzorg, rampenbeheersing, crisisbeheersing, geneeskundige hulpverlening en handhaving van de openbare orde en veiligheid.";
+  mim:toelichting "(nog opnemen)";
+  mim:datumOpname "11-05-2022";
+  rdfs:label "Veiligheidsregio";
+  mim:herkomst "IMDiSGeo";
+  mim:populatie "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.";
+  rdfs:subClassOf nen3610:OpenbaarLichaam .
+
+nen3610:Gemeente a owl:Class;
+  rdfs:isDefinedBy <http://modellen.geostandaarden.nl/def/imso/Bestuurlijk%20gebied>;
+  mim:herkomstDefinitie "juridischwoordenboek.nl / https://kadastralekaart.com/begrippen/gemeente";
+  rdfs:comment "Bestuurlijk- en regelgevend verantwoordelijk openbaar lichaam die een deel van een provinciegebied bestuurt. De kleinste eenheid van territoriaal openbaar bestuur; publiekrechtelijke rechtspersoon met regelgevende bevoegdheid bestuurd door burgemeester en wethouders.";
+  mim:toelichting "De kleinste eenheid van territoriaal openbaar bestuur; publiekrechtelijke rechtspersoon met regelgevende bevoegdheid bestuurd door burgemeester en wethouders.";
+  mim:datumOpname "30-03-2022";
+  rdfs:label "Gemeente";
+  mim:herkomst "IMDiSGeo";
+  mim:populatie "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.";
+  rdfs:subClassOf nen3610:OpenbaarLichaam .
+
+nen3610:BestuurlijkGebiedOpZee a owl:Class;
+  rdfs:isDefinedBy <http://modellen.geostandaarden.nl/def/imso/Bestuurlijk%20gebied>;
+  mim:herkomstDefinitie "IMDiSGeo";
+  rdfs:comment "Bestuurlijk gebied op zee.";
+  mim:toelichting "Met deze klasse is het mogelijk de gebieden die het Rijk op zee bestuurt apart te kunnen onderscheiden van de gebieden op land. Zonder deze klasse is het alleen mogelijk dit onderscheid op basis van definities of domeinkennis te maken.";
+  rdfs:label "BestuurlijkGebiedOpZee";
+  mim:herkomst "IMDiSGeo";
+  mim:kwaliteit "10-06-2022";
+  mim:populatie "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.";
+  rdfs:subClassOf nen3610:BestuurlijkGebied .
+
+<http://modellen.geostandaarden.nl/def/imso/Bestuurlijk%20gebied> a owl:Ontology .
+
+<http://begrippen.geostandaarden.nl/disgeo/id/begrip/Provincie> a nen3610:TypeOpenbaarLichaam;
+  skos:notation "provincie";
+  skos:inScheme <http://begrippen.geostandaarden.nl/disgeo/id/scheme/TypeOpenbaarLichaam> .
+
+nen3610:bestuurtGebied a owl:ObjectProperty, rdf:Property;
+  rdfs:label "bestuurtGebied" .
+
+<http://begrippen.geostandaarden.nl/disgeo/id/begrip/Rijk> a nen3610:TypeOpenbaarLichaam;
+  skos:notation "rijk";
+  skos:inScheme <http://begrippen.geostandaarden.nl/disgeo/id/scheme/TypeOpenbaarLichaam> .
+
+nen3610-sh:BestuurlijkGebiedOpLand a sh:NodeShape;
+  mim:herkomstDefinitie "IMDiSGeo";
+  sh:name "BestuurlijkGebiedOpLand";
+  mim:indicatieAbstractObject true;
+  mim:datumOpname "10-06-2022";
+  sh:targetClass nen3610:BestuurlijkGebiedOpLand;
+  rdfs:comment "Bestuurlijk gebied op land.";
+  mim:populatie "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.";
+  mim:herkomst "IMDiSGeo";
+  mim:toelichting "Met deze klasse is het mogelijk de gebieden die het Rijk op zee bestuurt apart te kunnen onderscheiden van de gebieden op land. Zonder deze klasse is het alleen mogelijk dit onderscheid op basis van definities of domeinkennis te maken.";
+  rdfs:label "BestuurlijkGebiedOpLand";
+  sh:property [
+      sh:name "indicatie abstract object constraint";
+      sh:minCount 2;
+      sh:path rdf:type
+    ] .
+
+<http://begrippen.geostandaarden.nl/disgeo/id/begrip/Waterschap> a nen3610:TypeOpenbaarLichaam;
+  skos:notation "waterschap";
+  skos:inScheme <http://begrippen.geostandaarden.nl/disgeo/id/scheme/TypeOpenbaarLichaam> .
+
+<http://begrippen.geostandaarden.nl/disgeo/id/begrip/Veiligheidsregio> a nen3610:TypeOpenbaarLichaam;
+  skos:notation "veiligheidsregio";
+  skos:inScheme <http://begrippen.geostandaarden.nl/disgeo/id/scheme/TypeOpenbaarLichaam> .
+
+nen3610:TypeOpenbaarLichaam a owl:Class;
+  rdfs:label "TypeOpenbaarLichaam";
+  rdfs:subClassOf skos:Concept .
+
+<http://begrippen.geostandaarden.nl/disgeo/id/begrip/Actief> a nen3610:StatusRegistratie;
+  skos:notation "actief";
+  skos:inScheme <http://begrippen.geostandaarden.nl/disgeo/id/scheme/StatusRegistratie> .
+
+nen3610-sh:TypeOpenbaarLichaam a sh:NodeShape;
+  rdfs:label "TypeOpenbaarLichaam";
+  sh:name "TypeOpenbaarLichaam";
+  sh:property [
+      sh:path skos:definition;
+      sh:name "TypeOpenbaarLichaam"
+    ], [
+      sh:path skos:notation;
+      sh:name "TypeOpenbaarLichaam"
+    ], [
+      sh:name "TypeOpenbaarLichaam";
+      sh:path rdfs:label
+    ], [
+      sh:hasValue <http://begrippen.geostandaarden.nl/disgeo/id/scheme/TypeOpenbaarLichaam>;
+      sh:path skos:inScheme;
+      sh:name "TypeOpenbaarLichaam"
+    ], [
+      sh:hasValue nen3610:TypeOpenbaarLichaam;
+      sh:path rdf:type;
+      sh:name "TypeOpenbaarLichaam"
+    ];
+  sh:targetClass nen3610:TypeOpenbaarLichaam .
+
+<http://begrippen.geostandaarden.nl/disgeo/id/begrip/Afgevoerd> a nen3610:StatusRegistratie;
+  skos:notation "afgevoerd";
+  skos:inScheme <http://begrippen.geostandaarden.nl/disgeo/id/scheme/StatusRegistratie> .
+
+nen3610:ligtInProvinciegebied a owl:ObjectProperty, rdf:Property;
+  rdfs:label "ligtInProvinciegebied" .
+
+<http://begrippen.geostandaarden.nl/disgeo/id/begrip/Gemeentegebied> a nen3610:TypeBestuurlijkGebied;
+  skos:notation "gemeentegebied";
+  skos:inScheme <http://begrippen.geostandaarden.nl/disgeo/id/scheme/TypeBestuurlijkGebied> .
+
+nen3610:domein a owl:DatatypeProperty, rdf:Property;
+  rdfs:label "domein" .
+
+<http://begrippen.geostandaarden.nl/disgeo/id/begrip/Provinciegebied> a nen3610:TypeBestuurlijkGebied;
+  skos:notation "provinciegebied";
+  skos:inScheme <http://begrippen.geostandaarden.nl/disgeo/id/scheme/TypeBestuurlijkGebied> .
+
+nen3610-sh:BestuurlijkGebiedOpZee a sh:NodeShape;
+  mim:herkomstDefinitie "IMDiSGeo";
+  sh:name "BestuurlijkGebiedOpZee";
+  mim:indicatieAbstractObject true;
+  sh:targetClass nen3610:BestuurlijkGebiedOpZee;
+  rdfs:comment "Bestuurlijk gebied op zee.";
+  mim:populatie "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.";
+  mim:kwaliteit "10-06-2022";
+  mim:herkomst "IMDiSGeo";
+  mim:toelichting "Met deze klasse is het mogelijk de gebieden die het Rijk op zee bestuurt apart te kunnen onderscheiden van de gebieden op land. Zonder deze klasse is het alleen mogelijk dit onderscheid op basis van definities of domeinkennis te maken.";
+  rdfs:label "BestuurlijkGebiedOpZee";
+  sh:property [
+      sh:name "indicatie abstract object constraint";
+      sh:minCount 2;
+      sh:path rdf:type
+    ] .
+
+<http://begrippen.geostandaarden.nl/disgeo/id/begrip/Rijksgebied> a nen3610:TypeBestuurlijkGebied;
+  skos:notation "rijksgebied";
+  skos:inScheme <http://begrippen.geostandaarden.nl/disgeo/id/scheme/TypeBestuurlijkGebied> .
+
+<http://begrippen.geostandaarden.nl/disgeo/id/begrip/Waterschapsgebied> a nen3610:TypeBestuurlijkGebied;
+  skos:notation "waterschapsgebied";
+  skos:inScheme <http://begrippen.geostandaarden.nl/disgeo/id/scheme/TypeBestuurlijkGebied> .
+
+nen3610:ligtInVeiligheidsregiogebied a owl:ObjectProperty, rdf:Property;
+  rdfs:label "ligtInVeiligheidsregiogebied" .
+
+<http://begrippen.geostandaarden.nl/disgeo/id/begrip/Veiligheidsregiogebied> a nen3610:TypeBestuurlijkGebied;
+  skos:notation "veiligheidsregiogebied";
+  skos:inScheme <http://begrippen.geostandaarden.nl/disgeo/id/scheme/TypeBestuurlijkGebied> .
+
+nen3610:StatusRegistratie a owl:Class;
+  rdfs:label "StatusRegistratie";
+  rdfs:subClassOf skos:Concept .
+
+<http://begrippen.geostandaarden.nl/disgeo/id/begrip/TerritorialeZee> a nen3610:TypeBestuurlijkGebied;
+  skos:notation "territorialeZee";
+  skos:inScheme <http://begrippen.geostandaarden.nl/disgeo/id/scheme/TypeBestuurlijkGebied> .
+
+<http://begrippen.geostandaarden.nl/disgeo/id/begrip/AansluitendeZone> a nen3610:TypeBestuurlijkGebied;
+  skos:notation "aansluitendeZone";
+  skos:inScheme <http://begrippen.geostandaarden.nl/disgeo/id/scheme/TypeBestuurlijkGebied> .
+
+nen3610-sh:StatusRegistratie a sh:NodeShape;
+  rdfs:label "StatusRegistratie";
+  sh:name "StatusRegistratie";
+  sh:property [
+      sh:hasValue <http://begrippen.geostandaarden.nl/disgeo/id/scheme/StatusRegistratie>;
+      sh:path skos:inScheme;
+      sh:name "StatusRegistratie"
+    ], [
+      sh:name "StatusRegistratie";
+      sh:path rdfs:label
+    ], [
+      sh:hasValue nen3610:StatusRegistratie;
+      sh:path rdf:type;
+      sh:name "StatusRegistratie"
+    ], [
+      sh:path skos:definition;
+      sh:name "StatusRegistratie"
+    ], [
+      sh:path skos:notation;
+      sh:name "StatusRegistratie"
+    ];
+  sh:targetClass nen3610:StatusRegistratie .
+
+nen3610-sh:OpenbaarLichaam a sh:NodeShape;
+  mim:herkomstDefinitie "Wikipedia";
+  sh:name "OpenbaarLichaam";
+  mim:indicatieAbstractObject false;
+  mim:datumOpname "30-03-2022";
+  sh:targetClass nen3610:OpenbaarLichaam;
+  rdfs:comment "Een overheidsorganisatie die bij of krachtens wet -of regelgeving wordt ingesteld of opgeheven, waarvan de taken en de inrichting, de samenstelling en bevoegdheid van haar besturen, alsmede de openbaarheid van hun vergaderingen bij wet -of regelgeving wordt geregeld. Aan de besturen van een openbaar lichaam kan een bevoegdheid tot regeling en bestuur worden toegewezen.";
+  mim:populatie "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.";
+  mim:herkomst "EMSO";
+  mim:toelichting "De belangrijkste openbare lichamen zijn het Rijk, de provincies, de gemeenten en de waterschappen. De provincies en gemeenten worden in artikel 123 en verder van de Nederlandse Grondwet geregeld. De waterschappen in artikel 133.";
+  rdfs:label "OpenbaarLichaam";
+  sh:property [
+      sh:nodeKind sh:IRI;
+      mim:indicatieAfleidbaar true;
+      rdfs:label "bestuurtGebied";
+      mim:indicatieMaterieleHistorie false;
+      sh:minCount 1;
+      sh:name "bestuurtGebied";
+      mim:indicatieFormeleHistorie false;
+      sh:path nen3610:bestuurtGebied;
+      sh:class nen3610:BestuurlijkGebied
+    ], [
+      mim:indicatieFormeleHistorie false;
+      mim:toelichting "Een inhoudelijke toelichting op de toepassing van het informatie-element.";
+      sh:minCount 1;
+      sh:datatype xsd:string;
+      rdfs:comment "Codering van een openbaar lichaam zoals deze door het CBS (op land) of door het RVIG (op zee) wordt gebruikt.";
+      sh:path nen3610:code;
+      sh:name "code";
+      mim:indicatieAfleidbaar false;
+      sh:maxCount 1;
+      rdfs:label "code";
+      mim:patroon "De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.";
+      mim:indicatieMaterieleHistorie false;
+      mim:identificerend "false"
+    ], [
+      mim:herkomstDefinitie "IMDiSGeo";
+      mim:indicatieFormeleHistorie false;
+      mim:toelichting "De enumaratiewaarden van dit attribuut worden afgeleid uit de concrete specialisaties van het objecttype 'Openbaar Lichaam'.";
+      sh:minCount 1;
+      rdfs:comment "Categorie waartoe het betreffende openbaar lichaam behoort.";
+      sh:path nen3610:type;
+      sh:name "type";
+      mim:indicatieAfleidbaar true;
+      sh:maxCount 1;
+      mim:herkomst "IMDiSGeo";
+      rdfs:label "type";
+      mim:patroon "De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel het waardenbereik, uitgedrukt in een specifieke structuur.";
+      mim:datumOpname "19-08-2022";
+      mim:indicatieMaterieleHistorie false;
+      mim:identificerend "false";
+      sh:node nen3610-sh:TypeOpenbaarLichaam
+    ], [
+      mim:indicatieFormeleHistorie false;
+      mim:toelichting "Een inhoudelijke toelichting op de toepassing van het informatie-element.";
+      sh:minCount 1;
+      sh:datatype xsd:string;
+      rdfs:comment "Naam van een gemeente zoals formeel benoemd door het bevoegd gezag.";
+      sh:path nen3610:formeleNaam;
+      sh:name "formeleNaam";
+      mim:indicatieAfleidbaar false;
+      sh:maxCount 1;
+      rdfs:label "formeleNaam";
+      mim:patroon "Niet van toepassing op het Rijk";
+      mim:indicatieMaterieleHistorie false;
+      mim:identificerend "false"
+    ] .
+
+<http://begrippen.geostandaarden.nl/disgeo/id/begrip/ExclusieveEconomischeZone> a
+    nen3610:TypeBestuurlijkGebied;
+  skos:notation "exclusieveEconomischeZone";
+  skos:inScheme <http://begrippen.geostandaarden.nl/disgeo/id/scheme/TypeBestuurlijkGebied> .
+
+nen3610:status a owl:DatatypeProperty, rdf:Property;
+  rdfs:label "status" .
+
+<http://begrippen.geostandaarden.nl/disgeo/id/begrip/ContinentaalPlat> a nen3610:TypeBestuurlijkGebied;
+  skos:notation "continentaalPlat";
+  skos:inScheme <http://begrippen.geostandaarden.nl/disgeo/id/scheme/TypeBestuurlijkGebied> .
+
+nen3610:bestuurtGemeentegebied a owl:ObjectProperty, rdf:Property;
+  rdfs:label "bestuurtGemeentegebied" .
+
+nen3610:TypeBestuurlijkGebied a owl:Class;
+  rdfs:label "TypeBestuurlijkGebied";
+  rdfs:subClassOf skos:Concept .
+
+nen3610-sh:Gemeentegebied a sh:NodeShape;
+  mim:herkomstDefinitie "Grondwet en Gemeentewet";
+  sh:name "Gemeentegebied";
+  mim:indicatieAbstractObject false;
+  mim:datumOpname "23-03-2022";
+  sh:targetClass nen3610:Gemeentegebied;
+  rdfs:comment "Afgebakend gedeelte van het grondgebied van Nederland, onder zeggenschap van een openbaar lichaam met diverse bestuurlijke taken, ingesteld op basis van artikel 123 en 124 van de Grondwet, artikel 2:1 Burgerlijk Wetboek en artikel 3 van de Wet algemene regels herindeling.";
+  mim:populatie "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.";
+  mim:herkomst "IMDiSGeo";
+  mim:toelichting "Het gaat bij dit begrip nadrukkelijk om het grondgebied en niet om de juridische entiteit (bevoegd gezag). Een gemeente valt altijd volledig binnen een provincie. De geometrie van alle gemeenten in een provincie moeten de provincie volledig bedekken. Provincies mogen niet overlappen. Bij de verdere uitwerking zal er nader aandacht worden geschonken aan eventueel bestaande verschillen tussen de gemeentegrenzen en de gemeentegrenzen op basis van kadastrale percelen";
+  rdfs:label "Gemeentegebied";
+  sh:property [
+      sh:nodeKind sh:IRI;
+      mim:indicatieAfleidbaar false;
+      rdfs:label "ligtInVeiligheidsregiogebied";
+      mim:indicatieMaterieleHistorie false;
+      sh:minCount 1;
+      sh:name "ligtInVeiligheidsregiogebied";
+      mim:toelichting "Een inhoudelijke toelichting op de definitie, ter verheldering of nadere duiding.";
+      mim:herkomstDefinitie "IMDiSGeo";
+      sh:maxCount 1;
+      mim:herkomst "IMDiSGeo";
+      mim:indicatieFormeleHistorie false;
+      rdfs:comment "De geometrische afbakening van het veiligheidsregiogebied waarbinnen de geometrie van het gemeentegebied zich moet bevinden, en/of mee moet samenvallen.";
+      sh:path nen3610:ligtInVeiligheidsregiogebied;
+      mim:datumOpname "11-05-2022";
+      sh:class nen3610:Veiligheidsregiogebied
+    ], [
+      sh:nodeKind sh:IRI;
+      mim:indicatieAfleidbaar false;
+      rdfs:label "ligtInProvinciegebied";
+      mim:indicatieMaterieleHistorie false;
+      sh:minCount 1;
+      sh:name "ligtInProvinciegebied";
+      mim:toelichting "Een gemeentegebied ligt altijd in één provinciegebied en mag de buitengrens van het provinciegebied niet overschrijden.";
+      mim:herkomstDefinitie "IMDiSGeo";
+      sh:maxCount 1;
+      mim:herkomst "IMDiSGeo";
+      mim:indicatieFormeleHistorie false;
+      rdfs:comment "De geometrische afbakening van het provinciegebied waarbinnen de geometrie van het gemeentegebied zich moet bevinden, en/of mee moet samenvallen.";
+      sh:path nen3610:ligtInProvinciegebied;
+      mim:datumOpname "29-03-2022";
+      sh:class nen3610:Provinciegebied
+    ] .
+
+nen3610:geregistreerdMet a owl:ObjectProperty, rdf:Property;
+  rdfs:label "geregistreerdMet" .
+
+nen3610:geometrie a owl:DatatypeProperty, rdf:Property;
+  rdfs:label "geometrie" .
+
+nen3610-sh:TypeBestuurlijkGebied a sh:NodeShape;
+  rdfs:label "TypeBestuurlijkGebied";
+  sh:name "TypeBestuurlijkGebied";
+  sh:property [
+      sh:hasValue <http://begrippen.geostandaarden.nl/disgeo/id/scheme/TypeBestuurlijkGebied>;
+      sh:path skos:inScheme;
+      sh:name "TypeBestuurlijkGebied"
+    ], [
+      sh:path skos:definition;
+      sh:name "TypeBestuurlijkGebied"
+    ], [
+      sh:name "TypeBestuurlijkGebied";
+      sh:path rdfs:label
+    ], [
+      sh:path skos:notation;
+      sh:name "TypeBestuurlijkGebied"
+    ], [
+      sh:hasValue nen3610:TypeBestuurlijkGebied;
+      sh:path rdf:type;
+      sh:name "TypeBestuurlijkGebied"
+    ];
+  sh:targetClass nen3610:TypeBestuurlijkGebied .
+
+nen3610-sh:Gemeente a sh:NodeShape;
+  mim:herkomstDefinitie "juridischwoordenboek.nl / https://kadastralekaart.com/begrippen/gemeente";
+  sh:name "Gemeente";
+  mim:indicatieAbstractObject false;
+  mim:datumOpname "30-03-2022";
+  sh:targetClass nen3610:Gemeente;
+  rdfs:comment "Bestuurlijk- en regelgevend verantwoordelijk openbaar lichaam die een deel van een provinciegebied bestuurt. De kleinste eenheid van territoriaal openbaar bestuur; publiekrechtelijke rechtspersoon met regelgevende bevoegdheid bestuurd door burgemeester en wethouders.";
+  mim:populatie "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.";
+  mim:herkomst "IMDiSGeo";
+  mim:toelichting "De kleinste eenheid van territoriaal openbaar bestuur; publiekrechtelijke rechtspersoon met regelgevende bevoegdheid bestuurd door burgemeester en wethouders.";
+  rdfs:label "Gemeente";
+  sh:property [
+      sh:nodeKind sh:IRI;
+      mim:indicatieAfleidbaar false;
+      rdfs:label "bestuurtGemeentegebied";
+      mim:indicatieMaterieleHistorie false;
+      sh:minCount 1;
+      sh:name "bestuurtGemeentegebied";
+      sh:maxCount 1;
+      mim:indicatieFormeleHistorie false;
+      rdfs:comment "Ruimte waarover de gemeente op basis van wet- of regelgeving de politieke regievoert.";
+      sh:path nen3610:bestuurtGemeentegebied;
+      mim:datumOpname "7-7-2022";
+      sh:class nen3610:Gemeentegebied
+    ] .
+
+nen3610:ligtInRijksgebied a owl:ObjectProperty, rdf:Property;
+  rdfs:label "ligtInRijksgebied" .
+
+nen3610:type a owl:DatatypeProperty, rdf:Property;
+  rdfs:label "type" .
+
+nen3610-sh:GeoObject a sh:NodeShape;
+  mim:herkomstDefinitie "nen 3610";
+  sh:name "GeoObject";
+  mim:indicatieAbstractObject true;
+  mim:datumOpname "20220601";
+  sh:targetClass nen3610:GeoObject;
+  rdfs:comment "Een fenomeen in de werkelijkheid dat direct of indirect is geassocieerd met een locatie relatief ten opzichte van de aarde.";
+  mim:populatie "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)­registratie voorhanden zijn.";
+  skos:altLabel "Geo-object";
+  mim:herkomst "nen 3610";
+  mim:toelichting "Van dit objecttype worden geen directe instanties gemaakt. Indien een object een geo-object is, is het altijd een instantie van een subklasse van GeoObject. Alle subklassen van GeoObject hebben conform MIM het stereotype «Objecttype». Voor publicatie conform NEN-EN-ISO 19109:2015 is het stereotype «FeatureType» verplicht. Binnen de context van NEN 3610 is «Objecttype» het equivalent van «FeatureType».";
+  rdfs:label "GeoObject";
+  sh:property [
+      sh:name "indicatie abstract object constraint";
+      sh:minCount 2;
+      sh:path rdf:type
+    ], [
+      sh:nodeKind sh:IRI;
+      mim:indicatieAfleidbaar false;
+      rdfs:label "geregistreerdMet";
+      mim:indicatieMaterieleHistorie false;
+      sh:minCount 1;
+      sh:name "geregistreerdMet";
+      sh:maxCount 1;
+      mim:indicatieFormeleHistorie false;
+      sh:path nen3610:geregistreerdMet;
+      sh:class nen3610:Registratie
+    ] .
+
+nen3610:bestuurtProvinciegebied a owl:ObjectProperty, rdf:Property;
+  rdfs:label "bestuurtProvinciegebied" .
+
+nen3610:code a owl:DatatypeProperty, rdf:Property;
+  rdfs:label "code" .
+
+nen3610-sh:Provinciegebied a sh:NodeShape;
+  mim:herkomstDefinitie "Grondwet en Provinciewet";
+  sh:name "Provinciegebied";
+  mim:indicatieAbstractObject false;
+  mim:datumOpname "29-03-2022";
+  sh:targetClass nen3610:Provinciegebied;
+  rdfs:comment "Afgebakend gedeelte van het grondgebied van Nederland, onder zeggenschap van een openbaar lichaam met diverse bestuurlijke taken, ingesteld op basis van artikel 123 en 124 van de Grondwet, artikel 2:1 Burgerlijk Wetboek en artikel 13 van de Wet algemene regels herindeling";
+  mim:populatie "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.";
+  mim:herkomst "IMDiSGeo";
+  mim:toelichting "Het gaat bij dit begrip nadrukkelijk om het grondgebied en niet om de juridische entiteit (bevoegd gezag). Een provincie valt altijd volledig binnen het Europese deel van het Koninkrijk der Nederlanden. De geometrie van alle provincies moeten het Europese deel van het grondgebied van Nederland op land volledig bedekken. Provincies mogen niet overlappen.";
+  rdfs:label "Provinciegebied";
+  sh:property [
+      sh:nodeKind sh:IRI;
+      mim:indicatieAfleidbaar false;
+      rdfs:label "ligtInRijksgebied";
+      mim:indicatieMaterieleHistorie false;
+      sh:minCount 1;
+      sh:name "ligtInRijksgebied";
+      mim:toelichting "Een inhoudelijke toelichting op de toepassing van het informatie-element.";
+      mim:herkomstDefinitie "IMDiSGeo";
+      sh:maxCount 1;
+      mim:herkomst "IMDiSGeo";
+      mim:indicatieFormeleHistorie false;
+      rdfs:comment "De geometrische afbakening van het rijksgebied waarbinnen de geometrie van het provinciegebied zich moet bevinden, en/of mee moet samenvallen.";
+      sh:path nen3610:ligtInRijksgebied;
+      mim:datumOpname "20-04-2022";
+      sh:class nen3610:Rijksgebied
+    ] .
+
+nen3610:bestuurtAansluitendeZone a owl:ObjectProperty, rdf:Property;
+  rdfs:label "bestuurtAansluitendeZone" .
+
+nen3610:bestuurtContinentaalPlat a owl:ObjectProperty, rdf:Property;
+  rdfs:label "bestuurtContinentaalPlat" .
+
+nen3610-sh:Provincie a sh:NodeShape;
+  mim:herkomstDefinitie "Grondwet en Provinciewet";
+  sh:name "Provincie";
+  mim:indicatieAbstractObject false;
+  mim:datumOpname "20-04-2022";
+  sh:targetClass nen3610:Provincie;
+  rdfs:comment "Bestuurlijk- en regelgevend verantwoordelijk openbaar lichaam met algemene bevoegdheden tussen gemeente en Rijk.";
+  mim:populatie "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.";
+  mim:herkomst "IMDiSGeo";
+  mim:toelichting "Het Europese deel van Nederland is verdeeld in twaalf provincies die elk hun eigen volksvertegenwoordiging en bestuur hebben. Deze provincies zijn weer onderverdeeld in 344 gemeenten. De provincies hebben specifieke bevoegdheden en taken op een aantal onderwerpen, zoals ruimtelijke ordening, milieubescherming en cultuur. Daarnaast houden ze toezicht op de gemeenten en spelen ze op veel gebieden een coördinerende rol in samenwerking met gemeenten, andere instanties en particuliere organisaties.";
+  rdfs:label "Provincie";
+  sh:property [
+      sh:nodeKind sh:IRI;
+      mim:indicatieAfleidbaar false;
+      rdfs:label "bestuurtProvinciegebied";
+      mim:indicatieMaterieleHistorie false;
+      sh:minCount 1;
+      sh:name "bestuurtProvinciegebied";
+      sh:maxCount 1;
+      mim:indicatieFormeleHistorie false;
+      rdfs:comment "Ruimte waarover de provincie op basis van wet- of regelgeving de politieke regie voert.";
+      sh:path nen3610:bestuurtProvinciegebied;
+      mim:datumOpname "7-7-2022";
+      sh:class nen3610:Provinciegebied
+    ] .
+
+nen3610:formeleNaam a owl:DatatypeProperty, rdf:Property;
+  rdfs:label "formeleNaam" .
+
+nen3610:bestuurtExclusieveEconomischeZone a owl:ObjectProperty, rdf:Property;
+  rdfs:label "bestuurtExclusieveEconomischeZone" .
+
+nen3610-sh:Rijksgebied a sh:NodeShape;
+  mim:herkomstDefinitie "EMSO";
+  sh:name "Rijksgebied";
+  mim:indicatieAbstractObject false;
+  mim:datumOpname "20-04-2022";
+  sh:targetClass nen3610:Rijksgebied;
+  rdfs:comment "Het grondgebied van het Koninkrijk der Nederlanden";
+  mim:populatie "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.";
+  mim:herkomst "IMDiSGeo";
+  mim:toelichting "Dit betreft het Europese deel van het Koninkrijk der Nederlanden.";
+  rdfs:label "Rijksgebied" .
+
+nen3610:bestuurtTerritorialeZee a owl:ObjectProperty, rdf:Property;
+  rdfs:label "bestuurtTerritorialeZee" .
+
+nen3610-sh:TerritorialeZee a sh:NodeShape;
+  mim:herkomstDefinitie "Wet grenzen Nederlandse territoriale zee";
+  sh:name "TerritorialeZee";
+  mim:indicatieAbstractObject false;
+  mim:datumOpname "2022-06-01";
+  sh:targetClass nen3610:TerritorialeZee;
+  rdfs:comment "Het gebied vanaf de laagwaterlijn tot 12 zeemijl uit de kust dat behoort bij het Rijk";
+  mim:populatie "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.";
+  skos:altLabel "NTZ";
+  mim:herkomst "IMDiSGeo";
+  mim:toelichting "Het betreft hier de territoriale zee zoals nu reeds wordt vastgelegd door de Dienst der Hydrografie. Dit was tot nu toe nog geen onderdeel van een basisregistratie. Dit gebied is ook wel bekend als “de 12-mijlszone”. In het Eems-Dollard gebied is er tussen Nederland en Duitsland geen formeel grensverdrag en dus geen wederzijds bevestigde begrenzing van de territoriale zee.";
+  rdfs:label "TerritorialeZee" .
+
+nen3610:bestuurtRijksgebied a owl:ObjectProperty, rdf:Property;
+  rdfs:label "bestuurtRijksgebied" .
+
+nen3610-sh:AansluitendeZone a sh:NodeShape;
+  mim:herkomstDefinitie "Rijkswet instelling aansluitende zone";
+  sh:name "AansluitendeZone";
+  mim:indicatieAbstractObject false;
+  mim:datumOpname "2022-06-01";
+  sh:targetClass nen3610:AansluitendeZone;
+  rdfs:comment "Het gebied buiten en grenzend aan de territoriale zee dat zich niet verder uitstrekt dan 24 zeemijlen vanaf de laagwaterlijn";
+  mim:populatie "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.";
+  skos:altLabel "NAZ";
+  mim:herkomst "IMDiSGeo";
+  mim:toelichting "Het betreft hier de aansluitende zone zoals nu reeds wordt vastgelegd door de Dienst der Hydrografie. Dit was tot nu toe nog geen onderdeel van een basisregistratie.";
+  rdfs:label "AansluitendeZone" .
+
+nen3610:bestuurtWaterschapsgebied a owl:ObjectProperty, rdf:Property;
+  rdfs:label "bestuurtWaterschapsgebied" .
+
+nen3610:versie a owl:DatatypeProperty, rdf:Property;
+  rdfs:label "versie" .
+
+nen3610-sh:ExclusieveEconomischeZone a sh:NodeShape;
+  mim:herkomstDefinitie "Rijkswet instelling exclusieve economische zone";
+  sh:name "ExclusieveEconomischeZone";
+  mim:indicatieAbstractObject false;
+  mim:datumOpname "2022-06-01";
+  sh:targetClass nen3610:ExclusieveEconomischeZone;
+  rdfs:comment "Het gebied buiten en grenzend aan de territoriale zee dat zich niet verder uitstrekt dan tweehonderd zeemijlen vanaf de laagwaterlijn.";
+  mim:populatie "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.";
+  skos:altLabel "EEZ";
+  mim:herkomst "IMDiSGeo";
+  mim:toelichting "Het betreft hier de Nederlandse exclusieve economische zone zoals nu reeds wordt vastgelegd door de Dienst der Hydrografie. Dit was tot nu toe nog geen onderdeel van een basisregistratie.";
+  rdfs:label "ExclusieveEconomischeZone" .
+
+nen3610:bestuurtVeiligheidsregiogebied a owl:ObjectProperty, rdf:Property;
+  rdfs:label "bestuurtVeiligheidsregiogebied" .
+
+nen3610-sh:ContinentaalPlat a sh:NodeShape;
+  mim:herkomstDefinitie "Mijnwet continentaal plat";
+  sh:name "ContinentaalPlat";
+  mim:indicatieAbstractObject false;
+  mim:datumOpname "2022-06-01";
+  sh:targetClass nen3610:ContinentaalPlat;
+  rdfs:comment "Het onder de Noordzee gelegen deel van de zeebodem en de ondergrond daarvan, waarop het Koninkrijk soevereine rechten heeft, en gelegen is buiten en grenzend aan de territoriale zee.";
+  mim:populatie "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.";
+  skos:altLabel "NCP";
+  mim:herkomst "IMDiSGeo";
+  mim:toelichting "Het betreft hier het Nederlandse continentaal plat zoals nu reeds wordt vastgelegd door de Dienst der Hydrografie. Dit was tot nu toe nog geen onderdeel van een basisregistratie. Binnen het Europese deel van het Rijk kent deze dezelfde contour als de Nederlandse Exclusieve Economische Zone.";
+  rdfs:label "ContinentaalPlat" .
+
+nen3610:beginGeldigheid a owl:DatatypeProperty, rdf:Property;
+  rdfs:label "beginGeldigheid" .
+
+nen3610-sh:RegistratieveRuimte a sh:NodeShape;
+  mim:herkomstDefinitie "nen 3610";
+  sh:name "RegistratieveRuimte";
+  mim:indicatieAbstractObject true;
+  mim:datumOpname "20220601";
+  sh:targetClass nen3610:RegistratieveRuimte;
+  rdfs:comment "Op basis van wet- of regelgeving afgebakende ruimte die als eenheid geldt van politiek-bestuurlijke verantwoordelijkheid of voor bedrijfsvoering.";
+  mim:populatie "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)­registratie voorhanden zijn.";
+  skos:altLabel "Registratieve ruimte";
+  mim:herkomst "nen 3610";
+  mim:toelichting "Registratieve ruimte omvat objecten die onder de wet- of regelgeving vallen of die voor bedrijfsvoering administratief van belang zijn. In veel gevallen zal een dergelijk gebied ook een registratieve aanduiding of registratief nummer hebben. Voorbeelden zijn: gemeente Delft, postcodegebied 2345, politieregio Haaglanden, veiligheidsregio Gelderland-Midden, Nationaal Park De Hoge Veluwe, kadastraal perceel.";
+  rdfs:label "RegistratieveRuimte";
+  sh:property [
+      sh:name "indicatie abstract object constraint";
+      sh:minCount 2;
+      sh:path rdf:type
+    ] .
+
+nen3610:eindGeldigheid a owl:DatatypeProperty, rdf:Property;
+  rdfs:label "eindGeldigheid" .
+
+nen3610-sh:Rijk a sh:NodeShape;
+  mim:herkomstDefinitie "Wikipedia";
+  sh:name "Rijk";
+  mim:indicatieAbstractObject false;
+  mim:datumOpname "20-04-2022";
+  sh:targetClass nen3610:Rijk;
+  rdfs:comment "Het onderdeel van de Nederlandse overheid dat wettelijke taken heeft op landelijk niveau: de 'centrale overheid'.";
+  mim:populatie "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.";
+  skos:altLabel "De Rijksoverheid";
+  mim:herkomst "IMDiSGeo";
+  mim:toelichting "Het Rijk wordt gevormd door alle ministeries, de uitvoeringsorganisaties die onder de verantwoordelijkheid van een ministerie vallen, inspecties en Hoge Colleges van Staat en houdt zich bezig met de voorbereiding en de uitvoering van plannen van de regering en het parlement.";
+  rdfs:label "Rijk";
+  sh:property [
+      sh:nodeKind sh:IRI;
+      mim:indicatieAfleidbaar false;
+      rdfs:label "bestuurtRijksgebied";
+      mim:indicatieMaterieleHistorie false;
+      sh:minCount 1;
+      sh:name "bestuurtRijksgebied";
+      sh:maxCount 1;
+      mim:indicatieFormeleHistorie false;
+      rdfs:comment "Ruimte waarover het Rijk op basis van wet- of regelgeving de politieke regie voert op land.";
+      sh:path nen3610:bestuurtRijksgebied;
+      mim:datumOpname "7-7-2022";
+      sh:class nen3610:Rijksgebied
+    ], [
+      sh:nodeKind sh:IRI;
+      mim:indicatieAfleidbaar false;
+      rdfs:label "bestuurtTerritorialeZee";
+      mim:indicatieMaterieleHistorie false;
+      sh:minCount 1;
+      sh:name "bestuurtTerritorialeZee";
+      sh:maxCount 1;
+      mim:indicatieFormeleHistorie false;
+      rdfs:comment "Ruimte waarover het Rijk op basis van wet- of regelgeving de politieke regie voert op zee, tot 12 zeemijlen uit de kust.";
+      sh:path nen3610:bestuurtTerritorialeZee;
+      sh:class nen3610:TerritorialeZee
+    ], [
+      sh:nodeKind sh:IRI;
+      mim:indicatieAfleidbaar false;
+      rdfs:label "bestuurtAansluitendeZone";
+      mim:indicatieMaterieleHistorie false;
+      sh:minCount 1;
+      sh:name "bestuurtAansluitendeZone";
+      sh:maxCount 1;
+      mim:indicatieFormeleHistorie false;
+      rdfs:comment "Ruimte waarover het Rijk op basis van wet- of regelgeving de politieke regie voert op zee, tot 24 zeemijlen vanaf de laagwaterlijn.";
+      sh:path nen3610:bestuurtAansluitendeZone;
+      sh:class nen3610:AansluitendeZone
+    ], [
+      sh:nodeKind sh:IRI;
+      mim:indicatieAfleidbaar false;
+      rdfs:label "bestuurtContinentaalPlat";
+      mim:indicatieMaterieleHistorie false;
+      sh:minCount 1;
+      sh:name "bestuurtContinentaalPlat";
+      sh:maxCount 1;
+      mim:indicatieFormeleHistorie false;
+      rdfs:comment "Ruimte van de zeebodem en de ondergrond daarvan, buiten en grenzend aan de territoriale zee, waarover het Rijk op basis van wet- of regelgeving de politieke regie voert.";
+      sh:path nen3610:bestuurtContinentaalPlat;
+      sh:class nen3610:ContinentaalPlat
+    ], [
+      sh:nodeKind sh:IRI;
+      mim:indicatieAfleidbaar false;
+      rdfs:label "bestuurtExclusieveEconomischeZone";
+      mim:indicatieMaterieleHistorie false;
+      sh:minCount 1;
+      sh:name "bestuurtExclusieveEconomischeZone";
+      sh:maxCount 1;
+      mim:indicatieFormeleHistorie false;
+      rdfs:comment "Ruimte waarover het Rijk op basis van wet- of regelgeving de politieke regie voert op zee, tot 200 zeemijlen vanaf de laagwaterlijn.";
+      sh:path nen3610:bestuurtExclusieveEconomischeZone;
+      sh:class nen3610:ExclusieveEconomischeZone
+    ] .
+
+nen3610:tijdstipRegistratie a owl:DatatypeProperty, rdf:Property;
+  rdfs:label "tijdstipRegistratie" .
+
+nen3610-sh:Waterschap a sh:NodeShape;
+  mim:herkomstDefinitie "https://www.rijksoverheid.nl/onderwerpen/waterschappen";
+  sh:name "Waterschap";
+  mim:indicatieAbstractObject false;
+  mim:datumOpname "11-05-2022";
+  sh:targetClass nen3610:Waterschap;
+  rdfs:comment "Bestuurlijk- en regelgevend verantwoordelijk openbaar lichaam die zorgt voor het waterbeheer in een bepaald gebied.";
+  mim:populatie "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.";
+  mim:herkomst "IMDiSGeo";
+  mim:toelichting "(nog opnemen)";
+  rdfs:label "Waterschap";
+  sh:property [
+      sh:nodeKind sh:IRI;
+      mim:indicatieAfleidbaar false;
+      rdfs:label "bestuurtWaterschapsgebied";
+      mim:indicatieMaterieleHistorie false;
+      sh:minCount 1;
+      sh:name "bestuurtWaterschapsgebied";
+      sh:maxCount 1;
+      mim:indicatieFormeleHistorie false;
+      rdfs:comment "Ruimte waarover het waterschap op basis van wet- of regelgeving de politieke regie voert.";
+      sh:path nen3610:bestuurtWaterschapsgebied;
+      sh:class nen3610:Waterschapsgebied
+    ] .
+
+nen3610-sh:Veiligheidsregiogebied a sh:NodeShape;
+  mim:herkomstDefinitie "Wet Veiligheidsregio’s";
+  sh:name "Veiligheidsregiogebied";
+  mim:indicatieAbstractObject false;
+  mim:datumOpname "11-05-2022";
+  sh:targetClass nen3610:Veiligheidsregiogebied;
+  rdfs:comment "Afgebakend gedeelte van het grondgebied van Nederland, onder zeggenschap van een openbaar lichaam met diverse bestuurlijke taken, ingesteld op basis van artikel 9 van de Wet Veiligheidsregio’s";
+  mim:populatie "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.";
+  mim:herkomst "IMDiSGeo";
+  mim:toelichting "geen toelichting";
+  rdfs:label "Veiligheidsregiogebied" .
+
+nen3610:eindRegistratie a owl:DatatypeProperty, rdf:Property;
+  rdfs:label "eindRegistratie" .
+
+nen3610-sh:Veiligheidsregio a sh:NodeShape;
+  mim:herkomstDefinitie "https://www.vrgooienvechtstreek.nl/onze-organisatie/de-veiligheidsregio";
+  sh:name "Veiligheidsregio";
+  mim:indicatieAbstractObject false;
+  mim:datumOpname "11-05-2022";
+  sh:targetClass nen3610:Veiligheidsregio;
+  rdfs:comment "Bestuurlijk- en regelgevend verantwoordelijk openbaar lichaam voor de samenwerking door verschillende besturen en diensten ten aanzien van taken op het terrein van brandweerzorg, rampenbeheersing, crisisbeheersing, geneeskundige hulpverlening en handhaving van de openbare orde en veiligheid.";
+  mim:populatie "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.";
+  mim:herkomst "IMDiSGeo";
+  mim:toelichting "(nog opnemen)";
+  rdfs:label "Veiligheidsregio";
+  sh:property [
+      sh:nodeKind sh:IRI;
+      mim:indicatieAfleidbaar false;
+      rdfs:label "bestuurtVeiligheidsregiogebied";
+      mim:indicatieMaterieleHistorie false;
+      sh:minCount 1;
+      sh:name "bestuurtVeiligheidsregiogebied";
+      sh:maxCount 1;
+      mim:indicatieFormeleHistorie false;
+      rdfs:comment "Ruimte waarover de veiligheidsregio op basis van wet- of regelgeving de politieke regie voert van brandweerzorg, rampenbeheersing, crisisbeheersing, geneeskundige hulpverlening en handhaving van de openbare orde en veiligheid.";
+      sh:path nen3610:bestuurtVeiligheidsregiogebied;
+      mim:datumOpname "7-7-2022";
+      sh:class nen3610:Veiligheidsregiogebied
+    ] .
+
+nen3610:objectBeginTijd a owl:DatatypeProperty, rdf:Property;
+  rdfs:label "objectBeginTijd" .
+
+nen3610-sh:VirtueleRuimte a sh:NodeShape;
+  mim:herkomstDefinitie "nen 3610";
+  sh:name "VirtueleRuimte";
+  mim:indicatieAbstractObject true;
+  mim:datumOpname "20220601";
+  sh:targetClass nen3610:VirtueleRuimte;
+  rdfs:comment "Geo-object dat zich geheel of gedeeltelijk niet-materieel manifesteert en dus slechts in abstracte en/of geregistreerde vorm bestaat.";
+  mim:populatie "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)­registratie voorhanden zijn.";
+  skos:altLabel "Virtuele ruimte";
+  mim:herkomst "nen 3610";
+  mim:toelichting "Virtuele ruimten bevatten geo-objecten waarvan de begrenzing of een gedeelte van de begrenzing niet tastbaar en dus ook niet zichtbaar aanwezig is. Het betreft veelal het administratief of wettelijk benoemen en vastleggen van ruimten. Voorbeelden zijn objecten voor bestuurlijke grenzen, eigendomsbegrenzing, beheerbegrenzingen, ruimtelijk beleid.";
+  rdfs:label "VirtueleRuimte";
+  sh:property [
+      sh:name "indicatie abstract object constraint";
+      sh:minCount 2;
+      sh:path rdf:type
+    ] .
+
+nen3610-sh:Registratie a sh:NodeShape;
+  sh:name "Registratie";
+  mim:indicatieAbstractObject false;
+  sh:targetClass nen3610:Registratie;
+  rdfs:label "Registratie";
+  sh:property [
+      mim:indicatieFormeleHistorie false;
+      sh:minCount 1;
+      sh:path nen3610:status;
+      sh:name "status";
+      mim:indicatieAfleidbaar false;
+      sh:maxCount 1;
+      rdfs:label "status";
+      mim:patroon "De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel het waardenbereik, uitgedrukt in een specifieke structuur.";
+      mim:indicatieMaterieleHistorie false;
+      mim:identificerend "false";
+      sh:node nen3610-sh:StatusRegistratie
+    ], [
+      mim:herkomstDefinitie "nen 3610";
+      mim:indicatieFormeleHistorie false;
+      mim:toelichting "Vanaf het begin van deze tijdsaanduiding is de instantie niet meer geldig. Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime. Het eind van de periode is tot het begin van de tijdsaanduiding; het ‘tot-moment’.";
+      sh:datatype xsd:date;
+      rdfs:comment "Eind van de periode waarop deze versie van het informatieobject geldig is. De periode is tot aan deze tijdsaanduiding. Wanneer deze waarde niet is ingevuld, is de versie nog geldig.";
+      sh:path nen3610:eindGeldigheid;
+      sh:name "eindGeldigheid";
+      mim:indicatieAfleidbaar false;
+      sh:maxCount 1;
+      mim:herkomst "nen 3610";
+      rdfs:label "eindGeldigheid";
+      mim:patroon "De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel het waardenbereik, uitgedrukt in een specifieke structuur.";
+      mim:datumOpname "20220601";
+      mim:indicatieMaterieleHistorie false;
+      mim:identificerend "false"
+    ], [
+      mim:herkomstDefinitie "nen 3610";
+      mim:indicatieFormeleHistorie false;
+      mim:toelichting "Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime.";
+      sh:datatype xsd:dateTime;
+      rdfs:comment "Tijdsaanduiding waarop het object in de werkelijkheid niet meer geldig is.";
+      sh:path nen3610:objectEindTijd;
+      sh:name "objectEindTijd";
+      mim:indicatieAfleidbaar false;
+      mim:herkomst "nen 3610";
+      rdfs:label "objectEindTijd";
+      mim:patroon "De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel het waardenbereik, uitgedrukt in een specifieke structuur.";
+      mim:datumOpname "20220601";
+      mim:indicatieMaterieleHistorie false;
+      mim:identificerend "false"
+    ], [
+      mim:herkomstDefinitie "nen 3610";
+      mim:indicatieFormeleHistorie false;
+      mim:toelichting "Vanaf deze tijdsaanduiding is deze versie van het informatieobject niet meer actueel in de registratie. Met actueel wordt bedoeld dat er geen nieuwere versie 4 in de registratie is voor dit informatieobject. Aan een lege eindregistratie is ook te zien dat het de actuele versie betreft. Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime. Voor tijdstipRegistratie zal DateTime in vrijwel alle gevallen de beste keuze zijn. Wanneer bepaalde gegevens op de tijdlijn geldigheid niet meer geldig zijn, te herkennen aan de eindGeldigheid van een versie, wordt bij het vullen van de eindGeldigheid tegelijkertijd ook altijd de eindRegistratie gevuld zodat het duidelijk is vanaf welk moment op de tijdlijn registratie deze gegevens niet meer actueel zijn. De eindRegistratie geeft dus aan wanneer er geregistreerd is dat deze gegevens niet meer actueel zijn.";
+      sh:datatype xsd:dateTime;
+      rdfs:comment "Eind van de periode dat deze versie van het informatieobject actueel is in de registratie. De periode is tot aan deze tijdsaanduiding. Wanneer deze waarde niet is ingevuld, is de versie nog actueel.";
+      sh:path nen3610:eindRegistratie;
+      sh:name "eindRegistratie";
+      mim:indicatieAfleidbaar false;
+      sh:maxCount 1;
+      mim:herkomst "nen 3610";
+      rdfs:label "eindRegistratie";
+      mim:patroon "De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel het waardenbereik, uitgedrukt in een specifieke structuur.";
+      mim:datumOpname "20220601";
+      mim:indicatieMaterieleHistorie false;
+      mim:identificerend "false"
+    ], [
+      mim:herkomstDefinitie "nen 3610";
+      mim:indicatieFormeleHistorie false;
+      mim:toelichting "Een versie van een informatieobject is een toestand van een informatieobject met zijn gegevens op een bepaald moment in de tijd. Het attribuut versie maakt geen deel uit van de identificatie van het object, maar kan worden gebruikt om verschillende instanties van hetzelfde informatieobject te identificeren.";
+      sh:minCount 1;
+      sh:maxLength 50;
+      sh:datatype xsd:string;
+      sh:minLength 1;
+      rdfs:comment "Versieaanduiding van een informatieobject.";
+      sh:path nen3610:versie;
+      sh:name "versie";
+      mim:indicatieAfleidbaar false;
+      sh:maxCount 1;
+      mim:herkomst "nen 3610";
+      rdfs:label "versie";
+      mim:datumOpname "20220601";
+      mim:indicatieMaterieleHistorie false;
+      mim:identificerend "false"
+    ], [
+      mim:herkomstDefinitie "nen 3610";
+      mim:indicatieFormeleHistorie false;
+      mim:toelichting "Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime. De start van een periode is het begin van de tijdsaanduiding; het ‘vanaf-moment’. Bij een datum (date) is dat het begin van die dag.";
+      sh:minCount 1;
+      sh:datatype xsd:date;
+      rdfs:comment "Start van de periode waarop deze versie van het informatieobject geldig is.";
+      sh:path nen3610:beginGeldigheid;
+      sh:name "beginGeldigheid";
+      mim:indicatieAfleidbaar false;
+      sh:maxCount 1;
+      mim:herkomst "nen 3610";
+      rdfs:label "beginGeldigheid";
+      mim:patroon "De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel het waardenbereik, uitgedrukt in een specifieke structuur.";
+      mim:datumOpname "20220601";
+      mim:indicatieMaterieleHistorie false;
+      mim:identificerend "false"
+    ], [
+      mim:herkomstDefinitie "nen 3610";
+      mim:indicatieFormeleHistorie false;
+      mim:toelichting "Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime. Voor tijdstip registratie zal DateTime in vrijwel alle gevallen de beste keuze zijn.";
+      sh:minCount 1;
+      sh:datatype xsd:dateTime;
+      rdfs:comment "Tijdsaanduiding van het moment waarop deze versie van het informatieobject is opgenomen in de registratie.";
+      sh:path nen3610:tijdstipRegistratie;
+      sh:name "tijdstipRegistratie";
+      mim:indicatieAfleidbaar false;
+      sh:maxCount 1;
+      mim:herkomst "nen 3610";
+      rdfs:label "tijdstipRegistratie";
+      mim:patroon "De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel het waardenbereik, uitgedrukt in een specifieke structuur.";
+      mim:datumOpname "20220601";
+      mim:indicatieMaterieleHistorie false;
+      mim:identificerend "false"
+    ], [
+      mim:herkomstDefinitie "nen 3610";
+      mim:indicatieFormeleHistorie false;
+      mim:toelichting "Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime.";
+      sh:minCount 1;
+      sh:datatype xsd:dateTime;
+      rdfs:comment "Tijdsaanduiding waarop het object in de werkelijkheid is ontstaan.";
+      sh:path nen3610:objectBeginTijd;
+      sh:name "objectBeginTijd";
+      mim:indicatieAfleidbaar false;
+      sh:maxCount 1;
+      mim:herkomst "nen 3610";
+      rdfs:label "objectBeginTijd";
+      mim:patroon "De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel het waardenbereik, uitgedrukt in een specifieke structuur.";
+      mim:datumOpname "20220601";
+      mim:indicatieMaterieleHistorie false;
+      mim:identificerend "false"
+    ] .
+
+nen3610:objectEindTijd a owl:DatatypeProperty, rdf:Property;
+  rdfs:label "objectEindTijd" .
+
+nen3610-sh:Overheidsorganisatie a sh:NodeShape;
+  mim:herkomstDefinitie "https://tardis.overheid.nl/manual/2.3_-_Overheidsorganisaties.html";
+  sh:name "Overheidsorganisatie";
+  mim:indicatieAbstractObject false;
+  mim:datumOpname "2022-12-07";
+  sh:targetClass nen3610:Overheidsorganisatie;
+  rdfs:comment "Een organisatie die namens de overheid taken uitvoert en onder het gezag en toezicht van de overheid valt.";
+  mim:herkomst "TOOI";
+  rdfs:label "Overheidsorganisatie";
+  sh:property [
+      mim:indicatieFormeleHistorie false;
+      sh:minCount 1;
+      sh:datatype xsd:string;
+      sh:path nen3610:officieleNaamInclSoort;
+      sh:name "officieleNaamInclSoort";
+      mim:indicatieAfleidbaar false;
+      sh:maxCount 1;
+      rdfs:label "officieleNaamInclSoort";
+      mim:patroon "De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel het waardenbereik, uitgedrukt in een specifieke structuur.";
+      mim:indicatieMaterieleHistorie false;
+      mim:identificerend "false"
+    ], [
+      mim:indicatieFormeleHistorie false;
+      sh:minCount 1;
+      sh:datatype xsd:string;
+      sh:path nen3610:organisatiecode;
+      sh:name "organisatiecode";
+      mim:indicatieAfleidbaar false;
+      sh:maxCount 1;
+      rdfs:label "organisatiecode";
+      mim:patroon "De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel het waardenbereik, uitgedrukt in een specifieke structuur.";
+      mim:indicatieMaterieleHistorie false;
+      mim:identificerend "false"
+    ] .
+
+nen3610-sh:Waterschapsgebied a sh:NodeShape;
+  sh:name "Waterschapsgebied";
+  mim:indicatieAbstractObject false;
+  sh:targetClass nen3610:Waterschapsgebied;
+  rdfs:label "Waterschapsgebied" .
+
+nen3610:organisatiecode a owl:DatatypeProperty, rdf:Property;
+  rdfs:label "organisatiecode" .
+
+nen3610:officieleNaamInclSoort a owl:DatatypeProperty, rdf:Property;
+  rdfs:label "officieleNaamInclSoort" .
