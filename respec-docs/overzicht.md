@@ -43,7 +43,7 @@ In producten op basis van de geobasisregistraties zal de gebruiker echter doorga
 - De herkomst i.e. afleidingsgegevens: wat was de brongeometrie en hoe is de geometrie daaruit gegeneraliseerd. Dit is o.a nodig om terugmelding op geometrie te kunnen ondersteunen, ook in het geval van afgeleide geometrieën.
 
 <aside class="issue">
-**Eén geometrieattribuut: ** dit is waarschijnlijk wel voldoende, maar er zijn toch wel use cases denkbaar waarbij je meerdere geometrieën wilt uitwisselen van één object. Het CBS doet dit bijvoorbeeld wel in hun WFS service van wijken en buurten. Gebruikers kunnen dan in hun eigen GIS pakket van schaal wisselen wanneer ze maar willen. 
+**Eén geometrieattribuut:** dit is waarschijnlijk wel voldoende, maar er zijn wel use cases denkbaar waarbij je meerdere geometrieën wilt uitwisselen van één object. Het CBS doet dit bijvoorbeeld wel in hun WFS service van wijken en buurten. Gebruikers kunnen dan in hun eigen GIS pakket van schaal wisselen wanneer ze maar willen. 
 
 Eén geometrieattribuut volstaat dan nog steeds, maar het moet wel een meervoudige kardinaliteit hebben dwz `[1..*]`. 
 
