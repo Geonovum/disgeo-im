@@ -1,0 +1,8 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix imso: <http://modellen.geostandaarden.nl/def/imso#> .
+@prefix nen3610-2022: <http://modellen.geostandaarden.nl/def/nen3610-2022#> .
+
+<http://modellen.geostandaarden.nl/def/imso> owl:imports <http://modellen.geostandaarden.nl/def/nen3610-2022> .
+
+imso:RegistratieveRuimte rdfs:subClassOf nen3610-2022:RegistratieveRuimte .

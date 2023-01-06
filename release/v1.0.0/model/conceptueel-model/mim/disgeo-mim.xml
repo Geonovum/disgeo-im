@@ -1,0 +1,1385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--=========================================================================================
+Dit bestand bevat een XML serialisatie van een informatiemodel dat is gemodelleerd volgens de 
+"Metamodel Informatie Modellering (MIM)" standaard versie 1.1.
+
+NB. Het formaat van deze XML serialisatie is nog in ontwikkeling en zal pas definitief worden 
+gemaakt na het verschijnen van volgende versie van de MIM standaard. De kans is dus groot dat 
+er de komende tijd wijzigingen zullen worden doorgevoerd in dit formaat.
+
+Zie: https://docs.geostandaarden.nl/mim/mim/ voor de laatste versie van de standaard.
+=============================================================================================-->
+<mim:Informatiemodel xmlns:mim="http://www.geostandaarden.nl/mim/informatiemodel/v1"
+                     xmlns:mim-ext="http://www.geostandaarden.nl/mim-ext/informatiemodel/v1"
+                     xmlns:mim-ref="http://www.geostandaarden.nl/mim-ref/informatiemodel/v1"
+                     xmlns:xhtml="http://www.w3.org/1999/xhtml"
+                     xmlns:xlink="http://www.w3.org/1999/xlink"
+                     xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                     xsi:schemaLocation="http://www.geostandaarden.nl/mim/informatiemodel/v1 xsd/MIMFORMAT_Mim_v1.xsd">
+   <mim:naam>MIMCM-IMSOR-CM-1.0.0-0-20210512-20230106-140546</mim:naam>
+   <mim:definitie><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:definitie>
+   <mim:herkomst><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:herkomst>
+   <mim:informatiemodeltype>Conceptueel</mim:informatiemodeltype>
+   <mim:informatiedomein>IMSOR</mim:informatiedomein>
+   <mim:relatiemodelleringtype>Relatiesoort leidend</mim:relatiemodelleringtype>
+   <mim:MIMVersie>1.1</mim:MIMVersie>
+   <mim:MIMTaal>NL</mim:MIMTaal>
+   <mim:packages>
+      <mim:Domein id="bestuurlijk-gebied-domein-bestuurlijk-gebied-d11126e20">
+         <mim:naam>Bestuurlijk gebied</mim:naam>
+         <mim:datatypen>
+            <mim:Enumeratie id="bestuurlijk-gebied-enumeratie-statusregistratieveruimte-d11126e24">
+               <mim:naam>StatusRegistratieveRuimte</mim:naam>
+               <mim:definitie>
+                  <xhtml:body>
+                     <xhtml:p>Fasen van de levenscycli van een registratieve ruimte.</xhtml:p>
+                  </xhtml:body>
+               </mim:definitie>
+               <mim:enumeratiewaarden>
+                  <mim:Enumeratiewaarde>
+                     <mim:naam>Ontwerp</mim:naam>
+                     <mim:code>ontwerp</mim:code>
+                     <mim-ext:kenmerken>
+                        <mim-ext:kenmerk naam="positie">100</mim-ext:kenmerk>
+                     </mim-ext:kenmerken>
+                  </mim:Enumeratiewaarde>
+                  <mim:Enumeratiewaarde>
+                     <mim:naam>Niet gerealiseerd</mim:naam>
+                     <mim:definitie>
+                        <xhtml:body>
+                           <xhtml:p>Object waarvan de het ontwerp niet is gerealiseerd.</xhtml:p>
+                        </xhtml:body>
+                     </mim:definitie>
+                     <mim:code>nietGerealiseerd</mim:code>
+                     <mim-ext:kenmerken>
+                        <mim-ext:kenmerk naam="positie">100</mim-ext:kenmerk>
+                     </mim-ext:kenmerken>
+                  </mim:Enumeratiewaarde>
+                  <mim:Enumeratiewaarde>
+                     <mim:naam>Vastgesteld</mim:naam>
+                     <mim:definitie>
+                        <xhtml:body>
+                           <xhtml:p>Object dat door het bevoegd gezag is benoemd of afgebakend op grond van wet- of regelgeving.</xhtml:p>
+                        </xhtml:body>
+                     </mim:definitie>
+                     <mim:code>vastgesteld</mim:code>
+                     <mim-ext:kenmerken>
+                        <mim-ext:kenmerk naam="positie">100</mim-ext:kenmerk>
+                     </mim-ext:kenmerken>
+                  </mim:Enumeratiewaarde>
+                  <mim:Enumeratiewaarde>
+                     <mim:naam>Ingetrokken</mim:naam>
+                     <mim:definitie>
+                        <xhtml:body>
+                           <xhtml:p>Object dat door het bevoegd gezag is ingetrokken op grond van wet- of regelgeving.</xhtml:p>
+                        </xhtml:body>
+                     </mim:definitie>
+                     <mim:code>ingetrokken</mim:code>
+                     <mim-ext:kenmerken>
+                        <mim-ext:kenmerk naam="positie">100</mim-ext:kenmerk>
+                     </mim-ext:kenmerken>
+                  </mim:Enumeratiewaarde>
+               </mim:enumeratiewaarden>
+            </mim:Enumeratie>
+            <mim:Enumeratie id="bestuurlijk-gebied-enumeratie-typebestuurlijkgebied-d11126e84">
+               <mim:naam>TypeBestuurlijkGebied</mim:naam>
+               <mim:definitie><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:definitie>
+               <mim:enumeratiewaarden>
+                  <mim:Enumeratiewaarde>
+                     <mim:naam>aansluitende zone</mim:naam>
+                     <mim:code>aansluitendeZone</mim:code>
+                     <mim-ext:kenmerken>
+                        <mim-ext:kenmerk naam="positie">100</mim-ext:kenmerk>
+                     </mim-ext:kenmerken>
+                  </mim:Enumeratiewaarde>
+                  <mim:Enumeratiewaarde>
+                     <mim:naam>continentaal plat</mim:naam>
+                     <mim:code>continentaalPlat</mim:code>
+                     <mim-ext:kenmerken>
+                        <mim-ext:kenmerk naam="positie">100</mim-ext:kenmerk>
+                     </mim-ext:kenmerken>
+                  </mim:Enumeratiewaarde>
+                  <mim:Enumeratiewaarde>
+                     <mim:naam>exclusieve economische zone</mim:naam>
+                     <mim:code>exclusieveEconomischeZone</mim:code>
+                     <mim-ext:kenmerken>
+                        <mim-ext:kenmerk naam="positie">100</mim-ext:kenmerk>
+                     </mim-ext:kenmerken>
+                  </mim:Enumeratiewaarde>
+                  <mim:Enumeratiewaarde>
+                     <mim:naam>gemeentegebied</mim:naam>
+                     <mim:code>gemeentegebied</mim:code>
+                     <mim-ext:kenmerken>
+                        <mim-ext:kenmerk naam="positie">100</mim-ext:kenmerk>
+                     </mim-ext:kenmerken>
+                  </mim:Enumeratiewaarde>
+                  <mim:Enumeratiewaarde>
+                     <mim:naam>provinciegebied</mim:naam>
+                     <mim:code>provinciegebied</mim:code>
+                     <mim-ext:kenmerken>
+                        <mim-ext:kenmerk naam="positie">100</mim-ext:kenmerk>
+                     </mim-ext:kenmerken>
+                  </mim:Enumeratiewaarde>
+                  <mim:Enumeratiewaarde>
+                     <mim:naam>rijksgebied</mim:naam>
+                     <mim:code>rijksgebied</mim:code>
+                     <mim-ext:kenmerken>
+                        <mim-ext:kenmerk naam="positie">100</mim-ext:kenmerk>
+                     </mim-ext:kenmerken>
+                  </mim:Enumeratiewaarde>
+                  <mim:Enumeratiewaarde>
+                     <mim:naam>territoriale zee</mim:naam>
+                     <mim:code>territorialeZee</mim:code>
+                     <mim-ext:kenmerken>
+                        <mim-ext:kenmerk naam="positie">100</mim-ext:kenmerk>
+                     </mim-ext:kenmerken>
+                  </mim:Enumeratiewaarde>
+                  <mim:Enumeratiewaarde>
+                     <mim:naam>veiligheidsregiogebied</mim:naam>
+                     <mim:code>veiligheidsregiogebied</mim:code>
+                     <mim-ext:kenmerken>
+                        <mim-ext:kenmerk naam="positie">100</mim-ext:kenmerk>
+                     </mim-ext:kenmerken>
+                  </mim:Enumeratiewaarde>
+                  <mim:Enumeratiewaarde>
+                     <mim:naam>waterschapsgebied</mim:naam>
+                     <mim:code>waterschapsgebied</mim:code>
+                     <mim-ext:kenmerken>
+                        <mim-ext:kenmerk naam="positie">100</mim-ext:kenmerk>
+                     </mim-ext:kenmerken>
+                  </mim:Enumeratiewaarde>
+               </mim:enumeratiewaarden>
+            </mim:Enumeratie>
+            <mim:Enumeratie id="bestuurlijk-gebied-enumeratie-typeopenbaarlichaam-d11126e162">
+               <mim:naam>TypeOpenbaarLichaam</mim:naam>
+               <mim:definitie><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:definitie>
+               <mim:enumeratiewaarden>
+                  <mim:Enumeratiewaarde>
+                     <mim:naam>gemeente</mim:naam>
+                     <mim:code>gemeente</mim:code>
+                     <mim-ext:kenmerken>
+                        <mim-ext:kenmerk naam="positie">100</mim-ext:kenmerk>
+                     </mim-ext:kenmerken>
+                  </mim:Enumeratiewaarde>
+                  <mim:Enumeratiewaarde>
+                     <mim:naam>provincie</mim:naam>
+                     <mim:code>provincie</mim:code>
+                     <mim-ext:kenmerken>
+                        <mim-ext:kenmerk naam="positie">100</mim-ext:kenmerk>
+                     </mim-ext:kenmerken>
+                  </mim:Enumeratiewaarde>
+                  <mim:Enumeratiewaarde>
+                     <mim:naam>rijk</mim:naam>
+                     <mim:code>rijk</mim:code>
+                     <mim-ext:kenmerken>
+                        <mim-ext:kenmerk naam="positie">100</mim-ext:kenmerk>
+                     </mim-ext:kenmerken>
+                  </mim:Enumeratiewaarde>
+                  <mim:Enumeratiewaarde>
+                     <mim:naam>veiligheidsregio</mim:naam>
+                     <mim:code>veiligheidsregio</mim:code>
+                     <mim-ext:kenmerken>
+                        <mim-ext:kenmerk naam="positie">100</mim-ext:kenmerk>
+                     </mim-ext:kenmerken>
+                  </mim:Enumeratiewaarde>
+                  <mim:Enumeratiewaarde>
+                     <mim:naam>waterschap</mim:naam>
+                     <mim:code>waterschap</mim:code>
+                     <mim-ext:kenmerken>
+                        <mim-ext:kenmerk naam="positie">100</mim-ext:kenmerk>
+                     </mim-ext:kenmerken>
+                  </mim:Enumeratiewaarde>
+               </mim:enumeratiewaarden>
+            </mim:Enumeratie>
+         </mim:datatypen>
+         <mim:objecttypen>
+            <mim:Objecttype id="bestuurlijk-gebied-objecttype-aansluitendezone-d11126e209">
+               <mim:naam>AansluitendeZone</mim:naam>
+               <mim:begrip>http://begrippen.geostandaarden.nl/disgeo/id/begrip/nederlandse_aansluitende_zone</mim:begrip>
+               <mim:herkomst>IMDiSGeo</mim:herkomst>
+               <mim:definitie>
+                  <xhtml:body>
+                     <xhtml:p>Het gebied buiten en grenzend aan de territoriale zee dat zich niet verder uitstrekt dan 24 zeemijlen vanaf de laagwaterlijn</xhtml:p>
+                  </xhtml:body>
+               </mim:definitie>
+               <mim:herkomstDefinitie>Rijkswet instelling aansluitende zone</mim:herkomstDefinitie>
+               <mim:datumOpname>2022-06-01</mim:datumOpname>
+               <mim:populatie>Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.</mim:populatie>
+               <mim:indicatieAbstractObject>false</mim:indicatieAbstractObject>
+               <mim:supertypes>
+                  <mim:GeneralisatieObjecttypes>
+                     <mim:supertype>
+                        <mim-ref:ObjecttypeRef xlink:href="#bestuurlijk-gebied-objecttype-bestuurlijkgebiedopzee-d11126e476">BestuurlijkGebiedOpZee</mim-ref:ObjecttypeRef>
+                     </mim:supertype>
+                     <mim-ext:kenmerken>
+                        <mim-ext:kenmerk naam="positie">100</mim-ext:kenmerk>
+                     </mim-ext:kenmerken>
+                  </mim:GeneralisatieObjecttypes>
+               </mim:supertypes>
+            </mim:Objecttype>
+            <mim:Objecttype id="bestuurlijk-gebied-objecttype-bestuurlijkgebied-d11126e238">
+               <mim:naam>BestuurlijkGebied</mim:naam>
+               <mim:begrip>http://begrippen.geostandaarden.nl/disgeo/id/begrip/bestuurlijk_gebied</mim:begrip>
+               <mim:herkomst>IMDiSGeo</mim:herkomst>
+               <mim:definitie>
+                  <xhtml:body>
+                     <xhtml:p>Een bestuurlijk gebied is een registratieve ruimte die op basis van wet- of regelgeving als eenheid geldt van bestuurlijke verantwoordelijkheid.</xhtml:p>
+                  </xhtml:body>
+               </mim:definitie>
+               <mim:herkomstDefinitie>EMSO</mim:herkomstDefinitie>
+               <mim:datumOpname>23-03-2022</mim:datumOpname>
+               <mim:populatie>Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.</mim:populatie>
+               <mim:indicatieAbstractObject>false</mim:indicatieAbstractObject>
+               <mim:supertypes>
+                  <mim:GeneralisatieObjecttypes>
+                     <mim:supertype>
+                        <mim-ref:ObjecttypeRef xlink:href="#bestuurlijk-gebied-objecttype-registratieveruimte-d11126e1132">RegistratieveRuimte</mim-ref:ObjecttypeRef>
+                     </mim:supertype>
+                     <mim-ext:kenmerken>
+                        <mim-ext:kenmerk naam="positie">100</mim-ext:kenmerk>
+                     </mim-ext:kenmerken>
+                  </mim:GeneralisatieObjecttypes>
+               </mim:supertypes>
+               <mim:attribuutsoorten>
+                  <mim:Attribuutsoort>
+                     <mim:naam>geometrie</mim:naam>
+                     <mim:herkomst>IMDisGeo</mim:herkomst>
+                     <mim:definitie>
+                        <xhtml:body>
+                           <xhtml:p>Geometrische representatie van een gebied op land dat door een openbaar lichaam wordt bestuurd.</xhtml:p>
+                        </xhtml:body>
+                     </mim:definitie>
+                     <mim:herkomstDefinitie>EMSO</mim:herkomstDefinitie>
+                     <mim:datumOpname>31-05-2022</mim:datumOpname>
+                     <mim:type>
+                        <mim-ref:KeuzeRef xlink:href="#bestuurlijk-gebied-keuze-vlakofmultivlak-d11126e1735">VlakOfMultivlak</mim-ref:KeuzeRef>
+                     </mim:type>
+                     <mim:patroon>De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel het waardenbereik, uitgedrukt in een specifieke structuur.</mim:patroon>
+                     <mim:indicatieMaterieleHistorie>false</mim:indicatieMaterieleHistorie>
+                     <mim:indicatieFormeleHistorie>false</mim:indicatieFormeleHistorie>
+                     <mim:kardinaliteit>1</mim:kardinaliteit>
+                     <mim:authentiek><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:authentiek>
+                     <mim:indicatieAfleidbaar>false</mim:indicatieAfleidbaar>
+                     <mim:indicatieClassificerend>false</mim:indicatieClassificerend>
+                     <mim:mogelijkGeenWaarde>false</mim:mogelijkGeenWaarde>
+                     <mim:identificerend>false</mim:identificerend>
+                     <mim-ext:kenmerken>
+                        <mim-ext:kenmerk naam="positie">100</mim-ext:kenmerk>
+                     </mim-ext:kenmerken>
+                  </mim:Attribuutsoort>
+                  <mim:Attribuutsoort>
+                     <mim:naam>type</mim:naam>
+                     <mim:herkomst>IMDiSGeo</mim:herkomst>
+                     <mim:definitie>
+                        <xhtml:body>
+                           <xhtml:p>Categorie waartoe het betreffende bestuurlijke gebied behoort.</xhtml:p>
+                        </xhtml:body>
+                     </mim:definitie>
+                     <mim:herkomstDefinitie>IMDiSGeo</mim:herkomstDefinitie>
+                     <mim:datumOpname>17-08-202</mim:datumOpname>
+                     <mim:type>
+                        <mim-ref:DatatypeRef xlink:href="#bestuurlijk-gebied-enumeratie-typebestuurlijkgebied-d11126e84">TypeBestuurlijkGebied</mim-ref:DatatypeRef>
+                     </mim:type>
+                     <mim:patroon>De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel het waardenbereik, uitgedrukt in een specifieke structuur.</mim:patroon>
+                     <mim:indicatieMaterieleHistorie>false</mim:indicatieMaterieleHistorie>
+                     <mim:indicatieFormeleHistorie>false</mim:indicatieFormeleHistorie>
+                     <mim:kardinaliteit>1</mim:kardinaliteit>
+                     <mim:authentiek><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:authentiek>
+                     <mim:indicatieAfleidbaar>true</mim:indicatieAfleidbaar>
+                     <mim:indicatieClassificerend>false</mim:indicatieClassificerend>
+                     <mim:mogelijkGeenWaarde>false</mim:mogelijkGeenWaarde>
+                     <mim:identificerend>false</mim:identificerend>
+                     <mim-ext:kenmerken>
+                        <mim-ext:kenmerk naam="positie">100</mim-ext:kenmerk>
+                     </mim-ext:kenmerken>
+                  </mim:Attribuutsoort>
+               </mim:attribuutsoorten>
+               <mim:relatiesoorten>
+                  <mim:RelatiesoortRelatiesoortLeidend>
+                     <mim:naam>ligtInBestuurlijkGebied</mim:naam>
+                     <mim:unidirectioneel>true</mim:unidirectioneel>
+                     <mim:doel>
+                        <mim-ref:ObjecttypeRef xlink:href="#bestuurlijk-gebied-objecttype-bestuurlijkgebied-d11126e238">BestuurlijkGebied</mim-ref:ObjecttypeRef>
+                     </mim:doel>
+                     <mim:aggregatietype>Geen</mim:aggregatietype>
+                     <mim:kardinaliteit>0..*</mim:kardinaliteit>
+                     <mim:herkomst>IMDiSGeo</mim:herkomst>
+                     <mim:definitie>
+                        <xhtml:body>
+                           <xhtml:p>De geometrische afbakening van het <xhtml:em>bevattendGebied,</xhtml:em> waarbinnen de geometrie van het <xhtml:em>bevatteGebied</xhtml:em>,zich moet bevinden, en/of mee moet samenvallen.</xhtml:p>
+                        </xhtml:body>
+                     </mim:definitie>
+                     <mim:herkomstDefinitie>IMDiSGeo</mim:herkomstDefinitie>
+                     <mim:datumOpname>19-08-2022</mim:datumOpname>
+                     <mim:indicatieMaterieleHistorie>false</mim:indicatieMaterieleHistorie>
+                     <mim:indicatieFormeleHistorie>false</mim:indicatieFormeleHistorie>
+                     <mim:authentiek><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:authentiek>
+                     <mim:indicatieAfleidbaar>true</mim:indicatieAfleidbaar>
+                     <mim:mogelijkGeenWaarde>false</mim:mogelijkGeenWaarde>
+                     <mim:relatierolBron>
+                        <mim:RelatierolBron>
+                           <mim:naam>bevatteGebied</mim:naam>
+                        </mim:RelatierolBron>
+                     </mim:relatierolBron>
+                     <mim:relatierolDoel>
+                        <mim:RelatierolDoel>
+                           <mim:naam>bevattendGebied</mim:naam>
+                        </mim:RelatierolDoel>
+                     </mim:relatierolDoel>
+                     <mim-ext:kenmerken>
+                        <mim-ext:kenmerk naam="positie">200</mim-ext:kenmerk>
+                        <mim-ext:kenmerk naam="kardinaliteitBron">0..*</mim-ext:kenmerk>
+                     </mim-ext:kenmerken>
+                  </mim:RelatiesoortRelatiesoortLeidend>
+                  <mim:RelatiesoortRelatiesoortLeidend>
+                     <mim:naam>wordtBestuurdDoor</mim:naam>
+                     <mim:unidirectioneel>true</mim:unidirectioneel>
+                     <mim:doel>
+                        <mim-ref:ObjecttypeRef xlink:href="#bestuurlijk-gebied-objecttype-openbaarlichaam-d11126e770">OpenbaarLichaam</mim-ref:ObjecttypeRef>
+                     </mim:doel>
+                     <mim:aggregatietype>Geen</mim:aggregatietype>
+                     <mim:kardinaliteit>1</mim:kardinaliteit>
+                     <mim:herkomst><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:herkomst>
+                     <mim:definitie>
+                        <xhtml:body>
+                           <xhtml:p>Relatie die aangeeft dat het gebied bestuurt wordt door de bestuurder.</xhtml:p>
+                        </xhtml:body>
+                     </mim:definitie>
+                     <mim:herkomstDefinitie><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:herkomstDefinitie>
+                     <mim:datumOpname><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:datumOpname>
+                     <mim:indicatieMaterieleHistorie>false</mim:indicatieMaterieleHistorie>
+                     <mim:indicatieFormeleHistorie>false</mim:indicatieFormeleHistorie>
+                     <mim:authentiek><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:authentiek>
+                     <mim:indicatieAfleidbaar>true</mim:indicatieAfleidbaar>
+                     <mim:mogelijkGeenWaarde>false</mim:mogelijkGeenWaarde>
+                     <mim:relatierolDoel>
+                        <mim:RelatierolDoel>
+                           <mim:naam>bestuurder</mim:naam>
+                        </mim:RelatierolDoel>
+                     </mim:relatierolDoel>
+                     <mim-ext:kenmerken>
+                        <mim-ext:kenmerk naam="positie">200</mim-ext:kenmerk>
+                        <mim-ext:kenmerk naam="kardinaliteitBron">0..*</mim-ext:kenmerk>
+                     </mim-ext:kenmerken>
+                  </mim:RelatiesoortRelatiesoortLeidend>
+               </mim:relatiesoorten>
+            </mim:Objecttype>
+            <mim:Objecttype id="bestuurlijk-gebied-objecttype-bestuurlijkgebiedopland-d11126e447">
+               <mim:naam>BestuurlijkGebiedOpLand</mim:naam>
+               <mim:begrip>http://begrippen.geostandaarden.nl/disgeo/id/begrip/bestuurlijk_gebied_op_land</mim:begrip>
+               <mim:herkomst>IMDiSGeo</mim:herkomst>
+               <mim:definitie>
+                  <xhtml:body>
+                     <xhtml:p>Bestuurlijk gebied op land.</xhtml:p>
+                  </xhtml:body>
+               </mim:definitie>
+               <mim:herkomstDefinitie>IMDiSGeo</mim:herkomstDefinitie>
+               <mim:datumOpname>10-06-2022</mim:datumOpname>
+               <mim:populatie>Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.</mim:populatie>
+               <mim:indicatieAbstractObject>true</mim:indicatieAbstractObject>
+               <mim:supertypes>
+                  <mim:GeneralisatieObjecttypes>
+                     <mim:supertype>
+                        <mim-ref:ObjecttypeRef xlink:href="#bestuurlijk-gebied-objecttype-bestuurlijkgebied-d11126e238">BestuurlijkGebied</mim-ref:ObjecttypeRef>
+                     </mim:supertype>
+                     <mim-ext:kenmerken>
+                        <mim-ext:kenmerk naam="positie">100</mim-ext:kenmerk>
+                     </mim-ext:kenmerken>
+                  </mim:GeneralisatieObjecttypes>
+               </mim:supertypes>
+            </mim:Objecttype>
+            <mim:Objecttype id="bestuurlijk-gebied-objecttype-bestuurlijkgebiedopzee-d11126e476">
+               <mim:naam>BestuurlijkGebiedOpZee</mim:naam>
+               <mim:begrip>http://begrippen.geostandaarden.nl/disgeo/id/begrip/bestuurlijk_gebied_op_zee</mim:begrip>
+               <mim:herkomst>IMDiSGeo</mim:herkomst>
+               <mim:definitie>
+                  <xhtml:body>
+                     <xhtml:p>Bestuurlijk gebied op zee.</xhtml:p>
+                  </xhtml:body>
+               </mim:definitie>
+               <mim:herkomstDefinitie>IMDiSGeo</mim:herkomstDefinitie>
+               <mim:datumOpname><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:datumOpname>
+               <mim:populatie>Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.</mim:populatie>
+               <mim:kwaliteit>10-06-2022</mim:kwaliteit>
+               <mim:indicatieAbstractObject>true</mim:indicatieAbstractObject>
+               <mim:supertypes>
+                  <mim:GeneralisatieObjecttypes>
+                     <mim:supertype>
+                        <mim-ref:ObjecttypeRef xlink:href="#bestuurlijk-gebied-objecttype-bestuurlijkgebied-d11126e238">BestuurlijkGebied</mim-ref:ObjecttypeRef>
+                     </mim:supertype>
+                     <mim-ext:kenmerken>
+                        <mim-ext:kenmerk naam="positie">100</mim-ext:kenmerk>
+                     </mim-ext:kenmerken>
+                  </mim:GeneralisatieObjecttypes>
+               </mim:supertypes>
+            </mim:Objecttype>
+            <mim:Objecttype id="bestuurlijk-gebied-objecttype-continentaalplat-d11126e507">
+               <mim:naam>ContinentaalPlat</mim:naam>
+               <mim:begrip>http://begrippen.geostandaarden.nl/disgeo/id/begrip/nederlandse_continentaal_plat</mim:begrip>
+               <mim:herkomst>IMDiSGeo</mim:herkomst>
+               <mim:definitie>
+                  <xhtml:body>
+                     <xhtml:p>Het onder de Noordzee gelegen deel van de zeebodem en de ondergrond daarvan, waarop het Koninkrijk soevereine rechten heeft, en gelegen is buiten en grenzend aan de territoriale zee.</xhtml:p>
+                  </xhtml:body>
+               </mim:definitie>
+               <mim:herkomstDefinitie>Mijnwet continentaal plat</mim:herkomstDefinitie>
+               <mim:datumOpname>2022-06-01</mim:datumOpname>
+               <mim:populatie>Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.</mim:populatie>
+               <mim:toelichting>
+                  <xhtml:body>
+                     <xhtml:p>Het betreft hier het Nederlandse continentaal plat zoals nu reeds wordt vastgelegd door de Dienst der Hydrografie. Dit was tot nu toe nog geen onderdeel van een basisregistratie.</xhtml:p>
+                     <xhtml:p/>
+                     <xhtml:p>Binnen het Europese deel van het Rijk kent deze dezelfde contour als de Nederlandse Exclusieve Economische Zone.</xhtml:p>
+                  </xhtml:body>
+               </mim:toelichting>
+               <mim:indicatieAbstractObject>false</mim:indicatieAbstractObject>
+               <mim:supertypes>
+                  <mim:GeneralisatieObjecttypes>
+                     <mim:supertype>
+                        <mim-ref:ObjecttypeRef xlink:href="#bestuurlijk-gebied-objecttype-bestuurlijkgebiedopzee-d11126e476">BestuurlijkGebiedOpZee</mim-ref:ObjecttypeRef>
+                     </mim:supertype>
+                     <mim-ext:kenmerken>
+                        <mim-ext:kenmerk naam="positie">100</mim-ext:kenmerk>
+                     </mim-ext:kenmerken>
+                  </mim:GeneralisatieObjecttypes>
+               </mim:supertypes>
+            </mim:Objecttype>
+            <mim:Objecttype id="bestuurlijk-gebied-objecttype-exclusieveeconomischezone-d11126e547">
+               <mim:naam>ExclusieveEconomischeZone</mim:naam>
+               <mim:begrip>http://begrippen.geostandaarden.nl/disgeo/id/begrip/nederlandse_exclusieve_economische_zone</mim:begrip>
+               <mim:alias>EEZ</mim:alias>
+               <mim:herkomst>IMDiSGeo</mim:herkomst>
+               <mim:definitie>
+                  <xhtml:body>
+                     <xhtml:p>Het gebied buiten en grenzend aan de territoriale zee dat zich niet verder uitstrekt dan tweehonderd zeemijlen vanaf de laagwaterlijn.</xhtml:p>
+                  </xhtml:body>
+               </mim:definitie>
+               <mim:herkomstDefinitie>Rijkswet instelling exclusieve economische zone</mim:herkomstDefinitie>
+               <mim:datumOpname>2022-06-01</mim:datumOpname>
+               <mim:populatie>Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.</mim:populatie>
+               <mim:indicatieAbstractObject>false</mim:indicatieAbstractObject>
+               <mim:supertypes>
+                  <mim:GeneralisatieObjecttypes>
+                     <mim:supertype>
+                        <mim-ref:ObjecttypeRef xlink:href="#bestuurlijk-gebied-objecttype-bestuurlijkgebiedopzee-d11126e476">BestuurlijkGebiedOpZee</mim-ref:ObjecttypeRef>
+                     </mim:supertype>
+                     <mim-ext:kenmerken>
+                        <mim-ext:kenmerk naam="positie">100</mim-ext:kenmerk>
+                     </mim-ext:kenmerken>
+                  </mim:GeneralisatieObjecttypes>
+               </mim:supertypes>
+            </mim:Objecttype>
+            <mim:Objecttype id="bestuurlijk-gebied-objecttype-gemeente-d11126e578">
+               <mim:naam>Gemeente</mim:naam>
+               <mim:begrip>http://begrippen.geostandaarden.nl/disgeo/id/begrip/gemeente</mim:begrip>
+               <mim:herkomst>IMDiSGeo</mim:herkomst>
+               <mim:definitie>
+                  <xhtml:body>
+                     <xhtml:p>Een gemeente is een openbaar lichaam met algemene bevoegdheden, die een deel van een provinciegebied bestuurt.</xhtml:p>
+                  </xhtml:body>
+               </mim:definitie>
+               <mim:herkomstDefinitie>juridischwoordenboek.nl / https://kadastralekaart.com/begrippen/gemeente</mim:herkomstDefinitie>
+               <mim:datumOpname>30-03-2022</mim:datumOpname>
+               <mim:populatie>Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.</mim:populatie>
+               <mim:indicatieAbstractObject>false</mim:indicatieAbstractObject>
+               <mim:supertypes>
+                  <mim:GeneralisatieObjecttypes>
+                     <mim:supertype>
+                        <mim-ref:ObjecttypeRef xlink:href="#bestuurlijk-gebied-objecttype-openbaarlichaam-d11126e770">OpenbaarLichaam</mim-ref:ObjecttypeRef>
+                     </mim:supertype>
+                     <mim-ext:kenmerken>
+                        <mim-ext:kenmerk naam="positie">100</mim-ext:kenmerk>
+                     </mim-ext:kenmerken>
+                  </mim:GeneralisatieObjecttypes>
+               </mim:supertypes>
+               <mim:relatiesoorten>
+                  <mim:RelatiesoortRelatiesoortLeidend>
+                     <mim:naam>bestuurtGemeentegebied</mim:naam>
+                     <mim:unidirectioneel>true</mim:unidirectioneel>
+                     <mim:doel>
+                        <mim-ref:ObjecttypeRef xlink:href="#bestuurlijk-gebied-objecttype-gemeentegebied-d11126e652">Gemeentegebied</mim-ref:ObjecttypeRef>
+                     </mim:doel>
+                     <mim:aggregatietype>Geen</mim:aggregatietype>
+                     <mim:kardinaliteit>1</mim:kardinaliteit>
+                     <mim:herkomst><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:herkomst>
+                     <mim:definitie>
+                        <xhtml:body>
+                           <xhtml:p>Ruimte waarover de gemeente op basis van wet- of regelgeving de politieke regie voert.</xhtml:p>
+                        </xhtml:body>
+                     </mim:definitie>
+                     <mim:herkomstDefinitie><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:herkomstDefinitie>
+                     <mim:datumOpname><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:datumOpname>
+                     <mim:indicatieMaterieleHistorie>false</mim:indicatieMaterieleHistorie>
+                     <mim:indicatieFormeleHistorie>false</mim:indicatieFormeleHistorie>
+                     <mim:authentiek><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:authentiek>
+                     <mim:indicatieAfleidbaar>false</mim:indicatieAfleidbaar>
+                     <mim:mogelijkGeenWaarde>false</mim:mogelijkGeenWaarde>
+                     <mim:relatierolDoel>
+                        <mim:RelatierolDoel>
+                           <mim:naam>bestuurdGebied</mim:naam>
+                        </mim:RelatierolDoel>
+                     </mim:relatierolDoel>
+                     <mim-ext:kenmerken>
+                        <mim-ext:kenmerk naam="positie">200</mim-ext:kenmerk>
+                        <mim-ext:kenmerk naam="kardinaliteitBron">1</mim-ext:kenmerk>
+                     </mim-ext:kenmerken>
+                  </mim:RelatiesoortRelatiesoortLeidend>
+               </mim:relatiesoorten>
+            </mim:Objecttype>
+            <mim:Objecttype id="bestuurlijk-gebied-objecttype-gemeentegebied-d11126e652">
+               <mim:naam>Gemeentegebied</mim:naam>
+               <mim:begrip>http://begrippen.geostandaarden.nl/disgeo/id/begrip/gemeentegebied</mim:begrip>
+               <mim:herkomst>IMDiSGeo</mim:herkomst>
+               <mim:definitie>
+                  <xhtml:body>
+                     <xhtml:p>Afgebakend gedeelte van het grondgebied van Nederland, onder zeggenschap van een openbaar lichaam met diverse bestuurlijke taken, ingesteld op basis van artikel 123 en 124 van de Grondwet, artikel 2:1 Burgerlijk Wetboek en artikel 3 van de Wet algemene regels herindeling.</xhtml:p>
+                  </xhtml:body>
+               </mim:definitie>
+               <mim:herkomstDefinitie>Grondwet en Gemeentewet</mim:herkomstDefinitie>
+               <mim:datumOpname>23-03-2022</mim:datumOpname>
+               <mim:populatie>Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.</mim:populatie>
+               <mim:indicatieAbstractObject>false</mim:indicatieAbstractObject>
+               <mim:supertypes>
+                  <mim:GeneralisatieObjecttypes>
+                     <mim:supertype>
+                        <mim-ref:ObjecttypeRef xlink:href="#bestuurlijk-gebied-objecttype-bestuurlijkgebiedopland-d11126e447">BestuurlijkGebiedOpLand</mim-ref:ObjecttypeRef>
+                     </mim:supertype>
+                     <mim-ext:kenmerken>
+                        <mim-ext:kenmerk naam="positie">100</mim-ext:kenmerk>
+                     </mim-ext:kenmerken>
+                  </mim:GeneralisatieObjecttypes>
+               </mim:supertypes>
+               <mim:relatiesoorten>
+                  <mim:RelatiesoortRelatiesoortLeidend>
+                     <mim:naam>ligtInVeiligheidsregiogebied</mim:naam>
+                     <mim:unidirectioneel>true</mim:unidirectioneel>
+                     <mim:doel>
+                        <mim-ref:ObjecttypeRef xlink:href="#bestuurlijk-gebied-objecttype-veiligheidsregiogebied-d11126e1583">Veiligheidsregiogebied</mim-ref:ObjecttypeRef>
+                     </mim:doel>
+                     <mim:aggregatietype>Geen</mim:aggregatietype>
+                     <mim:kardinaliteit>1</mim:kardinaliteit>
+                     <mim:herkomst>IMDiSGeo</mim:herkomst>
+                     <mim:definitie>
+                        <xhtml:body>
+                           <xhtml:p>De geometrische afbakening van het veiligheidsregiogebied waarbinnen de geometrie van het gemeentegebied zich moet bevinden, en/of mee moet samenvallen.</xhtml:p>
+                        </xhtml:body>
+                     </mim:definitie>
+                     <mim:herkomstDefinitie>IMDiSGeo</mim:herkomstDefinitie>
+                     <mim:datumOpname>11-05-2022</mim:datumOpname>
+                     <mim:indicatieMaterieleHistorie>false</mim:indicatieMaterieleHistorie>
+                     <mim:indicatieFormeleHistorie>false</mim:indicatieFormeleHistorie>
+                     <mim:authentiek><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:authentiek>
+                     <mim:indicatieAfleidbaar>false</mim:indicatieAfleidbaar>
+                     <mim:mogelijkGeenWaarde>false</mim:mogelijkGeenWaarde>
+                     <mim:relatierolDoel>
+                        <mim:RelatierolDoel>
+                           <mim:naam>gerelateerd veiligheidsregiogebied</mim:naam>
+                        </mim:RelatierolDoel>
+                     </mim:relatierolDoel>
+                     <mim-ext:kenmerken>
+                        <mim-ext:kenmerk naam="positie">200</mim-ext:kenmerk>
+                        <mim-ext:kenmerk naam="kardinaliteitBron">1..*</mim-ext:kenmerk>
+                     </mim-ext:kenmerken>
+                  </mim:RelatiesoortRelatiesoortLeidend>
+                  <mim:RelatiesoortRelatiesoortLeidend>
+                     <mim:naam>ligtInProvinciegebied</mim:naam>
+                     <mim:unidirectioneel>true</mim:unidirectioneel>
+                     <mim:doel>
+                        <mim-ref:ObjecttypeRef xlink:href="#bestuurlijk-gebied-objecttype-provinciegebied-d11126e1058">Provinciegebied</mim-ref:ObjecttypeRef>
+                     </mim:doel>
+                     <mim:aggregatietype>Geen</mim:aggregatietype>
+                     <mim:kardinaliteit>1</mim:kardinaliteit>
+                     <mim:herkomst>IMDiSGeo</mim:herkomst>
+                     <mim:definitie>
+                        <xhtml:body>
+                           <xhtml:p>De geometrische afbakening van het provinciegebied waarbinnen de geometrie van het gemeentegebied zich moet bevinden, en/of mee moet samenvallen.</xhtml:p>
+                        </xhtml:body>
+                     </mim:definitie>
+                     <mim:herkomstDefinitie>IMDiSGeo</mim:herkomstDefinitie>
+                     <mim:datumOpname>29-03-2022</mim:datumOpname>
+                     <mim:indicatieMaterieleHistorie>false</mim:indicatieMaterieleHistorie>
+                     <mim:indicatieFormeleHistorie>false</mim:indicatieFormeleHistorie>
+                     <mim:authentiek><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:authentiek>
+                     <mim:indicatieAfleidbaar>false</mim:indicatieAfleidbaar>
+                     <mim:mogelijkGeenWaarde>false</mim:mogelijkGeenWaarde>
+                     <mim:relatierolDoel>
+                        <mim:RelatierolDoel>
+                           <mim:naam>gerelateerd provinciegebied</mim:naam>
+                        </mim:RelatierolDoel>
+                     </mim:relatierolDoel>
+                     <mim-ext:kenmerken>
+                        <mim-ext:kenmerk naam="positie">200</mim-ext:kenmerk>
+                        <mim-ext:kenmerk naam="kardinaliteitBron">1..*</mim-ext:kenmerk>
+                     </mim-ext:kenmerken>
+                  </mim:RelatiesoortRelatiesoortLeidend>
+               </mim:relatiesoorten>
+            </mim:Objecttype>
+            <mim:Objecttype id="bestuurlijk-gebied-objecttype-openbaarlichaam-d11126e770">
+               <mim:naam>OpenbaarLichaam</mim:naam>
+               <mim:begrip>http://begrippen.geostandaarden.nl/disgeo/id/begrip/openbaar_lichaam</mim:begrip>
+               <mim:herkomst>EMSO</mim:herkomst>
+               <mim:definitie>
+                  <xhtml:body>
+                     <xhtml:p>Een openbaar lichaam is, in de bestuurlijke indeling van het Koninkrijk der Nederlanden, een overheidsorganisatie met publiekrechtelijke rechtspersoonlijkheid, die bepaalde taken uitvoert binnen een bepaald ruimtelijk gebied of op een bepaald inhoudelijk gebied.</xhtml:p>
+                  </xhtml:body>
+               </mim:definitie>
+               <mim:herkomstDefinitie>Wikipedia</mim:herkomstDefinitie>
+               <mim:datumOpname>30-03-2022</mim:datumOpname>
+               <mim:populatie>Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.</mim:populatie>
+               <mim:indicatieAbstractObject>false</mim:indicatieAbstractObject>
+               <mim:supertypes>
+                  <mim:GeneralisatieObjecttypes>
+                     <mim:supertype>
+                        <mim-ref:ObjecttypeRef xlink:href="#bestuurlijk-gebied-objecttype-overheidsorganisatie-d11126e893">Overheidsorganisatie</mim-ref:ObjecttypeRef>
+                     </mim:supertype>
+                     <mim-ext:kenmerken>
+                        <mim-ext:kenmerk naam="positie">100</mim-ext:kenmerk>
+                     </mim-ext:kenmerken>
+                  </mim:GeneralisatieObjecttypes>
+               </mim:supertypes>
+               <mim:attribuutsoorten>
+                  <mim:Attribuutsoort>
+                     <mim:naam>type</mim:naam>
+                     <mim:herkomst>IMDiSGeo</mim:herkomst>
+                     <mim:definitie>
+                        <xhtml:body>
+                           <xhtml:p>Categorie waartoe het betreffende openbaar lichaam behoort.</xhtml:p>
+                        </xhtml:body>
+                     </mim:definitie>
+                     <mim:herkomstDefinitie>IMDiSGeo</mim:herkomstDefinitie>
+                     <mim:datumOpname>17-08-2022</mim:datumOpname>
+                     <mim:type>
+                        <mim-ref:DatatypeRef xlink:href="#bestuurlijk-gebied-enumeratie-typeopenbaarlichaam-d11126e162">TypeOpenbaarLichaam</mim-ref:DatatypeRef>
+                     </mim:type>
+                     <mim:patroon>De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel het waardenbereik, uitgedrukt in een specifieke structuur.</mim:patroon>
+                     <mim:indicatieMaterieleHistorie>false</mim:indicatieMaterieleHistorie>
+                     <mim:indicatieFormeleHistorie>false</mim:indicatieFormeleHistorie>
+                     <mim:kardinaliteit>1</mim:kardinaliteit>
+                     <mim:authentiek><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:authentiek>
+                     <mim:indicatieAfleidbaar>true</mim:indicatieAfleidbaar>
+                     <mim:indicatieClassificerend>false</mim:indicatieClassificerend>
+                     <mim:mogelijkGeenWaarde>false</mim:mogelijkGeenWaarde>
+                     <mim:identificerend>false</mim:identificerend>
+                     <mim-ext:kenmerken>
+                        <mim-ext:kenmerk naam="positie">100</mim-ext:kenmerk>
+                     </mim-ext:kenmerken>
+                  </mim:Attribuutsoort>
+               </mim:attribuutsoorten>
+               <mim:relatiesoorten>
+                  <mim:RelatiesoortRelatiesoortLeidend>
+                     <mim:naam>bestuurtGebied</mim:naam>
+                     <mim:unidirectioneel>true</mim:unidirectioneel>
+                     <mim:doel>
+                        <mim-ref:ObjecttypeRef xlink:href="#bestuurlijk-gebied-objecttype-bestuurlijkgebied-d11126e238">BestuurlijkGebied</mim-ref:ObjecttypeRef>
+                     </mim:doel>
+                     <mim:aggregatietype>Geen</mim:aggregatietype>
+                     <mim:kardinaliteit>0..*</mim:kardinaliteit>
+                     <mim:herkomst><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:herkomst>
+                     <mim:definitie>
+                        <xhtml:body>
+                           <xhtml:p>Relatie die aangeeft dat bestuurder het gebied bestuurt bestuurt.</xhtml:p>
+                        </xhtml:body>
+                     </mim:definitie>
+                     <mim:toelichting>
+                        <xhtml:body>
+                           <xhtml:p>Er zijn ook openbare lichamen die geen gebied besturen. Het is de vraag of deze typen openbare lichamen ook daadwerkelijk onderdeel van het model worden.</xhtml:p>
+                           <xhtml:p/>
+                        </xhtml:body>
+                     </mim:toelichting>
+                     <mim:herkomstDefinitie><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:herkomstDefinitie>
+                     <mim:datumOpname><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:datumOpname>
+                     <mim:indicatieMaterieleHistorie>false</mim:indicatieMaterieleHistorie>
+                     <mim:indicatieFormeleHistorie>false</mim:indicatieFormeleHistorie>
+                     <mim:authentiek><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:authentiek>
+                     <mim:indicatieAfleidbaar>true</mim:indicatieAfleidbaar>
+                     <mim:mogelijkGeenWaarde>false</mim:mogelijkGeenWaarde>
+                     <mim:relatierolDoel>
+                        <mim:RelatierolDoel>
+                           <mim:naam>bestuurde</mim:naam>
+                        </mim:RelatierolDoel>
+                     </mim:relatierolDoel>
+                     <mim-ext:kenmerken>
+                        <mim-ext:kenmerk naam="positie">200</mim-ext:kenmerk>
+                        <mim-ext:kenmerk naam="kardinaliteitBron">1</mim-ext:kenmerk>
+                     </mim-ext:kenmerken>
+                  </mim:RelatiesoortRelatiesoortLeidend>
+               </mim:relatiesoorten>
+            </mim:Objecttype>
+            <mim:Objecttype id="bestuurlijk-gebied-objecttype-overheidsorganisatie-d11126e893">
+               <mim:naam>Overheidsorganisatie</mim:naam>
+               <mim:herkomst>TOOI</mim:herkomst>
+               <mim:definitie>
+                  <xhtml:body>
+                     <xhtml:p>Een overheidsorganisatie is een organisatie die naar algemene opvatting als onderdeel van de overheid wordt beschouwd. </xhtml:p>
+                  </xhtml:body>
+               </mim:definitie>
+               <mim:herkomstDefinitie>https://tardis.overheid.nl/manual/2.3_-_Overheidsorganisaties.html</mim:herkomstDefinitie>
+               <mim:datumOpname>2022-12-07</mim:datumOpname>
+               <mim:indicatieAbstractObject>false</mim:indicatieAbstractObject>
+               <mim:attribuutsoorten>
+                  <mim:Attribuutsoort>
+                     <mim:naam>officieleNaamInclSoort</mim:naam>
+                     <mim:herkomst><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:herkomst>
+                     <mim:definitie><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:definitie>
+                     <mim:herkomstDefinitie><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:herkomstDefinitie>
+                     <mim:datumOpname><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:datumOpname>
+                     <mim:type>
+                        <mim-ref:InterfaceRef xlink:href="#interface-characterstring-d11126e1789">CharacterString</mim-ref:InterfaceRef>
+                     </mim:type>
+                     <mim:patroon>De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel het waardenbereik, uitgedrukt in een specifieke structuur.</mim:patroon>
+                     <mim:indicatieMaterieleHistorie>false</mim:indicatieMaterieleHistorie>
+                     <mim:indicatieFormeleHistorie>false</mim:indicatieFormeleHistorie>
+                     <mim:kardinaliteit>1</mim:kardinaliteit>
+                     <mim:authentiek><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:authentiek>
+                     <mim:indicatieAfleidbaar>false</mim:indicatieAfleidbaar>
+                     <mim:indicatieClassificerend>false</mim:indicatieClassificerend>
+                     <mim:mogelijkGeenWaarde>false</mim:mogelijkGeenWaarde>
+                     <mim:identificerend>false</mim:identificerend>
+                     <mim-ext:kenmerken>
+                        <mim-ext:kenmerk naam="positie">100</mim-ext:kenmerk>
+                     </mim-ext:kenmerken>
+                  </mim:Attribuutsoort>
+                  <mim:Attribuutsoort>
+                     <mim:naam>organisatiecode</mim:naam>
+                     <mim:herkomst><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:herkomst>
+                     <mim:definitie><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:definitie>
+                     <mim:herkomstDefinitie><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:herkomstDefinitie>
+                     <mim:datumOpname><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:datumOpname>
+                     <mim:type>
+                        <mim-ref:InterfaceRef xlink:href="#interface-characterstring-d11126e1789">CharacterString</mim-ref:InterfaceRef>
+                     </mim:type>
+                     <mim:patroon>De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel het waardenbereik, uitgedrukt in een specifieke structuur.</mim:patroon>
+                     <mim:indicatieMaterieleHistorie>false</mim:indicatieMaterieleHistorie>
+                     <mim:indicatieFormeleHistorie>false</mim:indicatieFormeleHistorie>
+                     <mim:kardinaliteit>1</mim:kardinaliteit>
+                     <mim:authentiek><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:authentiek>
+                     <mim:indicatieAfleidbaar>false</mim:indicatieAfleidbaar>
+                     <mim:indicatieClassificerend>false</mim:indicatieClassificerend>
+                     <mim:mogelijkGeenWaarde>false</mim:mogelijkGeenWaarde>
+                     <mim:identificerend>false</mim:identificerend>
+                     <mim-ext:kenmerken>
+                        <mim-ext:kenmerk naam="positie">100</mim-ext:kenmerk>
+                     </mim-ext:kenmerken>
+                  </mim:Attribuutsoort>
+               </mim:attribuutsoorten>
+            </mim:Objecttype>
+            <mim:Objecttype id="bestuurlijk-gebied-objecttype-provincie-d11126e983">
+               <mim:naam>Provincie</mim:naam>
+               <mim:begrip>http://begrippen.geostandaarden.nl/disgeo/id/begrip/provincie</mim:begrip>
+               <mim:herkomst>IMDiSGeo</mim:herkomst>
+               <mim:definitie>
+                  <xhtml:body>
+                     <xhtml:p>Een provincie is een openbaar lichaam met algemene bevoegdheden tussen gemeente en Rijk.</xhtml:p>
+                  </xhtml:body>
+               </mim:definitie>
+               <mim:herkomstDefinitie>Grondwet en Provinciewet</mim:herkomstDefinitie>
+               <mim:datumOpname>20-04-2022</mim:datumOpname>
+               <mim:populatie>Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.</mim:populatie>
+               <mim:indicatieAbstractObject>false</mim:indicatieAbstractObject>
+               <mim:supertypes>
+                  <mim:GeneralisatieObjecttypes>
+                     <mim:supertype>
+                        <mim-ref:ObjecttypeRef xlink:href="#bestuurlijk-gebied-objecttype-openbaarlichaam-d11126e770">OpenbaarLichaam</mim-ref:ObjecttypeRef>
+                     </mim:supertype>
+                     <mim-ext:kenmerken>
+                        <mim-ext:kenmerk naam="positie">100</mim-ext:kenmerk>
+                     </mim-ext:kenmerken>
+                  </mim:GeneralisatieObjecttypes>
+               </mim:supertypes>
+               <mim:relatiesoorten>
+                  <mim:RelatiesoortRelatiesoortLeidend>
+                     <mim:naam>bestuurtProvinciegebied</mim:naam>
+                     <mim:unidirectioneel>true</mim:unidirectioneel>
+                     <mim:doel>
+                        <mim-ref:ObjecttypeRef xlink:href="#bestuurlijk-gebied-objecttype-provinciegebied-d11126e1058">Provinciegebied</mim-ref:ObjecttypeRef>
+                     </mim:doel>
+                     <mim:aggregatietype>Geen</mim:aggregatietype>
+                     <mim:kardinaliteit>1</mim:kardinaliteit>
+                     <mim:herkomst><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:herkomst>
+                     <mim:definitie>
+                        <xhtml:body>
+                           <xhtml:p>Ruimte waarover de provincie op basis van wet- of regelgeving de politieke regie voert.</xhtml:p>
+                        </xhtml:body>
+                     </mim:definitie>
+                     <mim:herkomstDefinitie><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:herkomstDefinitie>
+                     <mim:datumOpname><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:datumOpname>
+                     <mim:indicatieMaterieleHistorie>false</mim:indicatieMaterieleHistorie>
+                     <mim:indicatieFormeleHistorie>false</mim:indicatieFormeleHistorie>
+                     <mim:authentiek><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:authentiek>
+                     <mim:indicatieAfleidbaar>false</mim:indicatieAfleidbaar>
+                     <mim:mogelijkGeenWaarde>false</mim:mogelijkGeenWaarde>
+                     <mim:relatierolDoel>
+                        <mim:RelatierolDoel>
+                           <mim:naam>bestuurdGebied</mim:naam>
+                        </mim:RelatierolDoel>
+                     </mim:relatierolDoel>
+                     <mim-ext:kenmerken>
+                        <mim-ext:kenmerk naam="positie">200</mim-ext:kenmerk>
+                        <mim-ext:kenmerk naam="kardinaliteitBron">1</mim-ext:kenmerk>
+                     </mim-ext:kenmerken>
+                  </mim:RelatiesoortRelatiesoortLeidend>
+               </mim:relatiesoorten>
+            </mim:Objecttype>
+            <mim:Objecttype id="bestuurlijk-gebied-objecttype-provinciegebied-d11126e1058">
+               <mim:naam>Provinciegebied</mim:naam>
+               <mim:begrip>http://begrippen.geostandaarden.nl/disgeo/id/begrip/provinciegebied</mim:begrip>
+               <mim:herkomst>IMDiSGeo</mim:herkomst>
+               <mim:definitie>
+                  <xhtml:body>
+                     <xhtml:p>Afgebakend gedeelte van het grondgebied van Nederland, onder zeggenschap van een openbaar lichaam met diverse bestuurlijke taken, ingesteld op basis van artikel 123 en 124 van de Grondwet, artikel 2:1 Burgerlijk Wetboek en artikel 13 van de Wet algemene regels herindeling</xhtml:p>
+                  </xhtml:body>
+               </mim:definitie>
+               <mim:herkomstDefinitie>Grondwet en Provinciewet</mim:herkomstDefinitie>
+               <mim:datumOpname>29-03-2022</mim:datumOpname>
+               <mim:populatie>Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.</mim:populatie>
+               <mim:indicatieAbstractObject>false</mim:indicatieAbstractObject>
+               <mim:supertypes>
+                  <mim:GeneralisatieObjecttypes>
+                     <mim:supertype>
+                        <mim-ref:ObjecttypeRef xlink:href="#bestuurlijk-gebied-objecttype-bestuurlijkgebiedopland-d11126e447">BestuurlijkGebiedOpLand</mim-ref:ObjecttypeRef>
+                     </mim:supertype>
+                     <mim-ext:kenmerken>
+                        <mim-ext:kenmerk naam="positie">100</mim-ext:kenmerk>
+                     </mim-ext:kenmerken>
+                  </mim:GeneralisatieObjecttypes>
+               </mim:supertypes>
+               <mim:relatiesoorten>
+                  <mim:RelatiesoortRelatiesoortLeidend>
+                     <mim:naam>ligtInRijksgebied</mim:naam>
+                     <mim:unidirectioneel>true</mim:unidirectioneel>
+                     <mim:doel>
+                        <mim-ref:ObjecttypeRef xlink:href="#bestuurlijk-gebied-objecttype-rijksgebied-d11126e1438">Rijksgebied</mim-ref:ObjecttypeRef>
+                     </mim:doel>
+                     <mim:aggregatietype>Geen</mim:aggregatietype>
+                     <mim:kardinaliteit>1</mim:kardinaliteit>
+                     <mim:herkomst>IMDiSGeo</mim:herkomst>
+                     <mim:definitie>
+                        <xhtml:body>
+                           <xhtml:p>De geometrische afbakening van het rijksgebied waarbinnen de geometrie van het provinciegebied zich moet bevinden, en/of mee moet samenvallen.</xhtml:p>
+                        </xhtml:body>
+                     </mim:definitie>
+                     <mim:herkomstDefinitie>IMDiSGeo</mim:herkomstDefinitie>
+                     <mim:datumOpname>20-04-2022</mim:datumOpname>
+                     <mim:indicatieMaterieleHistorie>false</mim:indicatieMaterieleHistorie>
+                     <mim:indicatieFormeleHistorie>false</mim:indicatieFormeleHistorie>
+                     <mim:authentiek><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:authentiek>
+                     <mim:indicatieAfleidbaar>false</mim:indicatieAfleidbaar>
+                     <mim:mogelijkGeenWaarde>false</mim:mogelijkGeenWaarde>
+                     <mim:relatierolDoel>
+                        <mim:RelatierolDoel>
+                           <mim:naam>gerelateerd rijksgebied</mim:naam>
+                        </mim:RelatierolDoel>
+                     </mim:relatierolDoel>
+                     <mim-ext:kenmerken>
+                        <mim-ext:kenmerk naam="positie">200</mim-ext:kenmerk>
+                        <mim-ext:kenmerk naam="kardinaliteitBron">1..*</mim-ext:kenmerk>
+                     </mim-ext:kenmerken>
+                  </mim:RelatiesoortRelatiesoortLeidend>
+               </mim:relatiesoorten>
+            </mim:Objecttype>
+            <mim:Objecttype id="bestuurlijk-gebied-objecttype-registratieveruimte-d11126e1132">
+               <mim:naam>RegistratieveRuimte</mim:naam>
+               <mim:herkomst><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:herkomst>
+               <mim:definitie><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:definitie>
+               <mim:herkomstDefinitie><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:herkomstDefinitie>
+               <mim:datumOpname><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:datumOpname>
+               <mim:indicatieAbstractObject>false</mim:indicatieAbstractObject>
+               <mim:attribuutsoorten>
+                  <mim:Attribuutsoort>
+                     <mim:naam>status</mim:naam>
+                     <mim:herkomst>IMDiSGeo</mim:herkomst>
+                     <mim:definitie>
+                        <xhtml:body>
+                           <xhtml:p>Fase van de levenscyclus waarin een bestuurlijk gebied zich bevindt.</xhtml:p>
+                        </xhtml:body>
+                     </mim:definitie>
+                     <mim:herkomstDefinitie>EMSO</mim:herkomstDefinitie>
+                     <mim:datumOpname>22-04-2022</mim:datumOpname>
+                     <mim:type>
+                        <mim-ref:DatatypeRef xlink:href="#bestuurlijk-gebied-enumeratie-statusregistratieveruimte-d11126e24">StatusRegistratieveRuimte</mim-ref:DatatypeRef>
+                     </mim:type>
+                     <mim:patroon>De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel het waardenbereik, uitgedrukt in een specifieke structuur.</mim:patroon>
+                     <mim:indicatieMaterieleHistorie>false</mim:indicatieMaterieleHistorie>
+                     <mim:indicatieFormeleHistorie>false</mim:indicatieFormeleHistorie>
+                     <mim:kardinaliteit>1</mim:kardinaliteit>
+                     <mim:authentiek><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:authentiek>
+                     <mim:indicatieAfleidbaar>false</mim:indicatieAfleidbaar>
+                     <mim:indicatieClassificerend>false</mim:indicatieClassificerend>
+                     <mim:mogelijkGeenWaarde>false</mim:mogelijkGeenWaarde>
+                     <mim:identificerend>false</mim:identificerend>
+                     <mim-ext:kenmerken>
+                        <mim-ext:kenmerk naam="positie">100</mim-ext:kenmerk>
+                     </mim-ext:kenmerken>
+                  </mim:Attribuutsoort>
+               </mim:attribuutsoorten>
+            </mim:Objecttype>
+            <mim:Objecttype id="bestuurlijk-gebied-objecttype-rijk-d11126e1186">
+               <mim:naam>Rijk</mim:naam>
+               <mim:begrip>http://begrippen.geostandaarden.nl/disgeo/id/begrip/rijk</mim:begrip>
+               <mim:alias>De Rijksoverheid</mim:alias>
+               <mim:herkomst>IMDiSGeo</mim:herkomst>
+               <mim:definitie>
+                  <xhtml:body>
+                     <xhtml:p>Een rijk is een openbaar lichaam dat wettelijke taken heeft op landelijk niveau.</xhtml:p>
+                  </xhtml:body>
+               </mim:definitie>
+               <mim:herkomstDefinitie>Wikipedia</mim:herkomstDefinitie>
+               <mim:datumOpname>20-04-2022</mim:datumOpname>
+               <mim:populatie>Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.</mim:populatie>
+               <mim:indicatieAbstractObject>false</mim:indicatieAbstractObject>
+               <mim:supertypes>
+                  <mim:GeneralisatieObjecttypes>
+                     <mim:supertype>
+                        <mim-ref:ObjecttypeRef xlink:href="#bestuurlijk-gebied-objecttype-openbaarlichaam-d11126e770">OpenbaarLichaam</mim-ref:ObjecttypeRef>
+                     </mim:supertype>
+                     <mim-ext:kenmerken>
+                        <mim-ext:kenmerk naam="positie">100</mim-ext:kenmerk>
+                     </mim-ext:kenmerken>
+                  </mim:GeneralisatieObjecttypes>
+               </mim:supertypes>
+               <mim:relatiesoorten>
+                  <mim:RelatiesoortRelatiesoortLeidend>
+                     <mim:naam>bestuurtContinentaalPlat</mim:naam>
+                     <mim:unidirectioneel>true</mim:unidirectioneel>
+                     <mim:doel>
+                        <mim-ref:ObjecttypeRef xlink:href="#bestuurlijk-gebied-objecttype-continentaalplat-d11126e507">ContinentaalPlat</mim-ref:ObjecttypeRef>
+                     </mim:doel>
+                     <mim:aggregatietype>Geen</mim:aggregatietype>
+                     <mim:kardinaliteit>1</mim:kardinaliteit>
+                     <mim:herkomst><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:herkomst>
+                     <mim:definitie>
+                        <xhtml:body>
+                           <xhtml:p>Ruimte van de zeebodem en de ondergrond daarvan, buiten en grenzend aan de territoriale zee, waarover het Rijk op basis van wet- of regelgeving de politieke regie voert</xhtml:p>
+                        </xhtml:body>
+                     </mim:definitie>
+                     <mim:herkomstDefinitie><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:herkomstDefinitie>
+                     <mim:datumOpname><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:datumOpname>
+                     <mim:indicatieMaterieleHistorie>false</mim:indicatieMaterieleHistorie>
+                     <mim:indicatieFormeleHistorie>false</mim:indicatieFormeleHistorie>
+                     <mim:authentiek><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:authentiek>
+                     <mim:indicatieAfleidbaar>false</mim:indicatieAfleidbaar>
+                     <mim:mogelijkGeenWaarde>false</mim:mogelijkGeenWaarde>
+                     <mim:relatierolDoel>
+                        <mim:RelatierolDoel>
+                           <mim:naam>bestuurdGebied</mim:naam>
+                        </mim:RelatierolDoel>
+                     </mim:relatierolDoel>
+                     <mim-ext:kenmerken>
+                        <mim-ext:kenmerk naam="positie">200</mim-ext:kenmerk>
+                        <mim-ext:kenmerk naam="kardinaliteitBron">1</mim-ext:kenmerk>
+                     </mim-ext:kenmerken>
+                  </mim:RelatiesoortRelatiesoortLeidend>
+                  <mim:RelatiesoortRelatiesoortLeidend>
+                     <mim:naam>bestuurtAansluitendeZone</mim:naam>
+                     <mim:unidirectioneel>true</mim:unidirectioneel>
+                     <mim:doel>
+                        <mim-ref:ObjecttypeRef xlink:href="#bestuurlijk-gebied-objecttype-aansluitendezone-d11126e209">AansluitendeZone</mim-ref:ObjecttypeRef>
+                     </mim:doel>
+                     <mim:aggregatietype>Geen</mim:aggregatietype>
+                     <mim:kardinaliteit>1</mim:kardinaliteit>
+                     <mim:herkomst><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:herkomst>
+                     <mim:definitie>
+                        <xhtml:body>
+                           <xhtml:p>Ruimte waarover het Rijk op basis van wet- of regelgeving de politieke regie voert op zee, tot 24 zeemijlen vanaf de laagwaterlijn.</xhtml:p>
+                        </xhtml:body>
+                     </mim:definitie>
+                     <mim:herkomstDefinitie><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:herkomstDefinitie>
+                     <mim:datumOpname><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:datumOpname>
+                     <mim:indicatieMaterieleHistorie>false</mim:indicatieMaterieleHistorie>
+                     <mim:indicatieFormeleHistorie>false</mim:indicatieFormeleHistorie>
+                     <mim:authentiek><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:authentiek>
+                     <mim:indicatieAfleidbaar>false</mim:indicatieAfleidbaar>
+                     <mim:mogelijkGeenWaarde>false</mim:mogelijkGeenWaarde>
+                     <mim:relatierolDoel>
+                        <mim:RelatierolDoel>
+                           <mim:naam>bestuurdGebied</mim:naam>
+                        </mim:RelatierolDoel>
+                     </mim:relatierolDoel>
+                     <mim-ext:kenmerken>
+                        <mim-ext:kenmerk naam="positie">200</mim-ext:kenmerk>
+                        <mim-ext:kenmerk naam="kardinaliteitBron">1</mim-ext:kenmerk>
+                     </mim-ext:kenmerken>
+                  </mim:RelatiesoortRelatiesoortLeidend>
+                  <mim:RelatiesoortRelatiesoortLeidend>
+                     <mim:naam>bestuurtExclusieveEconomischeZone</mim:naam>
+                     <mim:unidirectioneel>true</mim:unidirectioneel>
+                     <mim:doel>
+                        <mim-ref:ObjecttypeRef xlink:href="#bestuurlijk-gebied-objecttype-exclusieveeconomischezone-d11126e547">ExclusieveEconomischeZone</mim-ref:ObjecttypeRef>
+                     </mim:doel>
+                     <mim:aggregatietype>Geen</mim:aggregatietype>
+                     <mim:kardinaliteit>1</mim:kardinaliteit>
+                     <mim:herkomst><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:herkomst>
+                     <mim:definitie>
+                        <xhtml:body>
+                           <xhtml:p>Ruimte waarover het Rijk op basis van wet- of regelgeving de politieke regie voert op zee, tot 200 zeemijlen vanaf de laagwaterlijn.</xhtml:p>
+                        </xhtml:body>
+                     </mim:definitie>
+                     <mim:herkomstDefinitie><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:herkomstDefinitie>
+                     <mim:datumOpname><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:datumOpname>
+                     <mim:indicatieMaterieleHistorie>false</mim:indicatieMaterieleHistorie>
+                     <mim:indicatieFormeleHistorie>false</mim:indicatieFormeleHistorie>
+                     <mim:authentiek><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:authentiek>
+                     <mim:indicatieAfleidbaar>false</mim:indicatieAfleidbaar>
+                     <mim:mogelijkGeenWaarde>false</mim:mogelijkGeenWaarde>
+                     <mim:relatierolDoel>
+                        <mim:RelatierolDoel>
+                           <mim:naam>bestuurdGebied</mim:naam>
+                        </mim:RelatierolDoel>
+                     </mim:relatierolDoel>
+                     <mim-ext:kenmerken>
+                        <mim-ext:kenmerk naam="positie">200</mim-ext:kenmerk>
+                        <mim-ext:kenmerk naam="kardinaliteitBron">1</mim-ext:kenmerk>
+                     </mim-ext:kenmerken>
+                  </mim:RelatiesoortRelatiesoortLeidend>
+                  <mim:RelatiesoortRelatiesoortLeidend>
+                     <mim:naam>bestuurtRijksgebied</mim:naam>
+                     <mim:unidirectioneel>true</mim:unidirectioneel>
+                     <mim:doel>
+                        <mim-ref:ObjecttypeRef xlink:href="#bestuurlijk-gebied-objecttype-rijksgebied-d11126e1438">Rijksgebied</mim-ref:ObjecttypeRef>
+                     </mim:doel>
+                     <mim:aggregatietype>Geen</mim:aggregatietype>
+                     <mim:kardinaliteit>1</mim:kardinaliteit>
+                     <mim:herkomst><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:herkomst>
+                     <mim:definitie>
+                        <xhtml:body>
+                           <xhtml:p>Ruimte waarover het Rijk op basis van wet- of regelgeving de politieke regie voert op land.</xhtml:p>
+                        </xhtml:body>
+                     </mim:definitie>
+                     <mim:herkomstDefinitie><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:herkomstDefinitie>
+                     <mim:datumOpname><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:datumOpname>
+                     <mim:indicatieMaterieleHistorie>false</mim:indicatieMaterieleHistorie>
+                     <mim:indicatieFormeleHistorie>false</mim:indicatieFormeleHistorie>
+                     <mim:authentiek><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:authentiek>
+                     <mim:indicatieAfleidbaar>false</mim:indicatieAfleidbaar>
+                     <mim:mogelijkGeenWaarde>false</mim:mogelijkGeenWaarde>
+                     <mim:relatierolDoel>
+                        <mim:RelatierolDoel>
+                           <mim:naam>bestuurdGebied</mim:naam>
+                        </mim:RelatierolDoel>
+                     </mim:relatierolDoel>
+                     <mim-ext:kenmerken>
+                        <mim-ext:kenmerk naam="positie">200</mim-ext:kenmerk>
+                        <mim-ext:kenmerk naam="kardinaliteitBron">1</mim-ext:kenmerk>
+                     </mim-ext:kenmerken>
+                  </mim:RelatiesoortRelatiesoortLeidend>
+                  <mim:RelatiesoortRelatiesoortLeidend>
+                     <mim:naam>bestuurtTerritorialeZee</mim:naam>
+                     <mim:unidirectioneel>true</mim:unidirectioneel>
+                     <mim:doel>
+                        <mim-ref:ObjecttypeRef xlink:href="#bestuurlijk-gebied-objecttype-territorialezee-d11126e1467">TerritorialeZee</mim-ref:ObjecttypeRef>
+                     </mim:doel>
+                     <mim:aggregatietype>Geen</mim:aggregatietype>
+                     <mim:kardinaliteit>1</mim:kardinaliteit>
+                     <mim:herkomst><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:herkomst>
+                     <mim:definitie>
+                        <xhtml:body>
+                           <xhtml:p>Ruimte waarover het Rijk op basis van wet- of regelgeving de politieke regie voert op zee, tot 12 zeemijlen uit de kust.</xhtml:p>
+                        </xhtml:body>
+                     </mim:definitie>
+                     <mim:herkomstDefinitie><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:herkomstDefinitie>
+                     <mim:datumOpname><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:datumOpname>
+                     <mim:indicatieMaterieleHistorie>false</mim:indicatieMaterieleHistorie>
+                     <mim:indicatieFormeleHistorie>false</mim:indicatieFormeleHistorie>
+                     <mim:authentiek><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:authentiek>
+                     <mim:indicatieAfleidbaar>false</mim:indicatieAfleidbaar>
+                     <mim:mogelijkGeenWaarde>false</mim:mogelijkGeenWaarde>
+                     <mim:relatierolDoel>
+                        <mim:RelatierolDoel>
+                           <mim:naam>bestuurdGebied</mim:naam>
+                        </mim:RelatierolDoel>
+                     </mim:relatierolDoel>
+                     <mim-ext:kenmerken>
+                        <mim-ext:kenmerk naam="positie">200</mim-ext:kenmerk>
+                        <mim-ext:kenmerk naam="kardinaliteitBron">1</mim-ext:kenmerk>
+                     </mim-ext:kenmerken>
+                  </mim:RelatiesoortRelatiesoortLeidend>
+               </mim:relatiesoorten>
+            </mim:Objecttype>
+            <mim:Objecttype id="bestuurlijk-gebied-objecttype-rijksgebied-d11126e1438">
+               <mim:naam>Rijksgebied</mim:naam>
+               <mim:begrip>http://begrippen.geostandaarden.nl/disgeo/id/begrip/rijksgebied</mim:begrip>
+               <mim:herkomst>IMDiSGeo</mim:herkomst>
+               <mim:definitie>
+                  <xhtml:body>
+                     <xhtml:p>Het grondgebied van het Koninkrijk der Nederlanden</xhtml:p>
+                  </xhtml:body>
+               </mim:definitie>
+               <mim:herkomstDefinitie>EMSO</mim:herkomstDefinitie>
+               <mim:datumOpname>20-04-2022</mim:datumOpname>
+               <mim:populatie>Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.</mim:populatie>
+               <mim:indicatieAbstractObject>false</mim:indicatieAbstractObject>
+               <mim:supertypes>
+                  <mim:GeneralisatieObjecttypes>
+                     <mim:supertype>
+                        <mim-ref:ObjecttypeRef xlink:href="#bestuurlijk-gebied-objecttype-bestuurlijkgebiedopland-d11126e447">BestuurlijkGebiedOpLand</mim-ref:ObjecttypeRef>
+                     </mim:supertype>
+                     <mim-ext:kenmerken>
+                        <mim-ext:kenmerk naam="positie">100</mim-ext:kenmerk>
+                     </mim-ext:kenmerken>
+                  </mim:GeneralisatieObjecttypes>
+               </mim:supertypes>
+            </mim:Objecttype>
+            <mim:Objecttype id="bestuurlijk-gebied-objecttype-territorialezee-d11126e1467">
+               <mim:naam>TerritorialeZee</mim:naam>
+               <mim:begrip>http://begrippen.geostandaarden.nl/disgeo/id/begrip/nederlandse_territoriale_zee</mim:begrip>
+               <mim:herkomst>IMDiSGeo</mim:herkomst>
+               <mim:definitie>
+                  <xhtml:body>
+                     <xhtml:p>Het gebied vanaf de laagwaterlijn tot 12 zeemijl uit de kust dat behoort bij het Rijk</xhtml:p>
+                  </xhtml:body>
+               </mim:definitie>
+               <mim:herkomstDefinitie>Wet grenzen Nederlandse territoriale zee</mim:herkomstDefinitie>
+               <mim:datumOpname>2022-06-01</mim:datumOpname>
+               <mim:populatie>Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.</mim:populatie>
+               <mim:toelichting>
+                  <xhtml:body>
+                     <xhtml:p>Het betreft hier de territoriale zee zoals nu reeds wordt vastgelegd door de Dienst der Hydrografie. Dit was tot nu toe nog geen onderdeel van een basisregistratie.</xhtml:p>
+                     <xhtml:p/>
+                     <xhtml:p>Dit gebied is ook wel bekend als “de 12-mijlszone”. In het Eems-Dollard gebied is er tussen Nederland en Duitsland geen formeel grensverdrag en dus geen wederzijds bevestigde begrenzing van de territoriale zee.</xhtml:p>
+                     <xhtml:p/>
+                  </xhtml:body>
+               </mim:toelichting>
+               <mim:indicatieAbstractObject>false</mim:indicatieAbstractObject>
+               <mim:supertypes>
+                  <mim:GeneralisatieObjecttypes>
+                     <mim:supertype>
+                        <mim-ref:ObjecttypeRef xlink:href="#bestuurlijk-gebied-objecttype-bestuurlijkgebiedopzee-d11126e476">BestuurlijkGebiedOpZee</mim-ref:ObjecttypeRef>
+                     </mim:supertype>
+                     <mim-ext:kenmerken>
+                        <mim-ext:kenmerk naam="positie">100</mim-ext:kenmerk>
+                     </mim-ext:kenmerken>
+                  </mim:GeneralisatieObjecttypes>
+               </mim:supertypes>
+            </mim:Objecttype>
+            <mim:Objecttype id="bestuurlijk-gebied-objecttype-veiligheidsregio-d11126e1509">
+               <mim:naam>Veiligheidsregio</mim:naam>
+               <mim:begrip>http://begrippen.geostandaarden.nl/disgeo/id/begrip/veiligheidsregio</mim:begrip>
+               <mim:herkomst>IMDiSGeo</mim:herkomst>
+               <mim:definitie>
+                  <xhtml:body>
+                     <xhtml:p>Een veiligheidsregio is een openbaar lichaam voor de samenwerking door verschillende besturen en diensten ten aanzien van taken op het terrein van brandweerzorg, rampenbeheersing, crisisbeheersing, geneeskundige hulpverlening en handhaving van de openbare orde en veiligheid. </xhtml:p>
+                  </xhtml:body>
+               </mim:definitie>
+               <mim:herkomstDefinitie>https://www.vrgooienvechtstreek.nl/onze-organisatie/de-veiligheidsregio</mim:herkomstDefinitie>
+               <mim:datumOpname>11-05-2022</mim:datumOpname>
+               <mim:populatie>Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.</mim:populatie>
+               <mim:indicatieAbstractObject>false</mim:indicatieAbstractObject>
+               <mim:supertypes>
+                  <mim:GeneralisatieObjecttypes>
+                     <mim:supertype>
+                        <mim-ref:ObjecttypeRef xlink:href="#bestuurlijk-gebied-objecttype-openbaarlichaam-d11126e770">OpenbaarLichaam</mim-ref:ObjecttypeRef>
+                     </mim:supertype>
+                     <mim-ext:kenmerken>
+                        <mim-ext:kenmerk naam="positie">100</mim-ext:kenmerk>
+                     </mim-ext:kenmerken>
+                  </mim:GeneralisatieObjecttypes>
+               </mim:supertypes>
+               <mim:relatiesoorten>
+                  <mim:RelatiesoortRelatiesoortLeidend>
+                     <mim:naam>bestuurtVeiligheidsregiogebied</mim:naam>
+                     <mim:unidirectioneel>true</mim:unidirectioneel>
+                     <mim:doel>
+                        <mim-ref:ObjecttypeRef xlink:href="#bestuurlijk-gebied-objecttype-veiligheidsregiogebied-d11126e1583">Veiligheidsregiogebied</mim-ref:ObjecttypeRef>
+                     </mim:doel>
+                     <mim:aggregatietype>Geen</mim:aggregatietype>
+                     <mim:kardinaliteit>1</mim:kardinaliteit>
+                     <mim:herkomst><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:herkomst>
+                     <mim:definitie>
+                        <xhtml:body>
+                           <xhtml:p>Ruimte waarover de veiligheidsregio  op basis van wet- of regelgeving de politieke regie voert van brandweerzorg, rampenbeheersing, crisisbeheersing, geneeskundige hulpverlening en handhaving van de openbare orde en veiligheid.</xhtml:p>
+                        </xhtml:body>
+                     </mim:definitie>
+                     <mim:herkomstDefinitie><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:herkomstDefinitie>
+                     <mim:datumOpname><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:datumOpname>
+                     <mim:indicatieMaterieleHistorie>false</mim:indicatieMaterieleHistorie>
+                     <mim:indicatieFormeleHistorie>false</mim:indicatieFormeleHistorie>
+                     <mim:authentiek><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:authentiek>
+                     <mim:indicatieAfleidbaar>false</mim:indicatieAfleidbaar>
+                     <mim:mogelijkGeenWaarde>false</mim:mogelijkGeenWaarde>
+                     <mim:relatierolDoel>
+                        <mim:RelatierolDoel>
+                           <mim:naam>bestuurdGebied</mim:naam>
+                        </mim:RelatierolDoel>
+                     </mim:relatierolDoel>
+                     <mim-ext:kenmerken>
+                        <mim-ext:kenmerk naam="positie">200</mim-ext:kenmerk>
+                        <mim-ext:kenmerk naam="kardinaliteitBron">1</mim-ext:kenmerk>
+                     </mim-ext:kenmerken>
+                  </mim:RelatiesoortRelatiesoortLeidend>
+               </mim:relatiesoorten>
+            </mim:Objecttype>
+            <mim:Objecttype id="bestuurlijk-gebied-objecttype-veiligheidsregiogebied-d11126e1583">
+               <mim:naam>Veiligheidsregiogebied</mim:naam>
+               <mim:begrip>http://begrippen.geostandaarden.nl/disgeo/id/begrip/veiligheidregiogebied</mim:begrip>
+               <mim:herkomst>IMDiSGeo</mim:herkomst>
+               <mim:definitie>
+                  <xhtml:body>
+                     <xhtml:p>Afgebakend gedeelte van het grondgebied van Nederland, onder zeggenschap van een openbaar lichaam met diverse bestuurlijke taken, ingesteld op basis van artikel 9 van de Wet Veiligheidsregio’s</xhtml:p>
+                  </xhtml:body>
+               </mim:definitie>
+               <mim:herkomstDefinitie>Wet Veiligheidsregio’s</mim:herkomstDefinitie>
+               <mim:datumOpname>11-05-2022</mim:datumOpname>
+               <mim:populatie>Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.</mim:populatie>
+               <mim:indicatieAbstractObject>false</mim:indicatieAbstractObject>
+               <mim:supertypes>
+                  <mim:GeneralisatieObjecttypes>
+                     <mim:supertype>
+                        <mim-ref:ObjecttypeRef xlink:href="#bestuurlijk-gebied-objecttype-bestuurlijkgebiedopland-d11126e447">BestuurlijkGebiedOpLand</mim-ref:ObjecttypeRef>
+                     </mim:supertype>
+                     <mim-ext:kenmerken>
+                        <mim-ext:kenmerk naam="positie">100</mim-ext:kenmerk>
+                     </mim-ext:kenmerken>
+                  </mim:GeneralisatieObjecttypes>
+               </mim:supertypes>
+            </mim:Objecttype>
+            <mim:Objecttype id="bestuurlijk-gebied-objecttype-waterschap-d11126e1612">
+               <mim:naam>Waterschap</mim:naam>
+               <mim:begrip>http://begrippen.geostandaarden.nl/disgeo/id/begrip/waterschap</mim:begrip>
+               <mim:herkomst>IMDiSGeo</mim:herkomst>
+               <mim:definitie>
+                  <xhtml:body>
+                     <xhtml:p>Een waterschap is een openbaar lichaam dat uitsluitend bevoegd is met betrekking tot de waterhuishouding.</xhtml:p>
+                  </xhtml:body>
+               </mim:definitie>
+               <mim:herkomstDefinitie>https://www.rijksoverheid.nl/onderwerpen/waterschappen</mim:herkomstDefinitie>
+               <mim:datumOpname>11-05-2022</mim:datumOpname>
+               <mim:populatie>Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.</mim:populatie>
+               <mim:indicatieAbstractObject>false</mim:indicatieAbstractObject>
+               <mim:supertypes>
+                  <mim:GeneralisatieObjecttypes>
+                     <mim:supertype>
+                        <mim-ref:ObjecttypeRef xlink:href="#bestuurlijk-gebied-objecttype-openbaarlichaam-d11126e770">OpenbaarLichaam</mim-ref:ObjecttypeRef>
+                     </mim:supertype>
+                     <mim-ext:kenmerken>
+                        <mim-ext:kenmerk naam="positie">100</mim-ext:kenmerk>
+                     </mim-ext:kenmerken>
+                  </mim:GeneralisatieObjecttypes>
+               </mim:supertypes>
+               <mim:relatiesoorten>
+                  <mim:RelatiesoortRelatiesoortLeidend>
+                     <mim:naam>bestuurtWaterschapsgebied</mim:naam>
+                     <mim:unidirectioneel>true</mim:unidirectioneel>
+                     <mim:doel>
+                        <mim-ref:ObjecttypeRef xlink:href="#bestuurlijk-gebied-objecttype-waterschapsgebied-d11126e1686">Waterschapsgebied</mim-ref:ObjecttypeRef>
+                     </mim:doel>
+                     <mim:aggregatietype>Geen</mim:aggregatietype>
+                     <mim:kardinaliteit>1</mim:kardinaliteit>
+                     <mim:herkomst><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:herkomst>
+                     <mim:definitie>
+                        <xhtml:body>
+                           <xhtml:p>Ruimte waarover het waterschap op basis van wet- of regelgeving de politieke regie voert.</xhtml:p>
+                        </xhtml:body>
+                     </mim:definitie>
+                     <mim:herkomstDefinitie><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:herkomstDefinitie>
+                     <mim:datumOpname><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:datumOpname>
+                     <mim:indicatieMaterieleHistorie>false</mim:indicatieMaterieleHistorie>
+                     <mim:indicatieFormeleHistorie>false</mim:indicatieFormeleHistorie>
+                     <mim:authentiek><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:authentiek>
+                     <mim:indicatieAfleidbaar>false</mim:indicatieAfleidbaar>
+                     <mim:mogelijkGeenWaarde>false</mim:mogelijkGeenWaarde>
+                     <mim:relatierolDoel>
+                        <mim:RelatierolDoel>
+                           <mim:naam>bestuurdGebied</mim:naam>
+                        </mim:RelatierolDoel>
+                     </mim:relatierolDoel>
+                     <mim-ext:kenmerken>
+                        <mim-ext:kenmerk naam="positie">200</mim-ext:kenmerk>
+                        <mim-ext:kenmerk naam="kardinaliteitBron">1</mim-ext:kenmerk>
+                     </mim-ext:kenmerken>
+                  </mim:RelatiesoortRelatiesoortLeidend>
+               </mim:relatiesoorten>
+            </mim:Objecttype>
+            <mim:Objecttype id="bestuurlijk-gebied-objecttype-waterschapsgebied-d11126e1686">
+               <mim:naam>Waterschapsgebied</mim:naam>
+               <mim:begrip>http://begrippen.geostandaarden.nl/disgeo/id/begrip/waterschapsgebied</mim:begrip>
+               <mim:herkomst>IMDiSGeo</mim:herkomst>
+               <mim:definitie>
+                  <xhtml:body>
+                     <xhtml:p>Afgebakend gedeelte van het grondgebied van Nederland, onder zeggenschap van een openbaar lichaam welke de waterstaatskundige verzorging van dat gebied ten doel heeft, ingesteld op basis van artikel 133 van de Grondwet en de Waterschapswet.</xhtml:p>
+                  </xhtml:body>
+               </mim:definitie>
+               <mim:herkomstDefinitie>Grondwet, Waterschapswet en INSPIRE</mim:herkomstDefinitie>
+               <mim:datumOpname>11-05-2022</mim:datumOpname>
+               <mim:populatie>Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.</mim:populatie>
+               <mim:toelichting>
+                  <xhtml:body>
+                     <xhtml:p/>
+                     <xhtml:p>Het 'Waterschapsgebied' wordt aangeduid met de administratieve grens gebruikt. De Waterschapswet gaat op in de Omgevingswet. De Administratieve grens is grens die in de Omgevingswet als waterschapsgrens wordt gehanteerd en overeenkomt met de registratieve grens in de SOR en in INSPIRE.</xhtml:p>
+                     <xhtml:p/>
+                     <xhtml:p>Het Administratief gebied betreft de geografische representatie van de verkiezingsgrenzen zoals die door de waterschappen zijn vastgelegd. Het gaat bij dit begrip nadrukkelijk om het grondgebied en niet om de juridische entiteit (bevoegd gezag).</xhtml:p>
+                     <xhtml:p/>
+                     <xhtml:p>Deze grens is  inclusief de grote wateren die niet door de waterschappen beheerd worden, maar door Rijkswaterstaat. Het gaat dus om het gebied waarin het waterschap de verkiezingen uitschrijft.</xhtml:p>
+                  </xhtml:body>
+               </mim:toelichting>
+               <mim:indicatieAbstractObject>false</mim:indicatieAbstractObject>
+               <mim:supertypes>
+                  <mim:GeneralisatieObjecttypes>
+                     <mim:supertype>
+                        <mim-ref:ObjecttypeRef xlink:href="#bestuurlijk-gebied-objecttype-bestuurlijkgebiedopland-d11126e447">BestuurlijkGebiedOpLand</mim-ref:ObjecttypeRef>
+                     </mim:supertype>
+                     <mim-ext:kenmerken>
+                        <mim-ext:kenmerk naam="positie">100</mim-ext:kenmerk>
+                     </mim-ext:kenmerken>
+                  </mim:GeneralisatieObjecttypes>
+               </mim:supertypes>
+            </mim:Objecttype>
+         </mim:objecttypen>
+         <mim:keuzen>
+            <mim:Keuze id="bestuurlijk-gebied-keuze-vlakofmultivlak-d11126e1735">
+               <mim:naam>VlakOfMultivlak</mim:naam>
+               <mim:herkomst>IMDiSGeo</mim:herkomst>
+               <mim:definitie><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:definitie>
+               <mim:datumOpname>30-03-2022</mim:datumOpname>
+               <mim:datatypen>
+                  <mim-ref:InterfaceRef xlink:href="#interface-gmmultisurface-d11126e1764">GM_MultiSurface</mim-ref:InterfaceRef>
+                  <mim-ref:InterfaceRef xlink:href="#interface-gmsurface-d11126e1767">GM_Surface</mim-ref:InterfaceRef>
+               </mim:datatypen>
+            </mim:Keuze>
+         </mim:keuzen>
+         <mim-ext:kenmerken>
+            <mim-ext:kenmerk naam="Is afgeleid">Zie package</mim-ext:kenmerk>
+            <mim-ext:kenmerk naam="Release">20210512</mim-ext:kenmerk>
+         </mim-ext:kenmerken>
+      </mim:Domein>
+      <mim:Extern id="OUTSIDE-2">
+         <mim:naam>GML</mim:naam>
+         <mim:locatie><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:locatie>
+         <mim:definitie><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:definitie>
+         <mim:herkomst><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:herkomst>
+         <mim:interfaces>
+            <mim:Interface id="interface-gmmultisurface-d11126e1764">
+               <mim:naam>GM_MultiSurface</mim:naam>
+            </mim:Interface>
+            <mim:Interface id="interface-gmsurface-d11126e1767">
+               <mim:naam>GM_Surface</mim:naam>
+            </mim:Interface>
+         </mim:interfaces>
+      </mim:Extern>
+      <mim:Extern id="OUTSIDE-3">
+         <mim:naam>GMLSF</mim:naam>
+         <mim:locatie><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:locatie>
+         <mim:definitie><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:definitie>
+         <mim:herkomst><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:herkomst>
+      </mim:Extern>
+      <mim:Extern id="OUTSIDE-1">
+         <mim:naam>MIM11</mim:naam>
+         <mim:locatie><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:locatie>
+         <mim:definitie><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:definitie>
+         <mim:herkomst><!-- FOUT: De waarde voor dit verplichte metagegeven is niet gespecificeerd in het model --></mim:herkomst>
+         <mim:interfaces>
+            <mim:Interface id="interface-characterstring-d11126e1789">
+               <mim:naam>CharacterString</mim:naam>
+            </mim:Interface>
+         </mim:interfaces>
+      </mim:Extern>
+   </mim:packages>
+   <mim-ext:kenmerken>
+      <mim-ext:kenmerk naam="Afkorting">IMSOR-CM</mim-ext:kenmerk>
+      <mim-ext:kenmerk naam="Alternatieve naam">Conceptueel informatiemodel Samenhangende Objectenjregistratie</mim-ext:kenmerk>
+      <mim-ext:kenmerk naam="Imvertor">model</mim-ext:kenmerk>
+      <mim-ext:kenmerk naam="Is afgeleid">Zie package</mim-ext:kenmerk>
+      <mim-ext:kenmerk naam="Niveau">specifiek</mim-ext:kenmerk>
+      <mim-ext:kenmerk naam="Release">20210512</mim-ext:kenmerk>
+   </mim-ext:kenmerken>
+</mim:Informatiemodel>

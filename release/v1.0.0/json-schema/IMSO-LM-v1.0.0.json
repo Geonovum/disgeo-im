@@ -1,0 +1,330 @@
+
+  { "openapi" : "3.0.0",
+    "info" : 
+    { "title" : "IMSOR-LM",
+      "description" : "IMSOR-LM components\/schema",
+      "version" : "1.0.0" },
+    "paths" : 
+    { "\/" : 
+      { "get" : 
+        { "description" : "a path",
+          "responses" : 
+          { "200" : 
+            { "description" : "okay",
+              "content" : 
+              { "text\/plain" : 
+                { "schema" : 
+                  { "type" : "string",
+                    "example" : "pong" } } } } } } } },
+    "components" : 
+    { "schemas" : 
+      { "BestuurlijkGebied" : 
+        { "title" : "BestuurlijkGebied",
+          "description" : "Een bestuurlijk gebied is een registratieve ruimte die op basis van wet- of regelgeving als eenheid geldt van bestuurlijke verantwoordelijkheid.",
+          "type" : "object",
+          "allOf" : 
+          [ 
+            { "$ref" : "#\/components\/schemas\/RegistratieveRuimte" },
+            
+            { "required" : 
+              [ "geometrie",
+                "type",
+                "wordtBestuurdDoor" ],
+              "properties" : 
+              { "geometrie" : 
+                { "title" : "geometrie",
+                  "description" : "Geometrische representatie van een gebied op land dat door een openbaar lichaam wordt bestuurd.",
+                  "$ref" : "#\/components\/schemas\/VlakOfMultivlak" },
+                "type" : 
+                { "title" : "type",
+                  "description" : "Categorie waartoe het betreffende bestuurlijke gebied behoort.",
+                  "$ref" : "#\/components\/schemas\/TypeBestuurlijkGebied" },
+                "ligtInBestuurlijkGebied" : 
+                { "title" : "ligtInBestuurlijkGebied",
+                  "description" : "De geometrische afbakening van het bevattendGebied, waarbinnen de geometrie van het bevatteGebied, zich moet bevinden, en\/of mee moet samenvallen.",
+                  "type" : "array",
+                  "items" : 
+                  { "$ref" : "#\/components\/schemas\/BestuurlijkGebied" },
+                  "minItems" : "0" },
+                "wordtBestuurdDoor" : 
+                { "title" : "wordtBestuurdDoor",
+                  "description" : "Relatie die aangeeft dat het gebied bestuurt wordt door de bestuurder.",
+                  "$ref" : "#\/components\/schemas\/OpenbaarLichaam" } } } ] },
+        "BestuurlijkGebiedOpLand" : 
+        { "title" : "BestuurlijkGebiedOpLand",
+          "description" : "Bestuurlijk gebied op land." },
+        "BestuurlijkGebiedOpZee" : 
+        { "title" : "BestuurlijkGebiedOpZee",
+          "description" : "Bestuurlijk gebied op zee." },
+        "OpenbaarLichaam" : 
+        { "title" : "OpenbaarLichaam",
+          "description" : "Een openbaar lichaam is, in de bestuurlijke indeling van het Koninkrijk der Nederlanden, een overheidsorganisatie met publiekrechtelijke rechtspersoonlijkheid, die bepaalde taken uitvoert binnen een bepaald ruimtelijk gebied of op een bepaald inhoudelijk gebied.",
+          "type" : "object",
+          "allOf" : 
+          [ 
+            { "$ref" : "#\/components\/schemas\/Overheidsorganisatie" },
+            
+            { "required" : 
+              [ "type" ],
+              "properties" : 
+              { "type" : 
+                { "title" : "type",
+                  "description" : "Categorie waartoe het betreffende openbaar lichaam behoort.",
+                  "$ref" : "#\/components\/schemas\/TypeOpenbaarLichaam" },
+                "bestuurtGebied" : 
+                { "title" : "bestuurtGebied",
+                  "description" : "Relatie die aangeeft dat bestuurder het gebied bestuurt bestuurt.",
+                  "type" : "array",
+                  "items" : 
+                  { "$ref" : "#\/components\/schemas\/BestuurlijkGebied" },
+                  "minItems" : "0" } } } ] },
+        "Gemeentegebied" : 
+        { "title" : "Gemeentegebied",
+          "description" : "Afgebakend gedeelte van het grondgebied van Nederland, onder zeggenschap van een openbaar lichaam met diverse bestuurlijke taken, ingesteld op basis van artikel 123 en 124 van de Grondwet, artikel 2:1 Burgerlijk Wetboek en artikel 3 van de Wet algemene regels herindeling.",
+          "type" : "object",
+          "allOf" : 
+          [ 
+            { "$ref" : "#\/components\/schemas\/BestuurlijkGebiedOpLand" },
+            
+            { "required" : 
+              [ "ligtInProvinciegebied" ],
+              "properties" : 
+              { "ligtInProvinciegebied" : 
+                { "title" : "ligtInProvinciegebied",
+                  "description" : "De geometrische afbakening van het provinciegebied waarbinnen de geometrie van het gemeentegebied zich moet bevinden, en\/of mee moet samenvallen.",
+                  "$ref" : "#\/components\/schemas\/Provinciegebied" } } } ] },
+        "Gemeente" : 
+        { "title" : "Gemeente",
+          "description" : "Een gemeente is een openbaar lichaam met algemene bevoegdheden, die een deel van een provinciegebied bestuurt.",
+          "type" : "object",
+          "allOf" : 
+          [ 
+            { "$ref" : "#\/components\/schemas\/OpenbaarLichaam" },
+            
+            { "required" : 
+              [ "bestuurtGemeentegebied" ],
+              "properties" : 
+              { "bestuurtGemeentegebied" : 
+                { "title" : "bestuurtGemeentegebied",
+                  "description" : "Ruimte waarover de gemeente op basis van wet- of regelgeving de politieke regie voert.",
+                  "$ref" : "#\/components\/schemas\/Gemeentegebied" } } } ] },
+        "Provinciegebied" : 
+        { "title" : "Provinciegebied",
+          "description" : "Afgebakend gedeelte van het grondgebied van Nederland, onder zeggenschap van een openbaar lichaam met diverse bestuurlijke taken, ingesteld op basis van artikel 123 en 124 van de Grondwet, artikel 2:1 Burgerlijk Wetboek en artikel 13 van de Wet algemene regels herindeling" },
+        "Provincie" : 
+        { "title" : "Provincie",
+          "description" : "Een provincie is een openbaar lichaam met algemene bevoegdheden tussen gemeente en Rijk.",
+          "type" : "object",
+          "allOf" : 
+          [ 
+            { "$ref" : "#\/components\/schemas\/OpenbaarLichaam" },
+            
+            { "required" : 
+              [ "bestuurtProvinciegebied" ],
+              "properties" : 
+              { "bestuurtProvinciegebied" : 
+                { "title" : "bestuurtProvinciegebied",
+                  "description" : "Ruimte waarover de provincie op basis van wet- of regelgeving de politieke regie voert.",
+                  "$ref" : "#\/components\/schemas\/Provinciegebied" } } } ] },
+        "VlakOfMultivlak" : 
+        { "title" : "VlakOfMultivlak",
+          "oneOf" : 
+          [ 
+            { "$ref" : "#\/components\/schemas\/multivlak" },
+            
+            { "$ref" : "#\/components\/schemas\/vlak" } ] },
+        "multivlak" : 
+        { "title" : "multivlak",
+          "$ref" : "#\/components\/schemas\/multipolygonGeoJSON" },
+        "vlak" : 
+        { "title" : "vlak",
+          "$ref" : "#\/components\/schemas\/polygonGeoJSON" },
+        "StatusRegistratieveRuimte" : 
+        { "title" : "StatusRegistratieveRuimte",
+          "enum" : 
+          [ "Ontwerp",
+            "Niet gerealiseerd",
+            "Vastgesteld",
+            "Ingetrokken" ] },
+        "TypeOpenbaarLichaam" : 
+        { "title" : "TypeOpenbaarLichaam",
+          "enum" : 
+          [ "gemeente",
+            "provincie",
+            "rijk",
+            "veiligheidsregio",
+            "waterschap" ] },
+        "TypeBestuurlijkGebied" : 
+        { "title" : "TypeBestuurlijkGebied",
+          "enum" : 
+          [ "aansluitende zone",
+            "continentaal plat",
+            "exclusieve economische zone",
+            "gemeentegebied",
+            "provinciegebied",
+            "rijksgebied",
+            "territoriale zee",
+            "veiligheidsregiogebied",
+            "waterschapsgebied" ] },
+        "Registratie" : 
+        { "title" : "Registratie",
+          "description" : "Vastlegging van een versie van een set gegevens.",
+          "type" : "object",
+          "required" : 
+          [ "status",
+            "beginGeldigheid",
+            "versie",
+            "tijdstipRegistratie",
+            "objectBeginTijd" ],
+          "properties" : 
+          { "status" : 
+            { "title" : "status",
+              "$ref" : "#\/components\/schemas\/StatusRegistratie" },
+            "beginGeldigheid" : 
+            { "title" : "beginGeldigheid",
+              "description" : "Start van de periode waarop deze versie van het informatieobject geldig is.",
+              "type" : "string",
+              "format" : "date-time",
+              "minItems" : "1" },
+            "versie" : 
+            { "title" : "versie",
+              "description" : "Versieaanduiding van een informatieobject.",
+              "type" : "string",
+              "minLength" : "1",
+              "minItems" : "1" },
+            "eindGeldigheid" : 
+            { "title" : "eindGeldigheid",
+              "description" : "Eind van de periode waarop deze versie van het informatieobject geldig is. De periode is tot aan deze tijdsaanduiding. Wanneer deze waarde niet is ingevuld, is de versie nog geldig.",
+              "type" : "string",
+              "format" : "date-time",
+              "minItems" : "0" },
+            "tijdstipAfgevoerd" : 
+            { "title" : "tijdstipAfgevoerd",
+              "description" : "Tijdstip waarop het informatieobject is afgevoerd uit de registratie.",
+              "type" : "string",
+              "format" : "date-time",
+              "minItems" : "0" },
+            "tijdstipRegistratie" : 
+            { "title" : "tijdstipRegistratie",
+              "description" : "Tijdsaanduiding van het moment waarop deze versie van het informatieobject is opgenomen in de registratie.",
+              "type" : "string",
+              "format" : "date-time",
+              "minItems" : "1" },
+            "eindRegistratie" : 
+            { "title" : "eindRegistratie",
+              "description" : "Eind van de periode dat deze versie van het informatieobject actueel is in de registratie. De periode is tot aan deze tijdsaanduiding. Wanneer deze waarde niet is ingevuld, is de versie nog actueel.",
+              "type" : "string",
+              "format" : "date-time",
+              "minItems" : "0" },
+            "objectBeginTijd" : 
+            { "title" : "objectBeginTijd",
+              "description" : "Tijdsaanduiding waarop het object in de werkelijkheid is ontstaan.",
+              "type" : "string",
+              "format" : "date-time",
+              "minItems" : "1" },
+            "objectEindTijd" : 
+            { "title" : "objectEindTijd",
+              "description" : "Tijdsaanduiding waarop het object in de werkelijkheid niet meer geldig is.",
+              "type" : "string",
+              "format" : "date-time",
+              "minItems" : "0" } } },
+        "Overheidsorganisatie" : 
+        { "title" : "Overheidsorganisatie",
+          "description" : "Een overheidsorganisatie is een organisatie die naar algemene opvatting als onderdeel van de overheid wordt beschouwd.",
+          "type" : "object",
+          "required" : 
+          [ "officieleNaamInclSoort",
+            "organisatiecode" ],
+          "properties" : 
+          { "officieleNaamInclSoort" : 
+            { "title" : "officieleNaamInclSoort",
+              "type" : "string",
+              "minItems" : "1" },
+            "organisatiecode" : 
+            { "title" : "organisatiecode",
+              "type" : "string",
+              "minItems" : "1" } } },
+        "RegistratieveRuimte" : 
+        { "title" : "RegistratieveRuimte",
+          "type" : "object",
+          "allOf" : 
+          [ 
+            { "$ref" : "#\/components\/schemas\/Object" },
+            
+            { "required" : 
+              [ "status" ],
+              "properties" : 
+              { "status" : 
+                { "title" : "status",
+                  "description" : "Fase van de levenscyclus waarin een bestuurlijk gebied zich bevindt.",
+                  "$ref" : "#\/components\/schemas\/StatusRegistratieveRuimte" } } } ] },
+        "Object" : 
+        { "title" : "Object",
+          "description" : "Een identificeerbaar hoofdonderwerp van gegevens.",
+          "type" : "object",
+          "required" : 
+          [ "identificatie",
+            "domein",
+            "geregistreerdMet" ],
+          "properties" : 
+          { "identificatie" : 
+            { "title" : "identificatie",
+              "description" : "Unieke identificatiecode van een informatieobject binnen de context van een registratie. Toelichting: ‘identificatie’ is de identificatiecode die een object heeft binnen een registratie of binnen een ketenproces voor data-uitwisseling. Binnen de registratie of de data-uitwisseling is het object uniek identificeerbaar. In combinatie met het attribuut domein wordt een object hiermee uniek identificeerbaar op het niveau van verschillende registraties, uitwisselprocessen en ook wereldwijd uniek. De reguliere expressie voor de toegestane tekens is: [a-zA-Z|0-9|_|.|-|\\\/|:|]",
+              "type" : "string",
+              "pattern" : "[a-zA-Z|0-9|_|.|-|\\\/|:|]",
+              "minItems" : "1" },
+            "domein" : 
+            { "title" : "domein",
+              "description" : "Aanduiding van het domein waarbinnen de identificatie uniek is.",
+              "type" : "string",
+              "minItems" : "1" },
+            "geregistreerdMet" : 
+            { "title" : "geregistreerdMet",
+              "$ref" : "#\/components\/schemas\/Registratie" } } },
+        "StatusRegistratie" : 
+        { "title" : "StatusRegistratie",
+          "enum" : 
+          [ "Actief",
+            "Afgevoerd" ] },
+        "multipolygonGeoJSON" : 
+        { "type" : "object",
+          "required" : 
+          [ "type",
+            "coordinates" ],
+          "properties" : 
+          { "type" : 
+            { "type" : "string",
+              "enum" : 
+              [ "MultiPolygon" ] },
+            "coordinates" : 
+            { "type" : "array",
+              "items" : 
+              { "type" : "array",
+                "items" : 
+                { "type" : "array",
+                  "minItems" : 4,
+                  "items" : 
+                  { "type" : "array",
+                    "minItems" : 2,
+                    "items" : 
+                    { "type" : "number" } } } } } } },
+        "polygonGeoJSON" : 
+        { "type" : "object",
+          "required" : 
+          [ "type",
+            "coordinates" ],
+          "properties" : 
+          { "type" : 
+            { "type" : "string",
+              "enum" : 
+              [ "Polygon" ] },
+            "coordinates" : 
+            { "type" : "array",
+              "items" : 
+              { "type" : "array",
+                "minItems" : 4,
+                "items" : 
+                { "type" : "array",
+                  "minItems" : 2,
+                  "items" : 
+                  { "type" : "number" } } } } } } } } }
