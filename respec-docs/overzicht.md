@@ -62,25 +62,25 @@ Onderdeel van generalisatie is in sommige gevallen ook aggregatie. Bij bestuurli
 
 ## Aansluiting op NEN 3610
 
-Het informatiemodel DiSGeo valt binnen het toepassingsgebied van het Basismodel Geo-informatie [[NEN3610-2022]] (hierna: NEN 3610) omdat het informatieobjecten bevat die direct herleidbaar zijn tot een locatie ten opzichte van de aarde. Het wordt daarom gemodelleerd:
+Het informatiemodel DiSGeo valt binnen het toepassingsgebied van het Basismodel Geo-informatie [[NEN3610-2022]] (hierna: NEN 3610) omdat het objecttypen beschrijft die direct herleidbaar zijn tot een locatie ten opzichte van de aarde. Het wordt daarom gemodelleerd:
 - conform de regels die in NEN 3610 geformuleerd zijn, en
 - als extensie op het semantische model uit NEN 3610
 
 De regels uit NEN 3610 zijn voor zover van toepassing gevolgd in het informatiemodel DiSGeo. Binnen DiSGeo maken we zowel een conceptueel model als een logisch model. Hieronder geven we aan welke aspecten van NEN 3610 conformiteit op welk modelniveau terug te vinden zijn. We noemen hier niet alle regels, maar alleen de belangrijkste, die in enige vorm terug te vinden zijn in het informatiemodel zelf:
- - DiSGeo objecten zijn uniek identificeerbaar via de twee NEN 3610 attributen `identificatie` en `domein` die zijn opgenomen in het conceptueel model
- - Historie en levensduur zijn opgenomen in de klasse `Registratiegegevens` in het conceptueel model: 
+ - DiSGeo objecten zijn uniek identificeerbaar via de twee NEN 3610 attributen `identificatie` en `domein` die zijn opgenomen in het logisch model
+ - Historie en levensduur zijn opgenomen in de klasse `Registratiegegevens` in het logisch model: 
    - Tijdlijn geldigheid is opgenomen via de attributen `beginGeldigheid` en `eindGeldigheid`
    - Tijdlijn registratie is opgenomen via de attributen `tijdstipRegistratie` en `eindRegistratie`
-   - Levensduur van objecten is opgenomen via de attributen `objectBegintijd` en `objectEindtijd`
+   - Levensduur van objecten in de registratie is opgenomen via de attributen `objectBegintijd` en `objectEindtijd`
 
-Het semantische model van NEN 3610 bestaat uit een aantal objecttypen die objecten uit de werkelijkheid op hoofdlijn classificeren. In het informatiemodel DiSGeo zijn de klassen, voor zover dit past, gemodelleerd als subklasse van het NEN3610 objecttype Geo-Object of (bij voorkeur) een specifiekere NEN3610-subklasse van Geo-Object. 
+Het semantische model van NEN 3610 bestaat uit een aantal objecttypen die objecten uit de werkelijkheid op hoofdlijn classificeren. In het informatiemodel DiSGeo zijn de klassen, voor zover dit past, gemodelleerd als subklasse van het NEN3610 objecttype Geo-Object of (bij voorkeur) een specifiekere NEN3610-subklasse van Geo-Object. Deze verbinding met deze semantische klassen is opgenomen in het conceptueel model.
 
 <aside class="example">
-In het model voor Bestuurlijke gebieden is `Bestuurlijk Gebied` gemodelleerd als een subklasse van (heeft een generalisatierelatie naar) `NEN3610:Registratieve Ruimte`. Bestuurlijke gebieden zijn, volgens hun beschrijving in het [[EMSO]]: 
+In het model voor Bestuurlijke gebieden is `Bestuurlijk Gebied` gemodelleerd als een specialisatie van het objecttype `Registratieve ruimte`, die op haar beurt gemodellerd is als specialisatie van `NEN3610:Registratieve Ruimte`. Bestuurlijke gebieden zijn, volgens hun beschrijving in het [[EMSO]]: 
 
 > registratieve ruimten die op basis van wet- of regelgeving als eenheid gelden van politiek/bestuurlijke verantwoordelijkheid. Dit betreft bijvoorbeeld de gebieden behorende bij de vier formele bestuurslagen uit de Grondwet (Rijk, provincie, waterschap, gemeente), maar kan ook gebieden van bestuurlijke samenwerkingsverbanden met eigen politiek/bestuurlijke verantwoordelijkheid omvatten. Een voorbeeld daarvan betreft de veiligheidsregio’s. 
 
-De definitie komt overeen met de NEN 3610 definitie maar is iets nauwer. In NEN 3610 kan het gaan om een eenheid die geldt voor politiek-bestuurlijke verantwoordelijkheid óf bedrijfsvoering. Van dat laatste is bij bestuurlijke gebieden geen sprake. `Bestuurlijk gebied` is daarom een subklasse van `Registratieve ruimte`:
+De definitie komt overeen met de NEN 3610 definitie van Registratieve ruimte maar is iets nauwer. In NEN 3610 kan het gaan om een eenheid die geldt voor politiek-bestuurlijke verantwoordelijkheid óf bedrijfsvoering. Van dat laatste is bij bestuurlijke gebieden geen sprake. `Bestuurlijk gebied` is daarom een specialisatie van de NEN3610 `Registratieve ruimte`. De reden dat het geen directe specialisatie is, maar er nog een objecttype `Registratieve Ruimte` tussen zit in het DiSGeo model, is omdat er op dat niveau een status-eigenschap gepositioneerd is. De definitie van de DiSGeo `Registratieve Ruimte` is exact gelijk aan de definitie van de NEN 3610 `Registratieve Ruimte`.
 
 <figure>
    <img src="media/nen3610-disgeo.png" alt="Bestuurlijk gebied als subklasse van Registratieve Ruimte"/>
