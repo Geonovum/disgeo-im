@@ -88,7 +88,28 @@ De definitie komt overeen met de NEN 3610 definitie van Registratieve ruimte maa
 </figure>
 </aside>
 
-## Beschrijving
+## Gegevenskwaliteit
+
+Dit document formuleert geen *kwaliteitseisen*, maar gaat ervan uit dat deze in de bronregistraties gehanteerd worden. Van de gegevens die via het informatiemodel, of daarop gebaseerde productmodellen, worden uitgewisseld, kan daarom een bepaalde kwaliteit verwacht worden. Deze gegevenskwaliteit is een uitgangspunt voor de uiteindelijk uitgewisselde gegevens. 
+
+Gegevenskwaliteit kent veel verschillende aspecten, zoals wordt beschreven in het NORA Raamwerk Gegevenskwaliteit [[NORA-RK]]. Dit document beschrijft momenteel alleen de *topologische consistentie*. 
+
+### Topologische consistentie
+De vlakgeometrieën van bestuurlijke gebieden van hetzelfde type partitioneren de ruimte. Dat betekent dat:
+
+- deze geometrieën naadloos op elkaar aansluiten, zodat er geen gaten voorkomen;
+- deze geometrieën elkaar niet overlappen.
+
+Dit betekent voor bestuurlijke gebieden dat: 
+- de geometrieën van alle gemeenten naadloos op elkaar aansluiten, zonder gaten en zonder overlap;
+- de geometrieën van alle provincies naadloos op elkaar aansluiten, zonder gaten en zonder overlap;
+- etc voor de andere typen bestuurlijk gebied. 
+
+Bovendien is er topologische consistentie tussen de geometrieën van bepaalde typen bestuurlijk gebied: 
+- de geometrieën van alle gemeenten die liggen in dezelfde provincie, vullen gezamenlijk het gehele oppervlak van die provincie zonder gaten of overlap met de geometrie van het proviciegebied;
+- etc voor andere typen.
+
+## Beschrijving inhoud
 
 <aside class="issue">Algemene domeinoverstijgende beschrijving van het IMDiSGeo schrijven</aside>
 

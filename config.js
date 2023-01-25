@@ -219,10 +219,12 @@ var respecConfig =
           editors:  ["Thomas H. Kolbe", "Tatjana Kutzner", "Carl Stephen Smyth", "Claus Nagel", "Carsten Roensdorf", "Charles Heazel"],
           date:     "2021-09-13",
       },
+      "NORA-RK":
+        {
+          title: "NORA Raamwerk Gegevenskwaliteit",
+          href: "https://www.noraonline.nl/wiki/Raamwerk_gegevenskwaliteit",
+        }
      
-     
-
-  
   // {
   //   "CITAAT":
   //     {
