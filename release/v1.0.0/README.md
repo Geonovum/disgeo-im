@@ -36,4 +36,6 @@ In volgende releases zal meer van de beschreven scope ingevuld worden.
 * [Modelleerprincipes DiS Geo](https://geonovum.github.io/disgeo-imsor/modelleerprincipes)
 
   De modelleerprincipes die gehanteerd zijn bij het opstellen van de modellen. Het doel van de principes is om samenhangend gebruik van gegevens te bevorderen.
-
+* Beschrijvingen van historie en levensloop bestuurlijk gebieden:
+  * [Uitwerking historie bestuurlijke gebieden](../../docs/thema/bestuurlijke-gebieden/20220531-historie-bestuurlijke-gebieden.pdf)
+  * [Uitwerking levensloop bestuurlijke gebieden](../../docs/thema/bestuurlijke-gebieden/20220802-levensloop-bestuurlijke-gebieden.pdf)
