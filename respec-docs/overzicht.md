@@ -105,7 +105,8 @@ Dit betekent voor bestuurlijke gebieden:
 - De geometrie van een gemeentegebied valt volledig binnen een provinciegebied; 
 - De geometrieën van alle provinciegebieden sluiten naadloos op elkaar aan, zonder gaten en zonder overlap;
 - De geometrie van een provinciegebied valt volledig binnen het Rijksgebied;
-- Etc. voor de andere typen bestuurlijk gebied. 
+
+Voor de andere typen bestuurlijk gebied moeten soortgelijke regels nog worden uitgewerkt.
 
 Bovendien is er topologische consistentie tussen de geometrieën van bepaalde typen bestuurlijk gebied:
 - De geometrieën van alle gemeentegebieden die liggen in het dezelfde provinciegebied, bedekken gezamenlijk het gehele oppervlak van dat provinciegebied;
