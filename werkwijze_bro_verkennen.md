@@ -19,10 +19,16 @@ Om van een conceptueel model naar een logisch model te komen, zijn de volgende s
 3. **Vertaalslag** van Nederlandstalige elementen (zoals: _stereotypen_ en _tagged values_) naar Engelstalige elementen.
 4. Hiervoor is meer nodig dan enkel een vertaling, omdat de set van elementen van een conceptueel model niet exact gelijk is aan die van een logisch model. Er zullen dus ook elementen verwijderd of toegevoegd. Er zijn **aparte profielen** voor CM ([MIM-BRO Grouping (NL)](http://www.armatiek.nl/Imvertor/wiki/Imvertor-EA-profiles/MIM-BRO%20Grouping%20(NL)%200.9.3.ea-profile.xml)) en LM [(NEN3610-BRO Grouping (EN)](http://www.armatiek.nl/imvertor/wiki/Imvertor-EA-profiles/NEN3610-BRO%20Grouping%20(EN)%200.9.1.ea-profile.xml).
 
-Dit is een tijdrovend en arbeidsintensief proces met veel herhalende stappen. Daarom is voor de BRO een script geschreven dat deze stappen geautomatiseerd uitvoert.
+Dit is een tijdrovend en arbeidsintensief proces met veel herhalende stappen. Daarom is voor de BRO een script geschreven dat deze stappen geautomatiseerd uitvoert: `Set Tracebility for Set Transformations`.
 
 ## Praktische stappen van CM naar LM
-...
+De BRO onderscheid de volgende package structuur:
+
+Package-niveau | Naam in CM | Naam in LM |
+| -- | -- | -- |
+| 0 | «Project» | «Project» |
+| 1 | «Basismodel» | «Basemodel» |
+| 2 | «Domein» | «Domain» |
 
 ## Relevantie voor DiSGeo
 ...
@@ -31,7 +37,7 @@ Dit is een tijdrovend en arbeidsintensief proces met veel herhalende stappen. Da
 In de BRO moet zowel voor het indienen als wijzigen van informatie het hele document opnieuw ingediend worden. Daardoor zijn beide processen hetzelfde. Dat is een keuze, maar die heeft invloed op de transactie van gegevens.
 
 ### Taal
-| Modeltype | Modeloutputtype | Taal |
+| Modeltype | Output | Taal |
 | -- | -- | -- |
 | Conceptueel | ReSpec-documentatie | NL |
 | Logisch | XSD's | EN |
