@@ -37,7 +37,7 @@ Voor de kopie wordt een XMI-export van het conceptuele model gemaakt. De traces 
 #### Taal
 | Modeltype | Product | Genereren met | Taal |
 | -- | -- | -- | -- |
-| Conceptueel | Gegevenscatalogus (ReSpec) |Imvertor |  NL |
+| Conceptueel | Gegevenscatalogus |Imvertor |  NL |
 | Logisch | XSD's | Imvertor | EN |
 
 De vertaling van de stereotypes en tagged values gebeurd op basis van de eerder genoemde profielen. Zo wordt bijvoorbeeld een `«Objecttype»` vertaald naar een `«FeatureType»`. Die links zijn in de profielen (in EA: _MDG Technology_) gelegd. Hiervoor is een mapping van beide profielen noodzakelijk. Elk stereotype in het profiel van het conceptuele model, moet dus een mapping hebben naar een stereotype in het profiel van het logische model. Verder heb je voor het logische model nog specifieke XSD-stereotypes, bijvoorbeeld `XML schema location` op `«Package»`.
