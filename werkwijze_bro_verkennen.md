@@ -2,16 +2,16 @@
 
 Een uitwerking van het gesprek met Han Welmer over hoe bij de BRO logische modellen geautomatiseerd worden afgeleid uit conceptuele modellen. Het doel van het gesprek is om een beeld te krijgen in hoeverre deze aanpak eventueel geschikt is voor DiSGeo. Hieronder volgt een verslag van het gesprek.
 
-## Aanleiding huidige geautomatiseerde aanpak BRO
+## 1 - Aanleiding huidige geautomatiseerde aanpak BRO
 Bij de BRO is in eerste instantie volledig handmatig gewerkt. Maar om twee belangrijke reden is ervoor gekozen om (delen van) dit proces te automatiseren:
 
 1. Voor aantal belangrijke `...` aansluiten op standaarden (GML, XSD, Soap, NEN3610, etc.)
 2. De BRO heeft te maken 26 registratie-objecten; het is dus geen éénmalige actie. Maar, ook als het een eenmalige actie zou zijn, kan _beheer_ een reden zijn om deze werkwijze wel toe te passen.
 
-## Visie op relatie Conceptueel en Logisch model
+## 2 - Visie op relatie Conceptueel en Logisch model
 Het **Conceptuele Model** bevat de gegevens die geregistreerd moeten worden en in het register aanwezig zijn. Het **Logische Model** richt zich op de uitwisseling van gegevens. Dat geldt zowel voor de inname als voor uitgifte van gegevens. Die inname en uitgifte van gegevens worden in eerste instantie buiten het model tekstueel beschreven in een **transactiemodel** (input voor LM). Het logische model bestaat dus feitelijk uit afgeleide gegevens van het conceptuele model, aangevuld met een technische implementatie van het transactiemodel voor in- en uitgifte van gegevens. Een belangrijk uitgangspunt bij het modelleren van het LM, dat de er zo min mogelijk wordt afgeweken van het conceptuele model.
 
-## Van Conceptueel Model naar Logisch Model
+## 3 - Van Conceptueel Model naar Logisch Model
 Om van een conceptueel model naar een logisch model te komen, zijn de volgende stappen nodig: 
 
 1. Een **kopie** maken van het conceptuele model
@@ -21,7 +21,7 @@ Om van een conceptueel model naar een logisch model te komen, zijn de volgende s
 
 Dit is een tijdrovend en arbeidsintensief proces met veel herhalende stappen. Daarom is voor de BRO een script geschreven dat deze stappen geautomatiseerd uitvoert: `Set Tracebility for Set Transformations`.
 
-### Van CM naar LM in Enterprise Architect
+### 3.1 - Van CM naar LM in Enterprise Architect
 De BRO onderscheid de volgende package structuur in Enter:
 
 | Niveau | Naam in CM | Naam in LM |
@@ -32,22 +32,25 @@ De BRO onderscheid de volgende package structuur in Enter:
 
 Het `«Domein»` bevat het conceptuele model. Het logische model bevindt zich in het engelstalige equivalent `«Domain»` in een apart project.
 
-Voor de kopie wordt een XMI-export van het conceptuele model gemaakt.
-De traces worden automatisch gelegd op basis van naamgeving en prifielen
-MIM heeft de velden Naam en Alternatieve naam. 
-De Bro heeft ervoor gekozen om in het Conceptuele model bij Naam de Nederlandse naam op te nemen en bij Alternatieve naam, de engelse naam.
+Voor de kopie wordt een XMI-export van het conceptuele model gemaakt. De traces worden automatisch gelegd op basis van naamgeving en profielen. MIM heeft de velden `Naam` en `Alternatieve naam`. De BRO heeft ervoor gekozen om in het conceptuele model bij `Naam` de Nederlandse naam op te nemen en bij `Alternatieve naam`, de Engelse naam. In het logische model gaat dit precies andersom.
 
-De vertaling van de stereotypes en tagged values gebeurd op basis van de eerder genoemde profielen. Zo wordt bijvoorbeeld een `«Objecttype»` vertaald naar een `«FeatureType»`. Die links zijn in de profielen gelegd. Hiervoor is een mapping van beide profielen noodzakelijk. Elk stereotype in hetprofiel van het conceptuele model, moet dus een mapping hebben naar een stereotype in het profiel van het logische model. Verder heb je voor het logische model nog specifieke XSD-stereotypes, bijvoorbeeld `XML schema location` op `«Package»`. 
+#### Taal
+| Modeltype | Product | Genereren met | Taal |
+| -- | -- | -- | -- |
+| Conceptueel | Gegevenscatalogus (ReSpec) |Imvertor |  NL |
+| Logisch | XSD's | Imvertor | EN |
 
-### Script aanroepen
+De vertaling van de stereotypes en tagged values gebeurd op basis van de eerder genoemde profielen. Zo wordt bijvoorbeeld een `«Objecttype»` vertaald naar een `«FeatureType»`. Die links zijn in de profielen (in EA: _MDG Technology_) gelegd. Hiervoor is een mapping van beide profielen noodzakelijk. Elk stereotype in het profiel van het conceptuele model, moet dus een mapping hebben naar een stereotype in het profiel van het logische model. Verder heb je voor het logische model nog specifieke XSD-stereotypes, bijvoorbeeld `XML schema location` op `«Package»`.
+
+### 3.2 - Script aanroepen
 Je kiest een locatie in de project browser waar je het logische model wilt opnemen. Dan kies je _Specialize_ > `Set Tracebility for Set Transformations` > _Please select original package_. Er komt een nieuw venster. Dan start het script. Dat maakt nu eerst een_ full duplication_ van het conceptuele model. Daarna worden de traces gelegd. Als dat klaar is wordt het transactiemodel handmatig in het logische model gemodelleerd. Op basis daarvan worden vervolgens met Imvertor XSD's gegenereerd. Voor de BRO-doeleinden worden die XSD's dan nog op een aantal punten handmatig aangepast.
 
-### Workflow voor het maken van het logische model
+### 3.3 - Workflow voor het maken van het logische model
 
-#### Voorbereiding - Conceptueel Model Controleren
+#### 3.3.1 - Voorbereiding: Conceptueel Model Controleren
 Controleer op basis van het _process report_ van Imvertor op specifieke onderdelen of in het conceptuele model de gegevens die noodzakelijk zijn voor genereren van het logische model aanwezig en correct zijn. Han Welmer weet welke punten dit specifiek betreft.
 
-#### Stap 1
+#### 3.3.2 - Stap 1: Logisch model afleiden
  - Logische model afleiden en aanpassen
  - Versiebeheer van logisch model (dit kan los staan van CM)
  - Package properties aanpassen
@@ -58,10 +61,10 @@ Controleer op basis van het _process report_ van Imvertor op specifieke onderdel
  - BRO-common 'omhangen' (...)
 
 
-#### Stap 2 model uitbreden met inname- en uitgifteservice
+#### 3.3.3 - Stap 2: Model Uitbreden Met Inname- en Uitgifteservice
 Verwerken van het transactiemodel in het logische model. Het gaat hier concreet om het technische beschrijven van de innamme en uitgifte van data.
 
-#### Stap 3 XSD's genereren
+#### 3.3.4 - Stap 3: XSD's Genereren
  - Bij de BRO is telkens de afwegigng gemaakt: maatwerk in imvertor of handmatige aanpassing.
  - Het resultaat is dat het proces op verschillende onderdelen geautomatiseerd is, maar dat er op andere onderdelen nog handmatige aanpassingen nodig zijn.
  - Het gaat met name om de gegenereerde XSD's die achteraf nog klein beetje aanpassen moeten worden.
@@ -73,7 +76,7 @@ Verwerken van het transactiemodel in het logische model. Het gaat hier concreet 
  - BRO wilde bepaalde informatie uit publieke XSD's verwijderen, zoals bijvorbeeld een annotatie dat het XSD met Imvertor gegenereerd is.
  - Imvertor heeft een versie een versiebeheermanier. 
  - Maar daar wijkt de BRO van af, dus dat wijzigen zij handmatig.
- - Daarnaast wordt een Imvertor-bug handmatig gecorrigeerd: `xs:length` (=gefixeerde lengte) vervangen door `xs:maxLength`(hier gaat het volgens de MIM-standaard om: elke lengte mogelijk, maar tot een bepaald maximum).
+ - Daarnaast wordt een Imvertor-bug handmatig gecorrigeerd: `xs:length` (=gefixeerde lengte) vervangen door `xs:maxLength` (hier gaat het volgens de MIM-standaard om: elke lengte mogelijk, maar tot een bepaald maximum).
 
 ## Relevantie voor DiSGeo
  - De profielen zouden we _as is_ kunnen gebruiken
@@ -82,12 +85,4 @@ Verwerken van het transactiemodel in het logische model. Het gaat hier concreet 
  - Taalkeuze
  - Vertaalde MIM-packagestructuur
  - Versiebeheer CM en LM: afzonderlijk?
-
-### Toevoegen of wijzigen van informatie in BRO
-In de BRO moet zowel voor het indienen als wijzigen van informatie het hele document opnieuw ingediend worden. Daardoor zijn beide processen hetzelfde. Dat is een keuze, maar die heeft invloed op de transactie van gegevens.
-
-### Taal
-| Modeltype | Product | Genereren met | Taal |
-| -- | -- | -- | -- |
-| Conceptueel | Gegevenscatalogus (ReSpec) |Imvertor |  NL |
-| Logisch | XSD's | Imvertor | EN |
+ - In de BRO moet zowel voor het indienen als wijzigen van informatie het hele document opnieuw ingediend worden. Daardoor zijn beide processen hetzelfde. Dat is een keuze, maar die heeft invloed op de transactie van gegevens.
