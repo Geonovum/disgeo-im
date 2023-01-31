@@ -231,7 +231,6 @@ var respecConfig =
         date:       "2022-06-13", 
         editors:    "Ronald Bokhove", 
       },
-}
      
   // {
   //   "CITAAT":
@@ -283,5 +282,5 @@ var respecConfig =
   //emailComments: "mim@geonovum.nl",         // reactie mailadres, alleen bij CV!
   //subtitle: "iets",                         // Subtitel van het document
   //maxTocLevel: 3,                           // Aantal niveau's ToC, default is 0
-      }
+  
 };
