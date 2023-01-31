@@ -32,8 +32,6 @@ De BRO onderscheid de volgende package structuur in Enter:
 
 Het `«Domein»` bevat het conceptuele model. Het logische model bevindt zich in het engelstalige equivalent `«Domain»` in een apart project.
 
-
-
 ## Relevantie voor DiSGeo
 ...
 
@@ -43,5 +41,5 @@ In de BRO moet zowel voor het indienen als wijzigen van informatie het hele docu
 ### Taal
 | Modeltype | Product | Genereren met | Taal |
 | -- | -- | -- | -- |
-| Conceptueel | ReSpec-documentatie |Imvertor |  NL |
+| Conceptueel | Gegevenscatalogus (ReSpec) |Imvertor |  NL |
 | Logisch | XSD's | Imvertor | EN |
