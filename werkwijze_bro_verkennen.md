@@ -40,11 +40,44 @@ De Bro heeft ervoor gekozen om in het Conceptuele model bij Naam de Nederlandse 
 De vertaling van de stereotypes en tagged values gebeurd op basis van de eerder genoemde profielen. Zo wordt bijvoorbeeld een `«Objecttype»` vertaald naar een `«FeatureType»`. Die links zijn in de profielen gelegd. Hiervoor is een mapping van beide profielen noodzakelijk. Elk stereotype in hetprofiel van het conceptuele model, moet dus een mapping hebben naar een stereotype in het profiel van het logische model. Verder heb je voor het logische model nog specifieke XSD-stereotypes, bijvoorbeeld `XML schema location` op `«Package»`. 
 
 ### Script aanroepen
-Je kiest een locatie in de project browser waar je het logische model wilt opnemen. Dan kies je Specialize > Set Tracebility for Set Transformations > Please select original package. Er komt een nieuw venster. Dan start het script. Dat maakt nu eerst een full duplication van het conceptuele model. Daarna worden de traces gelegd. Als dat klaar is moet het transactiemodel nog handmatig gemodelleerd worden. Op basis daarvan worden vervolgens XSD's gegenereerd. Die voor de BRO-doeleinden dan op een aantal punten nog handmatig aangepast moeten worden.
+Je kiest een locatie in de project browser waar je het logische model wilt opnemen. Dan kies je _Specialize_ > `Set Tracebility for Set Transformations` > _Please select original package_. Er komt een nieuw venster. Dan start het script. Dat maakt nu eerst een_ full duplication_ van het conceptuele model. Daarna worden de traces gelegd. Als dat klaar is wordt het transactiemodel handmatig in het logische model gemodelleerd. Op basis daarvan worden vervolgens met Imvertor XSD's gegenereerd. Voor de BRO-doeleinden worden die XSD's dan nog op een aantal punten handmatig aangepast.
 
+### Workflow voor het maken van het logische model
+
+#### Voorbereiding - Conceptueel Model Controleren
+Controleer op basis van het _process report_ van Imvertor op specifieke onderdelen of in het conceptuele model de gegevens die noodzakelijk zijn voor genereren van het logische model aanwezig en correct zijn. Han Welmer weet welke punten dit specifiek betreft.
+
+#### Stap 1
+Logische model afleidgen en aanpassen
+Versiebeheer van logisch model kan los staan van CM
+packages  properties aanpassen
+Aanbieden bij Imvertor
+Alfabetissche volgorde.
+Toevoegen aan SVN
+BRO-common toevoegen is een overkoepelend model (omhangen vna explictiet gemodelleerd, anaar )
+
+
+#### Stap 2 model uitbreden met innamesercie en uittifteservcie (domein specifiek)
+
+#### Stap 3 XSD's genereren
+maatwerk in imvertor vs. handmatige aanpassing.
+gegenereerde XSD's achteraf nog klein beetje aanpassen
+elke increment een nieuwe branch op Git
+in eerste instatie bro-common met de hand
+later met imvertor
+imvertor volgt heel strikt gml-xml encodingsrules
+bij het handmatige werk doe je dat niet alijtd helemeel strak
+
+BRO wilde bepaalde inforamtie uit publieke XSD's verwijderen.
+Zoals een annotatie dat het xsd met imvertor gegenereerd is.
+
+IMvertor heeft een versie een versiebeheermanier. 
+Daar wijkt bro vanaf, dus dat is met de hand.
+xs:length verfangen door xs:maxLength
+
+we hebben afwijken versiebeheer.
 
 ## Relevantie voor DiSGeo
-
 De profielen zouden we _as is_ kunnen gebruiken, maar waarschijnlijk is het wenselijk om hiervoor een DiSGeo-variant te maken. 
 Equivalente MIM-packagestructuur.
 Taalkeuze
