@@ -186,7 +186,7 @@ var respecConfig =
         company:    "Wikipedia",
         date:       "2022-05-18", 
       },
-      "NEN3610-2022": 
+    "NEN3610-2022": 
       {
         title:      "NEN-3610 Basismodel geo-informatie",
         href:       "https://www.nen.nl/nen-3610-2022-nl-296137",
@@ -194,7 +194,7 @@ var respecConfig =
         date:       "Juni 2022",
         publisher:  "NEN",
       },
-      "disgeo-mod": 
+    "disgeo-mod": 
       {
         title:      "Modelleerprincipes samenhangende objectenregistratie",
         href:       "https://geonovum.github.io/disgeo-imsor/modelleerprincipes/",
@@ -202,28 +202,36 @@ var respecConfig =
         date:       "22 Augustus 2022",
         publisher:  "Geonovum",
       },
-      "NLISO19115":
-        {
-          title:      "Nederlands metadata profiel op ISO 19115 voor geografie versie 2.1.0",
-          href:       "https://docs.geostandaarden.nl/md/mdprofiel-iso19115/",
-          status:     "Vastgestelde versie",
-          publisher:  "Geonovum",
-          date:       "30 juni 2020",
+    "NLISO19115":
+      {
+        title:      "Nederlands metadata profiel op ISO 19115 voor geografie versie 2.1.0",
+        href:       "https://docs.geostandaarden.nl/md/mdprofiel-iso19115/",
+        status:     "Vastgestelde versie",
+        publisher:  "Geonovum",
+        date:       "30 juni 2020",
       },
-      "CityGML3": 
-        {
-          title:    "OGC City Geography Markup Language (CityGML) Part 1: Conceptual Model Standard v3.0",
-          href:     "https://docs.ogc.org/is/20-010/20-010.html",
-          status:   "Published",
-          publisher:"Open Geospatial Consortium",
-          editors:  ["Thomas H. Kolbe", "Tatjana Kutzner", "Carl Stephen Smyth", "Claus Nagel", "Carsten Roensdorf", "Charles Heazel"],
-          date:     "2021-09-13",
+    "CityGML3": 
+      {
+        title:      "OGC City Geography Markup Language (CityGML) Part 1: Conceptual Model Standard v3.0",
+        href:       "https://docs.ogc.org/is/20-010/20-010.html",
+        status:     "Published",
+        publisher:  "Open Geospatial Consortium",
+        editors:    ["Thomas H. Kolbe", "Tatjana Kutzner", "Carl Stephen Smyth", "Claus Nagel", "Carsten Roensdorf", "Charles Heazel"],
+        date:       "2021-09-13",
       },
-      "NORA-RK":
-        {
-          title: "NORA Raamwerk Gegevenskwaliteit",
-          href: "https://www.noraonline.nl/wiki/Raamwerk_gegevenskwaliteit",
-        }
+    "NORA-RK":
+      {
+        title:      "NORA Raamwerk Gegevenskwaliteit",
+        href:       "https://www.noraonline.nl/wiki/Raamwerk_gegevenskwaliteit",
+      },
+    "Kadaster-VO":
+      {
+        title:      "Rapportage Vooronderzoek Bestuurlijke Gebieden",
+        publisher:  "Kadaster",
+        date:       "2022-06-13", 
+        editors:    "Ronald Bokhove", 
+      },
+
      
   // {
   //   "CITAAT":
@@ -275,4 +283,5 @@ var respecConfig =
   //emailComments: "mim@geonovum.nl",         // reactie mailadres, alleen bij CV!
   //subtitle: "iets",                         // Subtitel van het document
   //maxTocLevel: 3,                           // Aantal niveau's ToC, default is 0
+      }
 };
