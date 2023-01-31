@@ -22,6 +22,6 @@ In de BRO moet zowel voor het indienen als wijzigen van informatie het hele docu
 
 ### Taal
 | Modeltype | Modeloutputtype | Taal |
-| -- | -- |
+| -- | -- | -- |
 | Conceptueel | ReSpec-documentatie | NL |
 | Logisch | XSD's | EN |
