@@ -24,11 +24,13 @@ Dit is een tijdrovend en arbeidsintensief proces met veel herhalende stappen. Da
 ## Praktische stappen van CM naar LM
 De BRO onderscheid de volgende package structuur:
 
-Package-niveau | Naam in CM | Naam in LM |
+| Niveau | Naam in CM | Naam in LM |
 | -- | -- | -- |
-| 0 | «Project» | «Project» |
-| 1 | «Basismodel» | «Basemodel» |
-| 2 | «Domein» | «Domain» |
+| 0 | `«Project»` | `«Project»` |
+| 1 | `«Basismodel»` | `«Basemodel»` |
+| 2 | `«Domein»` | `«Domain»` |
+
+Het `«Domein»` bevat het conceptuele model. Het logische model bevindt zich in het engelstalige equivalent `«Domain»` in een apart project.
 
 ## Relevantie voor DiSGeo
 ...
@@ -37,7 +39,7 @@ Package-niveau | Naam in CM | Naam in LM |
 In de BRO moet zowel voor het indienen als wijzigen van informatie het hele document opnieuw ingediend worden. Daardoor zijn beide processen hetzelfde. Dat is een keuze, maar die heeft invloed op de transactie van gegevens.
 
 ### Taal
-| Modeltype | Output | Taal |
+| Modeltype | Product | Gegenereerd met | Taal |
 | -- | -- | -- |
-| Conceptueel | ReSpec-documentatie | NL |
-| Logisch | XSD's | EN |
+| Conceptueel | ReSpec-documentatie |Imvertor |  NL |
+| Logisch | XSD's | Imvertor | EN |
