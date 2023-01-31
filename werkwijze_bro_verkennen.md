@@ -48,40 +48,37 @@ Je kiest een locatie in de project browser waar je het logische model wilt opnem
 Controleer op basis van het _process report_ van Imvertor op specifieke onderdelen of in het conceptuele model de gegevens die noodzakelijk zijn voor genereren van het logische model aanwezig en correct zijn. Han Welmer weet welke punten dit specifiek betreft.
 
 #### Stap 1
-Logische model afleidgen en aanpassen
-Versiebeheer van logisch model kan los staan van CM
-packages  properties aanpassen
-Aanbieden bij Imvertor
-Alfabetissche volgorde.
-Toevoegen aan SVN
-BRO-common toevoegen is een overkoepelend model (omhangen vna explictiet gemodelleerd, anaar )
+ - Logische model afleiden en aanpassen
+ - Versiebeheer van logisch model (dit kan los staan van CM)
+ - Package properties aanpassen
+ - Aanbieden bij Imvertor
+ - Modelelementen op alfabetissche volgorde zetten (eis vanuit BRO dat elementen op alfabetische volgorde in XSD's staan)
+ - Versie toevoegen aan SVN
+ - BRO-common toevoegen (dit is een overkoepelend model)
+ - BRO-common 'omhangen' (...)
 
 
 #### Stap 2 model uitbreden met innamesercie en uittifteservcie (domein specifiek)
 
 #### Stap 3 XSD's genereren
-maatwerk in imvertor vs. handmatige aanpassing.
-gegenereerde XSD's achteraf nog klein beetje aanpassen
-elke increment een nieuwe branch op Git
-in eerste instatie bro-common met de hand
-later met imvertor
-imvertor volgt heel strikt gml-xml encodingsrules
-bij het handmatige werk doe je dat niet alijtd helemeel strak
-
-BRO wilde bepaalde inforamtie uit publieke XSD's verwijderen.
-Zoals een annotatie dat het xsd met imvertor gegenereerd is.
-
-IMvertor heeft een versie een versiebeheermanier. 
-Daar wijkt bro vanaf, dus dat is met de hand.
-xs:length verfangen door xs:maxLength
-
-we hebben afwijken versiebeheer.
+ - Maatwerk in imvertor vs. handmatige aanpassing.
+ - Gegenereerde XSD's achteraf nog klein beetje aanpassen
+ - Elke increment een nieuwe branch op Git
+ - In eerste instatie bro-common met de hand
+ - Later met imvertor
+ - Imvertor volgt heel strikt gml-xml encodingsrules
+ - Bij het handmatige werk doe je dat niet alijtd helemeel strak
+ - BRO wilde bepaalde informatie uit publieke XSD's verwijderen, zoals bijvorbeeld een annotatie dat het XSD met Imvertor gegenereerd is.
+ - Imvertor heeft een versie een versiebeheermanier. 
+ - Maar daar wijkt de BRO van af, dus dat wijzigen zij handmatig.
+ - Daarnaast wordt een Imvertor-bug handmatig gecorrigeerd: `xs:length` (=gefixeerde lengte) vervangen door `xs:maxLength`(hier gaat het volgens de MIM-standaard om: elke lengte mogelijk, maar tot een bepaald maximum).
 
 ## Relevantie voor DiSGeo
 De profielen zouden we _as is_ kunnen gebruiken, maar waarschijnlijk is het wenselijk om hiervoor een DiSGeo-variant te maken. 
 Equivalente MIM-packagestructuur.
 Taalkeuze
 Vertaalde MIM-packagestructuur
+Versiebeheer CM en LM: afzonderlijk?
 
 
 ### Toevoegen of wijzigen van informatie in BRO
