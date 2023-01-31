@@ -58,14 +58,16 @@ Controleer op basis van het _process report_ van Imvertor op specifieke onderdel
  - BRO-common 'omhangen' (...)
 
 
-#### Stap 2 model uitbreden met innamesercie en uittifteservcie (domein specifiek)
+#### Stap 2 model uitbreden met inname- en uitgifteservice
+Verwerken van het transactiemodel in het logische model. Het gaat hier concreet om het technische beschrijven van de innamme en uitgifte van data.
 
 #### Stap 3 XSD's genereren
- - Maatwerk in imvertor vs. handmatige aanpassing.
- - Gegenereerde XSD's achteraf nog klein beetje aanpassen
- - Elke increment een nieuwe branch op Git
- - In eerste instatie bro-common met de hand
- - Later met imvertor
+ - Bij de BRO is telkens de afwegigng gemaakt: maatwerk in imvertor of handmatige aanpassing.
+ - Het resultaat is dat het proces op verschillende onderdelen geautomatiseerd is, maar dat er op andere onderdelen nog handmatige aanpassingen nodig zijn.
+ - Het gaat met name om de gegenereerde XSD's die achteraf nog klein beetje aanpassen moeten worden.
+ - Elke _increment_ een nieuwe branch op GitHub
+ - In eerste instatie BRO-common met de hand
+ - Later met Imvertor
  - Imvertor volgt heel strikt gml-xml encodingsrules
  - Bij het handmatige werk doe je dat niet alijtd helemeel strak
  - BRO wilde bepaalde informatie uit publieke XSD's verwijderen, zoals bijvorbeeld een annotatie dat het XSD met Imvertor gegenereerd is.
