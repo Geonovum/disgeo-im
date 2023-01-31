@@ -40,6 +40,6 @@ In de BRO moet zowel voor het indienen als wijzigen van informatie het hele docu
 
 ### Taal
 | Modeltype | Product | Gegenereerd met | Taal |
-| -- | -- | -- |
+| -- | -- | -- | -- |
 | Conceptueel | ReSpec-documentatie |Imvertor |  NL |
 | Logisch | XSD's | Imvertor | EN |
