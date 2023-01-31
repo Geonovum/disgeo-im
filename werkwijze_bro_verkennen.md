@@ -32,8 +32,24 @@ De BRO onderscheid de volgende package structuur in Enter:
 
 Het `«Domein»` bevat het conceptuele model. Het logische model bevindt zich in het engelstalige equivalent `«Domain»` in een apart project.
 
+Voor de kopie wordt een XMI-export van het conceptuele model gemaakt.
+De traces worden automatisch gelegd op basis van naamgeving en prifielen
+MIM heeft de velden Naam en Alternatieve naam. 
+De Bro heeft ervoor gekozen om in het Conceptuele model bij Naam de Nederlandse naam op te nemen en bij Alternatieve naam, de engelse naam.
+
+De vertaling van de stereotypes en tagged values gebeurd op basis van de eerder genoemde profielen. Zo wordt bijvoorbeeld een `«Objecttype»` vertaald naar een `«FeatureType»`. Die links zijn in de profielen gelegd. Hiervoor is een mapping van beide profielen noodzakelijk. Elk stereotype in hetprofiel van het conceptuele model, moet dus een mapping hebben naar een stereotype in het profiel van het logische model. Verder heb je voor het logische model nog specifieke XSD-stereotypes, bijvoorbeeld `XML schema location` op `«Package»`. 
+
+### Script aanroepen
+Je kiest een locatie in de project browser waar je het logische model wilt opnemen. Dan kies je Specialize > Set Tracebility for Set Transformations > Please select original package. Er komt een nieuw venster. Dan start het script. Dat maakt nu eerst een full duplication van het conceptuele model. Daarna worden de traces gelegd. Als dat klaar is moet het transactiemodel nog handmatig gemodelleerd worden. Op basis daarvan worden vervolgens XSD's gegenereerd. Die voor de BRO-doeleinden dan op een aantal punten nog handmatig aangepast moeten worden.
+
+
 ## Relevantie voor DiSGeo
-...
+
+De profielen zouden we _as is_ kunnen gebruiken, maar waarschijnlijk is het wenselijk om hiervoor een DiSGeo-variant te maken. 
+Equivalente MIM-packagestructuur.
+Taalkeuze
+Vertaalde MIM-packagestructuur
+
 
 ### Toevoegen of wijzigen van informatie in BRO
 In de BRO moet zowel voor het indienen als wijzigen van informatie het hele document opnieuw ingediend worden. Daardoor zijn beide processen hetzelfde. Dat is een keuze, maar die heeft invloed op de transactie van gegevens.
