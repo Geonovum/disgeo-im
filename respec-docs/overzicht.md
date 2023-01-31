@@ -103,17 +103,14 @@ Bovendien is er topologische consistentie tussen de geometrieën van bepaalde ty
 - De geometrieën van alle gemeentegebieden die liggen in het dezelfde provinciegebied, bedekken gezamenlijk het gehele oppervlak van dat provinciegebied;
 - De geometrieën van alle provinciegebieden bedekken gezamenlijk het gehele oppervlak van het rijksgebied.
 
-Bron: vooronderzoek Kadaster
+Bron: [[Kadaster-VO]]
 > Een gemeente valt altijd volledig binnen een provincie. De geometrie van alle gemeenten in een provincie moeten de provincie volledig bedekken. Gemeenten mogen niet overlappen.
 
 > Een provincie valt altijd volledig binnen het Europese deel van het Koninkrijk der Nederlanden. De geometrie van alle provincies moeten het Europese deel van het grondgebied van Nederland op land volledig bedekken. Provincies mogen niet overlappen.
 
-
 ## Beschrijving inhoud
 
-<aside class="issue">Algemene domeinoverstijgende beschrijving van het IMDiSGeo schrijven</aside>
-
-Dit document beschrijft het conceptueel informatiemodel samenhangende objecten. Het model bevat objecten uit: de basisregistratie adressen en gebouwen (BAG), de basisregistratie grootschalige topografie (BGT), de basisregistratie topografie (BRT) en delen van de basisregistratie waarde onroerende zaken (WOZ) en eventueel delen van enkele andere registraties.
+Het conceptueel informatiemodel samenhangende objecten beschrijft hoe objecten uit verschillende geo-basisregistraties met elkaar samenhangen. Het gaat in elk geval om de: Basisregistratie Adressen en Gebouwen (BAG), Basisregistratie Grootschalige Topografie (BGT), Basisregistratie Topografie (BRT) en delen van de basisregistratie Waarde Onroerende Zaken (WOZ) en mogelijk ook delen van enkele andere registraties.
 
 ### Bestuurlijke gebieden
 Er is een belangrijke relatie tussen een [openbaar lichaam](https://geonovum.github.io/disgeo-im/#global_class_BestuurlijkeGebieden_OpenbaarLichaam) en een [bestuurlijk gebied](https://geonovum.github.io/disgeo-im/#global_class_BestuurlijkeGebieden_BestuurlijkGebied). In de bestuurlijke indeling van het Koninkrijk der Nederlanden is een openbaar lichaam een overheid die bepaalde taken uitvoert binnen een bepaald _ruimtelijk_ gebied óf op een bepaald _inhoudelijk_ gebied ([[Wikipedia]]). De belangrijkste openbare lichamen zijn het Rijk, de provincies, de gemeenten en de waterschappen, maar ook veiligheidsregio's behoren hiertoe. Een bestuurlijk gebied is dan dat bepaalde ruimtelijk gebied waarover een openbaar lichaam bestuur uitoefent.
