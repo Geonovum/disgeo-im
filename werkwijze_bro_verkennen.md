@@ -74,12 +74,12 @@ Controleer op basis van het _process report_ van Imvertor op specifieke onderdel
  - Daarnaast wordt een Imvertor-bug handmatig gecorrigeerd: `xs:length` (=gefixeerde lengte) vervangen door `xs:maxLength`(hier gaat het volgens de MIM-standaard om: elke lengte mogelijk, maar tot een bepaald maximum).
 
 ## Relevantie voor DiSGeo
-De profielen zouden we _as is_ kunnen gebruiken, maar waarschijnlijk is het wenselijk om hiervoor een DiSGeo-variant te maken. 
-Equivalente MIM-packagestructuur.
-Taalkeuze
-Vertaalde MIM-packagestructuur
-Versiebeheer CM en LM: afzonderlijk?
-
+ - De profielen zouden we _as is_ kunnen gebruiken
+ - Waarschijnlijk is het wenselijk om hiervoor een DiSGeo-variant te maken. 
+ - Equivalente MIM-packagestructuur.
+ - Taalkeuze
+ - Vertaalde MIM-packagestructuur
+ - Versiebeheer CM en LM: afzonderlijk?
 
 ### Toevoegen of wijzigen van informatie in BRO
 In de BRO moet zowel voor het indienen als wijzigen van informatie het hele document opnieuw ingediend worden. Daardoor zijn beide processen hetzelfde. Dat is een keuze, maar die heeft invloed op de transactie van gegevens.
