@@ -3,11 +3,10 @@
 ## Naam en Acroniemen
 
 IMDiSGeo - Dataspecificatie voor Doorontwikkeling in Samenhang van de Geobasisregistraties (DiSGeo)
+IMSO - Informatiemodel Samenhangende Objecten
 
 ## Algemene beschrijving van het DiSGeo informatiemodel
-Het informatiemodel Samenhangende Objectenregistratie  zorgt ervoor dat alle gegevens die de geo-basisregistraties beschikbaar zijn eenduidig interpreteerbaar zijn en in samenhang met elkaar kunnen worden gebruikt. 
-
-<aside class="issue">Deze omschrijving graag verder aanvullen. Het doel is om de basisregistraties in samenhang te kunnen bevragen.</aside>
+Het informatiemodel Samenhangende Objecten zorgt ervoor dat alle gegevens die de geo-basisregistraties beschikbaar zijn, eenduidig interpreteerbaar zijn en in samenhang met elkaar kunnen worden bevraagd en gebruikt. 
 
 ## Modelleertechnische uitgangspunten
 
@@ -18,14 +17,6 @@ De volgende documenten zijn gehanteerd als uitgangspunt voor het informatiemodel
  - Basismodel Geo-informatie [[NEN3610-2022]]
  - ISO-19107-2003: Geographic information – Spatial schema [[iso-19107-2003]]
  - Modelleerprincipes samenhangende objectenregistratie [[disgeo-mod]]
-
-<aside class="issue">
-TODO: 
-
-Bibliografische referenties naar MIM, Raamwerk van geo-standaarden en NEN3610 moeten nog in `localBiblio` worden opgenomen.
-
-Aanvullen met oa EMSO. 
-</aside>
 
 ### Gegeneraliseerde geometrie
 Met *generaliseren*  bedoelen we het zinvol weglaten, vereenvoudigen, verplaatsen, vergroten, symboliseren en/of aggregeren van de geometrie van objecten. In DiS Geo: Eisen aan model samenhangende objectenregistratie [[EMSO]] wordt gesteld dat er geen noodzaak is voor (identificeerbare) gegeneraliseerde objecttypen. Gegeneraliseerde geometrieën worden alleen gebruikt voor visualisatie. 
@@ -43,7 +34,7 @@ In producten op basis van de geobasisregistraties zal de gebruiker echter doorga
 - De herkomst i.e. afleidingsgegevens: wat was de brongeometrie en hoe is de geometrie daaruit gegeneraliseerd. Dit is o.a nodig om terugmelding op geometrie te kunnen ondersteunen, ook in het geval van afgeleide geometrieën.
 
 <aside class="issue">
-**Eén geometrieattribuut:** dit is waarschijnlijk wel voldoende, maar er zijn wel use cases denkbaar waarbij je meerdere geometrieën wilt uitwisselen van één object. Het CBS doet dit bijvoorbeeld wel in hun WFS service van wijken en buurten. Gebruikers kunnen dan in hun eigen GIS pakket van schaal wisselen wanneer ze maar willen. 
+<b>Eén geometrieattribuut</b>: dit is waarschijnlijk wel voldoende, maar er zijn wel <i>use cases</i> denkbaar waarbij je meerdere geometrieën wilt uitwisselen van één object. Het CBS doet dit bijvoorbeeld wel in hun WFS-service van wijken en buurten. Gebruikers kunnen dan in hun eigen GIS-pakket van schaal wisselen wanneer ze maar willen. 
 
 Eén geometrieattribuut volstaat dan nog steeds, maar het moet wel een meervoudige kardinaliteit hebben dwz `[1..*]`. 
 
@@ -57,7 +48,7 @@ Zijn er use cases waarvoor het mogelijk moet zijn dat je een stukje van een geom
 </aside>
 
 <aside class="issue">
-Onderdeel van generalisatie is in sommige gevallen ook aggregatie. Bij bestuurlijke grenzen komt dit niet voor, maar bij bijvoorbeeld gebouwen en wegen wel. Een groepje gebouwen dat dicht naast elkaar staat wordt dan bijvoorbeeld geaggregeerd toto één gebouwblok of een aantal wegdelen tot één wegdeel. Als we van objecten verschillende geometrieën beschikbaar willen stellen - hoe werkt dat dan als objecten op lagere schalen geaggregeerd zijn, zoals bv gebouwen? Het is dan ingewikkeld om de afleidingsgegevens te modelleren.
+Onderdeel van generalisatie is in sommige gevallen ook aggregatie. Bij bestuurlijke grenzen komt dit niet voor, maar bij gebouwen en wegen wel. Een groepje gebouwen dat dicht naast elkaar staat wordt dan bijvoorbeeld geaggregeerd tot één gebouwblok, of een aantal wegdelen tot één wegdeel. Als we van objecten verschillende geometrieën beschikbaar willen stellen - hoe werkt dat dan als objecten op lagere schalen geaggregeerd zijn, zoals bijvoorbeeld gebouwen? Het is dan ingewikkeld om de afleidingsgegevens te modelleren.
 </aside>
 
 ## Aansluiting op NEN 3610
@@ -121,6 +112,8 @@ Bron: vooronderzoek Kadaster
 ## Beschrijving inhoud
 
 <aside class="issue">Algemene domeinoverstijgende beschrijving van het IMDiSGeo schrijven</aside>
+
+Dit document beschrijft het conceptueel informatiemodel samenhangende objecten. Het model bevat objecten uit: de basisregistratie adressen en gebouwen (BAG), de basisregistratie grootschalige topografie (BGT), de basisregistratie topografie (BRT) en delen van de basisregistratie waarde onroerende zaken (WOZ) en eventueel delen van enkele andere registraties.
 
 ### Bestuurlijke gebieden
 Er is een belangrijke relatie tussen een [openbaar lichaam](https://geonovum.github.io/disgeo-im/#global_class_BestuurlijkeGebieden_OpenbaarLichaam) en een [bestuurlijk gebied](https://geonovum.github.io/disgeo-im/#global_class_BestuurlijkeGebieden_BestuurlijkGebied). In de bestuurlijke indeling van het Koninkrijk der Nederlanden is een openbaar lichaam een overheid die bepaalde taken uitvoert binnen een bepaald _ruimtelijk_ gebied óf op een bepaald _inhoudelijk_ gebied ([[Wikipedia]]). De belangrijkste openbare lichamen zijn het Rijk, de provincies, de gemeenten en de waterschappen, maar ook veiligheidsregio's behoren hiertoe. Een bestuurlijk gebied is dan dat bepaalde ruimtelijk gebied waarover een openbaar lichaam bestuur uitoefent.
