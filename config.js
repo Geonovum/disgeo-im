@@ -231,7 +231,7 @@ var respecConfig =
         date:       "2022-06-13", 
         editors:    "Ronald Bokhove", 
       },
-
+}
      
   // {
   //   "CITAAT":
