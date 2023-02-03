@@ -90,6 +90,8 @@ Topologische consistentie wil zeggen dat de geometrieën van verschillende objec
 - Deze geometrieën naadloos op elkaar aansluiten, zodat er geen gaten voorkomen;
 - Deze geometrieën elkaar niet overlappen.
 
+De topologische consistentie-regels zijn opgenomen bij de objecttypen waar ze voor gelden, en zijn te vinden in [Hoodfstuk 3 Gegevensdefinitie](https://geonovum.github.io/disgeo-im/#cat). 
+
 ## Beschrijving inhoud
 
 Het conceptueel informatiemodel samenhangende objecten beschrijft hoe objecten uit verschillende geo-basisregistraties met elkaar samenhangen. Het gaat in elk geval om de: Basisregistratie Adressen en Gebouwen (BAG), Basisregistratie Grootschalige Topografie (BGT), Basisregistratie Topografie (BRT) en delen van de basisregistratie Waarde Onroerende Zaken (WOZ) en mogelijk ook delen van enkele andere registraties.
