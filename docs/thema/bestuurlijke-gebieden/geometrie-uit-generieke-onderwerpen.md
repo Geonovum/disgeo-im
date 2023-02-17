@@ -4,7 +4,9 @@
 
 | naam document | sectie | link | 
 | --- | --- | --- |
-| Overzicht generieke onderwerpen voor DisGeo informatiemodellering | 9. Geometrie | [url](https://geonovum.github.io/disgeo-imsor/documentatie/#geometrie)
+| Overzicht generieke onderwerpen voor DisGeo informatiemodellering | 9. Geometrie | [url](https://geonovum.github.io/disgeo-imsor/documentatie/#geometrie) |
+| Modelleerprincipes | ... | ... |
+| Notitie ruimtelijke relaties NEN3610:2022 | ... | ... |
 
 ## Algemeen
 
@@ -265,6 +267,8 @@ In Linked Data (GeoSPARQL) wordt geometrie als een object gezien en ook in ISO 2
 
 ### Geometrie-aspecten per objecttype
 
+>**NOTE**: **Kwaliteitseisen** met Pano afstemmen, vallen misschien onder stuk over _Metadata_.
+
 De volgende (meta)aspecten van geometrie moeten worden gedefinieerd per objecttype in het informatiemodel of de documentatie daarbij: 
 
 #### Geometrietype
@@ -281,11 +285,14 @@ Het geometrietype wordt aangegeven door keuze van het juiste type uit het ISO 19
 
 
 #### Dimensionaliteit
+
+>**VRAAG**: dit al opnemen in ons document?
+
 Het aantal dimensies kan impliciet worden aangegeven door geometrietype, aangevuld met een aanduiding dat het om 2.5D gaat in de definitie van het attribuut. 
 
 `GM_Solid` is per definitie 3D, maar bij `GM_Surface`, `GM_Curve` en `GM_Point` (en composite/multi varianten hiervan) is het mogelijk om 2 of 3 posities per coördinaat op te nemen. De hoogte is dan de derde positie. Of de hoogte wel of niet wordt opgenomen in de coördinaten kunnen we aangeven in de definitie van het attribuut.
 
-<aside class="example">
+<!-- <aside class="example">
    Definitie van het attribuut `geometrie` van een geluidbron in het Informatiemodel Geluid.
    <figure>
        <img src="media/img-voorbeeld-3d.png" alt="Voorbeeld IMGeluid"/>
@@ -294,10 +301,12 @@ Het aantal dimensies kan impliciet worden aangegeven door geometrietype, aangevu
 </aside>
 
 <aside class="issue">
-Is het wenselijk om een semantisch attribuut `hoogte` te modelleren zodat te zien is wat de hoogte van het object is zonder naar de coördinaten te kijken? Waar zou je dit modelleren, in de geometrie of in het objecttype/gegevensgroeptype? Moet dit überhaupt wel? in EMSO staat het niet dus het lijkt geen inhoudelijke eis te zijn.
-</aside>
+   Is het wenselijk om een semantisch attribuut `hoogte` te modelleren zodat te zien is wat de hoogte van het object is zonder naar de coördinaten te kijken? Waar zou je dit modelleren, in de geometrie of in het objecttype/gegevensgroeptype? Moet dit überhaupt wel? in EMSO staat het niet dus het lijkt geen inhoudelijke eis te zijn.
 
-#### 3D geometrie
+   <strong>Aanvulling:</strong> Dit zou je kunnen overwegen indien de hele geometrie dezelfde hoogte heeft. En dat is bij een <code>GM_Point</code> ook weer beter voor te stellen dan bij <code>GM_Linestring</code> (bijv. één hoogteaanduiding voor een weg(deel) of <code>GM_Surface</code> (een plat dat van een gebouw), hoewel het wel zou kunnen. Maar het wordt complex indien het om een set met hoogtewaarden/-coördinaten gaat. Die moet je dan weer matchen met de geometrie. Bovendien vervalt dan het voordeel van 'direct inzicht'.
+</aside> -->
+
+<!-- #### 3D geometrie
 
 <aside class="issue">Hoe we omgaan met 3D geometrie in de SOR moet nog verder worden uitgewerkt.
 
@@ -305,9 +314,12 @@ Een aantal vragen:
 - Is het mogelijk om van een object naast een 3D geometrie ook de 2D geometrie registreren? En is dat wenselijk? Op de korte termijn is er wellicht behoefte aan een flexibele aanbodkant waar organisaties als ze er aan toe zijn 3D kunnen aanleveren maar voorlopig wel 2D.
 - Ook is er waarschijnlijk wel behoefte aan 2D geometrie bij afnemers. Is dit dan iets dat je in een product afleidt, of is het iets dat we in het informatiemodel ook modelleren?
 - Kun je de 2D geometrie altijd afleiden uit de 3D geometrie?
-</aside>
+</aside> -->
 
 #### Nauwkeurigheidseisen
+
+>**NOTE**: Dit onderwerp is al verder uitgewerkt in modelleerprincipes.
+
 Wat onder nauwkeurigheid van geometrie wordt verstaan is goed gedefinieerd in standaarden. We gaan ervan uit dat wat in EMSO nauwkeurigheid wordt genoemd, hetzelfde is als [positionele juistheid](https://www.noraonline.nl/wiki/Positionele_juistheid) in het NORA raamwerk gegevenskwaliteit en hetzelfde als wat in de BGT positionele nauwkeurigheid wordt genoemd: 
 
 > Onder positionele nauwkeurigheid verstaat men de mate waarin de opgeslagen coördinaten overeenkomen met de waarden in de werkelijkheid of de geaccepteerde afwijking.
@@ -334,11 +346,17 @@ Vastleggen bij eigenschap heeft voorkeur boven vastleggen bij objecttype, omdat 
 </aside>
 
 #### Inwinregels
+
+>**NOTE**: Dit onderwerp is al verder uitgewerkt in modelleerprincipes.
+
 Verreweg de meeste objecttypen in de SOR hebben in hun huidige registratie al enige vorm van inwinregels. Eventueel zouden inwinregels in het MIM aspect `Regels` bij het geometrie attribuut van het desbetreffende objecttype gezet kunnen worden. 
 
 Omdat dit vaak omvangrijke instructies zijn, zijn ze nu meestal in tekst uitgeschreven in een apart handboek of hoofdstuk van de gegevenscatalogus. We zoeken naar een manier om deze teksten wel te relateren aan de bijbehorende modelelementen (annotatie).
 
 #### Topologische regels
+
+>**NOTE**: Dit onderwerp is al verder uitgewerkt in modelleerprincipes? Kijk ook naar deze [notitie over ruimtelijke en administratieve relaties in NEN3610:2022](https://github.com/Geonovum/disgeo-im/blob/main/docs/thema/bestuurlijke-gebieden/benaming-relaties.md).
+
 Voor ruimtelijke relaties tussen de objecten kunnen we gebruik maken van de topologische relaties zoals gedefinieerd in de Simple Features standaard [[iso-19125-1-2004]] en aangeraden in [[NEN3610-2021-ontw]] en [[sdw-bp]]. Deze relaties zijn geïmplementeerd in veel geografische softwareomgevingen en ook in GeoSPARQL: 
 
 - **`Equals`** - gelijk
@@ -376,7 +394,7 @@ Per individuele geometrie vastleggen:
 Het volstaat om een ISO 19107 geometrietype toe te passen in het informatiemodel (zie [](#geometrie-in-model) voor uitleg). Dit zorgt ervoor dat het coördinatenstelsel kan worden opgenomen, dat het geometrietype duidelijk is en dat de coördinaten zelf kunnen worden opgenomen.
 
 <aside class="issue">
-Heeft het meerwaarde om in het informatiemodel op te nemen in welk CRS een geometrie ingewonnen moet worden? Dat zou een metadata aspect kunnen zijn net zoals nauwkeurigheidseis.
+   Heeft het meerwaarde om in het informatiemodel op te nemen in welk CRS een geometrie ingewonnen moet worden? Dat zou een metadata aspect kunnen zijn net zoals nauwkeurigheidseis.
 </aside>
 
 ### Plaatsbepalingspunt
@@ -408,7 +426,7 @@ Rondom modellering van `Plaatsbepalingspunt` zijn er nog vragen:
 - Het is niet wenselijk om van `Plaatsbepalingspunt` historie bij te houden bij een object. Hier rekening mee houden bij modellering.
 </aside>
 
-### Uitwerking
+<!-- ### Uitwerking
 
 #### Optie 1
 
@@ -571,6 +589,6 @@ Met deze afleiding is het plaatje compleet en is de geometrie van het gebouw, na
   <figcaption>Gebouwgegevens naast plaatsebepalingen</figcaption>
 </figure>
 
-In deze optie hebben we de O&M standaard zo nauw mogelijk gevolgd en ook de koppeling kunnen leggen met de modellering van specifiek geometrie-gegevens, zonder dat we daarvoor nieuwe modelleerconstructies hoefden te introduceren voor geometrieën.
+In deze optie hebben we de O&M standaard zo nauw mogelijk gevolgd en ook de koppeling kunnen leggen met de modellering van specifiek geometrie-gegevens, zonder dat we daarvoor nieuwe modelleerconstructies hoefden te introduceren voor geometrieën. -->
 
 
