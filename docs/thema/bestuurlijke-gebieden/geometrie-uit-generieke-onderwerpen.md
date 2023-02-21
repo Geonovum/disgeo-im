@@ -6,6 +6,30 @@
 
 >**LET OP**: Referenties naar bestanden in `../media/` in oorspronkelijke repo opnieuw maken.
 
+<table border=0 cellpadding=0 cellspacing=0 width=128 style='border-collapse:
+ collapse;table-layout:fixed;width:96pt'>
+ <col width=64 span=2 style='width:48pt'>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1525936 width=64 style='height:15.0pt;width:48pt'>title</td>
+  <td class=xl1525936 width=64 style='width:48pt'>tilte2</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1525936 style='height:15.0pt'>value</td>
+  <td class=xl1525936>value</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1525936 style='height:15.0pt'>value<span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl1525936>vaule</td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+ </tr>
+ <![endif]>
+</table>
+
 #### Bibliografie
 
 | naam document | sectie | link | 
@@ -14,7 +38,7 @@
 | Modelleerprincipes | 2. Definities (Geo)Informatieobject) | [url](https://geonovum.github.io/disgeo-imsor/modelleerprincipes/#definities) |
 | Modelleerprincipes | 7. MIM-profiel voor DiSGeo | [url](https://geonovum.github.io/disgeo-imsor/modelleerprincipes/#mim-profiel-voor-dis-geo) |
 | Notitie ruimtelijke en administratieve relaties NEN3610:2022 | - | [url](https://github.com/Geonovum/disgeo-im/blob/main/docs/thema/bestuurlijke-gebieden/benaming-relaties.md) |
-|Handreiking Gebruik coördinaatreferentiesystemen bij uitwisseling en visualisatie van geo-informatie | - | [url](https://docs.geostandaarden.nl/crs/def-hr-crs-20220314/) |
+|Handreiking gebruik coördinaatreferentiesystemen | - | [url](https://docs.geostandaarden.nl/crs/def-hr-crs-20220314/) |
 
 ### 1.1 Uitgangspunten
 
@@ -41,12 +65,12 @@ Voor DiSGeo/Bestuurlijke Gebieden zijn vier typen coördinatiesystemen relevant:
 
 >**VRAAG**: wordt dit een algemeen stuk (DiSGeo) of specifiek bestuurlijke gebieden?
 
-##### Ondersteunde CRS-en bij aanlevering:
+##### 1.1.1.1 Ondersteunde CRS-en bij aanlevering
 Het **toepassingsgebied** en de **dimensie** bepalen welke CRS-en bij aanlevering van geometrieën geldig zijn. Aan de ene kant bestaat er onderscheid in het toepassingsgebied. Er zijn objecten die vallen binnen het Europese deel van Nederland en objecten die vallen binnen de Nederlandse Exclusieve Economische Zone (EEZ) van de Noordzee. Aan de andere kant bestaat er onderscheid in de dimensie van geometrieën. Sommige geometrieën zijn 2-dimensionaal; anderen 3-dimensionaal. Voor objecten binnen het Europese deel van Nederland gelden de volgende CRS-en: _**RD**_ en _**ETRS89**_. Voor gebieden op zee is nog geen besluit genomen.
 
 >**VRAAG**: hier wordt EEZ genoemd, maar er zijn vier typen op zee. willen we niet dichter bij benaming uit huidige model blijven _'~ op land'_ en _'~ op zee'_?
 
-Er zijn verschillende implementaties van ETRS89 in omloop. Wij nemen het [advies](https://geonovum.github.io/HR-CRS-Gebruik/#realisaties-van-etrs89-en-evrs) van het _Regional Reference Frame Sub-Commission for Europe_ (EUREF) over, om de ETRF2000-realisatie te gebruiken. Verder wordt bij aanlevering rekening gehouden met een lijnlengte van maximaal 200 meter. Dit besluit volgt het [langelijnenadvies](https://forum.pdok.nl/uploads/default/original/2X/c/c0795baa683bf3845c866ae4c576a880455be02a.pdf) van het NSGI. Dit [wordt geadviseerd](https://geonovum.github.io/HR-CRS-Gebruik/#vormvastheid) in [gebruik-crs](https://docs.geostandaarden.nl/crs/def-hr-crs-20220314/), in verband met compatibiliteit met RDNAPTRANS™.
+Er zijn verschillende implementaties van ETRS89 in omloop. Wij nemen het [advies](https://geonovum.github.io/HR-CRS-Gebruik/#realisaties-van-etrs89-en-evrs) van het _Regional Reference Frame Sub-Commission for Europe_ (EUREF) over, om de ETRF2000-realisatie te gebruiken. Verder wordt bij aanlevering rekening gehouden met een lijnlengte van maximaal 200 meter. Dit besluit volgt het [langelijnenadvies](https://forum.pdok.nl/uploads/default/original/2X/c/c0795baa683bf3845c866ae4c576a880455be02a.pdf) van het NSGI. Dit [wordt geadviseerd](https://geonovum.github.io/HR-CRS-Gebruik/#vormvastheid) in [gebruik-crs](https://docs.geostandaarden.nl/crs/def-hr-crs-20220314/), in verband met compatibiliteit met **RDNAPTRANS™**.
 
 Voor het CRS van **2D-geometrieen** gelden de volgende EPSG-codes:
 
@@ -94,7 +118,7 @@ Uitzoekpunt: de EEZ zone is mogelijk niet het enige disgeo object waarvoor geldt
 
 
 
-##### Ondersteunde CRS-en bij uitlevering:
+##### 1.1.1.2 Ondersteunde CRS-en bij uitlevering:
 
 >**VRAAG**: aan- en uitleverprocessen al openemen?
 
