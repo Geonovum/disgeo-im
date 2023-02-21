@@ -8,6 +8,26 @@
 | Modelleerprincipes | ... | ... |
 | Notitie ruimtelijke relaties NEN3610:2022 | ... | ... |
 
+
+```json
+{
+    "identificatie": "12345",
+    "domein": "NL.Gebouw",
+    "oorspronkelijkBouwjaar": "1980",
+    "status": "In gebruik",
+    "geregistreerdMet": {
+        "primaireBron": {
+            "documentnummer": "GB1487",
+            "documentdatum": "2020-09-28"
+        },
+        "toegeschrevenAan" : {
+            "naam": "Gemeente Kemeltoet",
+            "code": "GM1234"
+        }
+    }
+}
+```
+
 ## Algemeen
 
 ## Bestuurlijke gebieden
