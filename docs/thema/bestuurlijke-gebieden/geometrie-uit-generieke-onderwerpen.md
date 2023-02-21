@@ -42,19 +42,37 @@ Voor DiSGeo/Bestuurlijke Gebieden zijn vier typen coördinatiesystemen relevant:
 >**VRAAG**: wordt dit een algemeen stuk (DiSGeo) of specifiek bestuurlijke gebieden?
 
 ##### Ondersteunde CRS-en bij aanlevering:
-Het **toepassingsgebied** en de **dimensie** bepalen welke CRS-en bij aanlevering van geometrieën geldig zijn. Aan de ene kant bestaat er onderscheid in het toepassingsgebied. Er zijn objecten die vallen binnen het Europese deel van Nederland (bestuurlijk gebied op land) en objecten die vallen binnen de Nederlandse Exclusieve Economische Zone (EEZ) van de Noordzee (bestuurlijk gebied op zee). Aan de andere kant bestaat er onderscheid in de dimensie van geometrieën. Sommige geometrieën zijn 2-dimensionaal; anderen 3-dimensionaal. 
+Het **toepassingsgebied** en de **dimensie** bepalen welke CRS-en bij aanlevering van geometrieën geldig zijn. Aan de ene kant bestaat er onderscheid in het toepassingsgebied. Er zijn objecten die vallen binnen het Europese deel van Nederland en objecten die vallen binnen de Nederlandse Exclusieve Economische Zone (EEZ) van de Noordzee. Aan de andere kant bestaat er onderscheid in de dimensie van geometrieën. Sommige geometrieën zijn 2-dimensionaal; anderen 3-dimensionaal. Voor objecten binnen het Europese deel van Nederland gelden de volgende CRS-en: _**RD**_ en _**ETRS89**_. Voor gebieden op zee is nog geen besluit genomen.
 
 >**VRAAG**: hier wordt EEZ genoemd, maar er zijn vier typen op zee. willen we niet dichter bij benaming uit huidige model blijven _'~ op land'_ en _'~ op zee'_?
 
-### Bestuurlijke gebieden op land en op zee
+Er zijn verschillende implementaties van ETRS89 in omloop. Wij nemen het [advies](https://geonovum.github.io/HR-CRS-Gebruik/#realisaties-van-etrs89-en-evrs) van het _Regional Reference Frame Sub-Commission for Europe_ (EUREF) over, om de ETRF2000-realisatie te gebruiken. Verder wordt bij aanlevering rekening gehouden met een lijnlengte van maximaal 200 meter. Dit besluit volgt het [langelijnenadvies](https://forum.pdok.nl/uploads/default/original/2X/c/c0795baa683bf3845c866ae4c576a880455be02a.pdf) van het NSGI. Dit [wordt geadviseerd](https://geonovum.github.io/HR-CRS-Gebruik/#vormvastheid) in [gebruik-crs](https://docs.geostandaarden.nl/crs/def-hr-crs-20220314/), in verband met compatibiliteit met RDNAPTRANS™.
 
-#### Bestuurlijk gebieden op land
+Voor het CRS van **2D-geometrieen** gelden de volgende EPSG-codes:
+
+| CRS-Naam | Code  | URI                                             |
+|----------|-------|-------------------------------------------------|
+| RD       | 28992 | http://www.opengis.net/def/crs/EPSG/9.9.1/28992 |
+| ETRF2000 | 7931  | http://www.opengis.net/def/crs/EPSG/9.9.1/7931  |
+
+Voor het CRS van **3D-geometrieen** gelden de volgende EPSG-codes:
+
+| CRS-Naam | Code  | URI                                             |
+|----------|-------|-------------------------------------------------|
+| RDNAP    | 7415  | http://www.opengis.net/def/crs/EPSG/9.9.1/7415  |
+| ETRF2000 | 9067  | http://www.opengis.net/def/crs/EPSG/9.9.1/9067  |
+
+###### Bestuurlijk gebied
+
+Binnen het thema bestuurlijk gebied bevatten een aantal objecten een geometrie die binnen het Europese deel van Nederland valt. In het informatiemodel zijn deze gebieden geclassificeerd als 'bestuurlijk gebied op land'. Het gaat om de volgende vijf objecten. 
 
  - Rijksgebied
  - Gemeentegebied
  - Provinciegebied
  - Waterschapsgebied
  - Veiligheidsregiogebied
+
+<!-- 
 
 #### Bestuurlijk gebied op zee
 
@@ -63,9 +81,7 @@ Het **toepassingsgebied** en de **dimensie** bepalen welke CRS-en bij aanleverin
  - Exclusieve Economische Zone
  - Continentaal Plat
 
-Voor objecten binnen het Europese deel van Nederland gelden de volgende CRS-en: _**RD**_ en _**ETRS89**_.
-
-<!-- Voor objecten binnen de EEZ geldt:
+Voor objecten binnen de EEZ geldt:
 * ETRS89
 
 <aside class="issue">
@@ -76,24 +92,7 @@ Het is nog niet volledig duidelijk welke CRS-en het beste gebruikt kunnen worden
 Uitzoekpunt: de EEZ zone is mogelijk niet het enige disgeo object waarvoor geldt dat RD geen optie is. Wellicht ook de andere bestuurlijke gebieden op zee en wellicht windturbines op zee.
 </aside> -->
 
-Voor het CRS van **2D-geometrieen** zijn de volgende EPSG-code van toepassing:
 
-| CRS-Naam | Code  | URI                                             |
-|----------|-------|-------------------------------------------------|
-| RD       | 28992 | http://www.opengis.net/def/crs/EPSG/9.9.1/28992 |
-| ETRF2000 | 7931  | http://www.opengis.net/def/crs/EPSG/9.9.1/7931  |
-
-Bij **3D geometrieen** geldt de volgende EPSG code horende bij het CRS:
-
-| CRS-Naam | Code  | URI                                             |
-|----------|-------|-------------------------------------------------|
-| RDNAP    | 7415  | http://www.opengis.net/def/crs/EPSG/9.9.1/7415  |
-| ETRF2000 | 9067  | http://www.opengis.net/def/crs/EPSG/9.9.1/9067  |
-
-
-Er zijn verschillende implementaties van ETRS89 in omloop. Wij nemen het [advies](https://geonovum.github.io/HR-CRS-Gebruik/#realisaties-van-etrs89-en-evrs) van het _Regional Reference Frame Sub-Commission for Europe_ (EUREF) over, om de ETRF2000-realisatie te gebruiken.
-
-Ook zal bij aanlevering rekening gehouden worden met een lijnlengte van maximaal 200 meter, op basis van het [langelijnenadvies](https://forum.pdok.nl/uploads/default/original/2X/c/c0795baa683bf3845c866ae4c576a880455be02a.pdf) van het NSGI. Dit [wordt geadviseerd](https://geonovum.github.io/HR-CRS-Gebruik/#vormvastheid) in [gebruik-crs](https://docs.geostandaarden.nl/crs/def-hr-crs-20220314/), in verband met compatibiliteit met RDNAPTRANS™.
 
 ##### Ondersteunde CRS-en bij uitlevering:
 
