@@ -1,6 +1,12 @@
 # Geometrie
 
-**Bibliografie**
+#### Aandachtspunten 
+
+>**LET OP**: Referenties naar in `config.js` gedefinieerde bronnen mogelijk opnieuw maken.
+
+>**LET OP**: Referenties naar bestanden in `../media/` in oorspronkelijke repo opnieuw maken.
+
+#### Bibliografie
 
 | naam document | sectie | link | 
 | --- | --- | --- |
@@ -10,14 +16,12 @@
 | Notitie ruimtelijke en administratieve relaties NEN3610:2022 | - | [url](https://github.com/Geonovum/disgeo-im/blob/main/docs/thema/bestuurlijke-gebieden/benaming-relaties.md) |
 | Geo- en Vastgoedinformatie en Advies Rijksdriehoeksmeting | - | [url](https://geoforum.nl/uploads/default/original/2X/c/c0795baa683bf3845c866ae4c576a880455be02a.pdf) |
 
-
 ## Algemeen
 
 ## Bestuurlijke gebieden
 
 ## KOPIE
 
->**LET OP**: Referentie naar 'gebruik-crs' en andere in `config.js` gedefinieerde bronnen mogelijk opnieuw maken.
 
 ## Geometrie
 
@@ -27,7 +31,7 @@ Relevante input uit verschillende standaardenorganisaties en initiatieven:
 
 Principes: 
 - het gaat om het representeren van de locatie, orientatie en de vorm van objecten. 
-- dimensionaliteit: 2D, 3D space versus 0D, 1D, 2D(, 3D) objecten
+- dimensionaliteit: 2D- en 3D-ruimte versus 0D-, 1D-, 2D- en 3D-objecten
 
 #### Coordinaatreferentiesystemen (CRS):
 - WGS 84 gebaseerd op ITRS, gebruikt voor GPS
@@ -36,8 +40,30 @@ Principes:
 - Linear Reference Systems (LRS) (zie ISO 19148:2021, RWS-BPS, NWB, EU Inspire)
 
 ##### Ondersteunde CRS-en bij aanlevering:
+Het **toepassingsgebied van de geometrie** en **dimensie** bepalen welke CRS-en bij aanlevering geldig zijn. Aan de ene kant bestaat er**onderscheid** tussen geometrieën voor **objecten binnen het Europese deel van Nederland** en de **Nederlandse Exclusieve Economische Zone (EEZ)** van de Noordzee. Aan de andere kant bestaat er onderscheid tussen **2D-** en **3D-geometrieën**.
 
-We maken onderscheid tussen geometrieën die aangeleverd worden voor objecten binnen het Europese deel van Nederland en de Nederlandse Exclusieve Economische Zone (EEZ) van de Noordzee. Daarnaast maken we onderscheid tussen 2D- en 3D-geometrieën.
+### Gebieden op land en gebieden op zee
+
+#### Bestuurlijk gebieden op land
+
+|type bestuurlijk gebied | dimensie |
+| --- | --- | 
+| Rijksgebied | 2D |
+| Gemeentegebied | 2D |
+| Provinciegebied | 2D |
+| Waterschapsgebied | 2D |
+| Veiligheidsregiogebied | 2D |
+
+#### Bestuurlijk gebied op zee
+|type bestuurlijk gebied | dimensie |
+| --- | --- | 
+| Territoriale Zee | 2D | 
+| Aansluitende Zone | 2D | 
+| Exclusieve Economische Zone | 2D | 
+| Continentaal Plat | 2D | 
+
+
+
 
 Voor objecten binnen het Europese deel van Nederland gelden de volgende CRS-en:
 * RD
@@ -54,16 +80,14 @@ Het is nog niet volledig duidelijk welke CRS-en het beste gebruikt kunnen worden
 Uitzoekpunt: de EEZ zone is mogelijk niet het enige disgeo object waarvoor geldt dat RD geen optie is. Wellicht ook de andere bestuurlijke gebieden op zee en wellicht windturbines op zee.
 </aside> -->
 
-Bij 2D-geometrieen geldt de volgende EPSG code horende bij het CRS:
-
->**NOTE**: In onderstaande tabellen extra kolom 'dimensie' (o.i.d.) opnemen?
+Bij **2D-geometrieen** geldt de volgende EPSG code horende bij het CRS:
 
 | CRS-Naam | Code  | URI                                             |
 |----------|-------|-------------------------------------------------|
 | RD       | 28992 | http://www.opengis.net/def/crs/EPSG/9.9.1/28992 |
 | ETRF2000 | 7931  | http://www.opengis.net/def/crs/EPSG/9.9.1/7931  |
 
-Bij 3D geometrieen geldt de volgende EPSG code horende bij het CRS:
+Bij **3D geometrieen** geldt de volgende EPSG code horende bij het CRS:
 
 | CRS-Naam | Code  | URI                                             |
 |----------|-------|-------------------------------------------------|
