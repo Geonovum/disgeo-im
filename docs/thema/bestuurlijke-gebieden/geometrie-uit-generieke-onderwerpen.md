@@ -90,7 +90,8 @@ Bij **3D geometrieen** geldt de volgende EPSG code horende bij het CRS:
 | RDNAP    | 7415  | http://www.opengis.net/def/crs/EPSG/9.9.1/7415  |
 | ETRF2000 | 9067  | http://www.opengis.net/def/crs/EPSG/9.9.1/9067  |
 
-De keuze voor de ETRF2000 realisatie van ETRS89 baseren we op het advies van EUREF uit [gebruik-crs](https://docs.geostandaarden.nl/crs/def-hr-crs-20220314/), waarin het gebruik van ETRF2000 [wordt aangeraden](https://geonovum.github.io/HR-CRS-Gebruik/#realisaties-van-etrs89-en-evrs).
+
+Er zijn verschillende implementaties van ETRS89 in omloop. Wij nemen het [advies](https://geonovum.github.io/HR-CRS-Gebruik/#realisaties-van-etrs89-en-evrs) van het _Regional Reference Frame Sub-Commission for Europe_ (EUREF) over, om de ETRF2000-realisatie te gebruiken.
 
 Ook zal bij aanlevering rekening gehouden worden met een lijnlengte van maximaal 200 meter, op basis van het [langelijnenadvies](https://forum.pdok.nl/uploads/default/original/2X/c/c0795baa683bf3845c866ae4c576a880455be02a.pdf) van het NSGI. Dit [wordt geadviseerd](https://geonovum.github.io/HR-CRS-Gebruik/#vormvastheid) in [gebruik-crs](https://docs.geostandaarden.nl/crs/def-hr-crs-20220314/), in verband met compatibiliteit met RDNAPTRANS™.
 
