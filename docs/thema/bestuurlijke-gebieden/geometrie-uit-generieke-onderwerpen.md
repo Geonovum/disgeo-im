@@ -102,10 +102,10 @@ Hierbij zijn CRS84 en CRS84h respectievelijk de long lat varianten van de WGS 84
 
 >**NOTE**: Schrijfwijze 'long lat varianten'
 
-In ![](https://github.com/Geonovum/disgeo-imsor/blob/master/documentatie/media/crs-overview.drawio.png) is een schematische weergave van de ondersteunde CRS-en bij aanlevering en uitlevering opgenomen.
+In [](#crs-overview) is een schematische weergave van de ondersteunde CRS-en bij aanlevering en uitlevering opgenomen.
 
 <figure id="crs-overview">
-    <img src="media/crs-overview.drawio.png" alt="Overview van CRS-en in DiSGeo"/>
+    <img src="https://github.com/Geonovum/disgeo-imsor/blob/master/documentatie/media/crs-overview.drawio.png" alt="Overview van CRS-en in DiSGeo"/>
     <figcaption>Overzicht van de ondersteunde CRS-en in het kader van DiSGeo bij aanlevering en uitlevering</figcaption>
 </figure>
 
