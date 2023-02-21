@@ -39,28 +39,29 @@ Principes:
 - Rijksdriehoek systeem (RD)
 - Linear Reference Systems (LRS) (zie ISO 19148:2021, RWS-BPS, NWB, EU Inspire)
 
+>**VRAAG**: voor _liniear referencing_ nog url opnemen naar bronnen?
+
 ##### Ondersteunde CRS-en bij aanlevering:
-Het **toepassingsgebied van de geometrie** en **dimensie** bepalen welke CRS-en bij aanlevering geldig zijn. Aan de ene kant bestaat er**onderscheid** tussen geometrieën voor **objecten binnen het Europese deel van Nederland** en de **Nederlandse Exclusieve Economische Zone (EEZ)** van de Noordzee. Aan de andere kant bestaat er onderscheid tussen **2D-** en **3D-geometrieën**.
+Het **toepassingsgebied** en de **dimensie** bepalen welke CRS-en bij aanlevering van geometrieën geldig zijn. Aan de ene kant bestaat er **onderscheid** tussen geometrieën voor **objecten binnen het Europese deel van Nederland** (bestuurlijk gebied op land) en de **Nederlandse Exclusieve Economische Zone (EEZ)** (bestuurlijk gebied op zee) van de Noordzee. Aan de andere kant bestaat er onderscheid tussen **2D-** en **3D-geometrieën**.
+
+>**VRAAG**: hier wordt EEZ genoemd, maar er zijn vier typen op zee. willen we niet dichter bij benaming uit huidige model blijven '_~ op land_' en '_~ op zee_'?
 
 ### Gebieden op land en gebieden op zee
 
 #### Bestuurlijk gebieden op land
 
-|type bestuurlijk gebied | dimensie |
-| --- | --- | 
-| Rijksgebied | 2D |
-| Gemeentegebied | 2D |
-| Provinciegebied | 2D |
-| Waterschapsgebied | 2D |
-| Veiligheidsregiogebied | 2D |
+ - Rijksgebied
+ - Gemeentegebied
+ - Provinciegebied
+ - Waterschapsgebied
+ - Veiligheidsregiogebied
 
 #### Bestuurlijk gebied op zee
-|type bestuurlijk gebied | dimensie |
-| --- | --- | 
-| Territoriale Zee | 2D | 
-| Aansluitende Zone | 2D | 
-| Exclusieve Economische Zone | 2D | 
-| Continentaal Plat | 2D | 
+
+ - Territoriale Zee
+ - Aansluitende Zone
+ - Exclusieve Economische Zone
+ - Continentaal Plat
 
 
 
