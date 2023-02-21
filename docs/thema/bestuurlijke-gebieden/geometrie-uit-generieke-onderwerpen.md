@@ -217,7 +217,7 @@ We hanteren dus Simple Features (ISO 19125) _+ een aantal aanvullingen voor zove
 Simple Features gebruikt zoals gezegd geometrietypen uit de veel uitgebreidere standaard ISO 19107, waarin het volledige geometriemodel gedefinieerd is. De typen uit dit model hanteren we doorgaans als 'black box' typen of interfaces. Als achtergrondinformatie beschrijven we hier kort wat het geometriemodel van ISO 19107 inhoudt. 
 
 <figure>
-    <img src="media/iso19107-geometry.png" alt="ISO 19107 Geometry"/>
+    <img src="https://github.com/Geonovum/disgeo-imsor/blob/master/documentatie/media/iso19107-geometry.png" alt="ISO 19107 Geometry"/>
     <figcaption>Het Geometry object met al zijn kenmerken zoals gedefinieerd in het ruimtelijk schema van ISO 19107.</figcaption>
 </figure>
 
@@ -331,7 +331,7 @@ Per objecttype geven we de toegestane kwaliteit voor de positionele nauwkeurighe
 
 <aside class="example">
 <figure>
-    <img src="media/bgt-nauwkeurigheid.png" alt="Voorbeeld BGT"/>
+    <img src="https://github.com/Geonovum/disgeo-imsor/blob/master/documentatie/media/bgt-nauwkeurigheid.png" alt="Voorbeeld BGT"/>
     <figcaption>Tabel met nauwkeurigheidseisen in de BGT gegevenscatalogus</figcaption>
 </figure>
 </aside>
