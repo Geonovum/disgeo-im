@@ -46,7 +46,7 @@ Het **toepassingsgebied** en de **dimensie** bepalen welke CRS-en bij aanleverin
 
 >**VRAAG**: hier wordt EEZ genoemd, maar er zijn vier typen op zee. willen we niet dichter bij benaming uit huidige model blijven '_~ op land_' en '_~ op zee_'?
 
-### Gebieden op land en gebieden op zee
+### Bestuurlijke gebieden op land en op zee
 
 #### Bestuurlijk gebieden op land
 
