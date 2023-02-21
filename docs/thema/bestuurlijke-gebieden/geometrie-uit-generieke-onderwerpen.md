@@ -9,7 +9,7 @@
 | Notitie ruimtelijke relaties NEN3610:2022 | ... | ... |
 
 
-```json
+```js
 {
     "identificatie": "12345",
     "domein": "NL.Gebouw",
