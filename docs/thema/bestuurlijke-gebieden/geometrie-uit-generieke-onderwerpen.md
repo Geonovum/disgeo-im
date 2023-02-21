@@ -1,12 +1,14 @@
 # Geometrie
 
-**Bronnen**
+**Bibliografie**
 
 | naam document | sectie | link | 
 | --- | --- | --- |
 | Overzicht generieke onderwerpen voor DisGeo informatiemodellering | 9. Geometrie | [url](https://geonovum.github.io/disgeo-imsor/documentatie/#geometrie) |
-| Modelleerprincipes | ... | ... |
-| Notitie ruimtelijke relaties NEN3610:2022 | ... | ... |
+| Modelleerprincipes | 2. Definities (Geo)Informatieobject) | [url](https://geonovum.github.io/disgeo-imsor/modelleerprincipes/#definities) |
+| Modelleerprincipes | 7. MIM-profiel voor DiSGeo | [url](https://geonovum.github.io/disgeo-imsor/modelleerprincipes/#mim-profiel-voor-dis-geo) |
+| Notitie ruimtelijke en administratieve relaties NEN3610:2022 | - | [url](https://github.com/Geonovum/disgeo-im/blob/main/docs/thema/bestuurlijke-gebieden/benaming-relaties.md) |
+| Geo- en Vastgoedinformatie en Advies Rijksdriehoeksmeting | - | [url](https://geoforum.nl/uploads/default/original/2X/c/c0795baa683bf3845c866ae4c576a880455be02a.pdf) |
 
 
 ## Algemeen
