@@ -16,30 +16,34 @@
 | Notitie ruimtelijke en administratieve relaties NEN3610:2022 | - | [url](https://github.com/Geonovum/disgeo-im/blob/main/docs/thema/bestuurlijke-gebieden/benaming-relaties.md) |
 | Geo- en Vastgoedinformatie en Advies Rijksdriehoeksmeting | - | [url](https://geoforum.nl/uploads/default/original/2X/c/c0795baa683bf3845c866ae4c576a880455be02a.pdf) |
 
-## Algemeen
-
-## Bestuurlijke gebieden
-
-## KOPIE
-
-
 ## Geometrie
 
-### Uitgangspunten
+### 1.1 Uitgangspunten
 
-Relevante input uit verschillende standaardenorganisaties en initiatieven:
+Voor ... van geometrieën gelden een aantal belangrijke principes die volgen uit verschillende standaarden en initiatieven. 
 
-Principes: 
-- het gaat om het representeren van de locatie, orientatie en de vorm van objecten. 
-- dimensionaliteit: 2D- en 3D-ruimte versus 0D-, 1D-, 2D- en 3D-objecten
+ - Coordinaatreferentiesystemen
+ - Technologieën
+ - NEN3610
+ - GEometrie in het model
+ - Uitganspunten EMSO
 
-#### Coordinaatreferentiesystemen (CRS):
+Geometrieën worden gebruikt voor de representatie van _locatie_, _oriëntatie_ en _vorm_ van objecten uit de werkelijkheid in een informatiemodel. De dimensie dimensie van de representatie kan variëren van 0D- tot 3D-objecten. Deze objecten worden altijd geplaatst in een 2-dimensionele, of 3-dimensionele ruimte.
+
+
+
+#### 1.1.1 Coordinaatreferentiesystemen (CRS)
+
+Voor DiSGeo/Bestuurlijke Gebieden zijn vier typen coördinatiesystemen relevant:
+
 - WGS 84 gebaseerd op ITRS, gebruikt voor GPS
 - European Terrestrial Reference System 1989 (ETRS89)
 - Rijksdriehoek systeem (RD)
 - Linear Reference Systems (LRS) (zie ISO 19148:2021, RWS-BPS, NWB, EU INSPIRE)
 
 >**VRAAG**: voor _liniear referencing_ nog url opnemen naar bronnen?
+
+>**VRAAG**: wordt dit een algemeen stuk (DiSGeo) of specifiek bestuurlijke gebieden?
 
 ##### Ondersteunde CRS-en bij aanlevering:
 Het **toepassingsgebied** en de **dimensie** bepalen welke CRS-en bij aanlevering van geometrieën geldig zijn. Aan de ene kant bestaat er onderscheid in het toepassingsgebied. Er zijn objecten die vallen binnen het Europese deel van Nederland (bestuurlijk gebied op land) en objecten die vallen binnen de Nederlandse Exclusieve Economische Zone (EEZ) van de Noordzee (bestuurlijk gebied op zee). Aan de andere kant bestaat er onderscheid in de dimensie van geometrieën. Sommige geometrieën zijn 2-dimensionaal; anderen 3-dimensionaal. 
@@ -170,7 +174,7 @@ OMG
 - UML
 - UMLtoOWL specs -->
 
-#### Gremia en geometrie-gerelateerde specificaties
+#### 1.1.2 Gremia en geometrie-gerelateerde specificaties
 ISO
 - ISO TC184 STEP, Part 42
 - ISO TC211
@@ -273,7 +277,7 @@ Het Geometry object, waarvan alle specifieke geometrietypen zoals punt, lijn, vl
    <br> - Op zee zijn noch RD noch ETRS89 geschikt; het is gebruikelijk om daar WGS-84 te hanteren.
 </aside>
 
-<!-- ### Modelleren van geometrie bij objecttype
+<!-- ### 1.2 Modelleren van geometrie bij objecttype
 
 <aside class="issue">
    We moeten gaan uitwerken hoe we de eigenschap <i>geometrie</i> modelleren. Is het een datatype of wiskundig object; of een bijzonder datatype of een interface. Of misschien modelleren als een objecttype `Locatie` (zoals [locn](https://www.w3.org/ns/locn)).
@@ -293,7 +297,7 @@ We gebruiken in ieder geval de ISO typen `GM_Surface` etc (zie [](#geometrietype
 
 In Linked Data (GeoSPARQL) wordt geometrie als een object gezien en ook in ISO 2660 is dit zo. Het is daar een abstract (in de zin van: wiskundig) object waarnaar je een relatie kan leggen. -->
 
-### Geometrie-aspecten per objecttype
+### 1.3 Geometrie-aspecten per objecttype
 
 >**NOTE**: **Kwaliteitseisen** met Pano afstemmen, vallen misschien onder stuk over _Metadata_.
 
@@ -412,7 +416,7 @@ Wat voor kwaliteitsmetadata bij een objecttype wordt voorgeschreven, kan worden 
 
 We gaan onze eerder uitgewerkte modelleerpatronen toetsen tegen dit onderwerp.
 
-### Geometrie-object
+### 1.4 Geometrie-object
 Per individuele geometrie vastleggen:
 - Coördinatenstelsel
 - Geometrietype
@@ -425,7 +429,7 @@ Het volstaat om een ISO 19107 geometrietype toe te passen in het informatiemodel
    Heeft het meerwaarde om in het informatiemodel op te nemen in welk CRS een geometrie ingewonnen moet worden? Dat zou een metadata aspect kunnen zijn net zoals nauwkeurigheidseis.
 </aside>
 
-### Plaatsbepalingspunt
+<!-- ### Plaatsbepalingspunt
 Plaatsbepalingspunten zijn van belang voor sommige geometrieën als metadata over de inwinning. 
 
 Elk plaatsbepalingspunt wordt vastgelegd met de volgende kenmerken:
@@ -452,7 +456,7 @@ Rondom modellering van `Plaatsbepalingspunt` zijn er nog vragen:
 - Kan de relatie beter van objecttype naar `Plaatsbepalingspunt` gericht zijn of andersom?
 - Is het een optie om `Plaatsbepalingspunt` te modelleren als O&M `Observation`?
 - Het is niet wenselijk om van `Plaatsbepalingspunt` historie bij te houden bij een object. Hier rekening mee houden bij modellering.
-</aside>
+</aside> -->
 
 <!-- ### Uitwerking
 
