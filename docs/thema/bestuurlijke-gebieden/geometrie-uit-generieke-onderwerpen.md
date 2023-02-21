@@ -37,14 +37,14 @@ Principes:
 - WGS 84 gebaseerd op ITRS, gebruikt voor GPS
 - European Terrestrial Reference System 1989 (ETRS89)
 - Rijksdriehoek systeem (RD)
-- Linear Reference Systems (LRS) (zie ISO 19148:2021, RWS-BPS, NWB, EU Inspire)
+- Linear Reference Systems (LRS) (zie ISO 19148:2021, RWS-BPS, NWB, EU INSPIRE)
 
 >**VRAAG**: voor _liniear referencing_ nog url opnemen naar bronnen?
 
 ##### Ondersteunde CRS-en bij aanlevering:
-Het **toepassingsgebied** en de **dimensie** bepalen welke CRS-en bij aanlevering van geometrieën geldig zijn. Aan de ene kant bestaat er **onderscheid** tussen geometrieën voor **objecten binnen het Europese deel van Nederland** (bestuurlijk gebied op land) en de **Nederlandse Exclusieve Economische Zone (EEZ)** (bestuurlijk gebied op zee) van de Noordzee. Aan de andere kant bestaat er onderscheid tussen **2D-** en **3D-geometrieën**.
+Het **toepassingsgebied** en de **dimensie** bepalen welke CRS-en bij aanlevering van geometrieën geldig zijn. Aan de ene kant bestaat er onderscheid in het toepassingsgebied. Er zijn objecten die vallen binnen het Europese deel van Nederland (bestuurlijk gebied op land) en objecten die vallen binnen de Nederlandse Exclusieve Economische Zone (EEZ) van de Noordzee (bestuurlijk gebied op zee). Aan de andere kant bestaat er onderscheid in de dimensie van geometrieën. Sommige geometrieën zijn 2-dimensionaal; anderen 3-dimensionaal. 
 
->**VRAAG**: hier wordt EEZ genoemd, maar er zijn vier typen op zee. willen we niet dichter bij benaming uit huidige model blijven '_~ op land_' en '_~ op zee_'?
+>**VRAAG**: hier wordt EEZ genoemd, maar er zijn vier typen op zee. willen we niet dichter bij benaming uit huidige model blijven _'~ op land'_ en _'~ op zee'_?
 
 ### Bestuurlijke gebieden op land en op zee
 
