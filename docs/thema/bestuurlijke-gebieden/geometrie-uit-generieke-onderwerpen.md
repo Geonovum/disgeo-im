@@ -14,9 +14,7 @@
 | Modelleerprincipes | 2. Definities (Geo)Informatieobject) | [url](https://geonovum.github.io/disgeo-imsor/modelleerprincipes/#definities) |
 | Modelleerprincipes | 7. MIM-profiel voor DiSGeo | [url](https://geonovum.github.io/disgeo-imsor/modelleerprincipes/#mim-profiel-voor-dis-geo) |
 | Notitie ruimtelijke en administratieve relaties NEN3610:2022 | - | [url](https://github.com/Geonovum/disgeo-im/blob/main/docs/thema/bestuurlijke-gebieden/benaming-relaties.md) |
-| Geo- en Vastgoedinformatie en Advies Rijksdriehoeksmeting | - | [url](https://geoforum.nl/uploads/default/original/2X/c/c0795baa683bf3845c866ae4c576a880455be02a.pdf) |
-
-## Geometrie
+|Handreiking Gebruik coördinaatreferentiesystemen bij uitwisseling en visualisatie van geo-informatie | - | [url](https://docs.geostandaarden.nl/crs/def-hr-crs-20220314/) |
 
 ### 1.1 Uitgangspunten
 
@@ -29,8 +27,6 @@ Voor ... van geometrieën gelden een aantal belangrijke principes die volgen uit
  - Uitganspunten EMSO
 
 Geometrieën worden gebruikt voor de representatie van _locatie_, _oriëntatie_ en _vorm_ van objecten uit de werkelijkheid in een informatiemodel. De dimensie dimensie van de representatie kan variëren van 0D- tot 3D-objecten. Deze objecten worden altijd geplaatst in een 2-dimensionele, of 3-dimensionele ruimte.
-
-
 
 #### 1.1.1 Coordinaatreferentiesystemen (CRS)
 
@@ -67,12 +63,7 @@ Het **toepassingsgebied** en de **dimensie** bepalen welke CRS-en bij aanleverin
  - Exclusieve Economische Zone
  - Continentaal Plat
 
-
-
-
-Voor objecten binnen het Europese deel van Nederland gelden de volgende CRS-en:
-* RD
-* ETRS89
+Voor objecten binnen het Europese deel van Nederland gelden de volgende CRS-en: _**RD**_ en _**ETRS89**_.
 
 <!-- Voor objecten binnen de EEZ geldt:
 * ETRS89
@@ -85,7 +76,7 @@ Het is nog niet volledig duidelijk welke CRS-en het beste gebruikt kunnen worden
 Uitzoekpunt: de EEZ zone is mogelijk niet het enige disgeo object waarvoor geldt dat RD geen optie is. Wellicht ook de andere bestuurlijke gebieden op zee en wellicht windturbines op zee.
 </aside> -->
 
-Bij **2D-geometrieen** geldt de volgende EPSG code horende bij het CRS:
+Voor het CRS van **2D-geometrieen** zijn de volgende EPSG-code van toepassing:
 
 | CRS-Naam | Code  | URI                                             |
 |----------|-------|-------------------------------------------------|
@@ -99,9 +90,9 @@ Bij **3D geometrieen** geldt de volgende EPSG code horende bij het CRS:
 | RDNAP    | 7415  | http://www.opengis.net/def/crs/EPSG/9.9.1/7415  |
 | ETRF2000 | 9067  | http://www.opengis.net/def/crs/EPSG/9.9.1/9067  |
 
-De keuze voor de ETRF2000 realisaties van ETRS89 baseren we op het advies uit [[gebruik-crs]], waarin het gebruik van ETRF2000 [wordt aangeraden](https://geonovum.github.io/HR-CRS-Gebruik/#realisaties-van-etrs89-en-evrs).
+De keuze voor de ETRF2000 realisatie van ETRS89 baseren we op het advies van EUREF uit [gebruik-crs](https://docs.geostandaarden.nl/crs/def-hr-crs-20220314/), waarin het gebruik van ETRF2000 [wordt aangeraden](https://geonovum.github.io/HR-CRS-Gebruik/#realisaties-van-etrs89-en-evrs).
 
-Ook zal bij aanlevering rekening gehouden worden met een lijnlengte van maximaal 200 meter, op basis van het [langelijnenadvies](https://forum.pdok.nl/uploads/default/original/2X/c/c0795baa683bf3845c866ae4c576a880455be02a.pdf) van het NSGI. Dit [wordt geadviseerd](https://geonovum.github.io/HR-CRS-Gebruik/#vormvastheid) in [[gebruik-crs]], in verband met compatibiliteit met RDNAPTRANS™.
+Ook zal bij aanlevering rekening gehouden worden met een lijnlengte van maximaal 200 meter, op basis van het [langelijnenadvies](https://forum.pdok.nl/uploads/default/original/2X/c/c0795baa683bf3845c866ae4c576a880455be02a.pdf) van het NSGI. Dit [wordt geadviseerd](https://geonovum.github.io/HR-CRS-Gebruik/#vormvastheid) in [gebruik-crs](https://docs.geostandaarden.nl/crs/def-hr-crs-20220314/), in verband met compatibiliteit met RDNAPTRANS™.
 
 ##### Ondersteunde CRS-en bij uitlevering:
 
@@ -118,7 +109,7 @@ Bij uitlevering als ETRS89 kan de geometrie, naast als dezelfde realisaties als 
 | ETRS89   | 4258  | http://www.opengis.net/def/crs/EPSG/9.9.1/4258  |
 | ETRS89   | 4937  | http://www.opengis.net/def/crs/EPSG/9.9.1/4937  |
 
-Uitlevering via de WGS 84 CRSen is ook mogelijk via nultransformatie [zoals beschreven](https://docs.geostandaarden.nl/crs/crs/#wgs-84-gelijkstellen-aan-etrs89-nultransformatie) in [[gebruik-crs]]. Het gaat specifiek om:
+Uitlevering via de WGS 84 CRSen is ook mogelijk via nultransformatie [zoals beschreven](https://docs.geostandaarden.nl/crs/crs/#wgs-84-gelijkstellen-aan-etrs89-nultransformatie) in [gebruik-crs](https://docs.geostandaarden.nl/crs/def-hr-crs-20220314/). Het gaat specifiek om:
 
 | CRS-Naam | Code   | URI                                             |
 |----------|--------|-------------------------------------------------|
@@ -140,7 +131,7 @@ In [](#crs-overview) is een schematische weergave van de ondersteunde CRS-en bij
 
 ##### Nauwkeurigheid
 
-Voor het aangeven van de nauwkeurigheid van de geometrieen in RD(NAP) en ETRS89 volgen we [het advies](https://docs.geostandaarden.nl/crs/crs/#nauwkeurigheid-van-coordinaten) van [[gebruik-crs]].
+Voor het aangeven van de nauwkeurigheid van de geometrieen in RD(NAP) en ETRS89 volgen we [het advies](https://docs.geostandaarden.nl/crs/crs/#nauwkeurigheid-van-coordinaten) van [gebruik-crs](https://docs.geostandaarden.nl/crs/def-hr-crs-20220314/).
 
 <!-- #### Technologieën (formaten, direct access methods: APIs/QLs, data languages)
 ISO STEP tech:
@@ -207,7 +198,7 @@ IETF
 Geonovum
 - NEN 3610 [[NEN3610-2021-ontw]]
 - Geometrie in model en GML [[gimeg]]
-- Handreiking coördinaatreferentiesystemen [[gebruik-crs]]
+- Handreiking coördinaatreferentiesystemen [gebruik-crs](https://docs.geostandaarden.nl/crs/def-hr-crs-20220314/)
 
 Hieronder iets meer over NEN 3610 en de handreiking Geometrie in model en over inhoudelijke uitgangspunten uit EMSO. 
 
@@ -273,7 +264,7 @@ Het Geometry object, waarvan alle specifieke geometrietypen zoals punt, lijn, vl
 <aside class ="issue">
    Is RD wel het juiste coördinaatreferentiesysteem?
    <br> - Het te gebruiken coördinaatreferentiesysteem, RD, is niet toereikend voor objecten die zich niet op land bevinden maar op territoriale zee, zoals windturbines. Echter, de gewenste ruimtelijke dekking van de SOR is inclusief de territoriale zee.
-   <br>- Vanuit verschillende (basis)registraties is niet RD maar ETRS89 de eis. O.a. in de Omgevingswet (bron?). In het EMSO is van RD uitgegaan omdat veel bronhouders nog in RD werken. We moeten met experts bekijken of RD danwel ETRS op land de vereiste moet zijn. We kunnen hierbij ook gebruik maken van [hoofdstuk 3](https://docs.geostandaarden.nl/crs/cv-hr-crs-20211125/#aandachtspunten-bij-crs-in-informatiemodel-en-informatieketen) van de Handreiking CRS [[gebruik-crs]].
+   <br>- Vanuit verschillende (basis)registraties is niet RD maar ETRS89 de eis. O.a. in de Omgevingswet (bron?). In het EMSO is van RD uitgegaan omdat veel bronhouders nog in RD werken. We moeten met experts bekijken of RD danwel ETRS op land de vereiste moet zijn. We kunnen hierbij ook gebruik maken van [hoofdstuk 3](https://docs.geostandaarden.nl/crs/cv-hr-crs-20211125/#aandachtspunten-bij-crs-in-informatiemodel-en-informatieketen) van de Handreiking CRS [gebruik-crs](https://docs.geostandaarden.nl/crs/def-hr-crs-20220314/).
    <br> - Op zee zijn noch RD noch ETRS89 geschikt; het is gebruikelijk om daar WGS-84 te hanteren.
 </aside>
 
