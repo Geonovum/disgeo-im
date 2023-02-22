@@ -6,6 +6,8 @@
 
 >**LET OP**: Referenties naar bestanden in `../media/` in oorspronkelijke repo opnieuw maken.
 
+>**LET OP**: Geometrie zien we nu als een datatype en niet als een objecttype
+
 <table border=0 cellpadding=0 cellspacing=0 width=128 style='border-collapse:
  collapse;table-layout:fixed;width:96pt'>
  <col width=64 span=2 style='width:48pt'>
@@ -69,6 +71,10 @@ Voor DiSGeo/Bestuurlijke Gebieden zijn vier typen coördinatiesystemen relevant:
 Het **toepassingsgebied** en de **dimensie** bepalen welke CRS-en bij aanlevering van geometrieën geldig zijn. Aan de ene kant bestaat er onderscheid in het toepassingsgebied. Er zijn objecten die vallen binnen het Europese deel van Nederland en objecten die vallen binnen de Nederlandse Exclusieve Economische Zone (EEZ) van de Noordzee. Aan de andere kant bestaat er onderscheid in de dimensie van geometrieën. Sommige geometrieën zijn 2-dimensionaal; anderen 3-dimensionaal. Voor objecten binnen het Europese deel van Nederland gelden de volgende CRS-en: _**RD**_ en _**ETRS89**_. Voor gebieden op zee is nog geen besluit genomen.
 
 >**VRAAG**: hier wordt EEZ genoemd, maar er zijn vier typen op zee. willen we niet dichter bij benaming uit huidige model blijven _'~ op land'_ en _'~ op zee'_?
+
+>**Voorstel**: algemener neerzetten, voor onderdeel BG, dan verder aanscherpen.
+
+>Ja aan- en uitlevering al opnemen
 
 Er zijn verschillende implementaties van ETRS89 in omloop. Wij nemen het [advies](https://geonovum.github.io/HR-CRS-Gebruik/#realisaties-van-etrs89-en-evrs) van het _Regional Reference Frame Sub-Commission for Europe_ (EUREF) over, om de ETRF2000-realisatie te gebruiken. Verder wordt bij aanlevering rekening gehouden met een lijnlengte van maximaal 200 meter. Dit besluit volgt het [langelijnenadvies](https://forum.pdok.nl/uploads/default/original/2X/c/c0795baa683bf3845c866ae4c576a880455be02a.pdf) van het NSGI. Dit [wordt geadviseerd](https://geonovum.github.io/HR-CRS-Gebruik/#vormvastheid) in [gebruik-crs](https://docs.geostandaarden.nl/crs/def-hr-crs-20220314/), in verband met compatibiliteit met **RDNAPTRANS™**.
 
@@ -189,6 +195,7 @@ OMG
 - UML
 - UMLtoOWL specs -->
 
+<!-- 
 #### 1.1.2 Gremia en geometrie-gerelateerde specificaties
 ISO
 - ISO TC184 STEP, Part 42
@@ -224,7 +231,7 @@ Geonovum
 - Geometrie in model en GML [[gimeg]]
 - Handreiking coördinaatreferentiesystemen [gebruik-crs](https://docs.geostandaarden.nl/crs/def-hr-crs-20220314/)
 
-Hieronder iets meer over NEN 3610 en de handreiking Geometrie in model en over inhoudelijke uitgangspunten uit EMSO. 
+Hieronder iets meer over NEN 3610 en de handreiking Geometrie in model en over inhoudelijke uitgangspunten uit EMSO. --> 
 
 #### NEN 3610
 NEN 3610 [[NEN3610-2021-ontw]] zegt weinig specifieks over geometrie en geometrische vastlegging van objecten, anders dan dat ISO 19107:2020 normatief wordt aangehaald, waarin de ISO geometrietypen (o.a. `GM_Point`, `GM_Curve`, `GM_Surface`, `GM_Solid`) worden gedefinieerd. 
@@ -244,6 +251,8 @@ Paragraaf 9.12 gaat in op topologische relaties en geeft hier gestandaardiseerde
 Hoofdstuk 10 bevat regels en handreikingen over coördinaatreferentiesystemen die van belang kunnen zijn voor de SOR. 
 
 #### Geometrie in model 
+
+>**NOTE**: verwijzen naar document dat dit beschrijft. NIet volledige uitleg hier overnemen. IN elk geval afbeelding niet opnemen
 
 De handreiking Geometrie in model en GML [[gimeg]] legt inhoudelijk uit hoe het geometriemodel uit ISO 19107 [[iso-19107-2019]] kan worden toegepast en wat het geldende Nederlands profiel is (i.e. welke selectie is gemaakt uit de mogelijke geometrietypen). 
 
@@ -314,7 +323,9 @@ In Linked Data (GeoSPARQL) wordt geometrie als een object gezien en ook in ISO 2
 
 ### 1.3 Geometrie-aspecten per objecttype
 
->**NOTE**: **Kwaliteitseisen** met Pano afstemmen, vallen misschien onder stuk over _Metadata_.
+>**NOTE**: **Kwaliteitseisen** met Pano afstemmen, vallen misschien onder stuk over _Metadata_. (gedaan)
+
+>**NOTE**: paragraaf 9.3 en 9.4 in elkaar schuiven
 
 De volgende (meta)aspecten van geometrie moeten worden gedefinieerd per objecttype in het informatiemodel of de documentatie daarbij: 
 
