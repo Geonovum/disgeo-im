@@ -4,7 +4,7 @@
 
 #### Aandachtspunten
 
-<aside class="note">
+<!-- <aside class="note">
    tekst
 </aside>
 
@@ -22,7 +22,7 @@
 
 <p class="warning">
    tekst
-</p>
+</p> -->
 
 
 >**LET OP**: Referenties naar in `config.js` gedefinieerde bronnen mogelijk opnieuw maken.
@@ -30,30 +30,6 @@
 >**LET OP**: Referenties naar bestanden in `../media/` in oorspronkelijke repo opnieuw maken.
 
 >**LET OP**: Geometrie zien we nu als een datatype en niet als een objecttype
-
-<table border=0 cellpadding=0 cellspacing=0 width=128 style='border-collapse:
- collapse;table-layout:fixed;width:96pt'>
- <col width=64 span=2 style='width:48pt'>
- <tr height=20 style='height:15.0pt'>
-  <td height=20 class=xl1525936 width=64 style='height:15.0pt;width:48pt'>title</td>
-  <td class=xl1525936 width=64 style='width:48pt'>tilte2</td>
- </tr>
- <tr height=20 style='height:15.0pt'>
-  <td height=20 class=xl1525936 style='height:15.0pt'>value</td>
-  <td class=xl1525936>value</td>
- </tr>
- <tr height=20 style='height:15.0pt'>
-  <td height=20 class=xl1525936 style='height:15.0pt'>value<span
-  style='mso-spacerun:yes'> </span></td>
-  <td class=xl1525936>vaule</td>
- </tr>
- <![if supportMisalignedColumns]>
- <tr height=0 style='display:none'>
-  <td width=64 style='width:48pt'></td>
-  <td width=64 style='width:48pt'></td>
- </tr>
- <![endif]>
-</table>
 
 #### Bibliografie
 
