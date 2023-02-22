@@ -41,7 +41,7 @@
 | Notitie ruimtelijke en administratieve relaties NEN3610:2022 | - | [url](https://github.com/Geonovum/disgeo-im/blob/main/docs/thema/bestuurlijke-gebieden/benaming-relaties.md) |
 |Handreiking gebruik coördinaatreferentiesystemen | - | [url](https://docs.geostandaarden.nl/crs/def-hr-crs-20220314/) |
 
-### 1.1 Uitgangspunten
+### Uitgangspunten
 
 Voor ... van geometrieën gelden een aantal belangrijke principes die volgen uit verschillende standaarden en initiatieven. 
 
@@ -53,7 +53,7 @@ Voor ... van geometrieën gelden een aantal belangrijke principes die volgen uit
 
 Geometrieën worden gebruikt voor de representatie van _locatie_, _oriëntatie_ en _vorm_ van objecten uit de werkelijkheid in een informatiemodel. De dimensie dimensie van de representatie kan variëren van 0D- tot 3D-objecten. Deze objecten worden altijd geplaatst in een 2-dimensionele, of 3-dimensionele ruimte.
 
-#### 1.1.1 Coordinaatreferentiesystemen (CRS)
+#### Coordinaatreferentiesystemen (CRS)
 
 Voor DiSGeo/Bestuurlijke Gebieden zijn vier typen coördinatiesystemen relevant:
 
@@ -66,7 +66,7 @@ Voor DiSGeo/Bestuurlijke Gebieden zijn vier typen coördinatiesystemen relevant:
 
 >**VRAAG**: wordt dit een algemeen stuk (DiSGeo) of specifiek bestuurlijke gebieden?
 
-##### 1.1.1.1 Ondersteunde CRS-en bij aanlevering
+##### Ondersteunde CRS-en bij aanlevering
 Het **toepassingsgebied** en de **dimensie** bepalen welke CRS-en bij aanlevering van geometrieën geldig zijn. Aan de ene kant bestaat er onderscheid in het toepassingsgebied. Er zijn objecten die vallen binnen het Europese deel van Nederland en objecten die vallen binnen de Nederlandse Exclusieve Economische Zone (EEZ) van de Noordzee. Aan de andere kant bestaat er onderscheid in de dimensie van geometrieën. Sommige geometrieën zijn 2-dimensionaal; anderen 3-dimensionaal. Voor objecten binnen het Europese deel van Nederland gelden de volgende CRS-en: _**RD**_ en _**ETRS89**_. Voor gebieden op zee is nog geen besluit genomen.
 
 >**VRAAG**: hier wordt EEZ genoemd, maar er zijn vier typen op zee. willen we niet dichter bij benaming uit huidige model blijven _'~ op land'_ en _'~ op zee'_?
@@ -123,7 +123,7 @@ Uitzoekpunt: de EEZ zone is mogelijk niet het enige disgeo object waarvoor geldt
 
 
 
-##### 1.1.1.2 Ondersteunde CRS-en bij uitlevering:
+##### Ondersteunde CRS-en bij uitlevering:
 
 >**VRAAG**: aan- en uitleverprocessen al openemen?
 
@@ -320,7 +320,7 @@ We gebruiken in ieder geval de ISO typen `GM_Surface` etc (zie [](#geometrietype
 
 In Linked Data (GeoSPARQL) wordt geometrie als een object gezien en ook in ISO 2660 is dit zo. Het is daar een abstract (in de zin van: wiskundig) object waarnaar je een relatie kan leggen. -->
 
-### 1.3 Geometrie-aspecten per objecttype
+### Geometrie-aspecten per objecttype
 
 >**NOTE**: **Kwaliteitseisen** met Pano afstemmen, vallen misschien onder stuk over _Metadata_. (gedaan)
 
@@ -395,7 +395,7 @@ Eventueel zou het ook in het MIM aspect `Regels` bij de geometrie eigenschap van
 <aside class="issue">
 - Zoeken naar een manier om dit machineleesbaar vast te leggen.
 
-VOORSTEL: 
+<strong>VOORSTEL</strong>: 
 
 Leg dit vast in een te definiëren metadata aspect bij de eigenschap in een MIM extensie voor geo. Het heeft mogelijk toegevoegde waarde om dit bij de data te kunnen terugvinden.
 
@@ -441,7 +441,7 @@ Wat voor kwaliteitsmetadata bij een objecttype wordt voorgeschreven, kan worden 
 
 We gaan onze eerder uitgewerkte modelleerpatronen toetsen tegen dit onderwerp.
 
-### 1.4 Geometrie-object
+### Geometrie-object
 Per individuele geometrie vastleggen:
 - Coördinatenstelsel
 - Geometrietype
@@ -453,199 +453,3 @@ Het volstaat om een ISO 19107 geometrietype toe te passen in het informatiemodel
 <aside class="issue">
    Heeft het meerwaarde om in het informatiemodel op te nemen in welk CRS een geometrie ingewonnen moet worden? Dat zou een metadata aspect kunnen zijn net zoals nauwkeurigheidseis.
 </aside>
-
-<!-- ### Plaatsbepalingspunt
-Plaatsbepalingspunten zijn van belang voor sommige geometrieën als metadata over de inwinning. 
-
-Elk plaatsbepalingspunt wordt vastgelegd met de volgende kenmerken:
-- Unieke aanduiding
-- Coördinaten/puntgeometrie inclusief hoogte
-- Nauwkeurigheid
-- Inwinnende instantie
-- Inwinningsdatum
-
-De coördinaten van plaatsbepalingspunten moeten voorkomen in de coördinaten in de bijbehorende objectgeometrie, in de zin dat ze overeenkomen met één coördinatenpaar in deze objectgeometrie. Andersom geldt niet dat alle objectgeometrieën bijbehorende plaatsbepalingspunten hebben. Zie [](#wanneer-plaatsbepalingspunten) voor de details.
-
-<aside class="note">Deze regel kan alleen gecontroleerd worden als er een relatie is tussen object / geometrie en bijbehorende plaatsbepalingspunten.</aside>
-
-#### Wanneer plaatsbepalingspunten? 
-
-Bij een **objecttype** modelleren: als het een reëel object betreft EN de grens in het terrein goed is aan te wijzen (goed idealiseerbaar is).
-
-Bij een **individueel object** verplicht opnemen: als de coördinaten daadwerkelijk ingewonnen zijn middels terreinbezoek (terrestrisch), laserscanning (laser), luchtfoto’s of panoramabeelden.
-
-<aside class="issue">
-Rondom modellering van `Plaatsbepalingspunt` zijn er nog vragen: 
-- Is er een associatie tussen objecttype en `Plaatsbepalingspunt` nodig?
-- Moet `Plaatsbepalingspunt` gerelateerd worden aan de reële objecttypen, of aan de geometrie zelf?
-- Kan de relatie beter van objecttype naar `Plaatsbepalingspunt` gericht zijn of andersom?
-- Is het een optie om `Plaatsbepalingspunt` te modelleren als O&M `Observation`?
-- Het is niet wenselijk om van `Plaatsbepalingspunt` historie bij te houden bij een object. Hier rekening mee houden bij modellering.
-</aside> -->
-
-<!-- ### Uitwerking
-
-#### Optie 1
-
-Deze uitwerking is geïnspireerd op de modellering in veel geo-informatiemodellen (sectormodellen van NEN 3610). 
-
-In optie 1 hebben we de volgende keuzen gemaakt:
-- Geometrie is gemodelleerd als attribuut. Modelleren als relatie lijkt vooralsnog niet nodig. CRS en andere metadata van de geometrie kunnen conform ISO 19107 worden opgenomen (zie [](#geometrie-in-model).)
-- De geometrie van het objecttype `OpenBouwwerk` is getypeerd als `GM_Solid`. 
-- Er is een associatie gemodelleerd tussen objecttype en `Plaatsbepalingspunt`. Zonder een relatie tussen beiden levert het beheer van plaatsbepalingspunten problemen op, zo is in de BGT praktijk gebleken. Omdat het een reëel objecttype betreft, dat goed idealiseerbaar is, moeten plaatsbepalingspunten worden opgenomen *als* de geometrie is ingewonnen middels terreinbezoek (terrestrisch), laserscanning (laser), luchtfoto’s of panoramabeelden. Daarom is de relatie optioneel.
-- `Plaatsbepalingspunt` is gerelateerd aan het reële objecttype.
-- De relatie is gericht van objecttype naar `Plaatsbepalingspunt`.
-- O&M is niet toegepast. 
-- In het MIM aspect `Regels` is opgenomen wat de CRS van de geometrie moet zijn. 
-- **Topologische regels** staan hier niet; deze worden bij het objecttype opgenomen (bijvoorbeeld dat het objecttype moet voldoen aan de vlakdekkendheidseis). 
-- De **Positionele juistheid** (vernoemd naar NORA) en **inwinregels** zijn opgenomen in aparte, hiervoor toegevoegde metadata aspecten.
-
-Problemen met deze modelleerwijze: 
-- Omdat `Plaatsbepalingspunt` is gerelateerd aan het reële objecttype, is het niet goed mogelijk om plaatsbepalingspunten voor meerdere geometrieën bij één object te hebben. Je weet dan niet welk plaatsbepalingspunt bij welke geometrie hoort. 
-- Semantisch gezien horen plaatsbepalingspunten eigenlijk bij de geometrie en niet bij het object. Ze zeggen iets over hoe de geometrie tot stand gekomen is. 
-
-<aside class="example" id="geometrie-model-optie-1" title="Geometrie modellering, optie 1">
-    <figure>
-        <img src="media/voorbeeld-geometrie-modelleren.png" alt="Voorbeeld van het modelleren van geometrische aspecten"/>
-        <figcaption>Voorbeeld van het modelleren van geometrische aspecten, optie 1</figcaption>
-    </figure>
-
-MIM metadata van het attribuut `grondvlakgeometrie`:
-
-<table>
-  <tr>
-    <th>Naam</th>
-    <td>grondvlakgeometrie</td>
-  </tr>
-  <tr>
-    <th>Herkomst</th>
-    <td>https://docs.geostandaarden.nl/disgeo/emso/</td>
-  </tr>
-  <tr>
-    <th>Definitie</th>
-    <td>Geometrische representatie van een open bouwwerk <strong>in de vorm van een 3D volume</strong>.</td>
-  </tr>
-  <tr>
-    <th>Herkomst definitie</th>
-    <td>https://docs.geostandaarden.nl/disgeo/emso/</td>
-  </tr>
-  <tr>
-    <th>Toelichting</th>
-    <td>...</td>
-  </tr>
-  <tr>
-    <th>Mogelijk geen waarde</th>
-    <td>Nee</td>
-  </tr>
-  <tr>
-    <th>Kardinaliteit</th>
-    <td>1</td>
-  </tr>
-  <tr>
-    <th>Patroon</th>
-    <td>...</td>
-  </tr>
-  <tr>
-    <th>Type</th>
-    <td>GM_Solid</td>
-  </tr>
-  <tr>
-    <th>Regels</th>
-    <td>CRS aanlevering: RD/ETRS89</td>
-  </tr>
-  <tr>
-    <th>Positionele juistheid</th>
-    <td>30 cm.</td>
-  </tr>
-  <tr>
-    <th>Inwinregels</th>
-    <td>https://docs.geostandaarden.nl/disgeo/imsor-inwinning</td>
-  </tr>
-</table>
-
-</aside>
-
-#### Optie 2
-
-Deze uitwerking is geïnspireerd op de standaard Observations, Measurements and Samples (O&M 3.0 conceptversie) [[iso-19156-2021]]. Zie bijlage [](#de-o-m-standaard-observations-measurements-and-samples) voor de inhoud van deze standaard. 
-
-In optie 2 hebben we de volgende keuzen gemaakt:
-- Geometrie is gemodelleerd als attribuut. Modelleren als relatie lijkt vooralsnog niet nodig. CRS en andere metadata van de geometrie kunnen conform ISO 19107 worden opgenomen (zie [](#geometrie-in-model).)
-- Er zijn meerdere geometrie attributen mogelijk (in onderstaand voorbeeld zijn het er twee), ieder met een beschrijvende naam.
-- De geometrie attributen gebruiken een ISO 19107 geometrietype. 
-- Er is een associatie gemodelleerd tussen objecttype en `Plaatsbepalingspunt`. Zonder een relatie tussen beiden levert het beheer van plaatsbepalingspunten problemen op, zo is in de BGT praktijk gebleken. 
-- O&M is toegepast: Plaatsbepalingspunt is een subklasse van de O&M klasse `Observation`. 
-- De relatie is gericht van `Plaatsbepalingspunt` naar objecttype, analoog aan de relatie in O&M van `Observation` naar het `FeatureOfInterest`. 
-- `Plaatsbepalingspunt` heeft een specialisatie `GebouwPlaatsbepalingspunt`.
-- `GebouwPlaatsbepalingspunt` heeft een attribuut `kenmerk` dat de naam van het geometrie-attribuut uit het object als waarde heeft, analoog aan de `observedProperty` bij `Observation` in O&M. De specialisatie-klasse is nodig omdat de waarde van het attribuut `kenmerk` per objecttype kan verschillen.
-- MIM metadata op dezelfde wijze als bij optie 1 (tabel hier niet gedupliceerd)
-
-Problemen met deze modelleerwijze: 
-- ...
-
-<aside class="example" id="geometrie-model-optie-2" title="Geometrie modellering, optie 2">
-
-In het voorbeeld is een objecttype `Gebouw` gebruikt; dit is slechts een voorbeeld en geen vastgestelde modellering van het objecttype SOR Gebouw. 
-
-  <figure>
-      <img src="media/voorbeeld-geometrie-modelleren-2.png" alt="Voorbeeld van het modelleren van geometrische aspecten met OandM"/>
-      <figcaption>Voorbeeld van het modelleren van geometrische aspecten, optie 2</figcaption>
-  </figure>
-</aside>
-
-#### Optie 3
-
-Deze uitwerking is werkt verder door op de ideëen van optie 2 en de feedback vanuit model experts.
-
-Bij deze uitwerking hebben we de volgende aanpak gekozen:
-- Beginnen bij de plaatsbepalingspunten. Wanneer een geometrie plaatsbepalingspunten heeft, betekent het eigenlijk dat de geometrie is afgeleid van deze plaatbepalingspunten.De Plaatsbepalingspunten zijn er dus eerder dan de geometrie. Dat beketent ook dat plaatsbepalingsgegevens over een object al opgenomen en uitgewisseld moeten kunnen worden voordat de geometrie is opgenomen.
-- Vervolgens toevoegen van geometrie. Dit zou geen impact moeten hebben op de al opgenomen plaatsbepalingsgegevens.
-
-Net als in optie 2 maken we gebruik van O&M. Hierbij zijn de volgende keuzes gemaakt:
-- `Plaatsbepaling` is een subklasse van de O&M klasse `Observation`. Het plaatsbepalingspunt is het resultaat van de observation - de plaatsbepaling.
-
-<aside class="note">Momenteel hebben we geen Nederlandse vertaling gemaakt van de eigenschappen:
-- observedProperty 
-- result
-- featureOfInterest
-
-Dit is uiteraard nog wel mogelijk.
-</aside>
-
-We gebruiken verder hetzelfde model als in Optie 2 voor gebouwen. Naast Observation kent O&M ook de klasse ObservableProperty. Deze is in de standaard verder niet uitgewerkt, maar heeft als bedoeling om een modeldefinitie van een geobserveerd kenmerksoort op te nemen. Wij specialiseren dit hier naar een objecttype Kenmerk met een attribuutsoort `naam` en een optionele relatiesoort `heeftAfleiding` om te definieren wel objectgegeven op basis van het geobserveerde kenmerk kan worden afgeleid.
-
-<figure>
-  <img src="media/geometrie-optie3-1-model.drawio.png" alt="Optie 3 - informatiemodel van gebouw en plaatsbepaling op basis van OandM"/>
-  <figcaption>Optie 3 - informatiemodel van gebouw en plaatsbepaling op basis van O&M</figcaption>
-</figure>
-
-Om de werking van het model aan te tonen, gebruiken we een voorbeeld:
-
-Gegeven een gebouw, waarvan de geometrie nog niet is opgenomen. Voor dit object zal een aantal plaatsbepalingen gedaan worden op basis waarvan een geometrie afgeleid kan worden.
-
-Van het grondvlak van het gebouw worden drie `grondvlakpunten` gemeten en geregistreerd.
-
-<figure>
-  <img src="media/geometrie-optie3-2-data.drawio.png" alt="Grondvlakpunten die als plaatsbepaling van een gebouw 1234 worden opgenomen"/>
-  <figcaption>Grondvlakpunten die als plaatsbepaling van een gebouw 1234 worden opgenomen</figcaption>
-</figure>
-
-Later in het proces wordt deze informatie gebruikt voor het afleiden van een nieuw gegeven `geometrie2DGrondvlak` voor het gebouw.
-
-Conceptueel gezien kunnen de grondvlak-plaatsbepalingen gezien worden als direct gegevens over het gebouw, op basis waarvan het gegeven met kenmerk `geometrie2dGrondvlak` wordt afgeleid.
-
-<figure>
-  <img src="media/geometrie-optie3-3-afleiding.drawio.png" alt="Afleiding van geometrie2dGrondvlak op basis van plaatsbepalingen"/>
-  <figcaption>Afleiding van geometrie2dGrondvlak op basis van plaatsbepalingen</figcaption>
-</figure>
-
-Met deze afleiding is het plaatje compleet en is de geometrie van het gebouw, naast de andere gegevens opgenomen in de registratie. Daarnaast vormt het één passend geheel met de eerder geregistreerde plaatsbepalingen.
-
-<figure>
-  <img src="media/geometrie-optie3-4-data-compleet.drawio.png" alt="Gebouwgegevens naast plaatsebepalingen"/>
-  <figcaption>Gebouwgegevens naast plaatsebepalingen</figcaption>
-</figure>
-
-In deze optie hebben we de O&M standaard zo nauw mogelijk gevolgd en ook de koppeling kunnen leggen met de modellering van specifiek geometrie-gegevens, zonder dat we daarvoor nieuwe modelleerconstructies hoefden te introduceren voor geometrieën. -->
-
-
