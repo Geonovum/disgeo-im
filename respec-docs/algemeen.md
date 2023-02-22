@@ -2,7 +2,7 @@
 
 <aside class="issue">
    <strong>LET OP</strong>: Biblio in <code>config.js</code> uitbreiden met:
-   <code>[NEN3610-2021-ontw]</code>, <code>[gimeg]</code>, <code>[iso19107-2019]</code>, <i>modelleerprincipes</i>, <i>doc overzicht generieke onderwerpen</i>, <i>notitie ruimtelijke relaties?</i>, <i>handreiking geburik CRS</i>.
+   <code>[NEN3610-2021-ontw]</code>, <code>[gimeg]</code>, <code>[iso19107-2019]</code>, <code>[modelleerprincipes]</code>, <code>[doc-gen-onderwerpen]</code>, <code>[notitie-ruimtelijke-relaties]</code>, <code>[handreiking-gebruik-crs]</code>.
 </aside>
 
 ## Geometrie
@@ -23,6 +23,7 @@
 
 <aside class="issue">
    <strong>LET OP</strong>: Geometrie zien we nu als een <i>datatype</i> en niet als een <i>objecttype</i>
+</aside>
 
 #### Bibliografie
 
