@@ -26,7 +26,28 @@
    <strong>LET OP</strong>: Geometrie zien we nu als een <i>datatype</i> en niet als een <i>objecttype</i>
 </aside>
 
->**Invoegen**: 
+>**Invoegen**: tekst ruimtelijke relaties
+
+   ## Ruimtelijke en administratieve relaties en compliance met NEN3610
+
+   Het gaat hierbij om afwegingen bij het kiezen van een naam voor de relatie tussen gemeentegebied en provinciegebied.  Internationaal is de gestandaardiseerde naam ‘within’. In NEN3610 is dit vertaald naar ‘binnen’. In ons team bestaat de vraag of ‘ligtIn’ niet een betere naam is. Wat zijn onze opties hierbij?
+
+   De NEN3610 spreekt van administratieve relaties en ruimtelijke relaties. De vertaling ‘binnen’ betreft een ruimtelijke relatie. Wel is het belangrijk om te beseffen dat de ‘ruimtelijke relatie’ zoals beschreven in de NEN3610 eigenlijk een visuele representatie is van een constraint. Deze hoort dus eigenlijk niet thuis in het informatiemodel.
+
+   Het is aan ons de vraag of we een constraint willen toepassen:
+   - Zo ja, dan moeten we een nen3610:ruimtelijke relatie EN een nen3610:administratieve relatie gebruiken. 
+   - Zo niet, dan hebben we alleen een nen3610:administratieve relatie nodig.
+
+   Het gaat dan om een administratieve vastlegging van een ruimtelijke relatie die vanuit de OGC wordt gedefinieerd. Hiervoor kunnen we:
+   - De nen3610 benaming ‘binnen’ gebruiken (waarbij we het begrip nen3610:binnen opnemen als mim:begrip). 
+   - Onze eigen benaming (‘ligtIn’) gebruiken met een verwijzing naar de OGC term ‘within’. Dan hebben we echter geen link met de nen3610 – dat moet dan als een afgeleid gegeven worden gemodelleerd, omdat het anders niet mogelijk is vanuit de MIM.
+
+   ### Observaties 
+
+   - De term ‘binnen’ is niet het meest geschikt om te gebruiken voor de relatie in ons model – het is echter wel hoe de NEN3610 de ruimtelijke relatie ‘within’ heeft vertaald. Als wij uitwijken is het lastiger om aan te sluiten op de NEN3610, dus als we deze OGC relatie willen toepassen gebruiken we ‘binnen’. 
+   - We kunnen het nen3610 begrip ‘binnen’ (zoals het nu staat in het begrippenkader) opnemen als mim:begrip bij het creëren van de administratieve/ruimtelijke relaties tussen de registratieve gebieden.
+
+>**Invoegen**: modelleertechnische uitgangspunten
 
    ## Modelleertechnische uitgangspunten
 
@@ -38,7 +59,7 @@
     - ISO-19107-2003: Geographic information – Spatial schema [[iso-19107-2003]]
     - Modelleerprincipes samenhangende objectenregistratie [[disgeo-mod]]
 
->**Invoegen**:
+>**Invoegen**: gegeneraliseerde geometrie
 
    ### Gegeneraliseerde geometrie
    Met *generaliseren*  bedoelen we het zinvol weglaten, vereenvoudigen, verplaatsen, vergroten, symboliseren en/of aggregeren van de geometrie van objecten. In DiS Geo: Eisen aan model samenhangende objectenregistratie [[EMSO]] wordt gesteld dat er geen noodzaak is voor (identificeerbare) gegeneraliseerde objecttypen. Gegeneraliseerde geometrieën worden alleen gebruikt voor visualisatie. 
@@ -73,7 +94,7 @@
    Onderdeel van generalisatie is in sommige gevallen ook aggregatie. Bij bestuurlijke grenzen komt dit niet voor, maar bij gebouwen en wegen wel. Een groepje gebouwen dat dicht naast elkaar staat wordt dan bijvoorbeeld geaggregeerd tot één gebouwblok, of een aantal wegdelen tot één wegdeel. Als we van objecten verschillende geometrieën beschikbaar willen stellen - hoe werkt dat dan als objecten op lagere schalen geaggregeerd zijn, zoals bijvoorbeeld gebouwen? Het is dan ingewikkeld om de afleidingsgegevens te modelleren.
    </aside>
 
->**Invoegen**:
+>**Invoegen**: aansluiting op NEN3610
 
    ## Aansluiting op NEN 3610
 
@@ -103,7 +124,7 @@
    </figure>
    </aside>
 
->**Invoegen**:
+>**Invoegen**: tekst gegevenskwaliteit
 
    ## Gegevenskwaliteit
 
@@ -118,15 +139,6 @@
 
    De topologische consistentie-regels zijn opgenomen bij de objecttypen waar ze voor gelden, en zijn te vinden in [Hoodfstuk 3 Gegevensdefinitie](https://geonovum.github.io/disgeo-im/#cat). 
 
-## Bibliografie
-
-| naam document | sectie | link | 
-| --- | --- | --- |
-| Overzicht generieke onderwerpen voor DisGeo informatiemodellering | 9. Geometrie | [url](https://geonovum.github.io/disgeo-imsor/documentatie/#geometrie) |
-| Modelleerprincipes | 2. Definities (Geo)Informatieobject) | [url](https://geonovum.github.io/disgeo-imsor/modelleerprincipes/#definities) |
-| Modelleerprincipes | 7. MIM-profiel voor DiSGeo | [url](https://geonovum.github.io/disgeo-imsor/modelleerprincipes/#mim-profiel-voor-dis-geo) |
-| Notitie ruimtelijke en administratieve relaties NEN3610:2022 | - | [url](https://github.com/Geonovum/disgeo-im/blob/main/docs/thema/bestuurlijke-gebieden/benaming-relaties.md) |
-|Handreiking gebruik coördinaatreferentiesystemen | - | [url](https://docs.geostandaarden.nl/crs/def-hr-crs-20220314/) |
 
 >**Samenvoegen**: bovenstaande tekst (vanuit doc _Informatiemodel_, met onderstaande tekst vanuit doc _Generieke Onderwerpen_)
 
