@@ -10,7 +10,7 @@
 #### Aandachtspunten
 
 <aside class="issue">
-   <strong>LET OP</strong>: Referenties naar in <code>config.js</code> gedefinieerde bronnen mogelijk opnieuw maken.
+   <strong>LET OP</strong>: Referenties naar in <code>config.js</code> gedefinieerde bronnen opnieuw maken.
 </aside>
 
 <aside class="issue">
