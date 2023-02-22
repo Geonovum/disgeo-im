@@ -231,44 +231,121 @@ var respecConfig =
         date:       "2022-06-13", 
         editors:    "Ronald Bokhove", 
       },
-     
-  // {
-  //   "CITAAT":
-  //     {
-  //       title:      "Titel van het Citaat",
-  //       href:       "http://url van de publicatie",
-  //       status:     "versie van de publicatie",
-  //       publisher:  "naam van de publiceerder",
-  //       company:    "eventueel naam van bedrijf",
-  //   },
-  //   MIM: {
-  //     id: "mim10",
-  //     title: "MIM - Metamodel Informatie Modellering",
-  //     href: "https://docs.geostandaarden.nl/mim/mim10/",
-  //     status: "Definitief",
-  //     publisher: "Geonovum",
-  //     date: "2017-06-14"
-  //   },
-  //   "ISO19108-2005": {
-  //     "href": "https://www.iso.org/standard/39891.html",
-  //     "title": "Geographic information -- Rules for application schema",
-  //     "date": "2005-06",
-  //     "publisher": "International Organization for Standardization"
-  //   },
-  //   "ISO19118-2011": {
-  //     "href": "https://www.iso.org/standard/44212.html",
-  //     "title": "Geographic information -- Encoding",
-  //     "date": "2011-10",
-  //     "publisher": "International Organization for Standardization"
-  //   },
-  //   "NEN3610": {
-  //     id: "NEN 3610:2011 nl",
-  //     title: "NEN 3610:2011 nl - Basismodel geo-informatie - Termen, definities, relaties en algemene regels voor de uitwisseling van informatie over aan de aarde gerelateerde ruimtelijke objecten",
-  //     href: "https://www.nen.nl/NEN-Shop/Norm/NEN-36102011-nl.htm",
-  //     status: "Definitief",
-  //     publisher: "NEN",
-  //     date: "2011-03-01"
-  //   },
+
+// onderstaande lijst is een kopie van localBiblio document generieke onderwerpen
+      
+    "MODPR":
+      {
+        title:      "Modelleerprincipes samenhangende objectenregistratie",
+        href:       "https://geonovum.github.io/disgeo-imsor/modelleerprincipes/",
+        status:     "levend document",
+        publisher:  "Geonovum",
+      },
+    "NEN-2660-2":
+      {
+        title:      "Regels voor informatiemodellering van de gebouwde omgeving - Deel 2: Praktische configuratie, extensie en implementatie van deel 1",
+        href:       "https://www.nen.nl/nen-2660-2-2021-ontw-nl-279908",
+        status:     "Definitieve versie",
+        publisher:  "NEN",
+        date:       "1 april 2021",
+      },
+    "ISO-19131":
+      {
+        title:      "Geographic information — Data product specifications",
+        href:       "https://www.iso.org/standard/36760.html",
+        status:     "Published",
+        publisher:  "ISO",
+        date:       "2007-04",
+      },
+    "ISO-19110":
+      {
+        title:      "Geographic information — Methodology for feature cataloguing",
+        href:       "https://www.iso.org/standard/57303.html",
+        status:     "Published",
+        publisher:  "ISO",
+        date:       "2016-12",
+      },
+    "NL-profiel-ISO-19115":
+      {
+        title:      "Nederlands metadata profiel op ISO 19115 voor geografie",
+        href:       "https://docs.geostandaarden.nl/md/mdprofiel-iso19115/",
+        status:     "Definitief",
+        publisher:  "Geonovum",
+        date:       "30 juni 2020",
+        version:    "2.1.0",
+      },
+    "DiSGeo-Arch":
+      {
+        title:      "DiS Geo: Architectuurbeschrijving Voorzieningen Samenhangende Objectenregistratie",
+        href:       "https://docs.geostandaarden.nl/disgeo/arch/",
+        status:     "Consultatieversie",
+        date:       "2020-10-05",
+        publisher:  "Geonovum",
+      },
+    "ISO-25012":
+      {
+        title:      "Software engineering — Software product Quality Requirements and Evaluation (SQuaRE) — Data quality model",
+        href:       "https://www.iso.org/standard/35736.html",
+        status:     "Published",
+        date:       "2008-12",
+        publisher:  "ISO/IEC",
+      },
+    "GML3.3":
+      {
+        title:      "OGC® Geography Markup Language (GML) - Extended schemas and encoding rules ",
+        href:       "https://portal.ogc.org/files/?artifact_id=46568",
+        status:     "International standard",
+        date:       "2012 –02-07",
+        publisher:  "ISO/IEC",
+      },
+    "NEN3610-2021-ontw":
+      {
+        title: "Basismodel geo-informatie - Termen, definities, relaties en algemene regels voor de uitwisseling van informatie over aan de aarde gerelateerde ruimtelijke objecten",
+        href: "https://www.nen.nl/nen-3610-2021-ontw-nl-287554",
+        status: "Ontwerp",
+        publisher: "NEN",
+        date: "2021-10-01"
+      },
+    "UOI-ontw":
+      {
+        title: "UOI Ontwerp",
+        href: "https://www.nen.nl/nen-3610-2021-ontw-nl-287554",
+        status: "Consultatieversie",
+        publisher: "Geonovum",
+        date: "2021-04-20"
+      },
+    "gimeg":
+      {
+        href: "https://docs.geostandaarden.nl/nen3610/gimeg",
+        publisher: "Geonovum", 
+        authors: ["Linda van den Brink", "Paul Janssen", "Wilko Quak",],
+        title: "Geometrie in model en GML",
+      },
+    "iso-19107-2019":
+      {
+        title: "Geographic information — Spatial schema",
+        href: "https://www.iso.org/standard/66175.html", 
+        status: "Definitief", 
+        publisher: "ISO",
+        date: "2019-12",
+      },
+    "gebruik-crs": 
+      {
+        title: "Handreiking Gebruik coördinaatreferentiesystemen bij uitwisseling en visualisatie van geo-informatie",
+        href: "https://docs.geostandaarden.nl/crs/def-hr-crs-20220314/",
+        status: "Vastgestelde versie",
+        publisher: "Geonovum",
+        date: "2022-03-14",
+      },
+    "iso-19156-2021": 
+      {
+        title: "Geographic information — Observations, measurements and samples",
+        href: "https://www.iso.org/standard/82463.html", 
+        status: "DIS", 
+        publisher: "ISO",
+        date: "2021-11-15",
+      },
+
   },
   postProcess:[custGHPG],   //-- Optioneel voor een multi document repository
 
