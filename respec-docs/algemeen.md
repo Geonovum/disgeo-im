@@ -14,7 +14,7 @@
 </aside>
 
 <aside class="issue">
-   <strong>LET OP</strong>: Referenties naar bestanden in <code>../media/</code> in oorspronkelijke repo opnieuw maken.
+   <strong>LET OP</strong>: Referenties naar bestanden in <code>../media/</code> in oorspronkelijke repo opnieuw maken. Kopieer benodigde media-bestanden naar eigen repo.
 </aside>
 
 <aside class="issue">
