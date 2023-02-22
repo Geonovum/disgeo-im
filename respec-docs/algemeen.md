@@ -1,28 +1,13 @@
 # Algemeen
 
+<aside class="issue">
+   <strong>LET OP</strong>: Biblio in <code>config.js</code> uitbreiden met:
+   <code>[NEN3610-2021-ontw]</code>, <code>[gimeg]</code>, <code>[iso19107-2019]</code>, <i>modelleerprincipes</i>, <i>doc overzicht generieke onderwerpen</i>, <i>notitie ruimtelijke relaties?</i>, <i>handreiking geburik CRS</i>.
+</aside>
+
 ## Geometrie
 
 #### Aandachtspunten
-
-<!-- <aside class="note">
-   tekst
-</aside>
-
-<aside class="example">
-   tekst
-</aside>
-
-<aside class="issue">
-   tekst
-</aside>
-
-<aside class="illegal-example">
-   tekst
-</aside>
-
-<p class="warning">
-   tekst
-</p> -->
 
 <aside class="issue">
    <strong>LET OP</strong>: Referenties naar in <code>config.js</code> gedefinieerde bronnen mogelijk opnieuw maken.
@@ -30,6 +15,10 @@
 
 <aside class="issue">
    <strong>LET OP</strong>: Referenties naar bestanden in <code>../media/</code> in oorspronkelijke repo opnieuw maken.
+</aside>
+
+<aside class="issue">
+   <strong>LET OP</strong>: samenvoegen met paragraaf Modelleertechnische uitgangspunten.
 </aside>
 
 <aside class="issue">
@@ -266,7 +255,6 @@ Het geometrietype wordt aangegeven door keuze van het juiste type uit het ISO 19
 <aside class="issue">
    Hierbij is het relevant om te definiëren en op schrijven welke varianten toegestaan zijn. Een `GM_Surface` of `GM_Curve` heeft nog allerlei mogelijke verschijningsvormen in het Geometry model. Voor de uitwisseling en het gebruik is het handig om dit in te perken.
 </aside>
-
 
 #### Dimensionaliteit
 
