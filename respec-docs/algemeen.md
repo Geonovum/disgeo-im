@@ -24,12 +24,16 @@
    tekst
 </p> -->
 
+<aside class="issue">
+   <strong>LET OP</strong>: Referenties naar in <code>config.js</code> gedefinieerde bronnen mogelijk opnieuw maken.
+</aside>
 
->**LET OP**: Referenties naar in `config.js` gedefinieerde bronnen mogelijk opnieuw maken.
+<aside class="issue">
+   <strong>LET OP</strong>: Referenties naar bestanden in <code>../media/</code> in oorspronkelijke repo opnieuw maken.
+</aside>
 
->**LET OP**: Referenties naar bestanden in `../media/` in oorspronkelijke repo opnieuw maken.
-
->**LET OP**: Geometrie zien we nu als een datatype en niet als een objecttype
+<aside class="issue">
+   <strong>LET OP</strong>: Geometrie zien we nu als een <i>datatype</i> en niet als een <i>objecttype</i>
 
 #### Bibliografie
 
@@ -43,7 +47,7 @@
 
 ### Uitgangspunten
 
-Voor ... van geometrieën gelden een aantal belangrijke principes die volgen uit verschillende standaarden en initiatieven. 
+Voor `...` van geometrieën gelden een aantal belangrijke principes die volgen uit verschillende standaarden en initiatieven. 
 
  - Coordinaatreferentiesystemen
  - Technologieën
@@ -62,18 +66,23 @@ Voor DiSGeo/Bestuurlijke Gebieden zijn vier typen coördinatiesystemen relevant:
 - Rijksdriehoek systeem (RD)
 - Linear Reference Systems (LRS) (zie ISO 19148:2021, RWS-BPS, NWB, EU INSPIRE)
 
->**VRAAG**: voor _liniear referencing_ nog url opnemen naar bronnen?
+<aside class="issue">
+   <strong>NOTE</strong>: Url opnemen naar bronnen?
+</aside>
 
->**VRAAG**: wordt dit een algemeen stuk (DiSGeo) of specifiek bestuurlijke gebieden?
+<aside class="issue">
+   <strong>VRAAG</strong>: Wordt dit een <i>algemeen</i> stuk (DiSGeo) of <i>specifiek bestuurlijke gebieden</i>?
+   <br>
+   <strong>Voorstel</strong>: Algemener neerzetten, voor onderdeel BG, dan verder aanscherpen.
+</aside>
 
 ##### Ondersteunde CRS-en bij aanlevering
+
 Het **toepassingsgebied** en de **dimensie** bepalen welke CRS-en bij aanlevering van geometrieën geldig zijn. Aan de ene kant bestaat er onderscheid in het toepassingsgebied. Er zijn objecten die vallen binnen het Europese deel van Nederland en objecten die vallen binnen de Nederlandse Exclusieve Economische Zone (EEZ) van de Noordzee. Aan de andere kant bestaat er onderscheid in de dimensie van geometrieën. Sommige geometrieën zijn 2-dimensionaal; anderen 3-dimensionaal. Voor objecten binnen het Europese deel van Nederland gelden de volgende CRS-en: _**RD**_ en _**ETRS89**_. Voor gebieden op zee is nog geen besluit genomen.
 
->**VRAAG**: hier wordt EEZ genoemd, maar er zijn vier typen op zee. willen we niet dichter bij benaming uit huidige model blijven _'~ op land'_ en _'~ op zee'_?
-
->**Voorstel**: algemener neerzetten, voor onderdeel BG, dan verder aanscherpen.
-
->Ja aan- en uitlevering al opnemen
+<aside class="issue">
+  <strong>VRAAG</strong>: Hier wordt EEZ genoemd, maar er zijn vier typen op zee. willen we niet dichter bij benaming uit huidige model blijven <i>'~ op land'</i> en <i>'~ op zee'</i>? 
+</aside>
 
 Er zijn verschillende implementaties van ETRS89 in omloop. Wij nemen het [advies](https://geonovum.github.io/HR-CRS-Gebruik/#realisaties-van-etrs89-en-evrs) van het _Regional Reference Frame Sub-Commission for Europe_ (EUREF) over, om de ETRF2000-realisatie te gebruiken. Verder wordt bij aanlevering rekening gehouden met een lijnlengte van maximaal 200 meter. Dit besluit volgt het [langelijnenadvies](https://forum.pdok.nl/uploads/default/original/2X/c/c0795baa683bf3845c866ae4c576a880455be02a.pdf) van het NSGI. Dit [wordt geadviseerd](https://geonovum.github.io/HR-CRS-Gebruik/#vormvastheid) in [gebruik-crs](https://docs.geostandaarden.nl/crs/def-hr-crs-20220314/), in verband met compatibiliteit met **RDNAPTRANS™**.
 
@@ -121,17 +130,19 @@ Het is nog niet volledig duidelijk welke CRS-en het beste gebruikt kunnen worden
 Uitzoekpunt: de EEZ zone is mogelijk niet het enige disgeo object waarvoor geldt dat RD geen optie is. Wellicht ook de andere bestuurlijke gebieden op zee en wellicht windturbines op zee.
 </aside> -->
 
-
-
 ##### Ondersteunde CRS-en bij uitlevering:
 
->**VRAAG**: aan- en uitleverprocessen al openemen?
+<aside class="issue">
+   <strong>VRAAG</strong>: Aan- en uitleverprocessen al openemen?
+   <br>
+   <strong>Antwoord</strong>: Ja aan- en uitlevering al opnemen.
+</aside>
 
 Bij uitlevering als RD dezelfde realisaties beschikbaar als bij aanlevering.
 
 Bij uitlevering als ETRS89 kan de geometrie, naast als dezelfde realisaties als bij aanlevering, ook als de geografische ensemble CRSen opgevraagd worden. Te weten:
 
->**NOTE**: In onderstaande tabellen extra kolom 'dimensie' (o.i.d.) opnemen?
+>**NOTE**: In onderstaande tabellen extra kolom 'dimensie' (o.i.d.) opnemen? **Nee**: hanteer zelfde aanpak als tabellen 'aanlevering'.
 
 | CRS-Naam | Code  | URI                                             |
 |----------|-------|-------------------------------------------------|
@@ -149,7 +160,9 @@ Uitlevering via de WGS 84 CRSen is ook mogelijk via nultransformatie [zoals besc
 
 Hierbij zijn CRS84 en CRS84h respectievelijk de long lat varianten van de WGS 84 realisaties 4326 en 4979.
 
->**NOTE**: Schrijfwijze 'long lat varianten'
+<aside class="issue">
+   <strong>LET OP</strong>: Schrijfwijze 'long lat varianten'
+</aside>
 
 In [](#crs-overview) is een schematische weergave van de ondersteunde CRS-en bij aanlevering en uitlevering opgenomen.
 
@@ -161,76 +174,6 @@ In [](#crs-overview) is een schematische weergave van de ondersteunde CRS-en bij
 ##### Nauwkeurigheid
 
 Voor het aangeven van de nauwkeurigheid van de geometrieen in RD(NAP) en ETRS89 volgen we [het advies](https://docs.geostandaarden.nl/crs/crs/#nauwkeurigheid-van-coordinaten) van [gebruik-crs](https://docs.geostandaarden.nl/crs/def-hr-crs-20220314/).
-
-<!-- #### Technologieën (formaten, direct access methods: APIs/QLs, data languages)
-ISO STEP tech:
-- EXPRESS
-- SPFF
-
-W3C Base/XML tech: 
-- HTML (also ISO & IEC: ISO/IEC 15445:2000(E))
-- XML
-- XSD
-- XPATH
-- XQuery
-- CSS
-
-W3C Linked Data / Semantic Web tech: 
-- RDF, serialisations: Turtle, TriG, RDF-XML, JSON-LD
-- languages: RDFS, OWL, SHACL, SHACL-AF
-- SPARQL (often GraphQL frontend in case of JSON-LD serialisation). DE-9IM, 2-only!
-
-ECMA/IETF JSON tech
-- JSON (IETF RFC 8259)
-
-GraphQL Foundation
-- GraphQL, potential replacement for IETF's REST
-
-IETF
-- HTTP
-- REST
-
-OMG
-- UML
-- UMLtoOWL specs -->
-
-<!-- 
-#### 1.1.2 Gremia en geometrie-gerelateerde specificaties
-ISO
-- ISO TC184 STEP, Part 42
-- ISO TC211
-    - ISO 19101 - reference model
-    - ISO 19107 (2019) - spatial schema
-    - ISO 19125-1, Simple Features Access; incl. WellKnownText (WKT) strings option
-    - ISO TC5?
-
-Open Geospatial Consortium (OGC)
-- GML (XML based)
-- CityGML using GML
-- GeoSPARQL (Small ontology & set of topological functions; zie [Semantic web journal paper](http://www.semantic-web-journal.net/sites/default/files/swj176_0.pdf)
-- JSON-FG, uitbreiding op GeoJSON, in ontwikkeling
-
-CEN
-- TC442 WG4 / TG 3 SML. == ~NEN 2660; small top level: abstract concept <> concrete concept with subclass Representation: SpatialEntity(/TempralEntity from W3C Time Ontology)
-
-buildingSmart International (bSI)
-- IFC (3D): 
-    - IFC2x3, IFC4x1 (infra support like alignments), IFC4x3RC2. 
-    - Placement (Location, Orientation). 
-    - BREPS, ExtrudedSolid, BoundingBox, ... based on former ISO STEP Part 42,  Integrated generic resource: Geometric and topological representation
-
-W3C
-- Spatial Data on the Web Best Practices (w3.org) (also OGC) [[sdw-bp]] met ref naar  Spatial Thing (https://www.w3.org/2003/01/geo/), GeoSPARQL en GeoJSON. 
-
-IETF
-- RFC7946: GeoJSON [[rfc7946]]
-
-Geonovum
-- NEN 3610 [[NEN3610-2021-ontw]]
-- Geometrie in model en GML [[gimeg]]
-- Handreiking coördinaatreferentiesystemen [gebruik-crs](https://docs.geostandaarden.nl/crs/def-hr-crs-20220314/)
-
-Hieronder iets meer over NEN 3610 en de handreiking Geometrie in model en over inhoudelijke uitgangspunten uit EMSO. --> 
 
 #### NEN 3610
 NEN 3610 [[NEN3610-2021-ontw]] zegt weinig specifieks over geometrie en geometrische vastlegging van objecten, anders dan dat ISO 19107:2020 normatief wordt aangehaald, waarin de ISO geometrietypen (o.a. `GM_Point`, `GM_Curve`, `GM_Surface`, `GM_Solid`) worden gedefinieerd. 
@@ -251,7 +194,9 @@ Hoofdstuk 10 bevat regels en handreikingen over coördinaatreferentiesystemen di
 
 #### Geometrie in model 
 
->**NOTE**: verwijzen naar document dat dit beschrijft. NIet volledige uitleg hier overnemen. IN elk geval afbeelding niet opnemen
+<aside class="issue">
+   <strong>NOTE</strong>: Verwijzen naar document dat dit beschrijft. NIet volledige uitleg hier overnemen. In elk geval afbeelding niet opnemen.
+</aside>
 
 De handreiking Geometrie in model en GML [[gimeg]] legt inhoudelijk uit hoe het geometriemodel uit ISO 19107 [[iso-19107-2019]] kan worden toegepast en wat het geldende Nederlands profiel is (i.e. welke selectie is gemaakt uit de mogelijke geometrietypen). 
 
@@ -283,7 +228,9 @@ Het Geometry object, waarvan alle specifieke geometrietypen zoals punt, lijn, vl
 
 #### Uitgangspunten uit EMSO
 
->**NOTE**: Kwaliteitsmetadata (o.a. precisie) verder aanvullen met of verwijzen naar Modelleerprincipes)
+<aside class="issue">
+   <strong>VRAAG</strong>: <i>Kwaliteitsmetadata</i> (o.a. precisie) verder aanvullen met of verwijzen naar <i>Modelleerprincipes</i>).
+</aside>
 
 - De vastlegging van geometrie wordt zodanig vormgegeven dat de driedimensionale (3D) beschrijving van een object kan worden opgenomen.
 - EMSO beschrijft een aantal algemene topologische regels over vlakdekkendheid en topologie, bv "Objecten op verschillende hoogten moeten goed op elkaar aansluiten waar ze elkaar raken en consistent zijn"
@@ -300,31 +247,11 @@ Het Geometry object, waarvan alle specifieke geometrietypen zoals punt, lijn, vl
    <br> - Op zee zijn noch RD noch ETRS89 geschikt; het is gebruikelijk om daar WGS-84 te hanteren.
 </aside>
 
-<!-- ### 1.2 Modelleren van geometrie bij objecttype
-
-<aside class="issue">
-   We moeten gaan uitwerken hoe we de eigenschap <i>geometrie</i> modelleren. Is het een datatype of wiskundig object; of een bijzonder datatype of een interface. Of misschien modelleren als een objecttype `Locatie` (zoals [locn](https://www.w3.org/ns/locn)).
-
-   Ook: Gebruiken we een attribuutsoort of relatiesoort om geometrie aan het objecttype te verbinden? 
-</aside>
-
-Semantisch gezien, vanuit de MIM gedachte, positioneren we de geometrie als een eigenschap van het object. De betekenis van een geometrie vereist altijd een context, bv. een attribuutsoort of relatiesoort van een objecttype. Bv.`begrenzing` of `bovenaanzicht`. 
-
-Wiskundig gezien kun je zeggen dat de geometrie zelf een object is. Het is een set van coördinaten volgens een classificerende typering (surface, point enz) met samenhangende metadata die vereist is voor de interpretatie ervan (crs, …) waar je ruimtelijk mee kan rekenen.
-
-<aside class="note">
-   Afbeeldingen met voorbeelden van verschillende toepassingen 'geometrie'.
-</aside>
-
-We gebruiken in ieder geval de ISO typen `GM_Surface` etc (zie [](#geometrietype)). In ISO hebben deze een complexe structuur. In geo-informatiemodellen worden deze typen meestal behandeld als `interface` en kunnen ze zowel aan een attribuut en aan een relatie worden gekoppeld.  OGC CityGML en IMGeo zijn voorbeelden van informatiemodellen waar met een relatie wordt gewerkt. 
-
-In Linked Data (GeoSPARQL) wordt geometrie als een object gezien en ook in ISO 2660 is dit zo. Het is daar een abstract (in de zin van: wiskundig) object waarnaar je een relatie kan leggen. -->
-
 ### Geometrie-aspecten per objecttype
 
->**NOTE**: **Kwaliteitseisen** met Pano afstemmen, vallen misschien onder stuk over _Metadata_. (gedaan)
-
->**NOTE**: paragraaf 9.3 en 9.4 in elkaar schuiven
+<aside class="issue">
+   <strong>ACTIE</strong>: Paragraaf 9.3 en 9.4 in elkaar schuiven.
+</aside>
 
 De volgende (meta)aspecten van geometrie moeten worden gedefinieerd per objecttype in het informatiemodel of de documentatie daarbij: 
 
@@ -343,7 +270,11 @@ Het geometrietype wordt aangegeven door keuze van het juiste type uit het ISO 19
 
 #### Dimensionaliteit
 
->**VRAAG**: dit al opnemen in ons document?
+<aside class="issue">
+   <strong>VRAAG</strong>: Dit onderdeel opnemen in dit document?
+   <br>
+   <strong>Antwoord</strong>: Ja, maar wel samenvoegen met andere onderdelen over <i>geometrie</i>.
+</aside>
 
 Het aantal dimensies kan impliciet worden aangegeven door geometrietype, aangevuld met een aanduiding dat het om 2.5D gaat in de definitie van het attribuut. 
 
