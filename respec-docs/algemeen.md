@@ -264,7 +264,7 @@ Hierbij zijn CRS84 en CRS84h respectievelijk de long lat varianten van de WGS 84
 In [](#crs-overview) is een schematische weergave van de ondersteunde CRS-en bij aanlevering en uitlevering opgenomen.
 
 <figure id="crs-overview">
-    <img src="https://github.com/Geonovum/disgeo-imsor/blob/master/documentatie/media/crs-overview.drawio.png" alt="Overview van CRS-en in DiSGeo"/>
+    <img src="media/crs-overview.drawio.png" alt="Overview van CRS-en in DiSGeo"/>
     <figcaption>Overzicht van de ondersteunde CRS-en in het kader van DiSGeo bij aanlevering en uitlevering</figcaption>
 </figure>
 
@@ -311,7 +311,7 @@ We hanteren dus Simple Features (ISO 19125) _+ een aantal aanvullingen voor zove
 Simple Features gebruikt zoals gezegd geometrietypen uit de veel uitgebreidere standaard ISO 19107, waarin het volledige geometriemodel gedefinieerd is. De typen uit dit model hanteren we doorgaans als 'black box' typen of interfaces. Als achtergrondinformatie beschrijven we hier kort wat het geometriemodel van ISO 19107 inhoudt. 
 
 <figure>
-    <img src="https://github.com/Geonovum/disgeo-imsor/blob/master/documentatie/media/iso19107-geometry.png" alt="ISO 19107 Geometry"/>
+    <img src="media/iso19107-geometry.png" alt="ISO 19107 Geometry"/>
     <figcaption>Het Geometry object met al zijn kenmerken zoals gedefinieerd in het ruimtelijk schema van ISO 19107.</figcaption>
 </figure>
 
@@ -364,7 +364,7 @@ De volgende (meta)aspecten van geometrie moeten worden gedefinieerd per objectty
 Het geometrietype wordt aangegeven door keuze van het juiste type uit het ISO 19107 Geometry Model (`GM_xxx`), passend binnen het profiel zoals gedefinieerd in [[gimeg]]. 
 
 <figure>
-    <img src="https://docs.geostandaarden.nl/nen3610/gimeg/media/86bee1823dfd4f2ae0112c0462d2ccec.png" alt="ISO 19107 ruimtelijk schema"/>
+    <img src="media/iso19107-ruimtelijk-schema.png" alt="ISO 19107 ruimtelijk schema"/>
     <figcaption>Het ruimtelijk schema van ISO 19107, geometrische primitieven.</figcaption>
 </figure>
 
@@ -420,7 +420,7 @@ Per objecttype geven we de toegestane kwaliteit voor de positionele nauwkeurighe
 
 <aside class="example">
 <figure>
-    <img src="https://github.com/Geonovum/disgeo-imsor/blob/master/documentatie/media/bgt-nauwkeurigheid.png" alt="Voorbeeld BGT"/>
+    <img src="media/bgt-nauwkeurigheid.png" alt="Voorbeeld BGT"/>
     <figcaption>Tabel met nauwkeurigheidseisen in de BGT gegevenscatalogus</figcaption>
 </figure>
 </aside>
