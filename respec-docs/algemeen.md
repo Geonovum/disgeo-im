@@ -49,7 +49,64 @@
     - Topologische regels
     - Benodigde kwaliteitsmetadata
 
+   >**Notitie**: onderstaande tekst afkomstig uit doc gen. ondw.
+
+   **Geometrie-object**
+   
+   Per individuele geometrie vastleggen:
+   - Coördinatenstelsel
+   - Geometrietype
+   - De coördinaten zelf
+   - Indien van toepassing, kwaliteitsmetadata zoals beschreven in [](#benodigde-kwaliteitsmetadata).
+
+   Het volstaat om een ISO 19107 geometrietype toe te passen in het informatiemodel (zie [](#geometrie-in-model) voor uitleg). Dit zorgt ervoor dat het coördinatenstelsel kan worden opgenomen, dat het geometrietype duidelijk is en dat de coördinaten zelf kunnen worden opgenomen.
+
+   <aside class="issue">
+      Heeft het meerwaarde om in het informatiemodel op te nemen in welk CRS een geometrie ingewonnen moet worden? Dat zou een metadata aspect kunnen zijn net zoals nauwkeurigheidseis.
+   </aside>
+
 ### Dimensies
+   >**Notitie**: onderstaande tekst afkomstig uit doc gen. ondw.
+
+   #### Dimensionaliteit
+
+   <aside class="issue">
+      <strong>NOTE</strong>: Tekst <strong>CRS</strong> en <strong>Dimensies</strong> splitsen?
+   </aside>
+
+   <aside class="issue">
+      <strong>VRAAG</strong>: Dit onderdeel opnemen in dit document?
+      <br>
+      <strong>Antwoord</strong>: Ja, maar wel samenvoegen met andere onderdelen over <i>geometrie</i>.
+   </aside>
+
+   Het aantal dimensies kan impliciet worden aangegeven door geometrietype, aangevuld met een aanduiding dat het om 2.5D gaat in de definitie van het attribuut. 
+
+   `GM_Solid` is per definitie 3D, maar bij `GM_Surface`, `GM_Curve` en `GM_Point` (en composite/multi varianten hiervan) is het mogelijk om 2 of 3 posities per coördinaat op te nemen. De hoogte is dan de derde positie. Of de hoogte wel of niet wordt opgenomen in de coördinaten kunnen we aangeven in de definitie van het attribuut.
+
+   <!-- <aside class="example">
+      Definitie van het attribuut `geometrie` van een geluidbron in het Informatiemodel Geluid.
+      <figure>
+          <img src="media/img-voorbeeld-3d.png" alt="Voorbeeld IMGeluid"/>
+          <figcaption>Voorbeeld geometrietype omschrijving IMGeluid</figcaption>
+      </figure>
+   </aside>
+
+   <aside class="issue">
+      Is het wenselijk om een semantisch attribuut `hoogte` te modelleren zodat te zien is wat de hoogte van het object is zonder naar de coördinaten te kijken? Waar zou je dit modelleren, in de geometrie of in het objecttype/gegevensgroeptype? Moet dit überhaupt wel? in EMSO staat het niet dus het lijkt geen inhoudelijke eis te zijn.
+
+      <strong>Aanvulling:</strong> Dit zou je kunnen overwegen indien de hele geometrie dezelfde hoogte heeft. En dat is bij een <code>GM_Point</code> ook weer beter voor te stellen dan bij <code>GM_Linestring</code> (bijv. één hoogteaanduiding voor een weg(deel) of <code>GM_Surface</code> (een plat dat van een gebouw), hoewel het wel zou kunnen. Maar het wordt complex indien het om een set met hoogtewaarden/-coördinaten gaat. Die moet je dan weer matchen met de geometrie. Bovendien vervalt dan het voordeel van 'direct inzicht'.
+   </aside> -->
+
+   <!-- #### 3D geometrie
+
+   <aside class="issue">Hoe we omgaan met 3D geometrie in de SOR moet nog verder worden uitgewerkt.
+
+   Een aantal vragen: 
+   - Is het mogelijk om van een object naast een 3D geometrie ook de 2D geometrie registreren? En is dat wenselijk? Op de korte termijn is er wellicht behoefte aan een flexibele aanbodkant waar organisaties als ze er aan toe zijn 3D kunnen aanleveren maar voorlopig wel 2D.
+   - Ook is er waarschijnlijk wel behoefte aan 2D geometrie bij afnemers. Is dit dan iets dat je in een product afleidt, of is het iets dat we in het informatiemodel ook modelleren?
+   - Kun je de 2D geometrie altijd afleiden uit de 3D geometrie?
+   </aside> -->
 
 ### Typen
 
@@ -239,6 +296,82 @@
    #### Nauwkeurigheid
 
    Voor het aangeven van de nauwkeurigheid van de geometrieen in RD(NAP) en ETRS89 volgen we [het advies](https://docs.geostandaarden.nl/crs/crs/#nauwkeurigheid-van-coordinaten) van [gebruik-crs](https://docs.geostandaarden.nl/crs/def-hr-crs-20220314/).
+
+
+   #### Nauwkeurigheidseisen
+
+   >**Notitie**: Onderstaande tekst uit doc gen. ondw.
+
+   >**NOTE**: Dit onderwerp is al verder uitgewerkt in doc modelleerprincipes.
+
+   Wat onder nauwkeurigheid van geometrie wordt verstaan is goed gedefinieerd in standaarden. We gaan ervan uit dat wat in EMSO nauwkeurigheid wordt genoemd, hetzelfde is als [positionele juistheid](https://www.noraonline.nl/wiki/Positionele_juistheid) in het NORA raamwerk gegevenskwaliteit en hetzelfde als wat in de BGT positionele nauwkeurigheid wordt genoemd: 
+
+   > Onder positionele nauwkeurigheid verstaat men de mate waarin de opgeslagen coördinaten overeenkomen met de waarden in de werkelijkheid of de geaccepteerde afwijking.
+
+   Per objecttype geven we de toegestane kwaliteit voor de positionele nauwkeurigheid als een getal in centimeters (dat dan de toegestane afwijking weergeeft). MIM heeft hiervoor geen metadata-element. Een optie is om dit in een tabel vóór in de gegevenscatalogus op te nemen, zoals gedaan in de BGT catalogus op p. 23. 
+
+   <aside class="example">
+   <figure>
+       <img src="media/bgt-nauwkeurigheid.png" alt="Voorbeeld BGT"/>
+       <figcaption>Tabel met nauwkeurigheidseisen in de BGT gegevenscatalogus</figcaption>
+   </figure>
+   </aside>
+
+   Eventueel zou het ook in het MIM aspect `Regels` bij de geometrie eigenschap van het desbetreffende objecttype gezet kunnen worden. 
+
+   <aside class="issue">
+   - Zoeken naar een manier om dit machineleesbaar vast te leggen.
+
+   <strong>VOORSTEL</strong>: 
+
+   Leg dit vast in een te definiëren metadata aspect bij de eigenschap in een MIM extensie voor geo. Het heeft mogelijk toegevoegde waarde om dit bij de data te kunnen terugvinden.
+
+   Vastleggen bij eigenschap heeft voorkeur boven vastleggen bij objecttype, omdat er mogelijk meerdere geometrie-eigenschappen komen bij een objecttype (Levels of Detail).
+   </aside>
+
+   #### Inwinregels
+   >**Notitie**: Onderstaande tekst uit doc gen. ondw.
+
+   >**NOTE**: Dit onderwerp is al verder uitgewerkt in modelleerprincipes.
+
+   Verreweg de meeste objecttypen in de SOR hebben in hun huidige registratie al enige vorm van inwinregels. Eventueel zouden inwinregels in het MIM aspect `Regels` bij het geometrie attribuut van het desbetreffende objecttype gezet kunnen worden. 
+
+   Omdat dit vaak omvangrijke instructies zijn, zijn ze nu meestal in tekst uitgeschreven in een apart handboek of hoofdstuk van de gegevenscatalogus. We zoeken naar een manier om deze teksten wel te relateren aan de bijbehorende modelelementen (annotatie).
+
+   #### Topologische regels
+
+   >**NOTE**: kiezen waarplaatsen: hier of onder NEN3610
+
+   >**NOTE**: Dit onderwerp is al verder uitgewerkt in modelleerprincipes? Kijk ook naar deze [notitie over ruimtelijke en administratieve relaties in NEN3610:2022](https://github.com/Geonovum/disgeo-im/blob/main/docs/thema/bestuurlijke-gebieden/benaming-relaties.md).
+
+   Voor ruimtelijke relaties tussen de objecten kunnen we gebruik maken van de topologische relaties zoals gedefinieerd in de Simple Features standaard [[iso-19125-1-2004]] en aangeraden in [[NEN3610-2021-ontw]] en [[sdw-bp]]. Deze relaties zijn geïmplementeerd in veel geografische softwareomgevingen en ook in GeoSPARQL: 
+
+   - **`Equals`** - gelijk
+   - **`Disjoint`** - disjunct (geen enkel punt gemeen)
+   - **`Touches`** - raakt
+   - **`Crosses`** - kruist
+   - **`Within`** - binnen
+   - **`Contains`** - bevat
+   - **`Intersects`** - doorsnijdt (geometrieën hebben op zijn minst één punt gemeen;
+   geometrieën kunnen verschillende dimensie hebben)
+
+   Deze relaties kun je gebruiken voor punt-, lijn- en vlakgeometrieën. Omdat er in de SOR meer met 3D wordt gewerkt, worden topologieregels complexer maar ook secundair aan de representatie van de werkelijke verhouding tussen objecten. Uit EMSO: 
+
+   > Het is belangrijker om ervoor te zorgen dat objecten die zich in de werkelijkheid op een bepaalde wijze tot elkaar verhouden (bijvoorbeeld een verharding ligt bovenop een overbrugging) ook in de registratie op deze wijze tot elkaar verhouden (bijvoorbeeld dat uit de z-coördinaten van de verharding en de overbrugging blijkt dat de verharding bovenop de overbrugging ligt). De exacte uitwerking van deze relaties in topologie-regels zal later in het traject verder worden opgepakt.
+
+   <aside class="issue">
+      Welke objecttypen spelen een rol in de landsdekkendheid? Welke objecttypen hebben specifieke topologische relaties met elkaar? We hebben als modelleurs inhoudelijke expertise nodig om dit goed uit te werken.
+   </aside>
+
+   #### Benodigde kwaliteitsmetadata
+
+   Wat voor kwaliteitsmetadata bij een objecttype wordt voorgeschreven, kan worden bepaald aan de hand van uitgangspunten in EMSO [§ 3.4.5](https://docs.geostandaarden.nl/disgeo/emso/#meta-gegevens-over-herkomst-en-kwaliteit). Dit kan zijn:
+   - plaatsbepalingspunten
+   - een brondocument / bronverwijzing anders dan plaatsbepalingspunten
+   - gerealiseerde nauwkeurigheid van de geometrie van het object in de vorm van een nauwkeurigheidsklasseaanduiding
+   - helemaal geen kwaliteitsmetadata
+
+   We gaan onze eerder uitgewerkte modelleerpatronen toetsen tegen dit onderwerp.
 
 ### NEN3610
 
