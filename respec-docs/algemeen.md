@@ -40,13 +40,15 @@ De volgende (meta)aspecten van geometrie moeten worden gedefinieerd per objectty
 
 <aside class="issue">
    <b>NOTE</b> Onderstaande lijst koppelen aan indeling hoofdstuk geometrie. Eventueel links opnemen.
-
- - Geometrietype
- - Dimensionaliteit
- - Nauwkeurigheidseisen
- - Inwinregels
- - Topologische regels
- - Benodigde kwaliteitsmetadata
+   <ul>
+      <li>Geometrietype</li>
+      <li>Dimensionaliteit</li>
+      <li>Nauwkeurigheidseisen</li>
+      <li>Inwinregels</li>
+      <li>Topologische regels</li>
+      <li>Benodigde kwaliteitsmetadata</li>
+   </ul>
+</aside>
 
 >**Notitie**: onderstaande tekst afkomstig uit doc gen. ondw.
 
