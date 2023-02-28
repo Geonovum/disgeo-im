@@ -8,7 +8,7 @@
 ## Geometrie
 
 
-#### Aandachtspunten
+**Aandachtspunten**
 
 <aside class="issue">
    <strong>LET OP</strong>: samenvoegen met paragraaf Modelleertechnische uitgangspunten.
@@ -36,8 +36,8 @@
 
    ### Observaties 
 
-   - De term ‘binnen’ is niet het meest geschikt om te gebruiken voor de relatie in ons model – het is echter wel hoe de NEN3610 de ruimtelijke relatie ‘within’ heeft vertaald. Als wij uitwijken is het lastiger om aan te sluiten op de NEN3610, dus als we deze OGC relatie willen toepassen gebruiken we ‘binnen’. 
-   - We kunnen het nen3610 begrip ‘binnen’ (zoals het nu staat in het begrippenkader) opnemen als mim:begrip bij het creëren van de administratieve/ruimtelijke relaties tussen de registratieve gebieden.
+   - De term `binnen` is niet het meest geschikt om te gebruiken voor de relatie in ons model – het is echter wel hoe de NEN3610 de ruimtelijke relatie `within` heeft vertaald. Als wij uitwijken is het lastiger om aan te sluiten op de NEN3610, dus als we deze OGC relatie willen toepassen gebruiken we `binnen`. 
+   - We kunnen het nen3610 begrip `binnen` (zoals het nu staat in het begrippenkader) opnemen als `mim:begrip` bij het creëren van de administratieve/ruimtelijke relaties tussen de registratieve gebieden.
 
 >**Invoegen**: modelleertechnische uitgangspunten
 
