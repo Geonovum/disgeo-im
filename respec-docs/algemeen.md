@@ -11,14 +11,6 @@
 #### Aandachtspunten
 
 <aside class="issue">
-   <strong>LET OP</strong>: Referenties naar in <code>config.js</code> gedefinieerde bronnen opnieuw maken.
-</aside>
-
-<aside class="issue">
-   <strong>LET OP</strong>: Referenties naar bestanden in <code>../media/</code> in oorspronkelijke repo opnieuw maken. Kopieer benodigde media-bestanden naar eigen repo.
-</aside>
-
-<aside class="issue">
    <strong>LET OP</strong>: samenvoegen met paragraaf Modelleertechnische uitgangspunten.
 </aside>
 
@@ -303,7 +295,7 @@ Een eis uit [[EMSO]] is:
 Simple Features maakt een selectie uit het ISO 19107 geometriemodel. Het neemt daaruit alleen de meest gebruikelijke geometrietypen over. 
 
 <aside class="issue">
-   ISO 19125 definieert een model voor <strong>2 dimensionale </strong> geometrietypen. 3D geometrie is uitgesloten in deze standaard. In EMSO wordt echter wel een behoefte aan 3D geometrie geformuleerd.
+   <strong>ISO 19125</strong> definieert een model voor <strong>2 dimensionale </strong> geometrietypen. <strong>3D geometrie is uitgesloten van deze standaard</strong>. In EMSO wordt echter wel een behoefte aan 3D geometrie geformuleerd.
 </aside>
 
 We hanteren dus Simple Features (ISO 19125) _+ een aantal aanvullingen voor zover nodig, waarschijnlijk in ieder geval voor bogen en volumes._
