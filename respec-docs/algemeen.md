@@ -10,7 +10,9 @@ De volgende documenten zijn gehanteerd als modelleertechnische uitgangspunten vo
  - ISO-19107-2003: Geographic information – Spatial schema [[iso-19107-2003]]
  - Modelleerprincipes samenhangende objectenregistratie [[disgeo-mod]]
 
->**Notitie**: onderstaande tekst vanuit doc _Generieke Onderwerpen_)
+<aside class="note">
+   Onderstaande tekst vanuit doc _Generieke Onderwerpen_)
+</aside>
 
 Voor `...` van geometrieën gelden een aantal belangrijke principes die volgen uit verschillende standaarden en initiatieven. 
 
@@ -22,12 +24,14 @@ Voor `...` van geometrieën gelden een aantal belangrijke principes die volgen u
 
 Geometrieën worden gebruikt voor de representatie van _locatie_, _oriëntatie_ en _vorm_ van objecten uit de werkelijkheid in een informatiemodel. De dimensie dimensie van de representatie kan variëren van 0D- tot 3D-objecten. Deze objecten worden altijd geplaatst in een 2-dimensionele, of 3-dimensionele ruimte.
 
->**Notitie**: onderstaande tekst afkomstig uit doc gen. ondw.
+<aside class="note">
+   Onderstaande tekst afkomstig uit doc gen. ondw.
+</aside>
 
 De volgende (meta)aspecten van geometrie moeten worden gedefinieerd per objecttype in het informatiemodel of de documentatie daarbij:
 
 <aside class="issue">
-   <b>NOTE</b> Onderstaande lijst koppelen aan indeling hoofdstuk geometrie. Eventueel links opnemen.
+   Onderstaande lijst koppelen aan indeling hoofdstuk geometrie. Eventueel links opnemen.
    <ul>
       <li>Geometrietype</li>
       <li>Dimensionaliteit</li>
@@ -38,7 +42,9 @@ De volgende (meta)aspecten van geometrie moeten worden gedefinieerd per objectty
    </ul>
 </aside>
 
->**Notitie**: onderstaande tekst afkomstig uit doc gen. ondw.
+<aside class="note">
+   Onderstaande tekst afkomstig uit doc gen. ondw.
+</aside>
 
 **Geometrie-object**
 
@@ -55,12 +61,14 @@ Het volstaat om een ISO 19107 geometrietype toe te passen in het informatiemodel
 </aside>
 
 ### Dimensies
->**Notitie**: onderstaande tekst afkomstig uit doc gen. ondw.
+<aside class="note">
+   Onderstaande tekst afkomstig uit doc gen. ondw.
+</aside>
 
 #### Dimensionaliteit
 
 <aside class="issue">
-   <b>NOTE</b>: Tekst <b>CRS</b> en <b>Dimensies</b> splitsen?
+   Tekst <b>CRS</b> en <b>Dimensies</b> splitsen?
 </aside>
 
 <aside class="issue">
@@ -102,7 +110,7 @@ Een aantal vragen:
 #### Geometrie in model 
 
 <aside class="issue">
-   <b>NOTE</b>: Verwijzen naar document dat dit beschrijft. NIet volledige uitleg hier overnemen. In elk geval afbeelding niet opnemen.
+   Verwijzen naar document dat dit beschrijft. NIet volledige uitleg hier overnemen. In elk geval afbeelding niet opnemen.
 </aside>
 
 De handreiking Geometrie in model en GML [[gimeg]] legt inhoudelijk uit hoe het geometriemodel uit ISO 19107 [[iso-19107-2019]] kan worden toegepast en wat het geldende Nederlands profiel is (i.e. welke selectie is gemaakt uit de mogelijke geometrietypen). 
@@ -130,10 +138,12 @@ Het Geometry object, waarvan alle specifieke geometrietypen zoals punt, lijn, vl
 - `metadata`: optioneel attribuut voor het opnemen van verwijzingen naar documentatie die informatie geeft over de implementatie van het geometrie-object. Dit kunnen we wellicht gebruiken voor bijvoorbeeld de gerealiseerde nauwkeurigheid van de geometrie.
 
 <aside class="note">
-   *Spatial reference system* is een breder begrip dan *coördinaatreferentiesysteem*. Het gaat om een algemene locatieaanduiding, een "ruimtelijk referentiesysteem" dat niet alleen op basis van coördinaten kan werken maar ook op basis van bijvoorbeeld geografische naam of adres. 
+   <i>Spatial reference system</i> is een breder begrip dan <i>coördinaatreferentiesysteem</i>. Het gaat om een algemene locatieaanduiding, een <i>ruimtelijk referentiesysteem</i> dat niet alleen op basis van coördinaten kan werken maar ook op basis van bijvoorbeeld geografische naam of adres. 
 </aside>
 
->**Notitie**: onderstaande tekst afkomstig uit doc gen. ondw.
+<aside class="note">
+   Onderstaande tekst afkomstig uit doc gen. ondw.
+</aside>
 
 #### Geometrietype
 Het geometrietype wordt aangegeven door keuze van het juiste type uit het ISO 19107 Geometry Model (`GM_xxx`), passend binnen het profiel zoals gedefinieerd in [[gimeg]]. 
@@ -144,12 +154,14 @@ Het geometrietype wordt aangegeven door keuze van het juiste type uit het ISO 19
 </figure>
 
 <aside class="issue">
-   Hierbij is het relevant om te definiëren en op schrijven welke varianten toegestaan zijn. Een `GM_Surface` of `GM_Curve` heeft nog allerlei mogelijke verschijningsvormen in het Geometry model. Voor de uitwisseling en het gebruik is het handig om dit in te perken.
+   Hierbij is het relevant om te definiëren en op schrijven welke varianten toegestaan zijn. Een <code>GM_Surface</code> of <code>GM_Curve</code> heeft nog allerlei mogelijke verschijningsvormen in het Geometry model. Voor de uitwisseling en het gebruik is het handig om dit in te perken.
 </aside>
 
 ### Coordinaatrefrentiesystemen
 
->**Notitie**: onderstaande tekst komt uit doc gen. ondw.
+<aside class="note">
+   Onderstaande tekst komt uit doc gen. ondw.
+</aside>
 
 #### Coordinaatreferentiesystemen (CRS)
 
@@ -161,7 +173,7 @@ Voor DiSGeo/Bestuurlijke Gebieden zijn vier typen coördinatiesystemen relevant:
 - Linear Reference Systems (LRS) (zie ISO 19148:2021, RWS-BPS, NWB, EU INSPIRE)
 
 <aside class="issue">
-   <b>NOTE</b>: Url opnemen naar bronnen?
+   Url opnemen naar bronnen?
 </aside>
 
 <aside class="issue">
@@ -265,7 +277,9 @@ In [](#crs-overview) is een schematische weergave van de ondersteunde CRS-en bij
 
 ### Kwaliteit
 
->**Notitie**: onderstaande tekst komt uit documentatie disgeo-im.
+<aside class="note">
+   Onderstaande tekst komt uit documentatie disgeo-im.
+</aside>
 
 #### Gegevenskwaliteit
 
@@ -287,7 +301,9 @@ Voor het aangeven van de nauwkeurigheid van de geometrieen in RD(NAP) en ETRS89 
 
 #### Nauwkeurigheidseisen
 
->**Notitie**: Onderstaande tekst uit doc gen. ondw.
+<aside class="note">
+   Onderstaande tekst uit doc gen. ondw.
+</aside>
 
 >**NOTE**: Dit onderwerp is al verder uitgewerkt in doc modelleerprincipes.
 
@@ -317,7 +333,9 @@ Vastleggen bij eigenschap heeft voorkeur boven vastleggen bij objecttype, omdat 
 </aside>
 
 #### Inwinregels
->**Notitie**: Onderstaande tekst uit doc gen. ondw.
+<aside class="note">
+   Onderstaande tekst uit doc gen. ondw.
+</aside>
 
 >**NOTE**: Dit onderwerp is al verder uitgewerkt in modelleerprincipes.
 
@@ -362,7 +380,9 @@ We gaan onze eerder uitgewerkte modelleerpatronen toetsen tegen dit onderwerp.
 
 ### NEN3610
 
->**Notitie**: onderstaande tekst komt uit aantekening uit overleg ruimtelijke relaties
+<aside class="note">
+   Onderstaande tekst komt uit aantekening uit overleg ruimtelijke relaties
+</aside>
 
 #### Ruimtelijke en administratieve relaties en compliance met NEN3610
 
@@ -383,7 +403,9 @@ Het gaat dan om een administratieve vastlegging van een ruimtelijke relatie die 
 - De term `binnen` is niet het meest geschikt om te gebruiken voor de relatie in ons model – het is echter wel hoe de NEN3610 de ruimtelijke relatie `within` heeft vertaald. Als wij uitwijken is het lastiger om aan te sluiten op de NEN3610, dus als we deze OGC relatie willen toepassen gebruiken we `binnen`. 
 - We kunnen het nen3610 begrip `binnen` (zoals het nu staat in het begrippenkader) opnemen als `mim:begrip` bij het creëren van de administratieve/ruimtelijke relaties tussen de registratieve gebieden.
 
->**Notitie**: onderstaande tekst komt uit documentatie disgeo-im.
+<aside class="note">
+   Onderstaande tekst komt uit documentatie disgeo-im.
+</aside>
 
 #### Aansluiting op NEN 3610
 
@@ -413,7 +435,9 @@ Het semantische model van NEN 3610 bestaat uit een aantal objecttypen die object
    </figure>
 </aside>
 
->**Notitie**: onderstaande tekst afkomstig uit ...?
+<aside class="note">
+   Onderstaande tekst afkomstig uit ...?
+</aside>
 
 #### NEN 3610
 NEN 3610 [[NEN3610-2021-ontw]] zegt weinig specifieks over geometrie en geometrische vastlegging van objecten, anders dan dat ISO 19107:2020 normatief wordt aangehaald, waarin de ISO geometrietypen (o.a. `GM_Point`, `GM_Curve`, `GM_Surface`, `GM_Solid`) worden gedefinieerd. 
