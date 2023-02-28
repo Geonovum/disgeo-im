@@ -116,7 +116,7 @@ Een aantal vragen:
 De handreiking Geometrie in model en GML [[gimeg]] legt inhoudelijk uit hoe het geometriemodel uit ISO 19107 [[iso-19107-2019]] kan worden toegepast en wat het geldende Nederlands profiel is (i.e. welke selectie is gemaakt uit de mogelijke geometrietypen). 
 
 Een eis uit [[EMSO]] is: 
-> aansluiting op Simple Features (ISO 19125)
+> "_aansluiting op Simple Features (ISO 19125)_"
 
 Simple Features maakt een selectie uit het ISO 19107 geometriemodel. Het neemt daaruit alleen de meest gebruikelijke geometrietypen over. 
 
@@ -177,9 +177,7 @@ Voor DiSGeo/Bestuurlijke Gebieden zijn vier typen coördinatiesystemen relevant:
 </aside>
 
 <aside class="issue">
-   <b>VRAAG</b>: Wordt dit een <i>algemeen</i> stuk (DiSGeo) of <i>specifiek bestuurlijke gebieden</i>?
-   <br>
-   <b>Voorstel</b>: Algemener neerzetten, voor onderdeel BG, dan verder aanscherpen.
+   <b>Q</b>: Wordt dit een <i>algemeen</i> stuk (DiSGeo) of <i>specifiek bestuurlijke gebieden</i>? <b>A</b>: Algemener neerzetten, voor onderdeel BG, dan verder aanscherpen.
 </aside>
 
 ##### Ondersteunde CRS-en bij aanlevering
@@ -187,7 +185,7 @@ Voor DiSGeo/Bestuurlijke Gebieden zijn vier typen coördinatiesystemen relevant:
 Het **toepassingsgebied** en de **dimensie** bepalen welke CRS-en bij aanlevering van geometrieën geldig zijn. Aan de ene kant bestaat er onderscheid in het toepassingsgebied. Er zijn objecten die vallen binnen het Europese deel van Nederland en objecten die vallen binnen de Nederlandse Exclusieve Economische Zone (EEZ) van de Noordzee. Aan de andere kant bestaat er onderscheid in de dimensie van geometrieën. Sommige geometrieën zijn 2-dimensionaal; anderen 3-dimensionaal. Voor objecten binnen het Europese deel van Nederland gelden de volgende CRS-en: _**RD**_ en _**ETRS89**_. Voor gebieden op zee is nog geen besluit genomen.
 
 <aside class="issue">
-  <b>VRAAG</b>: Hier wordt EEZ genoemd, maar er zijn vier typen op zee. willen we niet dichter bij benaming uit huidige model blijven <i>'~ op land'</i> en <i>'~ op zee'</i>? 
+  <b>Q</b>: Hier wordt EEZ genoemd, maar er zijn vier typen op zee. willen we niet dichter bij benaming uit huidige model blijven <i>'~ op land'</i> en <i>'~ op zee'</i>? 
 </aside>
 
 Er zijn verschillende implementaties van ETRS89 in omloop. Wij nemen het [advies](https://geonovum.github.io/HR-CRS-Gebruik/#realisaties-van-etrs89-en-evrs) van het _Regional Reference Frame Sub-Commission for Europe_ (EUREF) over, om de ETRF2000-realisatie te gebruiken. Verder wordt bij aanlevering rekening gehouden met een lijnlengte van maximaal 200 meter. Dit besluit volgt het [langelijnenadvies](https://forum.pdok.nl/uploads/default/original/2X/c/c0795baa683bf3845c866ae4c576a880455be02a.pdf) van het NSGI. Dit [wordt geadviseerd](https://geonovum.github.io/HR-CRS-Gebruik/#vormvastheid) in [gebruik-crs](https://docs.geostandaarden.nl/crs/def-hr-crs-20220314/), in verband met compatibiliteit met **RDNAPTRANS™**.
@@ -237,16 +235,16 @@ Uitzoekpunt: de EEZ zone is mogelijk niet het enige disgeo object waarvoor geldt
 ##### Ondersteunde CRS-en bij uitlevering:
 
 <aside class="issue">
-   <b>VRAAG</b>: Aan- en uitleverprocessen al openemen?
-   <br>
-   <b>Antwoord</b>: Ja aan- en uitlevering al opnemen.
+   <b>Q</b>: Aan- en uitleverprocessen al openemen? <b>A</b>: Ja aan- en uitlevering al opnemen.
 </aside>
 
 Bij uitlevering als RD dezelfde realisaties beschikbaar als bij aanlevering.
 
 Bij uitlevering als ETRS89 kan de geometrie, naast als dezelfde realisaties als bij aanlevering, ook als de geografische ensemble CRSen opgevraagd worden. Te weten:
 
->**NOTE**: In onderstaande tabellen extra kolom 'dimensie' (o.i.d.) opnemen? **Nee**: hanteer zelfde aanpak als tabellen 'aanlevering'.
+<aside class="note">
+   In onderstaande tabellen extra kolom 'dimensie' (o.i.d.) opnemen? **Nee**: hanteer zelfde aanpak als tabellen 'aanlevering'.
+</aside>
 
 | CRS-Naam | Code  | URI                                             |
 |----------|-------|-------------------------------------------------|
@@ -265,7 +263,7 @@ Uitlevering via de WGS 84 CRSen is ook mogelijk via nultransformatie [zoals besc
 Hierbij zijn CRS84 en CRS84h respectievelijk de long lat varianten van de WGS 84 realisaties 4326 en 4979.
 
 <aside class="issue">
-   <b>LET OP</b>: Schrijfwijze 'long lat varianten'
+   Schrijfwijze 'long lat varianten'
 </aside>
 
 In [](#crs-overview) is een schematische weergave van de ondersteunde CRS-en bij aanlevering en uitlevering opgenomen.
@@ -305,11 +303,13 @@ Voor het aangeven van de nauwkeurigheid van de geometrieen in RD(NAP) en ETRS89 
    Onderstaande tekst uit doc gen. ondw.
 </aside>
 
->**NOTE**: Dit onderwerp is al verder uitgewerkt in doc modelleerprincipes.
+<aside class="note">
+   Dit onderwerp is al verder uitgewerkt in doc modelleerprincipes.
+</aside>
 
 Wat onder nauwkeurigheid van geometrie wordt verstaan is goed gedefinieerd in standaarden. We gaan ervan uit dat wat in EMSO nauwkeurigheid wordt genoemd, hetzelfde is als [positionele juistheid](https://www.noraonline.nl/wiki/Positionele_juistheid) in het NORA raamwerk gegevenskwaliteit en hetzelfde als wat in de BGT positionele nauwkeurigheid wordt genoemd: 
 
-> Onder positionele nauwkeurigheid verstaat men de mate waarin de opgeslagen coördinaten overeenkomen met de waarden in de werkelijkheid of de geaccepteerde afwijking.
+> "_Onder positionele nauwkeurigheid verstaat men de mate waarin de opgeslagen coördinaten overeenkomen met de waarden in de werkelijkheid of de geaccepteerde afwijking._"
 
 Per objecttype geven we de toegestane kwaliteit voor de positionele nauwkeurigheid als een getal in centimeters (dat dan de toegestane afwijking weergeeft). MIM heeft hiervoor geen metadata-element. Een optie is om dit in een tabel vóór in de gegevenscatalogus op te nemen, zoals gedaan in de BGT catalogus op p. 23. 
 
@@ -337,7 +337,9 @@ Vastleggen bij eigenschap heeft voorkeur boven vastleggen bij objecttype, omdat 
    Onderstaande tekst uit doc gen. ondw.
 </aside>
 
->**NOTE**: Dit onderwerp is al verder uitgewerkt in modelleerprincipes.
+<aside class="note">
+   Onderwerp is al verder uitgewerkt in modelleerprincipes.
+</aside>
 
 Verreweg de meeste objecttypen in de SOR hebben in hun huidige registratie al enige vorm van inwinregels. Eventueel zouden inwinregels in het MIM aspect `Regels` bij het geometrie attribuut van het desbetreffende objecttype gezet kunnen worden. 
 
@@ -345,9 +347,13 @@ Omdat dit vaak omvangrijke instructies zijn, zijn ze nu meestal in tekst uitgesc
 
 #### Topologische regels
 
->**NOTE**: kiezen waarplaatsen: hier of onder NEN3610
+<aside class="note">
+   Kiezen waarplaatsen: hier of onder NEN3610
+</aside>
 
->**NOTE**: Dit onderwerp is al verder uitgewerkt in modelleerprincipes? Kijk ook naar deze [notitie over ruimtelijke en administratieve relaties in NEN3610:2022](https://github.com/Geonovum/disgeo-im/blob/main/docs/thema/bestuurlijke-gebieden/benaming-relaties.md).
+<aside class="note">
+   Dit onderwerp is al verder uitgewerkt in modelleerprincipes? Kijk ook naar deze <a href="https://github.com/Geonovum/disgeo-im/blob/main/docs/thema/bestuurlijke-gebieden/benaming-relaties.md">notitie over ruimtelijke en administratieve relaties in NEN3610:2022</a>.
+</aside>
 
 Voor ruimtelijke relaties tussen de objecten kunnen we gebruik maken van de topologische relaties zoals gedefinieerd in de Simple Features standaard [[iso-19125-1-2004]] en aangeraden in [[NEN3610-2021-ontw]] en [[sdw-bp]]. Deze relaties zijn geïmplementeerd in veel geografische softwareomgevingen en ook in GeoSPARQL: 
 
@@ -362,7 +368,7 @@ geometrieën kunnen verschillende dimensie hebben)
 
 Deze relaties kun je gebruiken voor punt-, lijn- en vlakgeometrieën. Omdat er in de SOR meer met 3D wordt gewerkt, worden topologieregels complexer maar ook secundair aan de representatie van de werkelijke verhouding tussen objecten. Uit EMSO: 
 
-> Het is belangrijker om ervoor te zorgen dat objecten die zich in de werkelijkheid op een bepaalde wijze tot elkaar verhouden (bijvoorbeeld een verharding ligt bovenop een overbrugging) ook in de registratie op deze wijze tot elkaar verhouden (bijvoorbeeld dat uit de z-coördinaten van de verharding en de overbrugging blijkt dat de verharding bovenop de overbrugging ligt). De exacte uitwerking van deze relaties in topologie-regels zal later in het traject verder worden opgepakt.
+> "_Het is belangrijker om ervoor te zorgen dat objecten die zich in de werkelijkheid op een bepaalde wijze tot elkaar verhouden (bijvoorbeeld een verharding ligt bovenop een overbrugging) ook in de registratie op deze wijze tot elkaar verhouden (bijvoorbeeld dat uit de z-coördinaten van de verharding en de overbrugging blijkt dat de verharding bovenop de overbrugging ligt). De exacte uitwerking van deze relaties in topologie-regels zal later in het traject verder worden opgepakt_".
 
 <aside class="issue">
    Welke objecttypen spelen een rol in de landsdekkendheid? Welke objecttypen hebben specifieke topologische relaties met elkaar? We hebben als modelleurs inhoudelijke expertise nodig om dit goed uit te werken.
@@ -425,7 +431,7 @@ Het semantische model van NEN 3610 bestaat uit een aantal objecttypen die object
 <aside class="example">
    In het model voor Bestuurlijke gebieden is <code>BestuurlijkGebied</code> gemodelleerd als een specialisatie van het objecttype <code>RegistratieveRuimte</code>, die op haar beurt gemodellerd is als specialisatie van <code>NEN3610:RegistratieveRuimte</code>. Bestuurlijke gebieden zijn, volgens hun beschrijving in het [[EMSO]]: 
 
-   <blockquote>[...] <q>registratieve ruimten die op basis van wet- of regelgeving als eenheid gelden van politiek/bestuurlijke verantwoordelijkheid. Dit betreft bijvoorbeeld de gebieden behorende bij de vier formele bestuurslagen uit de Grondwet (Rijk, provincie, waterschap, gemeente), maar kan ook gebieden van bestuurlijke samenwerkingsverbanden met eigen politiek/bestuurlijke verantwoordelijkheid omvatten. Een voorbeeld daarvan betreft de veiligheidsregio’s.</q></blockquote>
+   <blockquote>[...] <q><i>registratieve ruimten die op basis van wet- of regelgeving als eenheid gelden van politiek/bestuurlijke verantwoordelijkheid. Dit betreft bijvoorbeeld de gebieden behorende bij de vier formele bestuurslagen uit de Grondwet (Rijk, provincie, waterschap, gemeente), maar kan ook gebieden van bestuurlijke samenwerkingsverbanden met eigen politiek/bestuurlijke verantwoordelijkheid omvatten. Een voorbeeld daarvan betreft de veiligheidsregio’s.<i></q></blockquote>
 
    De definitie komt overeen met de NEN3610-definitie van <code>RegistratieveRuimte</code> maar is iets nauwer. In NEN3610 kan het gaan om een eenheid die geldt voor politiek-bestuurlijke verantwoordelijkheid óf bedrijfsvoering. Van dat laatste is bij bestuurlijke gebieden geen sprake. <code>BestuurlijkGebied</code> is daarom een specialisatie van de NEN3610 <code>RegistratieveRuimte</code>. De reden dat het geen directe specialisatie is, maar er nog een objecttype <code>RegistratieveRuimte</code> tussen zit in het DiSGeo-model, is omdat er op dat niveau een status-eigenschap gepositioneerd is. De definitie van de DiSGeo <code>RegistratieveRuimte</code> is exact gelijk aan de definitie van de NEN3610 <code>RegistratieveRuimte</code>.
 
@@ -444,7 +450,7 @@ NEN 3610 [[NEN3610-2021-ontw]] zegt weinig specifieks over geometrie en geometri
 
 Inwinregels worden in sectormodellen bepaald. 
 
-> "Inwinregels geven aan welke punten van een object ingemeten moeten worden en waar de geometrie van een geregistreerd object aan moet voldoen. Het leidt tot een vastgestelde geometrische weergave gericht op een specifieke toepassing." 
+> "_Inwinregels geven aan welke punten van een object ingemeten moeten worden en waar de geometrie van een geregistreerd object aan moet voldoen. Het leidt tot een vastgestelde geometrische weergave gericht op een specifieke toepassing._"
 
 Paragraaf 8.4.4.3 Geometrie bevat een aantal uitgangspunten:
 - Geometrie is een representatie van een object.
