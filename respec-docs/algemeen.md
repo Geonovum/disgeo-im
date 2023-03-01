@@ -50,8 +50,6 @@ Per individuele geometrie vastleggen:
 - De coördinaten zelf
 - Indien van toepassing, kwaliteitsmetadata zoals beschreven in [](#benodigde-kwaliteitsmetadata).
 
-
-
 <aside class="issue">
    Heeft het meerwaarde om in het informatiemodel op te nemen in welk CRS een geometrie ingewonnen moet worden? Dat zou een metadata aspect kunnen zijn net zoals nauwkeurigheidseis.
 </aside>
@@ -105,8 +103,14 @@ Een aantal vragen:
 
 #### Geometrie in model 
 
+<aside class="note">
+   Onderstaande tekst toevoegen.
+</aside>
+
+Het volstaat om een ISO 19107 geometrietype toe te passen in het informatiemodel (zie [](#geometrie-in-model) voor uitleg). Dit zorgt ervoor dat het coördinatenstelsel kan worden opgenomen, dat het geometrietype duidelijk is en dat de coördinaten zelf kunnen worden opgenomen.
+
 <aside class="issue">
-   Verwijzen naar document dat dit beschrijft. NIet volledige uitleg hier overnemen. In elk geval afbeelding niet opnemen.
+   Verwijzen naar document dat dit beschrijft. Niet volledige uitleg hier overnemen. In elk geval afbeelding niet opnemen.
 </aside>
 
 De handreiking Geometrie in model en GML [[gimeg]] legt inhoudelijk uit hoe het geometriemodel uit ISO 19107 [[iso-19107-2019]] kan worden toegepast en wat het geldende Nederlands profiel is (i.e. welke selectie is gemaakt uit de mogelijke geometrietypen). 
