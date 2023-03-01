@@ -6,16 +6,10 @@ Geometrieën worden gebruikt voor de representatie van _locatie_, _oriëntatie_ 
 
 De volgende (meta)aspecten van geometrie moeten worden gedefinieerd per objecttype in het informatiemodel of de documentatie daarbij:
 
-Dimensionaliteit
-Geometrietypen
-Coordinaatreferentiesystemen
-
- - Geometrietype
  - Dimensionaliteit
- - Nauwkeurigheidseisen
- - Inwinregels
- - Topologische regels
- - Benodigde kwaliteitsmetadata
+ - Geometrietypen
+ - Coordinaatreferentiesystemen
+ - Kwaliteit (o.a. nauwkeurigheid, inwinregels en topologische regels)
 
 Het volstaat om een ISO 19107 geometrietype toe te passen in het informatiemodel (zie [](#geometrie-in-model) voor uitleg). Dit zorgt ervoor dat het coördinatenstelsel kan worden opgenomen, dat het geometrietype duidelijk is en dat de coördinaten zelf kunnen worden opgenomen.
 
