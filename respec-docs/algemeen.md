@@ -30,17 +30,12 @@ Geometrieën worden gebruikt voor de representatie van _locatie_, _oriëntatie_ 
 
 De volgende (meta)aspecten van geometrie moeten worden gedefinieerd per objecttype in het informatiemodel of de documentatie daarbij:
 
-<aside class="issue">
-   Onderstaande lijst koppelen aan indeling hoofdstuk geometrie. Eventueel links opnemen.
-   <ul>
-      <li>Geometrietype</li>
-      <li>Dimensionaliteit</li>
-      <li>Nauwkeurigheidseisen</li>
-      <li>Inwinregels</li>
-      <li>Topologische regels</li>
-      <li>Benodigde kwaliteitsmetadata</li>
-   </ul>
-</aside>
+ - Geometrietype
+ - Dimensionaliteit
+ - Nauwkeurigheidseisen
+ - Inwinregels
+ - Topologische regels
+ - Benodigde kwaliteitsmetadata
 
 <aside class="note">
    Onderstaande tekst afkomstig uit doc <i>Generieke Onderwerpen</i>
