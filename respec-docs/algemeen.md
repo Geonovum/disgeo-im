@@ -11,7 +11,7 @@ De volgende documenten zijn gehanteerd als modelleertechnische uitgangspunten vo
  - Modelleerprincipes samenhangende objectenregistratie [[disgeo-mod]]
 
 <aside class="note">
-   Onderstaande tekst vanuit doc _Generieke Onderwerpen_)
+   Onderstaande tekst vanuit doc <i>Generieke Onderwerpen</i>)
 </aside>
 
 Voor `...` van geometrieën gelden een aantal belangrijke principes die volgen uit verschillende standaarden en initiatieven. 
@@ -25,7 +25,7 @@ Voor `...` van geometrieën gelden een aantal belangrijke principes die volgen u
 Geometrieën worden gebruikt voor de representatie van _locatie_, _oriëntatie_ en _vorm_ van objecten uit de werkelijkheid in een informatiemodel. De dimensie dimensie van de representatie kan variëren van 0D- tot 3D-objecten. Deze objecten worden altijd geplaatst in een 2-dimensionele, of 3-dimensionele ruimte.
 
 <aside class="note">
-   Onderstaande tekst afkomstig uit doc gen. ondw.
+   Onderstaande tekst afkomstig uit doc <i>Generieke Onderwerpen</i>
 </aside>
 
 De volgende (meta)aspecten van geometrie moeten worden gedefinieerd per objecttype in het informatiemodel of de documentatie daarbij:
@@ -43,7 +43,7 @@ De volgende (meta)aspecten van geometrie moeten worden gedefinieerd per objectty
 </aside>
 
 <aside class="note">
-   Onderstaande tekst afkomstig uit doc gen. ondw.
+   Onderstaande tekst afkomstig uit doc <i>Generieke Onderwerpen</i>
 </aside>
 
 **Geometrie-object**
