@@ -2,16 +2,24 @@
 
 ## Geometrie
 
-Geometrieën worden gebruikt voor de representatie van _locatie_, _oriëntatie_ en _vorm_ van een object uit de werkelijkheid in een informatiemodel. De dimensie van een representatie variëert van 0D- tot 3D-objecten. Deze objecten worden altijd geplaatst in een 2-dimensionele, of 3-dimensionele ruimte.
+Voor de representatie van de _locatie_, _oriëntatie_ en _vorm_ van een object uit de werkelijkheid, gebruiken informatiemodellen geometrieën. De dimensie van een representatie variëert van nuldimensionaal (0D) tot driedimensionaal (3D). Objecten worden altijd geplaatst in een tweedimensionele (2D), of driedimensionele (3D) ruimte. Het informatiemodel DiSGeo gebruikt gestandaardiseerde geometrietypen uit ISO 19107:2003. Dit voorziet zowel in de opname van de coördinaten van de geometrie, als van het coördinaten<i>stelsel</i>. Tot slot heeft een geometrische representatie ook kwaliteitskenmerken. Het informatiemodel DiSGeo onderscheid in elk geval informatie over de _nauwkeurigheid_ en de _inwinregels_.
 
-De volgende (meta)aspecten van geometrie moeten worden gedefinieerd per objecttype in het informatiemodel of de documentatie daarbij:
+<aside class="note">
+   Hier iets invoegen over relevante standaarden?
+</aside>
+
+Samengevat legt het informatiemodel de volgende informatie over geometrie vast:
 
  - Dimensionaliteit
  - Geometrietypen
  - Coordinaatreferentiesystemen
- - Kwaliteit (o.a. nauwkeurigheid, inwinregels en topologische regels)
+ - Kwaliteitskenmerken (o.a. nauwkeurigheid, inwinregels en topologische regels)
 
-Het volstaat om een ISO 19107 geometrietype toe te passen in het informatiemodel (zie [](#geometrie-in-model) voor uitleg). Dit zorgt ervoor dat het coördinatenstelsel kan worden opgenomen, dat het geometrietype duidelijk is en dat de coördinaten zelf kunnen worden opgenomen.
+Per onderdeel verschilt de plek waar de informatie over geometrie vast ligt. Het informatiemodel kent verschillende niveaus: _dataset_-, _object_- en _attribuutniveau_. In het algemeen geldt: hoe generieker de aard van de informatie, hoe algemener het niveau waarop het model dit vastlegt. De volgende paragrafen gaan dieper in op de verschillende kenmerken en hoe het model ze vastlegt.
+
+<aside class="issue">
+   Onderstaande twee lijsten samenvoegen.
+</aside>
 
 De volgende documenten zijn gehanteerd als modelleertechnische uitgangspunten voor het informatiemodel DiSGeo:
 
@@ -21,10 +29,6 @@ De volgende documenten zijn gehanteerd als modelleertechnische uitgangspunten vo
  - ISO-19107-2003: Geographic information – Spatial schema [[iso-19107-2003]]
  - Modelleerprincipes samenhangende objectenregistratie [[disgeo-mod]]
 
-<aside class="note">
-   Onderstaande tekst vanuit doc <i>Generieke Onderwerpen</i>)
-</aside>
-
 Voor `...` van geometrieën gelden een aantal belangrijke principes die volgen uit verschillende standaarden en initiatieven. 
 
  - Coordinaatreferentiesystemen
@@ -32,27 +36,6 @@ Voor `...` van geometrieën gelden een aantal belangrijke principes die volgen u
  - NEN3610
  - Geometrie in het model
  - Uitganspunten EMSO
-
-<aside class="note">
-   Onderstaande tekst afkomstig uit doc <i>Generieke Onderwerpen</i>
-</aside>
-
-
-<aside class="note">
-   Onderstaande tekst afkomstig uit doc <i>Generieke Onderwerpen</i>
-</aside>
-
-**Geometrie-object**
-
-Per individuele geometrie vastleggen:
-- Coördinatenstelsel
-- Geometrietype
-- De coördinaten zelf
-- Indien van toepassing, kwaliteitsmetadata zoals beschreven in [](#benodigde-kwaliteitsmetadata).
-
-<aside class="issue">
-   Heeft het meerwaarde om in het informatiemodel op te nemen in welk CRS een geometrie ingewonnen moet worden? Dat zou een metadata aspect kunnen zijn net zoals nauwkeurigheidseis.
-</aside>
 
 ### Dimensies
 <aside class="note">
@@ -158,6 +141,10 @@ Het geometrietype wordt aangegeven door keuze van het juiste type uit het ISO 19
 </aside>
 
 ### Coordinaatreferentiesystemen
+
+<aside class="issue">
+   Heeft het meerwaarde om in het informatiemodel op te nemen in welk CRS een geometrie ingewonnen moet worden? Dat zou een metadata-aspect kunnen zijn net zoals nauwkeurigheidseis.
+</aside>
 
 <aside class="note">
    Onderstaande tekst komt uit doc gen. ondw.
