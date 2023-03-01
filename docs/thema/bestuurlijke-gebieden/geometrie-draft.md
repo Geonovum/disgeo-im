@@ -2,22 +2,13 @@
 
 ## Geometrie
 
-Geometrieën worden gebruikt voor de representatie van _locatie_, _oriëntatie_ en _vorm_ van een object uit de werkelijkheid in een informatiemodel. De dimensie van een representatie variëert van nuldimensionaal (0D) tot driedimensionaal (3D). Deze objecten worden altijd geplaatst in een tweedimensionele (2D), of driedimensionele (3D) ruimte. Het informatiemodel DiSGeo gebruikt gestandaardiseerde geometrietypen uit ISO 19107:2003. Dit voorziet zowel in de opname van de coördinaten van de geometrie zelf, als van het coördinaten<i>stelsel</i>. Tot slot kunnen aan geometrieën kwaliteitskenmerken worden toegekend. 
+Voor de representatie van de _locatie_, _oriëntatie_ en _vorm_ van een object uit de werkelijkheid, gebruiken informatiemodellen geometrieën. De dimensie van een representatie variëert van nuldimensionaal (0D) tot driedimensionaal (3D). Objecten worden altijd geplaatst in een tweedimensionele (2D), of driedimensionele (3D) ruimte. Het informatiemodel DiSGeo gebruikt gestandaardiseerde geometrietypen uit ISO 19107:2003. Dit voorziet zowel in de opname van de coördinaten van de geometrie, als van het coördinaten<i>stelsel</i>. Tot slot heeft een geometrische representatie ook kwaliteitskenmerken. Het informatiemodel DiSGeo onderscheid in elk geval informatie over de _nauwkeurigheid_ en de _inwinregels_.
 
-
-
-
-Samengevat worden ...
-De volgende (meta)aspecten van geometrie moeten worden gedefinieerd per objecttype in het informatiemodel of de documentatie daarbij:
+Samengevat legt het informatiemodel de volgende informatie over geometrie vast:
 
  - Dimensionaliteit
  - Geometrietypen
  - Coordinaatreferentiesystemen
- - Kwaliteit (o.a. nauwkeurigheid, inwinregels en topologische regels)
+ - Kwaliteitskenmerken (o.a. nauwkeurigheid, inwinregels en topologische regels)
 
-Het volstaat om een ISO 19107 geometrietype toe te passen in het informatiemodel (zie [](#geometrie-in-model) voor uitleg). Dit zorgt ervoor dat het coördinatenstelsel kan worden opgenomen, dat het geometrietype duidelijk is en dat de coördinaten zelf kunnen worden opgenomen.
-
-
-
-... 
-Het volstaat om een ISO 19107 geometrietype toe te passen in het informatiemodel (zie [](#geometrie-in-model) voor uitleg). Dit zorgt ervoor dat het coördinatenstelsel kan worden opgenomen, dat het geometrietype duidelijk is en dat de coördinaten zelf kunnen worden opgenomen.
+Per onderdeel verschilt de plek waar de informatie over geometrie vast ligt. Het informatiemodel kent verschillende niveaus: _dataset_-, _object_- en _attribuutniveau_. In het algemeen geldt: hoe generieker de aard van de informatie, hoe algemener het niveau waarop het model dit vastlegt. De volgende paragrafen gaan dieper in op de verschillende kenmerken en hoe het model ze vastlegt.
