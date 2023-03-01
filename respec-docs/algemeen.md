@@ -2,6 +2,23 @@
 
 ## Geometrie
 
+Geometrieën worden gebruikt voor de representatie van _locatie_, _oriëntatie_ en _vorm_ van een object uit de werkelijkheid in een informatiemodel. De dimensie van een representatie variëert van 0D- tot 3D-objecten. Deze objecten worden altijd geplaatst in een 2-dimensionele, of 3-dimensionele ruimte.
+
+De volgende (meta)aspecten van geometrie moeten worden gedefinieerd per objecttype in het informatiemodel of de documentatie daarbij:
+
+Dimensionaliteit
+Geometrietypen
+Coordinaatreferentiesystemen
+
+ - Geometrietype
+ - Dimensionaliteit
+ - Nauwkeurigheidseisen
+ - Inwinregels
+ - Topologische regels
+ - Benodigde kwaliteitsmetadata
+
+Het volstaat om een ISO 19107 geometrietype toe te passen in het informatiemodel (zie [](#geometrie-in-model) voor uitleg). Dit zorgt ervoor dat het coördinatenstelsel kan worden opgenomen, dat het geometrietype duidelijk is en dat de coördinaten zelf kunnen worden opgenomen.
+
 De volgende documenten zijn gehanteerd als modelleertechnische uitgangspunten voor het informatiemodel DiSGeo:
 
  - Metamodel Informatie Modellering 1.1.1 [[MIM]]
@@ -22,20 +39,10 @@ Voor `...` van geometrieën gelden een aantal belangrijke principes die volgen u
  - Geometrie in het model
  - Uitganspunten EMSO
 
-Geometrieën worden gebruikt voor de representatie van _locatie_, _oriëntatie_ en _vorm_ van objecten uit de werkelijkheid in een informatiemodel. De dimensie dimensie van de representatie kan variëren van 0D- tot 3D-objecten. Deze objecten worden altijd geplaatst in een 2-dimensionele, of 3-dimensionele ruimte.
-
 <aside class="note">
    Onderstaande tekst afkomstig uit doc <i>Generieke Onderwerpen</i>
 </aside>
 
-De volgende (meta)aspecten van geometrie moeten worden gedefinieerd per objecttype in het informatiemodel of de documentatie daarbij:
-
- - Geometrietype
- - Dimensionaliteit
- - Nauwkeurigheidseisen
- - Inwinregels
- - Topologische regels
- - Benodigde kwaliteitsmetadata
 
 <aside class="note">
    Onderstaande tekst afkomstig uit doc <i>Generieke Onderwerpen</i>
@@ -49,7 +56,7 @@ Per individuele geometrie vastleggen:
 - De coördinaten zelf
 - Indien van toepassing, kwaliteitsmetadata zoals beschreven in [](#benodigde-kwaliteitsmetadata).
 
-Het volstaat om een ISO 19107 geometrietype toe te passen in het informatiemodel (zie [](#geometrie-in-model) voor uitleg). Dit zorgt ervoor dat het coördinatenstelsel kan worden opgenomen, dat het geometrietype duidelijk is en dat de coördinaten zelf kunnen worden opgenomen.
+
 
 <aside class="issue">
    Heeft het meerwaarde om in het informatiemodel op te nemen in welk CRS een geometrie ingewonnen moet worden? Dat zou een metadata aspect kunnen zijn net zoals nauwkeurigheidseis.
@@ -152,7 +159,7 @@ Het geometrietype wordt aangegeven door keuze van het juiste type uit het ISO 19
    Hierbij is het relevant om te definiëren en op schrijven welke varianten toegestaan zijn. Een <code>GM_Surface</code> of <code>GM_Curve</code> heeft nog allerlei mogelijke verschijningsvormen in het Geometry model. Voor de uitwisseling en het gebruik is het handig om dit in te perken.
 </aside>
 
-### Coordinaatrefrentiesystemen
+### Coordinaatreferentiesystemen
 
 <aside class="note">
    Onderstaande tekst komt uit doc gen. ondw.
