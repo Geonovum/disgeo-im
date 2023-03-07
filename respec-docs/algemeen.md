@@ -8,34 +8,24 @@ Voor de representatie van de _locatie_, _oriëntatie_ en _vorm_ van een object u
    Hier iets invoegen over relevante standaarden?
 </aside>
 
-Samengevat legt het informatiemodel de volgende informatie over geometrie vast:
-
- - Dimensionaliteit
- - Geometrietypen
- - Coordinaatreferentiesystemen
+Samengevat legt het informatiemodel de volgende informatie over een geometrie vast:
+ 
+ - Dimensie
+ - Type
+ - Coordinaatreferentiesysteem (CRS)
  - Kwaliteitskenmerken (o.a. nauwkeurigheid, inwinregels en topologische regels)
 
-Per onderdeel verschilt de plek waar de informatie over geometrie vast ligt. Het informatiemodel kent verschillende niveaus: _dataset_-, _object_- en _attribuutniveau_. In het algemeen geldt: hoe generieker de aard van de informatie, hoe algemener het niveau waarop het model dit vastlegt. De volgende paragrafen gaan dieper in op de verschillende kenmerken en hoe het model ze vastlegt.
-
-<aside class="issue">
-   Onderstaande twee lijsten samenvoegen.
-</aside>
-
-De volgende documenten zijn gehanteerd als modelleertechnische uitgangspunten voor het informatiemodel DiSGeo:
+Voor de vastlegging van geometrieën gelden een aantal belangrijke principes die volgen uit verschillende standaarden en initiatieven. De volgende documenten zijn hierin leidend:
 
  - Metamodel Informatie Modellering 1.1.1 [[MIM]]
  - Raamwerk van geo-standaarden 3.0 [[Raamwerk-Geo]]
  - Basismodel Geo-informatie [[NEN3610-2022]]
  - ISO-19107-2003: Geographic information – Spatial schema [[iso-19107-2003]]
  - Modelleerprincipes samenhangende objectenregistratie [[disgeo-mod]]
+ - Eisen aan model samenhangende objectenregistratie [[ESMO]]
+ - Geometrie in Model en GML [[gimeg]]
 
-Voor `...` van geometrieën gelden een aantal belangrijke principes die volgen uit verschillende standaarden en initiatieven. 
-
- - Coordinaatreferentiesystemen
- - Technologieën
- - NEN3610
- - Geometrie in het model
- - Uitganspunten EMSO
+Per onderdeel verschilt de plek in het model waar de informatie over geometrie vastligt. Het informatiemodel kent verschillende niveaus: _dataset_-, _object_- en _attribuutniveau_. In het algemeen geldt: hoe generieker de aard van de informatie, hoe algemener het niveau waarop het model dit vastlegt. De volgende paragrafen gaan dieper in op de verschillende kenmerken en hoe het model ze vastlegt.
 
 ### Dimensies
 
