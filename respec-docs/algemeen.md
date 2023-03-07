@@ -2,13 +2,7 @@
 
 ## Geometrie
 
-Voor de representatie van de _locatie_, _oriëntatie_ en _vorm_ van een object uit de werkelijkheid, gebruiken informatiemodellen geometrieën. De dimensie van een representatie variëert van nuldimensionaal (0D) tot driedimensionaal (3D). Objecten worden altijd geplaatst in een tweedimensionele (2D), of driedimensionele (3D) ruimte. Het informatiemodel DiSGeo gebruikt gestandaardiseerde geometrietypen uit ISO 19107:2003. Dit voorziet zowel in de opname van de coördinaten van de geometrie, als van het coördinaten<i>stelsel</i>. Tot slot heeft een geometrische representatie ook kwaliteitskenmerken. Het informatiemodel DiSGeo onderscheid in elk geval informatie over de _nauwkeurigheid_ en de _inwinregels_.
-
-<aside class="note">
-   Hier iets invoegen over relevante standaarden?
-</aside>
-
-Samengevat legt het informatiemodel de volgende informatie over een geometrie vast:
+Voor de representatie van de _locatie_, _oriëntatie_ en _vorm_ van een object uit de werkelijkheid, gebruiken informatiemodellen geometrieën. De dimensie van een representatie variëert van nuldimensionaal (0D) tot driedimensionaal (3D). Objecten worden altijd geplaatst in een tweedimensionele (2D), of driedimensionele (3D) ruimte. Het informatiemodel DiSGeo gebruikt gestandaardiseerde geometrietypen uit ISO 19107:2003. Dit voorziet zowel in de opname van de coördinaten van de geometrie, als van het coördinaten<i>stelsel</i>. Tot slot heeft een geometrische representatie ook kwaliteitskenmerken. Het informatiemodel DiSGeo onderscheid in elk geval informatie over de _nauwkeurigheid_ en de _inwinregels_. Samengevat legt het informatiemodel de volgende informatie over een geometrie vast:
  
  - Type
  - Dimensie
@@ -27,13 +21,9 @@ Voor de vastlegging van geometrieën gelden een aantal belangrijke principes die
 
 Per onderdeel verschilt de plek in het model waar de informatie over geometrie vastligt. Het informatiemodel kent verschillende niveaus: _dataset_-, _object_- en _attribuutniveau_. In het algemeen geldt: hoe generieker de aard van de informatie, hoe hoger het niveau waarop het model dit vastlegt. De volgende paragrafen gaan verder in op de verschillende kenmerken en hoe het model ze vastlegt.
 
-### Typen
+### Geometrietypen
 
 #### Geometrie in model 
-
-<aside class="note">
-   Onderstaande tekst toevoegen.
-</aside>
 
 Het volstaat om een ISO 19107 geometrietype toe te passen in het informatiemodel. [Hoofdstuk 2](https://geonovum.github.io/gimeg/#model) van [[gimeg]], geeft hierover meer uitleg.  
 
