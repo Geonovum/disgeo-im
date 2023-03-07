@@ -62,10 +62,10 @@ We hanteren dus Simple Features (ISO 19125) _+ een aantal aanvullingen voor zove
 
 Simple Features gebruikt zoals gezegd geometrietypen uit de veel uitgebreidere standaard ISO 19107, waarin het volledige geometriemodel gedefinieerd is. De typen uit dit model hanteren we doorgaans als 'black box' typen of interfaces. Als achtergrondinformatie beschrijven we hier kort wat het geometriemodel van ISO 19107 inhoudt. 
 
-<figure>
+<!-- <figure>
     <img src="media/iso19107-geometry.png" alt="ISO 19107 Geometry"/>
     <figcaption>Het Geometry object met al zijn kenmerken zoals gedefinieerd in het ruimtelijk schema van ISO 19107.</figcaption>
-</figure>
+</figure> -->
 
 Het Geometry object, waarvan alle specifieke geometrietypen zoals punt, lijn, vlak en volume afgeleid zijn, heeft veel kenmerken en operaties. Belangrijk voor ons zijn: 
 - `SRID`: dit modelleert de verwijzing naar het "Spatial Reference system", in ons geval het coördinaatreferentiesysteem. 
@@ -82,10 +82,10 @@ Het Geometry object, waarvan alle specifieke geometrietypen zoals punt, lijn, vl
 #### Geometrietype
 Het geometrietype wordt aangegeven door keuze van het juiste type uit het ISO 19107 Geometry Model (`GM_xxx`), passend binnen het profiel zoals gedefinieerd in [[gimeg]]. 
 
-<figure>
+<!-- <figure>
     <img src="media/iso19107-ruimtelijk-schema.png" alt="ISO 19107 ruimtelijk schema"/>
     <figcaption>Het ruimtelijk schema van ISO 19107, geometrische primitieven.</figcaption>
-</figure>
+</figure> -->
 
 <aside class="issue">
    Hierbij is het relevant om te definiëren en op schrijven welke varianten toegestaan zijn. Een <code>GM_Surface</code> of <code>GM_Curve</code> heeft nog allerlei mogelijke verschijningsvormen in het Geometry model. Voor de uitwisseling en het gebruik is het handig om dit in te perken.
