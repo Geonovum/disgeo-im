@@ -10,8 +10,8 @@ Voor de representatie van de _locatie_, _oriëntatie_ en _vorm_ van een object u
 
 Samengevat legt het informatiemodel de volgende informatie over een geometrie vast:
  
- - Dimensie
  - Type
+ - Dimensie
  - Coordinaatreferentiesysteem (CRS)
  - Kwaliteitskenmerken (o.a. nauwkeurigheid, inwinregels en topologische regels)
 
@@ -25,13 +25,7 @@ Voor de vastlegging van geometrieën gelden een aantal belangrijke principes die
  - Eisen aan model samenhangende objectenregistratie [[ESMO]]
  - Geometrie in Model en GML [[gimeg]]
 
-Per onderdeel verschilt de plek in het model waar de informatie over geometrie vastligt. Het informatiemodel kent verschillende niveaus: _dataset_-, _object_- en _attribuutniveau_. In het algemeen geldt: hoe generieker de aard van de informatie, hoe algemener het niveau waarop het model dit vastlegt. De volgende paragrafen gaan dieper in op de verschillende kenmerken en hoe het model ze vastlegt.
-
-### Dimensies
-
-<aside class="note">
-   Hier verdergaan met schrijven.
-</aside>
+Per onderdeel verschilt de plek in het model waar de informatie over geometrie vastligt. Het informatiemodel kent verschillende niveaus: _dataset_-, _object_- en _attribuutniveau_. In het algemeen geldt: hoe generieker de aard van de informatie, hoe hoger het niveau waarop het model dit vastlegt. De volgende paragrafen gaan verder in op de verschillende kenmerken en hoe het model ze vastlegt.
 
 ### Typen
 
@@ -41,7 +35,11 @@ Per onderdeel verschilt de plek in het model waar de informatie over geometrie v
    Onderstaande tekst toevoegen.
 </aside>
 
-Het volstaat om een ISO 19107 geometrietype toe te passen in het informatiemodel (zie [](#geometrie-in-model) voor uitleg). Dit zorgt ervoor dat het coördinatenstelsel kan worden opgenomen, dat het geometrietype duidelijk is en dat de coördinaten zelf kunnen worden opgenomen.
+Het volstaat om een ISO 19107 geometrietype toe te passen in het informatiemodel. [Hoofdstuk 2](https://geonovum.github.io/gimeg/#model) van [[gimeg]], geeft hierover meer uitleg.  
+
+Dit zorgt ervoor dat het coördinatenstelsel kan worden opgenomen, dat het geometrietype duidelijk is en dat de coördinaten zelf kunnen worden opgenomen.
+
+Het ISO 19107 _spatial schema_ stelt twee criteria centraal: data-complexiteit en dimensionaliteit.
 
 <aside class="issue">
    Verwijzen naar document dat dit beschrijft. Niet volledige uitleg hier overnemen. In elk geval afbeelding niet opnemen.
@@ -90,6 +88,14 @@ Het geometrietype wordt aangegeven door keuze van het juiste type uit het ISO 19
 <aside class="issue">
    Hierbij is het relevant om te definiëren en op schrijven welke varianten toegestaan zijn. Een <code>GM_Surface</code> of <code>GM_Curve</code> heeft nog allerlei mogelijke verschijningsvormen in het Geometry model. Voor de uitwisseling en het gebruik is het handig om dit in te perken.
 </aside>
+
+### Dimensies
+
+<aside class="note">
+   Hier verdergaan met schrijven.
+</aside>
+
+
 
 ### Coordinaatreferentiesystemen
 
