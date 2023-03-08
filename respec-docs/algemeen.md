@@ -64,18 +64,34 @@ https://docs.geostandaarden.nl/disgeo/emso/#:~:text=waarbij%20de%20vastlegging%2
 Per objecttype kan de wijze van vastlegging verschillen. In sommige gevallen representeert een _volume_ het object het beste. In andere gevallen volstaat een _punt_, _lijn_ of _vlak_ met hoogteligging.
 
 
-Belangrijk is om onderscheid te maken tussen dimensie van: **primitieve**, **ruimte** en **model**.
+
+Als het gaat om dimensie, is het van belang om onderscheid te maken tussen de termen: **primitieve**, **ruimte** en **model**.
+
+Er zijn vier gradaties van primitieven, oplopend van 0D tot en met 3D. Elke hogere graad voegt een nieuwe dimensie toe. Zo staat 0D alleen het primitieve punt toe, maar 1D zowel punten als lijnen. 2D voegt daar vlakken aan toe en 3D volumes. Deze primitieven kun je plaatsen in een tweedimensionele of driedemnsionele ruimte. Afhankelijk van de hoogste dimensie van de primitieve, in combinatie met gehanteerde dimensie van de ruimte, is sprake van een 2D-, 2.5D- of 3D-model. Samengevat komt het hierop neer:
+
+ - **2D-model**: modelleert met **2D-primitieven** in een **2D-ruimte**;
+ - **2.5-model**: modelleert **2D-primitieven** in een **3D-ruimte**;
+ - **3D-model**: modelleert **3D-primitieven** in een **3D-ruimte**.
+
+
 
 #### Primitieve
+
+The **internal dimension** indicates the (highest) dimension of the primitives that are being used to describe objects.
+
+The **external dimension** is the dimension of the space in which one models.
 
 #### Ruimte 
 
 #### Model
 
-2D
-2.5D
-2.75D
-3D
+
+References ISO
+ - Topologische dimensionaliteit 2.1.2
+ - Structural complexity 2.1.4
+ - Functional complexity 2.1.5
+ - Conformance classes 2.2
+
 
 simplex: de simpelste vorm in een dimensie
 één opspannend punt meer nodig dan de dimensie  waarin je zit.
@@ -101,7 +117,7 @@ Verschillen in vastlegging per objecttype: https://docs.geostandaarden.nl/disgeo
    <a href="_blank">
       <img src="media/geometrie_dimensies.png" alt="Geometrie primitieven en hun dimensies"/>
    </a>
-   <figcaption>Overzicht geometrische primtieven en de bijbehorende dimensionaliteit</figcaption>
+   <figcaption>Overzicht van geometrische primtieven en de bijbehorende dimensionaliteit</figcaption>
 </figure>
 
 <!-- We hanteren dus Simple Features (ISO 19125) _+ een aantal aanvullingen voor zover nodig, waarschijnlijk in ieder geval voor bogen en volumes._ -->
