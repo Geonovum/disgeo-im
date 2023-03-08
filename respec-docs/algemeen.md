@@ -19,17 +19,27 @@ Voor de vastlegging van geometrieën gelden een aantal belangrijke principes die
  - Eisen aan model samenhangende objectenregistratie [[EMSO]]
  - Geometrie in Model en GML [[gimeg]]
 
-Per onderdeel verschilt de plek in het model waar de informatie over geometrie vastligt. Het informatiemodel kent verschillende niveaus: _dataset_-, _object_- en _attribuutniveau_. In het algemeen geldt: hoe generieker de aard van de informatie, hoe hoger het niveau waarop het model dit vastlegt. De volgende paragrafen gaan verder in op de verschillende kenmerken en hoe het model ze vastlegt.
+Per onderdeel verschilt de plek in het model waar de informatie over geometrie vastlegt. Het informatiemodel kent verschillende niveaus: _dataset_-, _object_- en _attribuutniveau_. In het algemeen geldt: hoe generieker de aard van de informatie, hoe hoger het niveau waarop het model dit vastlegt. De volgende paragrafen gaan verder in op de verschillende kenmerken en hoe het model ze vastlegt.
 
 ### Geometrietypen
 
 #### Geometrie in model 
 
-Het volstaat om een ISO 19107 geometrietype toe te passen in het informatiemodel. [Hoofdstuk 2](https://geonovum.github.io/gimeg/#model) van [[gimeg]], geeft hierover meer uitleg.  
+Het volstaat om een ISO 19107 geometrietype toe te passen in het informatiemodel. [Hoofdstuk 2](https://geonovum.github.io/gimeg/#model) van [[gimeg]], geeft hierover meer uitleg.
 
-Dit zorgt ervoor dat het coördinatenstelsel kan worden opgenomen, dat het geometrietype duidelijk is en dat de coördinaten zelf kunnen worden opgenomen.
+ISO 19107 biedt een aantal basisgeometrieën (_geometrische primitieven_) om objecten uit de werkelijkheid mee te representeren. Maar ook verzamelingen van punten, lijnen, vlakken of volumes (_geometrische aggregaties_) zijn mogelijk. Binnen het informatiemodel DiSGeo onderscheiden we in elk geval de typen uit onderstaande tabel.
 
-Het ISO 19107 _spatial schema_ stelt twee criteria centraal: data-complexiteit en dimensionaliteit.
+| Type     | Primitieve      | Aggregatie         |
+| ---      | ---             | ---                |
+| Punt     | GM_Point        | GM_MultiPoint      |
+| Lijn     | GM_Curve        | GM_MultiCurve      |
+| Vlak     | GM_Surface      | GM_MultiSurface    |
+| Volume   | GM_Solid        | GM_MultiSolid      |
+
+
+De toepassing van de ISO 19107-geometrietypen, zorgt er meteen voor dat het geometrietype helder is, de coördinaten kunnen worden opgenomen én het coördinatenstelsel kan worden opgenomen.
+
+Het ISO 19107 _spatial schema_ stelt twee criteria centraal: _data-complexiteit_ en _dimensionaliteit_.
 
 <aside class="issue">
    Verwijzen naar document dat dit beschrijft. Niet volledige uitleg hier overnemen. In elk geval afbeelding niet opnemen.
