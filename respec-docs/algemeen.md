@@ -56,7 +56,7 @@ _Simple Features_ gebruikt geometrietypen uit de veel uitgebreidere standaard IS
 
 ### Dimensies
 
-Als het gaat om dimensie, is het van belang om onderscheid te maken tussen de termen: **primitieve**, **ruimte** en **model**. Er zijn vier gradaties van primitieven, oplopend van 0D tot en met 3D. Elke hogere graad voegt een nieuwe dimensie toe. Zo staat 0D alleen het primitieve punt toe, maar 1D zowel punten als lijnen. 2D voegt daar vlakken aan toe en 3D volumes.
+Als het gaat om dimensie, is het van belang om onderscheid te maken tussen de termen: **primitieve**, **ruimte** en **model**. Er zijn vier gradaties van primitieven, oplopend van 0D tot en met 3D. Elke hogere graad voegt een nieuwe dimensie toe. Zo staat 0D alleen het primitieve `punt` toe, maar 1D zowel `punt` als `lijn`. 2D voegt daar `vlak` aan toe en 3D `volume`.
 
 <figure id="crs-overview">
    <a href="media/geometrie_dimensies.png" target="_blank" rel="noopener noreferrer">
