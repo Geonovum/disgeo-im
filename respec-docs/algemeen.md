@@ -67,61 +67,13 @@ Als het gaat om dimensie, is het van belang om onderscheid te maken tussen de te
    <figcaption>Overzicht van geometrische primtieven en de bijbehorende dimensionaliteit</figcaption>
 </figure>
 
-Deze primitieven kun je plaatsen in een tweedimensionele of driedemnsionele ruimte. Afhankelijk van de hoogste dimensie van de primitieve, in combinatie met gehanteerde dimensie van de ruimte, is sprake van een 2D-, 2.5D- of 3D-model. Samengevat komt het hierop neer:
+Deze primitieven kun je plaatsen in een tweedimensionale of driedimensionale ruimte. Afhankelijk van de hoogste dimensie van de primitieve, in combinatie met gehanteerde dimensie van de ruimte, is sprake van een 2D-, 2.5D- of 3D-model. Samengevat komt het hierop neer:
 
  - **2D-model**: modelleert met **2D-primitieven** in een **2D-ruimte**;
  - **2.5-model**: modelleert **2D-primitieven** in een **3D-ruimte**;
  - **3D-model**: modelleert **3D-primitieven** in een **3D-ruimte**.
 
-Het EMSO schrijft voor dat het informatiemodel DiSGeo moet voorsorteren op de mogelijkheid om de [driedimensionale beschrijving van een object](https://docs.geostandaarden.nl/disgeo/emso/#:~:text=waarbij%20de%20vastlegging%20hiervan%20zodanig%20wordt%20vormgegeven%20dat%20de%20driedimensionale%20(3D)%20beschrijving%20van%20een%20object%20kan%20worden%20opgenomen) op te nemen.
-
-
-
-Per objecttype kan de wijze van vastlegging verschillen. In sommige gevallen representeert een _volume_ het object het beste. In andere gevallen volstaat een _punt_, _lijn_ of _vlak_ met hoogteligging.
-
-
-
-
-
-#### Primitieve
-
-The **internal dimension** indicates the (highest) dimension of the primitives that are being used to describe objects.
-
-The **external dimension** is the dimension of the space in which one models.
-
-#### Ruimte 
-
-#### Model
-
-
-References ISO
- - Topologische dimensionaliteit 2.1.2
- - Structural complexity 2.1.4
- - Functional complexity 2.1.5
- - Conformance classes 2.2
-
-
-simplex: de simpelste vorm in een dimensie
-één opspannend punt meer nodig dan de dimensie  waarin je zit.
-copmutational geography
-
-Zuiverste is om te zeggen: we hanteren 2D primitieven in een 3D ruimte
-
-Onderscheid tussen ruimte en primitieven duidelijk maken
-
-
-Onderscheid tussen model, primitieve en ruimte.
-
-
-registratie wordt voorbereid op 3D: https://docs.geostandaarden.nl/disgeo/emso/#:~:text=De%20registratie%20wordt%20daarbij%20direct%20voorbereid%20op%203D%20vastlegging%20van%20objecten.
-
-Verschillen in vastlegging per objecttype: https://docs.geostandaarden.nl/disgeo/emso/#:~:text=Sommige%20objecttypen%20zullen%20worden%20vastgelegd%20in%20de%20vorm%20van%203D%20volumes.%20Andere%20objecttypen%20als%20vlakken%20met%20een%20bepaalde%20hoogteligging.%20Voor%20bepaalde%20objecten%20met%20een%20minimale%20omvang%20kan%20geometrische%20vastlegging%20in%20de%20vorm%20van%20een%20enkel%20co%C3%B6rdinatendrietal%20(x%2C%20y%20en%20z)%20worden%20vastgelegd%20(puntobject).
-
-<!-- <aside class="issue">
-   <b>ISO 19125</b> definieert een model voor <b>2 dimensionale </b> geometrietypen. <b>3D geometrie is uitgesloten van deze standaard</b>. In EMSO wordt echter wel een behoefte aan 3D geometrie geformuleerd.
-</aside> -->
-
-
+Het EMSO schrijft voor dat het informatiemodel DiSGeo moet voorsorteren op de mogelijkheid om de [driedimensionale beschrijving van een object](https://docs.geostandaarden.nl/disgeo/emso/#:~:text=waarbij%20de%20vastlegging%20hiervan%20zodanig%20wordt%20vormgegeven%20dat%20de%20driedimensionale%20(3D)%20beschrijving%20van%20een%20object%20kan%20worden%20opgenomen) op te nemen. Per objecttype kan de [wijze van vastlegging](https://docs.geostandaarden.nl/disgeo/emso/#:~:text=Sommige%20objecttypen%20zullen%20worden%20vastgelegd%20in%20de%20vorm%20van%203D%20volumes.%20Andere%20objecttypen%20als%20vlakken%20met%20een%20bepaalde%20hoogteligging.%20Voor%20bepaalde%20objecten%20met%20een%20minimale%20omvang%20kan%20geometrische%20vastlegging%20in%20de%20vorm%20van%20een%20enkel%20co%C3%B6rdinatendrietal%20(x%2C%20y%20en%20z)%20worden%20vastgelegd%20(puntobject)) verschillen. In sommige gevallen representeert een _volume_ het object het beste. In andere gevallen volstaat een _punt_, _lijn_ of _vlak_ met hoogteligging. Dit betekent het model ruimte moet bieden aan 3D-primitieven in een 3D-ruimte. Het informatiemodel DiSGeo is dus een 3D-model. 
 
 <!-- We hanteren dus Simple Features (ISO 19125) _+ een aantal aanvullingen voor zover nodig, waarschijnlijk in ieder geval voor bogen en volumes._ -->
 
