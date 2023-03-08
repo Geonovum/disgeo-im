@@ -29,12 +29,12 @@ Geometrietypen hebben verschillende niveau's van _data-complexiteit_ en _dimensi
 
 ISO 19107 biedt een aantal basisgeometrieën om een individueel object uit de werkelijkheid te representeren. Dit zijn de [geometrische primitieven](https://geonovum.github.io/gimeg/#geometrische-primitieven). Soms geldt een verzameling van objecten uit de werkelijkheid als één geheel. Daarvoor zijn [geometrische aggregaties](https://geonovum.github.io/gimeg/#geometrische-aggregaties) geschikt. Binnen het informatiemodel DiSGeo onderscheiden we in elk geval de ISO 19107-geometrietypen uit onderstaande tabel.
 
-| Type     | Primitieve      | Aggregatie         |
-| ---      | ---             | ---                |
-| Punt     | `GM_Point`      | `GM_MultiPoint`    |
-| Lijn     | `GM_Curve`      | `GM_MultiCurve`    |
-| Vlak     | `GM_Surface`    | `GM_MultiSurface`  |
-| Volume   | `GM_Solid`      | `GM_MultiSolid`    |
+| Primitieve   | In ISO19107 - Enkelvoudig   | In ISO19107 - Aggregatie    |
+| ---          | ---                         | ---                         |
+| Punt         | `GM_Point`                  | `GM_MultiPoint`             |
+| Lijn         | `GM_Curve`                  | `GM_MultiCurve`             |
+| Vlak         | `GM_Surface`                | `GM_MultiSurface`           |
+| Volume       | `GM_Solid`                  | `GM_MultiSolid`             |
 
 <aside class="note">
    Hierbij is het relevant om te definiëren en op schrijven welke varianten toegestaan zijn. Een <code>GM_Surface</code> of <code>GM_Curve</code> heeft nog allerlei mogelijke verschijningsvormen in het geometriemodel. Voor de uitwisseling en het gebruik is het handig om dit in te perken.
@@ -57,14 +57,37 @@ _Simple Features_ gebruikt geometrietypen uit de veel uitgebreidere standaard IS
 </aside>
 
 ### Dimensies
+Het EMSO schrijft voor dat het informatiemodel DiSGeo moet voorsorteren op de mogelijkheid om de <q>driedimensionale beschrijving van een object</q> op te nemen.
+
+https://docs.geostandaarden.nl/disgeo/emso/#:~:text=waarbij%20de%20vastlegging%20hiervan%20zodanig%20wordt%20vormgegeven%20dat%20de%20driedimensionale%20(3D)%20beschrijving%20van%20een%20object%20kan%20worden%20opgenomen
+
+Per objecttype kan de wijze van vastlegging verschillen. In sommige gevallen representeert een _volume_ het object het beste. In andere gevallen volstaat een _punt_, _lijn_ of _vlak_ met hoogteligging.
 
 
+Belangrijk is om onderscheid te maken tussen dimensie van: **primitieve**, **ruimte** en **model**.
 
-Het EMSO schrijft voor dat het informatiemodel DiSGeo moet voorsorteren op 3D. Per objecttype kan de wijze van vastlegging verschillen. In sommige gevallen representeert een volume het object het beste. In andere gevallen volstaat een punt, lijn of vlak met hoogteligging. 
+#### Primitieve
+
+#### Ruimte 
+
+#### Model
 
 2D
 2.5D
+2.75D
 3D
+
+simplex: de simpelste vorm in een dimensie
+één opspannend punt meer nodig dan de dimensie  waarin je zit.
+copmutational geography
+
+Zuiverste is om te zeggen: we hanteren 2D primitieven in een 3D ruimte
+
+Onderscheid tussen ruimte en primitieven duidelijk maken
+
+
+Onderscheid tussen model, primitieve en ruimte.
+
 
 registratie wordt voorbereid op 3D: https://docs.geostandaarden.nl/disgeo/emso/#:~:text=De%20registratie%20wordt%20daarbij%20direct%20voorbereid%20op%203D%20vastlegging%20van%20objecten.
 
