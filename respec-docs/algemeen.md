@@ -38,14 +38,14 @@ ISO 19107 biedt een aantal basisgeometrieën om een individueel object uit de we
 | Vlak     | `GM_Surface`    | `GM_MultiSurface`  |
 | Volume   | `GM_Solid`      | `GM_MultiSolid`    |
 
-De toepassing van de ISO 19107-geometrietypen, zorgt er meteen voor dat het geometrietype helder is, de coördinaten kunnen worden opgenomen én het coördinatenstelsel kan worden opgenomen.
+De toepassing van de ISO 19107-geometrietypen, zorgt er meteen voor dat het geometrietype helder is, de coördinaten én het coördinatenstelsel kunnen worden opgenomen.
 
 Verder eist het EMSO [aansluiting op ISO 19125](https://docs.geostandaarden.nl/disgeo/emso/#:~:text=Hierbij%20is%20voor%20geometrie%20aansluiting%20op%20Simple%20Features%20(ISO19125)%20voorgeschreven) Simple Features. Deze standaard maakt een selectie uit het ISO 19107 geometriemodel. Het neemt daaruit alleen de meest gebruikelijke geometrietypen over. 
 
 <blockquote cite="https://docs.geostandaarden.nl/disgeo/emso/#:~:text=De%20SOR%20hanteert,naar%203D%20geometrie.">
-   <q><i>
-      De SOR hanteert altijd expliciete geometrie en geen impliciete geometrie (zoals geparametriseerde geometriebeschrijvingen die in CAD/BIM voorkomen). Hiermee kunnen namelijk betere analyses en kwaliteitscontroles (zoals topologische controles) worden uitgevoerd en 2D geometrie worden ‘opgetrokken’ naar 3D geometrie.
-   </i></q>
+   <i>
+      "De SOR hanteert altijd expliciete geometrie en geen impliciete geometrie (zoals geparametriseerde geometriebeschrijvingen die in CAD/BIM voorkomen). Hiermee kunnen namelijk betere analyses en kwaliteitscontroles (zoals topologische controles) worden uitgevoerd en 2D geometrie worden ‘opgetrokken’ naar 3D geometrie."
+   </i>
 </blockquote>
 
 Simple Features gebruikt geometrietypen uit de veel uitgebreidere standaard ISO 19107.
