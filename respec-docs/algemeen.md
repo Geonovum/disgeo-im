@@ -57,6 +57,17 @@ _Simple Features_ gebruikt geometrietypen uit de veel uitgebreidere standaard IS
 </aside>
 
 ### Dimensies
+
+Als het gaat om dimensie, is het van belang om onderscheid te maken tussen de termen: **primitieve**, **ruimte** en **model**. Er zijn vier gradaties van primitieven, oplopend van 0D tot en met 3D. Elke hogere graad voegt een nieuwe dimensie toe. Zo staat 0D alleen het primitieve punt toe, maar 1D zowel punten als lijnen. 2D voegt daar vlakken aan toe en 3D volumes.
+
+
+
+Deze primitieven kun je plaatsen in een tweedimensionele of driedemnsionele ruimte. Afhankelijk van de hoogste dimensie van de primitieve, in combinatie met gehanteerde dimensie van de ruimte, is sprake van een 2D-, 2.5D- of 3D-model. Samengevat komt het hierop neer:
+
+ - **2D-model**: modelleert met **2D-primitieven** in een **2D-ruimte**;
+ - **2.5-model**: modelleert **2D-primitieven** in een **3D-ruimte**;
+ - **3D-model**: modelleert **3D-primitieven** in een **3D-ruimte**.
+
 Het EMSO schrijft voor dat het informatiemodel DiSGeo moet voorsorteren op de mogelijkheid om de <q>driedimensionale beschrijving van een object</q> op te nemen.
 
 https://docs.geostandaarden.nl/disgeo/emso/#:~:text=waarbij%20de%20vastlegging%20hiervan%20zodanig%20wordt%20vormgegeven%20dat%20de%20driedimensionale%20(3D)%20beschrijving%20van%20een%20object%20kan%20worden%20opgenomen
@@ -64,14 +75,6 @@ https://docs.geostandaarden.nl/disgeo/emso/#:~:text=waarbij%20de%20vastlegging%2
 Per objecttype kan de wijze van vastlegging verschillen. In sommige gevallen representeert een _volume_ het object het beste. In andere gevallen volstaat een _punt_, _lijn_ of _vlak_ met hoogteligging.
 
 
-
-Als het gaat om dimensie, is het van belang om onderscheid te maken tussen de termen: **primitieve**, **ruimte** en **model**.
-
-Er zijn vier gradaties van primitieven, oplopend van 0D tot en met 3D. Elke hogere graad voegt een nieuwe dimensie toe. Zo staat 0D alleen het primitieve punt toe, maar 1D zowel punten als lijnen. 2D voegt daar vlakken aan toe en 3D volumes. Deze primitieven kun je plaatsen in een tweedimensionele of driedemnsionele ruimte. Afhankelijk van de hoogste dimensie van de primitieve, in combinatie met gehanteerde dimensie van de ruimte, is sprake van een 2D-, 2.5D- of 3D-model. Samengevat komt het hierop neer:
-
- - **2D-model**: modelleert met **2D-primitieven** in een **2D-ruimte**;
- - **2.5-model**: modelleert **2D-primitieven** in een **3D-ruimte**;
- - **3D-model**: modelleert **3D-primitieven** in een **3D-ruimte**.
 
 
 
@@ -114,7 +117,7 @@ Verschillen in vastlegging per objecttype: https://docs.geostandaarden.nl/disgeo
 </aside> -->
 
 <figure id="crs-overview">
-   <a href="_blank">
+   <a href="media/geometrie_dimensies.png" target="_blank" rel="noopener noreferrer">
       <img src="media/geometrie_dimensies.png" alt="Geometrie primitieven en hun dimensies"/>
    </a>
    <figcaption>Overzicht van geometrische primtieven en de bijbehorende dimensionaliteit</figcaption>
