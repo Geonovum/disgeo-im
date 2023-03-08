@@ -66,6 +66,13 @@ _Simple Features_ gebruikt geometrietypen uit de veel uitgebreidere standaard IS
    Hier verdergaan met schrijven.
 </aside>
 
+<figure id="crs-overview">
+   <a href="_blank">
+      <img src="media/geometrie_dimensies.png" alt="Geometrie primitieven en hun dimensies"/>
+   </a>
+   <figcaption>Overzicht geometrische primtieven en de bijbehorende dimensionaliteit</figcaption>
+</figure>
+
 We hanteren dus Simple Features (ISO 19125) _+ een aantal aanvullingen voor zover nodig, waarschijnlijk in ieder geval voor bogen en volumes._
 
 ### Coordinaatreferentiesystemen
