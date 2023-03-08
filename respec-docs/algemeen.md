@@ -27,7 +27,7 @@ Per onderdeel verschilt de plek in het model waar de informatie over geometrie v
 
 Geometrietypen hebben verschillende niveau's van _data-complexiteit_ en _dimensionaliteit_ (zie: [Dimensies](#dimensies). Het volstaat om een ISO 19107-geometrietype toe te passen in het informatiemodel. Raadpleeg voor een uitgebreidere toelichting op dit ondewerp hoofdstuk 2 van de handreiking Geometrie in model en GML [[GIMEG]]. Dit legt inhoudelijk uit hoe het geometriemodel uit ISO 19107 [[ISO-19107-2019]] kan worden toegepast en wat het geldende Nederlands profiel is.
 
-ISO 19107 biedt een aantal basisgeometrieën om een individueel object uit de werkelijkheid te representeren. Dit zijn de _geometrische primitieven_. Soms geldt een verzameling van objecten uit de werkelijkheid als één geheel. Daarvoor zijn (_geometrische aggregaties_) geschikt. Binnen het informatiemodel DiSGeo onderscheiden we in elk geval de ISO 19107-geometrietypen uit onderstaande tabel.
+ISO 19107 biedt een aantal basisgeometrieën om een individueel object uit de werkelijkheid te representeren. Dit zijn de [geometrische primitieven](https://geonovum.github.io/gimeg/#geometrische-primitieven). Soms geldt een verzameling van objecten uit de werkelijkheid als één geheel. Daarvoor zijn [geometrische aggregaties](https://geonovum.github.io/gimeg/#geometrische-aggregaties) geschikt. Binnen het informatiemodel DiSGeo onderscheiden we in elk geval de ISO 19107-geometrietypen uit onderstaande tabel.
 
 | Type     | Primitieve      | Aggregatie         |
 | ---      | ---             | ---                |
@@ -58,13 +58,21 @@ _Simple Features_ gebruikt geometrietypen uit de veel uitgebreidere standaard IS
 
 ### Dimensies
 
-<aside class="issue">
-   <b>ISO 19125</b> definieert een model voor <b>2 dimensionale </b> geometrietypen. <b>3D geometrie is uitgesloten van deze standaard</b>. In EMSO wordt echter wel een behoefte aan 3D geometrie geformuleerd.
-</aside>
 
-<aside class="note">
-   Hier verdergaan met schrijven.
-</aside>
+
+Het EMSO schrijft voor dat het informatiemodel DiSGeo moet voorsorteren op 3D. Per objecttype kan de wijze van vastlegging verschillen. In sommige gevallen representeert een volume het object het beste. In andere gevallen volstaat een punt, lijn of vlak met hoogteligging. 
+
+2D
+2.5D
+3D
+
+registratie wordt voorbereid op 3D: https://docs.geostandaarden.nl/disgeo/emso/#:~:text=De%20registratie%20wordt%20daarbij%20direct%20voorbereid%20op%203D%20vastlegging%20van%20objecten.
+
+Verschillen in vastlegging per objecttype: https://docs.geostandaarden.nl/disgeo/emso/#:~:text=Sommige%20objecttypen%20zullen%20worden%20vastgelegd%20in%20de%20vorm%20van%203D%20volumes.%20Andere%20objecttypen%20als%20vlakken%20met%20een%20bepaalde%20hoogteligging.%20Voor%20bepaalde%20objecten%20met%20een%20minimale%20omvang%20kan%20geometrische%20vastlegging%20in%20de%20vorm%20van%20een%20enkel%20co%C3%B6rdinatendrietal%20(x%2C%20y%20en%20z)%20worden%20vastgelegd%20(puntobject).
+
+<!-- <aside class="issue">
+   <b>ISO 19125</b> definieert een model voor <b>2 dimensionale </b> geometrietypen. <b>3D geometrie is uitgesloten van deze standaard</b>. In EMSO wordt echter wel een behoefte aan 3D geometrie geformuleerd.
+</aside> -->
 
 <figure id="crs-overview">
    <a href="_blank">
@@ -73,7 +81,7 @@ _Simple Features_ gebruikt geometrietypen uit de veel uitgebreidere standaard IS
    <figcaption>Overzicht geometrische primtieven en de bijbehorende dimensionaliteit</figcaption>
 </figure>
 
-We hanteren dus Simple Features (ISO 19125) _+ een aantal aanvullingen voor zover nodig, waarschijnlijk in ieder geval voor bogen en volumes._
+<!-- We hanteren dus Simple Features (ISO 19125) _+ een aantal aanvullingen voor zover nodig, waarschijnlijk in ieder geval voor bogen en volumes._ -->
 
 ### Coordinaatreferentiesystemen
 
