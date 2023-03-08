@@ -25,9 +25,9 @@ Per onderdeel verschilt de plek in het model waar de informatie over geometrie v
 
 #### Geometrie in model 
 
-Het volstaat om een ISO 19107 geometrietype toe te passen in het informatiemodel. [Hoofdstuk 2](https://geonovum.github.io/gimeg/#model) van [[gimeg]], geeft hierover meer uitleg.
+Geometrietypen hebben verschillende niveau's van _data-complexiteit_ en _dimensionaliteit_ (zie: [volgende paragraaf](linkOpnemen)). Het volstaat om een ISO 19107-geometrietype toe te passen in het informatiemodel. Hieronder volgt een korte uitleg. Raadpleeg voor een uitgebreidere toelichting op dit ondewerp hoofdstuk 2 van [[gimeg]].
 
-ISO 19107 biedt een aantal basisgeometrieën (_geometrische primitieven_) om objecten uit de werkelijkheid mee te representeren. Maar ook verzamelingen van punten, lijnen, vlakken of volumes (_geometrische aggregaties_) zijn mogelijk. Binnen het informatiemodel DiSGeo onderscheiden we in elk geval de typen uit onderstaande tabel.
+ISO 19107 biedt een aantal basisgeometrieën om een individueel object uit de werkelijkheid te representeren. Dit zijn de _geometrische primitieven_. Soms geldt een verzameling van objecten uit de werkelijkheid als één geheel. Daarvoor zijn (_geometrische aggregaties_) geschikt. Binnen het informatiemodel DiSGeo onderscheiden we in elk geval de ISO 19107-geometrietypen uit onderstaande tabel.
 
 | Type     | Primitieve      | Aggregatie         |
 | ---      | ---             | ---                |
