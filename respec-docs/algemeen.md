@@ -38,9 +38,11 @@ ISO 19107 biedt een aantal basisgeometrieën om een individueel object uit de we
 | Vlak     | `GM_Surface`    | `GM_MultiSurface`  |
 | Volume   | `GM_Solid`      | `GM_MultiSolid`    |
 
-De toepassing van de ISO 19107-geometrietypen, zorgt er meteen voor dat het geometrietype helder is, de coördinaten én het coördinatenstelsel kunnen worden opgenomen.
+<aside class="note">
+   Hierbij is het relevant om te definiëren en op schrijven welke varianten toegestaan zijn. Een <code>GM_Surface</code> of <code>GM_Curve</code> heeft nog allerlei mogelijke verschijningsvormen in het geometriemodel. Voor de uitwisseling en het gebruik is het handig om dit in te perken.
+</aside>
 
-Verder eist het EMSO [aansluiting op ISO 19125](https://docs.geostandaarden.nl/disgeo/emso/#:~:text=Hierbij%20is%20voor%20geometrie%20aansluiting%20op%20Simple%20Features%20(ISO19125)%20voorgeschreven) Simple Features. Deze standaard maakt een selectie uit het ISO 19107 geometriemodel. Het neemt daaruit alleen de meest gebruikelijke geometrietypen over. 
+De toepassing van de ISO 19107-geometrietypen, zorgt er meteen voor dat het geometrietype helder is, de coördinaten én het coördinatenstelsel kunnen worden opgenomen. In het bijzonder eist het [[EMSO]] [aansluiting op ISO 19125](https://docs.geostandaarden.nl/disgeo/emso/#:~:text=Hierbij%20is%20voor%20geometrie%20aansluiting%20op%20Simple%20Features%20(ISO19125)%20voorgeschreven) Simple Features. Deze standaard maakt een selectie uit het ISO 19107 geometriemodel. Het neemt daaruit alleen de meest gebruikelijke geometrietypen over. 
 
 <blockquote cite="https://docs.geostandaarden.nl/disgeo/emso/#:~:text=De%20SOR%20hanteert,naar%203D%20geometrie.">
    <i>
@@ -48,37 +50,12 @@ Verder eist het EMSO [aansluiting op ISO 19125](https://docs.geostandaarden.nl/d
    </i>
 </blockquote>
 
-Simple Features gebruikt geometrietypen uit de veel uitgebreidere standaard ISO 19107.
-
-De typen uit dit model hanteren we doorgaans als `«Interface»`. Als achtergrondinformatie beschrijven we hier kort wat het geometriemodel van ISO 19107 inhoudt. 
-
-<!-- <figure>
-    <img src="media/iso19107-geometry.png" alt="ISO 19107 Geometry"/>
-    <figcaption>Het Geometry object met al zijn kenmerken zoals gedefinieerd in het ruimtelijk schema van ISO 19107.</figcaption>
-</figure> -->
-
-Het Geometry object, waarvan alle specifieke geometrietypen zoals punt, lijn, vlak en volume afgeleid zijn, heeft veel kenmerken en operaties. Belangrijk voor ons zijn: 
-- `SRID`: dit modelleert de verwijzing naar het "Spatial Reference system", in ons geval het coördinaatreferentiesysteem. 
+_Simple Features_ gebruikt geometrietypen uit de veel uitgebreidere standaard ISO 19107. De typen uit dit model hanteren we doorgaans als `«Interface»`. Het Geometry object, waarvan alle specifieke geometrietypen zoals punt, lijn, vlak en volume afgeleid zijn, heeft veel kenmerken en operaties. Belangrijk voor DiSGeo zijn: 
+- `SRID`: dit modelleert de verwijzing naar het _Spatial Reference System_, in ons geval het _coördinaatreferentiesysteem_ (CRS, zie [paragraafCRS](linkOpnemen). 
 - `metadata`: optioneel attribuut voor het opnemen van verwijzingen naar documentatie die informatie geeft over de implementatie van het geometrie-object. Dit kunnen we wellicht gebruiken voor bijvoorbeeld de gerealiseerde nauwkeurigheid van de geometrie.
 
 <aside class="note">
    <i>Spatial reference system</i> is een breder begrip dan <i>coördinaatreferentiesysteem</i>. Het gaat om een algemene locatieaanduiding, een <i>ruimtelijk referentiesysteem</i> dat niet alleen op basis van coördinaten kan werken maar ook op basis van bijvoorbeeld geografische naam of adres. 
-</aside>
-
-<aside class="note">
-   Onderstaande tekst afkomstig uit doc gen. ondw.
-</aside>
-
-#### Geometrietype
-Het geometrietype wordt aangegeven door keuze van het juiste type uit het ISO 19107 Geometry Model (`GM_xxx`), passend binnen het profiel zoals gedefinieerd in [[gimeg]]. 
-
-<!-- <figure>
-    <img src="media/iso19107-ruimtelijk-schema.png" alt="ISO 19107 ruimtelijk schema"/>
-    <figcaption>Het ruimtelijk schema van ISO 19107, geometrische primitieven.</figcaption>
-</figure> -->
-
-<aside class="issue">
-   Hierbij is het relevant om te definiëren en op schrijven welke varianten toegestaan zijn. Een <code>GM_Surface</code> of <code>GM_Curve</code> heeft nog allerlei mogelijke verschijningsvormen in het Geometry model. Voor de uitwisseling en het gebruik is het handig om dit in te perken.
 </aside>
 
 ### Dimensies
