@@ -17,7 +17,7 @@ Voor de vastlegging van geometrieën gelden een aantal belangrijke principes die
  - ISO-19107-2003: Geographic information – Spatial schema [[iso-19107-2003]]
  - Modelleerprincipes samenhangende objectenregistratie [[disgeo-mod]]
  - Eisen aan model samenhangende objectenregistratie [[EMSO]]
- - Geometrie in Model en GML [[gimeg]]
+ - Geometrie in Model en GML [[GIMEG]]
 
 Per onderdeel verschilt de plek in het model waar de informatie over geometrie vastlegt. Het informatiemodel kent verschillende niveaus: _dataset_-, _object_- en _attribuutniveau_. In het algemeen geldt: hoe generieker de aard van de informatie, hoe hoger het niveau waarop het model dit vastlegt. De volgende paragrafen gaan verder in op de verschillende kenmerken en hoe het model ze vastlegt.
 
@@ -27,7 +27,7 @@ Per onderdeel verschilt de plek in het model waar de informatie over geometrie v
 
 Geometrietypen hebben verschillende niveau's van _data-complexiteit_ en _dimensionaliteit_ (zie: [paragraafDimensies](linkOpnemen)). Het volstaat om een ISO 19107-geometrietype toe te passen in het informatiemodel. Hieronder volgt een korte uitleg.
 
-Raadpleeg voor een uitgebreidere toelichting op dit ondewerp hoofdstuk 2 van de handreiking Geometrie in model en GML [[gimeg]]. Dit legt inhoudelijk uit hoe het geometriemodel uit ISO 19107 [[iso-19107-2019]] kan worden toegepast en wat het geldende Nederlands profiel is.
+Raadpleeg voor een uitgebreidere toelichting op dit ondewerp hoofdstuk 2 van de handreiking Geometrie in model en GML [[GIMEG]]. Dit legt inhoudelijk uit hoe het geometriemodel uit ISO 19107 [[ISO-19107-2019]] kan worden toegepast en wat het geldende Nederlands profiel is.
 
 ISO 19107 biedt een aantal basisgeometrieën om een individueel object uit de werkelijkheid te representeren. Dit zijn de _geometrische primitieven_. Soms geldt een verzameling van objecten uit de werkelijkheid als één geheel. Daarvoor zijn (_geometrische aggregaties_) geschikt. Binnen het informatiemodel DiSGeo onderscheiden we in elk geval de ISO 19107-geometrietypen uit onderstaande tabel.
 
