@@ -16,7 +16,7 @@ Voor de vastlegging van geometrieën gelden een aantal belangrijke principes die
  - Basismodel Geo-informatie [[NEN3610-2022]]
  - ISO-19107-2003: Geographic information – Spatial schema [[iso-19107-2003]]
  - Modelleerprincipes samenhangende objectenregistratie [[disgeo-mod]]
- - Eisen aan model samenhangende objectenregistratie [[ESMO]]
+ - Eisen aan model samenhangende objectenregistratie [[EMSO]]
  - Geometrie in Model en GML [[gimeg]]
 
 Per onderdeel verschilt de plek in het model waar de informatie over geometrie vastligt. Het informatiemodel kent verschillende niveaus: _dataset_-, _object_- en _attribuutniveau_. In het algemeen geldt: hoe generieker de aard van de informatie, hoe hoger het niveau waarop het model dit vastlegt. De volgende paragrafen gaan verder in op de verschillende kenmerken en hoe het model ze vastlegt.
