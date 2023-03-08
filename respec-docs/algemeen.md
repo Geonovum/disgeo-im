@@ -33,10 +33,10 @@ ISO 19107 biedt een aantal basisgeometrieën om een individueel object uit de we
 
 | Type     | Primitieve      | Aggregatie         |
 | ---      | ---             | ---                |
-| Punt     | GM_Point        | GM_MultiPoint      |
-| Lijn     | GM_Curve        | GM_MultiCurve      |
-| Vlak     | GM_Surface      | GM_MultiSurface    |
-| Volume   | GM_Solid        | GM_MultiSolid      |
+| Punt     | `GM_Point`      | `GM_MultiPoint`    |
+| Lijn     | `GM_Curve`      | `GM_MultiCurve`    |
+| Vlak     | `GM_Surface`    | `GM_MultiSurface`  |
+| Volume   | `GM_Solid`      | `GM_MultiSolid`    |
 
 De toepassing van de ISO 19107-geometrietypen, zorgt er meteen voor dat het geometrietype helder is, de coördinaten kunnen worden opgenomen én het coördinatenstelsel kan worden opgenomen.
 
