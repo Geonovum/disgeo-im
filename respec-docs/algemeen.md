@@ -25,7 +25,9 @@ Per onderdeel verschilt de plek in het model waar de informatie over geometrie v
 
 #### Geometrie in model 
 
-Geometrietypen hebben verschillende niveau's van _data-complexiteit_ en _dimensionaliteit_ (zie: [volgende paragraaf](linkOpnemen)). Het volstaat om een ISO 19107-geometrietype toe te passen in het informatiemodel. Hieronder volgt een korte uitleg. Raadpleeg voor een uitgebreidere toelichting op dit ondewerp hoofdstuk 2 van [[gimeg]].
+Geometrietypen hebben verschillende niveau's van _data-complexiteit_ en _dimensionaliteit_ (zie: [paragraafDimensies](linkOpnemen)). Het volstaat om een ISO 19107-geometrietype toe te passen in het informatiemodel. Hieronder volgt een korte uitleg.
+
+Raadpleeg voor een uitgebreidere toelichting op dit ondewerp hoofdstuk 2 van de handreiking Geometrie in model en GML [[gimeg]]. Dit legt inhoudelijk uit hoe het geometriemodel uit ISO 19107 [[iso-19107-2019]] kan worden toegepast en wat het geldende Nederlands profiel is.
 
 ISO 19107 biedt een aantal basisgeometrieën om een individueel object uit de werkelijkheid te representeren. Dit zijn de _geometrische primitieven_. Soms geldt een verzameling van objecten uit de werkelijkheid als één geheel. Daarvoor zijn (_geometrische aggregaties_) geschikt. Binnen het informatiemodel DiSGeo onderscheiden we in elk geval de ISO 19107-geometrietypen uit onderstaande tabel.
 
@@ -36,29 +38,19 @@ ISO 19107 biedt een aantal basisgeometrieën om een individueel object uit de we
 | Vlak     | GM_Surface      | GM_MultiSurface    |
 | Volume   | GM_Solid        | GM_MultiSolid      |
 
-
 De toepassing van de ISO 19107-geometrietypen, zorgt er meteen voor dat het geometrietype helder is, de coördinaten kunnen worden opgenomen én het coördinatenstelsel kan worden opgenomen.
 
-Het ISO 19107 _spatial schema_ stelt twee criteria centraal: _data-complexiteit_ en _dimensionaliteit_.
+Verder eist het EMSO [aansluiting op ISO 19125](https://docs.geostandaarden.nl/disgeo/emso/#:~:text=Hierbij%20is%20voor%20geometrie%20aansluiting%20op%20Simple%20Features%20(ISO19125)%20voorgeschreven) Simple Features. Deze standaard maakt een selectie uit het ISO 19107 geometriemodel. Het neemt daaruit alleen de meest gebruikelijke geometrietypen over. 
 
-<aside class="issue">
-   Verwijzen naar document dat dit beschrijft. Niet volledige uitleg hier overnemen. In elk geval afbeelding niet opnemen.
-</aside>
+<blockquote cite="https://docs.geostandaarden.nl/disgeo/emso/#:~:text=De%20SOR%20hanteert,naar%203D%20geometrie.">
+   <q><i>
+      De SOR hanteert altijd expliciete geometrie en geen impliciete geometrie (zoals geparametriseerde geometriebeschrijvingen die in CAD/BIM voorkomen). Hiermee kunnen namelijk betere analyses en kwaliteitscontroles (zoals topologische controles) worden uitgevoerd en 2D geometrie worden ‘opgetrokken’ naar 3D geometrie.
+   </i></q>
+</blockquote>
 
-De handreiking Geometrie in model en GML [[gimeg]] legt inhoudelijk uit hoe het geometriemodel uit ISO 19107 [[iso-19107-2019]] kan worden toegepast en wat het geldende Nederlands profiel is (i.e. welke selectie is gemaakt uit de mogelijke geometrietypen). 
+Simple Features gebruikt geometrietypen uit de veel uitgebreidere standaard ISO 19107.
 
-Een eis uit [[EMSO]] is: 
-> "_aansluiting op Simple Features (ISO 19125)_"
-
-Simple Features maakt een selectie uit het ISO 19107 geometriemodel. Het neemt daaruit alleen de meest gebruikelijke geometrietypen over. 
-
-<aside class="issue">
-   <b>ISO 19125</b> definieert een model voor <b>2 dimensionale </b> geometrietypen. <b>3D geometrie is uitgesloten van deze standaard</b>. In EMSO wordt echter wel een behoefte aan 3D geometrie geformuleerd.
-</aside>
-
-We hanteren dus Simple Features (ISO 19125) _+ een aantal aanvullingen voor zover nodig, waarschijnlijk in ieder geval voor bogen en volumes._
-
-Simple Features gebruikt zoals gezegd geometrietypen uit de veel uitgebreidere standaard ISO 19107, waarin het volledige geometriemodel gedefinieerd is. De typen uit dit model hanteren we doorgaans als 'black box' typen of interfaces. Als achtergrondinformatie beschrijven we hier kort wat het geometriemodel van ISO 19107 inhoudt. 
+De typen uit dit model hanteren we doorgaans als `«Interface»`. Als achtergrondinformatie beschrijven we hier kort wat het geometriemodel van ISO 19107 inhoudt. 
 
 <!-- <figure>
     <img src="media/iso19107-geometry.png" alt="ISO 19107 Geometry"/>
@@ -91,11 +83,15 @@ Het geometrietype wordt aangegeven door keuze van het juiste type uit het ISO 19
 
 ### Dimensies
 
+<aside class="issue">
+   <b>ISO 19125</b> definieert een model voor <b>2 dimensionale </b> geometrietypen. <b>3D geometrie is uitgesloten van deze standaard</b>. In EMSO wordt echter wel een behoefte aan 3D geometrie geformuleerd.
+</aside>
+
 <aside class="note">
    Hier verdergaan met schrijven.
 </aside>
 
-
+We hanteren dus Simple Features (ISO 19125) _+ een aantal aanvullingen voor zover nodig, waarschijnlijk in ieder geval voor bogen en volumes._
 
 ### Coordinaatreferentiesystemen
 
