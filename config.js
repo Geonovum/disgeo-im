@@ -234,6 +234,14 @@ var respecConfig =
 
 // onderstaande lijst is een kopie van localBiblio document generieke onderwerpen
       
+    "GML3.3":
+      {
+        title:      "OGC® Geography Markup Language (GML) - Extended schemas and encoding rules ",
+        href:       "https://portal.ogc.org/files/?artifact_id=46568",
+        status:     "International standard",
+        date:       "2012 –02-07",
+        publisher:  "ISO/IEC",
+      },
     "MODPR":
       {
         title:      "Modelleerprincipes samenhangende objectenregistratie",
@@ -265,6 +273,22 @@ var respecConfig =
         publisher:  "ISO",
         date:       "2016-12",
       },
+    "ISO-25012":
+      {
+        title:      "Software engineering — Software product Quality Requirements and Evaluation (SQuaRE) — Data quality model",
+        href:       "https://www.iso.org/standard/35736.html",
+        status:     "Published",
+        date:       "2008-12",
+        publisher:  "ISO/IEC",
+      },
+    "ISO-19156-2021": 
+      {
+        title: "Geographic information — Observations, measurements and samples",
+        href: "https://www.iso.org/standard/82463.html", 
+        status: "DIS", 
+        publisher: "ISO",
+        date: "2021-11-15",
+      },
     "NL-profiel-ISO-19115":
       {
         title:      "Nederlands metadata profiel op ISO 19115 voor geografie",
@@ -274,6 +298,14 @@ var respecConfig =
         date:       "30 juni 2020",
         version:    "2.1.0",
       },
+    "ISO-19107-2019":
+      {
+        title: "Geographic information — Spatial schema",
+        href: "https://www.iso.org/standard/66175.html", 
+        status: "Definitief", 
+        publisher: "ISO",
+        date: "2019-12",
+      },
     "DiSGeo-Arch":
       {
         title:      "DiS Geo: Architectuurbeschrijving Voorzieningen Samenhangende Objectenregistratie",
@@ -281,22 +313,6 @@ var respecConfig =
         status:     "Consultatieversie",
         date:       "2020-10-05",
         publisher:  "Geonovum",
-      },
-    "ISO-25012":
-      {
-        title:      "Software engineering — Software product Quality Requirements and Evaluation (SQuaRE) — Data quality model",
-        href:       "https://www.iso.org/standard/35736.html",
-        status:     "Published",
-        date:       "2008-12",
-        publisher:  "ISO/IEC",
-      },
-    "GML3.3":
-      {
-        title:      "OGC® Geography Markup Language (GML) - Extended schemas and encoding rules ",
-        href:       "https://portal.ogc.org/files/?artifact_id=46568",
-        status:     "International standard",
-        date:       "2012 –02-07",
-        publisher:  "ISO/IEC",
       },
     "NEN3610-2021-ontw":
       {
@@ -314,20 +330,12 @@ var respecConfig =
         publisher: "Geonovum",
         date: "2021-04-20"
       },
-    "gimeg":
+    "GIMEG":
       {
         href: "https://docs.geostandaarden.nl/nen3610/gimeg",
         publisher: "Geonovum", 
         authors: ["Linda van den Brink", "Paul Janssen", "Wilko Quak",],
         title: "Geometrie in model en GML",
-      },
-    "iso-19107-2019":
-      {
-        title: "Geographic information — Spatial schema",
-        href: "https://www.iso.org/standard/66175.html", 
-        status: "Definitief", 
-        publisher: "ISO",
-        date: "2019-12",
       },
     "gebruik-crs": 
       {
@@ -336,14 +344,6 @@ var respecConfig =
         status: "Vastgestelde versie",
         publisher: "Geonovum",
         date: "2022-03-14",
-      },
-    "iso-19156-2021": 
-      {
-        title: "Geographic information — Observations, measurements and samples",
-        href: "https://www.iso.org/standard/82463.html", 
-        status: "DIS", 
-        publisher: "ISO",
-        date: "2021-11-15",
       },
 
   },
