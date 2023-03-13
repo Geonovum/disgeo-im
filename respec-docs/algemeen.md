@@ -5,9 +5,15 @@
 <aside class="note">
    <b>Aantekeningen EMSO</b><br>
    <ul>
-      <li><a href="https://docs.geostandaarden.nl/disgeo/emso/#geometrisch" target="_blank" rel="noopener noreferrer">2.5.3 Geometrisch</li>
-      <li><a href="https://docs.geostandaarden.nl/disgeo/emso/#aspecten-van-geometrie" target="_blank" rel="noopener noreferrer">3.2 Ascpecten van geometrie</li>
-      <li><a href="https://docs.geostandaarden.nl/disgeo/emso/#registratieve-ruimten" target="_blank" rel="noopener noreferrer">7 registratieve ruimten</li>
+      <li>
+         <a href="https://docs.geostandaarden.nl/disgeo/emso/#geometrisch" target="_blank" rel="noopener noreferrer">2.5.3 Geometrisch</a>
+      </li>
+      <li>
+         <a href="https://docs.geostandaarden.nl/disgeo/emso/#aspecten-van-geometrie" target="_blank" rel="noopener noreferrer">3.2 Ascpecten van geometrie</a>
+      </li>
+      <li>
+         <a href="https://docs.geostandaarden.nl/disgeo/emso/#registratieve-ruimten" target="_blank" rel="noopener noreferrer">7 registratieve ruimten</a>
+      </li>
    </ul>
 </aside>
 
