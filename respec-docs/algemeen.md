@@ -29,7 +29,8 @@ Voor de vastlegging van geometrieën gelden een aantal belangrijke principes die
  - Metamodel Informatie Modellering 1.1.1 [[MIM]]
  - Raamwerk van geo-standaarden 3.0 [[Raamwerk-Geo]]
  - Basismodel Geo-informatie [[NEN3610-2022]]
- - ISO-19107-2003: Geographic information – Spatial schema [[iso-19107-2003]]
+ - ISO-19107-2003: Geographic information – Spatial schema [[ISO-19107-2003]]
+ - ISO-19125-2004: Geographic information — Simple feature access [[ISO-19125]]
  - Modelleerprincipes samenhangende objectenregistratie [[disgeo-mod]]
  - Eisen aan model samenhangende objectenregistratie [[EMSO]]
  - Geometrie in Model en GML [[GIMEG]]
@@ -298,7 +299,7 @@ Omdat dit vaak omvangrijke instructies zijn, zijn ze nu meestal in tekst uitgesc
    Dit onderwerp is al verder uitgewerkt in modelleerprincipes? Kijk ook naar deze <a href="https://github.com/Geonovum/disgeo-im/blob/main/docs/thema/bestuurlijke-gebieden/benaming-relaties.md">notitie over ruimtelijke en administratieve relaties in NEN3610:2022</a>.
 </aside>
 
-Voor ruimtelijke relaties tussen de objecten kunnen we gebruik maken van de topologische relaties zoals gedefinieerd in de Simple Features standaard [[iso-19125-1-2004]] en aangeraden in [[NEN3610-2021-ontw]] en [[sdw-bp]]. Deze relaties zijn geïmplementeerd in veel geografische softwareomgevingen en ook in GeoSPARQL: 
+Voor ruimtelijke relaties tussen de objecten kunnen we gebruik maken van de topologische relaties zoals gedefinieerd in de Simple Features standaard [[ISO-19125]] en aangeraden in [[NEN3610-2021-ontw]] en [[sdw-bp]]. Deze relaties zijn geïmplementeerd in veel geografische softwareomgevingen en ook in GeoSPARQL: 
 
 - **`Equals`** - gelijk
 - **`Disjoint`** - disjunct (geen enkel punt gemeen)
