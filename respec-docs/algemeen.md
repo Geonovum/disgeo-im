@@ -17,12 +17,42 @@
    </ul>
 </aside>
 
+<aside class="note">
+   <p><strong>Nog toevoegen</strong></p>
+   <p><b>Vastlegging geometrie</b>:<i> Geometrie wordt hierbij in de SOR vastgelegd als een eigenschap van een object en representeert daarmee de locatie van een object. Er is één uitzondering in de SOR: alleen nummeraanduiding heeft via het genummerde object een ligging en heeft daarmee geen eigenschap geometrie.</i></p>
+   <p><b>Dimensies</b>:<i> Indirecte beschrijvingen van 3D (middels het vastleggen van beschrijvende eigenschappen als Hoogte of Relatieve hoogteligging in combinatie met een 2D geometrie) vallen niet onder de noemer 3D geometrie. Relatieve hoogteliggingen kunnen zo nodig ten behoeve van informatieproducten worden afgeleid.</i></p>
+   <p><b>CRS</b>:<i>Volgen regels uit NEN3610 voor gebruik crs: ieder geom moet voorzien zijn van verwijzing naar crs waarin coords zijn opgenomen.</i></p>
+   <p><b>CRS</b>:<i>RDNAP-crs gehanteerd als crs. Het RD-stelsel is gedefinieerd ten opzichte van het ETRS89. Hiervoor geldt dat de gebruikte horizontale datum Bessel 1841 is en het coördinaatsysteem de stereografische projectie. Als verticale datum wordt het NAP-vlak gebruikt. RDNAPTRANS™ is de officiële en nauwkeurige transformatie tussen het coördinatensysteem van de Rijksdriehoeksmeting (RD) en het Normaal Amsterdams Peil (NAP) enerzijds en het European Terrestrial Reference System 1989 (ETRS89) anderzijds.</i></p>
+   <p><b>Nauwkeurigheid</b>:<i>Coördinaten opgenomen bij een geometrie worden standaard uitgewisseld met een getalsnauwkeurigheid van 1 mm of het equivalent daarvan in graden. Voor RD en NAP komt dat overeen met de volgende nauwkeurigheden:
+      <ul>
+         <li>RD in meters 3 decimalen (1 mm)</li>
+         <li>NAP-hoogte in meters 3 decimalen (1 mm)</li>
+         <li>Alles wat nauwkeuriger is wordt afgerond op deze nauwkeurigheid van 3 decimalen. Afronding is volgens de volgende regel: <code>0.0015 ≈ 0.002</code> en <code>0.0014 ≈ 0.001</code>.</li>
+      </ul>
+   </i></p>
+   <p><b>Topologie</b>:<i>Het begrip maaiveld als een referentielaag (met de relatieve hoogte waarde “nul”) waarin veruit de meeste objectgeometrieën voorkomen, wordt hierbij minder relevant. In de praktijk blijken er vanuit verschillende perspectieven namelijk andere behoeften te zijn voor wat betreft maaiveld. Het is belangrijker om ervoor te zorgen dat objecten die zich in de werkelijkheid op een bepaalde wijze tot elkaar verhouden (bijvoorbeeld een verharding ligt bovenop een overbrugging) ook in de registratie op deze wijze tot elkaar verhouden (bijvoorbeeld dat uit de z-coördinaten van de verharding en de overbrugging blijkt dat de verharding bovenop de overbrugging ligt). De exacte uitwerking van deze relaties in topologie-regels zal later in het traject verder worden uitgewerkt. Daarnaast is het van belang dat er op elke fysieke locatie in de werkelijkheid (elke x,y-coördinaat) altijd tenminste een reëel object aanwezig is (water, begroeiing, gebouw, verharding, kunstwerk, constructies of onbepaald terrein).</i></p>
+   <p><b>Topologie - ontwerprincipes</b> (samenvatting):<i> 
+      <ul>
+         <li>De reële objecten in de SOR bedekken met hun x,y geometrie het volledige grondgebied van Nederland</li>
+         <li>Geometrieën van objecten kunnen boven elkaar liggen</li>
+         <li>Geometrieën van objecten kunnen elkaar uitsluiten</li>
+         <li>Functionele ruimten zijn niet landsdekkend en mogen elkaar overlappen</li>
+         <li>De SOR kent voor alle registratieve en geografische ruimten een 2D geometrie</li>
+         <li>Geografische ruimten zijn niet landsdekkend en mogen elkaar overlappen</li>
+      </ul>
+   </i></p>
+</aside>
+
 Voor de representatie van de _locatie_, _oriëntatie_ en _vorm_ van een object uit de werkelijkheid, gebruiken informatiemodellen geometrieën. De dimensie van een representatie variëert van nuldimensionaal (0D) tot driedimensionaal (3D). Objecten worden altijd geplaatst in een tweedimensionele (2D), of driedimensionele (3D) ruimte. Het informatiemodel DiSGeo gebruikt gestandaardiseerde geometrietypen uit ISO 19107:2003. Dit voorziet zowel in de opname van de coördinaten van de geometrie, als van het coördinaten<i>stelsel</i>. Tot slot heeft een geometrische representatie ook kwaliteitskenmerken. Het informatiemodel DiSGeo onderscheid in elk geval informatie over de _nauwkeurigheid_ en de _inwinregels_. Samengevat legt het informatiemodel de volgende informatie over een geometrie vast:
- 
+
  - Type
  - Dimensie
  - Coordinaatreferentiesysteem (CRS)
  - Kwaliteitskenmerken (o.a. nauwkeurigheid, inwinregels en topologische regels)
+
+<aside class="note">
+   Aan dit lijstje nog topologische/ruimtelijke relaties toevoegen?
+</aside>
 
 Voor de vastlegging van geometrieën gelden een aantal belangrijke principes die volgen uit verschillende standaarden en initiatieven. De volgende documenten zijn hierin leidend:
 
