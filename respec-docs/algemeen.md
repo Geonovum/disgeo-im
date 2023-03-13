@@ -6,13 +6,13 @@
    <b>Aantekeningen EMSO</b><br>
    <ul>
       <li>
-         <a href="https://docs.geostandaarden.nl/disgeo/emso/#geometrisch" target="_blank" rel="noopener noreferrer">2.5.3 Geometrisch</a>
+         <a href="https://docs.geostandaarden.nl/disgeo/emso/#geometrisch" target="_blank" rel="noopener noreferrer">2.5.3 Geometrisch</a>. Hierover misschien enkele verduidelijkende zinnen overnemen. Essentie in huidige stuk afgedekt.
       </li>
       <li>
-         <a href="https://docs.geostandaarden.nl/disgeo/emso/#aspecten-van-geometrie" target="_blank" rel="noopener noreferrer">3.2 Ascpecten van geometrie</a>
+         <a href="https://docs.geostandaarden.nl/disgeo/emso/#aspecten-van-geometrie" target="_blank" rel="noopener noreferrer">3.2 Ascpecten van geometrie</a>. In dit hoofdstuk staan een aantal belangrijke zaken. Wel uitzoeken tussen wat relevant is voor Bestuurlijke Gebieden.
       </li>
       <li>
-         <a href="https://docs.geostandaarden.nl/disgeo/emso/#registratieve-ruimten" target="_blank" rel="noopener noreferrer">7 registratieve ruimten</a>
+         <a href="https://docs.geostandaarden.nl/disgeo/emso/#registratieve-ruimten" target="_blank" rel="noopener noreferrer">7 registratieve ruimten</a>. Hier staat concreet per object beschreven hoe de geometrie wordt vastgelegd. Waarschijnlijk zit deze al informatie al in het hoofdstuk Gegevensdefinitie. Zou nog wel een algemene opmerking kunnen opnpemen dat BG alleen 2D worden vastgelegd.
       </li>
    </ul>
 </aside>
