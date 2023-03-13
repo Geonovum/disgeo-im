@@ -11,9 +11,6 @@
    </ul>
 </aside>
 
-<a href="https://www.freecodecamp.org/" target="_blank" rel="noopener noreferrer">freeCodeCamp</a>
-
-
 <aside class="issue">
    LET OP: in het EMSO staat nog meer over geometrie dan hier nu is opgenomen!
 </aside>
