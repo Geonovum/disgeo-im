@@ -2,6 +2,18 @@
 
 ## Geometrie
 
+<aside class="note">
+   <b>Aantekeningen EMSO</b><br>
+   <ul>
+      <li><a href="https://docs.geostandaarden.nl/disgeo/emso/#geometrisch" target="_blank" rel="noopener noreferrer">2.5.3 Geometrisch</li>
+      <li><a href="https://docs.geostandaarden.nl/disgeo/emso/#aspecten-van-geometrie" target="_blank" rel="noopener noreferrer">3.2 Ascpecten van geometrie</li>
+      <li><a href="https://docs.geostandaarden.nl/disgeo/emso/#registratieve-ruimten" target="_blank" rel="noopener noreferrer">7 registratieve ruimten</li>
+   </ul>
+</aside>
+
+<a href="https://www.freecodecamp.org/" target="_blank" rel="noopener noreferrer">freeCodeCamp</a>
+
+
 <aside class="issue">
    LET OP: in het EMSO staat nog meer over geometrie dan hier nu is opgenomen!
 </aside>
