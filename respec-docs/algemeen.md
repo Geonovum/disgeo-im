@@ -109,6 +109,10 @@ Het [[EMSO]] geeft in hoofdstuk 5 tot en met 8 per geo-informatieobject aan welk
    Heeft het meerwaarde om in het informatiemodel op te nemen in welk CRS een geometrie ingewonnen moet worden? Dat zou een metadata-aspect kunnen zijn net zoals nauwkeurigheidseis.
 </aside>
 
+<aside class="issue">
+   Door de toepassing van iso-19107 biedt je meteen ruimte (waar?) voor het opnemen van het coordinatenstelsel (zie: <a href="https://geonovum.github.io/disgeo-im/#geometrie:~:text=Het%20informatiemodel%20DiSGeo%20gebruikt%20gestandaardiseerde%20geometrietypen%20uit%20ISO%2019107%3A2003.%20Dit%20voorziet%20zowel%20in%20de%20opname%20van%20de%20co%C3%B6rdinaten%20van%20de%20geometrie%2C%20als%20van%20het%20co%C3%B6rdinatenstelsel.">hier</a>)
+</aside>
+
 <aside class="note">
    Onderstaande tekst komt uit doc gen. ondw.
 </aside>
