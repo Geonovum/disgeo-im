@@ -306,6 +306,14 @@ var respecConfig =
         publisher: "ISO",
         date: "2019-12",
       },
+    "ISO-19125":
+      {
+        title: "Geographic information — Simple feature access — Part 1: Common architecture"
+        href: "https://www.iso.org/standard/40114.html"
+        status: "Published"
+        publisher: "ISO/TC 211"
+        date: "2004-11" 
+      },
     "DiSGeo-Arch":
       {
         title:      "DiS Geo: Architectuurbeschrijving Voorzieningen Samenhangende Objectenregistratie",
@@ -345,7 +353,6 @@ var respecConfig =
         publisher: "Geonovum",
         date: "2022-03-14",
       },
-
   },
   postProcess:[custGHPG],   //-- Optioneel voor een multi document repository
 
