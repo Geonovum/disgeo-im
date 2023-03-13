@@ -308,11 +308,11 @@ var respecConfig =
       },
     "ISO-19125":
       {
-        title: "Geographic information — Simple feature access — Part 1: Common architecture"
-        href: "https://www.iso.org/standard/40114.html"
-        status: "Published"
-        publisher: "ISO/TC 211"
-        date: "2004-11" 
+        title: "Geographic information — Simple feature access — Part 1: Common architecture",
+        href: "https://www.iso.org/standard/40114.html",
+        status: "Published",
+        publisher: "ISO/TC 211",
+        date: "2004-11",
       },
     "DiSGeo-Arch":
       {
