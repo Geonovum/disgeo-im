@@ -3,27 +3,12 @@
 ## Geometrie
 
 <aside class="note">
-   <b>Aantekeningen EMSO</b><br>
-   <ul>
-      <li>
-         <a href="https://docs.geostandaarden.nl/disgeo/emso/#geometrisch" target="_blank" rel="noopener noreferrer">2.5.3 Geometrisch</a>. Hierover misschien enkele verduidelijkende zinnen overnemen. Essentie in huidige stuk afgedekt.
-      </li>
-      <li>
-         <a href="https://docs.geostandaarden.nl/disgeo/emso/#aspecten-van-geometrie" target="_blank" rel="noopener noreferrer">3.2 Ascpecten van geometrie</a>. In dit hoofdstuk staan een aantal belangrijke zaken. Wel uitzoeken tussen wat relevant is voor Bestuurlijke Gebieden.
-      </li>
-      <li>
-         <a href="https://docs.geostandaarden.nl/disgeo/emso/#registratieve-ruimten" target="_blank" rel="noopener noreferrer">7 registratieve ruimten</a>. Hier staat concreet per object beschreven hoe de geometrie wordt vastgelegd. Waarschijnlijk zit deze al informatie al in het hoofdstuk Gegevensdefinitie. Zou nog wel een algemene opmerking kunnen opnpemen dat BG alleen 2D worden vastgelegd.
-      </li>
-   </ul>
-</aside>
-
-<aside class="note">
    <p><strong>Nog toevoegen</strong></p>
    <p><b>Vastlegging geometrie</b>:<i> Geometrie wordt hierbij in de SOR vastgelegd als een eigenschap van een object en representeert daarmee de locatie van een object. Er is één uitzondering in de SOR: alleen nummeraanduiding heeft via het genummerde object een ligging en heeft daarmee geen eigenschap geometrie.</i></p>
    <p><b>Dimensies</b>:<i> Indirecte beschrijvingen van 3D (middels het vastleggen van beschrijvende eigenschappen als Hoogte of Relatieve hoogteligging in combinatie met een 2D geometrie) vallen niet onder de noemer 3D geometrie. Relatieve hoogteliggingen kunnen zo nodig ten behoeve van informatieproducten worden afgeleid.</i></p>
    <p><b>CRS</b>:<i>Volgen regels uit NEN3610 voor gebruik crs: ieder geom moet voorzien zijn van verwijzing naar crs waarin coords zijn opgenomen.</i></p>
    <p><b>CRS</b>:<i>RDNAP-crs gehanteerd als crs. Het RD-stelsel is gedefinieerd ten opzichte van het ETRS89. Hiervoor geldt dat de gebruikte horizontale datum Bessel 1841 is en het coördinaatsysteem de stereografische projectie. Als verticale datum wordt het NAP-vlak gebruikt. RDNAPTRANS™ is de officiële en nauwkeurige transformatie tussen het coördinatensysteem van de Rijksdriehoeksmeting (RD) en het Normaal Amsterdams Peil (NAP) enerzijds en het European Terrestrial Reference System 1989 (ETRS89) anderzijds.</i></p>
-   <p><b>Nauwkeurigheid</b>:<i>Coördinaten opgenomen bij een geometrie worden standaard uitgewisseld met een getalsnauwkeurigheid van 1 mm of het equivalent daarvan in graden. Voor RD en NAP komt dat overeen met de volgende nauwkeurigheden:
+   <p><b>Nauwkeurigheid</b>:<i>Coördinaten opgenomen bij een geometrie worden standaard uitgewisseld met een getalsnauwkeurigheid van 1 mm of het equivalent daarvan in graden. Voor RD en NAP komt dat overeen met de volgende nauwkeurigheden:</i>
       <ul>
          <li>RD in meters 3 decimalen (1 mm)</li>
          <li>NAP-hoogte in meters 3 decimalen (1 mm)</li>
