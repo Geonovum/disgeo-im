@@ -35,7 +35,9 @@ Voor de vastlegging van geometrieën gelden een aantal belangrijke principes die
  - Eisen aan model samenhangende objectenregistratie [[EMSO]]
  - Geometrie in Model en GML [[GIMEG]]
 
-Per onderdeel verschilt de plek in het model waar de informatie over geometrie vastlegt. Het informatiemodel kent verschillende niveaus: _dataset_-, _object_- en _attribuutniveau_. In het algemeen geldt: hoe generieker de aard van de informatie, hoe hoger het niveau waarop het model dit vastlegt. De volgende paragrafen gaan verder in op de verschillende kenmerken en hoe het model ze vastlegt.
+<!-- Per onderdeel verschilt de plek in het model waar de informatie over geometrie vastlegt. Het informatiemodel kent verschillende niveaus: _dataset_-, _object_- en _attribuutniveau_. In het algemeen geldt: hoe generieker de aard van de informatie, hoe hoger het niveau waarop het model dit vastlegt. -->
+
+De volgende paragrafen gaan verder in op de verschillende kenmerken en hoe het model ze vastlegt.
 
 ### Geometrietypen
 
@@ -72,7 +74,7 @@ _Simple Features_ gebruikt geometrietypen uit de veel uitgebreidere standaard IS
 
 ### Dimensies
 
-Als het gaat om dimensie, is het van belang om onderscheid te maken tussen de termen: **primitieve**, **ruimte** en **model**. Er zijn vier gradaties van primitieven, oplopend van 0D tot en met 3D. Elke hogere graad voegt een nieuwe dimensie toe. Zo staat 0D alleen het primitieve `punt` toe, maar 1D zowel `punt` als `lijn`. 2D voegt daar `vlak` aan toe en 3D `volume`.
+Als het gaat om dimensie, is het van belang om onderscheid te maken tussen de termen: **primitieve**, **ruimte** en **model**. Er zijn vier gradaties van primitieven oplopend van 0D tot en met 3D. Elke hogere graad voegt een nieuwe dimensie toe. Zo staat 0D alleen het primitieve `punt` toe, maar 1D zowel `punt` als `lijn`. 2D voegt daar `vlak` aan toe en 3D `volume`.
 
 <figure id="crs-overview">
    <a href="media/geometrie_dimensies.png" target="_blank" rel="noopener noreferrer">
@@ -90,11 +92,11 @@ Deze primitieven kun je plaatsen in een tweedimensionale of driedimensionale rui
 Het EMSO schrijft voor dat het informatiemodel DiSGeo moet voorsorteren op de mogelijkheid om de [driedimensionale beschrijving van een object](https://docs.geostandaarden.nl/disgeo/emso/#:~:text=waarbij%20de%20vastlegging%20hiervan%20zodanig%20wordt%20vormgegeven%20dat%20de%20driedimensionale%20(3D)%20beschrijving%20van%20een%20object%20kan%20worden%20opgenomen) op te nemen. Per objecttype kan de [wijze van vastlegging](https://docs.geostandaarden.nl/disgeo/emso/#:~:text=Sommige%20objecttypen%20zullen%20worden%20vastgelegd%20in%20de%20vorm%20van%203D%20volumes.%20Andere%20objecttypen%20als%20vlakken%20met%20een%20bepaalde%20hoogteligging.%20Voor%20bepaalde%20objecten%20met%20een%20minimale%20omvang%20kan%20geometrische%20vastlegging%20in%20de%20vorm%20van%20een%20enkel%20co%C3%B6rdinatendrietal%20(x%2C%20y%20en%20z)%20worden%20vastgelegd%20(puntobject)) verschillen. In sommige gevallen representeert een _volume_ het object het beste. In andere gevallen volstaat een _punt_, _lijn_ of _vlak_ met hoogteligging. Dit betekent dat het model ruimte moet bieden aan 3D-primitieven in een 3D-ruimte. Het informatiemodel DiSGeo is dus een 3D-model.
 
 <aside class="issue">
-   Dit staat haaks op het uitgangspunt van aansluiting op ISO19125, dat het model beperkt tot een 2D-model. Naast volumes zijn ook bogen hierin niet toegestaan. In de oorspronkelijke tekst stond de zin:
+   <p>Hoe verhoudt dit zich tot het uitgangspunt van aansluiting op <b>ISO-19125</b>, dat het model beperkt tot <b>2D-primitieven</b>?</p>
    <blockquote><i>
       "We hanteren dus Simple Features (ISO 19125) + een aantal aanvullingen voor zover nodig, waarschijnlijk in ieder geval voor bogen en volumes."
    </i></blockquote>
-   Dit lijkt een onjuiste aanname.
+   <p>Naast volumes zijn ook bogen hierin niet toegestaan. In de oorspronkelijke tekst stond de zin:</p>
 </aside>
 
 ### Coordinaatreferentiesystemen
