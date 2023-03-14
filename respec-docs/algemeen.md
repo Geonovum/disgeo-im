@@ -2,7 +2,7 @@
 
 ## Geometrie
 
-<aside class="note">
+<aside class="ednote">
    <p><strong>NOG TOEVOEGEN</strong></p>
    <p><b>Vastlegging geometrie</b>:<i> Geometrie wordt hierbij in de SOR vastgelegd als een eigenschap van een object en representeert daarmee de locatie van een object. Er is één uitzondering in de SOR: alleen nummeraanduiding heeft via het genummerde object een ligging en heeft daarmee geen eigenschap geometrie.</i></p>
    <p><b>Dimensies</b>:<i> Indirecte beschrijvingen van 3D (middels het vastleggen van beschrijvende eigenschappen als Hoogte of Relatieve hoogteligging in combinatie met een 2D geometrie) vallen niet onder de noemer 3D geometrie. Relatieve hoogteliggingen kunnen zo nodig ten behoeve van informatieproducten worden afgeleid.</i></p>
@@ -32,7 +32,7 @@ Voor de representatie van de _locatie_, _oriëntatie_ en _vorm_ van een object u
 
 Tot slot heeft een geometrische representatie ook kwaliteitskenmerken. Het informatiemodel DiSGeo onderscheid in elk geval informatie over de _nauwkeurigheid_ en de _inwinregels_. Samengevat legt het informatiemodel de volgende informatie over een geometrie vast: [Type](#geometrietypen), [Dimensie](#dimensies), [Coordinaatreferentiesysteem (CRS)](#coordinaatreferentiesystemen) en [Kwaliteitskenmerken](#kwaliteit) (o.a. nauwkeurigheid, inwinregels en topologische regels).
 
-<aside class="note">
+<aside class="ednote">
    Aan dit lijstje nog topologische/ruimtelijke relaties toevoegen?
 </aside>
 
@@ -43,13 +43,18 @@ Voor de vastlegging van (informatie over) geometrieën gelden een aantal belangr
  - Basismodel Geo-informatie [[NEN3610-2022]]
  - ISO-19107-2003: Geographic information — Spatial schema [[ISO-19107-2003]]
  - ISO-19125-2004: Geographic information — Simple feature access [[ISO-19125]]
- - Modelleerprincipes samenhangende objectenregistratie [[disgeo-mod]]
+ - Modelleerprincipes Samenhangende Objectenregistratie [[disgeo-mod]]
  - Eisen aan Model Samenhangende Objectenregistratie [[EMSO]]
  - Geometrie in Model en GML [[GIMEG]]
 
 <!-- Per onderdeel verschilt de plek in het model waar de informatie over geometrie vastlegt. Het informatiemodel kent verschillende niveaus: _dataset_-, _object_- en _attribuutniveau_. In het algemeen geldt: hoe generieker de aard van de informatie, hoe hoger het niveau waarop het model dit vastlegt. -->
 
-De volgende paragrafen gaan verder in op de verschillende kenmerken en hoe het model ze vastlegt.
+De volgende paragrafen gaan verder in op de verschillende kenmerken, bijbehorende eisen en hoe het model ze vastlegt.
+
+De volgende paragrafen beschrijven welke eisen op het informatiemodel disgeo van toepassing zijn en hoe die concreet worden vastgelegd. Uitleg over de eisen/principes zelf, zijn niet opgenomden. we verwijzine hiervoor naar de documentatie. Indien niet aanwezig en de eis op zichzelf mogelijk onvoldoende helder is, bevat dit hoofdstuk een korte uitleg over de totstandkomming danwel interpretatie van een eis.
+
+
+
 
 ### Geometrietypen
 
@@ -64,15 +69,15 @@ ISO 19107 biedt een aantal basisgeometrieën om een individueel object uit de we
 | Vlak         | `GM_Surface`                | `GM_MultiSurface`           |
 | Volume       | `GM_Solid`                  | `GM_MultiSolid`             |
 
-<aside class="note">
-   Hierbij is het relevant om te definiëren en op schrijven welke varianten toegestaan zijn. Een <code>GM_Surface</code> of <code>GM_Curve</code> heeft nog allerlei mogelijke verschijningsvormen in het geometriemodel. Voor de uitwisseling en het gebruik is het handig om dit in te perken.
+<aside class="issue">
+   Hierbij is het relevant om te definiëren en op te schrijven welke varianten toegestaan zijn. Een <code>GM_Surface</code> of <code>GM_Curve</code> heeft nog allerlei mogelijke verschijningsvormen in het geometriemodel. Voor de uitwisseling en het gebruik is het handig om dit in te perken.
 </aside>
 
 De toepassing van de ISO 19107-geometrietypen, zorgt ervoor dat het geometrietype helder is en dat zowel de coördinaten als het coördinatenstelsel kunnen worden opgenomen. In het bijzonder eist het [[EMSO]] [aansluiting op ISO 19125](https://docs.geostandaarden.nl/disgeo/emso/#:~:text=Hierbij%20is%20voor%20geometrie%20aansluiting%20op%20Simple%20Features%20(ISO19125)%20voorgeschreven) Simple Features. Deze standaard maakt een selectie uit het ISO 19107 geometriemodel. Het neemt daaruit alleen de meest gebruikelijke geometrietypen over. 
 
 <blockquote cite="https://docs.geostandaarden.nl/disgeo/emso/#:~:text=De%20SOR%20hanteert,naar%203D%20geometrie.">
    <i>
-      "De SOR hanteert altijd expliciete geometrie en geen impliciete geometrie (zoals geparametriseerde geometriebeschrijvingen die in CAD/BIM voorkomen). Hiermee kunnen namelijk betere analyses en kwaliteitscontroles (zoals topologische controles) worden uitgevoerd en 2D geometrie worden ‘opgetrokken’ naar 3D geometrie."
+      "De SOR hanteert altijd expliciete geometrie en geen impliciete geometrie, zoals geparametriseerde geometriebeschrijvingen die in CAD- of BIM-modellen voorkomen. Hiermee kunnen namelijk betere analyses en kwaliteitscontroles worden uitgevoerd, zoals topologische controles.  2D geometrie worden ‘opgetrokken’ naar 3D geometrie."
    </i>
 </blockquote>
 
@@ -104,11 +109,11 @@ Deze primitieven kun je plaatsen in een tweedimensionale of driedimensionale rui
 Het EMSO schrijft voor dat het informatiemodel DiSGeo moet voorsorteren op de mogelijkheid om de [driedimensionale beschrijving van een object](https://docs.geostandaarden.nl/disgeo/emso/#:~:text=waarbij%20de%20vastlegging%20hiervan%20zodanig%20wordt%20vormgegeven%20dat%20de%20driedimensionale%20(3D)%20beschrijving%20van%20een%20object%20kan%20worden%20opgenomen) op te nemen. Per objecttype kan de [wijze van vastlegging](https://docs.geostandaarden.nl/disgeo/emso/#:~:text=Sommige%20objecttypen%20zullen%20worden%20vastgelegd%20in%20de%20vorm%20van%203D%20volumes.%20Andere%20objecttypen%20als%20vlakken%20met%20een%20bepaalde%20hoogteligging.%20Voor%20bepaalde%20objecten%20met%20een%20minimale%20omvang%20kan%20geometrische%20vastlegging%20in%20de%20vorm%20van%20een%20enkel%20co%C3%B6rdinatendrietal%20(x%2C%20y%20en%20z)%20worden%20vastgelegd%20(puntobject)) verschillen. In sommige gevallen representeert een _volume_ het object het beste. In andere gevallen volstaat een _punt_, _lijn_ of _vlak_ met hoogteligging. Dit betekent dat het model ruimte moet bieden aan 3D-primitieven in een 3D-ruimte. Daarom is het **informatiemodel DiSGeo** is een **3D-model**.
 
 <aside class="issue">
-   <p>Hoe verhoudt dit zich tot het uitgangspunt van aansluiting op <b>ISO-19125</b>, dat het model beperkt tot <b>2D-primitieven</b>?</p>
+   <p>Hoe verhoudt dit zich tot het uitgangspunt van aansluiting op <b>ISO-19125</b>, dat het model beperkt tot <b>2D-primitieven</b>? In de oorspronkelijke tekst stond de zin:</p>
    <blockquote><i>
       "We hanteren dus Simple Features (ISO 19125) + een aantal aanvullingen voor zover nodig, waarschijnlijk in ieder geval voor bogen en volumes."
    </i></blockquote>
-   <p>Naast volumes zijn ook bogen hierin niet toegestaan. In de oorspronkelijke tekst stond de zin:</p>
+   <p>Naast volumes zijn ook bogen hierin niet toegestaan.</p>
 </aside>
 
 <p><strong>Bestuurlijke gebieden</strong></p>
