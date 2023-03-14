@@ -107,6 +107,8 @@ Deze primitieven kun je plaatsen in een tweedimensionale of driedimensionale rui
 
 Het EMSO schrijft voor dat het informatiemodel DiSGeo moet voorsorteren op de mogelijkheid om de [driedimensionale beschrijving van een object](https://docs.geostandaarden.nl/disgeo/emso/#:~:text=waarbij%20de%20vastlegging%20hiervan%20zodanig%20wordt%20vormgegeven%20dat%20de%20driedimensionale%20(3D)%20beschrijving%20van%20een%20object%20kan%20worden%20opgenomen) op te nemen. Per objecttype kan de [wijze van vastlegging](https://docs.geostandaarden.nl/disgeo/emso/#:~:text=Sommige%20objecttypen%20zullen%20worden%20vastgelegd%20in%20de%20vorm%20van%203D%20volumes.%20Andere%20objecttypen%20als%20vlakken%20met%20een%20bepaalde%20hoogteligging.%20Voor%20bepaalde%20objecten%20met%20een%20minimale%20omvang%20kan%20geometrische%20vastlegging%20in%20de%20vorm%20van%20een%20enkel%20co%C3%B6rdinatendrietal%20(x%2C%20y%20en%20z)%20worden%20vastgelegd%20(puntobject)) verschillen. In sommige gevallen representeert een _volume_ het object het beste. In andere gevallen volstaat een _punt_, _lijn_ of _vlak_ met hoogteligging. Dit betekent dat het model ruimte moet bieden aan 3D-primitieven in een 3D-ruimte. Daarom is het **informatiemodel DiSGeo** is een **3D-model**.
 
+Hieruit volgt dat het informatiemodel DiSGeo in zijn totaliteit beschouwd moet worden als een 3D-model. Het verschilt per onderwerp of een uitwerking in 2D (bijv. Bestuurlijk Gebied), 2.5D (bijv. Verharding) danwel 3D(bijv. Gebouw) nodig is.
+
 <aside class="issue">
    <p>Hoe verhoudt dit zich tot het uitgangspunt van aansluiting op <b>ISO-19125</b>, dat het model beperkt tot <b>2D-primitieven</b>? In de oorspronkelijke tekst stond de zin:</p>
    <blockquote><i>
@@ -138,8 +140,18 @@ Voor het informatiemodel DiSGeo zijn in de basis de volgende vier typen coördin
 - Nederlandse Stelsel van de Rijksdriehoeksmeting (**RD**)
 - Linear Reference Systems (**LRS**), zie: [[ISO-19148]], [INSPIRE](https://inspire.ec.europa.eu/id/document/tg/tn), [Richtlijn BPS](https://wetten.overheid.nl/BWBR0015962/2003-12-05), [WKD – NWB](https://www.nationaalwegenbestand.nl/application/files/6516/6391/7355/Gebruikersinformatie_Wegkenmerkendatabase_WKD.pdf)
 
+Deze paragraaf ligt verder toe welk coördinaatreferentiesysteem voor welke situatie van toepassing is. Dit is afhankelijk van verschillende factoren: dimensionaliteit van de gebruikte primitieven, dimensionaliteit van de ruimte en het toepassingsgebied. 
+
+De dimensionaliteit van primitieven en ruimte zijn in de vorige twee paragrafen toegelicht. Hieruit volgt dat het informatiemodel DiSGeo in zijn totaliteit beschouwd moet worden als een 3D-model. Het verschilt per onderwerp of een uitwerking in 2D (bijv. Bestuurlijk Gebied), 2.5D (bijv. Verharding) danwel 3D(bijv. Gebouw) nodig is.
+
+Toch verschilt per onderwerp/thema de ... 
+
 Linear Reference Systems zijn specifiek relevant voor transportnetwerken (weg en spoor). Die zijn in dit stadium nog niet uitgewerkt en op Bestuurlijke Gebieden niet van toepassing. 
 
+
+Onderscheid maken tussen zee en land
+
+Bestuurlijke gebieden
 
 
 
