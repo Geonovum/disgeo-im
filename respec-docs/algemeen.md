@@ -117,26 +117,48 @@ Het EMSO schrijft voor dat het informatiemodel DiSGeo moet voorsorteren op de mo
 
 <p><strong>Bestuurlijke gebieden</strong></p>
 
-Het [[EMSO]] geeft in hoofdstuk 5 tot en met 8 per geo-informatieobject aan welk geometrietype van toepassing is. Voor registratieve ruimten, (met o.a. bestuurlijke gebieden) gaat dit om `GM_Surface` (_vlak_) of `GM_MultiSurface` (_multi-vlak_). Het hoofdstuk [Gegevensdefinitie](#cat) van dit document beschrijft de geo-informatieobjecttypen in detail.
+Het [[EMSO]] geeft in hoofdstuk 5 tot en met 8 per geo-informatieobject aan welk geometrietype van toepassing is. Registratieve ruimten (waar bestuurlijke gebieden onderdeel van zijn) worden tweedimensionaal vastgelegd. Hiervoor zijn de geometrietypenb `GM_Surface` (_vlak_) of `GM_MultiSurface` (_multi-vlak_) geschikt. Het hoofdstuk [Gegevensdefinitie](#cat) van dit document beschrijft per geo-informatieobjecttype in detail hoe het informatiemodel DiSGeo dit vormgeeft.
 
 ### Coordinaatreferentiesystemen
 
-<aside class="issue">
+<!-- <aside class="issue">
    Heeft het meerwaarde om in het informatiemodel op te nemen in welk CRS een geometrie ingewonnen moet worden? Dat zou een metadata-aspect kunnen zijn net zoals nauwkeurigheidseis.
 </aside>
 
 <aside class="issue">
    Door de toepassing van iso-19107 biedt je meteen ruimte (waar?) voor het opnemen van het coordinatenstelsel (zie: <a href="https://geonovum.github.io/disgeo-im/#geometrie:~:text=Het%20informatiemodel%20DiSGeo%20gebruikt%20gestandaardiseerde%20geometrietypen%20uit%20ISO%2019107%3A2003.%20Dit%20voorziet%20zowel%20in%20de%20opname%20van%20de%20co%C3%B6rdinaten%20van%20de%20geometrie%2C%20als%20van%20het%20co%C3%B6rdinatenstelsel.">hier</a>)
-</aside>
+</aside> -->
 
 #### Coordinaatreferentiesystemen (CRS)
 
-Voor DiSGeo/Bestuurlijke Gebieden zijn vier typen coördinatiesystemen relevant:
+Voor het informatiemodel DiSGeo zijn in de basis de volgende vier typen coördinatiesystemen relevant:
 
-- WGS 84 gebaseerd op ITRS, gebruikt voor GPS
-- European Terrestrial Reference System 1989 (ETRS89)
-- Rijksdriehoek systeem (RD)
-- Linear Reference Systems (LRS) (zie ISO 19148:2021, RWS-BPS, NWB, EU INSPIRE)
+- World Geodetic System 1984 (**WGS 84**) gebaseerd op ITRS, gebruikt voor GPS
+- European Terrestrial Reference System 1989 (**ETRS89**)
+- Nederlandse Stelsel van de Rijksdriehoeksmeting (**RD**)
+- Linear Reference Systems (**LRS**), zie: [[ISO-19148]], [INSPIRE](https://inspire.ec.europa.eu/id/document/tg/tn), [Richtlijn BPS](https://wetten.overheid.nl/BWBR0015962/2003-12-05), [WKD – NWB](https://www.nationaalwegenbestand.nl/application/files/6516/6391/7355/Gebruikersinformatie_Wegkenmerkendatabase_WKD.pdf)
+
+Linear Reference Systems zijn specifiek relevant voor transportnetwerken (weg en spoor). Die zijn in dit stadium nog niet uitgewerkt en op Bestuurlijke Gebieden niet van toepassing. 
+
+
+
+
+###### Bestuurlijk gebied
+
+Binnen het thema bestuurlijk gebied bevatten een aantal objecten een geometrie die binnen het Europese deel van Nederland valt. In het informatiemodel zijn deze gebieden geclassificeerd als 'bestuurlijk gebied op land'. Het gaat om de volgende vijf objecten. 
+
+ - Rijksgebied
+ - Gemeentegebied
+ - Provinciegebied
+ - Waterschapsgebied
+ - Veiligheidsregiogebied
+
+#### Bestuurlijk gebied op zee
+
+ - Territoriale Zee
+ - Aansluitende Zone
+ - Exclusieve Economische Zone
+ - Continentaal Plat
 
 <aside class="issue">
    Url opnemen naar bronnen?
@@ -170,22 +192,6 @@ Voor het CRS van **3D-geometrieen** gelden de volgende EPSG-codes:
 | RDNAP    | 7415  | http://www.opengis.net/def/crs/EPSG/9.9.1/7415  |
 | ETRF2000 | 9067  | http://www.opengis.net/def/crs/EPSG/9.9.1/9067  |
 
-###### Bestuurlijk gebied
-
-Binnen het thema bestuurlijk gebied bevatten een aantal objecten een geometrie die binnen het Europese deel van Nederland valt. In het informatiemodel zijn deze gebieden geclassificeerd als 'bestuurlijk gebied op land'. Het gaat om de volgende vijf objecten. 
-
- - Rijksgebied
- - Gemeentegebied
- - Provinciegebied
- - Waterschapsgebied
- - Veiligheidsregiogebied
-
-<!-- #### Bestuurlijk gebied op zee
-
- - Territoriale Zee
- - Aansluitende Zone
- - Exclusieve Economische Zone
- - Continentaal Plat
 
 Voor objecten binnen de EEZ geldt:
 * ETRS89
@@ -196,7 +202,7 @@ Het is nog niet volledig duidelijk welke CRS-en het beste gebruikt kunnen worden
 
 <aside class="issue">
 Uitzoekpunt: de EEZ zone is mogelijk niet het enige disgeo object waarvoor geldt dat RD geen optie is. Wellicht ook de andere bestuurlijke gebieden op zee en wellicht windturbines op zee.
-</aside> -->
+</aside>
 
 ##### Ondersteunde CRS-en bij uitlevering:
 
