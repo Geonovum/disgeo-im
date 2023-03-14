@@ -101,7 +101,7 @@ Als het gaat om dimensie, is het van belang om onderscheid te maken tussen de te
 
 Deze primitieven kun je plaatsen in een tweedimensionale of driedimensionale ruimte. Afhankelijk van de hoogste dimensie van de primitieve, in combinatie met gehanteerde dimensie van de ruimte, is sprake van een 2D-, 2.5D- of 3D-model. Samengevat komt het hierop neer:
 
- - **2D-model**: modelleert met **2D-primitieven** in een **2D-ruimte**;
+ - **2D-model**: modelleert **2D-primitieven** in een **2D-ruimte**;
  - **2.5-model**: modelleert **2D-primitieven** in een **3D-ruimte**;
  - **3D-model**: modelleert **3D-primitieven** in een **3D-ruimte**.
 
