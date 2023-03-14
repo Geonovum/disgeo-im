@@ -131,18 +131,15 @@ Het [[EMSO]] geeft in hoofdstuk 5 tot en met 8 per geo-informatieobject aan welk
 
 #### Coordinaatreferentiesystemen (CRS)
 
-Voor het informatiemodel DiSGeo zijn in de basis de volgende vier typen coördinatiesystemen relevant:
+Deze paragraaf ligt verder toe welk coördinaatreferentiesysteem voor welke situatie van toepassing is. Dit is afhankelijk van verschillende factoren: dimensionaliteit van de gebruikte primitieven, dimensionaliteit van de ruimte en het toepassingsgebied. De dimensionaliteit van primitieven en ruimte zijn in de vorige twee paragrafen toegelicht.
+
+Het toepassingsgebied beschrijft het deel van het van het aardoppervlak waarop het informatiemodel DiSGeo van toepassing is. Dit betreft het Nederlands grondgebied. In het informatiemodel worden alleen objecten opgenomen die gelegen zijn binnen <q>het Europese grondgebied van het Koninkrijk der Nederlanden, inclusief de daarbij behorende <a href="#land-en-zee">territoriale wateren</a></q> en Baarle-Hertog [[EMSO]]. Op basis van deze criteria zijn de volgende vier typen coördinatiesystemen zijn relevant:
 
 - World Geodetic System 1984 (**WGS 84**) gebaseerd op ITRS, gebruikt voor GPS
 - European Terrestrial Reference System 1989 (**ETRS89**)
 - Nederlandse Stelsel van de Rijksdriehoeksmeting (**RD**)
 - Linear Reference Systems (**LRS**), zie: [[ISO-19148]], [INSPIRE](https://inspire.ec.europa.eu/id/document/tg/tn), [Richtlijn BPS](https://wetten.overheid.nl/BWBR0015962/2003-12-05), [WKD – NWB](https://www.nationaalwegenbestand.nl/application/files/6516/6391/7355/Gebruikersinformatie_Wegkenmerkendatabase_WKD.pdf)
 
-Deze paragraaf ligt verder toe welk coördinaatreferentiesysteem voor welke situatie van toepassing is. Dit is afhankelijk van verschillende factoren: dimensionaliteit van de gebruikte primitieven, dimensionaliteit van de ruimte en het toepassingsgebied. De dimensionaliteit van primitieven en ruimte zijn in de vorige twee paragrafen toegelicht. Het toepassingsgebied beschrijft het deel van het van het aardoppervlak waarop het informatiemodel DiSGeo van toepassing is. Dit betreft het Nederland grondgebied. In het informatiemodel worden alleen objecten opgenomen die gelegen zijn binnen het Europese gedeelte van het grondgebied van Nederland ([ontwerpprincipe](https://docs.geostandaarden.nl/disgeo/emso/#grondgebied-nederland:~:text=In%20de%20SOR%20worden%20uitsluitend%20objecten%20opgenomen%20die%20gelegen%20zijn%20binnen%20het%20Europees%20gedeelte%20van%20het%20grondgebied%20van%20Nederland.)).  
-
-Concreet beperkt zich dit tot <q>het Europese grond gebied van het Koninkrijk der Nederlanden inclusief de daarbij behorende territoriale wateren<q> [[EMSO]].
-
-Deze beperken zich tot het Europese grondgebied van het Koninkrijk der Nederlanden inclusief de daarbij behorende territoriale wateren. Een uitzondering hierop betreft de exclaves van het Koninkrijk België op het Nederlandse grondgebied (Baarle Hertog). Ook objecten in deze exclaves worden in de samenhangende objectenregistratie opgenomen. De scope van de samenhangende objectenregistratie wordt voor sommige soorten objecten uitgebreid met het continentaal plat. Hierdoor ontstaat de mogelijkheid om zich daar bevindende objecten (zoals windturbines) op te nemen in de registratie.
 
 Toch verschilt per onderwerp/thema de ... 
 
