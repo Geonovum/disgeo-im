@@ -314,6 +314,14 @@ var respecConfig =
         publisher: "ISO/TC 211",
         date: "2004-11",
       },
+    "ISO-19148": 
+      {
+        title:"ISO 19148:2021 Geographic information — Linear referencing",
+        href: "https://www.iso.org/standard/75150.html",
+        status: "Published",
+        publisher: "ISO/TC 211 Geographic information/Geomatics",
+        date: "2021-04",
+      },
     "DiSGeo-Arch":
       {
         title:      "DiS Geo: Architectuurbeschrijving Voorzieningen Samenhangende Objectenregistratie",
