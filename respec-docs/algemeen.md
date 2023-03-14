@@ -2,8 +2,7 @@
 
 ## Geometrie
 
-<p class="ednote" title="Nog toevoegen">
-   <p><strong>NOG TOEVOEGEN</strong></p>
+<aside class="ednote" title="Onderstaande tekst verwerken in hoofdstuk">
    <p><b>Vastlegging geometrie</b>:<i> Geometrie wordt hierbij in de SOR vastgelegd als een eigenschap van een object en representeert daarmee de locatie van een object. Er is één uitzondering in de SOR: alleen nummeraanduiding heeft via het genummerde object een ligging en heeft daarmee geen eigenschap geometrie.</i></p>
    <p><b>Dimensies</b>:<i> Indirecte beschrijvingen van 3D (middels het vastleggen van beschrijvende eigenschappen als Hoogte of Relatieve hoogteligging in combinatie met een 2D geometrie) vallen niet onder de noemer 3D geometrie. Relatieve hoogteliggingen kunnen zo nodig ten behoeve van informatieproducten worden afgeleid.</i></p>
    <p><b>CRS</b>:<i>Volgen regels uit NEN3610 voor gebruik crs: ieder geom moet voorzien zijn van verwijzing naar crs waarin coords zijn opgenomen.</i></p>
@@ -26,14 +25,14 @@
          <li>Geografische ruimten zijn niet landsdekkend en mogen elkaar overlappen</li>
       </ul>
    </i></p>
-</p>
+</aside>
 
 Voor de representatie van de _locatie_, _oriëntatie_ en _vorm_ van een object uit de werkelijkheid, gebruiken informatiemodellen geometrieën. De dimensie van een representatie variëert van nuldimensionaal (0D) tot driedimensionaal (3D). Objecten worden altijd geplaatst in een tweedimensionele (2D), of driedimensionele (3D) ruimte. Het informatiemodel DiSGeo gebruikt gestandaardiseerde geometrietypen uit ISO 19107:2003. Dit voorziet zowel in de opname van de coördinaten van de geometrie, als van het coördinaten<i>stelsel</i>.
 
 Tot slot heeft een geometrische representatie ook kwaliteitskenmerken. Het informatiemodel DiSGeo onderscheid in elk geval informatie over de _nauwkeurigheid_ en de _inwinregels_. Samengevat legt het informatiemodel de volgende informatie over een geometrie vast: [Type](#geometrietypen), [Dimensie](#dimensies), [Coordinaatreferentiesysteem (CRS)](#coordinaatreferentiesystemen) en [Kwaliteitskenmerken](#kwaliteit) (o.a. nauwkeurigheid, inwinregels en topologische regels).
 
-<aside class="ednote">
-   Aan dit lijstje nog topologische/ruimtelijke relaties toevoegen?
+<aside class="ednote" title="Waar topologische relaties onderbrengen?">
+   Aan deze kenmerken nog topologische/ruimtelijke relaties toevoegen? Of valt dit onder topologische regels?
 </aside>
 
 Voor de vastlegging van (informatie over) geometrieën gelden een aantal belangrijke principes die volgen uit verschillende standaarden en initiatieven. De volgende documenten zijn hierin leidend:
@@ -69,7 +68,7 @@ ISO 19107 biedt een aantal basisgeometrieën om een individueel object uit de we
 | Vlak         | `GM_Surface`                | `GM_MultiSurface`           |
 | Volume       | `GM_Solid`                  | `GM_MultiSolid`             |
 
-<aside class="issue">
+<aside class="issue" title="Verder uitwerken geometrietypen">
    Hierbij is het relevant om te definiëren en op te schrijven welke varianten toegestaan zijn. Een <code>GM_Surface</code> of <code>GM_Curve</code> heeft nog allerlei mogelijke verschijningsvormen in het geometriemodel. Voor de uitwisseling en het gebruik is het handig om dit in te perken.
 </aside>
 
