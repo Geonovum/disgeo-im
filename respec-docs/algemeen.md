@@ -2,7 +2,7 @@
 
 ## Geometrie
 
-<aside class="ednote">
+<p class="ednote" title="Nog toevoegen">
    <p><strong>NOG TOEVOEGEN</strong></p>
    <p><b>Vastlegging geometrie</b>:<i> Geometrie wordt hierbij in de SOR vastgelegd als een eigenschap van een object en representeert daarmee de locatie van een object. Er is één uitzondering in de SOR: alleen nummeraanduiding heeft via het genummerde object een ligging en heeft daarmee geen eigenschap geometrie.</i></p>
    <p><b>Dimensies</b>:<i> Indirecte beschrijvingen van 3D (middels het vastleggen van beschrijvende eigenschappen als Hoogte of Relatieve hoogteligging in combinatie met een 2D geometrie) vallen niet onder de noemer 3D geometrie. Relatieve hoogteliggingen kunnen zo nodig ten behoeve van informatieproducten worden afgeleid.</i></p>
@@ -26,7 +26,7 @@
          <li>Geografische ruimten zijn niet landsdekkend en mogen elkaar overlappen</li>
       </ul>
    </i></p>
-</aside>
+</p>
 
 Voor de representatie van de _locatie_, _oriëntatie_ en _vorm_ van een object uit de werkelijkheid, gebruiken informatiemodellen geometrieën. De dimensie van een representatie variëert van nuldimensionaal (0D) tot driedimensionaal (3D). Objecten worden altijd geplaatst in een tweedimensionele (2D), of driedimensionele (3D) ruimte. Het informatiemodel DiSGeo gebruikt gestandaardiseerde geometrietypen uit ISO 19107:2003. Dit voorziet zowel in de opname van de coördinaten van de geometrie, als van het coördinaten<i>stelsel</i>.
 
