@@ -129,11 +129,11 @@ Het [[EMSO]] geeft in hoofdstuk 5 tot en met 8 per geo-informatieobject aan welk
    Door de toepassing van iso-19107 biedt je meteen ruimte (waar?) voor het opnemen van het coordinatenstelsel (zie: <a href="https://geonovum.github.io/disgeo-im/#geometrie:~:text=Het%20informatiemodel%20DiSGeo%20gebruikt%20gestandaardiseerde%20geometrietypen%20uit%20ISO%2019107%3A2003.%20Dit%20voorziet%20zowel%20in%20de%20opname%20van%20de%20co%C3%B6rdinaten%20van%20de%20geometrie%2C%20als%20van%20het%20co%C3%B6rdinatenstelsel.">hier</a>)
 </aside> -->
 
-#### Coordinaatreferentiesystemen (CRS)
+<!-- #### Coordinaatreferentiesystemen (CRS) -->
 
 Deze paragraaf ligt verder toe welk coördinaatreferentiesysteem voor welke situatie van toepassing is. Dit is afhankelijk van verschillende factoren: dimensionaliteit van de gebruikte primitieven, dimensionaliteit van de ruimte en het toepassingsgebied. De dimensionaliteit van primitieven en ruimte zijn in de vorige twee paragrafen toegelicht.
 
-Het toepassingsgebied beschrijft het deel van het van het aardoppervlak waarop het informatiemodel DiSGeo van toepassing is. Dit betreft het Nederlands grondgebied. In het informatiemodel worden alleen objecten opgenomen die gelegen zijn binnen <q>het Europese grondgebied van het Koninkrijk der Nederlanden, inclusief de daarbij behorende <a href="#land-en-zee">territoriale wateren</a></q> en Baarle-Hertog [[EMSO]]. Op basis van deze criteria zijn de volgende vier typen coördinatiesystemen zijn relevant:
+Het toepassingsgebied beschrijft het deel van het van het aardoppervlak waarop het informatiemodel DiSGeo van toepassing is. Dit betreft het Nederlands grondgebied. In het informatiemodel worden alleen objecten opgenomen die gelegen zijn binnen <q>het Europese grondgebied van het Koninkrijk der Nederlanden, inclusief de daarbij behorende <a href="#land-en-zee">territoriale wateren</a></q> en Baarle-Hertog [[EMSO]]. Op basis van deze criteria zijn de volgende vier typen [coördinatiesystemen](https://definities.geostandaarden.nl/nen3610-2022/nl/page/coordinaatsysteem) zijn relevant:
 
 - World Geodetic System 1984 (**WGS 84**) gebaseerd op ITRS, gebruikt voor GPS
 - European Terrestrial Reference System 1989 (**ETRS89**)
@@ -141,14 +141,13 @@ Het toepassingsgebied beschrijft het deel van het van het aardoppervlak waarop h
 - Linear Reference Systems (**LRS**), zie: [[ISO-19148]], [INSPIRE](https://inspire.ec.europa.eu/id/document/tg/tn), [Richtlijn BPS](https://wetten.overheid.nl/BWBR0015962/2003-12-05), [WKD – NWB](https://www.nationaalwegenbestand.nl/application/files/6516/6391/7355/Gebruikersinformatie_Wegkenmerkendatabase_WKD.pdf)
 
 
-Toch verschilt per onderwerp/thema de ... 
-
-Linear Reference Systems zijn specifiek relevant voor transportnetwerken (weg en spoor). Die zijn in dit stadium nog niet uitgewerkt en op Bestuurlijke Gebieden niet van toepassing. 
-
-
-Onderscheid maken tussen zee en land
-
-Bestuurlijke gebieden
+<aside class="ednote" title="snippets">
+   <p>Hieronder uitwerking in <code>[coördinaatreferentiesystemen](https://definities.geostandaarden.nl/nen3610-2022/nl/page/coordinaatreferentiesysteem)</code> per zee, land, dimensionaltiet en aan- danwel uitlevering.</p>
+   <p>Toch verschilt per onderwerp/thema de <code>...</code> </p>
+   <p>Linear Reference Systems zijn specifiek relevant voor transportnetwerken (weg en spoor). Die zijn in dit stadium nog niet uitgewerkt en op Bestuurlijke Gebieden niet van toepassing.</p>
+   <p>Onderscheid maken tussen zee en land</p>
+   <p><code>Head</code>Bestuurlijke gebieden</p>
+</aside>
 
 
 
