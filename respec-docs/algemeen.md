@@ -36,15 +36,15 @@ Tot slot heeft een geometrische representatie ook kwaliteitskenmerken. Het infor
    Aan dit lijstje nog topologische/ruimtelijke relaties toevoegen?
 </aside>
 
-Voor de vastlegging van geometrieën gelden een aantal belangrijke principes die volgen uit verschillende standaarden en initiatieven. De volgende documenten zijn hierin leidend:
+Voor de vastlegging van (informatie over) geometrieën gelden een aantal belangrijke principes die volgen uit verschillende standaarden en initiatieven. De volgende documenten zijn hierin leidend:
 
  - Metamodel Informatie Modellering 1.1.1 [[MIM]]
  - Raamwerk van geo-standaarden 3.0 [[Raamwerk-Geo]]
  - Basismodel Geo-informatie [[NEN3610-2022]]
- - ISO-19107-2003: Geographic information – Spatial schema [[ISO-19107-2003]]
+ - ISO-19107-2003: Geographic information — Spatial schema [[ISO-19107-2003]]
  - ISO-19125-2004: Geographic information — Simple feature access [[ISO-19125]]
  - Modelleerprincipes samenhangende objectenregistratie [[disgeo-mod]]
- - Eisen aan model samenhangende objectenregistratie [[EMSO]]
+ - Eisen aan Model Samenhangende Objectenregistratie [[EMSO]]
  - Geometrie in Model en GML [[GIMEG]]
 
 <!-- Per onderdeel verschilt de plek in het model waar de informatie over geometrie vastlegt. Het informatiemodel kent verschillende niveaus: _dataset_-, _object_- en _attribuutniveau_. In het algemeen geldt: hoe generieker de aard van de informatie, hoe hoger het niveau waarop het model dit vastlegt. -->
