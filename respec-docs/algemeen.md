@@ -25,6 +25,17 @@
          <li>Geografische ruimten zijn niet landsdekkend en mogen elkaar overlappen</li>
       </ul>
    </i></p>
+
+   <p><b>NEN3610</b>:<i>Paragraaf 8.4.4.3 Geometrie bevat een aantal uitgangspunten:
+      <ul>
+         <li>Geometrie is een representatie van een object.</li>
+         <li>Een objecttype kan nul of meer geometrische representaties hebben.</li>
+         <li>De beschrijving van de 3D-werkelijkheid wordt ondersteund.</li>
+         <li>Hoogte-informatie kan absoluut of relatief zijn; hierover staat in NEN 3610 een goede uitleg.</li>
+         <li>Paragraaf 9.12 gaat in op topologische relaties en geeft hier gestandaardiseerde namen voor.</li>
+         <li>Hoofdstuk 10 bevat regels en handreikingen over coördinaatreferentiesystemen die van belang kunnen zijn voor de SOR.</li>
+      </ul>
+   </i></p>
 </aside>
 
 Voor de representatie van de _locatie_, _oriëntatie_ en _vorm_ van een object uit de werkelijkheid, gebruiken informatiemodellen geometrieën. De dimensie van een representatie variëert van nuldimensionaal (0D) tot driedimensionaal (3D). Objecten worden altijd geplaatst in een tweedimensionele (2D), of driedimensionele (3D) ruimte. Het informatiemodel DiSGeo gebruikt gestandaardiseerde geometrietypen uit ISO 19107:2003. Dit voorziet zowel in de opname van de coördinaten van de geometrie, als van het coördinaten<i>stelsel</i>.
@@ -48,9 +59,7 @@ Voor de vastlegging van (informatie over) geometrieën gelden een aantal belangr
 
 <!-- Per onderdeel verschilt de plek in het model waar de informatie over geometrie vastlegt. Het informatiemodel kent verschillende niveaus: _dataset_-, _object_- en _attribuutniveau_. In het algemeen geldt: hoe generieker de aard van de informatie, hoe hoger het niveau waarop het model dit vastlegt. -->
 
-De volgende paragrafen gaan verder in op de verschillende kenmerken, bijbehorende eisen en hoe het model ze vastlegt.
-
-De volgende paragrafen beschrijven welke eisen op het informatiemodel disgeo van toepassing zijn en hoe die concreet worden vastgelegd. Uitleg over de eisen/principes zelf, zijn niet opgenomden. we verwijzine hiervoor naar de documentatie. Indien niet aanwezig en de eis op zichzelf mogelijk onvoldoende helder is, bevat dit hoofdstuk een korte uitleg over de totstandkomming danwel interpretatie van een eis.
+De volgende paragrafen beschrijven welke eisen op het informatiemodel DiSGeo van toepassing zijn én hoe die concreet worden vastgelegd. De eisen en uitgangspunten zijn in principe geen onderdeel van dit document. We verwijzen hiervoor vanuit de tekst naar de betreffende documentatie. Indien niet aanwezig en de eis op zichzelf mogelijk onvoldoende helder is, bevat dit hoofdstuk een korte uitleg over de totstandkomming danwel interpretatie van een eis.
 
 ### Geometrietypen
 
@@ -182,6 +191,21 @@ Het is nog niet volledig duidelijk welke CRS-en het beste gebruikt kunnen worden
 Uitzoekpunt: de EEZ zone is mogelijk niet het enige disgeo object waarvoor geldt dat RD geen optie is. Wellicht ook de andere bestuurlijke gebieden op zee en wellicht windturbines op zee.
 </aside> -->
 
+<!-- <aside class ="issue" title="Juistheid CRS">
+   Is RD wel het juiste coördinaatreferentiesysteem?
+   <ul>
+      <li>
+         Het te gebruiken coördinaatreferentiesysteem, RD, is niet toereikend voor objecten die zich niet op land bevinden maar op territoriale zee, zoals windturbines. Echter, de gewenste ruimtelijke dekking van de SOR is inclusief de territoriale zee.
+      </li>
+      <li>
+         Vanuit verschillende (basis)registraties is niet RD maar ETRS89 de eis. O.a. in de Omgevingswet (bron?). In het EMSO is van RD uitgegaan omdat veel bronhouders nog in RD werken. We moeten met experts bekijken of RD danwel ETRS op land de vereiste moet zijn. We kunnen hierbij ook gebruik maken van [hoofdstuk 3](https://docs.geostandaarden.nl/crs/cv-hr-crs-20211125/#aandachtspunten-bij-crs-in-informatiemodel-en-informatieketen) van de Handreiking CRS [gebruik-crs](https://docs.geostandaarden.nl/crs/def-hr-crs-20220314/).
+      </li>
+      <li>
+         Op zee zijn noch RD, noch ETRS89 geschikt; het is gebruikelijk om daar WGS-84 te hanteren.
+    </li>
+   </ul>
+</aside> -->
+
 #### Uitlevering
 
 Bij uitlevering in RD zijn dezelfde realisaties beschikbaar als bij aanlevering. Bij uitlevering in ETRS89 kan de geometrie, naast als dezelfde realisaties als bij aanlevering, ook als de geografisch ensemble van CRS-en worden opgevraagd.
@@ -266,15 +290,19 @@ Verreweg de meeste objecttypen in het informatiemodel DiSGeo hebben in hun huidi
 
 #### Topologische regels
 
-<aside class="note">
-   Kiezen waarplaatsen: hier of onder NEN3610
+<aside class="note" title="Onderbrengen tekst">
+   Kiezen waar plaatsen: hier of onder NEN3610
 </aside>
 
-<aside class="note">
+<aside class="note" title="Plel uitwerken onderwerp">
    Dit onderwerp is al verder uitgewerkt in modelleerprincipes? Kijk ook naar deze <a href="https://github.com/Geonovum/disgeo-im/blob/main/docs/thema/bestuurlijke-gebieden/benaming-relaties.md">notitie over ruimtelijke en administratieve relaties in NEN3610:2022</a>.
 </aside>
 
 Voor ruimtelijke relaties tussen de objecten kunnen we gebruik maken van de topologische relaties zoals gedefinieerd in de Simple Features standaard [[ISO-19125]] en aangeraden in [[NEN3610-2021-ontw]] en [[sdw-bp]]. Deze relaties zijn geïmplementeerd in veel geografische softwareomgevingen en ook in GeoSPARQL: 
+
+<aside class="issue" title="Update reference">
+   Bronverwijzing naar NEN3610 updaten.
+</aside>
 
 - **`Equals`** - gelijk
 - **`Disjoint`** - disjunct (geen enkel punt gemeen)
@@ -285,7 +313,7 @@ Voor ruimtelijke relaties tussen de objecten kunnen we gebruik maken van de topo
 - **`Intersects`** - doorsnijdt (geometrieën hebben op zijn minst één punt gemeen;
 geometrieën kunnen verschillende dimensie hebben)
 
-Deze relaties kun je gebruiken voor punt-, lijn- en vlakgeometrieën. Omdat er in de SOR meer met 3D wordt gewerkt, worden topologieregels complexer maar ook secundair aan de representatie van de werkelijke verhouding tussen objecten. Uit EMSO: 
+Deze relaties kun je gebruiken voor punt-, lijn- en vlakgeometrieën. Omdat er in het informatiemodel DiSGeo meer met 3D wordt gewerkt, worden topologieregels complexer maar ook secundair aan de representatie van de werkelijke verhouding tussen objecten. Uit EMSO: 
 
 > "_Het is belangrijker om ervoor te zorgen dat objecten die zich in de werkelijkheid op een bepaalde wijze tot elkaar verhouden (bijvoorbeeld een verharding ligt bovenop een overbrugging) ook in de registratie op deze wijze tot elkaar verhouden (bijvoorbeeld dat uit de z-coördinaten van de verharding en de overbrugging blijkt dat de verharding bovenop de overbrugging ligt). De exacte uitwerking van deze relaties in topologie-regels zal later in het traject verder worden opgepakt_".
 
@@ -295,7 +323,7 @@ Deze relaties kun je gebruiken voor punt-, lijn- en vlakgeometrieën. Omdat er i
 
 #### Benodigde kwaliteitsmetadata
 
-<aside class="issue" title="Relatie met hoofdstuk 2.2 Metadata">
+<aside class="issue" title="Relatie met hoofdstuk Metadata">
    In hoeverre hoort deze paragraaf hier thuis? Wordt het al afgedekt in het hoofdstuk over metadata? Of zou het daar niet beter passen?
 </aside>
 
@@ -305,67 +333,67 @@ Wat voor kwaliteitsmetadata bij een objecttype wordt voorgeschreven, kan worden 
 - gerealiseerde nauwkeurigheid van de geometrie van het object in de vorm van een nauwkeurigheidsklasseaanduiding
 - helemaal geen kwaliteitsmetadata
 
-We gaan onze eerder uitgewerkte modelleerpatronen toetsen tegen dit onderwerp.
+We gaan onze eerder uitgewerkte **modelleerpatronen** toetsen tegen dit onderwerp.
 
 ### NEN3610
 
-<aside class="note">
-   Onderstaande tekst komt uit aantekening uit overleg ruimtelijke relaties
+
+<aside class="issue" title="Ruimtelijke en administratieve relaties en compliance met NEN3610">
+
+   <p>Het gaat hierbij om afwegingen bij het kiezen van een naam voor de relatie tussen gemeentegebied en provinciegebied.  Internationaal is de gestandaardiseerde naam <code>within</code>. In NEN3610 is dit vertaald naar <code>binnen</code>. In ons team bestaat de vraag of <code>ligtIn</code> niet een betere naam is. Wat zijn onze opties hierbij?</p>
+
+   <p>De NEN3610 spreekt van administratieve relaties en ruimtelijke relaties. De vertaling <code>binnen</code> betreft een ruimtelijke relatie. Wel is het belangrijk om te beseffen dat de <code>«ruimtelijke relatie»</code> zoals beschreven in de NEN3610 eigenlijk een visuele representatie is van een constraint. Deze hoort dus eigenlijk niet thuis in het informatiemodel.</p>
+
+   <p>Het is aan ons de vraag of we een constraint willen toepassen:</p>
+   <ul>
+      <li>Zo ja, dan moeten we een <code>NEN3610:ruimtelijke relatie</code> én een <code>NEN3610:administratieve</code> relatie gebruiken.</li>
+      <li>Zo niet, dan hebben we alleen een <code>NEN3610:administratieve relatie</code> nodig.</p></li>
+   </ul>
+
+   <p>Het gaat dan om een administratieve vastlegging van een ruimtelijke relatie die vanuit de OGC wordt gedefinieerd. Hiervoor kunnen we:</p>
+
+   <ul>
+      <li>De NEN3610-benaming <code>binnen</code> gebruiken (waarbij we het begrip <code>NEN3610:binnen</code> opnemen als <code>mim:begrip</code>). </li>
+      <li>Onze eigen benaming (<code>ligtIn</code>) gebruiken met een verwijzing naar de OGC term <code>within</code>. Dan hebben we echter geen link met de NEN3610 – dat moet dan als een afgeleid gegeven worden gemodelleerd, omdat het anders niet mogelijk is vanuit de MIM.</li>
+   </ul>
+
+   <p><strong>Observaties</strong></p>
+
+   <ul>
+      <li>De term <code>binnen</code> is niet het meest geschikt om te gebruiken voor de relatie in ons model – het is echter wel hoe de NEN3610 de ruimtelijke relatie <code>within</code> heeft vertaald. Als wij uitwijken is het lastiger om aan te sluiten op de NEN3610, dus als we deze OGC relatie willen toepassen gebruiken we <code>binnen</code>.</li> 
+      <li>We kunnen het NEN3610 begrip <code>binnen</code> (zoals het nu staat in het begrippenkader) opnemen als <code>mim:begrip</code> bij het creëren van de administratieve/ruimtelijke relaties tussen de registratieve gebieden.</li>
+   </ul>
+
+   <p><strong>Conclusie</strong></p>
+
+   <p>Hierover is nog geen definitief besluit genomen.
+
 </aside>
 
-#### Ruimtelijke en administratieve relaties en compliance met NEN3610
+#### Aansluiting op Basismodel Geo-informatie (NEN3610)
 
-Het gaat hierbij om afwegingen bij het kiezen van een naam voor de relatie tussen gemeentegebied en provinciegebied.  Internationaal is de gestandaardiseerde naam `within`. In NEN3610 is dit vertaald naar `binnen`. In ons team bestaat de vraag of `ligtIn` niet een betere naam is. Wat zijn onze opties hierbij?
+Het informatiemodel DiSGeo valt binnen het toepassingsgebied van het Basismodel Geo-informatie [[NEN3610-2022]] (hierna: NEN3610) omdat het objecttypen beschrijft die direct herleidbaar zijn tot een locatie ten opzichte van de aarde. Het wordt daarom gemodelleerd conform de regels die in NEN3610 geformuleerd zijn, en als extensie op het semantische model uit NEN3610.
 
-De NEN3610 spreekt van administratieve relaties en ruimtelijke relaties. De vertaling `binnen` betreft een ruimtelijke relatie. Wel is het belangrijk om te beseffen dat de `«ruimtelijke relatie»` zoals beschreven in de NEN3610 eigenlijk een visuele representatie is van een constraint. Deze hoort dus eigenlijk niet thuis in het informatiemodel.
+De regels uit NEN3610 zijn voor zover van toepassing gevolgd in het informatiemodel DiSGeo. Binnen DiSGeo maken we zowel een conceptueel model als een logisch model. Hieronder geven we aan welke aspecten van NEN3610 conformiteit op welk modelniveau terug te vinden zijn. We noemen hier niet alle regels, maar alleen de belangrijkste, die in enige vorm terug te vinden zijn in het informatiemodel zelf:
+ - DiSGeo objecten zijn uniek identificeerbaar via de twee NEN3610-attributen `identificatie` en `domein` die zijn opgenomen in het logisch model
+ - `Historie` en `Levensduur` zijn opgenomen in de klasse `Registratiegegevens` in het logisch model: 
+ - `Tijdlijn Geldigheid` is opgenomen via de attributen `beginGeldigheid` en `eindGeldigheid`
+ - `Tijdlijn Registratie` is opgenomen via de attributen `tijdstipRegistratie` en `eindRegistratie`
+ - `Levensduur` van objecten in de registratie is opgenomen via de attributen `objectBegintijd` en `objectEindtijd`
 
-Het is aan ons de vraag of we een constraint willen toepassen:
-- Zo ja, dan moeten we een `NEN3610:ruimtelijke relatie` én een `NEN3610:administratieve` relatie gebruiken. 
-- Zo niet, dan hebben we alleen een `NEN3610:administratieve relatie` nodig.
+Het semantische model van NEN3610 bestaat uit een aantal objecttypen die objecten uit de werkelijkheid op hoofdlijn classificeren. In het informatiemodel DiSGeo zijn de klassen, voor zover dit past, gemodelleerd als subklasse van het NEN3610 objecttype Geo-Object of (bij voorkeur) een specifiekere NEN3610-subklasse van Geo-object. Deze verbinding met deze semantische klassen is opgenomen in het conceptueel model.
 
-Het gaat dan om een administratieve vastlegging van een ruimtelijke relatie die vanuit de OGC wordt gedefinieerd. Hiervoor kunnen we:
-- De NEN3610-benaming `binnen` gebruiken (waarbij we het begrip `nen3610:binnen` opnemen als `mim:begrip`). 
-- Onze eigen benaming (`ligtIn`) gebruiken met een verwijzing naar de OGC term `within`. Dan hebben we echter geen link met de nen3610 – dat moet dan als een afgeleid gegeven worden gemodelleerd, omdat het anders niet mogelijk is vanuit de MIM.
-
-#### Observaties 
-
-- De term `binnen` is niet het meest geschikt om te gebruiken voor de relatie in ons model – het is echter wel hoe de NEN3610 de ruimtelijke relatie `within` heeft vertaald. Als wij uitwijken is het lastiger om aan te sluiten op de NEN3610, dus als we deze OGC relatie willen toepassen gebruiken we `binnen`. 
-- We kunnen het nen3610 begrip `binnen` (zoals het nu staat in het begrippenkader) opnemen als `mim:begrip` bij het creëren van de administratieve/ruimtelijke relaties tussen de registratieve gebieden.
-
-<aside class="note">
-   Onderstaande tekst komt uit documentatie disgeo-im.
-</aside>
-
-#### Aansluiting op NEN 3610
-
-Het informatiemodel DiSGeo valt binnen het toepassingsgebied van het Basismodel Geo-informatie [[NEN3610-2022]] (hierna: NEN 3610) omdat het objecttypen beschrijft die direct herleidbaar zijn tot een locatie ten opzichte van de aarde. Het wordt daarom gemodelleerd:
-- conform de regels die in NEN 3610 geformuleerd zijn, en
-- als extensie op het semantische model uit NEN 3610
-
-De regels uit NEN 3610 zijn voor zover van toepassing gevolgd in het informatiemodel DiSGeo. Binnen DiSGeo maken we zowel een conceptueel model als een logisch model. Hieronder geven we aan welke aspecten van NEN 3610 conformiteit op welk modelniveau terug te vinden zijn. We noemen hier niet alle regels, maar alleen de belangrijkste, die in enige vorm terug te vinden zijn in het informatiemodel zelf:
- - DiSGeo objecten zijn uniek identificeerbaar via de twee NEN 3610 attributen `identificatie` en `domein` die zijn opgenomen in het logisch model
- - Historie en levensduur zijn opgenomen in de klasse `Registratiegegevens` in het logisch model: 
-   - Tijdlijn geldigheid is opgenomen via de attributen `beginGeldigheid` en `eindGeldigheid`
-   - Tijdlijn registratie is opgenomen via de attributen `tijdstipRegistratie` en `eindRegistratie`
-   - Levensduur van objecten in de registratie is opgenomen via de attributen `objectBegintijd` en `objectEindtijd`
-
-Het semantische model van NEN 3610 bestaat uit een aantal objecttypen die objecten uit de werkelijkheid op hoofdlijn classificeren. In het informatiemodel DiSGeo zijn de klassen, voor zover dit past, gemodelleerd als subklasse van het NEN3610 objecttype Geo-Object of (bij voorkeur) een specifiekere NEN3610-subklasse van Geo-Object. Deze verbinding met deze semantische klassen is opgenomen in het conceptueel model.
-
-<aside class="example">
+<aside class="example" title="Koppeling IM DiSGeo aan semantische klassen NEN3610">
    In het model voor Bestuurlijke gebieden is <code>BestuurlijkGebied</code> gemodelleerd als een specialisatie van het objecttype <code>RegistratieveRuimte</code>, die op haar beurt gemodellerd is als specialisatie van <code>NEN3610:RegistratieveRuimte</code>. Bestuurlijke gebieden zijn, volgens hun beschrijving in het [[EMSO]]: 
 
    <blockquote>[...] <q><i>registratieve ruimten die op basis van wet- of regelgeving als eenheid gelden van politiek/bestuurlijke verantwoordelijkheid. Dit betreft bijvoorbeeld de gebieden behorende bij de vier formele bestuurslagen uit de Grondwet (Rijk, provincie, waterschap, gemeente), maar kan ook gebieden van bestuurlijke samenwerkingsverbanden met eigen politiek/bestuurlijke verantwoordelijkheid omvatten. Een voorbeeld daarvan betreft de veiligheidsregio’s.</i></q></blockquote>
 
-   De definitie komt overeen met de NEN3610-definitie van <code>RegistratieveRuimte</code> maar is iets nauwer. In NEN3610 kan het gaan om een eenheid die geldt voor politiek-bestuurlijke verantwoordelijkheid óf bedrijfsvoering. Van dat laatste is bij bestuurlijke gebieden geen sprake. <code>BestuurlijkGebied</code> is daarom een specialisatie van de NEN3610 <code>RegistratieveRuimte</code>. De reden dat het geen directe specialisatie is, maar er nog een objecttype <code>RegistratieveRuimte</code> tussen zit in het DiSGeo-model, is omdat er op dat niveau een status-eigenschap gepositioneerd is. De definitie van de DiSGeo <code>RegistratieveRuimte</code> is exact gelijk aan de definitie van de NEN3610 <code>RegistratieveRuimte</code>.
+   De definitie van <code>BestuurlijkGebied</code> komt overeen met de NEN3610-definitie van <code>RegistratieveRuimte</code> maar is iets nauwer. In NEN3610 kan het gaan om een eenheid die geldt voor politiek-bestuurlijke verantwoordelijkheid óf bedrijfsvoering. Van dat laatste is bij bestuurlijke gebieden geen sprake. <code>BestuurlijkGebied</code> is daarom een specialisatie van de NEN3610 <code>RegistratieveRuimte</code>. De reden dat het geen directe specialisatie is, maar er nog een objecttype <code>RegistratieveRuimte</code> tussen zit in het DiSGeo-model, is omdat er op dat niveau een status-eigenschap gepositioneerd is. Het is niet mogelijk om eigenschappen toe te kennen aan een NEN3610-object. De definitie van de DiSGeo <code>RegistratieveRuimte</code> is exact gelijk aan de definitie van de NEN3610 <code>RegistratieveRuimte</code>.
 
    <figure>
       <img src="media/nen3610-disgeo.png" alt="Bestuurlijk gebied als subklasse van Registratieve Ruimte"/>
       <figcaption>Bestuurlijk gebied als subklasse van Registratieve Ruimte</figcaption>
    </figure>
-</aside>
-
-<aside class="note">
-   Onderstaande tekst afkomstig uit ...?
 </aside>
 
 #### NEN 3610
@@ -375,15 +403,7 @@ Inwinregels worden in sectormodellen bepaald.
 
 > "_Inwinregels geven aan welke punten van een object ingemeten moeten worden en waar de geometrie van een geregistreerd object aan moet voldoen. Het leidt tot een vastgestelde geometrische weergave gericht op een specifieke toepassing._"
 
-Paragraaf 8.4.4.3 Geometrie bevat een aantal uitgangspunten:
-- Geometrie is een representatie van een object.
-- Een objecttype kan nul of meer geometrische representaties hebben.
-- De beschrijving van de 3D-werkelijkheid wordt ondersteund.
-- Hoogte-informatie kan absoluut of relatief zijn; hierover staat in NEN 3610 een goede uitleg.
-
-Paragraaf 9.12 gaat in op topologische relaties en geeft hier gestandaardiseerde namen voor.
-
-Hoofdstuk 10 bevat regels en handreikingen over coördinaatreferentiesystemen die van belang kunnen zijn voor de SOR. 
+ 
 
 ### Generalisatie
 
@@ -401,7 +421,7 @@ In producten op basis van de geobasisregistraties zal de gebruiker echter doorga
 - Het schaalniveau; conform [[NLISO19115]] noemen we dit de 'toepassingsschaal'. Dit is nodig zodat de gebruiker de gewenste schaal kan opvragen en kan zien voor welke schaal een geometrie geschikt is.
 - De herkomst i.e. afleidingsgegevens: wat was de brongeometrie en hoe is de geometrie daaruit gegeneraliseerd. Dit is o.a nodig om terugmelding op geometrie te kunnen ondersteunen, ook in het geval van afgeleide geometrieën.
 
-<aside class="issue">
+<aside class="ednote" title="Eén of meerder geometrieatributen">
    <b>Eén geometrieattribuut</b>: dit is waarschijnlijk wel voldoende, maar er zijn wel <i>use cases</i> denkbaar waarbij je meerdere geometrieën wilt uitwisselen van één object. Het CBS doet dit bijvoorbeeld wel in hun WFS-service van wijken en buurten. Gebruikers kunnen dan in hun eigen GIS-pakket van schaal wisselen wanneer ze maar willen. 
 
    Eén geometrieattribuut volstaat dan nog steeds, maar het moet wel een meervoudige kardinaliteit hebben dwz `[1..*]`. 
@@ -411,11 +431,11 @@ In producten op basis van de geobasisregistraties zal de gebruiker echter doorga
 
 Conform de Spatial Data on the Web Best Practices [[SDW-BP]], [Best Practide 6](https://www.w3.org/TR/sdw-bp/#multiplegeometries), moet in een geodataproduct dat op het Web wordt gepubliceerd altijd in ieder geval een geometrie worden aangeboden die geschikt is om te gebruiken in webtoepassingen, i.e. bij wat grotere geometrieën moet er altijd een gegeneraliseerde geometrie beschikbaar zijn.
 
-<aside class="issue">
+<aside class="ednote" title="Opvragen gedeeltelijke geometrie">
    Zijn er use cases waarvoor het mogelijk moet zijn dat je een stukje van een geometrie kunt opvragen? I.e. subsetting / clipping? En zo ja heeft dit impact op de modellering? Dat laatste vermoedelijk niet.
 </aside>
 
-<aside class="issue">
+<aside class="ednote" title="Generalisatie en Aggregatie">
    Onderdeel van generalisatie is in sommige gevallen ook aggregatie. Bij bestuurlijke grenzen komt dit niet voor, maar bij gebouwen en wegen wel. Een groepje gebouwen dat dicht naast elkaar staat wordt dan bijvoorbeeld geaggregeerd tot één gebouwblok, of een aantal wegdelen tot één wegdeel. Als we van objecten verschillende geometrieën beschikbaar willen stellen - hoe werkt dat dan als objecten op lagere schalen geaggregeerd zijn, zoals bijvoorbeeld gebouwen? Het is dan ingewikkeld om de afleidingsgegevens te modelleren.
 </aside>
 
@@ -423,8 +443,12 @@ Conform de Spatial Data on the Web Best Practices [[SDW-BP]], [Best Practide 6](
 
 #### Uitgangspunten uit EMSO
 
-<aside class="issue">
-   <b>VRAAG</b>: <i>Kwaliteitsmetadata</i> (o.a. precisie) verder aanvullen met of verwijzen naar <i>Modelleerprincipes</i>).
+<aside class="ednote" title="Algemene verwijzing maken">
+   Controleer of het mogelijk is om aan het begin van het hoofdstuk Geometrie, of zelfs aan het begin van het hoofdstuk Algemeen, een verwijzing te maken naar uitgangspunten in het EMSO.
+</aside>
+
+<aside class="ednote" title="Vraag kwaliteitsmetadata">
+   <i>Kwaliteitsmetadata</i> (o.a. precisie) verder aanvullen met of verwijzen naar <i>Modelleerprincipes</i>).
 </aside>
 
 - De vastlegging van geometrie wordt zodanig vormgegeven dat de driedimensionale (3D) beschrijving van een object kan worden opgenomen.
@@ -435,20 +459,7 @@ Conform de Spatial Data on the Web Best Practices [[SDW-BP]], [Best Practide 6](
 - De [precisie](https://www.noraonline.nl/wiki/Geometrische_precisie) van coördinaten is op millimeterniveau en in RD betekent dit dat er coördinaten met 3 decimalen worden opgenomen.
 - Gegeneraliseerde data objecttypen [worden niet opgenomen in de SOR](https://docs.geostandaarden.nl/disgeo/emso/#generalisatie). Ze kunnen wel onderdeel zijn van informatieproducten. Generalisatie is "het zinvol weglaten, vereenvoudigen, verplaatsen, vergroten, symboliseren en/of aggregeren van de geometrie van objecten (of op attribuutniveau)", ten behoeve van minder gedetailleerde kaartschalen.
 
-<aside class ="issue">
-   Is RD wel het juiste coördinaatreferentiesysteem?
-   <ul>
-      <li>
-         Het te gebruiken coördinaatreferentiesysteem, RD, is niet toereikend voor objecten die zich niet op land bevinden maar op territoriale zee, zoals windturbines. Echter, de gewenste ruimtelijke dekking van de SOR is inclusief de territoriale zee.
-      </li>
-      <li>
-         Vanuit verschillende (basis)registraties is niet RD maar ETRS89 de eis. O.a. in de Omgevingswet (bron?). In het EMSO is van RD uitgegaan omdat veel bronhouders nog in RD werken. We moeten met experts bekijken of RD danwel ETRS op land de vereiste moet zijn. We kunnen hierbij ook gebruik maken van [hoofdstuk 3](https://docs.geostandaarden.nl/crs/cv-hr-crs-20211125/#aandachtspunten-bij-crs-in-informatiemodel-en-informatieketen) van de Handreiking CRS [gebruik-crs](https://docs.geostandaarden.nl/crs/def-hr-crs-20220314/).
-      </li>
-      <li>
-         Op zee zijn noch RD, noch ETRS89 geschikt; het is gebruikelijk om daar WGS-84 te hanteren.
-    </li>
-   </ul>
-</aside>
+
 
 ## Metadata
 
