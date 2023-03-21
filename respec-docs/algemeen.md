@@ -52,9 +52,6 @@ De volgende paragrafen gaan verder in op de verschillende kenmerken, bijbehorend
 
 De volgende paragrafen beschrijven welke eisen op het informatiemodel disgeo van toepassing zijn en hoe die concreet worden vastgelegd. Uitleg over de eisen/principes zelf, zijn niet opgenomden. we verwijzine hiervoor naar de documentatie. Indien niet aanwezig en de eis op zichzelf mogelijk onvoldoende helder is, bevat dit hoofdstuk een korte uitleg over de totstandkomming danwel interpretatie van een eis.
 
-
-
-
 ### Geometrietypen
 
 Geometrietypen hebben verschillende niveau's van _data-complexiteit_ en _dimensionaliteit_ (zie: [Dimensies](#dimensies). Het volstaat om een ISO 19107-geometrietype toe te passen in het informatiemodel. Raadpleeg voor een uitgebreidere toelichting op dit ondewerp hoofdstuk 2 van de handreiking Geometrie in model en GML [[GIMEG]]. Dit legt inhoudelijk uit hoe het geometriemodel uit ISO 19107 [[ISO-19107-2019]] kan worden toegepast en wat het geldende Nederlands profiel is.
@@ -68,7 +65,7 @@ ISO 19107 biedt een aantal basisgeometrieën om een individueel object uit de we
 | Vlak         | `GM_Surface`                | `GM_MultiSurface`           |
 | Volume       | `GM_Solid`                  | `GM_MultiSolid`             |
 
-<aside class="issue" title="Verder uitwerken geometrietypen">
+<aside class="issue" title="Uitwerken geometrietypen">
    Hierbij is het relevant om te definiëren en op te schrijven welke varianten toegestaan zijn. Een <code>GM_Surface</code> of <code>GM_Curve</code> heeft nog allerlei mogelijke verschijningsvormen in het geometriemodel. Voor de uitwisseling en het gebruik is het handig om dit in te perken.
 </aside>
 
@@ -84,13 +81,12 @@ _Simple Features_ gebruikt geometrietypen uit de veel uitgebreidere standaard IS
 - `SRID`: dit modelleert de verwijzing naar het _Spatial Reference System_, in ons geval het _coördinaatreferentiesysteem_ (CRS, zie: [Coordinaatreferentiesystemen](#coordinaatreferentiesystemen). 
 - `metadata`: optioneel attribuut voor het opnemen van verwijzingen naar documentatie die informatie geeft over de implementatie van het geometrie-object. Dit kunnen we wellicht gebruiken voor bijvoorbeeld de gerealiseerde nauwkeurigheid van de geometrie.
 
-<aside class="note">
+<aside class="note" title="Spatial Reference System vs. Coördinaatreferentiesysteem">
    <i>Spatial reference system</i> is een breder begrip dan <i>coördinaatreferentiesysteem</i>. Het gaat om een algemene locatieaanduiding, een <i>ruimtelijk referentiesysteem</i> dat niet alleen op basis van coördinaten kan werken maar ook op basis van bijvoorbeeld geografische naam of adres. 
 </aside>
 
 ### Dimensies
-
-Als het gaat om dimensie, is het van belang om onderscheid te maken tussen de termen: **primitieve**, **ruimte** en **model**. Er zijn vier gradaties van primitieven oplopend van 0D tot en met 3D. Elke hogere graad voegt een nieuwe dimensie toe. Zo staat 0D alleen het primitieve `punt` toe, maar 1D zowel `punt` als `lijn`. 2D voegt daar `vlak` aan toe en 3D `volume`.
+Bij _dimensie_ wordt onderscheid gemaakt tussen de termen: **primitieve**, **ruimte** en **model**. Er zijn vier gradaties van primitieven oplopend van 0D tot en met 3D. Elke hogere graad voegt een extra dimensie toe. Zo staat 0D alleen het primitieve `punt` toe, maar 1D zowel `punt` als `lijn`. 2D voegt daar `vlak` aan toe en 3D `volume`.
 
 <figure id="crs-overview">
    <a href="media/geometrie_dimensies.png" target="_blank" rel="noopener noreferrer">
@@ -107,7 +103,7 @@ Deze primitieven kun je plaatsen in een tweedimensionale of driedimensionale rui
 
 Het EMSO schrijft voor dat het informatiemodel DiSGeo moet voorsorteren op de mogelijkheid om de [driedimensionale beschrijving van een object](https://docs.geostandaarden.nl/disgeo/emso/#:~:text=waarbij%20de%20vastlegging%20hiervan%20zodanig%20wordt%20vormgegeven%20dat%20de%20driedimensionale%20(3D)%20beschrijving%20van%20een%20object%20kan%20worden%20opgenomen) op te nemen. Per objecttype kan de [wijze van vastlegging](https://docs.geostandaarden.nl/disgeo/emso/#:~:text=Sommige%20objecttypen%20zullen%20worden%20vastgelegd%20in%20de%20vorm%20van%203D%20volumes.%20Andere%20objecttypen%20als%20vlakken%20met%20een%20bepaalde%20hoogteligging.%20Voor%20bepaalde%20objecten%20met%20een%20minimale%20omvang%20kan%20geometrische%20vastlegging%20in%20de%20vorm%20van%20een%20enkel%20co%C3%B6rdinatendrietal%20(x%2C%20y%20en%20z)%20worden%20vastgelegd%20(puntobject)) verschillen. In sommige gevallen representeert een _volume_ het object het beste. In andere gevallen volstaat een _punt_, _lijn_ of _vlak_ met hoogteligging. Dit betekent dat het model ruimte moet bieden aan 3D-primitieven in een 3D-ruimte. Hieruit volgt dat het informatiemodel DiSGeo in zijn totaliteit beschouwd moet worden als een 3D-model. Het verschilt per onderwerp of een uitwerking in 2D (bijv. Bestuurlijk Gebied), 2.5D (bijv. Verharding) danwel 3D(bijv. Gebouw) nodig is.
 
-<aside class="issue">
+<aside class="issue" title="3D vs. ISO-19125">
    <p>Hoe verhoudt dit zich tot het uitgangspunt van aansluiting op <b>ISO-19125</b>, dat het model beperkt tot <b>2D-primitieven</b>? In de oorspronkelijke tekst stond de zin:</p>
    <blockquote><i>
       "We hanteren dus Simple Features (ISO 19125) + een aantal aanvullingen voor zover nodig, waarschijnlijk in ieder geval voor bogen en volumes."
@@ -115,9 +111,9 @@ Het EMSO schrijft voor dat het informatiemodel DiSGeo moet voorsorteren op de mo
    <p>Naast volumes zijn ook bogen hierin niet toegestaan.</p>
 </aside>
 
-<p><strong>Bestuurlijke gebieden</strong></p>
+#### Bestuurlijk gebied
 
-Het [[EMSO]] geeft in hoofdstuk 5 tot en met 8 per geo-informatieobject aan welk geometrietype van toepassing is. Registratieve ruimten (waar bestuurlijke gebieden onderdeel van zijn) worden tweedimensionaal vastgelegd. Hiervoor zijn de geometrietypenb `GM_Surface` (_vlak_) of `GM_MultiSurface` (_multi-vlak_) geschikt. Het hoofdstuk [Gegevensdefinitie](#cat) van dit document beschrijft per geo-informatieobjecttype in detail hoe het informatiemodel DiSGeo dit vormgeeft.
+Het [[EMSO]] geeft in hoofdstuk 5 tot en met 8 per geo-informatieobject aan welk geometrietype van toepassing is. _Registratieve ruimte_ (waar _bestuurlijk gebied_ onderdeel van is) wordt tweedimensionaal vastgelegd. Hiervoor zijn de geometrietypen `GM_Surface` (_vlak_) of `GM_MultiSurface` (_multi-vlak_) geschikt. Het hoofdstuk [Gegevensdefinitie](#cat) van dit document beschrijft per geo-informatieobjecttype in detail hoe het informatiemodel DiSGeo dit vormgeeft.
 
 ### Coordinaatreferentiesystemen
 
@@ -131,7 +127,7 @@ Het [[EMSO]] geeft in hoofdstuk 5 tot en met 8 per geo-informatieobject aan welk
 
 <!-- #### Coordinaatreferentiesystemen (CRS) -->
 
-Deze paragraaf ligt verder toe welk coördinaatreferentiesysteem voor welke situatie van toepassing is. Dit is afhankelijk van verschillende factoren: dimensionaliteit van de gebruikte primitieven, dimensionaliteit van de ruimte en het toepassingsgebied. De dimensionaliteit van primitieven en ruimte zijn in de vorige twee paragrafen toegelicht.
+Welk coördinaatreferentiesysteem in een situatie van toepassing is, wordt bepaald door verschillende factoren, zoals: dimensionaliteit van de gebruikte primitieven, dimensionaliteit van de ruimte en het toepassingsgebied. De dimensionaliteit van primitieven en ruimte zijn in de vorige twee paragrafen toegelicht.
 
 Het toepassingsgebied beschrijft het deel van het van het aardoppervlak waarop het informatiemodel DiSGeo van toepassing is. Dit betreft het Nederlands grondgebied. In het informatiemodel worden alleen objecten opgenomen die gelegen zijn binnen <q>het Europese grondgebied van het Koninkrijk der Nederlanden, inclusief de daarbij behorende <a href="#land-en-zee">territoriale wateren</a></q> en Baarle-Hertog [[EMSO]]. Op basis van deze criteria zijn de volgende vier typen [coördinatiesystemen](https://definities.geostandaarden.nl/nen3610-2022/nl/page/coordinaatsysteem) zijn relevant:
 
@@ -140,6 +136,12 @@ Het toepassingsgebied beschrijft het deel van het van het aardoppervlak waarop h
 - Nederlandse Stelsel van de Rijksdriehoeksmeting (**RD**)
 - Linear Reference Systems (**LRS**), zie: [[ISO-19148]], [INSPIRE](https://inspire.ec.europa.eu/id/document/tg/tn), [Richtlijn BPS](https://wetten.overheid.nl/BWBR0015962/2003-12-05), [WKD – NWB](https://www.nationaalwegenbestand.nl/application/files/6516/6391/7355/Gebruikersinformatie_Wegkenmerkendatabase_WKD.pdf)
 
+De onderstaande figuur is een schematische weergave van de ondersteunde CRS-en bij aanlevering en uitlevering. De volgende paragrafen beschrijven in meer detail de ondersteunde CRS-en bij aan- en uitlevering.
+
+<figure id="crs-overview">
+    <img src="media/crs-overview.drawio.png" alt="Overview van CRS-en in DiSGeo"/>
+    <figcaption>Overzicht van de ondersteunde CRS-en in het kader van DiSGeo bij aanlevering en uitlevering</figcaption>
+</figure>
 
 <aside class="ednote" title="snippets">
    <p>Hieronder uitwerking in <code>[coördinaatreferentiesystemen](https://definities.geostandaarden.nl/nen3610-2022/nl/page/coordinaatreferentiesysteem)</code> per zee, land, dimensionaltiet en aan- danwel uitlevering.</p>
@@ -149,42 +151,11 @@ Het toepassingsgebied beschrijft het deel van het van het aardoppervlak waarop h
    <p><code>Head</code>Bestuurlijke gebieden</p>
 </aside>
 
+#### Aanlevering
 
+Het _toepassingsgebied_ en de _dimensie_ bepalen welke CRS-en bij aanlevering van geometrieën geldig zijn. Wat betreft het _toepassingsgebied_ zijn er objecten die vallen binnen het Europese deel van Nederland en objecten die vallen binnen de Nederlandse Exclusieve Economische Zone (EEZ) van de Noordzee. Aan de andere kant bestaat er onderscheid in de _dimensie_ van geometrieën. Sommige geometrieën zijn 2-dimensionaal, anderen 3-dimensionaal. Voor objecten binnen het Europese deel van Nederland gelden de volgende CRS-en: _**RD**_ en _**ETRS89**_. Voor gebieden op zee is nog geen besluit genomen.
 
-###### Bestuurlijk gebied
-
-Binnen het thema bestuurlijk gebied bevatten een aantal objecten een geometrie die binnen het Europese deel van Nederland valt. In het informatiemodel zijn deze gebieden geclassificeerd als 'bestuurlijk gebied op land'. Het gaat om de volgende vijf objecten. 
-
- - Rijksgebied
- - Gemeentegebied
- - Provinciegebied
- - Waterschapsgebied
- - Veiligheidsregiogebied
-
-#### Bestuurlijk gebied op zee
-
- - Territoriale Zee
- - Aansluitende Zone
- - Exclusieve Economische Zone
- - Continentaal Plat
-
-<aside class="issue">
-   Url opnemen naar bronnen?
-</aside>
-
-<aside class="issue">
-   <b>Q</b>: Wordt dit een <i>algemeen</i> stuk (DiSGeo) of <i>specifiek bestuurlijke gebieden</i>? <b>A</b>: Algemener neerzetten, voor onderdeel BG, dan verder aanscherpen.
-</aside>
-
-##### Ondersteunde CRS-en bij aanlevering
-
-Het **toepassingsgebied** en de **dimensie** bepalen welke CRS-en bij aanlevering van geometrieën geldig zijn. Aan de ene kant bestaat er onderscheid in het toepassingsgebied. Er zijn objecten die vallen binnen het Europese deel van Nederland en objecten die vallen binnen de Nederlandse Exclusieve Economische Zone (EEZ) van de Noordzee. Aan de andere kant bestaat er onderscheid in de dimensie van geometrieën. Sommige geometrieën zijn 2-dimensionaal; anderen 3-dimensionaal. Voor objecten binnen het Europese deel van Nederland gelden de volgende CRS-en: _**RD**_ en _**ETRS89**_. Voor gebieden op zee is nog geen besluit genomen.
-
-<aside class="issue">
-  <b>Q</b>: Hier wordt EEZ genoemd, maar er zijn vier typen op zee. willen we niet dichter bij benaming uit huidige model blijven <i>'~ op land'</i> en <i>'~ op zee'</i>? 
-</aside>
-
-Er zijn verschillende implementaties van ETRS89 in omloop. Wij nemen het [advies](https://geonovum.github.io/HR-CRS-Gebruik/#realisaties-van-etrs89-en-evrs) van het _Regional Reference Frame Sub-Commission for Europe_ (EUREF) over, om de ETRF2000-realisatie te gebruiken. Verder wordt bij aanlevering rekening gehouden met een lijnlengte van maximaal 200 meter. Dit besluit volgt het [langelijnenadvies](https://forum.pdok.nl/uploads/default/original/2X/c/c0795baa683bf3845c866ae4c576a880455be02a.pdf) van het NSGI. Dit [wordt geadviseerd](https://geonovum.github.io/HR-CRS-Gebruik/#vormvastheid) in [gebruik-crs](https://docs.geostandaarden.nl/crs/def-hr-crs-20220314/), in verband met compatibiliteit met **RDNAPTRANS™**.
+Er zijn verschillende implementaties van ETRS89 in omloop. Het informatiemodel DiSGeo neemt het [advies](https://geonovum.github.io/HR-CRS-Gebruik/#realisaties-van-etrs89-en-evrs) het _Regional Reference Frame Sub-Commission for Europe_ (EUREF), om de **ETRF2000-realisatie** te gebruiken. Verder wordt bij aanlevering rekening gehouden met een **lijnlengte van maximaal 200 meter**. Dit besluit volgt het [langelijnenadvies](https://forum.pdok.nl/uploads/default/original/2X/c/c0795baa683bf3845c866ae4c576a880455be02a.pdf) van het NSGI, dat is [overgenomen](https://geonovum.github.io/HR-CRS-Gebruik/#vormvastheid) in [[gebruik-crs]] in verband met compatibiliteit met **RDNAPTRANS™**.
 
 Voor het CRS van **2D-geometrieen** gelden de volgende EPSG-codes:
 
@@ -200,8 +171,7 @@ Voor het CRS van **3D-geometrieen** gelden de volgende EPSG-codes:
 | RDNAP    | 7415  | http://www.opengis.net/def/crs/EPSG/9.9.1/7415  |
 | ETRF2000 | 9067  | http://www.opengis.net/def/crs/EPSG/9.9.1/9067  |
 
-
-Voor objecten binnen de EEZ geldt:
+<!-- Voor objecten binnen de EEZ geldt:
 * ETRS89
 
 <aside class="issue">
@@ -210,28 +180,18 @@ Het is nog niet volledig duidelijk welke CRS-en het beste gebruikt kunnen worden
 
 <aside class="issue">
 Uitzoekpunt: de EEZ zone is mogelijk niet het enige disgeo object waarvoor geldt dat RD geen optie is. Wellicht ook de andere bestuurlijke gebieden op zee en wellicht windturbines op zee.
-</aside>
+</aside> -->
 
-##### Ondersteunde CRS-en bij uitlevering:
+#### Uitlevering
 
-<aside class="issue">
-   <b>Q</b>: Aan- en uitleverprocessen al openemen? <b>A</b>: Ja aan- en uitlevering al opnemen.
-</aside>
-
-Bij uitlevering als RD dezelfde realisaties beschikbaar als bij aanlevering.
-
-Bij uitlevering als ETRS89 kan de geometrie, naast als dezelfde realisaties als bij aanlevering, ook als de geografische ensemble CRSen opgevraagd worden. Te weten:
-
-<aside class="note">
-   In onderstaande tabellen extra kolom 'dimensie' (o.i.d.) opnemen? **Nee**: hanteer zelfde aanpak als tabellen 'aanlevering'.
-</aside>
+Bij uitlevering in RD zijn dezelfde realisaties beschikbaar als bij aanlevering. Bij uitlevering in ETRS89 kan de geometrie, naast als dezelfde realisaties als bij aanlevering, ook als de geografisch ensemble van CRS-en worden opgevraagd.
 
 | CRS-Naam | Code  | URI                                             |
 |----------|-------|-------------------------------------------------|
 | ETRS89   | 4258  | http://www.opengis.net/def/crs/EPSG/9.9.1/4258  |
 | ETRS89   | 4937  | http://www.opengis.net/def/crs/EPSG/9.9.1/4937  |
 
-Uitlevering via de WGS 84 CRSen is ook mogelijk via nultransformatie [zoals beschreven](https://docs.geostandaarden.nl/crs/crs/#wgs-84-gelijkstellen-aan-etrs89-nultransformatie) in [gebruik-crs](https://docs.geostandaarden.nl/crs/def-hr-crs-20220314/). Het gaat specifiek om:
+Uitlevering via de WGS 84 CRSen is ook mogelijk via nultransformatie [zoals beschreven](https://docs.geostandaarden.nl/crs/crs/#wgs-84-gelijkstellen-aan-etrs89-nultransformatie) in [[gebruik-crs]]. Het gaat specifiek om:
 
 | CRS-Naam | Code   | URI                                             |
 |----------|--------|-------------------------------------------------|
@@ -240,37 +200,37 @@ Uitlevering via de WGS 84 CRSen is ook mogelijk via nultransformatie [zoals besc
 | WGS 84   | CRS84  | http://www.opengis.net/def/crs/OGC/1.3/CRS84    |
 | WGS 84h  | CRS84h | http://www.opengis.net/def/crs/OGC/0/CRS84h     |
 
-Hierbij zijn CRS84 en CRS84h respectievelijk de long lat varianten van de WGS 84 realisaties 4326 en 4979.
+Hierbij zijn CRS84 en CRS84h respectievelijk de long-lat-varianten van de WGS84-realisaties met de EPSG-codes 4326 en 4979.
 
-<aside class="issue">
-   Schrijfwijze 'long lat varianten'
-</aside>
+#### Bestuurlijk gebied
 
-In [](#crs-overview) is een schematische weergave van de ondersteunde CRS-en bij aanlevering en uitlevering opgenomen.
+Binnen het thema bestuurlijk gebied bevatten een aantal objecten een geometrie die binnen het Europese deel van Nederland valt. In het informatiemodel zijn deze gebieden geclassificeerd als 'bestuurlijk gebied op land': 
 
-<figure id="crs-overview">
-    <img src="media/crs-overview.drawio.png" alt="Overview van CRS-en in DiSGeo"/>
-    <figcaption>Overzicht van de ondersteunde CRS-en in het kader van DiSGeo bij aanlevering en uitlevering</figcaption>
-</figure>
+ - Rijksgebied
+ - Gemeentegebied
+ - Provinciegebied
+ - Waterschapsgebied
+ - Veiligheidsregiogebied
+
+Het openbaar lichaam Rijk bestuurt ook een aantal gebieden op zee. Deze objecten zijn reeds onderdeel van het informatiemodel, maar het is nog niet duidelijk welke CRS-en daarvoor gelden. De gebieden worden op deze plek genoemd, maar niet verder uitgewerkt in de rest van de paragraaf. De volgende objecten zijn geclassificeerd als 'bestuurlijk gebied op zee':
+
+ - Territoriale Zee
+ - Aansluitende Zone
+ - Exclusieve Economische Zone
+ - Continentaal Plat
 
 ### Kwaliteit
 
-<aside class="note">
-   Onderstaande tekst komt uit documentatie disgeo-im.
-</aside>
+Onder kwaliteit vallen verschillende onderdelen, zoals gegevenskwaliteit, nauwkeurigheid, inwinregels en topologische regels. Deze zijn elk in een aparte paragraaf uitgewerkt.
 
 #### Gegevenskwaliteit
 
-Dit document formuleert geen *kwaliteitseisen*, maar hanteert het uitgangspunt dat deze in de bronregistraties gehanteerd worden. Van de gegevens die via het informatiemodel, of daarop gebaseerde productmodellen, worden uitgewisseld, kan daarom een bepaalde kwaliteit verwacht worden. Deze gegevenskwaliteit is een uitgangspunt voor de uiteindelijk uitgewisselde gegevens. 
-
-Gegevenskwaliteit kent veel verschillende aspecten, zoals wordt beschreven in het NORA Raamwerk Gegevenskwaliteit [[NORA-RK]]. Dit document beschrijft momenteel alleen de *topologische consistentie*. 
-
-Topologische consistentie wil zeggen dat de geometrieën van verschillende objecten zich op een bepaalde manier tot elkaar verhouden. De vlakgeometrieën van bestuurlijke gebieden van hetzelfde type partitioneren bijvoorbeeld de ruimte. Dat betekent dat:
+Allereerst formuleert dit document geen *kwaliteitseisen*. Het uitgangspunt is dat deze in de bronregistraties zelf gehanteerd worden. Van de gegevens die via het informatiemodel, óf daarop gebaseerde productmodellen, worden uitgewisseld, kan daarom een bepaalde kwaliteit verwacht worden. Deze gegevenskwaliteit is een uitgangspunt voor de uiteindelijk uitgewisselde gegevens. Verder kent gegevenskwaliteit veel verschillende aspecten, zoals beschreven in het NORA Raamwerk Gegevenskwaliteit [[NORA-RK]]. Dit document beschrijft momenteel alleen de *topologische consistentie*. Topologische consistentie wil zeggen dat de geometrieën van verschillende objecten zich op een bepaalde manier tot elkaar verhouden. De vlakgeometrieën van bestuurlijke gebieden van hetzelfde type partitioneren bijvoorbeeld de ruimte. Dat betekent dat:
 
 - Deze geometrieën naadloos op elkaar aansluiten, zodat er geen gaten voorkomen;
 - Deze geometrieën elkaar niet overlappen.
 
-De topologische consistentie-regels zijn opgenomen bij de objecttypen waar ze voor gelden, en zijn te vinden in [Hoodfstuk 3 Gegevensdefinitie](https://geonovum.github.io/disgeo-im/#cat).
+De topologische consistentie-regels zijn opgenomen bij de objecttypen waar ze voor gelden, en zijn te vinden in [hoofdstuk 3 Gegevensdefinitie](https://geonovum.github.io/disgeo-im/#cat).
 
 #### Nauwkeurigheid
 
@@ -279,21 +239,13 @@ Voor het aangeven van de nauwkeurigheid van de geometrieen in RD(NAP) en ETRS89 
 
 #### Nauwkeurigheidseisen
 
-<aside class="note">
-   Onderstaande tekst uit doc gen. ondw.
-</aside>
+Wat onder nauwkeurigheid van geometrie wordt verstaan is goed gedefinieerd in standaarden. We gaan ervan uit dat wat in EMSO `nauwkeurigheid` wordt genoemd, hetzelfde is als `positionele juistheid` in het [NORA Raamwerk Gegevenskwaliteit](https://www.noraonline.nl/wiki/Positionele_juistheid) en hetzelfde als wat in de BGT `positionele nauwkeurigheid` wordt genoemd. Daar staat het omschreven als: 
 
-<aside class="note">
-   Dit onderwerp is al verder uitgewerkt in doc modelleerprincipes.
-</aside>
-
-Wat onder nauwkeurigheid van geometrie wordt verstaan is goed gedefinieerd in standaarden. We gaan ervan uit dat wat in EMSO nauwkeurigheid wordt genoemd, hetzelfde is als [positionele juistheid](https://www.noraonline.nl/wiki/Positionele_juistheid) in het NORA raamwerk gegevenskwaliteit en hetzelfde als wat in de BGT positionele nauwkeurigheid wordt genoemd: 
-
-> "_Onder positionele nauwkeurigheid verstaat men de mate waarin de opgeslagen coördinaten overeenkomen met de waarden in de werkelijkheid of de geaccepteerde afwijking._"
+> "_Onder positionele nauwkeurigheid verstaat men de mate waarin de opgeslagen coördinaten overeenkomen met de waarden in de werkelijkheid of de geaccepteerde afwijking._" - [BGT](https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#:~:text=Onder%20positionele%20nauwkeurigheid%20verstaat%20men%20de%20mate%20waarin%20de%20opgeslagen%20co%C3%B6rdinaten%20overeenkomen%20met%20de%20waarden%20in%20de%20werkelijkheid%20of%20de%20geaccepteerde%20afwijking.)
 
 Per objecttype geven we de toegestane kwaliteit voor de positionele nauwkeurigheid als een getal in centimeters (dat dan de toegestane afwijking weergeeft). MIM heeft hiervoor geen metadata-element. Een optie is om dit in een tabel vóór in de gegevenscatalogus op te nemen, zoals gedaan in de BGT catalogus op p. 23. 
 
-<aside class="example">
+<aside class="example" title="Nauwkeurigheidseisen in de BGT-catalogus">
 <figure>
     <img src="media/bgt-nauwkeurigheid.png" alt="Voorbeeld BGT"/>
     <figcaption>Tabel met nauwkeurigheidseisen in de BGT gegevenscatalogus</figcaption>
@@ -302,28 +254,15 @@ Per objecttype geven we de toegestane kwaliteit voor de positionele nauwkeurighe
 
 Eventueel zou het ook in het MIM aspect `Regels` bij de geometrie eigenschap van het desbetreffende objecttype gezet kunnen worden. 
 
-<aside class="issue">
-- Zoeken naar een manier om dit machineleesbaar vast te leggen.
-
-<b>VOORSTEL</b>: 
-
-Leg dit vast in een te definiëren metadata aspect bij de eigenschap in een MIM extensie voor geo. Het heeft mogelijk toegevoegde waarde om dit bij de data te kunnen terugvinden.
-
-Vastleggen bij eigenschap heeft voorkeur boven vastleggen bij objecttype, omdat er mogelijk meerdere geometrie-eigenschappen komen bij een objecttype (Levels of Detail).
+<aside class="issue" title="Machineleesbaarheid">
+   <p>Zoeken naar een manier om dit machineleesbaar vast te leggen.</p>
+   <p><b>VOORSTEL</b></p> 
+   <p>Leg dit vast in een te definiëren metadata-aspect bij de eigenschap in een MIM-extensie voor geo. Het heeft mogelijk toegevoegde waarde om dit bij de data te kunnen terugvinden. Vastleggen bij eigenschap heeft voorkeur boven vastleggen bij objecttype, omdat er mogelijk meerdere geometrie-eigenschappen komen bij een objecttype (Levels of Detail).</p>
 </aside>
 
 #### Inwinregels
-<aside class="note">
-   Onderstaande tekst uit doc gen. ondw.
-</aside>
 
-<aside class="note">
-   Onderwerp is al verder uitgewerkt in modelleerprincipes.
-</aside>
-
-Verreweg de meeste objecttypen in de SOR hebben in hun huidige registratie al enige vorm van inwinregels. Eventueel zouden inwinregels in het MIM aspect `Regels` bij het geometrie attribuut van het desbetreffende objecttype gezet kunnen worden. 
-
-Omdat dit vaak omvangrijke instructies zijn, zijn ze nu meestal in tekst uitgeschreven in een apart handboek of hoofdstuk van de gegevenscatalogus. We zoeken naar een manier om deze teksten wel te relateren aan de bijbehorende modelelementen (annotatie).
+Verreweg de meeste objecttypen in het informatiemodel DiSGeo hebben in hun huidige registratie al enige vorm van inwinregels. Eventueel zouden inwinregels in het MIM-aspect `Regels` bij het geometrie-attribuut van het desbetreffende objecttype gezet kunnen worden. Dit zijn vaak omvangrijke tekstuele instructies die in een apart handboek of hoofdstuk van de gegevenscatalogus. We zoeken naar een manier om deze teksten te relateren aan de bijbehorende modelelementen (annotatie).
 
 #### Topologische regels
 
@@ -350,11 +289,15 @@ Deze relaties kun je gebruiken voor punt-, lijn- en vlakgeometrieën. Omdat er i
 
 > "_Het is belangrijker om ervoor te zorgen dat objecten die zich in de werkelijkheid op een bepaalde wijze tot elkaar verhouden (bijvoorbeeld een verharding ligt bovenop een overbrugging) ook in de registratie op deze wijze tot elkaar verhouden (bijvoorbeeld dat uit de z-coördinaten van de verharding en de overbrugging blijkt dat de verharding bovenop de overbrugging ligt). De exacte uitwerking van deze relaties in topologie-regels zal later in het traject verder worden opgepakt_".
 
-<aside class="issue">
+<aside class="issue" title="Landsdekkendheid">
    Welke objecttypen spelen een rol in de landsdekkendheid? Welke objecttypen hebben specifieke topologische relaties met elkaar? We hebben als modelleurs inhoudelijke expertise nodig om dit goed uit te werken.
 </aside>
 
 #### Benodigde kwaliteitsmetadata
+
+<aside class="issue" title="Relatie met hoofdstuk 2.2 Metadata">
+   In hoeverre hoort deze paragraaf hier thuis? Wordt het al afgedekt in het hoofdstuk over metadata? Of zou het daar niet beter passen?
+</aside>
 
 Wat voor kwaliteitsmetadata bij een objecttype wordt voorgeschreven, kan worden bepaald aan de hand van uitgangspunten in EMSO [§ 3.4.5](https://docs.geostandaarden.nl/disgeo/emso/#meta-gegevens-over-herkomst-en-kwaliteit). Dit kan zijn:
 - plaatsbepalingspunten
