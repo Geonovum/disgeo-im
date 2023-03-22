@@ -97,6 +97,8 @@ Voor de vastlegging van (informatie over) geometrieën gelden een aantal belangr
 
 De volgende paragrafen beschrijven welke eisen op het informatiemodel DiSGeo van toepassing zijn én hoe die concreet worden vastgelegd. De eisen en uitgangspunten zijn in principe geen onderdeel van dit document. We verwijzen hiervoor vanuit de tekst naar de betreffende documentatie. Indien niet aanwezig en de eis op zichzelf mogelijk onvoldoende helder is, bevat dit hoofdstuk een korte uitleg over de totstandkomming danwel interpretatie van een eis.
 
+
+
 ### Geometrietypen
 
 Geometrietypen hebben verschillende niveau's van _data-complexiteit_ en _dimensionaliteit_ (zie: [Dimensies](#dimensies). Het volstaat om een ISO 19107-geometrietype toe te passen in het informatiemodel. Raadpleeg voor een uitgebreidere toelichting op dit ondewerp hoofdstuk 2 van de handreiking Geometrie in model en GML [[GIMEG]]. Dit legt inhoudelijk uit hoe het geometriemodel uit ISO 19107 [[ISO-19107-2019]] kan worden toegepast en wat het geldende Nederlands profiel is.
@@ -130,6 +132,8 @@ _Simple Features_ gebruikt geometrietypen uit de veel uitgebreidere standaard IS
    <i>Spatial reference system</i> is een breder begrip dan <i>coördinaatreferentiesysteem</i>. Het gaat om een algemene locatieaanduiding, een <i>ruimtelijk referentiesysteem</i> dat niet alleen op basis van coördinaten kan werken maar ook op basis van bijvoorbeeld geografische naam of adres. 
 </aside>
 
+
+
 ### Dimensies
 Bij _dimensie_ wordt onderscheid gemaakt tussen de termen: **primitieve**, **ruimte** en **model**. Er zijn vier gradaties van primitieven oplopend van 0D tot en met 3D. Elke hogere graad voegt een extra dimensie toe. Zo staat 0D alleen het primitieve `punt` toe, maar 1D zowel `punt` als `lijn`. 2D voegt daar `vlak` aan toe en 3D `volume`.
 
@@ -159,6 +163,8 @@ Het EMSO schrijft voor dat het informatiemodel DiSGeo moet voorsorteren op de mo
 #### Bestuurlijk gebied
 
 Het [[EMSO]] geeft in hoofdstuk 5 tot en met 8 per geo-informatieobject aan welk geometrietype van toepassing is. _Registratieve ruimte_ (waar _bestuurlijk gebied_ onderdeel van is) wordt tweedimensionaal vastgelegd. Hiervoor zijn de geometrietypen `GM_Surface` (_vlak_) of `GM_MultiSurface` (_multi-vlak_) geschikt. Het hoofdstuk [Gegevensdefinitie](#cat) van dit document beschrijft per geo-informatieobjecttype in detail hoe het informatiemodel DiSGeo dit vormgeeft.
+
+
 
 ### Coordinaatreferentiesystemen
 
@@ -281,9 +287,11 @@ Het openbaar lichaam Rijk bestuurt ook een aantal gebieden op zee. Deze objecten
  - Exclusieve Economische Zone
  - Continentaal Plat
 
+
+
 ### Ruimtelijke relaties
 
-Voor ruimtelijke relaties tussen de objecten kunnen we gebruik maken van het _Dimensionally Extended Nine‐Intersection Model_ (DE-9IM). Dit is een topologisch model voor het beschrijven van ruimtelijke relaties in een [2D-model](#dimensies). Dit model is uitgewerkt in de Simple Features standaard [[ISO-19125]] en wordt aangeraden in [[NEN3610-2022]] en [[sdw-bp]]. Deze relaties zijn geïmplementeerd in veel geografische softwareomgevingen en ook in GeoSPARQL. Hieronder een overzicht met de originele Engelse naam en daarachter de vertaalde Nederlandse naam uit [NEN3610-2022](https://definities.geostandaarden.nl/nen3610-2022/nl/page/?uri=http%3A%2F%2Fdefinities.geostandaarden.nl%2Fnen3610-2022%2Fid%2Fcollectie%2Fruimtelijke_relaties).
+Voor ruimtelijke relaties tussen de objecten kunnen we gebruik maken van het _Dimensionally Extended Nine‐Intersection Model_ (DE-9IM). Dit is een topologisch model voor het beschrijven van ruimtelijke relaties in een [2D-model](#dimensies). Dit model is uitgewerkt in de _Simple Features_-standaard [[ISO-19125]] en wordt aangeraden in [[NEN3610-2022]] en [[sdw-bp]]. Deze relaties zijn geïmplementeerd in veel geografische softwareomgevingen en ook in GeoSPARQL. Hieronder een overzicht met de originele Engelse naam en daarachter de vertaalde Nederlandse naam uit [NEN3610-2022](https://definities.geostandaarden.nl/nen3610-2022/nl/page/?uri=http%3A%2F%2Fdefinities.geostandaarden.nl%2Fnen3610-2022%2Fid%2Fcollectie%2Fruimtelijke_relaties).
 
 - `Contains` - [Bevat](https://definities.geostandaarden.nl/nen3610-2022/nl/page/bevat)
 - `Within` - [Binnen](https://definities.geostandaarden.nl/nen3610-2022/nl/page/binnen)
@@ -294,9 +302,8 @@ Voor ruimtelijke relaties tussen de objecten kunnen we gebruik maken van het _Di
 - `Touches` - [Raakt](https://definities.geostandaarden.nl/nen3610-2022/nl/page/raakt)
 - `Overlaps` - [Overlapt](https://definities.geostandaarden.nl/nen3610-2022/nl/page/overlapt)
 
-Deze relaties kun je gebruiken voor punt-, lijn- en vlakgeometrieën. Omdat er in het informatiemodel DiSGeo meer met 3D wordt gewerkt, worden topologieregels complexer maar ook secundair aan de representatie van de werkelijke verhouding tussen objecten. Uit EMSO: 
-
-> "_Het is belangrijker om ervoor te zorgen dat objecten die zich in de werkelijkheid op een bepaalde wijze tot elkaar verhouden (bijvoorbeeld een verharding ligt bovenop een overbrugging) ook in de registratie op deze wijze tot elkaar verhouden (bijvoorbeeld dat uit de z-coördinaten van de verharding en de overbrugging blijkt dat de verharding bovenop de overbrugging ligt). De exacte uitwerking van deze relaties in topologie-regels zal later in het traject verder worden opgepakt_".
+Deze relaties zijn beperkt tot een 2D-model en daarmee alleen van toepassing op geometrietypen `punt`, `lijn` of `vlak`. Omdat er in het informatiemodel DiSGeo meer met 3D wordt gewerkt, worden de topologische regels complexer. Ze worden echter ook secundair aan de representatie van de werkelijke verhouding tussen objecten. Uit EMSO: 
+Het EMSO stelt dat het <q><i>belangrijker</i> [is] <i>om ervoor te zorgen dat objecten die zich in de werkelijkheid op een bepaalde wijze tot elkaar verhouden (bijvoorbeeld een verharding ligt bovenop een overbrugging) ook in de registratie op deze wijze tot elkaar verhouden (bijvoorbeeld dat uit de z-coördinaten van de verharding en de overbrugging blijkt dat de verharding bovenop de overbrugging ligt). De exacte uitwerking van deze relaties in topologie-regels zal later in het traject verder worden opgepakt</i></q>.
 
 <aside class="issue" title="Landsdekkendheid">
    <p>Welke objecttypen spelen een rol in de landsdekkendheid? Welke objecttypen hebben specifieke topologische relaties met elkaar? We hebben als modelleurs inhoudelijke expertise nodig om dit goed uit te werken.</p>
@@ -335,11 +342,17 @@ Deze relaties kun je gebruiken voor punt-, lijn- en vlakgeometrieën. Omdat er i
 
 </aside>
 
+
+
 ### Kwaliteit
 
 Onder kwaliteit vallen verschillende onderdelen, zoals gegevenskwaliteit, nauwkeurigheid, inwinregels en topologische regels. Deze zijn elk in een aparte paragraaf uitgewerkt.
 
 #### Gegevenskwaliteit
+
+<aside class="ednote" title="Topologische consistentie">
+   Deze paragraaf onderbrengen bij <i>Ruimtelijke relaties</i>/<i>Topologie</i>, of topologische relaties in dit hoofdstuk onderbrengen.
+</aside>
 
 Allereerst formuleert dit document geen *kwaliteitseisen*. Het uitgangspunt is dat deze in de bronregistraties zelf gehanteerd worden. Van de gegevens die via het informatiemodel, óf daarop gebaseerde productmodellen, worden uitgewisseld, kan daarom een bepaalde kwaliteit verwacht worden. Deze gegevenskwaliteit is een uitgangspunt voor de uiteindelijk uitgewisselde gegevens. Verder kent gegevenskwaliteit veel verschillende aspecten, zoals beschreven in het NORA Raamwerk Gegevenskwaliteit [[NORA-RK]]. Dit document beschrijft momenteel alleen de *topologische consistentie*. Topologische consistentie wil zeggen dat de geometrieën van verschillende objecten zich op een bepaalde manier tot elkaar verhouden. De vlakgeometrieën van bestuurlijke gebieden van hetzelfde type partitioneren bijvoorbeeld de ruimte. Dat betekent dat:
 
@@ -395,8 +408,6 @@ Wat voor kwaliteitsmetadata bij een objecttype wordt voorgeschreven, kan worden 
 
 We gaan onze eerder uitgewerkte **modelleerpatronen** toetsen tegen dit onderwerp.
 
-### NEN3610
-
 
 
 ### Generalisatie
@@ -429,12 +440,14 @@ Conform de Spatial Data on the Web Best Practices [[SDW-BP]], [Best Practide 6](
    Onderdeel van generalisatie is in sommige gevallen ook aggregatie. Bij bestuurlijke grenzen komt dit niet voor, maar bij gebouwen en wegen wel. Een groepje gebouwen dat dicht naast elkaar staat wordt dan bijvoorbeeld geaggregeerd tot één gebouwblok, of een aantal wegdelen tot één wegdeel. Als we van objecten verschillende geometrieën beschikbaar willen stellen - hoe werkt dat dan als objecten op lagere schalen geaggregeerd zijn, zoals bijvoorbeeld gebouwen? Het is dan ingewikkeld om de afleidingsgegevens te modelleren.
 </aside>
 
+
+
 ### EMSO (NOG INDELEN)
 
 #### Uitgangspunten uit EMSO
 
 <aside class="ednote" title="Algemene verwijzing maken">
-   Controleer of het mogelijk is om aan het begin van het hoofdstuk Geometrie, of zelfs aan het begin van het hoofdstuk Algemeen, een verwijzing te maken naar uitgangspunten in het EMSO.
+   Overweeg de mogelijkheid om aan het begin van het hoofdstuk <i>Geometrie</i>, of zelfs aan het begin van het hoofdstuk <i>Algemeen</i>, een verwijzing te maken naar uitgangspunten in het EMSO.
 </aside>
 
 <aside class="ednote" title="Vraag kwaliteitsmetadata">
