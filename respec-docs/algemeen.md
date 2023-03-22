@@ -292,12 +292,8 @@ Verreweg de meeste objecttypen in het informatiemodel DiSGeo hebben in hun huidi
 
 #### Topologische regels
 
-<aside class="note" title="Onderbrengen tekst">
+<aside class="ednote" title="Onderbrengen tekst">
    Kiezen waar plaatsen: hier of onder NEN3610
-</aside>
-
-<aside class="note" title="Plek uitwerken onderwerp">
-   Dit onderwerp is al verder uitgewerkt in modelleerprincipes? Kijk ook naar deze <a href="https://github.com/Geonovum/disgeo-im/blob/main/docs/thema/bestuurlijke-gebieden/benaming-relaties.md">notitie over ruimtelijke en administratieve relaties in NEN3610:2022</a>.
 </aside>
 
 Voor ruimtelijke relaties tussen de objecten kunnen we gebruik maken van de topologische relaties zoals gedefinieerd in de Simple Features standaard [[ISO-19125]] en aangeraden in [[NEN3610-2021-ontw]] en [[sdw-bp]]. Deze relaties zijn geïmplementeerd in veel geografische softwareomgevingen en ook in GeoSPARQL: 
