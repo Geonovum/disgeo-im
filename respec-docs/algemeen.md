@@ -423,12 +423,8 @@ In producten op basis van de geobasisregistraties zal de gebruiker echter doorga
 - Het schaalniveau; conform [[NLISO19115]] noemen we dit de 'toepassingsschaal'. Dit is nodig zodat de gebruiker de gewenste schaal kan opvragen en kan zien voor welke schaal een geometrie geschikt is.
 - De herkomst i.e. afleidingsgegevens: wat was de brongeometrie en hoe is de geometrie daaruit gegeneraliseerd. Dit is o.a nodig om terugmelding op geometrie te kunnen ondersteunen, ook in het geval van afgeleide geometrieën.
 
-<aside class="ednote" title="Eén of meerder geometrieatributen">
-   <b>Eén geometrieattribuut</b>: dit is waarschijnlijk wel voldoende, maar er zijn wel <i>use cases</i> denkbaar waarbij je meerdere geometrieën wilt uitwisselen van één object. Het CBS doet dit bijvoorbeeld wel in hun WFS-service van wijken en buurten. Gebruikers kunnen dan in hun eigen GIS-pakket van schaal wisselen wanneer ze maar willen. 
-
-   Eén geometrieattribuut volstaat dan nog steeds, maar het moet wel een meervoudige kardinaliteit hebben dwz `[1..*]`. 
-
-   De vraag is of we inderdaad het geometrieattribuut met meervoudige kardinaliteit zullen opnemen in het informatiemodel.
+<aside class="ednote" title="Eén of meerdere geometrieatributen">
+   Eén geometrieattribuut is waarschijnlijk wel voldoende, maar er zijn wel <i>use cases</i> denkbaar waarbij je meerdere geometrieën wilt uitwisselen van één object. Het CBS doet dit bijvoorbeeld wel in hun WFS-service van wijken en buurten. Gebruikers kunnen dan in hun eigen GIS-pakket van schaal wisselen wanneer ze maar willen. Eén geometrieattribuut volstaat dan nog steeds, maar het moet wel een meervoudige kardinaliteit hebben d.w.z. `[1..*]`. De vraag is of we inderdaad het geometrieattribuut met meervoudige kardinaliteit zullen opnemen in het informatiemodel.
 </aside>
 
 Conform de Spatial Data on the Web Best Practices [[SDW-BP]], [Best Practide 6](https://www.w3.org/TR/sdw-bp/#multiplegeometries), moet in een geodataproduct dat op het Web wordt gepubliceerd altijd in ieder geval een geometrie worden aangeboden die geschikt is om te gebruiken in webtoepassingen, i.e. bij wat grotere geometrieën moet er altijd een gegeneraliseerde geometrie beschikbaar zijn.
@@ -532,27 +528,29 @@ De PROV standaard biedt verschillende niveau's van detail waarmee je de bron van
 Afhankelijk van hoe een informatieobject tot stand is gekomen kan voor het een of het andere gekozen worden.
 Bij een bronregistratie die direct informatieobjecten ontsluit ligt het voor de hand om voor de directe uitdrukking te gaan. Hierbij introduceren we de mogelijkheid om verschillende soorten `Bronentiteit` te definiëren die als `primaireBron` opgenomen kunnen worden voor een informatieobject. Hierbij maken we gebruik van een standaard [[PROV-DM]] modelleerpatroon ([primary source](https://www.w3.org/TR/prov-dm/#term-primary-source)), waarmee we het bijvoorbeeld mogelijk maken om een brondocument, of andere bronnen zoals luchtfoto's op een standaard manier op te nemen als bron van een informatieobject. Daarnaast kunnen het informatieobject toeschrijven aan een verantwoordelijke partij. In deze context is een verantwoordelijke partij meestal een overheidsorganisatie, maar het model is uitbreidbaar voor meerdere soorten actoren.
 
-<aside class='example'>
-Een voorbeeld hoe een informatieobject er in een concrete serialisatie conform dit modelleerpatroon uit zou kunnen zien is:
+<aside class='example' title="Informatieobject in serialisatie conform PROV-standaard">
+   Een voorbeeld hoe een informatieobject er in een concrete serialisatie conform dit modelleerpatroon uit zou kunnen zien is:
 
-```
-{
-    "identificatie": "12345",
-    "domein": "NL.Gebouw",
-    "oorspronkelijkBouwjaar": "1980",
-    "status": "In gebruik",
-    "geregistreerdMet": {
-        "primaireBron": {
-            "documentnummer": "GB1487",
-            "documentdatum": "2020-09-28"
-        },
-        "toegeschrevenAan" : {
-            "naam": "Gemeente Kemeltoet",
-            "code": "GM1234"
-        }
-    }
-}
-```
+   ```
+   {
+       "identificatie": "12345",
+       "domein": "NL.Gebouw",
+       "oorspronkelijkBouwjaar": "1980",
+       "status": "In gebruik",
+       "geregistreerdMet": {
+           "primaireBron": {
+               "documentnummer": "GB1487",
+               "documentdatum": "2020-09-28"
+           },
+           "toegeschrevenAan" : {
+               "naam": "Gemeente Kemeltoet",
+               "code": "GM1234"
+           }
+       }
+   }
+   ```
 </aside>
 
-<aside class="note">Het is ook mogelijk om, bij het in samenhang brengen van gegevens, nieuwe afgeleide informatieobjecten te ontsluiten. Hierbij is de bron niet zo direct aan te merken als bij informatieobjecten uit een bronregistratie. Het model hiervoor wordt nog uitgewerkt.</aside>
+<aside class="note" title="Nieuwe afgeleide informatiebojecten">
+   Het is ook mogelijk om, bij het in samenhang brengen van gegevens, nieuwe afgeleide informatieobjecten te ontsluiten. Hierbij is de bron niet zo direct aan te merken als bij informatieobjecten uit een bronregistratie. Het model hiervoor wordt nog uitgewerkt.
+</aside>
