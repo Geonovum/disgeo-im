@@ -153,11 +153,13 @@ De onderstaande figuur is een schematische weergave van de ondersteunde CRS-en b
 </figure>
 
 <aside class="ednote" title="snippets">
-   <p>Hieronder uitwerking in <code>[coördinaatreferentiesystemen](https://definities.geostandaarden.nl/nen3610-2022/nl/page/coordinaatreferentiesysteem)</code> per zee, land, dimensionaltiet en aan- danwel uitlevering.</p>
-   <p>Toch verschilt per onderwerp/thema de <code>...</code> </p>
-   <p>Linear Reference Systems zijn specifiek relevant voor transportnetwerken (weg en spoor). Die zijn in dit stadium nog niet uitgewerkt en op Bestuurlijke Gebieden niet van toepassing.</p>
-   <p>Onderscheid maken tussen zee en land</p>
-   <p><code>Head</code>Bestuurlijke gebieden</p>
+   <ul>
+      <li>Hieronder uitwerking in <code>[coördinaatreferentiesystemen](https://definities.geostandaarden.nl/nen3610-2022/nl/page/coordinaatreferentiesysteem)</code> per zee, land, dimensionaltiet en aan- danwel uitlevering.</li>
+      <li>Toch verschilt per onderwerp/thema de <code>...</code> </li>
+      <li>Linear Reference Systems zijn specifiek relevant voor transportnetwerken (weg en spoor). Die zijn in dit stadium nog niet uitgewerkt en op Bestuurlijke Gebieden niet van toepassing.</li>
+      <li>Onderscheid maken tussen zee en land</li>
+      <li><code>Head</code>Bestuurlijke gebieden</li>
+   </ul>
 </aside>
 
 #### Aanlevering
@@ -294,7 +296,7 @@ Verreweg de meeste objecttypen in het informatiemodel DiSGeo hebben in hun huidi
    Kiezen waar plaatsen: hier of onder NEN3610
 </aside>
 
-<aside class="note" title="Plel uitwerken onderwerp">
+<aside class="note" title="Plek uitwerken onderwerp">
    Dit onderwerp is al verder uitgewerkt in modelleerprincipes? Kijk ook naar deze <a href="https://github.com/Geonovum/disgeo-im/blob/main/docs/thema/bestuurlijke-gebieden/benaming-relaties.md">notitie over ruimtelijke en administratieve relaties in NEN3610:2022</a>.
 </aside>
 

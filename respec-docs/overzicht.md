@@ -18,9 +18,7 @@ Er is een belangrijke relatie tussen een [openbaar lichaam](https://geonovum.git
 #### Openbaar Lichaam
 De verzameling van alle openbare lichamen van hetzelfde type, bijvoorbeeld: gemeenten, provincies, waterschappen of ministeries, heet een _bestuurslaag_. Wanneer er gesproken wordt over een deel van een openbaar lichaam, bijvoorbeeld: de gemeenteraad, het college van burgemeester en wethouders en de burgemeester, is de term _bestuursorgaan_ van toepassing. Beide termen spelen in het informatiemodel geen directe rol, maar zijn wel belangrijk voor de afbakening van _openbaar lichaam_. Het openbaar lichaam is een bruikbare term voor het benoemen van de gemeente als _volledige bestuurlijke organisatie_.
 
-<aside class="example">
-   <strong>Definiëren Openbaar lichaam</strong>
-
+<aside class="example" title="Definiëren van Openbaar Lichaam">
    In wetgeving wordt een openbaar lichaam weliswaar niet gedefinieerd, maar het komt er wel in voor. Uit verschillende wetsartikelen valt af te leiden wat ermee bedoeld wordt (zie: voorbeeld).
 
    Uit <strong>artikel 6 van de bekendmakingswet</strong>, valt, in combinatie met de <strong>artikelen 1 en 2</strong>, af te leiden wat een <strong>openbaar lichaam</strong> is:
@@ -42,8 +40,7 @@ Dit model legt de geometrie vast van een bestuurlijk gebied. Die geometrie komt 
 #### Land en Zee
 Elke instantie van een openbaar lichaam heeft in de regel één bestuurlijk gebied. Een uitzondering hierop is het openbare lichaam _Rijk_. Naast een bestuurlijk gebied op land (in dit model het _Rijksgebied_), bestuurt het Rijk ook vier gebieden op zee; zogenaamde maritieme zones. In totaal onderscheid dit model vijf typen bestuurlijke gebieden die onder de bestuurlijke verantwoordelijkheid van het Rijk vallen.
 
-<aside class="example">
-   <strong>Maritieme Zones</strong>
+<aside class="example" title="Maritieme Zones">
 
    Maritieme Zones worden vastgesteld uitgaande van de laagwaterlijn (ook wel: normale basislijn). Deze lijn markeert waar de zee droogvalt als het eb is. De indeling van de maritieme zones die hieruit volgt, is gebaseerd op het Zeerechten verdrag van de Verenigde Naties. Op basis van afstand tot de normale basislijn worden de volgende vier zones onderscheden:
 
