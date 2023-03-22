@@ -288,6 +288,8 @@ Eventueel zou het ook in het MIM aspect `Regels` bij de geometrie eigenschap van
 
 #### Inwinregels
 
+Het semantisch model van NEN3016 doet geen uitspraak over de vastleggin per objecttype, omdat specifieke geometrische vastlgegging sterk afhankelijk is van gebruikersbehoeften en kunnen verschillen per toepassingsdomein. Uitspraken over de geometrische vastleggin zullen daarom worden opgenomen in de vorm van inwinregels in sectormodellen. Deze regels <q>geven aan welke punten van een object ingemeten moeten worden en waar geometrie van een geregistreerd object aan moet voldoen. Het leidt tot een vastgestelde geometrische weergave gericht op een specifieke toepassing</q>, stelt NEN3610. 
+
 Verreweg de meeste objecttypen in het informatiemodel DiSGeo hebben in hun huidige registratie al enige vorm van inwinregels. Eventueel zouden inwinregels in het MIM-aspect `Regels` bij het geometrie-attribuut van het desbetreffende objecttype gezet kunnen worden. Dit zijn vaak omvangrijke tekstuele instructies die in een apart handboek of hoofdstuk van de gegevenscatalogus. We zoeken naar een manier om deze teksten te relateren aan de bijbehorende modelelementen (annotatie).
 
 #### Topologische regels
@@ -373,13 +375,18 @@ We gaan onze eerder uitgewerkte **modelleerpatronen** toetsen tegen dit onderwer
 Het informatiemodel DiSGeo valt binnen het toepassingsgebied van het Basismodel Geo-informatie [[NEN3610-2022]] (hierna: NEN3610) omdat het objecttypen beschrijft die direct herleidbaar zijn tot een locatie ten opzichte van de aarde. Het wordt daarom gemodelleerd conform de regels die in NEN3610 geformuleerd zijn, en als extensie op het semantische model uit NEN3610.
 
 De regels uit NEN3610 zijn voor zover van toepassing gevolgd in het informatiemodel DiSGeo. Binnen DiSGeo maken we zowel een conceptueel model als een logisch model. Hieronder geven we aan welke aspecten van NEN3610 conformiteit op welk modelniveau terug te vinden zijn. We noemen hier niet alle regels, maar alleen de belangrijkste, die in enige vorm terug te vinden zijn in het informatiemodel zelf:
+
+<aside class="ednote" title="Uitgewerkt door Pano">
+   Onderstaande regels zijn uitgwerked in paragrafen <i>Metadata</i>, <i>Levensloop</i> en <i>Historie</i>.
+</aside>
+
  - DiSGeo objecten zijn uniek identificeerbaar via de twee NEN3610-attributen `identificatie` en `domein` die zijn opgenomen in het logisch model
  - `Historie` en `Levensduur` zijn opgenomen in de klasse `Registratiegegevens` in het logisch model: 
  - `Tijdlijn Geldigheid` is opgenomen via de attributen `beginGeldigheid` en `eindGeldigheid`
  - `Tijdlijn Registratie` is opgenomen via de attributen `tijdstipRegistratie` en `eindRegistratie`
  - `Levensduur` van objecten in de registratie is opgenomen via de attributen `objectBegintijd` en `objectEindtijd`
 
-Het semantische model van NEN3610 bestaat uit een aantal objecttypen die objecten uit de werkelijkheid op hoofdlijn classificeren. In het informatiemodel DiSGeo zijn de klassen, voor zover dit past, gemodelleerd als subklasse van het NEN3610 objecttype Geo-Object of (bij voorkeur) een specifiekere NEN3610-subklasse van Geo-object. Deze verbinding met deze semantische klassen is opgenomen in het conceptueel model.
+Het semantische model van NEN3610 bestaat uit een aantal objecttypen die objecten uit de werkelijkheid op hoofdlijn classificeren. In het informatiemodel DiSGeo zijn de klassen, voor zover dit past, gemodelleerd als subklasse van het NEN3610 objecttype Geo-Object of (bij voorkeur) een specifiekere NEN3610-subklasse van Geo-object. De verbinding met deze semantische klassen is opgenomen in het conceptueel model.
 
 <aside class="example" title="Koppeling IM DiSGeo aan semantische klassen NEN3610">
    In het model voor Bestuurlijke gebieden is <code>BestuurlijkGebied</code> gemodelleerd als een specialisatie van het objecttype <code>RegistratieveRuimte</code>, die op haar beurt gemodellerd is als specialisatie van <code>NEN3610:RegistratieveRuimte</code>. Bestuurlijke gebieden zijn, volgens hun beschrijving in het [[EMSO]]: 
@@ -397,9 +404,7 @@ Het semantische model van NEN3610 bestaat uit een aantal objecttypen die objecte
 #### NEN 3610
 NEN 3610 [[NEN3610-2021-ontw]] zegt weinig specifieks over geometrie en geometrische vastlegging van objecten, anders dan dat ISO 19107:2020 normatief wordt aangehaald, waarin de ISO geometrietypen (o.a. `GM_Point`, `GM_Curve`, `GM_Surface`, `GM_Solid`) worden gedefinieerd. 
 
-Inwinregels worden in sectormodellen bepaald. 
 
-> "_Inwinregels geven aan welke punten van een object ingemeten moeten worden en waar de geometrie van een geregistreerd object aan moet voldoen. Het leidt tot een vastgestelde geometrische weergave gericht op een specifieke toepassing._"
 
  
 
