@@ -289,20 +289,21 @@ Het openbaar lichaam Rijk bestuurt ook een aantal gebieden op zee. Deze objecten
    Kiezen waar plaatsen: hier of onder NEN3610
 </aside>
 
-Voor ruimtelijke relaties tussen de objecten kunnen we gebruik maken van de topologische relaties zoals gedefinieerd in de Simple Features standaard [[ISO-19125]] en aangeraden in [[NEN3610-2021-ontw]] en [[sdw-bp]]. Deze relaties zijn geïmplementeerd in veel geografische softwareomgevingen en ook in GeoSPARQL: 
+Voor ruimtelijke relaties tussen de objecten kunnen we gebruik maken van het _Dimensionally Extended Nine‐Intersection Model_ (DE-9IM). Dit is een topologisch model voor het beschrijven van ruimtelijke relaties in een [2D-model](#dimensies). Dit model is uitgewerkt in de Simple Features standaard [[ISO-19125]] en wordt aangeraden in [[NEN3610-2022]] en [[sdw-bp]]. Deze relaties zijn geïmplementeerd in veel geografische softwareomgevingen en ook in GeoSPARQL: 
 
 <aside class="issue" title="Update reference">
    Bronverwijzing naar NEN3610 updaten.
 </aside>
 
-- **`Equals`** - gelijk
-- **`Disjoint`** - disjunct (geen enkel punt gemeen)
-- **`Touches`** - raakt
-- **`Crosses`** - kruist
-- **`Within`** - binnen
-- **`Contains`** - bevat
-- **`Intersects`** - doorsnijdt (geometrieën hebben op zijn minst één punt gemeen;
-geometrieën kunnen verschillende dimensie hebben)
+Engelse naam en de Nederlandse vertaling in NEN3610
+- `Contains` - [Bevat](https://definities.geostandaarden.nl/nen3610-2022/nl/page/bevat)
+- `Within` - [Binnen](https://definities.geostandaarden.nl/nen3610-2022/nl/page/binnen)
+- `Disjoint` - [Disjunct](https://definities.geostandaarden.nl/nen3610-2022/nl/page/disjunct)
+- `Intersects` - [Doorsnijdt](https://definities.geostandaarden.nl/nen3610-2022/nl/page/doorsnijdt)
+- `Equals` - [Gelijk](https://definities.geostandaarden.nl/nen3610-2022/nl/page/gelijk)
+- `Crosses` - [Kruist](https://definities.geostandaarden.nl/nen3610-2022/nl/page/kruist)
+- `Touches` - [Raakt](https://definities.geostandaarden.nl/nen3610-2022/nl/page/raakt)
+- `Overlaps` - [Overlapt](https://definities.geostandaarden.nl/nen3610-2022/nl/page/overlapt)
 
 Deze relaties kun je gebruiken voor punt-, lijn- en vlakgeometrieën. Omdat er in het informatiemodel DiSGeo meer met 3D wordt gewerkt, worden topologieregels complexer maar ook secundair aan de representatie van de werkelijke verhouding tussen objecten. Uit EMSO: 
 
