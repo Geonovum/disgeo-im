@@ -38,6 +38,37 @@
    </i></p>
 </aside>
 
+#### Aansluiting op Basismodel Geo-informatie (NEN3610)
+
+Het informatiemodel DiSGeo valt binnen het toepassingsgebied van het Basismodel Geo-informatie [[NEN3610-2022]] (hierna: NEN3610) omdat het objecttypen beschrijft die direct herleidbaar zijn tot een locatie ten opzichte van de aarde. Het wordt daarom gemodelleerd conform de regels die in NEN3610 geformuleerd zijn, en als extensie op het semantische model uit NEN3610.
+
+De regels uit NEN3610 zijn voor zover van toepassing gevolgd in het informatiemodel DiSGeo. Binnen DiSGeo maken we zowel een conceptueel model als een logisch model. Hieronder geven we aan welke aspecten van NEN3610 conformiteit op welk modelniveau terug te vinden zijn. We noemen hier niet alle regels, maar alleen de belangrijkste, die in enige vorm terug te vinden zijn in het informatiemodel zelf:
+
+<aside class="ednote" title="Uitgewerkt door Pano">
+   Onderstaande regels zijn uitgwerked in paragrafen <i>Metadata</i>, <i>Levensloop</i> en <i>Historie</i>.
+</aside>
+
+ - DiSGeo objecten zijn uniek identificeerbaar via de twee NEN3610-attributen `identificatie` en `domein` die zijn opgenomen in het logisch model
+ - `Historie` en `Levensduur` zijn opgenomen in de klasse `Registratiegegevens` in het logisch model: 
+ - `Tijdlijn Geldigheid` is opgenomen via de attributen `beginGeldigheid` en `eindGeldigheid`
+ - `Tijdlijn Registratie` is opgenomen via de attributen `tijdstipRegistratie` en `eindRegistratie`
+ - `Levensduur` van objecten in de registratie is opgenomen via de attributen `objectBegintijd` en `objectEindtijd`
+
+Het semantische model van NEN3610 bestaat uit een aantal objecttypen die objecten uit de werkelijkheid op hoofdlijn classificeren. In het informatiemodel DiSGeo zijn de klassen, voor zover dit past, gemodelleerd als subklasse van het NEN3610 objecttype Geo-Object of (bij voorkeur) een specifiekere NEN3610-subklasse van Geo-object. De verbinding met deze semantische klassen is opgenomen in het conceptueel model.
+
+<aside class="example" title="Koppeling IM DiSGeo aan semantische klassen NEN3610">
+   In het model voor Bestuurlijke gebieden is <code>BestuurlijkGebied</code> gemodelleerd als een specialisatie van het objecttype <code>RegistratieveRuimte</code>, die op haar beurt gemodellerd is als specialisatie van <code>NEN3610:RegistratieveRuimte</code>. Bestuurlijke gebieden zijn, volgens hun beschrijving in het [[EMSO]]: 
+
+   <blockquote>[...] <q><i>registratieve ruimten die op basis van wet- of regelgeving als eenheid gelden van politiek/bestuurlijke verantwoordelijkheid. Dit betreft bijvoorbeeld de gebieden behorende bij de vier formele bestuurslagen uit de Grondwet (Rijk, provincie, waterschap, gemeente), maar kan ook gebieden van bestuurlijke samenwerkingsverbanden met eigen politiek/bestuurlijke verantwoordelijkheid omvatten. Een voorbeeld daarvan betreft de veiligheidsregio’s.</i></q></blockquote>
+
+   De definitie van <code>BestuurlijkGebied</code> komt overeen met de NEN3610-definitie van <code>RegistratieveRuimte</code> maar is iets nauwer. In NEN3610 kan het gaan om een eenheid die geldt voor politiek-bestuurlijke verantwoordelijkheid óf bedrijfsvoering. Van dat laatste is bij bestuurlijke gebieden geen sprake. <code>BestuurlijkGebied</code> is daarom een specialisatie van de NEN3610 <code>RegistratieveRuimte</code>. De reden dat het geen directe specialisatie is, maar er nog een objecttype <code>RegistratieveRuimte</code> tussen zit in het DiSGeo-model, is omdat er op dat niveau een status-eigenschap gepositioneerd is. Het is niet mogelijk om eigenschappen toe te kennen aan een NEN3610-object. De definitie van de DiSGeo <code>RegistratieveRuimte</code> is exact gelijk aan de definitie van de NEN3610 <code>RegistratieveRuimte</code>.
+
+   <figure>
+      <img src="media/nen3610-disgeo.png" alt="Bestuurlijk gebied als subklasse van Registratieve Ruimte"/>
+      <figcaption>Bestuurlijk gebied als subklasse van Registratieve Ruimte</figcaption>
+   </figure>
+</aside>
+
 Voor de representatie van de _locatie_, _oriëntatie_ en _vorm_ van een object uit de werkelijkheid, gebruiken informatiemodellen geometrieën. De dimensie van een representatie variëert van nuldimensionaal (0D) tot driedimensionaal (3D). Objecten worden altijd geplaatst in een tweedimensionele (2D), of driedimensionele (3D) ruimte. Het informatiemodel DiSGeo gebruikt gestandaardiseerde geometrietypen uit ISO 19107:2003. Dit voorziet zowel in de opname van de coördinaten van de geometrie, als van het coördinaten<i>stelsel</i>.
 
 Tot slot heeft een geometrische representatie ook kwaliteitskenmerken. Het informatiemodel DiSGeo onderscheid in elk geval informatie over de _nauwkeurigheid_ en de _inwinregels_. Samengevat legt het informatiemodel de volgende informatie over een geometrie vast: [Type](#geometrietypen), [Dimensie](#dimensies), [Coordinaatreferentiesysteem (CRS)](#coordinaatreferentiesystemen) en [Kwaliteitskenmerken](#kwaliteit) (o.a. nauwkeurigheid, inwinregels en topologische regels).
@@ -45,6 +76,11 @@ Tot slot heeft een geometrische representatie ook kwaliteitskenmerken. Het infor
 <aside class="ednote" title="Waar topologische relaties onderbrengen?">
    Aan deze kenmerken nog topologische/ruimtelijke relaties toevoegen? Of valt dit onder topologische regels?
 </aside>
+
+<aside class="ednote" title="NEN3610 en geometrie">
+   <p>Kan dit weg:</p>
+   <blockquote>NEN 3610 [[NEN3610-2021-ontw]] zegt weinig specifieks over geometrie en geometrische vastlegging van objecten, anders dan dat ISO 19107:2020 normatief wordt aangehaald, waarin de ISO geometrietypen (o.a. `GM_Point`, `GM_Curve`, `GM_Surface`, `GM_Solid`) worden gedefinieerd.</blockquote>
+</aside> 
 
 Voor de vastlegging van (informatie over) geometrieën gelden een aantal belangrijke principes die volgen uit verschillende standaarden en initiatieven. De volgende documenten zijn hierin leidend:
 
@@ -245,6 +281,70 @@ Het openbaar lichaam Rijk bestuurt ook een aantal gebieden op zee. Deze objecten
  - Exclusieve Economische Zone
  - Continentaal Plat
 
+### Topologie
+
+#### Topologische regels
+
+<aside class="ednote" title="Onderbrengen tekst">
+   Kiezen waar plaatsen: hier of onder NEN3610
+</aside>
+
+Voor ruimtelijke relaties tussen de objecten kunnen we gebruik maken van de topologische relaties zoals gedefinieerd in de Simple Features standaard [[ISO-19125]] en aangeraden in [[NEN3610-2021-ontw]] en [[sdw-bp]]. Deze relaties zijn geïmplementeerd in veel geografische softwareomgevingen en ook in GeoSPARQL: 
+
+<aside class="issue" title="Update reference">
+   Bronverwijzing naar NEN3610 updaten.
+</aside>
+
+- **`Equals`** - gelijk
+- **`Disjoint`** - disjunct (geen enkel punt gemeen)
+- **`Touches`** - raakt
+- **`Crosses`** - kruist
+- **`Within`** - binnen
+- **`Contains`** - bevat
+- **`Intersects`** - doorsnijdt (geometrieën hebben op zijn minst één punt gemeen;
+geometrieën kunnen verschillende dimensie hebben)
+
+Deze relaties kun je gebruiken voor punt-, lijn- en vlakgeometrieën. Omdat er in het informatiemodel DiSGeo meer met 3D wordt gewerkt, worden topologieregels complexer maar ook secundair aan de representatie van de werkelijke verhouding tussen objecten. Uit EMSO: 
+
+> "_Het is belangrijker om ervoor te zorgen dat objecten die zich in de werkelijkheid op een bepaalde wijze tot elkaar verhouden (bijvoorbeeld een verharding ligt bovenop een overbrugging) ook in de registratie op deze wijze tot elkaar verhouden (bijvoorbeeld dat uit de z-coördinaten van de verharding en de overbrugging blijkt dat de verharding bovenop de overbrugging ligt). De exacte uitwerking van deze relaties in topologie-regels zal later in het traject verder worden opgepakt_".
+
+<aside class="issue" title="Landsdekkendheid">
+   <p>Welke objecttypen spelen een rol in de landsdekkendheid? Welke objecttypen hebben specifieke topologische relaties met elkaar? We hebben als modelleurs inhoudelijke expertise nodig om dit goed uit te werken.</p>
+   <p><b>Q</b>: Valt dit niet gewoon onder 'inwinregels?'</p>
+</aside>
+
+<aside class="issue" title="Ruimtelijke en administratieve relaties en compliance met NEN3610">
+
+   <p>Het gaat hierbij om afwegingen bij het kiezen van een naam voor de relatie tussen gemeentegebied en provinciegebied.  Internationaal is de gestandaardiseerde naam <code>within</code>. In NEN3610 is dit vertaald naar <code>binnen</code>. In ons team bestaat de vraag of <code>ligtIn</code> niet een betere naam is. Wat zijn onze opties hierbij?</p>
+
+   <p>De NEN3610 spreekt van administratieve relaties en ruimtelijke relaties. De vertaling <code>binnen</code> betreft een ruimtelijke relatie. Wel is het belangrijk om te beseffen dat de <code>«ruimtelijke relatie»</code> zoals beschreven in de NEN3610 eigenlijk een visuele representatie is van een constraint. Deze hoort dus eigenlijk niet thuis in het informatiemodel.</p>
+
+   <p>Het is aan ons de vraag of we een constraint willen toepassen:</p>
+   <ul>
+      <li>Zo ja, dan moeten we een <code>NEN3610:ruimtelijke relatie</code> én een <code>NEN3610:administratieve</code> relatie gebruiken.</li>
+      <li>Zo niet, dan hebben we alleen een <code>NEN3610:administratieve relatie</code> nodig.</p></li>
+   </ul>
+
+   <p>Het gaat dan om een administratieve vastlegging van een ruimtelijke relatie die vanuit de OGC wordt gedefinieerd. Hiervoor kunnen we:</p>
+
+   <ul>
+      <li>De NEN3610-benaming <code>binnen</code> gebruiken (waarbij we het begrip <code>NEN3610:binnen</code> opnemen als <code>mim:begrip</code>). </li>
+      <li>Onze eigen benaming (<code>ligtIn</code>) gebruiken met een verwijzing naar de OGC term <code>within</code>. Dan hebben we echter geen link met de NEN3610 – dat moet dan als een afgeleid gegeven worden gemodelleerd, omdat het anders niet mogelijk is vanuit de MIM.</li>
+   </ul>
+
+   <p><strong>Observaties</strong></p>
+
+   <ul>
+      <li>De term <code>binnen</code> is niet het meest geschikt om te gebruiken voor de relatie in ons model – het is echter wel hoe de NEN3610 de ruimtelijke relatie <code>within</code> heeft vertaald. Als wij uitwijken is het lastiger om aan te sluiten op de NEN3610, dus als we deze OGC relatie willen toepassen gebruiken we <code>binnen</code>.</li> 
+      <li>We kunnen het NEN3610 begrip <code>binnen</code> (zoals het nu staat in het begrippenkader) opnemen als <code>mim:begrip</code> bij het creëren van de administratieve/ruimtelijke relaties tussen de registratieve gebieden.</li>
+   </ul>
+
+   <p><strong>Conclusie</strong></p>
+
+   <p>Hierover is nog geen definitief besluit genomen.
+
+</aside>
+
 ### Kwaliteit
 
 Onder kwaliteit vallen verschillende onderdelen, zoals gegevenskwaliteit, nauwkeurigheid, inwinregels en topologische regels. Deze zijn elk in een aparte paragraaf uitgewerkt.
@@ -282,8 +382,7 @@ Eventueel zou het ook in het MIM aspect `Regels` bij de geometrie eigenschap van
 
 <aside class="issue" title="Machineleesbaarheid">
    <p>Zoeken naar een manier om dit machineleesbaar vast te leggen.</p>
-   <p><b>VOORSTEL</b></p> 
-   <p>Leg dit vast in een te definiëren metadata-aspect bij de eigenschap in een MIM-extensie voor geo. Het heeft mogelijk toegevoegde waarde om dit bij de data te kunnen terugvinden. Vastleggen bij eigenschap heeft voorkeur boven vastleggen bij objecttype, omdat er mogelijk meerdere geometrie-eigenschappen komen bij een objecttype (Levels of Detail).</p>
+   <p><b>VOORSTEL</b>:Leg dit vast in een te definiëren metadata-aspect bij de eigenschap in een MIM-extensie voor geo. Het heeft mogelijk toegevoegde waarde om dit bij de data te kunnen terugvinden. Vastleggen bij eigenschap heeft voorkeur boven vastleggen bij objecttype, omdat er mogelijk meerdere geometrie-eigenschappen komen bij een objecttype (Levels of Detail).</p>
 </aside>
 
 #### Inwinregels
@@ -291,35 +390,6 @@ Eventueel zou het ook in het MIM aspect `Regels` bij de geometrie eigenschap van
 Het semantisch model van NEN3016 doet geen uitspraak over de vastleggin per objecttype, omdat specifieke geometrische vastlgegging sterk afhankelijk is van gebruikersbehoeften en kunnen verschillen per toepassingsdomein. Uitspraken over de geometrische vastleggin zullen daarom worden opgenomen in de vorm van inwinregels in sectormodellen. Deze regels <q>geven aan welke punten van een object ingemeten moeten worden en waar geometrie van een geregistreerd object aan moet voldoen. Het leidt tot een vastgestelde geometrische weergave gericht op een specifieke toepassing</q>, stelt NEN3610. 
 
 Verreweg de meeste objecttypen in het informatiemodel DiSGeo hebben in hun huidige registratie al enige vorm van inwinregels. Eventueel zouden inwinregels in het MIM-aspect `Regels` bij het geometrie-attribuut van het desbetreffende objecttype gezet kunnen worden. Dit zijn vaak omvangrijke tekstuele instructies die in een apart handboek of hoofdstuk van de gegevenscatalogus. We zoeken naar een manier om deze teksten te relateren aan de bijbehorende modelelementen (annotatie).
-
-#### Topologische regels
-
-<aside class="ednote" title="Onderbrengen tekst">
-   Kiezen waar plaatsen: hier of onder NEN3610
-</aside>
-
-Voor ruimtelijke relaties tussen de objecten kunnen we gebruik maken van de topologische relaties zoals gedefinieerd in de Simple Features standaard [[ISO-19125]] en aangeraden in [[NEN3610-2021-ontw]] en [[sdw-bp]]. Deze relaties zijn geïmplementeerd in veel geografische softwareomgevingen en ook in GeoSPARQL: 
-
-<aside class="issue" title="Update reference">
-   Bronverwijzing naar NEN3610 updaten.
-</aside>
-
-- **`Equals`** - gelijk
-- **`Disjoint`** - disjunct (geen enkel punt gemeen)
-- **`Touches`** - raakt
-- **`Crosses`** - kruist
-- **`Within`** - binnen
-- **`Contains`** - bevat
-- **`Intersects`** - doorsnijdt (geometrieën hebben op zijn minst één punt gemeen;
-geometrieën kunnen verschillende dimensie hebben)
-
-Deze relaties kun je gebruiken voor punt-, lijn- en vlakgeometrieën. Omdat er in het informatiemodel DiSGeo meer met 3D wordt gewerkt, worden topologieregels complexer maar ook secundair aan de representatie van de werkelijke verhouding tussen objecten. Uit EMSO: 
-
-> "_Het is belangrijker om ervoor te zorgen dat objecten die zich in de werkelijkheid op een bepaalde wijze tot elkaar verhouden (bijvoorbeeld een verharding ligt bovenop een overbrugging) ook in de registratie op deze wijze tot elkaar verhouden (bijvoorbeeld dat uit de z-coördinaten van de verharding en de overbrugging blijkt dat de verharding bovenop de overbrugging ligt). De exacte uitwerking van deze relaties in topologie-regels zal later in het traject verder worden opgepakt_".
-
-<aside class="issue" title="Landsdekkendheid">
-   Welke objecttypen spelen een rol in de landsdekkendheid? Welke objecttypen hebben specifieke topologische relaties met elkaar? We hebben als modelleurs inhoudelijke expertise nodig om dit goed uit te werken.
-</aside>
 
 #### Benodigde kwaliteitsmetadata
 
@@ -338,75 +408,6 @@ We gaan onze eerder uitgewerkte **modelleerpatronen** toetsen tegen dit onderwer
 ### NEN3610
 
 
-<aside class="issue" title="Ruimtelijke en administratieve relaties en compliance met NEN3610">
-
-   <p>Het gaat hierbij om afwegingen bij het kiezen van een naam voor de relatie tussen gemeentegebied en provinciegebied.  Internationaal is de gestandaardiseerde naam <code>within</code>. In NEN3610 is dit vertaald naar <code>binnen</code>. In ons team bestaat de vraag of <code>ligtIn</code> niet een betere naam is. Wat zijn onze opties hierbij?</p>
-
-   <p>De NEN3610 spreekt van administratieve relaties en ruimtelijke relaties. De vertaling <code>binnen</code> betreft een ruimtelijke relatie. Wel is het belangrijk om te beseffen dat de <code>«ruimtelijke relatie»</code> zoals beschreven in de NEN3610 eigenlijk een visuele representatie is van een constraint. Deze hoort dus eigenlijk niet thuis in het informatiemodel.</p>
-
-   <p>Het is aan ons de vraag of we een constraint willen toepassen:</p>
-   <ul>
-      <li>Zo ja, dan moeten we een <code>NEN3610:ruimtelijke relatie</code> én een <code>NEN3610:administratieve</code> relatie gebruiken.</li>
-      <li>Zo niet, dan hebben we alleen een <code>NEN3610:administratieve relatie</code> nodig.</p></li>
-   </ul>
-
-   <p>Het gaat dan om een administratieve vastlegging van een ruimtelijke relatie die vanuit de OGC wordt gedefinieerd. Hiervoor kunnen we:</p>
-
-   <ul>
-      <li>De NEN3610-benaming <code>binnen</code> gebruiken (waarbij we het begrip <code>NEN3610:binnen</code> opnemen als <code>mim:begrip</code>). </li>
-      <li>Onze eigen benaming (<code>ligtIn</code>) gebruiken met een verwijzing naar de OGC term <code>within</code>. Dan hebben we echter geen link met de NEN3610 – dat moet dan als een afgeleid gegeven worden gemodelleerd, omdat het anders niet mogelijk is vanuit de MIM.</li>
-   </ul>
-
-   <p><strong>Observaties</strong></p>
-
-   <ul>
-      <li>De term <code>binnen</code> is niet het meest geschikt om te gebruiken voor de relatie in ons model – het is echter wel hoe de NEN3610 de ruimtelijke relatie <code>within</code> heeft vertaald. Als wij uitwijken is het lastiger om aan te sluiten op de NEN3610, dus als we deze OGC relatie willen toepassen gebruiken we <code>binnen</code>.</li> 
-      <li>We kunnen het NEN3610 begrip <code>binnen</code> (zoals het nu staat in het begrippenkader) opnemen als <code>mim:begrip</code> bij het creëren van de administratieve/ruimtelijke relaties tussen de registratieve gebieden.</li>
-   </ul>
-
-   <p><strong>Conclusie</strong></p>
-
-   <p>Hierover is nog geen definitief besluit genomen.
-
-</aside>
-
-#### Aansluiting op Basismodel Geo-informatie (NEN3610)
-
-Het informatiemodel DiSGeo valt binnen het toepassingsgebied van het Basismodel Geo-informatie [[NEN3610-2022]] (hierna: NEN3610) omdat het objecttypen beschrijft die direct herleidbaar zijn tot een locatie ten opzichte van de aarde. Het wordt daarom gemodelleerd conform de regels die in NEN3610 geformuleerd zijn, en als extensie op het semantische model uit NEN3610.
-
-De regels uit NEN3610 zijn voor zover van toepassing gevolgd in het informatiemodel DiSGeo. Binnen DiSGeo maken we zowel een conceptueel model als een logisch model. Hieronder geven we aan welke aspecten van NEN3610 conformiteit op welk modelniveau terug te vinden zijn. We noemen hier niet alle regels, maar alleen de belangrijkste, die in enige vorm terug te vinden zijn in het informatiemodel zelf:
-
-<aside class="ednote" title="Uitgewerkt door Pano">
-   Onderstaande regels zijn uitgwerked in paragrafen <i>Metadata</i>, <i>Levensloop</i> en <i>Historie</i>.
-</aside>
-
- - DiSGeo objecten zijn uniek identificeerbaar via de twee NEN3610-attributen `identificatie` en `domein` die zijn opgenomen in het logisch model
- - `Historie` en `Levensduur` zijn opgenomen in de klasse `Registratiegegevens` in het logisch model: 
- - `Tijdlijn Geldigheid` is opgenomen via de attributen `beginGeldigheid` en `eindGeldigheid`
- - `Tijdlijn Registratie` is opgenomen via de attributen `tijdstipRegistratie` en `eindRegistratie`
- - `Levensduur` van objecten in de registratie is opgenomen via de attributen `objectBegintijd` en `objectEindtijd`
-
-Het semantische model van NEN3610 bestaat uit een aantal objecttypen die objecten uit de werkelijkheid op hoofdlijn classificeren. In het informatiemodel DiSGeo zijn de klassen, voor zover dit past, gemodelleerd als subklasse van het NEN3610 objecttype Geo-Object of (bij voorkeur) een specifiekere NEN3610-subklasse van Geo-object. De verbinding met deze semantische klassen is opgenomen in het conceptueel model.
-
-<aside class="example" title="Koppeling IM DiSGeo aan semantische klassen NEN3610">
-   In het model voor Bestuurlijke gebieden is <code>BestuurlijkGebied</code> gemodelleerd als een specialisatie van het objecttype <code>RegistratieveRuimte</code>, die op haar beurt gemodellerd is als specialisatie van <code>NEN3610:RegistratieveRuimte</code>. Bestuurlijke gebieden zijn, volgens hun beschrijving in het [[EMSO]]: 
-
-   <blockquote>[...] <q><i>registratieve ruimten die op basis van wet- of regelgeving als eenheid gelden van politiek/bestuurlijke verantwoordelijkheid. Dit betreft bijvoorbeeld de gebieden behorende bij de vier formele bestuurslagen uit de Grondwet (Rijk, provincie, waterschap, gemeente), maar kan ook gebieden van bestuurlijke samenwerkingsverbanden met eigen politiek/bestuurlijke verantwoordelijkheid omvatten. Een voorbeeld daarvan betreft de veiligheidsregio’s.</i></q></blockquote>
-
-   De definitie van <code>BestuurlijkGebied</code> komt overeen met de NEN3610-definitie van <code>RegistratieveRuimte</code> maar is iets nauwer. In NEN3610 kan het gaan om een eenheid die geldt voor politiek-bestuurlijke verantwoordelijkheid óf bedrijfsvoering. Van dat laatste is bij bestuurlijke gebieden geen sprake. <code>BestuurlijkGebied</code> is daarom een specialisatie van de NEN3610 <code>RegistratieveRuimte</code>. De reden dat het geen directe specialisatie is, maar er nog een objecttype <code>RegistratieveRuimte</code> tussen zit in het DiSGeo-model, is omdat er op dat niveau een status-eigenschap gepositioneerd is. Het is niet mogelijk om eigenschappen toe te kennen aan een NEN3610-object. De definitie van de DiSGeo <code>RegistratieveRuimte</code> is exact gelijk aan de definitie van de NEN3610 <code>RegistratieveRuimte</code>.
-
-   <figure>
-      <img src="media/nen3610-disgeo.png" alt="Bestuurlijk gebied als subklasse van Registratieve Ruimte"/>
-      <figcaption>Bestuurlijk gebied als subklasse van Registratieve Ruimte</figcaption>
-   </figure>
-</aside>
-
-#### NEN 3610
-NEN 3610 [[NEN3610-2021-ontw]] zegt weinig specifieks over geometrie en geometrische vastlegging van objecten, anders dan dat ISO 19107:2020 normatief wordt aangehaald, waarin de ISO geometrietypen (o.a. `GM_Point`, `GM_Curve`, `GM_Surface`, `GM_Solid`) worden gedefinieerd. 
-
-
-
- 
 
 ### Generalisatie
 
