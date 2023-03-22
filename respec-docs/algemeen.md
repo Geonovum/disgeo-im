@@ -281,21 +281,10 @@ Het openbaar lichaam Rijk bestuurt ook een aantal gebieden op zee. Deze objecten
  - Exclusieve Economische Zone
  - Continentaal Plat
 
-### Topologie
+### Ruimtelijke relaties
 
-#### Topologische regels
+Voor ruimtelijke relaties tussen de objecten kunnen we gebruik maken van het _Dimensionally Extended Nine‐Intersection Model_ (DE-9IM). Dit is een topologisch model voor het beschrijven van ruimtelijke relaties in een [2D-model](#dimensies). Dit model is uitgewerkt in de Simple Features standaard [[ISO-19125]] en wordt aangeraden in [[NEN3610-2022]] en [[sdw-bp]]. Deze relaties zijn geïmplementeerd in veel geografische softwareomgevingen en ook in GeoSPARQL. Hieronder een overzicht met de originele Engelse naam en daarachter de vertaalde Nederlandse naam uit [NEN3610-2022](https://definities.geostandaarden.nl/nen3610-2022/nl/page/?uri=http%3A%2F%2Fdefinities.geostandaarden.nl%2Fnen3610-2022%2Fid%2Fcollectie%2Fruimtelijke_relaties).
 
-<aside class="ednote" title="Onderbrengen tekst">
-   Kiezen waar plaatsen: hier of onder NEN3610
-</aside>
-
-Voor ruimtelijke relaties tussen de objecten kunnen we gebruik maken van het _Dimensionally Extended Nine‐Intersection Model_ (DE-9IM). Dit is een topologisch model voor het beschrijven van ruimtelijke relaties in een [2D-model](#dimensies). Dit model is uitgewerkt in de Simple Features standaard [[ISO-19125]] en wordt aangeraden in [[NEN3610-2022]] en [[sdw-bp]]. Deze relaties zijn geïmplementeerd in veel geografische softwareomgevingen en ook in GeoSPARQL: 
-
-<aside class="issue" title="Update reference">
-   Bronverwijzing naar NEN3610 updaten.
-</aside>
-
-Engelse naam en de Nederlandse vertaling in NEN3610
 - `Contains` - [Bevat](https://definities.geostandaarden.nl/nen3610-2022/nl/page/bevat)
 - `Within` - [Binnen](https://definities.geostandaarden.nl/nen3610-2022/nl/page/binnen)
 - `Disjoint` - [Disjunct](https://definities.geostandaarden.nl/nen3610-2022/nl/page/disjunct)
