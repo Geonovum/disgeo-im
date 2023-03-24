@@ -4,7 +4,9 @@
 
 <aside class="issue">Verwijzen naar <a href="https://begrippen.geostandaarden.nl/sor/nl/">DiSGeo thesaurus</a></aside>
 
-<aside class="note">Let op: de term "*bestuurlijk gebied*" ontbreekt op dit moment nog.</aside>
+<aside class="note">
+   Let op: de term <b>bestuurlijk gebied</b> ontbreekt op dit moment nog.
+</aside>
 
 | **Termen**                       | **Definities**                                                           |
 |----------------------------------|--------------------------------------------------------------------------|
