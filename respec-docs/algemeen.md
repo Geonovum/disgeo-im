@@ -2,11 +2,23 @@
 
 ## Geometrie
 
-<aside class="ednote" title="Onderstaande tekst verwerken in hoofdstuk">
+<aside class="issue" title="TEKST INVOEGEN">
    <p><b>Vastlegging geometrie</b>:<i> Geometrie wordt hierbij in de SOR vastgelegd als een eigenschap van een object en representeert daarmee de locatie van een object. Er is één uitzondering in de SOR: alleen nummeraanduiding heeft via het genummerde object een ligging en heeft daarmee geen eigenschap geometrie.</i></p>
+</aside>
+
+<aside class="issue" title="TEKST INVOEGEN">
    <p><b>Dimensies</b>:<i> Indirecte beschrijvingen van 3D (middels het vastleggen van beschrijvende eigenschappen als Hoogte of Relatieve hoogteligging in combinatie met een 2D geometrie) vallen niet onder de noemer 3D geometrie. Relatieve hoogteliggingen kunnen zo nodig ten behoeve van informatieproducten worden afgeleid.</i></p>
+</aside>
+
+<aside class="issue" title="TEKST INVOEGEN">
    <p><b>CRS</b>:<i>Volgen regels uit NEN3610 voor gebruik crs: ieder geom moet voorzien zijn van verwijzing naar crs waarin coords zijn opgenomen.</i></p>
+</aside>
+
+<aside class="issue" title="TEKST INVOEGEN">
    <p><b>CRS</b>:<i>RDNAP-crs gehanteerd als crs. Het RD-stelsel is gedefinieerd ten opzichte van het ETRS89. Hiervoor geldt dat de gebruikte horizontale datum Bessel 1841 is en het coördinaatsysteem de stereografische projectie. Als verticale datum wordt het NAP-vlak gebruikt. RDNAPTRANS™ is de officiële en nauwkeurige transformatie tussen het coördinatensysteem van de Rijksdriehoeksmeting (RD) en het Normaal Amsterdams Peil (NAP) enerzijds en het European Terrestrial Reference System 1989 (ETRS89) anderzijds.</i></p>
+</aside>
+
+<aside class="issue" title="TEKST INVOEGEN">
    <p><b>Nauwkeurigheid</b>:<i>Coördinaten opgenomen bij een geometrie worden standaard uitgewisseld met een getalsnauwkeurigheid van 1 mm of het equivalent daarvan in graden. Voor RD en NAP komt dat overeen met de volgende nauwkeurigheden:</i>
       <ul>
          <li>RD in meters 3 decimalen (1 mm)</li>
@@ -14,7 +26,13 @@
          <li>Alles wat nauwkeuriger is wordt afgerond op deze nauwkeurigheid van 3 decimalen. Afronding is volgens de volgende regel: <code>0.0015 ≈ 0.002</code> en <code>0.0014 ≈ 0.001</code>.</li>
       </ul>
    </i></p>
+</aside>
+
+<aside class="issue" title="TEKST INVOEGEN">
    <p><b>Topologie</b>:<i>Het begrip maaiveld als een referentielaag (met de relatieve hoogte waarde “nul”) waarin veruit de meeste objectgeometrieën voorkomen, wordt hierbij minder relevant. In de praktijk blijken er vanuit verschillende perspectieven namelijk andere behoeften te zijn voor wat betreft maaiveld. Het is belangrijker om ervoor te zorgen dat objecten die zich in de werkelijkheid op een bepaalde wijze tot elkaar verhouden (bijvoorbeeld een verharding ligt bovenop een overbrugging) ook in de registratie op deze wijze tot elkaar verhouden (bijvoorbeeld dat uit de z-coördinaten van de verharding en de overbrugging blijkt dat de verharding bovenop de overbrugging ligt). De exacte uitwerking van deze relaties in topologie-regels zal later in het traject verder worden uitgewerkt. Daarnaast is het van belang dat er op elke fysieke locatie in de werkelijkheid (elke x,y-coördinaat) altijd tenminste een reëel object aanwezig is (water, begroeiing, gebouw, verharding, kunstwerk, constructies of onbepaald terrein).</i></p>
+</aside>
+
+<aside class="issue" title="TEKST INVOEGEN">
    <p><b>Topologie - ontwerprincipes</b> (samenvatting):<i> 
       <ul>
          <li>De reële objecten in de SOR bedekken met hun x,y geometrie het volledige grondgebied van Nederland</li>
@@ -25,7 +43,9 @@
          <li>Geografische ruimten zijn niet landsdekkend en mogen elkaar overlappen</li>
       </ul>
    </i></p>
+</aside>
 
+<aside class="issue" title="TEKST INVOEGEN">
    <p><b>NEN3610</b>:<i>Paragraaf 8.4.4.3 Geometrie bevat een aantal uitgangspunten:
       <ul>
          <li>Geometrie is een representatie van een object.</li>
@@ -37,6 +57,7 @@
       </ul>
    </i></p>
 </aside>
+
 
 #### Aansluiting op Basismodel Geo-informatie (NEN3610)
 
@@ -297,54 +318,38 @@ Het EMSO stelt dat het <q><i>belangrijker</i> [is] <i>om ervoor te zorgen dat ob
 
 ### Kwaliteit
 
-Onder kwaliteit vallen verschillende onderdelen, zoals gegevenskwaliteit, nauwkeurigheid, inwinregels en topologische regels. Deze zijn elk in een aparte paragraaf uitgewerkt.
+Onder kwaliteit vallen verschillende onderdelen, zoals *actualiteit*, *compleet*, *nauwkeurigheid* en *inwinregels*. In het geval dat DiS-Geo als een soort virtuele laag bovenop de huidige registraties gerealiseerd wordt, zijn het eigenlijk géén _eisen_ die gesteld worden. Dan gaat het meer om DiS-Geo als dataproduct. De metadata-aspecten beschrijven dan wat de `actualiteit`, `compleetheid`, `positionele juistheid` en `inwinregels` zijn. Die worden dan niet gesteld, maar **afgeleid uit de onderliggende registraties**. In dat geval is het niet noodzakelijk om deze metadata aspecten bij het IM op te nemen. Desondanks kiezen we er in dit stadium toch voor, zodat de lezer deze extra informatie direct ter beschikking heeft en het voor eventueel nieuw te introduceren objecttypen wél relevant is. Hoe dan ook kan DiS-Geo dan niet echt iets _eisen_. De volgende paragrafen lichten elk kwaliteitsaspect toe.
 
 #### Nauwkeurigheid
 
-Voor het aangeven van de nauwkeurigheid van de geometrieen in RD(NAP) en ETRS89 volgen we [het advies](https://docs.geostandaarden.nl/crs/crs/#nauwkeurigheid-van-coordinaten) van [gebruik-crs](https://docs.geostandaarden.nl/crs/def-hr-crs-20220314/).
+Voor het aangeven van de nauwkeurigheid van de geometrieen in RD(NAP) en ETRS89 volgen we [het advies](https://docs.geostandaarden.nl/crs/crs/#nauwkeurigheid-van-coordinaten) van [gebruik-crs](https://docs.geostandaarden.nl/crs/def-hr-crs-20220314/): <q><i>Om te voorkomen dat er te grote databestanden ontstaan, wordt aanbevolen de coördinaten af te ronden op 1 decimaal meer dan de nauwkeurigheid van de dataset vereist. Hierdoor kunnen fouten bij herhaaldelijk heen en weer transformeren worden voorkomen</i></q>.
 
+#### Actualiteit
 
-#### Nauwkeurigheidseisen
+Actualiteit is de mate waarin gegevens recent genoeg zijn. Het is één van de NORA kwaliteitsdimensies. Dit metadata-aspect geeft aan binnen welke termijn (aantal dagen of maanden) na de realisatie of het ontstaan van een object, dit object beschikbaar is. Het geeft dus de [updatefrequentie](https://www.noraonline.nl/wiki/Updatefrequentie) aan. MIM heeft hiervoor geen metadata-element. Daarom breidt DiSGeo het stereotype `«objecttype»` uit MIM uit met het  metadata-element `actualiteit`. Het domein van deze tagged value is `alfanumeriek`. De actualiteit wordt uitgedrukt in termen van aantal dagen of maanden.
 
-Wat onder nauwkeurigheid van geometrie wordt verstaan is goed gedefinieerd in standaarden. We gaan ervan uit dat wat in EMSO `nauwkeurigheid` wordt genoemd, hetzelfde is als `positionele juistheid` in het [NORA Raamwerk Gegevenskwaliteit](https://www.noraonline.nl/wiki/Positionele_juistheid) en hetzelfde als wat in de BGT `positionele nauwkeurigheid` wordt genoemd. Daar staat het omschreven als: 
+#### Compleetheid
 
-> "_Onder positionele nauwkeurigheid verstaat men de mate waarin de opgeslagen coördinaten overeenkomen met de waarden in de werkelijkheid of de geaccepteerde afwijking._" - [BGT](https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#:~:text=Onder%20positionele%20nauwkeurigheid%20verstaat%20men%20de%20mate%20waarin%20de%20opgeslagen%20co%C3%B6rdinaten%20overeenkomen%20met%20de%20waarden%20in%20de%20werkelijkheid%20of%20de%20geaccepteerde%20afwijking.)
+Dit metadata-aspect geeft aan in welke mate gegevens aanwezig zijn over het objecttype. Het is één van de NORA kwaliteitsdimensies. Het gebruik in DiS-Geo van het metadata-aspect compleetheid lijkt erg op het NORA kwaliteitsattribuut `Datasetcompleetheid`, maar we gebruiken het meer specifiek om aan te geven of een objecttype in het kader van een registratie verplicht moet worden ingewonnen. MIM heeft hiervoor geen metadata-element. Daarom breidt DiSGeo het stereotype `«objecttype»` uit MIM uit met het metadata-element `compleetheid`. Het domein van deze tagged value is `Verplicht | Optioneel`.
 
-Per objecttype geven we de toegestane kwaliteit voor de positionele nauwkeurigheid als een getal in centimeters (dat dan de toegestane afwijking weergeeft). MIM heeft hiervoor geen metadata-element. Een optie is om dit in een tabel vóór in de gegevenscatalogus op te nemen, zoals gedaan in de BGT catalogus op p. 23. 
+#### Positionele juistheid
+
+Wat onder nauwkeurigheid van geometrie wordt verstaan is goed gedefinieerd in standaarden. We gaan ervan uit dat wat in EMSO `nauwkeurigheid` wordt genoemd, hetzelfde is als `positionele juistheid` in het [NORA Raamwerk Gegevenskwaliteit](https://www.noraonline.nl/wiki/Positionele_juistheid) en hetzelfde als wat in de BGT `positionele nauwkeurigheid` wordt genoemd. Daar staat het omschreven als: <q><i>de mate waarin de opgeslagen coördinaten overeenkomen met de waarden in de werkelijkheid of de geaccepteerde afwijking</i></q> ([BGT](https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#:~:text=Onder%20positionele%20nauwkeurigheid%20verstaat%20men%20de%20mate%20waarin%20de%20opgeslagen%20co%C3%B6rdinaten%20overeenkomen%20met%20de%20waarden%20in%20de%20werkelijkheid%20of%20de%20geaccepteerde%20afwijking.)). Per `«attribuutsoort»` geven we de toegestane kwaliteit voor de positionele nauwkeurigheid als een getal in centimeters, dat de toegestane afwijking weergeeft. MIM heeft hiervoor geen metadata-element. Daarom breidt DiSGeo het stereotype `«attribuutsoort»` uit MIM uit met het  metadata-element `positionele juistheid`. Deze tagged value wordt alleen ingevuld bij attribuutsoorten die een geometrietype als domein hebben. 
+
+<!-- Een optie is om dit in een tabel vóór in de gegevenscatalogus op te nemen, zoals gedaan in de BGT catalogus op p. 23. 
 
 <aside class="example" title="Nauwkeurigheidseisen in de BGT-catalogus">
 <figure>
     <img src="media/bgt-nauwkeurigheid.png" alt="Voorbeeld BGT"/>
     <figcaption>Tabel met nauwkeurigheidseisen in de BGT gegevenscatalogus</figcaption>
 </figure>
-</aside>
-
-Eventueel zou het ook in het MIM aspect `Regels` bij de geometrie eigenschap van het desbetreffende objecttype gezet kunnen worden. 
-
-<aside class="issue" title="Machineleesbaarheid">
-   <p>Zoeken naar een manier om dit machineleesbaar vast te leggen.</p>
-   <p><b>VOORSTEL</b>:Leg dit vast in een te definiëren metadata-aspect bij de eigenschap in een MIM-extensie voor geo. Het heeft mogelijk toegevoegde waarde om dit bij de data te kunnen terugvinden. Vastleggen bij eigenschap heeft voorkeur boven vastleggen bij objecttype, omdat er mogelijk meerdere geometrie-eigenschappen komen bij een objecttype (Levels of Detail).</p>
-</aside>
+</aside> -->
 
 #### Inwinregels
 
 Het semantisch model van NEN3016 doet geen uitspraak over de vastleggin per objecttype, omdat specifieke geometrische vastlgegging sterk afhankelijk is van gebruikersbehoeften en kunnen verschillen per toepassingsdomein. Uitspraken over de geometrische vastleggin zullen daarom worden opgenomen in de vorm van inwinregels in sectormodellen. Deze regels <q>geven aan welke punten van een object ingemeten moeten worden en waar geometrie van een geregistreerd object aan moet voldoen. Het leidt tot een vastgestelde geometrische weergave gericht op een specifieke toepassing</q>, stelt NEN3610. 
 
-Verreweg de meeste objecttypen in het informatiemodel DiSGeo hebben in hun huidige registratie al enige vorm van inwinregels. Eventueel zouden inwinregels in het MIM-aspect `Regels` bij het geometrie-attribuut van het desbetreffende objecttype gezet kunnen worden. Dit zijn vaak omvangrijke tekstuele instructies die in een apart handboek of hoofdstuk van de gegevenscatalogus. We zoeken naar een manier om deze teksten te relateren aan de bijbehorende modelelementen (annotatie).
-
-#### Benodigde kwaliteitsmetadata
-
-<aside class="issue" title="Relatie met hoofdstuk Metadata">
-   In hoeverre hoort deze paragraaf hier thuis? Wordt het al afgedekt in het hoofdstuk over metadata? Of zou het daar niet beter passen?
-</aside>
-
-Wat voor kwaliteitsmetadata bij een objecttype wordt voorgeschreven, kan worden bepaald aan de hand van uitgangspunten in EMSO [§ 3.4.5](https://docs.geostandaarden.nl/disgeo/emso/#meta-gegevens-over-herkomst-en-kwaliteit). Dit kan zijn:
-- plaatsbepalingspunten
-- een brondocument / bronverwijzing anders dan plaatsbepalingspunten
-- gerealiseerde nauwkeurigheid van de geometrie van het object in de vorm van een nauwkeurigheidsklasseaanduiding
-- helemaal geen kwaliteitsmetadata
-
-We gaan onze eerder uitgewerkte **modelleerpatronen** toetsen tegen dit onderwerp.
+Verreweg de meeste objecttypen in die in DiS-Geo een rol spelen hebben in hun huidige registratie al enige vorm van inwinregels. Omdat dit vaak omvangrijke instructies zijn, zijn ze meestal in tekst uitgeschreven in een apart handboek of hoofdstuk van de gegevenscatalogus. Via de tagged value `inwinregels` relateren we deze teksten aan de bijbehorende modelelementen (annotatie). MIM heeft hiervoor geen metadata-element. Daarom breidt DiSGeo het stereotype `«attribuutsoort»` uit MIM uit met het  metadata-element `inwinregels`. De waarde van de tagged value `inwinregels` is een `URI`. Deze tagged value wordt alleen ingevuld bij attribuutsoorten met een geometrietype als domein.
 
 
 
@@ -364,41 +369,7 @@ In producten op basis van de geobasisregistraties zal de gebruiker echter doorga
 - Het schaalniveau; conform [[NLISO19115]] noemen we dit de 'toepassingsschaal'. Dit is nodig zodat de gebruiker de gewenste schaal kan opvragen en kan zien voor welke schaal een geometrie geschikt is.
 - De herkomst i.e. afleidingsgegevens: wat was de brongeometrie en hoe is de geometrie daaruit gegeneraliseerd. Dit is o.a nodig om terugmelding op geometrie te kunnen ondersteunen, ook in het geval van afgeleide geometrieën.
 
-<aside class="ednote" title="Eén of meerdere geometrieatributen">
-   Eén geometrieattribuut is waarschijnlijk wel voldoende, maar er zijn wel <i>use cases</i> denkbaar waarbij je meerdere geometrieën wilt uitwisselen van één object. Het CBS doet dit bijvoorbeeld wel in hun WFS-service van wijken en buurten. Gebruikers kunnen dan in hun eigen GIS-pakket van schaal wisselen wanneer ze maar willen. Eén geometrieattribuut volstaat dan nog steeds, maar het moet wel een meervoudige kardinaliteit hebben d.w.z. `[1..*]`. De vraag is of we inderdaad het geometrieattribuut met meervoudige kardinaliteit zullen opnemen in het informatiemodel.
-</aside>
-
 Conform de Spatial Data on the Web Best Practices [[SDW-BP]], [Best Practide 6](https://www.w3.org/TR/sdw-bp/#multiplegeometries), moet in een geodataproduct dat op het Web wordt gepubliceerd altijd in ieder geval een geometrie worden aangeboden die geschikt is om te gebruiken in webtoepassingen, i.e. bij wat grotere geometrieën moet er altijd een gegeneraliseerde geometrie beschikbaar zijn.
-
-<aside class="ednote" title="Opvragen gedeeltelijke geometrie">
-   Zijn er use cases waarvoor het mogelijk moet zijn dat je een stukje van een geometrie kunt opvragen? I.e. subsetting / clipping? En zo ja heeft dit impact op de modellering? Dat laatste vermoedelijk niet.
-</aside>
-
-<aside class="ednote" title="Generalisatie en Aggregatie">
-   Onderdeel van generalisatie is in sommige gevallen ook aggregatie. Bij bestuurlijke grenzen komt dit niet voor, maar bij gebouwen en wegen wel. Een groepje gebouwen dat dicht naast elkaar staat wordt dan bijvoorbeeld geaggregeerd tot één gebouwblok, of een aantal wegdelen tot één wegdeel. Als we van objecten verschillende geometrieën beschikbaar willen stellen - hoe werkt dat dan als objecten op lagere schalen geaggregeerd zijn, zoals bijvoorbeeld gebouwen? Het is dan ingewikkeld om de afleidingsgegevens te modelleren.
-</aside>
-
-
-
-### EMSO (NOG INDELEN)
-
-#### Uitgangspunten uit EMSO
-
-<aside class="ednote" title="Algemene verwijzing maken">
-   Overweeg de mogelijkheid om aan het begin van het hoofdstuk <i>Geometrie</i>, of zelfs aan het begin van het hoofdstuk <i>Algemeen</i>, een verwijzing te maken naar uitgangspunten in het EMSO.
-</aside>
-
-<aside class="ednote" title="Vraag kwaliteitsmetadata">
-   <i>Kwaliteitsmetadata</i> (o.a. precisie) verder aanvullen met of verwijzen naar <i>Modelleerprincipes</i>).
-</aside>
-
-- De vastlegging van geometrie wordt zodanig vormgegeven dat de driedimensionale (3D) beschrijving van een object kan worden opgenomen.
-- EMSO beschrijft een aantal algemene topologische regels over vlakdekkendheid en topologie, bv "Objecten op verschillende hoogten moeten goed op elkaar aansluiten waar ze elkaar raken en consistent zijn"
-- Waar relevant wordt er kwaliteitsmetadata voor geometrieën opgenomen.
-- De ruimtelijke dekking van de SOR is inclusief de territoriale zee.
-- Het te gebruiken coördinatenstelsel is RD. 
-- De [precisie](https://www.noraonline.nl/wiki/Geometrische_precisie) van coördinaten is op millimeterniveau en in RD betekent dit dat er coördinaten met 3 decimalen worden opgenomen.
-- Gegeneraliseerde data objecttypen [worden niet opgenomen in de SOR](https://docs.geostandaarden.nl/disgeo/emso/#generalisatie). Ze kunnen wel onderdeel zijn van informatieproducten. Generalisatie is "het zinvol weglaten, vereenvoudigen, verplaatsen, vergroten, symboliseren en/of aggregeren van de geometrie van objecten (of op attribuutniveau)", ten behoeve van minder gedetailleerde kaartschalen.
 
 
 
@@ -494,6 +465,6 @@ Bij een bronregistratie die direct informatieobjecten ontsluit ligt het voor de 
    ```
 </aside>
 
-<aside class="note" title="Nieuwe afgeleide informatiebojecten">
+<aside class="note" title="Nieuwe afgeleide informatieobjecten">
    Het is ook mogelijk om, bij het in samenhang brengen van gegevens, nieuwe afgeleide informatieobjecten te ontsluiten. Hierbij is de bron niet zo direct aan te merken als bij informatieobjecten uit een bronregistratie. Het model hiervoor wordt nog uitgewerkt.
 </aside>
