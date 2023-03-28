@@ -22,19 +22,6 @@ Dit hoofdstuk eindigt met een stuk over **generalisatie van geomtrieën**.
 
 #### Aansluiting op Basismodel Geo-informatie (NEN3610)
 
-<aside class="issue" title="TEKST INVOEGEN">
-   <p><b>NEN3610</b>:<i>Paragraaf 8.4.4.3 Geometrie bevat een aantal uitgangspunten:
-      <ul>
-         <li>Geometrie is een representatie van een object.</li>
-         <li>Een objecttype kan nul of meer geometrische representaties hebben.</li>
-         <li>De beschrijving van de 3D-werkelijkheid wordt ondersteund.</li>
-         <li>Hoogte-informatie kan absoluut of relatief zijn; hierover staat in NEN 3610 een goede uitleg.</li>
-         <li>Paragraaf 9.12 gaat in op topologische relaties en geeft hier gestandaardiseerde namen voor.</li>
-         <li>Hoofdstuk 10 bevat regels en handreikingen over coördinaatreferentiesystemen die van belang kunnen zijn voor de SOR.</li>
-      </ul>
-   </i></p>
-</aside>
-
 Het informatiemodel DiSGeo valt binnen het toepassingsgebied van het Basismodel Geo-informatie [[NEN3610-2022]] (hierna: NEN3610) omdat het objecttypen beschrijft die direct herleidbaar zijn tot een locatie ten opzichte van de aarde. Het wordt daarom gemodelleerd conform de regels die in NEN3610 geformuleerd zijn, en als extensie op het semantische model uit NEN3610.
 
 De regels uit NEN3610 zijn voor zover van toepassing gevolgd in het informatiemodel DiSGeo. Binnen DiSGeo maken we zowel een conceptueel model als een logisch model. Hieronder geven we aan welke aspecten van NEN3610 conformiteit op welk modelniveau terug te vinden zijn. We noemen hier niet alle regels, maar alleen de belangrijkste, die in enige vorm terug te vinden zijn in het informatiemodel zelf:
@@ -131,13 +118,7 @@ De onderstaande figuur is een schematische weergave van de ondersteunde CRS-en b
 </figure>
 
 <aside class="ednote" title="snippets">
-   <ul>
-      <li>Hieronder uitwerking in <code>[coördinaatreferentiesystemen](https://definities.geostandaarden.nl/nen3610-2022/nl/page/coordinaatreferentiesysteem)</code> per zee, land, dimensionaltiet en aan- danwel uitlevering.</li>
-      <li>Toch verschilt per onderwerp/thema de <code>...</code> </li>
-      <li>Linear Reference Systems zijn specifiek relevant voor transportnetwerken (weg en spoor). Die zijn in dit stadium nog niet uitgewerkt en op Bestuurlijke Gebieden niet van toepassing.</li>
-      <li>Onderscheid maken tussen zee en land</li>
-      <li><code>Head</code>Bestuurlijke gebieden</li>
-   </ul>
+  <p>Hieronder uitwerking in <code>[coördinaatreferentiesystemen](https://definities.geostandaarden.nl/nen3610-2022/nl/page/coordinaatreferentiesysteem)</code> per zee, land, dimensionaltiet en aan- danwel uitlevering.</p>
 </aside>
 
 #### Aanlevering
@@ -201,19 +182,6 @@ Het openbaar lichaam Rijk bestuurt ook een aantal gebieden op zee. Deze objecten
 
 ### Ruimtelijke relaties
 
-Het informatiemodel DiSGeo beschrijft de uitwisseling van gegevens uit verschillende geo-basisregistraties. Voor deze basisregistraties gelden reeds bestaande regels ten aanzien van de topologische kwaliteit. De kwaliteit van de gegevens van de bronregistraties werkt zodoende door in het informatiemodel en de productmodellen van DiSGeo. Het EMSO formuleert wel een aantal duidelijke regels. Destijds was namelijk de gedachte dat het Informatiemodel DiSGeo zou resulteren in een Samenhangende Objectenregistratie (SOR). In de huidige situatie is dat niet het geval. DiSGeo stelt daarom geen (andere of aanvullende) eisen of regels aan de topologie.
-
-Omdat ze in het [[EMSO]] geformuleerd staan en van onverminderd belang zijn voor de kwaliteit van DiSGeo, herhalen we voor de volledigheid een aantal basisprincipes op deze plek. Specifiekere principes zijn opgenomen Verder is per objecttype aangegeven welke regels er gelden (bijv. [Gemeentegebied](https://geonovum.github.io/disgeo-im/#global_class_BestuurlijkGebied_Gemeentegebied)).
-
- - De reële objecten bedekken met hun x,y geometrie het volledige grondgebied van Nederland
- - Geometrieën van objecten kunnen boven elkaar liggen
- - Geometrieën van objecten kunnen elkaar uitsluiten
- - Functionele ruimten zijn niet landsdekkend en mogen elkaar overlappen
- - Het informatiemodel DiSGeo kent voor alle registratieve en geografische ruimten een 2D-geometrie
- - Geografische ruimten zijn niet landsdekkend en mogen elkaar overlappen
-
-#### Het Dimensionally Extended Nine‐Intersection Model (DE-9IM)
-
 Voor ruimtelijke relaties tussen de objecten kunnen we gebruik maken van het _Dimensionally Extended Nine‐Intersection Model_ (DE-9IM). Dit is een topologisch model voor het beschrijven van ruimtelijke relaties in een [2D-model](#dimensies). Dit model is uitgewerkt in de _Simple Features_-standaard [[ISO-19125]] en wordt aangeraden in [[NEN3610-2022]] en [[sdw-bp]]. Deze relaties zijn geïmplementeerd in veel geografische softwareomgevingen en ook in GeoSPARQL. Hieronder een overzicht met de originele Engelse naam en daarachter de vertaalde Nederlandse naam uit [NEN3610-2022](https://definities.geostandaarden.nl/nen3610-2022/nl/page/?uri=http%3A%2F%2Fdefinities.geostandaarden.nl%2Fnen3610-2022%2Fid%2Fcollectie%2Fruimtelijke_relaties).
 
 - `Contains` - [Bevat](https://definities.geostandaarden.nl/nen3610-2022/nl/page/bevat)
@@ -228,23 +196,18 @@ Voor ruimtelijke relaties tussen de objecten kunnen we gebruik maken van het _Di
 Deze relaties zijn beperkt tot een 2D-model en daarmee alleen van toepassing op geometrietypen `punt`, `lijn` of `vlak`. Omdat er in het informatiemodel DiSGeo meer met 3D wordt gewerkt, worden de topologische regels complexer. Ze worden echter ook secundair aan de representatie van de werkelijke verhouding tussen objecten. Uit EMSO: 
 Het EMSO stelt dat het <q><i>belangrijker</i> [is] <i>om ervoor te zorgen dat objecten die zich in de werkelijkheid op een bepaalde wijze tot elkaar verhouden (bijvoorbeeld een verharding ligt bovenop een overbrugging) ook in de registratie op deze wijze tot elkaar verhouden (bijvoorbeeld dat uit de z-coördinaten van de verharding en de overbrugging blijkt dat de verharding bovenop de overbrugging ligt). De exacte uitwerking van deze relaties in topologie-regels zal later in het traject verder worden opgepakt</i></q>.
 
-#### Gegevenskwaliteit
+Het informatiemodel DiSGeo beschrijft de uitwisseling van gegevens uit verschillende geo-basisregistraties. Voor deze basisregistraties gelden reeds bestaande regels ten aanzien van de topologische kwaliteit. De kwaliteit van de gegevens van de bronregistraties werkt zodoende door in het informatiemodel en de productmodellen van DiSGeo. Het EMSO formuleert wel een aantal duidelijke regels. Destijds was namelijk de gedachte dat het Informatiemodel DiSGeo zou resulteren in een Samenhangende Objectenregistratie (SOR). In de huidige situatie is dat niet het geval. DiSGeo stelt daarom geen (andere of aanvullende) eisen of regels aan de topologie.
 
-Verder kent gegevenskwaliteit veel verschillende aspecten, zoals beschreven in het NORA Raamwerk Gegevenskwaliteit [[NORA-RK]].
+Omdat ze in het [[EMSO]] geformuleerd staan en van onverminderd belang zijn voor de kwaliteit van DiSGeo, herhalen we voor de volledigheid een aantal basisprincipes op deze plek. Specifiekere principes zijn opgenomen Verder is per objecttype aangegeven welke regels er gelden (bijv. [Gemeentegebied](https://geonovum.github.io/disgeo-im/#global_class_BestuurlijkGebied_Gemeentegebied)).
 
-Dit document beschrijft momenteel alleen de *topologische consistentie*. Topologische consistentie wil zeggen dat de geometrieën van verschillende objecten zich op een bepaalde manier tot elkaar verhouden. De vlakgeometrieën van bestuurlijke gebieden van hetzelfde type partitioneren bijvoorbeeld de ruimte. Dat betekent dat:
+ - De reële objecten bedekken met hun x,y geometrie het volledige grondgebied van Nederland
+ - Geometrieën van objecten kunnen boven elkaar liggen
+ - Geometrieën van objecten kunnen elkaar uitsluiten
+ - Functionele ruimten zijn niet landsdekkend en mogen elkaar overlappen
+ - Het informatiemodel DiSGeo kent voor alle registratieve en geografische ruimten een 2D-geometrie
+ - Geografische ruimten zijn niet landsdekkend en mogen elkaar overlappen
 
-- Deze geometrieën samen één landsdekkend geheel vormen;
-- Deze geometrieën naadloos op elkaar aansluiten, zodat er geen gaten voorkomen;
-- Deze geometrieën elkaar niet overlappen.
-
-De topologische consistentie-regels zijn opgenomen bij de objecttypen waar ze voor gelden, en zijn te vinden in [hoofdstuk 3 Gegevensdefinitie](https://geonovum.github.io/disgeo-im/#cat).
-
-
-
-#### Kanttekening 'Maaiveld'
-
-Het begrip maaiveld als een referentielaag (met de relatieve hoogte waarde “nul”) waarin veruit de meeste objectgeometrieën voorkomen, wordt hierbij minder relevant. In de praktijk blijken er vanuit verschillende perspectieven namelijk andere behoeften te zijn voor wat betreft maaiveld. Het is belangrijker om ervoor te zorgen dat objecten die zich in de werkelijkheid op een bepaalde wijze tot elkaar verhouden (bijvoorbeeld een verharding ligt bovenop een overbrugging) ook in de registratie op deze wijze tot elkaar verhouden (bijvoorbeeld dat uit de z-coördinaten van de verharding en de overbrugging blijkt dat de verharding bovenop de overbrugging ligt). De exacte uitwerking van deze relaties in topologie-regels zal later in het traject verder worden uitgewerkt. Daarnaast is het van belang dat er op elke fysieke locatie in de werkelijkheid (elke x,y-coördinaat) altijd tenminste een reëel object aanwezig is (water, begroeiing, gebouw, verharding, kunstwerk, constructies of onbepaald terrein).
+Het begrip _maaiveld_ als een referentielaag (met de relatieve hoogte waarde “nul”) waarin veruit de meeste objectgeometrieën voorkomen, wordt hierbij minder relevant. In de praktijk blijken er vanuit verschillende perspectieven namelijk andere behoeften te zijn voor wat betreft maaiveld. Het is belangrijker om ervoor te zorgen dat objecten die zich in de werkelijkheid op een bepaalde wijze tot elkaar verhouden (bijvoorbeeld een verharding ligt bovenop een overbrugging) ook in de registratie op deze wijze tot elkaar verhouden (bijvoorbeeld dat uit de z-coördinaten van de verharding en de overbrugging blijkt dat de verharding bovenop de overbrugging ligt). De exacte uitwerking van deze relaties in topologie-regels zal later in het traject verder worden uitgewerkt. Daarnaast is het van belang dat er op elke fysieke locatie in de werkelijkheid (elke x,y-coördinaat) altijd tenminste een reëel object aanwezig is (water, begroeiing, gebouw, verharding, kunstwerk, constructies of onbepaald terrein).
 
 ### Kwaliteit
 
@@ -252,19 +215,12 @@ Onder kwaliteit vallen verschillende onderdelen, zoals *actualiteit*, *compleet*
 
 #### Nauwkeurigheid
 
-Voor het aangeven van de nauwkeurigheid van de geometrieen in RD(NAP) en ETRS89 volgen we [het advies](https://docs.geostandaarden.nl/crs/crs/#nauwkeurigheid-van-coordinaten) van [gebruik-crs](https://docs.geostandaarden.nl/crs/def-hr-crs-20220314/): <q><i>Om te voorkomen dat er te grote databestanden ontstaan, wordt aanbevolen de coördinaten af te ronden op 1 decimaal meer dan de nauwkeurigheid van de dataset vereist. Hierdoor kunnen fouten bij herhaaldelijk heen en weer transformeren worden voorkomen</i></q>.
+Voor het aangeven van de nauwkeurigheid van de geometrieen in RD(NAP) en ETRS89 volgen we [het advies](https://docs.geostandaarden.nl/crs/crs/#nauwkeurigheid-van-coordinaten) van [gebruik-crs](https://docs.geostandaarden.nl/crs/def-hr-crs-20220314/): <q><i>Om te voorkomen dat er te grote databestanden ontstaan, wordt aanbevolen de coördinaten af te ronden op 1 decimaal meer dan de nauwkeurigheid van de dataset vereist. Hierdoor kunnen fouten bij herhaaldelijk heen en weer transformeren worden voorkomen</i></q>. Coördinaten opgenomen bij een geometrie worden standaard uitgewisseld met een getalsnauwkeurigheid van `1 mm` of het equivalent daarvan in graden. Voor RD en NAP komt dat overeen met de volgende nauwkeurigheden:
+ - RD in meters 3 decimalen (`1 mm`)
+ - NAP-hoogte in meters 3 decimalen (`1 mm`)
+ - Alles wat nauwkeuriger is wordt afgerond op deze nauwkeurigheid van 3 decimalen. Afronding is volgens de volgende regel: `0.0015 ≈ 0.002` en `0.0014 ≈ 0.001`
 
 #### Actualiteit
-
-<aside class="issue" title="TEKST INVOEGEN">
-   <p><b>Nauwkeurigheid</b>:<i>Coördinaten opgenomen bij een geometrie worden standaard uitgewisseld met een getalsnauwkeurigheid van 1 mm of het equivalent daarvan in graden. Voor RD en NAP komt dat overeen met de volgende nauwkeurigheden:</i>
-      <ul>
-         <li>RD in meters 3 decimalen (1 mm)</li>
-         <li>NAP-hoogte in meters 3 decimalen (1 mm)</li>
-         <li>Alles wat nauwkeuriger is wordt afgerond op deze nauwkeurigheid van 3 decimalen. Afronding is volgens de volgende regel: <code>0.0015 ≈ 0.002</code> en <code>0.0014 ≈ 0.001</code>.</li>
-      </ul>
-   </i></p>
-</aside>
 
 Actualiteit is de mate waarin gegevens recent genoeg zijn. Het is één van de NORA kwaliteitsdimensies. Dit metadata-aspect geeft aan binnen welke termijn (aantal dagen of maanden) na de realisatie of het ontstaan van een object, dit object beschikbaar is. Het geeft dus de [updatefrequentie](https://www.noraonline.nl/wiki/Updatefrequentie) aan. MIM heeft hiervoor geen metadata-element. Daarom breidt DiSGeo het stereotype `«objecttype»` uit MIM uit met het  metadata-element `actualiteit`. Het domein van deze tagged value is `alfanumeriek`. De actualiteit wordt uitgedrukt in termen van aantal dagen of maanden.
 
@@ -299,9 +255,7 @@ Met *generaliseren*  bedoelen we het zinvol weglaten, vereenvoudigen, verplaatse
 
 Een voorbeeld van gegeneraliseerde geometrie zijn de grenzen van bestuurlijke gebieden op hogere kaartschalen (1:10.000, 1:50.000 enz). Deze zijn minder gedetailleerd, bevatten minder punten en zijn geschikt om te bekijken op bepaalde 'zoomniveau's'. Bij het uitwisselen van geodata op het web is generalisatie belangrijk omdat een polygoon, afhankeljik van de mate van detail, erg veel punten kan bevatten, wat performanceproblemen kan veroorzaken. 
 
-De belangrijkste geometrie om op te nemen is de niet-gegeneraliseerde geometrie. Dit is de meest nauwkeurige geometrie. Bijvoorbeeld gemeente- en provinciegrenzen zijn gebaseerd op de Kadastrale grenzen, die knikken bevatten daar waar andere grenzen snijden of daar waar de grens een fysiek object volgt. De niet-gegeneraliseerde geometrie bevat deze knikken. Bij gegeneraliseerde geometrie worden deze weg gehaald voor een rustiger beeld of om het aantal punten te reduceren.
-
-Bestuurlijke grenzen van ten minste gemeenten, provincies en het Rijk worden gegeneraliseerd en bewaard in een registratie ten behoeve van het aanbieden van de TOPNL kaart op verschillende schalen.  
+De belangrijkste geometrie om op te nemen is de niet-gegeneraliseerde geometrie. Dit is de meest nauwkeurige geometrie. Bijvoorbeeld gemeente- en provinciegrenzen zijn gebaseerd op de Kadastrale grenzen, die knikken bevatten daar waar andere grenzen snijden of daar waar de grens een fysiek object volgt. De niet-gegeneraliseerde geometrie bevat deze knikken. Bij gegeneraliseerde geometrie worden deze weg gehaald voor een rustiger beeld of om het aantal punten te reduceren. Bestuurlijke grenzen van ten minste gemeenten, provincies en het Rijk worden gegeneraliseerd en bewaard in een registratie ten behoeve van het aanbieden van de TOPNL kaart op verschillende schalen.  
 
 Gegeneraliseerde geometrieën zijn afgeleide gegevens. De bron is een meer nauwkeurige geometrie. Dit roept de vraag op of deze afgeleide gegevens in het informatiemodel moeten worden opgenomen. Sowieso zijn het niet-authentieke gegevens. Enigszins vergelijkbaar is de standaard CityGML [[CityGML3]] waarin één objecttype meerdere geometrie eigenschappen heeft, één voor elk *Level of Detail* (LoD). CityGML is een uitwisselstandaard voor 3D geodata waarbij het gebruikelijk is om meerdere LoD's bij één object niet alleen op te slaan, maar ook gezamenlijk uit te wisselen in een bestand. Een viewer kan dan op basis van bijvoorbeeld de nabijheid van objecten kiezen voor het meest geschikte LoD.  
 
@@ -309,7 +263,7 @@ In producten op basis van de geobasisregistraties zal de gebruiker echter doorga
 - Het schaalniveau; conform [[NLISO19115]] noemen we dit de 'toepassingsschaal'. Dit is nodig zodat de gebruiker de gewenste schaal kan opvragen en kan zien voor welke schaal een geometrie geschikt is.
 - De herkomst i.e. afleidingsgegevens: wat was de brongeometrie en hoe is de geometrie daaruit gegeneraliseerd. Dit is o.a nodig om terugmelding op geometrie te kunnen ondersteunen, ook in het geval van afgeleide geometrieën.
 
-Conform de Spatial Data on the Web Best Practices [[SDW-BP]], [Best Practide 6](https://www.w3.org/TR/sdw-bp/#multiplegeometries), moet in een geodataproduct dat op het Web wordt gepubliceerd altijd in ieder geval een geometrie worden aangeboden die geschikt is om te gebruiken in webtoepassingen, i.e. bij wat grotere geometrieën moet er altijd een gegeneraliseerde geometrie beschikbaar zijn.
+Conform de _Spatial Data on the Web Best Practices_ [[SDW-BP]], [Best Practide 6](https://www.w3.org/TR/sdw-bp/#multiplegeometries), moet in een geodataproduct dat op het Web wordt gepubliceerd altijd in ieder geval een geometrie worden aangeboden die geschikt is om te gebruiken in webtoepassingen, i.e. bij wat grotere geometrieën moet er altijd een gegeneraliseerde geometrie beschikbaar zijn.
 
 
 
