@@ -8,7 +8,7 @@ Tussen verschillende informatiemodellen van de geo-basisregistraties heeft in de
 
 ## Achtergrond en scope
 
-De achtergrond, rationale en scope van dit informatiemodel worden beschreven in een serie scope documenten, één per thema, die in de loop der tijd beschikbaar komen. Een algemene schets van de gewenste inhoud staat in het document "DiS Geo : Eisen aan model samenhangende objectenregistratie" [[EMSO]]. Verder is beschikbaar het scopedocument [Bestuurlijke Gebieden](https://geonovum.github.io/disgeo-scope/bestuurlijkegebieden/). Overige scopedocumenten worden ontwikkeld in de [GitHub repository voor DiSGeo scopedocumenten](https://github.com/Geonovum/disgeo-scope/).
+De achtergrond, rationale en scope van dit informatiemodel worden beschreven in een serie scope documenten, één per thema, die in de loop der tijd beschikbaar komen. Een algemene schets van de gewenste inhoud staat in het document "DiSGeo : Eisen aan model samenhangende objectenregistratie" [[EMSO]]. Verder is beschikbaar het scopedocument [Bestuurlijke Gebieden](https://geonovum.github.io/disgeo-scope/bestuurlijkegebieden/). Overige scopedocumenten worden ontwikkeld in de [GitHub repository voor DiSGeo scopedocumenten](https://github.com/Geonovum/disgeo-scope/).
 
 ## Leeswijzer
 
