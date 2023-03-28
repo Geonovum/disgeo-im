@@ -44,11 +44,7 @@ Het informatiemodel DiSGeo valt binnen het toepassingsgebied van het Basismodel 
 
 De regels uit NEN3610 zijn voor zover van toepassing gevolgd in het informatiemodel DiSGeo. Binnen DiSGeo maken we zowel een conceptueel model als een logisch model. Hieronder geven we aan welke aspecten van NEN3610 conformiteit op welk modelniveau terug te vinden zijn. We noemen hier niet alle regels, maar alleen de belangrijkste, die in enige vorm terug te vinden zijn in het informatiemodel zelf:
 
-<aside class="ednote" title="Uitgewerkt door Pano">
-   Onderstaande regels zijn uitgwerked in paragrafen <i>Metadata</i>, <i>Levensloop</i> en <i>Historie</i>.
-</aside>
-
- - DiSGeo objecten zijn uniek identificeerbaar via de twee NEN3610-attributen `identificatie` en `domein` die zijn opgenomen in het logisch model
+ - DiSGeo-objecten zijn uniek identificeerbaar via de NEN3610-attributen `identificatie` en `domein` die zijn opgenomen in het logisch model
  - `Historie` en `Levensduur` zijn opgenomen in de klasse `Registratiegegevens` in het logisch model: 
  - `Tijdlijn Geldigheid` is opgenomen via de attributen `beginGeldigheid` en `eindGeldigheid`
  - `Tijdlijn Registratie` is opgenomen via de attributen `tijdstipRegistratie` en `eindRegistratie`
@@ -69,20 +65,9 @@ Het semantische model van NEN3610 bestaat uit een aantal objecttypen die objecte
    </figure>
 </aside>
 
-Voor de representatie van de _locatie_, _oriëntatie_ en _vorm_ van een object uit de werkelijkheid, gebruiken informatiemodellen geometrieën. De dimensie van een representatie variëert van nuldimensionaal (0D) tot driedimensionaal (3D). Objecten worden altijd geplaatst in een tweedimensionele (2D), of driedimensionele (3D) ruimte. Het informatiemodel DiSGeo gebruikt gestandaardiseerde geometrietypen uit ISO 19107:2003. Dit voorziet zowel in de opname van de coördinaten van de geometrie, als van het coördinaten<i>stelsel</i>.
+Voor de representatie van de _locatie_, _oriëntatie_ en _vorm_ van een object uit de werkelijkheid, gebruiken informatiemodellen geometrieën. De dimensie van een representatie variëert van nuldimensionaal (0D) tot driedimensionaal (3D). Objecten worden altijd geplaatst in een tweedimensionele (2D), of driedimensionele (3D) ruimte. Het informatiemodel DiSGeo gebruikt gestandaardiseerde geometrietypen uit ISO 19107:2003. Dit voorziet zowel in de opname van de coördinaten van de geometrie, als van het coördinaten<i>stelsel</i>. Van sommige objecten is de onderlinge relatie van belang; ook wel ruimtelijke of topologische relaties genoemd. De BGT-gegevenscatalogus beschrijft bijvoorbeeld welke objecten samen een [landsdekkend geheel](https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#meetgegevens) vormen. Bovendien heeft een geometrische representatie vaak ook kwaliteitskenmerken, bijvoorbeeld ten aanzien van _nauwkeurigheid_ en _inwinregels_. Samengevat legt het informatiemodel de volgende informatie over een geometrie vast: [type](#geometrietypen), [dimensie](#dimensies), [coordinaatreferentiesysteem (CRS)](#coordinaatreferentiesystemen), [ruimtelijke relaties](#ruimtelijke-relaties) en [Kwaliteitskenmerken](#kwaliteit) (o.a. nauwkeurigheid, inwinregels en topologische regels).
 
-Tot slot heeft een geometrische representatie ook kwaliteitskenmerken. Het informatiemodel DiSGeo onderscheid in elk geval informatie over de _nauwkeurigheid_ en de _inwinregels_. Samengevat legt het informatiemodel de volgende informatie over een geometrie vast: [Type](#geometrietypen), [Dimensie](#dimensies), [Coordinaatreferentiesysteem (CRS)](#coordinaatreferentiesystemen) en [Kwaliteitskenmerken](#kwaliteit) (o.a. nauwkeurigheid, inwinregels en topologische regels).
-
-<aside class="ednote" title="Waar topologische relaties onderbrengen?">
-   Aan deze kenmerken nog topologische/ruimtelijke relaties toevoegen? Of valt dit onder topologische regels?
-</aside>
-
-<aside class="ednote" title="NEN3610 en geometrie">
-   <p>Kan dit weg:</p>
-   <blockquote>NEN 3610 [[NEN3610-2021-ontw]] zegt weinig specifieks over geometrie en geometrische vastlegging van objecten, anders dan dat ISO 19107:2020 normatief wordt aangehaald, waarin de ISO geometrietypen (o.a. `GM_Point`, `GM_Curve`, `GM_Surface`, `GM_Solid`) worden gedefinieerd.</blockquote>
-</aside> 
-
-Voor de vastlegging van (informatie over) geometrieën gelden een aantal belangrijke principes die volgen uit verschillende standaarden en initiatieven. De volgende documenten zijn hierin leidend:
+Voor de vastlegging van (informatie over) geometrieën gelden een aantal belangrijke principes die volgen uit verschillende standaarden en initiatieven. Een aantal documenten zijn hierin leidend:
 
  - Metamodel Informatie Modellering 1.1.1 [[MIM]]
  - Raamwerk van geo-standaarden 3.0 [[Raamwerk-Geo]]
@@ -92,8 +77,6 @@ Voor de vastlegging van (informatie over) geometrieën gelden een aantal belangr
  - Modelleerprincipes Samenhangende Objectenregistratie [[disgeo-mod]]
  - Eisen aan Model Samenhangende Objectenregistratie [[EMSO]]
  - Geometrie in Model en GML [[GIMEG]]
-
-<!-- Per onderdeel verschilt de plek in het model waar de informatie over geometrie vastlegt. Het informatiemodel kent verschillende niveaus: _dataset_-, _object_- en _attribuutniveau_. In het algemeen geldt: hoe generieker de aard van de informatie, hoe hoger het niveau waarop het model dit vastlegt. -->
 
 De volgende paragrafen beschrijven welke eisen op het informatiemodel DiSGeo van toepassing zijn én hoe die concreet worden vastgelegd. De eisen en uitgangspunten zijn in principe geen onderdeel van dit document. We verwijzen hiervoor vanuit de tekst naar de betreffende documentatie. Indien niet aanwezig en de eis op zichzelf mogelijk onvoldoende helder is, bevat dit hoofdstuk een korte uitleg over de totstandkomming danwel interpretatie van een eis.
 
@@ -105,16 +88,12 @@ Geometrietypen hebben verschillende niveau's van _data-complexiteit_ en _dimensi
 
 ISO 19107 biedt een aantal basisgeometrieën om een individueel object uit de werkelijkheid te representeren. Dit zijn de [geometrische primitieven](https://geonovum.github.io/gimeg/#geometrische-primitieven). Soms geldt een verzameling van objecten uit de werkelijkheid als één geheel. Daarvoor zijn [geometrische aggregaties](https://geonovum.github.io/gimeg/#geometrische-aggregaties) geschikt. Binnen het informatiemodel DiSGeo onderscheiden we in elk geval de ISO 19107-geometrietypen uit onderstaande tabel.
 
-| Primitieve   | In ISO19107 - Enkelvoudig   | In ISO19107 - Aggregatie    |
+| Primitieve   | In ISO 19107 - Enkelvoudig   | In ISO 19107 - Aggregatie    |
 | ---          | ---                         | ---                         |
 | Punt         | `GM_Point`                  | `GM_MultiPoint`             |
 | Lijn         | `GM_Curve`                  | `GM_MultiCurve`             |
 | Vlak         | `GM_Surface`                | `GM_MultiSurface`           |
 | Volume       | `GM_Solid`                  | `GM_MultiSolid`             |
-
-<aside class="issue" title="Uitwerken geometrietypen">
-   Hierbij is het relevant om te definiëren en op te schrijven welke varianten toegestaan zijn. Een <code>GM_Surface</code> of <code>GM_Curve</code> heeft nog allerlei mogelijke verschijningsvormen in het geometriemodel. Voor de uitwisseling en het gebruik is het handig om dit in te perken.
-</aside>
 
 De toepassing van de ISO 19107-geometrietypen, zorgt ervoor dat het geometrietype helder is en dat zowel de coördinaten als het coördinatenstelsel kunnen worden opgenomen. In het bijzonder eist het [[EMSO]] [aansluiting op ISO 19125](https://docs.geostandaarden.nl/disgeo/emso/#:~:text=Hierbij%20is%20voor%20geometrie%20aansluiting%20op%20Simple%20Features%20(ISO19125)%20voorgeschreven) Simple Features. Deze standaard maakt een selectie uit het ISO 19107 geometriemodel. Het neemt daaruit alleen de meest gebruikelijke geometrietypen over. 
 
@@ -129,7 +108,7 @@ _Simple Features_ gebruikt geometrietypen uit de veel uitgebreidere standaard IS
 - `metadata`: optioneel attribuut voor het opnemen van verwijzingen naar documentatie die informatie geeft over de implementatie van het geometrie-object. Dit kunnen we wellicht gebruiken voor bijvoorbeeld de gerealiseerde nauwkeurigheid van de geometrie.
 
 <aside class="note" title="Spatial Reference System vs. Coördinaatreferentiesysteem">
-   <i>Spatial reference system</i> is een breder begrip dan <i>coördinaatreferentiesysteem</i>. Het gaat om een algemene locatieaanduiding, een <i>ruimtelijk referentiesysteem</i> dat niet alleen op basis van coördinaten kan werken maar ook op basis van bijvoorbeeld geografische naam of adres. 
+   <i>Spatial reference system</i> is een breder begrip dan <i>coördinaatreferentiesysteem</i>. Het gaat om een algemene locatieaanduiding, een <i>ruimtelijk referentiesysteem</i> dat niet alleen op basis van coördinaten kan werken maar bijvoorbeeld ook op basis van geografische naam of adres. 
 </aside>
 
 
@@ -152,12 +131,8 @@ Deze primitieven kun je plaatsen in een tweedimensionale of driedimensionale rui
 
 Het EMSO schrijft voor dat het informatiemodel DiSGeo moet voorsorteren op de mogelijkheid om de [driedimensionale beschrijving van een object](https://docs.geostandaarden.nl/disgeo/emso/#:~:text=waarbij%20de%20vastlegging%20hiervan%20zodanig%20wordt%20vormgegeven%20dat%20de%20driedimensionale%20(3D)%20beschrijving%20van%20een%20object%20kan%20worden%20opgenomen) op te nemen. Per objecttype kan de [wijze van vastlegging](https://docs.geostandaarden.nl/disgeo/emso/#:~:text=Sommige%20objecttypen%20zullen%20worden%20vastgelegd%20in%20de%20vorm%20van%203D%20volumes.%20Andere%20objecttypen%20als%20vlakken%20met%20een%20bepaalde%20hoogteligging.%20Voor%20bepaalde%20objecten%20met%20een%20minimale%20omvang%20kan%20geometrische%20vastlegging%20in%20de%20vorm%20van%20een%20enkel%20co%C3%B6rdinatendrietal%20(x%2C%20y%20en%20z)%20worden%20vastgelegd%20(puntobject)) verschillen. In sommige gevallen representeert een _volume_ het object het beste. In andere gevallen volstaat een _punt_, _lijn_ of _vlak_ met hoogteligging. Dit betekent dat het model ruimte moet bieden aan 3D-primitieven in een 3D-ruimte. Hieruit volgt dat het informatiemodel DiSGeo in zijn totaliteit beschouwd moet worden als een 3D-model. Het verschilt per onderwerp of een uitwerking in 2D (bijv. Bestuurlijk Gebied), 2.5D (bijv. Verharding) danwel 3D(bijv. Gebouw) nodig is.
 
-<aside class="issue" title="3D vs. ISO-19125">
-   <p>Hoe verhoudt dit zich tot het uitgangspunt van aansluiting op <b>ISO-19125</b>, dat het model beperkt tot <b>2D-primitieven</b>? In de oorspronkelijke tekst stond de zin:</p>
-   <blockquote><i>
-      "We hanteren dus Simple Features (ISO 19125) + een aantal aanvullingen voor zover nodig, waarschijnlijk in ieder geval voor bogen en volumes."
-   </i></blockquote>
-   <p>Naast volumes zijn ook bogen hierin niet toegestaan.</p>
+<aside class="ednote" title="Interpretatie uitgangspunten EMSO 2D vs. 3D">
+   Het EMSO hanteert ten aanzien van dimensies tegenstrijdige uitgangspunten. Enerzijds eist het aansluiting op ISO-19125, dat het model beprekt tot 2D-primitieven. Anderzijds eist het EMSO dat het model voorsorteert op driedimensionale objectbeschrijving. Het informatiemodel DiSGeo vertaalt deze uitganspunten als volgt: <b>ISO-19125 is leidend voor 2D-objecten en ISO-19107 voor bogen en 3D-objecten</b>. 
 </aside>
 
 #### Bestuurlijk gebied
@@ -291,6 +266,21 @@ Het openbaar lichaam Rijk bestuurt ook een aantal gebieden op zee. Deze objecten
 
 ### Ruimtelijke relaties
 
+<aside class="issue" title="Landsdekkendheid en topologische relaties">
+   Het informatiemodel DiSGeo beschrijft de samenhang tussen bestaande registraties; het is zelf *géén* registratie. Daarom ... Het informatiemodel DiSGeo beschrijft hoe ... Hier beschrijven wat het DiSGeo doet, wat het niet doet, en dus niet opneemt, en hoe we in de gegevensdefinitie toch puntsgewijs belangrijke eisen hebben opgenomen.
+</aside>
+
+#### Gegevenskwaliteit
+
+Allereerst formuleert dit document geen *kwaliteitseisen*. Het uitgangspunt is dat deze in de bronregistraties zelf gehanteerd worden. Van de gegevens die via het informatiemodel, óf daarop gebaseerde productmodellen, worden uitgewisseld, kan daarom een bepaalde kwaliteit verwacht worden. Deze gegevenskwaliteit is een uitgangspunt voor de uiteindelijk uitgewisselde gegevens. Verder kent gegevenskwaliteit veel verschillende aspecten, zoals beschreven in het NORA Raamwerk Gegevenskwaliteit [[NORA-RK]]. Dit document beschrijft momenteel alleen de *topologische consistentie*. Topologische consistentie wil zeggen dat de geometrieën van verschillende objecten zich op een bepaalde manier tot elkaar verhouden. De vlakgeometrieën van bestuurlijke gebieden van hetzelfde type partitioneren bijvoorbeeld de ruimte. Dat betekent dat:
+
+- Deze geometrieën naadloos op elkaar aansluiten, zodat er geen gaten voorkomen;
+- Deze geometrieën elkaar niet overlappen.
+
+De topologische consistentie-regels zijn opgenomen bij de objecttypen waar ze voor gelden, en zijn te vinden in [hoofdstuk 3 Gegevensdefinitie](https://geonovum.github.io/disgeo-im/#cat).
+
+#### DE-9IM
+
 Voor ruimtelijke relaties tussen de objecten kunnen we gebruik maken van het _Dimensionally Extended Nine‐Intersection Model_ (DE-9IM). Dit is een topologisch model voor het beschrijven van ruimtelijke relaties in een [2D-model](#dimensies). Dit model is uitgewerkt in de _Simple Features_-standaard [[ISO-19125]] en wordt aangeraden in [[NEN3610-2022]] en [[sdw-bp]]. Deze relaties zijn geïmplementeerd in veel geografische softwareomgevingen en ook in GeoSPARQL. Hieronder een overzicht met de originele Engelse naam en daarachter de vertaalde Nederlandse naam uit [NEN3610-2022](https://definities.geostandaarden.nl/nen3610-2022/nl/page/?uri=http%3A%2F%2Fdefinities.geostandaarden.nl%2Fnen3610-2022%2Fid%2Fcollectie%2Fruimtelijke_relaties).
 
 - `Contains` - [Bevat](https://definities.geostandaarden.nl/nen3610-2022/nl/page/bevat)
@@ -305,61 +295,9 @@ Voor ruimtelijke relaties tussen de objecten kunnen we gebruik maken van het _Di
 Deze relaties zijn beperkt tot een 2D-model en daarmee alleen van toepassing op geometrietypen `punt`, `lijn` of `vlak`. Omdat er in het informatiemodel DiSGeo meer met 3D wordt gewerkt, worden de topologische regels complexer. Ze worden echter ook secundair aan de representatie van de werkelijke verhouding tussen objecten. Uit EMSO: 
 Het EMSO stelt dat het <q><i>belangrijker</i> [is] <i>om ervoor te zorgen dat objecten die zich in de werkelijkheid op een bepaalde wijze tot elkaar verhouden (bijvoorbeeld een verharding ligt bovenop een overbrugging) ook in de registratie op deze wijze tot elkaar verhouden (bijvoorbeeld dat uit de z-coördinaten van de verharding en de overbrugging blijkt dat de verharding bovenop de overbrugging ligt). De exacte uitwerking van deze relaties in topologie-regels zal later in het traject verder worden opgepakt</i></q>.
 
-<aside class="issue" title="Landsdekkendheid">
-   <p>Welke objecttypen spelen een rol in de landsdekkendheid? Welke objecttypen hebben specifieke topologische relaties met elkaar? We hebben als modelleurs inhoudelijke expertise nodig om dit goed uit te werken.</p>
-   <p><b>Q</b>: Valt dit niet gewoon onder 'inwinregels?'</p>
-</aside>
-
-<aside class="issue" title="Ruimtelijke en administratieve relaties en compliance met NEN3610">
-
-   <p>Het gaat hierbij om afwegingen bij het kiezen van een naam voor de relatie tussen gemeentegebied en provinciegebied.  Internationaal is de gestandaardiseerde naam <code>within</code>. In NEN3610 is dit vertaald naar <code>binnen</code>. In ons team bestaat de vraag of <code>ligtIn</code> niet een betere naam is. Wat zijn onze opties hierbij?</p>
-
-   <p>De NEN3610 spreekt van administratieve relaties en ruimtelijke relaties. De vertaling <code>binnen</code> betreft een ruimtelijke relatie. Wel is het belangrijk om te beseffen dat de <code>«ruimtelijke relatie»</code> zoals beschreven in de NEN3610 eigenlijk een visuele representatie is van een constraint. Deze hoort dus eigenlijk niet thuis in het informatiemodel.</p>
-
-   <p>Het is aan ons de vraag of we een constraint willen toepassen:</p>
-   <ul>
-      <li>Zo ja, dan moeten we een <code>NEN3610:ruimtelijke relatie</code> én een <code>NEN3610:administratieve</code> relatie gebruiken.</li>
-      <li>Zo niet, dan hebben we alleen een <code>NEN3610:administratieve relatie</code> nodig.</p></li>
-   </ul>
-
-   <p>Het gaat dan om een administratieve vastlegging van een ruimtelijke relatie die vanuit de OGC wordt gedefinieerd. Hiervoor kunnen we:</p>
-
-   <ul>
-      <li>De NEN3610-benaming <code>binnen</code> gebruiken (waarbij we het begrip <code>NEN3610:binnen</code> opnemen als <code>mim:begrip</code>). </li>
-      <li>Onze eigen benaming (<code>ligtIn</code>) gebruiken met een verwijzing naar de OGC term <code>within</code>. Dan hebben we echter geen link met de NEN3610 – dat moet dan als een afgeleid gegeven worden gemodelleerd, omdat het anders niet mogelijk is vanuit de MIM.</li>
-   </ul>
-
-   <p><strong>Observaties</strong></p>
-
-   <ul>
-      <li>De term <code>binnen</code> is niet het meest geschikt om te gebruiken voor de relatie in ons model – het is echter wel hoe de NEN3610 de ruimtelijke relatie <code>within</code> heeft vertaald. Als wij uitwijken is het lastiger om aan te sluiten op de NEN3610, dus als we deze OGC relatie willen toepassen gebruiken we <code>binnen</code>.</li> 
-      <li>We kunnen het NEN3610 begrip <code>binnen</code> (zoals het nu staat in het begrippenkader) opnemen als <code>mim:begrip</code> bij het creëren van de administratieve/ruimtelijke relaties tussen de registratieve gebieden.</li>
-   </ul>
-
-   <p><strong>Conclusie</strong></p>
-
-   <p>Hierover is nog geen definitief besluit genomen.
-
-</aside>
-
-
-
 ### Kwaliteit
 
 Onder kwaliteit vallen verschillende onderdelen, zoals gegevenskwaliteit, nauwkeurigheid, inwinregels en topologische regels. Deze zijn elk in een aparte paragraaf uitgewerkt.
-
-#### Gegevenskwaliteit
-
-<aside class="ednote" title="Topologische consistentie">
-   Deze paragraaf onderbrengen bij <i>Ruimtelijke relaties</i>/<i>Topologie</i>, of topologische relaties in dit hoofdstuk onderbrengen.
-</aside>
-
-Allereerst formuleert dit document geen *kwaliteitseisen*. Het uitgangspunt is dat deze in de bronregistraties zelf gehanteerd worden. Van de gegevens die via het informatiemodel, óf daarop gebaseerde productmodellen, worden uitgewisseld, kan daarom een bepaalde kwaliteit verwacht worden. Deze gegevenskwaliteit is een uitgangspunt voor de uiteindelijk uitgewisselde gegevens. Verder kent gegevenskwaliteit veel verschillende aspecten, zoals beschreven in het NORA Raamwerk Gegevenskwaliteit [[NORA-RK]]. Dit document beschrijft momenteel alleen de *topologische consistentie*. Topologische consistentie wil zeggen dat de geometrieën van verschillende objecten zich op een bepaalde manier tot elkaar verhouden. De vlakgeometrieën van bestuurlijke gebieden van hetzelfde type partitioneren bijvoorbeeld de ruimte. Dat betekent dat:
-
-- Deze geometrieën naadloos op elkaar aansluiten, zodat er geen gaten voorkomen;
-- Deze geometrieën elkaar niet overlappen.
-
-De topologische consistentie-regels zijn opgenomen bij de objecttypen waar ze voor gelden, en zijn te vinden in [hoofdstuk 3 Gegevensdefinitie](https://geonovum.github.io/disgeo-im/#cat).
 
 #### Nauwkeurigheid
 
