@@ -50,6 +50,7 @@ Voorbeelden van bestaande informatiebronnen uitwerken. Hierbij aangeven welke vr
  1. QGIS: geometrische aanpak.
  1. Wikipedia: 'administratieve' aanpak. 
  1. Bestuurlijke gebieden-api: combi geometrisch en administratief.
+
 Het is nog niet volledig scherp hoe een demo-omgeving voor DiSGeo er dan uit moet zien en wat het precies moet kunnen. Het idee is om via deze 'tegenvoorbeelden' in eerste instantie de meerwaarde van het informatiemodel scherp in het vizier te krijgen. Van daaruit kunnen we verder nadenken over de eisen die dat stelt aan de demo-omgeving.
 
 ## 6 Acties
