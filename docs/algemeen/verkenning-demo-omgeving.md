@@ -4,8 +4,8 @@
 Het informatiemodel DiSGeo gaat niet alleen over Bestuurlijke Gebieden, maar voor EMSO; samenhangende objecten. Dit overstijgt allerlei geo-basisregistraties. Met DiSGeo werken we toe naar een model dat verwarring bij (eind)gebruikers reduceert. Met dit doel voor ogen willen we tijdens het ontwikkelproces de communicatie met (eind)gebruikers zo helder mogelijk maken. Hiervoor overwegen we de ontwikkeling van een demo-omgeving. Dick toont als voorbeeld www.waarnemingen.nl.
 
 ## Onderwerpen
- 1. [Gebruikers(groep) definiëren](#1-gebruikers-rep-definiëren)
- 1. [Voor- en nadelen thema bestuurlijke gebieden](#2-voor-en-nadelen-thema-bestuurlijke-gebieden)
+ 1. [Gebruikers(groep) definiëren](#1-gebruikersgroep-definiëren)
+ 1. [Voor- en nadelen thema bestuurlijke gebieden](#2-voor--en-nadelen-thema-bestuurlijk-gebied)
  1. [Meerwaarde van informatiemodel DiSGeo](#3-meerwaarde-van-informatiemodel-disgeo)
  1. [Aantonen beperkingen huidige mogelijkheden](#4-aantonen-beperkingen-huidige-mogelijkheden)
  1. [Voorbeelden bestaande informatiebronnen](#5-voorbeelden-bestaande-informatiebronnen)
@@ -22,7 +22,7 @@ Het informatiemodel DiSGeo gaat niet alleen over Bestuurlijke Gebieden, maar voo
  - Dat vereist misschien meerdere type demo-omgevingen.
  - Bedienen we de technische experts niet al gewoon met huidige documentatie? 
 
-## 2 Voor- en nadelen thema bestuurlijke gebieden
+## 2 Voor- en nadelen thema bestuurlijk gebied
  - Bestuurlijke gebieden is niche-use case.
  - Er is op dit moment geen authentieke bron (bijv. basisregistratie) voor bestuurlijke gebieden.
  - Mensen werken al met deze data dus _what's new_?
