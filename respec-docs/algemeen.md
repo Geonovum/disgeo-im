@@ -271,9 +271,19 @@ Conform de _Spatial Data on the Web Best Practices_ [[SDW-BP]], [Best Practide 6
 
 ### Metadata op informatieobjectniveau
 
+#### Tijdlijnen van informatieobjecten
+
+Een informatieobject is een set gegevens die een beschrijving geeft van een object in de te beschrijven werkelijkheid (hierna werkelijkheid). [[NEN3610-2022]] biedt eigenschappen om van informatieobjecten uit te drukken wat de tijdlijnen geldigheid en registratie zijn.
+
+De tijdlijn geldigheid beschrijft wanneer (de gegevens in) een informatieobject als waarheid beschouwd kunnen worden in de werkelijheid. Dit vormt dan ook de basis voor het kunnen tijdreizen langs de geldigheidstijdlijn.
+
+Hoe deze tijdlijn per object wordt ingevuld is een functionele keuze die, op basis van het objecttype en het doel van het registreren van informatieobjecten voor dat objecttype, gemaakt moet worden. Zo kan het voor fysieke objecten voor de hand liggen om het begin van de levensduur (de begindatum geldigheid van het eerste voorkomen in de levensloop van een object) te laten aansluiten op het moment van het ontstaan van dit object in de werkelijkheid.
+
+De tijdlijn registratie beschrijft wanneer (de gegevens in) een informatieobject opvraagbaar was. Dit zijn technisch tijdstippen die bepaald worden door de gegevensverstrekkende systemen.
+
 #### Brongegevens van informatieobjecten
 
-Onder herkomstmetadata verstaan we gegevens die beschrijven hoe een informatieobject tot stand is gekomen. Dit wordt ook wel data lineage, of audit trail genoemd.
+Onder bron- of herkomstmetadata verstaan we gegevens die beschrijven hoe een informatieobject tot stand is gekomen. Dit wordt ook wel data lineage, of audit trail genoemd.
 
 Er zijn een aantal relevante standaarden voor het opnemen van metadata op het niveau van informatieobjecten.
 
