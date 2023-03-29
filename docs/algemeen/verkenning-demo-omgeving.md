@@ -11,7 +11,6 @@ Het informatiemodel DiSGeo gaat niet alleen over Bestuurlijke Gebieden, maar voo
  1. [Voorbeelden bestaande informatiebronnen](#5-voorbeelden-bestaande-informatiebronnen)
  1. [Acties](#6-acties)
 
-
 ## 1 Gebruikers(groep) definiëren
  - Heel duidelijk de gebruiker definiëren:
     - Eindgebruiker (prioriteit)
