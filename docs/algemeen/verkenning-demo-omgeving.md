@@ -1,14 +1,24 @@
 # Notitie verkenning demo-omgeving
 Overleg 29 maart 2023
+----
 
 Het informatiemodel DiSGeo gaat niet alleen over Bestuurlijke Gebieden, maar voor EMSO; samenhangende objecten. Dit overstijgt allerlei geo-basisregistraties. Met DiSGeo werken we toe naar een model dat verwarring bij (eind)gebruikers reduceert. Dick toont als voorbeeld www.waarnemingen.nl.
 
+Onderwerpen
+ 1. [Gebruikers(groep) definiëren](#1-gebruikers-rep-definiëren)
+ 1. [Voor- en nadelen thema bestuurlijke gebieden](#2-voor-en-nadelen-thema-bestuurlijke gebieden)
+ 1. [Meerwaarde van informatiemodel DiSGeo](#3-meerwaarde-van-informatiemodel-disgeo)
+ 1. [Aantonen beperkingen huidige mogelijkheden](#4-aantonen-beperkingen-huidige-mogelijkheden)
+ 1. [Voorbeelden bestaande informatiebronnen](#5-voorbeelden-bestaande-informatiebronnen)
+ 1. [Acties](#6-acties)
+
+
 ## 1 Gebruikers(groep) definiëren
  - Heel duidelijk de gebruiker definiëren:
-    1. Eindgebruiker (prioriteit)
-    1. Software-ontwikkelaar
-    1. Inwinner
-    1. Bronhouder
+    - Eindgebruiker (prioriteit)
+    - Software-ontwikkelaar
+    - Inwinner
+    - Bronhouder
  - Wellicht een paar groepen defineeren.
  - Dat vereist misschien meerdere type demo-omgevingen.
  - Bedienen we de technische experts niet al gewoon met huidige documentatie? 
