@@ -1,12 +1,11 @@
 # Notitie verkenning demo-omgeving
-Overleg 29 maart 2023
-----
+(_Overleg 29 maart 2023_)
 
 Het informatiemodel DiSGeo gaat niet alleen over Bestuurlijke Gebieden, maar voor EMSO; samenhangende objecten. Dit overstijgt allerlei geo-basisregistraties. Met DiSGeo werken we toe naar een model dat verwarring bij (eind)gebruikers reduceert. Dick toont als voorbeeld www.waarnemingen.nl.
 
-Onderwerpen
+## Onderwerpen
  1. [Gebruikers(groep) definiëren](#1-gebruikers-rep-definiëren)
- 1. [Voor- en nadelen thema bestuurlijke gebieden](#2-voor-en-nadelen-thema-bestuurlijke gebieden)
+ 1. [Voor- en nadelen thema bestuurlijke gebieden](#2-voor-en-nadelen-thema-bestuurlijke-gebieden)
  1. [Meerwaarde van informatiemodel DiSGeo](#3-meerwaarde-van-informatiemodel-disgeo)
  1. [Aantonen beperkingen huidige mogelijkheden](#4-aantonen-beperkingen-huidige-mogelijkheden)
  1. [Voorbeelden bestaande informatiebronnen](#5-voorbeelden-bestaande-informatiebronnen)
