@@ -1,5 +1,24 @@
 # Algemeen
 
+## Levenscyclus
+
+Objecttypen kunnen, wanneer relevant, een levenscyclusstatus, ookwel levensfase, worden toebedeeld. Hiermee wordt het mogelijk om aan te geven in welke fase een object verkeert. Door de oogharen heen kijkend kun je stellen dat er sprake kan zijn van een planfase, een aanwezigheidsfase en een afwezigheidsfase. De concrete invulling van de levensfasen kan per objecttype worden ingevuld. 
+De levenscyclus begint op het gedefinieerde ontstaansmoment, dat per objecttype kan verschillen. Zo is voor bepaalde objecttypen een planstatus relevant, terwijl dit voor andere objecttypen minder relevant lijkt. De informatieobjecten blijven daarna altijd in de registratie aanwezig. Door middel van een vastlegging van de levensfase van een object kan worden bepaald of een object ook nog als zodanig bestaat in de beschreven werkelijkheid. Wanneer een object niet meer bestaat in die werkelijkheid, bereikt het een eindfase. Het object wordt dus nog wel beschreven in de registratie, maar kan als afwezig uit de werkelijkheid beschouwd worden.
+
+## Identificatie
+Voor de identificatie van objecten maken we gebruik van het identificatiepatroon van de [[NEN3610:2022]]. (<a href="#nen3610-identificatie"></a>) 
+
+<figure id="nen3610-identificatie">
+  <img src="media/nen3610-identificatie.png" alt="nen3610-identificatie">
+  <figcaption>NEN 3610:2022 - Identificatie</figcaption>
+</figure>
+
+Een belangrijk uitgangspunt is dat de identificatie van een object gedurende zijn gehele levenscyclus gelijk blijft.
+
+<aside class="note">
+Identificatie is een aspect wat in conceptuele informatiemodellen nog geen rol speelt. De identificatie zal pas op het niveau van het logisch gegevensmodel geïntroduceerd worden.
+</aside>
+
 ## Geometrie
 
 Voor de representatie van de _locatie_, _oriëntatie_ en _vorm_ van een object uit de werkelijkheid, gebruiken informatiemodellen geometrieën. De dimensie van een representatie variëert van nuldimensionaal (0D) tot driedimensionaal (3D). Objecten worden altijd geplaatst in een tweedimensionele (2D), of driedimensionele (3D) ruimte. Voor de vastlegging van (informatie over) geometrieën gelden een aantal belangrijke principes die volgen uit verschillende standaarden en initiatieven. Een aantal documenten is hierin leidend:
@@ -24,13 +43,9 @@ Dit hoofdstuk eindigt met een stuk over **generalisatie van geomtrieën**.
 
 Het informatiemodel DiSGeo valt binnen het toepassingsgebied van het Basismodel Geo-informatie [[NEN3610-2022]] (hierna: NEN3610) omdat het objecttypen beschrijft die direct herleidbaar zijn tot een locatie ten opzichte van de aarde. Het wordt daarom gemodelleerd conform de regels die in NEN3610 geformuleerd zijn, en als extensie op het semantische model uit NEN3610.
 
-De regels uit NEN3610 zijn voor zover van toepassing gevolgd in het informatiemodel DiSGeo. Binnen DiSGeo maken we zowel een conceptueel model als een logisch model. Hieronder geven we aan welke aspecten van NEN3610 conformiteit op welk modelniveau terug te vinden zijn. We noemen hier niet alle regels, maar alleen de belangrijkste, die in enige vorm terug te vinden zijn in het informatiemodel zelf:
-
- - DiSGeo-objecten zijn uniek identificeerbaar via de NEN3610-attributen `identificatie` en `domein` die zijn opgenomen in het logisch model
- - `Historie` en `Levensduur` zijn opgenomen in de klasse `Registratiegegevens` in het logisch model: 
- - `Tijdlijn Geldigheid` is opgenomen via de attributen `beginGeldigheid` en `eindGeldigheid`
- - `Tijdlijn Registratie` is opgenomen via de attributen `tijdstipRegistratie` en `eindRegistratie`
- - `Levensduur` van objecten in de registratie is opgenomen via de attributen `objectBegintijd` en `objectEindtijd`
+De regels uit NEN3610 zijn voor zover van toepassing gevolgd in het informatiemodel DiSGeo. De toepassing hiervan is terug te lezen in:
+* <a href="#identificatie"></a>
+* <a href="#tijdlijnen-van-informatieobjecten"></a>
 
 Het semantische model van NEN3610 bestaat uit een aantal objecttypen die objecten uit de werkelijkheid op hoofdlijn classificeren. In het informatiemodel DiSGeo zijn de klassen, voor zover dit past, gemodelleerd als subklasse van het NEN3610 objecttype Geo-Object of (bij voorkeur) een specifiekere NEN3610-subklasse van Geo-object. De verbinding met deze semantische klassen is opgenomen in het conceptueel model.
 
@@ -273,13 +288,31 @@ Conform de _Spatial Data on the Web Best Practices_ [[SDW-BP]], [Best Practide 6
 
 #### Tijdlijnen van informatieobjecten
 
-Een informatieobject is een set gegevens die een beschrijving geeft van een object in de te beschrijven werkelijkheid (hierna werkelijkheid). [[NEN3610-2022]] biedt eigenschappen om van informatieobjecten uit te drukken wat de tijdlijnen geldigheid en registratie zijn.
+Een informatieobject is een set gegevens die een beschrijving geeft van een object in de te beschrijven werkelijkheid (hierna werkelijkheid). [[NEN3610-2022]] biedt eigenschappen om van informatieobjecten uit te drukken wat de tijdlijnen geldigheid en registratie zijn. (<a href="#nen3610-registratiegegevens"></a>) 
+
+<figure id="nen3610-registratiegegevens">
+  <img src="media/nen3610-registratiegegevens.png" alt="nen3610-registratiegegevens">
+  <figcaption>NEN 3610:2022 - Registratiegegevens</figcaption>
+</figure>
+
+`Tijdlijn Geldigheid` is opgenomen via de attributen `beginGeldigheid` en `eindGeldigheid`.<br>
+`Tijdlijn Registratie` is opgenomen via de attributen `tijdstipRegistratie` en `eindRegistratie`.
 
 De tijdlijn geldigheid beschrijft wanneer (de gegevens in) een informatieobject als waarheid beschouwd kunnen worden in de werkelijheid. Dit vormt dan ook de basis voor het kunnen tijdreizen langs de geldigheidstijdlijn.
 
 Hoe deze tijdlijn per object wordt ingevuld is een functionele keuze die, op basis van het objecttype en het doel van het registreren van informatieobjecten voor dat objecttype, gemaakt moet worden. Zo kan het voor fysieke objecten voor de hand liggen om het begin van de levensduur (de begindatum geldigheid van het eerste voorkomen in de levensloop van een object) te laten aansluiten op het moment van het ontstaan van dit object in de werkelijkheid.
 
 De tijdlijn registratie beschrijft wanneer (de gegevens in) een informatieobject opvraagbaar was. Dit zijn technisch tijdstippen die bepaald worden door de gegevensverstrekkende systemen.
+
+#### Status van een informatieobject
+
+Op het niveau van het informatieobject kunnen we ook uitdrukken wat hiervan de status is in de registratie. We onderscheiden hier twee statussen:
+* `Actief` geeft aan dat een informatieobject daadwerkelijk meedoet in de registratie.
+* `Afgevoerd` geeft aan dat een informatieobject niet meer actief is in de registratie. 
+
+Een informatieobject wat actief is in de registratie kun je vinden op het de tijdlijn geldigheid. Een informatieobject wat niet meer actief is kun je alleen vinden langs de tijdlijn registratie.
+
+Een voorbeeld van het afvoeren van een objecttype is wanneer er in de gegevens in een informatieobject een fout is gemaakt en dit technisch wordt hersteld.
 
 #### Brongegevens van informatieobjecten
 
@@ -326,12 +359,7 @@ Eén van de [modelleerrichtlijnen](https://geonovum.github.io/disgeo-imsor/model
 
 Dit houdt in dat we bron- en herkomstmetadata niet op hetzelfde niveau als normale objecteigenschappen zoals `bouwjaar` en `oppervlakte` willen uitdrukken. De reden hiervoor is dat directe eigenschappen over het object gaan, en bron- en herkomstmetadata over **de gegevens over** het object.
 
-We hebben dus een aanknopingspunt voor bron- en herkomstmetagegevens nodig dat wel te relateren is aan het beschreven object, maar niet als directe gegevens over het object wordt uitgedrukt. De nieuwe [[NEN3610-2022]] biedt uitkomst. Daarin is dit aanknopingspunt al geboden.
-
-<figure id="nen3610-registratiegegevens">
-  <img src="media/nen3610-registratiegegevens.png" alt="nen3610-registratiegegevens">
-  <figcaption>NEN 3610:2022 - Registratiegegevens</figcaption>
-</figure>
+We hebben dus een aanknopingspunt voor bron- en herkomstmetagegevens nodig dat wel te relateren is aan het beschreven object, maar niet als directe gegevens over het object wordt uitgedrukt. De nieuwe [[NEN3610-2022]] biedt uitkomst. Daarin is dit aanknopingspunt al geboden (<a href="#nen3610-registratiegegevens"></a>).
 
 De [[NEN3610-2022]] schrijft al voor hoe tijdlijnen en versieinformatie van informatieobjecten uitgedrukt kunnen worden, los van de directe gegevens over het object middels het construct `Registratie`.
 

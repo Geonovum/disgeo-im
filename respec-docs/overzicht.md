@@ -15,6 +15,24 @@ Het conceptueel informatiemodel samenhangende objecten beschrijft hoe objecten u
 ### Bestuurlijke gebieden
 Er is een belangrijke relatie tussen een [openbaar lichaam](https://geonovum.github.io/disgeo-im/#global_class_BestuurlijkeGebieden_OpenbaarLichaam) en een [bestuurlijk gebied](https://geonovum.github.io/disgeo-im/#global_class_BestuurlijkeGebieden_BestuurlijkGebied). In de bestuurlijke indeling van het Koninkrijk der Nederlanden is een openbaar lichaam een overheid die bepaalde taken uitvoert binnen een bepaald _ruimtelijk_ gebied óf op een bepaald _inhoudelijk_ gebied ([[Wikipedia]]). De belangrijkste openbare lichamen zijn het Rijk, de provincies, de gemeenten en de waterschappen, maar ook veiligheidsregio's behoren hiertoe. Een bestuurlijk gebied is dan dat bepaalde ruimtelijk gebied waarover een openbaar lichaam bestuur uitoefent.
 
+#### Levenscyclus en tijdlijnen Bestuurlijk gebied
+
+Bestuurlijk gebied is een van de specifiekere vormen van Registratieve ruimte. De levenscyclusstatussen van een Registratieve Ruimte bestaan uit:
+* `Ontwerp` - Object waarvan de vaststelling wordt voorbereid
+* `Niet gerealiseerd` - Object waarvan de voorbereiding niet heeft geleid tot vaststelling
+* `Vastgesteld` - Object dat door het bevoegd gezag is benoemd of afgebakend op grond van wet- of regelgeving
+* `Ingetrokken` - Object dat door het bevoegd gezag is ingetrokken op grond van wet- of regelgeving
+
+In het algemeen kun je stellen dat objectlevenscycli in het [[EMSO]] op hoofdlijnen een levenscyclus kent van planfase naar aanwezigheidsfase, naar afwezigheidsfase.
+
+Ook voor bestuurlijke gebieden worden deze 4 levenscyclusstatussen ondersteund. Het moet echter nog blijken of er behoefte is aan een planfase voor bestuurlijke gebieden. Een mogelijke toepassing zou kunnen zijn dat een herindelingsplan nog voor vaststelling zijn weerslag krijgt in de registratie, in de vorm van bestuurlijke gebieden met de status `Ontwerp`.
+
+De status `Vastgesteld` is de status die aangeeft dat een bestuurlijk gebied bestaat in de werkelijkheid. Dit komt overeen met de aanwezigheidsfase.
+
+De status `Ingetrokken` is de eindstatus van een bestuurlijk gebied. Dit komt overeen met de afwezigheidsfase.
+
+De levensduur van een bestuurlijk gebied - de periode waarin het object in de status `Vastgesteld` verkeert - zal de levensduur van het besturende openbaar lichaam volgen. Dit betekent dat de begindatum geldigheid van het eerste voorkomen van het informatieobject van een bestuurlijk gebied met de status `Vastgesteld` gelijk zal zijn aan de ingangsdatum van het besturende openbaar lichaam, en dat het laatste voorkomen van een informatieobject van een bestuurlijk gebied met de status `Vastgesteld` een einddatum geldigheid zal hebben die gelijk is aan de einddatum van het openbaar lichaam.
+
 #### Openbaar Lichaam
 De verzameling van alle openbare lichamen van hetzelfde type, bijvoorbeeld: gemeenten, provincies, waterschappen of ministeries, heet een _bestuurslaag_. Wanneer er gesproken wordt over een deel van een openbaar lichaam, bijvoorbeeld: de gemeenteraad, het college van burgemeester en wethouders en de burgemeester, is de term _bestuursorgaan_ van toepassing. Beide termen spelen in het informatiemodel geen directe rol, maar zijn wel belangrijk voor de afbakening van _openbaar lichaam_. Het openbaar lichaam is een bruikbare term voor het benoemen van de gemeente als _volledige bestuurlijke organisatie_.
 
