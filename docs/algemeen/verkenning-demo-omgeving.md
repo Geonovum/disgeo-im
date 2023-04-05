@@ -53,6 +53,6 @@ Voorbeelden van bestaande informatiebronnen uitwerken. Hierbij aangeven welke vr
 Het is nog niet volledig scherp hoe een demo-omgeving voor DiSGeo er dan uit moet zien en wat het precies moet kunnen. Het idee is om via deze 'tegenvoorbeelden' in eerste instantie de meerwaarde van het informatiemodel scherp in het vizier te krijgen. Van daaruit kunnen we verder nadenken over de eisen die dat stelt aan de demo-omgeving.
 
 ## 6 Acties
- - [x] Uitwerken voorbeelden bestaande informatiebronnen (issue opnemen op backlog).
- - [x] Scope beperken tot bestuurlijke gebieden.
- - [x] Wat is het meest geschikte presentatiemiddel voor ons doeleinde?
+ - [ ] Uitwerken voorbeelden bestaande informatiebronnen (issue opnemen op backlog).
+ - [ ] Scope beperken tot bestuurlijke gebieden.
+ - [ ] Wat is het meest geschikte presentatiemiddel voor ons doeleinde?
