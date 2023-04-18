@@ -58,12 +58,19 @@ bronverwijzing
 
 Kaartafbeelding met geometrieën, geen daadwerkelijke geometrieën beschikbaar
 
+Overzicht
+Naamgeving in informatiemodel is technisch van aard. Daar moet je in je producten naar eindgebruiker toe een vertaalslag op maken. 
+
 Voordelen
  - Relatief uniforme structuur (het opzetten van pagina's en teksten is handwerk, zonder strakke structuur)
  - Manier van zoeken is voor veel mensen bekend
  - Door bekendheid intuïtief en laagdrempelig
  - Voor breed publiek openbaar toegankelijke
  - Geen speciale software nodig: een browser voldoet
+
+Wikipedia geeft óf info over de provincies (van Nederland) als bestuurslaag en de instanties, óf info over één instantie van een provincie.
+
+Wikipedia: kardinaliteit is een "?", je hebt geen enkele garantie dat informatie aanwezig is, meer een kwestie van geluk/toeval/aanbod.
 
 Nadelen
 - Veel informatie
