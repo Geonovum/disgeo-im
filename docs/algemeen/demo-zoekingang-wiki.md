@@ -16,6 +16,23 @@ Uitwerking relatie(s) tussen Provincies en gemeenten: _grondgebied_ (`Bestuurlij
  - [Lijst van voormalige gemeenten in Utrecht](
 https://nl.wikipedia.org/wiki/Lijst_van_voormalige_gemeenten_in_Utrecht)
 
+## Vragen
+
+>**Voorbeeld**: «Objecttype» `Provinciegebied`, instantie: `Groningen` 
+
+### 1 - In hoeverre is het mogelijk om door de tijd te reizen?
+
+Het informatiemodel DiSGeo baseert zich op het Basismodel Geo-informatie (NEN3610). Daarin biedt het «Objecttype» `Registratie` drie typen metagegevens om verschillende temporele aspecten van een object vast te leggen: `TijdlijnGeldigheid`, `TijdlijnRegistratie` en `Levensduur`. In het (logisch) model DiSGeo - Bestuurlijk Gebied, zijn deze registratiegegevens verplicht. Hiermee kun je zowel geografisch als administratief door de tijd reizen.
+
+Wikipedia biedt twee manieren om door de tijd te reizen. Het is mogelijk om te kijken naar gemeentelijke herindelingen of voormalige gemeenten in de provincie. Dit gaat over veranderingen van een object in de werkelijkheid. Let wel: je moet wijzigingen van de provincie, dus zelf afleiden uit de wijzigingen van de gemeente(grenzen). Daarnaast beschikt elke wikipediapagina over een tabblad Geschiedenis. Hierin kun je wijzigingshistorie van de pagina in zien. Belangrijk om te vermelden: beide manieren zijn puur administratief van aard.
+
+### 2 - In hoeverre is het mogelijk om zowel een geografische als administratieve vraag te stellen
+### 3 - In hoeverre zijn liggen er relaties tussen de objecten
+### 4 - Wat is er bekend over de authenticiteit van de bron?
+### 5 - Welke voor- en nadelen heeft de gekozen methode?
+
+
+## Ruwe notities
 >**Hiervoor moet je met het logisch model vergelijken!**
 
 Bestuurslaag
