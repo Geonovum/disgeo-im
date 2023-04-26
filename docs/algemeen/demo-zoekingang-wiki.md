@@ -22,11 +22,21 @@ https://nl.wikipedia.org/wiki/Lijst_van_voormalige_gemeenten_in_Utrecht)
 
 ### 1 - In hoeverre is het mogelijk om door de tijd te reizen?
 
-Het informatiemodel DiSGeo baseert zich op het Basismodel Geo-informatie (NEN3610). Daarin biedt het «Objecttype» `Registratie` drie typen metagegevens om verschillende temporele aspecten van een object vast te leggen: `TijdlijnGeldigheid`, `TijdlijnRegistratie` en `Levensduur`. In het (logisch) model DiSGeo - Bestuurlijk Gebied, zijn deze registratiegegevens verplicht. Hiermee kun je zowel geografisch als administratief door de tijd reizen.
+#### DiSGeo
+Het informatiemodel DiSGeo baseert zich op het Basismodel Geo-informatie (NEN3610). Daarin biedt het «Objecttype» `Registratie` drie typen metagegevens om verschillende temporele aspecten van een object vast te leggen: `TijdlijnGeldigheid`, `TijdlijnRegistratie` en `Levensduur`. In het (logisch) model DiSGeo - Bestuurlijk Gebied, zijn deze registratiegegevens verplicht. Hiermee kun je zowel geografisch als administratief tijdreizen.
 
-Wikipedia biedt twee manieren om door de tijd te reizen. Het is mogelijk om te kijken naar gemeentelijke herindelingen of voormalige gemeenten in de provincie. Dit gaat over veranderingen van een object in de werkelijkheid. Let wel: je moet wijzigingen van de provincie, dus zelf afleiden uit de wijzigingen van de gemeente(grenzen). Daarnaast beschikt elke wikipediapagina over een tabblad Geschiedenis. Hierin kun je wijzigingshistorie van de pagina in zien. Belangrijk om te vermelden: beide manieren zijn puur administratief van aard.
+#### Wikipedia
+Wikipedia biedt twee manieren om door de tijd te reizen. Het is mogelijk om te kijken naar **gemeentelijke herindelingen** of **voormalige gemeenten in de provincie**. Dit gaat over veranderingen van een object in de werkelijkheid. Let wel: je moet wijzigingen van de provincie zelf afleiden uit de wijzigingen van de gemeente(grenzen). Daarnaast beschikt elke wikipediapagina over een tabblad Geschiedenis. Hierin kun je wijzigingshistorie van de pagina in zien. Belangrijk om te vermelden: beide manieren zijn puur administratief van aard.
 
 ### 2 - In hoeverre is het mogelijk om zowel een geografische als administratieve vraag te stellen
+
+#### DiSGeo
+Het informatiemodel DiSGeo combineert geografische en administratieve gegevens en biedt hiermee een informatieproduct de beide zoekingangen als mogelijkheid aan.
+
+
+### Wikipedia
+Een vraag stellen aan wikipedia gebeurt op basis van het zoekveld. Het zoekveld doorzoekt alleen paginanamen en niet de content van die pagina. Hier (aan de pagina's) ligt bovendien geen vastomleinde structuur aan ten grondslag. Verder bevat Wikipedia één geografisch gegeven: de puntlocatie van een provincie van een gebied. Hier heb je als gebruiker heel weinig aan. Verder bevatten de pagina's wel veel kaartafbeeldingen, maar die er geografissch uitzien, maar geen geografische data bevatten.
+
 ### 3 - In hoeverre zijn liggen er relaties tussen de objecten
 ### 4 - Wat is er bekend over de authenticiteit van de bron?
 ### 5 - Welke voor- en nadelen heeft de gekozen methode?
