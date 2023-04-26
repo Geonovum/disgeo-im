@@ -35,46 +35,49 @@ Drie typen user-stories
 Die typen gebruikers hebben dezelfde vraag, maar kiezen vanuit hun rol en al dan niet aanwezige expertise verschillende, bij hun rol passende zoekingangen. Hoe kunnen zij de vraag vanuit deze zoekingang beantwoorden? Wat zijn de voor en nadelen. Dit wordt aangevuldt met hoe het informatiemodel DiSGeo op deze vraag antwoord kan geven. 
 
 ## 1 - Tijdrijzen
-Als leek/geo-expert/ontwikkelaar wil ik door de tijd kunnen reizen van een provincie(gebied), zodat ik kan achterhalen hoe de actuele grenzen door veranderingen in voorgaande jaren  veranderd zijn én welke gemeenten er op een bepaald moment in de tijd tot een provincie(gebied) behoorden.
+Als leek/geo-expert/ontwikkelaar wil ik door de tijd kunnen reizen van een provincie(gebied), zodat ik kan achterhalen hoe de actuele grenzen door wijzingen in voorgaande jaren  veranderd zijn én welke gemeenten er op een bepaald moment in de tijd tot een provincie(gebied) behoorden.
 
-### 1A - Leek
+### 1.1 - Leek
 Wikipedia biedt twee manieren om door de tijd te reizen. Het is mogelijk om te kijken naar **gemeentelijke herindelingen** of **voormalige gemeenten in de provincie**. Dit gaat over veranderingen van een object in de werkelijkheid. Let wel: je moet wijzigingen van de provincie zelf afleiden uit de wijzigingen van de gemeente(grenzen). Daarnaast beschikt elke wikipediapagina over een tabblad Geschiedenis. Hierin kun je wijzigingshistorie van de pagina in zien. Belangrijk om te vermelden: beide manieren zijn puur administratief van aard.
 
-### 1B - Geo-expert
+### 1.2 - Geo-expert
 ...
 
-### 1C - Ontwikkelaar
+### 1.3 - Ontwikkelaar
 ...
 
-### Informatiemodel DiSGeo
+### 1.4 Informatiemodel DiSGeo
 Het informatiemodel DiSGeo baseert zich op het Basismodel Geo-informatie (NEN3610). Daarin biedt het «Objecttype» `Registratie` drie typen metagegevens om verschillende temporele aspecten van een object vast te leggen: `TijdlijnGeldigheid`, `TijdlijnRegistratie` en `Levensduur`. In het (logisch) model DiSGeo - Bestuurlijk Gebied, zijn deze registratiegegevens verplicht. Hiermee kun je zowel geografisch als administratief tijdreizen.
 
 ## 2 - Administratieve en ruimtelijke relaties tussen objecten
 Als leek/geo-expert/ontwikkelaar wil ik
 weten onder welke provincie (naam en gebied) een bepaalde gemeente (naam en gebied) valt, zodat ik weet welke bestuurder (naam), binnen welk territorium (gebied) verantwoordelijk is voor de aanleg van bedrijventerreinen en kantoorparken in een bepaald gebied. 
 
-### 2A - Leek
-Een vraag stellen aan wikipedia gebeurt op basis van het zoekveld. Het zoekveld doorzoekt alleen paginanamen en niet de content van die pagina. Hier (aan de pagina's) ligt bovendien geen vastomleinde structuur aan ten grondslag. Verder bevat Wikipedia één geografisch gegeven: de puntlocatie van een provincie van een gebied. Hier heb je als gebruiker heel weinig aan. Verder bevatten de pagina's wel veel kaartafbeeldingen, maar die er geografissch uitzien, maar geen geografische data bevatten.
+### 2.1 - Leek
+Een vraag stellen aan wikipedia gebeurt op basis van het zoekveld. Het zoekveld doorzoekt alleen paginanamen en niet de content van die pagina. Hier (aan de pagina's) ligt bovendien geen vastomleinde structuur aan ten grondslag. Verder bevat Wikipedia één geografisch gegeven: de puntlocatie van een provincie van een gebied. Hier heb je als gebruiker heel weinig aan. Verder bevatten de pagina's wel veel kaartafbeeldingen, maar die er geografisch "uitzien", maar geen geografische data bevatten.
 
-### 2B - Geo-expert
+### 2.2 - Geo-expert
 ...
 
-### 2C - Ontwikkelaar
+### 2.3 - Ontwikkelaar
 ...
 
-### Informatiemodel DiSGeo
+### 2.4 Informatiemodel DiSGeo
 Het informatiemodel DiSGeo combineert geografische en administratieve gegevens en biedt hiermee een informatieproduct de beide zoekingangen als mogelijkheid aan.
 
 ## 3 - Authenticiteit van de bron(data)
-Als leek/geo-expert/ontwikkelaar wil ik wie verantwoordelijk is voor de brondata over een bepaalde provincie (naam en gebied),  zodat ik weet welke kwaliteit ik als gebruiker mag verwachten.
+Als leek/geo-expert/ontwikkelaar wil ik weten wie verantwoordelijk is voor de brondata over een bepaalde provincie (naam en gebied),  zodat ik weet welke kwaliteit ik als gebruiker mag verwachten.
 
-### 3A - Leek
+### 3.1 - Leek
 ...
 
-### 3B - Geo-expert
+### 3.2 - Geo-expert
 ...
 
-### 3C - Ontwikkelaar
+### 3.3 - Ontwikkelaar
+...
+
+### 3.4 - Informatiemodel DiSGeo
 ...
 
 <!-- 
