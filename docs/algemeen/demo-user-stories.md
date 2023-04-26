@@ -82,8 +82,7 @@ Verwijzing naar officiële website van de provincie
 ### 3.4 - Informatiemodel DiSGeo
 Het metamodel voor informatiemodellering (MIM) ligt ten grondslag aan het informatiemodel DiSGeo. In het MIM, hebben eigenschappen van objecten (`«Attribuutsoort»` of `«Relatiesoort»`) een verplicht metagegeven `Authentiek`. Volgens het MIM is <q>(e)en kenmerk (...) authentiek indien de juistheid (hoogwaardige kwaliteit) van het gegeven gewaarborgd wordt via formele inwinningsprocessen en wettelijk regelingen. Authentieke gegevens moeten door alle overheidsinstellingen verplicht en zonder nader onderzoek, worden gebruikt bij de uitvoering van publiekrechtelijke taken</q>. 
 
-![](/../../media/demo_wiki_groningen_kaart.png)
-
+![](../../media/demo_wiki_groningen_kaart.png)
 
 
 <!-- 
