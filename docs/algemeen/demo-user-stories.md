@@ -6,7 +6,7 @@ Welke meerwaarde heeft een informatieproduct dat is ontwikkeld op basis van het 
 ## Onderwerp
 Uitwerking relatie(s) tussen Provincies en gemeenten: _grondgebied_ (`BestuurlijkGebied`) en _bestuurslaag_ (`OpenbaarLichaam`).
 
-## Format
+<!-- ## Format
 `html` (tekst met links, afbeeldingen en tabellen)
 
 ## Gerelateerde pagina's
@@ -21,7 +21,7 @@ https://nl.wikipedia.org/wiki/Lijst_van_voormalige_gemeenten_in_Utrecht)
  - [Provincies van Nederland](https://nl.wikipedia.org/wiki/Provincies_van_Nederland)
  - [Provincie](https://nl.wikipedia.org/wiki/Provincie#Staatsrechtelijk)
 
->**NOTE**: Vraag aan Pano, Linda, Silvy en Gabriella: willen jullie de user stories aanvullen? iK heb DiSGeo al beschreven en leek/onervargen gebruiker/. Willen jullie andere voorbeelden aanvullen. En als dat teruggrijpt op DiSGeo, ook daar inde tekst aanvullen?
+>**NOTE**: Vraag aan Pano, Linda, Silvy en Gabriella: willen jullie de user stories aanvullen? iK heb DiSGeo al beschreven en leek/onervargen gebruiker/. Willen jullie andere voorbeelden aanvullen. En als dat teruggrijpt op DiSGeo, ook daar inde tekst aanvullen? -->
 
 # User Stories
 
@@ -35,10 +35,10 @@ Drie typen user-stories
 Die typen gebruikers hebben dezelfde vraag, maar kiezen vanuit hun rol en al dan niet aanwezige expertise verschillende, bij hun rol passende zoekingangen. Hoe kunnen zij de vraag vanuit deze zoekingang beantwoorden? Wat zijn de voor en nadelen. Dit wordt aangevuldt met hoe het informatiemodel DiSGeo op deze vraag antwoord kan geven. 
 
 ## 1 - Tijdrijzen
-Als leek/geo-expert/ontwikkelaar wil ik door de tijd kunnen reizen van een provincie(gebied), zodat ik kan achterhalen hoe de actuele grenzen door wijzingen in voorgaande jaren  veranderd zijn én welke gemeenten er op een bepaald moment in de tijd tot een provincie(gebied) behoorden.
+Als leek/geo-expert/ontwikkelaar wil ik door de tijd kunnen reizen van een provincie(gebied), zodat ik kan achterhalen hoe de actuele grenzen door wijzingen in voorgaande jaren  veranderd zijn én welke gemeenten (naam en gebied) er op een bepaald moment in de tijd tot een provincie(gebied) behoorden.
 
 ### 1.1 - Leek
-Wikipedia biedt twee manieren om door de tijd te reizen. Het is mogelijk om te kijken naar **gemeentelijke herindelingen** of **voormalige gemeenten in de provincie**. Dit gaat over veranderingen van een object in de werkelijkheid. Let wel: je moet wijzigingen van de provincie zelf afleiden uit de wijzigingen van de gemeente(grenzen). Daarnaast beschikt elke wikipediapagina over een tabblad Geschiedenis. Hierin kun je wijzigingshistorie van de pagina in zien. Belangrijk om te vermelden: beide manieren zijn puur administratief van aard.
+Wikipedia biedt twee manieren om door de tijd te reizen. Het is mogelijk om te kijken naar **gemeentelijke herindelingen** of **voormalige gemeenten in de provincie**. Dit gaat over veranderingen van een object in de werkelijkheid. Let wel: je moet wijzigingen van de provincie zelf afleiden uit de wijzigingen van de gemeente(grenzen). Daarnaast beschikt elke wikipediapagina over een tabblad _Geschiedenis_. Hierin kun je wijzigingshistorie van de pagina in zien. Belangrijk om te vermelden: beide manieren zijn puur administratief van aard.
 
 ### 1.2 - Geo-expert
 ...
