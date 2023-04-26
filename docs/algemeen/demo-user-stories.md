@@ -1,7 +1,7 @@
 # Demo User Stories
 
 ## Onderzoeksvraag
-Welke meerwaarde heeft een informatieproduct dat is ontwikkeld op basis van het informatiemodel Bestuurlijk Gebied (DiSGeo) voor een eindgebruiker, ten opzichte van reeds beschikbare informatie op Wikipedia over dit onderwerp?
+Welke meerwaarde heeft een informatieproduct dat is ontwikkeld op basis van het informatiemodel Bestuurlijk Gebied (DiSGeo) voor een (eind)gebruiker, ten opzichte van reeds beschikbare informatie op Wikipedia over dit onderwerp?
 
 ## Onderwerp
 Uitwerking relatie(s) tussen Provincies en gemeenten: _grondgebied_ (`BestuurlijkGebied`) en _bestuurslaag_ (`OpenbaarLichaam`).
@@ -54,7 +54,7 @@ Het informatiemodel DiSGeo combineert geografische en administratieve gegevens e
 Als leek/geo-expert/ontwikkelaar wil ik door de tijd kunnen reizen van een provincie(gebied), zodat ik kan achterhalen hoe de actuele grenzen door wijzingen in voorgaande jaren  veranderd zijn én welke gemeenten (naam en gebied) er op een bepaald moment in de tijd tot een provincie(gebied) behoorden.
 
 ### 2.1 - Leek
-Wikipedia biedt twee manieren om door de tijd te reizen. Het is mogelijk om te kijken naar **gemeentelijke herindelingen** of **voormalige gemeenten in de provincie**. Dit gaat over veranderingen van een object in de werkelijkheid. Let wel: je moet wijzigingen van de provincie zelf afleiden uit de wijzigingen van de gemeente(grenzen). Daarnaast beschikt elke wikipediapagina over een tabblad _Geschiedenis_. Hierin kun je wijzigingshistorie van de pagina in zien. Belangrijk om te vermelden: beide manieren zijn puur administratief van aard.
+Wikipedia biedt twee manieren om door de tijd te reizen. Het is mogelijk om te kijken naar **gemeentelijke herindelingen** of **voormalige gemeenten in de provincie**. Dit gaat over veranderingen van een object in de werkelijkheid. Let op: wijzigingen van de provincie moet je zelf afleiden uit de wijzigingen van de gemeente(grenzen). Daarnaast beschikt elke wikipediapagina over een tabblad _Geschiedenis_. Hierin kun je wijzigingshistorie van de pagina in zien. Belangrijk om te vermelden: beide manieren zijn puur administratief van aard.
 
 ### 2.2 - Geo-expert
 ...
@@ -78,7 +78,7 @@ Als leek/geo-expert/ontwikkelaar wil ik weten wie verantwoordelijk is voor de br
 ...
 
 ### 3.4 - Informatiemodel DiSGeo
-...
+Het informatiemodel DiSGeo is afgeleid van het metamodel voor informatiemodellering (MIM). Eigenschappen van objecten (stereotype = `«Attribuutsoort»` of `«Relatiesoort»`) hebben een verplicht metagegeven `Authentiek`. Volgens het MIM is <q>(e)en kenmerk (...) authentiek indien de juistheid (hoogwaardige kwaliteit) van het gegeven gewaarborgd wordt via formele inwinningsprocessen en wettelijk regelingen. Authentieke gegevens moeten door alle overheidsinstellingen verplicht en zonder nader onderzoek, worden gebruikt bij de uitvoering van publiekrechtelijke taken</q>.
 
 <!-- 
 >**Voorbeeld**: «Objecttype» `Provinciegebied`, instantie: `Groningen` 
