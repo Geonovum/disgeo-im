@@ -1,4 +1,4 @@
-# Demo voorbeeld 2 - Wikipedia
+# Demo User Stories
 
 ## Onderzoeksvraag
 Welke meerwaarde heeft een informatieproduct dat is ontwikkeld op basis van het informatiemodel Bestuurlijk Gebied (DiSGeo) voor een eindgebruiker, ten opzichte van reeds beschikbare informatie op Wikipedia over dit onderwerp?
