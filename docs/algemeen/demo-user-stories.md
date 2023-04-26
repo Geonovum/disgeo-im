@@ -26,7 +26,7 @@ https://nl.wikipedia.org/wiki/Lijst_van_voormalige_gemeenten_in_Utrecht)
 # User Stories
 
 Drie typen user-stories
- - **Gebruiker**: gebruikt zijn browser/wikipedia als zoekingang 
+ - **Gebruiker**: gebruikt de browser/wikipedia als zoekingang 
  - **Geo-expert**: gebruikt een GIS-applicatie ArcGis/QGIS/... als zoekingang
  - **Developer**: gebruikt de bestuurlijke geboeden API voor DSO als zoekingang
 
@@ -69,9 +69,8 @@ Het informatiemodel DiSGeo baseert zich op het Basismodel Geo-informatie (NEN361
 Als leek/geo-expert/ontwikkelaar wil ik weten wie verantwoordelijk is voor de brondata over een bepaalde provincie (naam en gebied),  zodat ik weet welke kwaliteit ik als gebruiker mag verwachten.
 
 ### 3.1 - Leek
-Externe links (bronnen, noten en/of referenties), maar zijn in het geval van Groningen bijvoorbeeld vooral verwijzingen naar krantenartikelen over een bepaalde gebeurtenis; niets over de kwaliteit van de data of de bronhouder. 
-Verwijzing naar officiële website van de provincie
-
+Elke wikipediapagina heeft onderaan een kopje "Externe links" met bronnen, noten en/of referenties. Dit zijn in het geval van de het voorbeeld van de provincie Groningen voornamelijk verwijzingen naar (kranten)artikelen over een bepaalde gebeurtenis, of een verwijzing naar de homepagina van de provincie Groningen; niets over de kwaliteit van de data of een verwijzing naar de bronhouder. In sommige gevallen (bij andere provincies) is er een verwijzing naar het CBS. Met andere woorden: het is op wikipedia lastig te achterhalen wat de bron is. IN veel gevallen blijf je als gebruiker in het ongewisse. Bovendien is het onzeker of je het zelfde type informatie wel of niet bij een instantie van dezelfde soort aantreft en of hier dan naar verwezen is. 
+Er is wel iets van een [geometrie in een viewer]()https://wiwosm.toolforge.org/osm-on-ol/kml-on-ol.php?lang=nl&uselang=nl&params=53_15_0_N_6_45_0_E_scale%3A1000000_region%3ANL&pagename=Groningen_(provincie)&zoom=8&lat=53.2089&lon=6.69747&layers=00B0TTT zichtbaar. Als je hier dan op de (centroïde van de) provincie Groningen klikt, krijg je als bronverwijzing: `source: nl`.
 
 ### 3.2 - Geo-expert
 ...
@@ -81,8 +80,6 @@ Verwijzing naar officiële website van de provincie
 
 ### 3.4 - Informatiemodel DiSGeo
 Het metamodel voor informatiemodellering (MIM) ligt ten grondslag aan het informatiemodel DiSGeo. In het MIM, hebben eigenschappen van objecten (`«Attribuutsoort»` of `«Relatiesoort»`) een verplicht metagegeven `Authentiek`. Volgens het MIM is <q>(e)en kenmerk (...) authentiek indien de juistheid (hoogwaardige kwaliteit) van het gegeven gewaarborgd wordt via formele inwinningsprocessen en wettelijk regelingen. Authentieke gegevens moeten door alle overheidsinstellingen verplicht en zonder nader onderzoek, worden gebruikt bij de uitvoering van publiekrechtelijke taken</q>. 
-
-![](../../media/demo_wiki_groningen_kaart.png)
 
 
 <!-- 
