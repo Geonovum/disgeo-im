@@ -1,10 +1,7 @@
 # Demo User Stories
 
-## Onderzoeksvraag
-Welke meerwaarde heeft een informatieproduct dat is ontwikkeld op basis van het informatiemodel Bestuurlijk Gebied (DiSGeo) voor een (eind)gebruiker, ten opzichte van reeds beschikbare informatie op Wikipedia over dit onderwerp?
-
-## Onderwerp
-Uitwerking relatie(s) tussen Provincies en gemeenten: _grondgebied_ (`BestuurlijkGebied`) en _bestuurslaag_ (`OpenbaarLichaam`).
+## Doel
+Vraag beantwoorden: Welke meerwaarde heeft een informatieproduct dat is ontwikkeld op basis van het informatiemodel Bestuurlijk Gebied (DiSGeo) voor een (eind)gebruiker, ten opzichte van reeds beschikbare informatie op Wikipedia over dit onderwerp? Uitwerken in een aantal user stories, beperkt tot de relatie tussen  Provincies en gemeenten: _grondgebied_ (`BestuurlijkGebied`) en _bestuurslaag_ (`OpenbaarLichaam`).
 
 <!-- ## Format
 `html` (tekst met links, afbeeldingen en tabellen)
@@ -23,7 +20,7 @@ https://nl.wikipedia.org/wiki/Lijst_van_voormalige_gemeenten_in_Utrecht)
 
 >**NOTE**: Vraag aan Pano, Linda, Silvy en Gabriella: willen jullie de user stories aanvullen? iK heb DiSGeo al beschreven en leek/onervargen gebruiker/. Willen jullie andere voorbeelden aanvullen. En als dat teruggrijpt op DiSGeo, ook daar inde tekst aanvullen? -->
 
-# User Stories
+## Toelichting
 
 Drie typen user-stories
  - **Gebruiker**: gebruikt de browser/wikipedia als zoekingang 
