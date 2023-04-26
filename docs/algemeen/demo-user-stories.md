@@ -32,13 +32,14 @@ Drie typen user-stories
 
 >**NOTE**: Eventueel **vierde user story** aan toevoegen: **politie**. Daar hebben ze een met DiSGeo vergelijkbaar model van bestuurlijke gebieden. Wat willen en kunnen zij daar nu mee?
 
-Die typen gebruikers hebben dezelfde vraag, maar kiezen vanuit hun rol en al dan niet aanwezige expertise verschillende, bij hun rol passende zoekingangen. Hoe kunnen zij de vraag vanuit deze zoekingang beantwoorden? Wat zijn de voor en nadelen. Dit wordt aangevuldt met hoe het informatiemodel DiSGeo op deze vraag antwoord kan geven. 
+Die typen gebruikers hebben dezelfde vraag, maar kiezen vanuit hun rol en al dan niet aanwezige expertise verschillende, bij hun rol passende zoekingangen. Hoe kunnen zij de vraag vanuit deze zoekingang beantwoorden? Wat zijn de voor en nadelen. Dit wordt aangevuldt met hoe het informatiemodel DiSGeo op deze vraag antwoord kan geven.
 
-## 1 - Tijdrijzen
-Als leek/geo-expert/ontwikkelaar wil ik door de tijd kunnen reizen van een provincie(gebied), zodat ik kan achterhalen hoe de actuele grenzen door wijzingen in voorgaande jaren  veranderd zijn én welke gemeenten (naam en gebied) er op een bepaald moment in de tijd tot een provincie(gebied) behoorden.
+## 1 - Administratieve en ruimtelijke relaties tussen objecten
+Als leek/geo-expert/ontwikkelaar wil ik
+weten onder welke provincie (naam en gebied) een bepaalde gemeente (naam en gebied) valt, zodat ik weet welke bestuurder (naam), binnen welk territorium (gebied) verantwoordelijk is voor de aanleg van bedrijventerreinen en kantoorparken in een bepaald gebied. 
 
 ### 1.1 - Leek
-Wikipedia biedt twee manieren om door de tijd te reizen. Het is mogelijk om te kijken naar **gemeentelijke herindelingen** of **voormalige gemeenten in de provincie**. Dit gaat over veranderingen van een object in de werkelijkheid. Let wel: je moet wijzigingen van de provincie zelf afleiden uit de wijzigingen van de gemeente(grenzen). Daarnaast beschikt elke wikipediapagina over een tabblad _Geschiedenis_. Hierin kun je wijzigingshistorie van de pagina in zien. Belangrijk om te vermelden: beide manieren zijn puur administratief van aard.
+Een vraag stellen aan wikipedia gebeurt op basis van het zoekveld. Het zoekveld doorzoekt alleen paginanamen en niet de content van die pagina. Hier (aan de pagina's) ligt bovendien geen vastomleinde structuur aan ten grondslag. Verder bevat Wikipedia één geografisch gegeven: de puntlocatie van een provincie van een gebied. Hier heb je als gebruiker heel weinig aan. Verder bevatten de pagina's wel veel kaartafbeeldingen, maar die er geografisch "uitzien", maar geen geografische data bevatten.
 
 ### 1.2 - Geo-expert
 ...
@@ -47,14 +48,13 @@ Wikipedia biedt twee manieren om door de tijd te reizen. Het is mogelijk om te k
 ...
 
 ### 1.4 Informatiemodel DiSGeo
-Het informatiemodel DiSGeo baseert zich op het Basismodel Geo-informatie (NEN3610). Daarin biedt het «Objecttype» `Registratie` drie typen metagegevens om verschillende temporele aspecten van een object vast te leggen: `TijdlijnGeldigheid`, `TijdlijnRegistratie` en `Levensduur`. In het (logisch) model DiSGeo - Bestuurlijk Gebied, zijn deze registratiegegevens verplicht. Hiermee kun je zowel geografisch als administratief tijdreizen.
+Het informatiemodel DiSGeo combineert geografische en administratieve gegevens en biedt hiermee een informatieproduct de beide zoekingangen als mogelijkheid aan.
 
-## 2 - Administratieve en ruimtelijke relaties tussen objecten
-Als leek/geo-expert/ontwikkelaar wil ik
-weten onder welke provincie (naam en gebied) een bepaalde gemeente (naam en gebied) valt, zodat ik weet welke bestuurder (naam), binnen welk territorium (gebied) verantwoordelijk is voor de aanleg van bedrijventerreinen en kantoorparken in een bepaald gebied. 
+## 2 - Tijdrijzen
+Als leek/geo-expert/ontwikkelaar wil ik door de tijd kunnen reizen van een provincie(gebied), zodat ik kan achterhalen hoe de actuele grenzen door wijzingen in voorgaande jaren  veranderd zijn én welke gemeenten (naam en gebied) er op een bepaald moment in de tijd tot een provincie(gebied) behoorden.
 
 ### 2.1 - Leek
-Een vraag stellen aan wikipedia gebeurt op basis van het zoekveld. Het zoekveld doorzoekt alleen paginanamen en niet de content van die pagina. Hier (aan de pagina's) ligt bovendien geen vastomleinde structuur aan ten grondslag. Verder bevat Wikipedia één geografisch gegeven: de puntlocatie van een provincie van een gebied. Hier heb je als gebruiker heel weinig aan. Verder bevatten de pagina's wel veel kaartafbeeldingen, maar die er geografisch "uitzien", maar geen geografische data bevatten.
+Wikipedia biedt twee manieren om door de tijd te reizen. Het is mogelijk om te kijken naar **gemeentelijke herindelingen** of **voormalige gemeenten in de provincie**. Dit gaat over veranderingen van een object in de werkelijkheid. Let wel: je moet wijzigingen van de provincie zelf afleiden uit de wijzigingen van de gemeente(grenzen). Daarnaast beschikt elke wikipediapagina over een tabblad _Geschiedenis_. Hierin kun je wijzigingshistorie van de pagina in zien. Belangrijk om te vermelden: beide manieren zijn puur administratief van aard.
 
 ### 2.2 - Geo-expert
 ...
@@ -63,7 +63,7 @@ Een vraag stellen aan wikipedia gebeurt op basis van het zoekveld. Het zoekveld 
 ...
 
 ### 2.4 Informatiemodel DiSGeo
-Het informatiemodel DiSGeo combineert geografische en administratieve gegevens en biedt hiermee een informatieproduct de beide zoekingangen als mogelijkheid aan.
+Het informatiemodel DiSGeo baseert zich op het Basismodel Geo-informatie (NEN3610). Daarin biedt het «Objecttype» `Registratie` drie typen metagegevens om verschillende temporele aspecten van een object vast te leggen: `TijdlijnGeldigheid`, `TijdlijnRegistratie` en `Levensduur`. In het (logisch) model DiSGeo - Bestuurlijk Gebied, zijn deze registratiegegevens verplicht. Hiermee kun je zowel geografisch als administratief tijdreizen.
 
 ## 3 - Authenticiteit van de bron(data)
 Als leek/geo-expert/ontwikkelaar wil ik weten wie verantwoordelijk is voor de brondata over een bepaalde provincie (naam en gebied),  zodat ik weet welke kwaliteit ik als gebruiker mag verwachten.
