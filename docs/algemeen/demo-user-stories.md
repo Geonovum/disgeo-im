@@ -69,7 +69,9 @@ Het informatiemodel DiSGeo baseert zich op het Basismodel Geo-informatie (NEN361
 Als leek/geo-expert/ontwikkelaar wil ik weten wie verantwoordelijk is voor de brondata over een bepaalde provincie (naam en gebied),  zodat ik weet welke kwaliteit ik als gebruiker mag verwachten.
 
 ### 3.1 - Leek
-...
+Externe links (bronnen, noten en/of referenties), maar zijn in het geval van Groningen bijvoorbeeld vooral verwijzingen naar krantenartikelen over een bepaalde gebeurtenis; niets over de kwaliteit van de data of de bronhouder. 
+Verwijzing naar officiële website van de provincie
+
 
 ### 3.2 - Geo-expert
 ...
@@ -78,7 +80,11 @@ Als leek/geo-expert/ontwikkelaar wil ik weten wie verantwoordelijk is voor de br
 ...
 
 ### 3.4 - Informatiemodel DiSGeo
-Het informatiemodel DiSGeo is afgeleid van het metamodel voor informatiemodellering (MIM). Eigenschappen van objecten (stereotype = `«Attribuutsoort»` of `«Relatiesoort»`) hebben een verplicht metagegeven `Authentiek`. Volgens het MIM is <q>(e)en kenmerk (...) authentiek indien de juistheid (hoogwaardige kwaliteit) van het gegeven gewaarborgd wordt via formele inwinningsprocessen en wettelijk regelingen. Authentieke gegevens moeten door alle overheidsinstellingen verplicht en zonder nader onderzoek, worden gebruikt bij de uitvoering van publiekrechtelijke taken</q>.
+Het metamodel voor informatiemodellering (MIM) ligt ten grondslag aan het informatiemodel DiSGeo. In het MIM, hebben eigenschappen van objecten (`«Attribuutsoort»` of `«Relatiesoort»`) een verplicht metagegeven `Authentiek`. Volgens het MIM is <q>(e)en kenmerk (...) authentiek indien de juistheid (hoogwaardige kwaliteit) van het gegeven gewaarborgd wordt via formele inwinningsprocessen en wettelijk regelingen. Authentieke gegevens moeten door alle overheidsinstellingen verplicht en zonder nader onderzoek, worden gebruikt bij de uitvoering van publiekrechtelijke taken</q>. 
+
+![](/../../media/demo_wiki_groningen_kaart.png)
+
+
 
 <!-- 
 >**Voorbeeld**: «Objecttype» `Provinciegebied`, instantie: `Groningen` 
