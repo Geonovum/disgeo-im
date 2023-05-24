@@ -1,7 +1,5 @@
 # Demo User Stories
 
-Hallo Sylvie
-
 ## Doel
 Vraag beantwoorden: Welke meerwaarde heeft een informatieproduct dat is ontwikkeld op basis van het informatiemodel Bestuurlijk Gebied (DiSGeo) voor een (eind)gebruiker, ten opzichte van reeds beschikbare informatie op Wikipedia over dit onderwerp? Uitwerken in een aantal user stories, beperkt tot de relatie tussen  Provincies en gemeenten: _grondgebied_ (`BestuurlijkGebied`) en _bestuurslaag_ (`OpenbaarLichaam`).
 
@@ -31,7 +29,7 @@ Drie typen user-stories
 
 >**NOTE**: Eventueel **vierde user story** aan toevoegen: **politie**. Daar hebben ze een met DiSGeo vergelijkbaar model van bestuurlijke gebieden. Wat willen en kunnen zij daar nu mee?
 
-Die typen gebruikers hebben dezelfde vraag, maar kiezen vanuit hun rol en al dan niet aanwezige expertise verschillende, bij hun rol passende zoekingangen. Hoe kunnen zij de vraag vanuit deze zoekingang beantwoorden? Wat zijn de voor en nadelen. Dit wordt aangevuldt met hoe het informatiemodel DiSGeo op deze vraag antwoord kan geven.
+Die typen gebruikers hebben dezelfde vraag, maar kiezen vanuit hun rol en al dan niet aanwezige expertise verschillende, bij hun rol passende zoekingangen. Hoe kunnen zij de vraag vanuit deze zoekingang beantwoorden? Wat zijn de voor en nadelen. Dit wordt aangevuld met hoe het informatiemodel DiSGeo op deze vraag antwoord kan geven.
 
 ## 1 - Administratieve en ruimtelijke relaties tussen objecten
 Als leek/geo-expert/ontwikkelaar wil ik
@@ -49,7 +47,7 @@ Een vraag stellen aan wikipedia gebeurt op basis van het zoekveld. Het zoekveld 
 ### 1.4 Informatiemodel DiSGeo
 Het informatiemodel DiSGeo combineert geografische en administratieve gegevens en biedt hiermee een informatieproduct de beide zoekingangen als mogelijkheid aan.
 
-## 2 - Tijdrijzen
+## 2 - Tijdreizen
 Als leek/geo-expert/ontwikkelaar wil ik door de tijd kunnen reizen van een provincie(gebied), zodat ik kan achterhalen hoe de actuele grenzen door wijzingen in voorgaande jaren  veranderd zijn én welke gemeenten (naam en gebied) er op een bepaald moment in de tijd tot een provincie(gebied) behoorden.
 
 ### 2.1 - Leek
