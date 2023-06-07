@@ -32,14 +32,15 @@ Drie typen user-stories
 Die typen gebruikers hebben dezelfde vraag, maar kiezen vanuit hun rol en al dan niet aanwezige expertise verschillende, bij hun rol passende zoekingangen. Hoe kunnen zij de vraag vanuit deze zoekingang beantwoorden? Wat zijn de voor en nadelen. Dit wordt aangevuld met hoe het informatiemodel DiSGeo op deze vraag antwoord kan geven.
 
 ## 1 - Administratieve en ruimtelijke relaties tussen objecten
-Als leek/geo-expert/ontwikkelaar wil ik
-weten onder welke provincie (naam en gebied) een bepaalde gemeente (naam en gebied) valt, zodat ik weet welke bestuurder (naam), binnen welk territorium (gebied) verantwoordelijk is voor de aanleg van bedrijventerreinen en kantoorparken in een bepaald gebied. 
+Als leek/geo-expert/ontwikkelaar 
+wil ik de contactgegevens van provincie/gemeente, 
+zodat ik weet binnen welke gemeente(n) en/of provincie(s), op het gegeven adres, welke mogelijkheden er zijn voor de aanleg van bedrijventerreinen en kantoorparken. 
 
 ### 1.1 - Leek
 Een vraag stellen aan wikipedia gebeurt op basis van het zoekveld. Het zoekveld doorzoekt alleen paginanamen en niet de content van die pagina. Hier (aan de pagina's) ligt bovendien geen vastomleinde structuur aan ten grondslag. Verder bevat Wikipedia één geografisch gegeven: de puntlocatie van een provincie van een gebied. Hier heb je als gebruiker heel weinig aan. Verder bevatten de pagina's wel veel kaartafbeeldingen, maar die er geografisch "uitzien", maar geen geografische data bevatten.
 
 ### 1.2 - Geo-expert
-...
+Als een geo-expert gebruik maakt van een gis applicatie, b.v. QGis, dan heeft de expert , naast de kennis van de applicatie, tevens ook kennis van (het vinden van) de data nodig. Van de gemeenten in NL en de provincies in NL is data te vinden. Dit zijn losse datasets. Er zit geen automatische verbinding tussen de datasets. Het kan zijn dat in de dataset van de gemeente tevens opgenomen is in welke provincie deze valt. En als dat niet is zal door de expert door het prikken van een locatie (het bepaalde adres) achterhalen in welke **gemeente, en provincien worden.** Een deel van de vraag, in welke provincie en gemeente het aangegeven adres valt, die kan daarmee beantwoord worden. Om vervolens het tweede deel van de vraag te beantwoorden, welke contactgegevens hierbij horen, dat kan de geo expert op deze manier niet vinden.
 
 ### 1.3 - Ontwikkelaar
 ...
