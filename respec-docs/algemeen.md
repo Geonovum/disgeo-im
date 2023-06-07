@@ -6,7 +6,7 @@ Objecttypen kunnen, wanneer relevant, een levenscyclusstatus, ookwel levensfase,
 De levenscyclus begint op het gedefinieerde ontstaansmoment, dat per objecttype kan verschillen. Zo is voor bepaalde objecttypen een planstatus relevant, terwijl dit voor andere objecttypen minder relevant lijkt. De informatieobjecten blijven daarna altijd in de registratie aanwezig. Door middel van een vastlegging van de levensfase van een object kan worden bepaald of een object ook nog als zodanig bestaat in de beschreven werkelijkheid. Wanneer een object niet meer bestaat in die werkelijkheid, bereikt het een eindfase. Het object wordt dus nog wel beschreven in de registratie, maar kan als afwezig uit de werkelijkheid beschouwd worden.
 
 ## Identificatie
-Voor de identificatie van objecten maken we gebruik van het identificatiepatroon van de [[NEN3610:2022]]. (<a href="#nen3610-identificatie"></a>) 
+Voor de identificatie van objecten maken we gebruik van het identificatiepatroon van de [[NEN3610-2022]]. (<a href="#nen3610-identificatie"></a>) 
 
 <figure id="nen3610-identificatie">
   <img src="media/nen3610-identificatie.png" alt="nen3610-identificatie">
@@ -91,7 +91,7 @@ Het informatiemodel DiSGeo hanteert altijd [expliciete geometrie](https://docs.g
 
 ### Dimensies
 
-Bij _dimensie_ wordt onderscheid gemaakt tussen de termen: **primitieve**, **ruimte** en **model**. Er zijn vier gradaties van primitieven oplopend van 0D tot en met 3D. Elke hogere graad voegt een extra dimensie toe. Zo staat 0D alleen het primitieve `punt` toe, maar 1D zowel `punt` als `lijn`. 2D voegt daar `vlak` aan toe en 3D `volume`.
+Bij _dimensie_ wordt onderscheid gemaakt tussen de termen: **primitieve**, **ruimte** en **model**. Er zijn vier gradaties van primitieven, oplopend van 0D tot en met 3D. Elke hogere graad voegt een extra dimensie toe. Zo staat 0D alleen het primitieve `punt` toe, maar 1D zowel `punt` als `lijn`. 2D voegt daar `vlak` aan toe en 3D `volume`.
 
 <figure id="crs-overview">
    <a href="media/geometrie_dimensies.png" target="_blank" rel="noopener noreferrer">
@@ -266,7 +266,7 @@ Verreweg de meeste objecttypen in die in DiS-Geo een rol spelen hebben in hun hu
 
 ### Generalisatie
 
-Met *generaliseren*  bedoelen we het zinvol weglaten, vereenvoudigen, verplaatsen, vergroten, symboliseren en/of aggregeren van de geometrie van objecten. In DiS Geo: Eisen aan model samenhangende objectenregistratie [[EMSO]] wordt gesteld dat er geen noodzaak is voor (identificeerbare) gegeneraliseerde objecttypen. Gegeneraliseerde geometrieën worden alleen gebruikt voor visualisatie. 
+Met *generaliseren*  bedoelen we het zinvol weglaten, vereenvoudigen, verplaatsen, vergroten, symboliseren en/of aggregeren van de geometrie van objecten. In [[EMSO]] wordt gesteld dat er geen noodzaak is voor (identificeerbare) gegeneraliseerde objecttypen. Gegeneraliseerde geometrieën worden alleen gebruikt voor visualisatie. 
 
 Een voorbeeld van gegeneraliseerde geometrie zijn de grenzen van bestuurlijke gebieden op hogere kaartschalen (1:10.000, 1:50.000 enz). Deze zijn minder gedetailleerd, bevatten minder punten en zijn geschikt om te bekijken op bepaalde 'zoomniveau's'. Bij het uitwisselen van geodata op het web is generalisatie belangrijk omdat een polygoon, afhankeljik van de mate van detail, erg veel punten kan bevatten, wat performanceproblemen kan veroorzaken. 
 
