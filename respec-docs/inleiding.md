@@ -1,6 +1,6 @@
 # Inleiding
 
-Het IMSO beschrijft hoe objectn in de fysieke werkelijkheid met elkaar samenhangen. Hierin kunnen de basisregistratie adressen en gebouwen (BAG) en de basisregistratie grootschalige topografie (BGT) in samenhang bevraagd worden. Daarnaast is het de bedoeling dat ook het gedeelte van de WOZ-administratie waarin objectgegevens zijn opgenomen en een aantal basisgegevens uit aanpalende registraties hieraan gekoppeld worden. Ook zijn er belangrijke raakvlakken met de basisregistratie topografie (BRT) en het Nationaal Wegenbestand.
+Het IMSO beschrijft hoe objecten in de fysieke werkelijkheid met elkaar samenhangen. Hierin kunnen de basisregistratie adressen en gebouwen (BAG) en de basisregistratie grootschalige topografie (BGT) in samenhang bevraagd worden. Daarnaast is het de bedoeling dat ook het gedeelte van de WOZ-administratie waarin objectgegevens zijn opgenomen en een aantal basisgegevens uit aanpalende registraties hieraan gekoppeld worden. Ook zijn er belangrijke raakvlakken met de basisregistratie topografie (BRT) en het Nationaal Wegenbestand.
 
 ## Doel
 
