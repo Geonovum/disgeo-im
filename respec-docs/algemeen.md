@@ -193,8 +193,6 @@ Het openbaar lichaam Rijk bestuurt ook een aantal gebieden op zee. Deze objecten
  - Exclusieve Economische Zone
  - Continentaal Plat
 
-
-
 ### Ruimtelijke relaties
 
 Voor ruimtelijke relaties tussen de objecten kunnen we gebruik maken van het _Dimensionally Extended Nine‐Intersection Model_ (DE-9IM). Dit is een topologisch model voor het beschrijven van ruimtelijke relaties in een [2D-model](#dimensies). Dit model is uitgewerkt in de _Simple Features_-standaard [[ISO-19125]] en wordt aangeraden in [[NEN3610-2022]] en [[sdw-bp]]. Deze relaties zijn geïmplementeerd in veel geografische softwareomgevingen en ook in GeoSPARQL. Hieronder een overzicht met de originele Engelse naam en daarachter de vertaalde Nederlandse naam uit [NEN3610-2022](https://definities.geostandaarden.nl/nen3610-2022/nl/page/?uri=http%3A%2F%2Fdefinities.geostandaarden.nl%2Fnen3610-2022%2Fid%2Fcollectie%2Fruimtelijke_relaties).
@@ -226,7 +224,7 @@ Het begrip _maaiveld_ als een referentielaag (met de relatieve hoogte waarde “
 
 ### Kwaliteit
 
-Onder kwaliteit vallen verschillende onderdelen, zoals *actualiteit*, *compleet*, *nauwkeurigheid* en *inwinregels*. In het geval dat DiS-Geo als een soort virtuele laag bovenop de huidige registraties gerealiseerd wordt, zijn het eigenlijk géén _eisen_ die gesteld worden. Dan gaat het meer om DiS-Geo als dataproduct. De metadata-aspecten beschrijven dan wat de `actualiteit`, `compleetheid`, `positionele juistheid` en `inwinregels` zijn. Die worden dan niet gesteld, maar **afgeleid uit de onderliggende registraties**. In dat geval is het niet noodzakelijk om deze metadata aspecten bij het IM op te nemen. Desondanks kiezen we er in dit stadium toch voor, zodat de lezer deze extra informatie direct ter beschikking heeft en het voor eventueel nieuw te introduceren objecttypen wél relevant is. Hoe dan ook kan DiS-Geo dan niet echt iets _eisen_. De volgende paragrafen lichten elk kwaliteitsaspect toe.
+Onder kwaliteit vallen verschillende onderdelen, zoals *actualiteit*, *compleet*, *nauwkeurigheid* en *inwinregels*. In het geval dat DiSGeo als een soort virtuele laag bovenop de huidige registraties gerealiseerd wordt, zijn het eigenlijk géén _eisen_ die gesteld worden. Dan gaat het meer om DiSGeo als dataproduct. De metadata-aspecten beschrijven dan wat de `actualiteit`, `compleetheid`, `positionele juistheid` en `inwinregels` zijn. Die worden dan niet gesteld, maar **afgeleid uit de onderliggende registraties**. In dat geval is het niet noodzakelijk om deze metadata aspecten bij het IM op te nemen. Desondanks kiezen we er in dit stadium toch voor, zodat de lezer deze extra informatie direct ter beschikking heeft en het voor eventueel nieuw te introduceren objecttypen wél relevant is. Hoe dan ook kan DiS-Geo dan niet echt iets _eisen_. De volgende paragrafen lichten elk kwaliteitsaspect toe.
 
 #### Nauwkeurigheid
 
