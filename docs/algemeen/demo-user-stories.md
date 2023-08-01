@@ -1,7 +1,11 @@
 # Demo User Stories
 
 ## Doel
-Vraag beantwoorden: Welke meerwaarde heeft een informatieproduct dat is ontwikkeld op basis van het informatiemodel Bestuurlijk Gebied (DiSGeo) voor een (eind)gebruiker, ten opzichte van reeds beschikbare informatie op Wikipedia over dit onderwerp? Uitwerken in een aantal user stories, beperkt tot de relatie tussen  Provincies en gemeenten: _grondgebied_ (`BestuurlijkGebied`) en _bestuurslaag_ (`OpenbaarLichaam`).
+Vraag beantwoorden: Welke meerwaarde heeft een informatieproduct dat is ontwikkeld op basis van het informatiemodel Bestuurlijk Gebied (DiSGeo) voor een _gebruiker_, een _geo-expert_ en een _developer_, ten opzichte van reeds beschikbare informatie? Uitwerken in een aantal user stories, beperkt tot de relatie tussen  Provincies en gemeenten: _grondgebied_ (`BestuurlijkGebied`) en _bestuurslaag_ (`OpenbaarLichaam`).
+
+<p><ins>Gaat om hoe verschillende typen users (leek, geo-expert en developer) vragen m.b.t. bestuurlijke gebieden kunnen beantwoorden zonder een informatiemodel/-voorziening/-product bestuurlijke gebieden.</ins></p> 
+
+<p><ins>Er is een algemeen gedeelde, maar toch vage notie van het nut van een informatiemodel bestuurlijk gebied, maar dit is moeilijk aan te tonen. Er is over dit onderwerp bovendien al veel informatie te vinden. Wat voegt een informatiemodel Bestuurlijke Gebieden dan precies toe? Het doel is om op de één of andere manier inzichtelijk te maken waar de toegevoegde waarde zit. In dit document proberen we dat door een aantal vragen te formuleren en te beschrijven hoe verschillende typen gebruikers zouden beantwoorden op basis van de informatie die nu al beschikbaar is.</ins></p>
 
 <!-- ## Format
 `html` (tekst met links, afbeeldingen en tabellen)
@@ -22,14 +26,15 @@ https://nl.wikipedia.org/wiki/Lijst_van_voormalige_gemeenten_in_Utrecht)
 
 ## Toelichting
 
-Drie typen user-stories
+Drie typen _user stories_
  - **Gebruiker**: gebruikt de browser/wikipedia als zoekingang 
  - **Geo-expert**: gebruikt een GIS-applicatie ArcGis/QGIS/... als zoekingang
- - **Developer**: gebruikt de bestuurlijke geboeden API voor DSO als zoekingang
+ - **Developer**: gebruikt de bestuurlijke gebieden API voor DSO als zoekingang
 
->**NOTE**: Eventueel **vierde user story** aan toevoegen: **politie**. Daar hebben ze een met DiSGeo vergelijkbaar model van bestuurlijke gebieden. Wat willen en kunnen zij daar nu mee?
+>**NOTE**
+> Eventueel **vierde user story** aan toevoegen: **politie**. Daar hebben ze een met DiSGeo vergelijkbaar model van bestuurlijke gebieden. Wat willen en kunnen zij daar nu mee?
 
-Die typen gebruikers hebben dezelfde vraag, maar kiezen vanuit hun rol en al dan niet aanwezige expertise verschillende, bij hun rol passende zoekingangen. Hoe kunnen zij de vraag vanuit deze zoekingang beantwoorden? Wat zijn de voor en nadelen. Dit wordt aangevuld met hoe het informatiemodel DiSGeo op deze vraag antwoord kan geven.
+Elk type user story heeft dezelfde vraag, maar kiezen vanuit hun rol en al dan niet aanwezige expertise verschillende, bij hun rol passende zoekingangen. Hoe kunnen zij de vraag vanuit deze zoekingang beantwoorden? Wat zijn de voor en nadelen. Dit wordt aangevuld met hoe het informatiemodel DiSGeo op deze vraag antwoord kan geven.
 
 ## 1 - Administratieve en ruimtelijke relaties tussen objecten
 Als leek/geo-expert/ontwikkelaar 
@@ -60,15 +65,14 @@ Wikipedia biedt twee manieren om door de tijd te reizen. Het is mogelijk om te k
 ### 2.3 - Ontwikkelaar
 ...
 
-### 2.4 Informatiemodel DiSGeo
-Het informatiemodel DiSGeo baseert zich op het Basismodel Geo-informatie (NEN3610). Daarin biedt het «Objecttype» `Registratie` drie typen metagegevens om verschillende temporele aspecten van een object vast te leggen: `TijdlijnGeldigheid`, `TijdlijnRegistratie` en `Levensduur`. In het (logisch) model DiSGeo - Bestuurlijk Gebied, zijn deze registratiegegevens verplicht. Hiermee kun je zowel geografisch als administratief tijdreizen.
+### 2.4 - Informatiemodel DiSGeo
+Het informatiemodel DiSGeo baseert zich op het Basismodel Geo-informatie (NEN3610). Daarin biedt het `«Objecttype»` `Registratie` drie typen metagegevens om verschillende temporele aspecten van een object vast te leggen: `TijdlijnGeldigheid`, `TijdlijnRegistratie` en `Levensduur`. In het (logisch) model DiSGeo - Bestuurlijk Gebied, zijn deze registratiegegevens verplicht. Hiermee kun je zowel geografisch als administratief tijdreizen.
 
 ## 3 - Authenticiteit van de bron(data)
 Als leek/geo-expert/ontwikkelaar wil ik weten wie verantwoordelijk is voor de brondata over een bepaalde provincie (naam en gebied),  zodat ik weet welke kwaliteit ik als gebruiker mag verwachten.
 
 ### 3.1 - Leek
-Elke wikipediapagina heeft onderaan een kopje "Externe links" met bronnen, noten en/of referenties. Dit zijn in het geval van de het voorbeeld van de provincie Groningen voornamelijk verwijzingen naar (kranten)artikelen over een bepaalde gebeurtenis, of een verwijzing naar de homepagina van de provincie Groningen; niets over de kwaliteit van de data of een verwijzing naar de bronhouder. In sommige gevallen (bij andere provincies) is er een verwijzing naar het CBS. Met andere woorden: het is op wikipedia lastig te achterhalen wat de bron is. In veel gevallen blijf je als gebruiker in het ongewisse. Bovendien is het onzeker of je het zelfde type informatie wel of niet bij een instantie van dezelfde soort aantreft en of hier dan naar verwezen is. 
-Er is overigens wel iets van een [geometrie in een viewer](https://wiwosm.toolforge.org/osm-on-ol/kml-on-ol.php?lang=nl&uselang=nl&params=53_15_0_N_6_45_0_E_scale%3A1000000_region%3ANL&pagename=Groningen_(provincie)&zoom=8&lat=53.2089&lon=6.69747&layers=00B0TTT) beschikbaar. Als je hier dan op de (centroïde van de) provincie Groningen klikt, krijg je als bronverwijzing: `source: nl`.
+Elke wikipediapagina heeft onderaan een kopje "Externe links" met bronnen, noten en/of referenties. Dit zijn in het geval van de het voorbeeld van de provincie Groningen voornamelijk verwijzingen naar (kranten)artikelen over een bepaalde gebeurtenis, of een verwijzing naar de homepagina van de provincie Groningen, maar niets over de kwaliteit van de data of een verwijzing naar de bronhouder. In sommige gevallen (bij andere provincies) is er een verwijzing naar het CBS. Met andere woorden: het is op wikipedia lastig te achterhalen wat de bron is. In veel gevallen blijf je als gebruiker in het ongewisse. Bovendien is het onzeker of je het zelfde type informatie wel of niet bij een instantie van dezelfde soort aantreft en of hier dan naar verwezen is. Er is overigens wel iets van een [geometrie in een viewer](https://wiwosm.toolforge.org/osm-on-ol/kml-on-ol.php?lang=nl&uselang=nl&params=53_15_0_N_6_45_0_E_scale%3A1000000_region%3ANL&pagename=Groningen_(provincie)&zoom=8&lat=53.2089&lon=6.69747&layers=00B0TTT) beschikbaar. Als je hier dan op de (centroïde van de) provincie Groningen klikt, krijg je als bronverwijzing: `source: nl`.
 
 ### 3.2 - Geo-expert
 ...
@@ -77,7 +81,7 @@ Er is overigens wel iets van een [geometrie in een viewer](https://wiwosm.toolfo
 ...
 
 ### 3.4 - Informatiemodel DiSGeo
-Het metamodel voor informatiemodellering (MIM) ligt ten grondslag aan het informatiemodel DiSGeo. In het MIM, hebben eigenschappen van objecten (`«Attribuutsoort»` of `«Relatiesoort»`) een verplicht metagegeven `Authentiek`. Volgens het MIM is <q>(e)en kenmerk (...) authentiek indien de juistheid (hoogwaardige kwaliteit) van het gegeven gewaarborgd wordt via formele inwinningsprocessen en wettelijk regelingen. Authentieke gegevens moeten door alle overheidsinstellingen verplicht en zonder nader onderzoek, worden gebruikt bij de uitvoering van publiekrechtelijke taken</q>. 
+Het metamodel voor informatiemodellering (MIM) ligt ten grondslag aan het informatiemodel DiSGeo. In het MIM, hebben eigenschappen van objecten (zoals: `«Attribuutsoort»` of `«Relatiesoort»`) een verplicht metagegeven `Authentiek`. Volgens het MIM is <q>(e)en kenmerk (...) authentiek indien de juistheid (hoogwaardige kwaliteit) van het gegeven gewaarborgd wordt via formele inwinningsprocessen en wettelijk regelingen. Authentieke gegevens moeten door alle overheidsinstellingen verplicht en zonder nader onderzoek, worden gebruikt bij de uitvoering van publiekrechtelijke taken</q>. In het informatiemodel Bestuurlijk Gebied is gegevenskwaliteit (op verschillende manieren) geborgd.
 
 
 <!-- 
