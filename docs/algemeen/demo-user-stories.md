@@ -3,7 +3,7 @@
 ## Doel
 Vraag beantwoorden: Welke meerwaarde heeft een informatieproduct dat is ontwikkeld op basis van het informatiemodel Bestuurlijk Gebied (DiSGeo) voor een _gebruiker_, een _geo-expert_ en een _developer_, ten opzichte van reeds beschikbare informatie? Uitwerken in een aantal user stories, beperkt tot de relatie tussen  Provincies en gemeenten: _grondgebied_ (`BestuurlijkGebied`) en _bestuurslaag_ (`OpenbaarLichaam`).
 
->**Note*
+>**Note**
 >**Nog een tekst van ongeveer deze strekking toevoegen:**
 >Gaat om hoe verschillende typen users (leek, geo-expert en developer) vragen m.b.t. bestuurlijke gebieden kunnen beantwoorden zonder een informatiemodel/-voorziening/-product bestuurlijke gebieden. Er is een algemeen gedeelde, maar toch vage notie van het nut van een informatiemodel bestuurlijk gebied, maar dit is moeilijk aan te tonen. Er is over dit onderwerp bovendien al veel informatie te vinden. Wat voegt een informatiemodel Bestuurlijke Gebieden dan precies toe? Het doel is om op de één of andere manier inzichtelijk te maken waar de toegevoegde waarde zit. In dit document proberen we dat door een aantal vragen te formuleren en te beschrijven hoe verschillende typen gebruikers zouden beantwoorden op basis van de informatie die nu al beschikbaar is.
 
