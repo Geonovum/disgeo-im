@@ -4,7 +4,7 @@ let respecConfig = {
   // title is verplicht! Neem hier de titel van het document op ----------------------
   title: "Informatiemodel Samenhangende Objecten",
   // subtitle is NIET verplicht
-  subtitle: "Subtitle"
+  subtitle: "Subtitle",
  
   //-- specStatus is verplicht! (activeer 1 van de volgende) --------------------------
   specStatus: "wv",                   // Werkversie
