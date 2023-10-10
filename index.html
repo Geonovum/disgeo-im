@@ -1,23 +1,38 @@
+
 <!DOCTYPE html>
 <html lang="nl">
-    <head>
-        <meta charset='utf-8'>
-        <title>Informatiemodel Samenhangende Objecten</title>    
-        <link rel="stylesheet" type="text/css" href="./media/geonovumstyle.css">
-        <link rel='shortcut icon' type='image/x-icon' href='https://tools.geostandaarden.nl/respec/style/logos/Geonovum.ico' />
-        <script class="remove" src="./config.js"></script>
-        <script class='remove' src='https://tools.geostandaarden.nl/respec/builds/respec-geonovum.js' async></script>
-    </head>
-    <body>
-        <section id='abstract' data-format="markdown" data-include="respec-docs/abstract.md"></section>        
-        <section id='sotd'><p>Afwegingen en onderbouwing die ten grondslag liggen aan de inhoud van deze catalogus zijn te vinden in de <a href="https://github.com/Geonovum/disgeo-imsor/issues/">Issues</a> en <a href="https://github.com/Geonovum/disgeo-imsor/discussions/">Discussions</a> sectie van de Github repository waarin deze standaard is ontwikkeld.</p></section>
 
-        <!-- vanaf hier per hoofdstuk een sectie of een div in het document ----------------------->
-        <section id='H01' data-format="markdown" data-include="respec-docs/inleiding.md" data-include-format="markdown"></section>
-        <section id='H02' data-format="markdown" data-include="respec-docs/algemeen.md" data-include-format="markdown"></section>
-        <section id='H03' data-format="markdown" data-include="respec-docs/overzicht.md" data-include-format="markdown"></section>
-        <!-- import door imvertor gegenereerde deel -->
-        <div id="catalogus" data-include="data/disgeo-im-cat.respec.html" data-include-replace=true></div>
-        <section id='glossary' class="appendix" data-format="markdown" data-include="respec-docs/glossary.md" data-include-format="markdown" ></section>
-    </body>
+<head>
+  <meta content="text/html; charset=utf-8" http-equiv="content-type">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script src="https://cdn.jsdelivr.net/gh/digitalbazaar/respec-mermaid@1.0.1/dist/main.js" class="remove"></script>
+  <script src="https://tools.geostandaarden.nl/respec/config/geonovum-config.js" class="remove"></script>
+  <script src="config.js" class="remove"></script>
+  <script class="remove"> respecConfig = {...organisationConfig, ...respecConfig}</script>
+  <script>document.title = respecConfig.title</script>
+  <title>Default</title> <!--Informatiemodel Samenhangende Objecten-->
+  <link rel="shortcut icon" type="image/x-icon" href="https://tools.geostandaarden.nl/respec/style/logos/Geonovum.ico" />
+  <script src="https://gitdocumentatie.logius.nl/publicatie/respec/builds/respec-nlgov.js" class="remove" async></script>
+  <link rel="stylesheet" type="text/css" href="./respec-docs/media/style-im.css">
+</head>
+
+<body>
+  <section id='abstract' data-format="markdown" data-include="respec-docs/abstract.md"></section>        
+  <section id="sotd"></section><!-- Wordt automatisch gevuld -->
+
+  <!-- TODO: voeg hier je eigen hoofdstukken toe -->
+  <section data-include-format="markdown" data-include="respec-docs/inleiding.md"></section>
+  <section data-include-format="markdown" data-include="respec-docs/algemeen.md"></section>
+  <section data-include-format="markdown" data-include="respec-docs/overzicht.md"></section>
+
+  <!-- import door imvertor gegenereerde deel -->
+  <div id="catalogus" data-include="data/disgeo-im-cat.respec.html" data-include-replace=true></div>
+
+  <!-- ONDERSTAANDE ONDERDELEN CONTROLEREN -->
+  <section id='glossary' class="appendix" data-format="markdown" data-include="respec-docs/glossary.md" data-include-format="markdown" ></section>
+  <section id='conformance'></section>
+  <section id='tof'></section>
+  <section id="index"></section>
+</body>
+
 </html>

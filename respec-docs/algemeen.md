@@ -226,12 +226,14 @@ Het begrip _maaiveld_ als een referentielaag (met de relatieve hoogte waarde “
 
 Onder kwaliteit vallen verschillende onderdelen, zoals *actualiteit*, *compleet*, *nauwkeurigheid* en *inwinregels*. In het geval dat DiSGeo als een soort virtuele laag bovenop de huidige registraties gerealiseerd wordt, zijn het eigenlijk géén _eisen_ die gesteld worden. Dan gaat het meer om DiSGeo als dataproduct. De metadata-aspecten beschrijven dan wat de `actualiteit`, `compleetheid`, `positionele juistheid` en `inwinregels` zijn. Die worden dan niet gesteld, maar **afgeleid uit de onderliggende registraties**. In dat geval is het niet noodzakelijk om deze metadata aspecten bij het IM op te nemen. Desondanks kiezen we er in dit stadium toch voor, zodat de lezer deze extra informatie direct ter beschikking heeft en het voor eventueel nieuw te introduceren objecttypen wél relevant is. Hoe dan ook kan DiS-Geo dan niet echt iets _eisen_. De volgende paragrafen lichten elk kwaliteitsaspect toe.
 
-#### Nauwkeurigheid
+<!-- #### Nauwkeurigheid
 
-Voor het aangeven van de nauwkeurigheid van de geometrieen in RD(NAP) en ETRS89 volgen we [het advies](https://docs.geostandaarden.nl/crs/crs/#nauwkeurigheid-van-coordinaten) van [gebruik-crs](https://docs.geostandaarden.nl/crs/def-hr-crs-20220314/): <q><i>Om te voorkomen dat er te grote databestanden ontstaan, wordt aanbevolen de coördinaten af te ronden op 1 decimaal meer dan de nauwkeurigheid van de dataset vereist. Hierdoor kunnen fouten bij herhaaldelijk heen en weer transformeren worden voorkomen</i></q>. Coördinaten opgenomen bij een geometrie worden standaard uitgewisseld met een getalsnauwkeurigheid van `1 mm` of het equivalent daarvan in graden. Voor RD en NAP komt dat overeen met de volgende nauwkeurigheden:
+Voor het aangeven van de nauwkeurigheid van de geometrieen in RD(NAP) en ETRS89 volgen we [het advies](https://docs.geostandaarden.nl/crs/crs/#nauwkeurigheid-van-coordinaten) van [gebruik-crs](https://docs.geostandaarden.nl/crs/def-hr-crs-20220314/): <q><i>Om te voorkomen dat er te grote databestanden ontstaan, wordt aanbevolen de coördinaten af te ronden op 1 decimaal meer dan de nauwkeurigheid van de dataset vereist. Hierdoor kunnen fouten bij herhaaldelijk heen en weer transformeren worden voorkomen</i></q>. Coördinaten opgenomen bij een geometrie worden standaard uitgewisseld met een getalsnauwkeurigheid van `1 mm` of het equivalent daarvan in graden.
+
+Voor RD en NAP komt dat overeen met de volgende nauwkeurigheden:
  - RD in meters 3 decimalen (`1 mm`)
  - NAP-hoogte in meters 3 decimalen (`1 mm`)
- - Alles wat nauwkeuriger is wordt afgerond op deze nauwkeurigheid van 3 decimalen. Afronding is volgens de volgende regel: `0.0015 ≈ 0.002` en `0.0014 ≈ 0.001`
+ - Alles wat nauwkeuriger is wordt afgerond op deze nauwkeurigheid van 3 decimalen. Afronding is volgens de volgende regel: `0.0015 ≈ 0.002` en `0.0014 ≈ 0.001` -->
 
 #### Actualiteit
 
@@ -243,9 +245,12 @@ Dit metadata-aspect geeft aan in welke mate gegevens aanwezig zijn over het obje
 
 #### Positionele juistheid
 
-Wat onder nauwkeurigheid van geometrie wordt verstaan is goed gedefinieerd in standaarden. We hanteren als uitgangspunt dat wat in EMSO `nauwkeurigheid` wordt genoemd, hetzelfde is als `positionele juistheid` in het [NORA Raamwerk Gegevenskwaliteit](https://www.noraonline.nl/wiki/Positionele_juistheid) en hetzelfde als wat in de BGT `positionele nauwkeurigheid` wordt genoemd. Daar staat het omschreven als: <q><i>de mate waarin de opgeslagen coördinaten overeenkomen met de waarden in de werkelijkheid of de geaccepteerde afwijking</i></q> ([BGT](https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#:~:text=Onder%20positionele%20nauwkeurigheid%20verstaat%20men%20de%20mate%20waarin%20de%20opgeslagen%20co%C3%B6rdinaten%20overeenkomen%20met%20de%20waarden%20in%20de%20werkelijkheid%20of%20de%20geaccepteerde%20afwijking.)). Per `«attribuutsoort»` geven we de toegestane kwaliteit voor de positionele nauwkeurigheid als een getal in centimeters, dat de toegestane afwijking weergeeft. MIM heeft hiervoor geen metadatagegeven beschikbaar. Daarom breidt DiSGeo het stereotype `«Attribuutsoort»` uit met het  metadata-element `positionele juistheid`. Dit metagegeven wordt alleen ingevuld bij attribuutsoorten met een geometrie als datatype. 
+De nauwkeurigheid van geometrie is goed gedefinieerd in standaarden. We hanteren als uitgangspunt dat wat in EMSO `nauwkeurigheid` wordt genoemd, hetzelfde is als `positionele juistheid` in het [NORA Raamwerk Gegevenskwaliteit](https://www.noraonline.nl/wiki/Positionele_juistheid) en `positionele nauwkeurigheid` in de BGT. Het informatiemodel DiSGeo volgt NORA en hanteert de term `positionele juistheid`.
 
-<ins>Het informatiemodel bestuurlijke gebieden beschikt over het metagegeven positionele juistheid, maar schrijft geen regels voor met betrekking tot de kwaliteit. We hanteren het standpunt dat we dit niet in het model kunnen afdwingen. Regels hiervoor worden buiten het model vastgesteld in onderliggende registraties. Omdat er in het specifieke geval van Bestuurlijke gebieden nog geen registratie bestaat, zijn ook deze regels nog onbekend.</ins>
+Per `«attribuutsoort»` geven we de toegestane kwaliteit voor de positionele juistheid als een getal in centimeters, dat de toegestane afwijking weergeeft. Dit metagegeven wordt alleen ingevuld bij attribuutsoorten met een geometrie als datatype. Het getal dat de positionele juistheid weergeeft, is geen dwingende eis vanuit het informatiemodel. Het informatiemodel DiSGeo kan geen kwaliteitseisen afdwingen. Dit soort regels worden buiten het model vastgesteld in onderliggende registraties. Voor Bestuurlijke gebieden bestaat nog geen registratie en om die reden bestaan ook deze regels nog niet.
+
+
+<!-- Daar staat het omschreven als: <q><i>de mate waarin de opgeslagen coördinaten overeenkomen met de waarden in de werkelijkheid, of de geaccepteerde afwijking</i></q> ([BGT](https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#:~:text=Onder%20positionele%20nauwkeurigheid%20verstaat%20men%20de%20mate%20waarin%20de%20opgeslagen%20co%C3%B6rdinaten%20overeenkomen%20met%20de%20waarden%20in%20de%20werkelijkheid%20of%20de%20geaccepteerde%20afwijking.)). -->
 
 <!-- Een optie is om dit in een tabel vóór in de gegevenscatalogus op te nemen, zoals gedaan in de BGT catalogus op p. 23. 
 
