@@ -123,7 +123,8 @@ Het toepassingsgebied beschrijft het deel van het van het aardoppervlak waarop h
 - World Geodetic System 1984 (**WGS 84**) gebaseerd op ITRS, gebruikt voor GPS
 - European Terrestrial Reference System 1989 (**ETRS89**)
 - Nederlandse Stelsel van de Rijksdriehoeksmeting (**RD**)
-- Linear Reference Systems (**LRS**), zie: [[ISO-19148]], [INSPIRE](https://inspire.ec.europa.eu/id/document/tg/tn), [Richtlijn BPS](https://wetten.overheid.nl/BWBR0015962/2003-12-05), [WKD – NWB](https://www.nationaalwegenbestand.nl/application/files/6516/6391/7355/Gebruikersinformatie_Wegkenmerkendatabase_WKD.pdf)
+- Linear Reference Systems (**LRS**), zie: [[ISO-19148]], [INSPIRE](https://inspire.ec.europa.eu/id/document/tg/tn), [Richtlijn BPS](https://wetten.overheid.nl/BWBR0015962/2003-12-05)
+- Gebruikersinformatie Wegkenmerkendatabase WKD (niet meer online beschikbaar)
 
 De onderstaande figuur is een schematische weergave van de ondersteunde CRS-en bij aanlevering en uitlevering. De volgende paragrafen beschrijven in meer detail de ondersteunde CRS-en bij aan- en uitlevering.
 
@@ -140,7 +141,7 @@ De onderstaande figuur is een schematische weergave van de ondersteunde CRS-en b
 
 Het _toepassingsgebied_ en de _dimensie_ bepalen welke CRS-en bij aanlevering van geometrieën geldig zijn. Wat betreft het _toepassingsgebied_ zijn er objecten die vallen binnen het Europese deel van Nederland en objecten die vallen binnen de Nederlandse Exclusieve Economische Zone (EEZ) van de Noordzee. Aan de andere kant bestaat er onderscheid in de _dimensie_ van geometrieën. Sommige geometrieën zijn 2-dimensionaal, anderen 3-dimensionaal. Voor objecten binnen het Europese deel van Nederland gelden de volgende CRS-en: _**RD**_ en _**ETRS89**_. Voor gebieden op zee is nog geen besluit genomen.
 
-Er zijn verschillende implementaties van ETRS89 in omloop. Het informatiemodel DiSGeo neemt het [advies](https://geonovum.github.io/HR-CRS-Gebruik/#realisaties-van-etrs89-en-evrs) het _Regional Reference Frame Sub-Commission for Europe_ (EUREF), om de **ETRF2000-realisatie** te gebruiken. Verder wordt bij aanlevering rekening gehouden met een **lijnlengte van maximaal 200 meter**. Dit besluit volgt het [langelijnenadvies](https://forum.pdok.nl/uploads/default/original/2X/c/c0795baa683bf3845c866ae4c576a880455be02a.pdf) van het NSGI, dat is [overgenomen](https://geonovum.github.io/HR-CRS-Gebruik/#vormvastheid) in [[gebruik-crs]] in verband met compatibiliteit met **RDNAPTRANS™**.
+Er zijn verschillende implementaties van ETRS89 in omloop. Het informatiemodel DiSGeo neemt het [advies](hhttps://docs.geostandaarden.nl/crs/crs/#realisaties-van-etrs89-en-evrs) het _Regional Reference Frame Sub-Commission for Europe_ (EUREF), om de **ETRF2000-realisatie** te gebruiken. Verder wordt bij aanlevering rekening gehouden met een **lijnlengte van maximaal 200 meter**. Dit besluit volgt het [langelijnenadvies](https://forum.pdok.nl/uploads/default/original/2X/c/c0795baa683bf3845c866ae4c576a880455be02a.pdf) van het NSGI, dat is [overgenomen](https://docs.geostandaarden.nl/crs/crs/#vormvastheid) in [[gebruik-crs]] in verband met compatibiliteit met **RDNAPTRANS™**.
 
 Voor het CRS van **2D-geometrieen** gelden de volgende EPSG-codes:
 
