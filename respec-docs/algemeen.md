@@ -93,7 +93,7 @@ Het informatiemodel DiSGeo hanteert altijd [expliciete geometrie](https://docs.g
 
 Bij _dimensie_ wordt onderscheid gemaakt tussen de termen: **primitieve**, **ruimte** en **model**. Er zijn vier gradaties van primitieven, oplopend van 0D tot en met 3D. Elke hogere graad voegt een extra dimensie toe. Zo staat 0D alleen het primitieve `punt` toe, maar 1D zowel `punt` als `lijn`. 2D voegt daar `vlak` aan toe en 3D `volume`.
 
-<figure id="crs-overview">
+<figure id="dimensie-overview">
    <a href="media/geometrie_dimensies.png" target="_blank" rel="noopener noreferrer">
       <img src="media/geometrie_dimensies.png" alt="Geometrie primitieven en hun dimensies"/>
    </a>
