@@ -705,7 +705,7 @@ Dit hoofdstuk eindigt met een stuk over <strong>generalisatie van geomtrieën</s
 
 
 </section><section id="geometrietypen"><div class="header-wrapper"><h4 id="x2-3-2-geometrietypen"><bdi class="secno">2.3.2 </bdi>Geometrietypen</h4><a class="self-link" href="#geometrietypen" aria-label="Permalink for Section 2.3.2"></a></div>
-<p>Het informatiemodel DiSGeo legt geometrie vast als eigenschap van een object. De geometrie representeert daarmee de <em>locatie</em>, <em>orientatie</em> en <em>vorm</em> van een object. Voor dit doeleinde zijn verschillende typen geometrieën beschikbaar. Deze typen verschillende in niveau van <em>data-complexiteit</em> en <em>dimensionaliteit</em> (zi ook: <a href="#dimensies">Dimensies</a>). ISO 19107 biedt hiervoor een aantal basisgeometrieën om een individueel object uit de werkelijkheid te representeren. Dit zijn de <a href="https://geonovum.github.io/gimeg/#geometrische-primitieven">geometrische primitieven</a>. Soms geldt een verzameling van objecten uit de werkelijkheid als één geheel. Daarvoor zijn <a href="https://geonovum.github.io/gimeg/#geometrische-aggregaties">geometrische aggregaties</a> geschikt. Binnen het informatiemodel DiSGeo onderscheiden we in elk geval de ISO 19107-geometrietypen uit onderstaande tabel.</p>
+<p>Het informatiemodel DiSGeo legt geometrie vast als eigenschap van een object. De geometrie representeert daarmee de <em>locatie</em>, <em>orientatie</em> en <em>vorm</em> van een object. Voor dit doeleinde zijn verschillende typen geometrieën beschikbaar. Deze typen verschillende in niveau van <em>data-complexiteit</em> en <em>dimensionaliteit</em> (zi ook: <a href="#dimensies">Dimensies</a>). ISO 19107 biedt hiervoor een aantal basisgeometrieën om een individueel object uit de werkelijkheid te representeren. Dit zijn de <a href="https://docs.geostandaarden.nl/nen3610/gimeg/#geometrische-primitieven">geometrische primitieven</a>. Soms geldt een verzameling van objecten uit de werkelijkheid als één geheel. Daarvoor zijn <a href="https://docs.geostandaarden.nl/nen3610/gimeg/#geometrische-aggregaties">geometrische aggregaties</a> geschikt. Binnen het informatiemodel DiSGeo onderscheiden we in elk geval de ISO 19107-geometrietypen uit onderstaande tabel.</p>
 <table>
 <thead>
 <tr>
@@ -748,11 +748,11 @@ Dit hoofdstuk eindigt met een stuk over <strong>generalisatie van geomtrieën</s
 <p>Het informatiemodel DiSGeo hanteert altijd <a href="https://docs.geostandaarden.nl/disgeo/emso/#:~:text=De%20SOR%20hanteert,naar%203D%20geometrie.">expliciete geometrie</a>. Hierdoor zijn betere analyses en kwaliteitscontroles mogelijk. Bovendien maakt dit het optrekken van 2D-geometrie naar 3D-geometrie mogelijk. Dit in tegenstelling tot modellen met geparametriseerde geometriebeschrijvingen in CAD- of BIM-modellen (impliciete geometrie).</p>
 </section><section id="dimensies"><div class="header-wrapper"><h4 id="x2-3-3-dimensies"><bdi class="secno">2.3.3 </bdi>Dimensies</h4><a class="self-link" href="#dimensies" aria-label="Permalink for Section 2.3.3"></a></div>
 <p>Bij <em>dimensie</em> wordt onderscheid gemaakt tussen de termen: <strong>primitieve</strong>, <strong>ruimte</strong> en <strong>model</strong>. Er zijn vier gradaties van primitieven, oplopend van 0D tot en met 3D. Elke hogere graad voegt een extra dimensie toe. Zo staat 0D alleen het primitieve <code>punt</code> toe, maar 1D zowel <code>punt</code> als <code>lijn</code>. 2D voegt daar <code>vlak</code> aan toe en 3D <code>volume</code>.</p>
-<figure id="crs-overview">
+<figure id="dimensie-overview">
    <a href="media/geometrie_dimensies.png" target="_blank" rel="noopener noreferrer">
       <img src="media/geometrie_dimensies.png" alt="Geometrie primitieven en hun dimensies">
    </a>
-   <figcaption><a class="self-link" href="#crs-overview">Figuur <bdi class="figno">3</bdi></a> <span class="fig-title">Overzicht van geometrische primtieven en de bijbehorende dimensionaliteit</span></figcaption>
+   <figcaption><a class="self-link" href="#dimensie-overview">Figuur <bdi class="figno">3</bdi></a> <span class="fig-title">Overzicht van geometrische primtieven en de bijbehorende dimensionaliteit</span></figcaption>
 </figure>
 
 <p>Deze primitieven kun je plaatsen in een tweedimensionale of driedimensionale ruimte. Afhankelijk van de hoogste dimensie van de primitieve, in combinatie met gehanteerde dimensie van de ruimte, is sprake van een 2D-, 2.5D- of 3D-model. Samengevat komt het hierop neer:</p>
@@ -772,7 +772,8 @@ Dit hoofdstuk eindigt met een stuk over <strong>generalisatie van geomtrieën</s
 <li>World Geodetic System 1984 (<strong>WGS 84</strong>) gebaseerd op ITRS, gebruikt voor GPS</li>
 <li>European Terrestrial Reference System 1989 (<strong>ETRS89</strong>)</li>
 <li>Nederlandse Stelsel van de Rijksdriehoeksmeting (<strong>RD</strong>)</li>
-<li>Linear Reference Systems (<strong>LRS</strong>), zie: [<cite><a class="bibref" data-link-type="biblio" href="#bib-iso-19148" title="ISO 19148:2021 Geographic information — Linear referencing">ISO-19148</a></cite>], <a href="https://inspire.ec.europa.eu/id/document/tg/tn">INSPIRE</a>, <a href="https://wetten.overheid.nl/BWBR0015962/2003-12-05">Richtlijn BPS</a>, <a href="https://www.nationaalwegenbestand.nl/application/files/6516/6391/7355/Gebruikersinformatie_Wegkenmerkendatabase_WKD.pdf">WKD – NWB</a></li>
+<li>Linear Reference Systems (<strong>LRS</strong>), zie: [<cite><a class="bibref" data-link-type="biblio" href="#bib-iso-19148" title="ISO 19148:2021 Geographic information — Linear referencing">ISO-19148</a></cite>], <a href="https://inspire.ec.europa.eu/id/document/tg/tn">INSPIRE</a>, <a href="https://wetten.overheid.nl/BWBR0015962/2003-12-05">Richtlijn BPS</a></li>
+<li>Gebruikersinformatie Wegkenmerkendatabase WKD (niet meer online beschikbaar)</li>
 </ul>
 <p>De onderstaande figuur is een schematische weergave van de ondersteunde CRS-en bij aanlevering en uitlevering. De volgende paragrafen beschrijven in meer detail de ondersteunde CRS-en bij aan- en uitlevering.</p>
 <figure id="crs-overview">
@@ -786,7 +787,7 @@ Dit hoofdstuk eindigt met een stuk over <strong>generalisatie van geomtrieën</s
 
 <section id="aanlevering"><div class="header-wrapper"><h5 id="x2-3-4-1-aanlevering"><bdi class="secno">2.3.4.1 </bdi>Aanlevering</h5><a class="self-link" href="#aanlevering" aria-label="Permalink for Section 2.3.4.1"></a></div>
 <p>Het <em>toepassingsgebied</em> en de <em>dimensie</em> bepalen welke CRS-en bij aanlevering van geometrieën geldig zijn. Wat betreft het <em>toepassingsgebied</em> zijn er objecten die vallen binnen het Europese deel van Nederland en objecten die vallen binnen de Nederlandse Exclusieve Economische Zone (EEZ) van de Noordzee. Aan de andere kant bestaat er onderscheid in de <em>dimensie</em> van geometrieën. Sommige geometrieën zijn 2-dimensionaal, anderen 3-dimensionaal. Voor objecten binnen het Europese deel van Nederland gelden de volgende CRS-en: <em><strong>RD</strong></em> en <em><strong>ETRS89</strong></em>. Voor gebieden op zee is nog geen besluit genomen.</p>
-<p>Er zijn verschillende implementaties van ETRS89 in omloop. Het informatiemodel DiSGeo neemt het <a href="https://geonovum.github.io/HR-CRS-Gebruik/#realisaties-van-etrs89-en-evrs">advies</a> het <em>Regional Reference Frame Sub-Commission for Europe</em> (EUREF), om de <strong>ETRF2000-realisatie</strong> te gebruiken. Verder wordt bij aanlevering rekening gehouden met een <strong>lijnlengte van maximaal 200 meter</strong>. Dit besluit volgt het <a href="https://forum.pdok.nl/uploads/default/original/2X/c/c0795baa683bf3845c866ae4c576a880455be02a.pdf">langelijnenadvies</a> van het NSGI, dat is <a href="https://geonovum.github.io/HR-CRS-Gebruik/#vormvastheid">overgenomen</a> in [<cite><a class="bibref" data-link-type="biblio" href="#bib-gebruik-crs" title="Handreiking Gebruik coördinaatreferentiesystemen bij uitwisseling en visualisatie van geo-informatie">gebruik-crs</a></cite>] in verband met compatibiliteit met <strong>RDNAPTRANS™</strong>.</p>
+<p>Er zijn verschillende implementaties van ETRS89 in omloop. Het informatiemodel DiSGeo neemt het <a href="hhttps://docs.geostandaarden.nl/crs/crs/#realisaties-van-etrs89-en-evrs">advies</a> het <em>Regional Reference Frame Sub-Commission for Europe</em> (EUREF), om de <strong>ETRF2000-realisatie</strong> te gebruiken. Verder wordt bij aanlevering rekening gehouden met een <strong>lijnlengte van maximaal 200 meter</strong>. Dit besluit volgt het langelijnenadvies van het NSGI, dat is <a href="https://docs.geostandaarden.nl/crs/crs/#vormvastheid">overgenomen</a> in [<cite><a class="bibref" data-link-type="biblio" href="#bib-gebruik-crs" title="Handreiking Gebruik coördinaatreferentiesystemen bij uitwisseling en visualisatie van geo-informatie">gebruik-crs</a></cite>] in verband met compatibiliteit met <strong>RDNAPTRANS™</strong>.</p>
 <p>Voor het CRS van <strong>2D-geometrieen</strong> gelden de volgende EPSG-codes:</p>
 <table>
 <thead>
@@ -5161,7 +5162,7 @@ dataspecificatie.</p>
   </li><li class="tofline">
     <a class="tocxref" href="#fig-bestuurlijk-gebied-als-subklasse-van-registratieve-ruimte"><span class="self-link">Figuur <bdi class="figno">2</bdi></span> <span class="fig-title">Bestuurlijk gebied als subklasse van Registratieve Ruimte</span></a>
   </li><li class="tofline">
-    <a class="tocxref" href="#crs-overview"><span class="self-link">Figuur <bdi class="figno">3</bdi></span> <span class="fig-title">Overzicht van geometrische primtieven en de bijbehorende dimensionaliteit</span></a>
+    <a class="tocxref" href="#dimensie-overview"><span class="self-link">Figuur <bdi class="figno">3</bdi></span> <span class="fig-title">Overzicht van geometrische primtieven en de bijbehorende dimensionaliteit</span></a>
   </li><li class="tofline">
     <a class="tocxref" href="#crs-overview"><span class="self-link">Figuur <bdi class="figno">4</bdi></span> <span class="fig-title">Overzicht van de ondersteunde CRS-en in het kader van DiSGeo bij aanlevering en uitlevering</span></a>
   </li><li class="tofline">
