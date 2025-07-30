@@ -6,6 +6,9 @@ Objecttypen kunnen, wanneer relevant, een levenscyclusstatus, ookwel levensfase,
 De levenscyclus begint op het gedefinieerde ontstaansmoment, dat per objecttype kan verschillen. Zo is voor bepaalde objecttypen een planstatus relevant, terwijl dit voor andere objecttypen minder relevant lijkt. De informatieobjecten blijven daarna altijd in de registratie aanwezig. Door middel van een vastlegging van de levensfase van een object kan worden bepaald of een object ook nog als zodanig bestaat in de beschreven werkelijkheid. Wanneer een object niet meer bestaat in die werkelijkheid, bereikt het een eindfase. Het object wordt dus nog wel beschreven in de registratie, maar kan als afwezig uit de werkelijkheid beschouwd worden.
 
 ## Identificatie
+
+<aside class="issue">Deze paragraaf wordt verplaatst naar de documentatie van het logisch model.</aside>
+
 Voor de identificatie van objecten maken we gebruik van het identificatiepatroon van de [[NEN3610-2022]]. (<a href="#nen3610-identificatie"></a>) 
 
 <figure id="nen3610-identificatie">
@@ -289,6 +292,8 @@ Conform de _Spatial Data on the Web Best Practices_ [[SDW-BP]], [Best Practide 6
 
 
 ## Metadata
+
+<aside class="issue">Deze paragraaf (2.4 Metadata) wordt verplaatst naar de documentatie van het logisch model.</aside>
 
 ### Metadata op informatieobjectniveau
 
