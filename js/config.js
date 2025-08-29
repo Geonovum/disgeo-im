@@ -92,7 +92,7 @@ let respecConfig = {
   issueBase: "https://github.com/Geonovum/disgeo-im/issues/",
 
   // Aantal niveaus van de ToC
-  maxTocLevel: 3,
+  maxTocLevel: 7,
 
   // Create PDF and link to file in header (optional):
   // alternateFormats: [
@@ -122,14 +122,14 @@ let respecConfig = {
         date:       "2021-06-16",
         publisher:  "Geonovum",
       },
-    "MIM":
-      {
-        title:      "Meta-model Informatiemodellering, versie 1.1.1 ",
-        href:       "https://docs.geostandaarden.nl/mim/mim/",
-        status:     "Vastgesteld",
-        date:       "2022-02-17",
-        publisher:  "Geonovum",
-      },
+    MIM12: {
+      id: "MIM12",
+      title: "MIM - Metamodel Informatie Modellering (Versie 1.2)",
+      href: "https://docs.geostandaarden.nl/mim/def-st-mim-20240613/",
+      status: "Definitief",
+      publisher: "Geonovum",
+      date: "2024-06-13"
+    },
     "Raamwerk-Geo":
       {
         title:      "Raamwerk Geostandaarden (v3.0)",
@@ -214,6 +214,14 @@ let respecConfig = {
         publisher:  "Kadaster",
         date:       "2022-06-13", 
         editors:    "Ronald Bokhove", 
+      },
+    "TOOI-ONT-1.6.2": 
+      {
+        title:      "TOOI - Ontologie 1.6.2",
+        href:       "https://standaarden.overheid.nl/tooi/doc/tooi-ontologie-1.6.2/",
+        status:     "Vastgestelde versie",
+        publisher:  "Kennis- en Exploitatiecentrum voor Officiële Overheidspublicaties (KOOP)",
+        date:       "04 juli 2025",
       },
 
 // onderstaande lijst is een kopie van localBiblio document generieke onderwerpen
