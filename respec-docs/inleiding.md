@@ -1,10 +1,13 @@
 # Inleiding
 
-Het IMSO beschrijft hoe objecten in de fysieke werkelijkheid met elkaar samenhangen. Hierin kunnen de basisregistratie adressen en gebouwen (BAG) en de basisregistratie grootschalige topografie (BGT) in samenhang bevraagd worden. Daarnaast is het de bedoeling dat ook het gedeelte van de WOZ-administratie waarin objectgegevens zijn opgenomen en een aantal basisgegevens uit aanpalende registraties hieraan gekoppeld worden. Ook zijn er belangrijke raakvlakken met de basisregistratie topografie (BRT) en het Nationaal Wegenbestand.
+<!-- Het IMSO beschrijft hoe objecten in de fysieke werkelijkheid met elkaar samenhangen. Hierin kunnen de basisregistratie adressen en gebouwen (BAG) en de basisregistratie grootschalige topografie (BGT) in samenhang bevraagd worden. Daarnaast is het de bedoeling dat ook het gedeelte van de WOZ-administratie waarin objectgegevens zijn opgenomen en een aantal basisgegevens uit aanpalende registraties hieraan gekoppeld worden. Ook zijn er belangrijke raakvlakken met de basisregistratie topografie (BRT) en het Nationaal Wegenbestand. -->
+
+TODO
 
 ## Doel
 
-Tussen verschillende informatiemodellen van de geo-basisregistraties heeft in de loop van de jaren afstemming plaatsgevonden. Toch is er nog steeds sprake van een gebrekkige aansluiting tussen deze verschillende informatiemodellen. Met het IMSO wordt beoogd om meer samenhang aan te brengen tussen de verschillende objecttypen en de eigenschappen die daarover worden bijgehouden. Hiermee kunnen bijhoudingsprocessen worden vereenvoudigd, de informatievoorziening flexibeler worden opgezet en de wensen van gebruikers om meer samenhangende informatie worden ingewilligd.
+<!-- Tussen verschillende informatiemodellen van de geo-basisregistraties heeft in de loop van de jaren afstemming plaatsgevonden. Toch is er nog steeds sprake van een gebrekkige aansluiting tussen deze verschillende informatiemodellen. Met het IMSO wordt beoogd om meer samenhang aan te brengen tussen de verschillende objecttypen en de eigenschappen die daarover worden bijgehouden. Hiermee kunnen bijhoudingsprocessen worden vereenvoudigd, de informatievoorziening flexibeler worden opgezet en de wensen van gebruikers om meer samenhangende informatie worden ingewilligd. -->
+TODO?
 
 ## Achtergrond en scope
 
@@ -13,8 +16,9 @@ De achtergrond, rationale en scope van dit informatiemodel worden beschreven in 
 ## Leeswijzer
 
 Puntsgewijs:
- - Hoofdstuk 2: geometrie, metadata, historie en levensloop.
+ - Hoofdstuk 2: geometrie en levenscyclus van objecten.
  - Hoofdstuk 3: algemene beschrijving van het IMSO en de inhoud per onderwerp
- - Hoofdstuk 4: gegevensdefinitie
- - Hoofdstuk 5: inhoud van waardelijsten
+ - Hoofdstuk 4: het informatiemodel in detail
  - Tot slot bijlagen en referenties.
+
+In dit document staan ook de gedetailleerde UML-diagrammen. Je kunt op alle diagrammen klikken om in te zoomen en details van de modellen te bekijken.
