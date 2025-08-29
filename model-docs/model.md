@@ -3,7 +3,7 @@
 
 ![Bestuurlijk gebied](model-docs/media/bestuurlijk_gebied.png "Domein Bestuurlijk gebied")
 
-<p data-include-format="markdown" data-include="model-docs/model-overzicht.md"></p>
+<div data-include-format="markdown" data-include="model-docs/model-overzicht.md"></div>
 
 ### Objecttypen
 
@@ -151,7 +151,7 @@ Fase van de levenscyclus waarin een bestuurlijk gebied zich bevindt.</td>
 
 #### BestuurlijkGebied {#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied}
 
-<p data-include-format="markdown" data-include="model-docs/bestuurlijk-gebied-detail.md"></p>
+<div data-include-format="markdown" data-include="model-docs/bestuurlijk-gebied-detail.md"></div>
 
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
@@ -646,7 +646,7 @@ De geometrische afbakening van het &lt;i&gt;bevattendGebied, &lt;/i&gt;waarbinne
 
 #### Gemeentegebied {#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_gemeentegebied}
 
-<p data-include-format="markdown" data-include="model-docs/gemeentegebied-detail.md"></p>
+<div data-include-format="markdown" data-include="model-docs/gemeentegebied-detail.md"></div>
 
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
@@ -869,7 +869,7 @@ De geometrische afbakening van het veiligheidsregiogebied waarbinnen de geometri
 
 #### Provinciegebied {#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_provinciegebied}
 
-<p data-include-format="markdown" data-include="model-docs/provinciegebied-detail.md"></p>
+<div data-include-format="markdown" data-include="model-docs/provinciegebied-detail.md"></div>
 
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
@@ -1029,7 +1029,7 @@ De geometrische afbakening van het rijksgebied waarbinnen de geometrie van het p
 
 #### Rijksgebied {#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_rijksgebied}
 
-<p data-include-format="markdown" data-include="model-docs/rijksgebied-detail.md"></p>
+<div data-include-format="markdown" data-include="model-docs/rijksgebied-detail.md"></div>
 
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
@@ -1414,7 +1414,7 @@ Binnen het Europese deel van het Rijk kent deze dezelfde contour als de Nederlan
 
 #### Waterschapsgebied {#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_waterschapsgebied}
 
-<p data-include-format="markdown" data-include="model-docs/waterschapsgebied-detail.md"></p>
+<div data-include-format="markdown" data-include="model-docs/waterschapsgebied-detail.md"></div>
 
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
@@ -1495,7 +1495,7 @@ Deze grens is inclusief de grote wateren die niet door de waterschappen beheerd 
 
 #### Veiligheidsregiogebied {#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_veiligheidsregiogebied}
 
-<p data-include-format="markdown" data-include="model-docs/veiligheidsregiogebied-detail.md"></p>
+<div data-include-format="markdown" data-include="model-docs/veiligheidsregiogebied-detail.md"></div>
 
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
