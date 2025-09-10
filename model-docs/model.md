@@ -61,18 +61,22 @@
 <a class="link" href="#informatiemodel_nen3610_domein_semantisch_model_objecttype_registratieve_ruimte">RegistratieveRuimte (NEN 3610:2022 - Basismodel geo-informatie)</a>
 </td>
 </tr>
+<tr>
+<th>Datum opname</th>
+<td>2022-03-23</td>
+</tr>
 <tbody>
 </tbody>
 </table>
 </section>
 
 <section class="notoc">
-<h5>Overzicht attribuutsoorten</h5>    
+<h5>Overzicht attribuutsoorten</h5>
 <table style="width: 100%">
 <colgroup style="width: 25%"></colgroup>
 <colgroup style="width: 50%"></colgroup>
-<colgroup style="width: 15%"></colgroup>
-<colgroup style="width: 10%"></colgroup>
+<colgroup style="width: 18%"></colgroup>
+<colgroup style="width: 7%"></colgroup>
 <tbody>
 <tr>
   <th>Naam</th>
@@ -90,7 +94,7 @@ Fase van de levenscyclus waarin een bestuurlijk gebied zich bevindt.</td>
 <a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_enumeratie_status_registratieve_ruimte">StatusRegistratieveRuimte</a>
 </td>
 <td>
-1..1</td>
+1</td>
 </tr>
 </tbody>
 </table>
@@ -108,7 +112,7 @@ Fase van de levenscyclus waarin een bestuurlijk gebied zich bevindt.</td>
 <colgroup style="width: 70%"></colgroup>
 <tr>
 <th>Identificatie</th>
-<td>http://modellen.geostandaarden.nl/def/imso#RegistratieveRuimte.status</td>
+<td>http://modellen.geostandaarden.nl/def/imso#status</td>
 </tr>
 <tr>
 <th>Naam</th>
@@ -116,7 +120,7 @@ Fase van de levenscyclus waarin een bestuurlijk gebied zich bevindt.</td>
 </tr>
 <tr>
 <th>Herkomst</th>
-<td>IMDiSGeo</td>
+<td>IMSO</td>
 </tr>
 <tr>
 <th>Definitie</th>
@@ -128,7 +132,7 @@ Fase van de levenscyclus waarin een bestuurlijk gebied zich bevindt.</td>
 </tr>
 <tr>
 <th>Datum opname</th>
-<td>22-04-2022</td>
+<td>2022-04-22</td>
 </tr>
 <tr>
 <th>Identificerend</th>
@@ -136,7 +140,7 @@ Fase van de levenscyclus waarin een bestuurlijk gebied zich bevindt.</td>
 </tr>
 <tr>
 <th>Kardinaliteit</th>
-<td>1..1</td>
+<td>1</td>
 </tr>
 <tr>
 <th>Indicatie classificerend</th>
@@ -212,6 +216,10 @@ Fase van de levenscyclus waarin een bestuurlijk gebied zich bevindt.</td>
 </td>
 </tr>
 <tr>
+<th>Datum opname</th>
+<td>2022-03-23</td>
+</tr>
+<tr>
 <th>Mixin</th>
 <td>Nee</td>
 </tr>
@@ -221,12 +229,12 @@ Fase van de levenscyclus waarin een bestuurlijk gebied zich bevindt.</td>
 </section>
 
 <section class="notoc">
-<h5>Overzicht attribuutsoorten</h5>    
+<h5>Overzicht attribuutsoorten</h5>
 <table style="width: 100%">
 <colgroup style="width: 25%"></colgroup>
 <colgroup style="width: 50%"></colgroup>
-<colgroup style="width: 15%"></colgroup>
-<colgroup style="width: 10%"></colgroup>
+<colgroup style="width: 18%"></colgroup>
+<colgroup style="width: 7%"></colgroup>
 <tbody>
 <tr>
   <th>Naam</th>
@@ -244,7 +252,7 @@ Geometrische representatie van een gebied op land dat door een openbaar lichaam 
 <a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_keuze_datatype__vlak_of_multivlak">VlakOfMultivlak</a>
 </td>
 <td>
-1..1</td>
+1</td>
 </tr>
 <tr>
 <td>
@@ -256,7 +264,7 @@ Categorie waartoe het betreffende bestuurlijke gebied behoort.</td>
 <a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_enumeratie_type_bestuurlijk_gebied">TypeBestuurlijkGebied</a>
 </td>
 <td>
-1..1</td>
+1</td>
 </tr>
 </tbody>
 </table>
@@ -264,12 +272,12 @@ Categorie waartoe het betreffende bestuurlijke gebied behoort.</td>
 
 
 <section class="notoc">
-<h5>Overzicht Relatiesoorten</h5>    
+<h5>Overzicht Relatiesoorten</h5>
 <table style="width: 100%">
 <colgroup style="width: 25%"></colgroup>
 <colgroup style="width: 50%"></colgroup>
-<colgroup style="width: 15%"></colgroup>
-<colgroup style="width: 10%"></colgroup>
+<colgroup style="width: 18%"></colgroup>
+<colgroup style="width: 7%"></colgroup>
 <tbody>
 <tr>
   <th>Naam</th>
@@ -287,14 +295,14 @@ Relatie die aangeeft dat het gebied bestuurt wordt door de bestuurder.</td>
 <a class="link" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_regionaal_openbaar_lichaam">RegionaalOpenbaarLichaam</a>
 </td>
 <td>
-0..*</td>
+1</td>
 </tr>
 <tr>
 <td>
 <a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_relatiesoort_ligt_in_bestuurlijk_gebied">ligtInBestuurlijkGebied</a>
 </td>
 <td>
-De geometrische afbakening van het &lt;i&gt;bevattendGebied, &lt;/i&gt;waarbinnen de geometrie van het &lt;i&gt;bevatteGebied&lt;/i&gt;,zich moet bevinden, en/of mee moet samenvallen.</td>
+De geometrische afbakening van het bevattendGebied, waarbinnen de geometrie van het bevatteGebied, zich moet bevinden, en/of mee moet samenvallen.</td>
 <td>
 <a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied">BestuurlijkGebied</a>
 </td>
@@ -315,7 +323,7 @@ De geometrische afbakening van het &lt;i&gt;bevattendGebied, &lt;/i&gt;waarbinne
 <colgroup style="width: 70%"></colgroup>
 <tr>
 <th>Identificatie</th>
-<td>http://modellen.geostandaarden.nl/def/imso#BestuurlijkGebied.geometrie</td>
+<td>http://modellen.geostandaarden.nl/def/imso#geometrie</td>
 </tr>
 <tr>
 <th>Naam</th>
@@ -323,7 +331,7 @@ De geometrische afbakening van het &lt;i&gt;bevattendGebied, &lt;/i&gt;waarbinne
 </tr>
 <tr>
 <th>Herkomst</th>
-<td>IMDisGeo</td>
+<td>EMSO</td>
 </tr>
 <tr>
 <th>Definitie</th>
@@ -335,7 +343,7 @@ De geometrische afbakening van het &lt;i&gt;bevattendGebied, &lt;/i&gt;waarbinne
 </tr>
 <tr>
 <th>Datum opname</th>
-<td>31-05-2022</td>
+<td>2022-05-31</td>
 </tr>
 <tr>
 <th>Identificerend</th>
@@ -343,7 +351,7 @@ De geometrische afbakening van het &lt;i&gt;bevattendGebied, &lt;/i&gt;waarbinne
 </tr>
 <tr>
 <th>Kardinaliteit</th>
-<td>1..1</td>
+<td>1</td>
 </tr>
 <tr>
 <th>Indicatie classificerend</th>
@@ -360,7 +368,7 @@ De geometrische afbakening van het &lt;i&gt;bevattendGebied, &lt;/i&gt;waarbinne
 <colgroup style="width: 70%"></colgroup>
 <tr>
 <th>Identificatie</th>
-<td>http://modellen.geostandaarden.nl/def/imso#BestuurlijkGebied.type</td>
+<td>http://modellen.geostandaarden.nl/def/imso#type</td>
 </tr>
 <tr>
 <th>Naam</th>
@@ -368,7 +376,7 @@ De geometrische afbakening van het &lt;i&gt;bevattendGebied, &lt;/i&gt;waarbinne
 </tr>
 <tr>
 <th>Herkomst</th>
-<td>IMDiSGeo</td>
+<td>IMSO</td>
 </tr>
 <tr>
 <th>Definitie</th>
@@ -376,11 +384,11 @@ De geometrische afbakening van het &lt;i&gt;bevattendGebied, &lt;/i&gt;waarbinne
 </tr>
 <tr>
 <th>Herkomst definitie</th>
-<td>IMDiSGeo</td>
+<td>IMSO</td>
 </tr>
 <tr>
 <th>Datum opname</th>
-<td>17-08-202</td>
+<td>2022-08-17</td>
 </tr>
 <tr>
 <th>Identificerend</th>
@@ -388,7 +396,7 @@ De geometrische afbakening van het &lt;i&gt;bevattendGebied, &lt;/i&gt;waarbinne
 </tr>
 <tr>
 <th>Kardinaliteit</th>
-<td>1..1</td>
+<td>1</td>
 </tr>
 <tr>
 <th>Indicatie classificerend</th>
@@ -409,15 +417,31 @@ De geometrische afbakening van het &lt;i&gt;bevattendGebied, &lt;/i&gt;waarbinne
 <colgroup style="width: 70%"></colgroup>
 <tr>
 <th>Identificatie</th>
-<td>http://modellen.geostandaarden.nl/def/imso#BestuurlijkGebied.wordtBestuurdDoor</td>
+<td>http://modellen.geostandaarden.nl/def/imso#wordtBestuurdDoor</td>
 </tr>
 <tr>
 <th>Naam</th>
 <td>wordtBestuurdDoor</td>
 </tr>
 <tr>
+<th>Alias</th>
+<td>wordt bestuurd door</td>
+</tr>
+<tr>
+<th>Herkomst</th>
+<td>IMSO</td>
+</tr>
+<tr>
 <th>Definitie</th>
 <td>Relatie die aangeeft dat het gebied bestuurt wordt door de bestuurder.</td>
+</tr>
+<tr>
+<th>Herkomst definitie</th>
+<td>IMSO</td>
+</tr>
+<tr>
+<th>Datum opname</th>
+<td>2022-03-30</td>
 </tr>
 <tr>
 <th>Identificerend</th>
@@ -425,11 +449,11 @@ De geometrische afbakening van het &lt;i&gt;bevattendGebied, &lt;/i&gt;waarbinne
 </tr>
 <tr>
 <th>Kardinaliteit</th>
-<td>0..*</td>
+<td>1</td>
 </tr>
 <tr>
 <th>Kardinaliteit relatie bron</th>
-<td>1..1</td>
+<td>0..*</td>
 </tr>
 <tr>
 <th>Bron</th>
@@ -455,20 +479,32 @@ De geometrische afbakening van het &lt;i&gt;bevattendGebied, &lt;/i&gt;waarbinne
 <td>ligtInBestuurlijkGebied</td>
 </tr>
 <tr>
+<th>Alias</th>
+<td>ligtIn bestuurlijk gebied</td>
+</tr>
+<tr>
 <th>Herkomst</th>
-<td>IMDiSGeo</td>
+<td>IMSO</td>
 </tr>
 <tr>
 <th>Definitie</th>
-<td>De geometrische afbakening van het &lt;i&gt;bevattendGebied, &lt;/i&gt;waarbinnen de geometrie van het &lt;i&gt;bevatteGebied&lt;/i&gt;,zich moet bevinden, en/of mee moet samenvallen.</td>
+<td>De geometrische afbakening van het bevattendGebied, waarbinnen de geometrie van het bevatteGebied, zich moet bevinden, en/of mee moet samenvallen.</td>
 </tr>
 <tr>
 <th>Herkomst definitie</th>
-<td>IMDiSGeo</td>
+<td>IMSO</td>
+</tr>
+<tr>
+<th>Toelichting</th>
+<td>Dit kan worden afgeleid op basis van de relaties:
+
+- ligtInRijksgebied
+- ligtInProvinciegebied
+- ligtInVeiligheidsregiogebied</td>
 </tr>
 <tr>
 <th>Datum opname</th>
-<td>19-08-2022</td>
+<td>2022-08-19</td>
 </tr>
 <tr>
 <th>Identificerend</th>
@@ -555,6 +591,10 @@ De geometrische afbakening van het &lt;i&gt;bevattendGebied, &lt;/i&gt;waarbinne
 </td>
 </tr>
 <tr>
+<th>Datum opname</th>
+<td>2022-06-10</td>
+</tr>
+<tr>
 <th>Mixin</th>
 <td>Nee</td>
 </tr>
@@ -630,6 +670,10 @@ De geometrische afbakening van het &lt;i&gt;bevattendGebied, &lt;/i&gt;waarbinne
 </td>
 </tr>
 <tr>
+<th>Datum opname</th>
+<td>2022-06-10</td>
+</tr>
+<tr>
 <th>Mixin</th>
 <td>Nee</td>
 </tr>
@@ -661,7 +705,7 @@ De geometrische afbakening van het &lt;i&gt;bevattendGebied, &lt;/i&gt;waarbinne
 </tr>
 <tr>
 <th>Herkomst</th>
-<td>IMDiSGeo</td>
+<td>IMSO</td>
 </tr>
 <tr>
 <th>Definitie</th>
@@ -707,6 +751,10 @@ De geometrische afbakening van het &lt;i&gt;bevattendGebied, &lt;/i&gt;waarbinne
 </td>
 </tr>
 <tr>
+<th>Datum opname</th>
+<td>2022-03-23</td>
+</tr>
+<tr>
 <th>Mixin</th>
 <td>Nee</td>
 </tr>
@@ -718,12 +766,12 @@ De geometrische afbakening van het &lt;i&gt;bevattendGebied, &lt;/i&gt;waarbinne
 
 
 <section class="notoc">
-<h5>Overzicht Relatiesoorten</h5>    
+<h5>Overzicht Relatiesoorten</h5>
 <table style="width: 100%">
 <colgroup style="width: 25%"></colgroup>
 <colgroup style="width: 50%"></colgroup>
-<colgroup style="width: 15%"></colgroup>
-<colgroup style="width: 10%"></colgroup>
+<colgroup style="width: 18%"></colgroup>
+<colgroup style="width: 7%"></colgroup>
 <tbody>
 <tr>
   <th>Naam</th>
@@ -770,15 +818,19 @@ De geometrische afbakening van het veiligheidsregiogebied waarbinnen de geometri
 <colgroup style="width: 70%"></colgroup>
 <tr>
 <th>Identificatie</th>
-<td>http://modellen.geostandaarden.nl/def/imso#Gemeentegebied.ligtInProvinciegebied</td>
+<td>http://modellen.geostandaarden.nl/def/imso#ligtInProvinciegebied</td>
 </tr>
 <tr>
 <th>Naam</th>
 <td>ligtInProvinciegebied</td>
 </tr>
 <tr>
+<th>Alias</th>
+<td>ligt in provinciegebied</td>
+</tr>
+<tr>
 <th>Herkomst</th>
-<td>IMDiSGeo</td>
+<td>IMSO</td>
 </tr>
 <tr>
 <th>Definitie</th>
@@ -786,11 +838,11 @@ De geometrische afbakening van het veiligheidsregiogebied waarbinnen de geometri
 </tr>
 <tr>
 <th>Herkomst definitie</th>
-<td>IMDiSGeo</td>
+<td>IMSO</td>
 </tr>
 <tr>
 <th>Datum opname</th>
-<td>29-03-2022</td>
+<td>2022-03-29</td>
 </tr>
 <tr>
 <th>Identificerend</th>
@@ -802,7 +854,7 @@ De geometrische afbakening van het veiligheidsregiogebied waarbinnen de geometri
 </tr>
 <tr>
 <th>Kardinaliteit relatie bron</th>
-<td>1..1</td>
+<td>1</td>
 </tr>
 <tr>
 <th>Bron</th>
@@ -821,15 +873,19 @@ De geometrische afbakening van het veiligheidsregiogebied waarbinnen de geometri
 <colgroup style="width: 70%"></colgroup>
 <tr>
 <th>Identificatie</th>
-<td>http://modellen.geostandaarden.nl/def/imso#Gemeentegebied.ligtInVeiligheidsregiogebied</td>
+<td>http://modellen.geostandaarden.nl/def/imso#ligtInVeiligheidsregiogebied</td>
 </tr>
 <tr>
 <th>Naam</th>
 <td>ligtInVeiligheidsregiogebied</td>
 </tr>
 <tr>
+<th>Alias</th>
+<td>ligt in veiligheidsregiogebied</td>
+</tr>
+<tr>
 <th>Herkomst</th>
-<td>IMDiSGeo</td>
+<td>IMSO</td>
 </tr>
 <tr>
 <th>Definitie</th>
@@ -837,11 +893,11 @@ De geometrische afbakening van het veiligheidsregiogebied waarbinnen de geometri
 </tr>
 <tr>
 <th>Herkomst definitie</th>
-<td>IMDiSGeo</td>
+<td>IMSO</td>
 </tr>
 <tr>
 <th>Datum opname</th>
-<td>11-05-2022</td>
+<td>2022-05-11</td>
 </tr>
 <tr>
 <th>Identificerend</th>
@@ -853,7 +909,7 @@ De geometrische afbakening van het veiligheidsregiogebied waarbinnen de geometri
 </tr>
 <tr>
 <th>Kardinaliteit relatie bron</th>
-<td>1..1</td>
+<td>1</td>
 </tr>
 <tr>
 <th>Bron</th>
@@ -869,8 +925,6 @@ De geometrische afbakening van het veiligheidsregiogebied waarbinnen de geometri
 
 #### Provinciegebied {#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_provinciegebied}
 
-<div data-include-format="markdown" data-include="model-docs/provinciegebied-detail.md"></div>
-
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
 <colgroup style="width: 70%"></colgroup>
@@ -884,7 +938,7 @@ De geometrische afbakening van het veiligheidsregiogebied waarbinnen de geometri
 </tr>
 <tr>
 <th>Herkomst</th>
-<td>IMDiSGeo</td>
+<td>IMSO</td>
 </tr>
 <tr>
 <th>Definitie</th>
@@ -930,6 +984,10 @@ De geometrische afbakening van het veiligheidsregiogebied waarbinnen de geometri
 </td>
 </tr>
 <tr>
+<th>Datum opname</th>
+<td>2022-03-29</td>
+</tr>
+<tr>
 <th>Mixin</th>
 <td>Nee</td>
 </tr>
@@ -941,12 +999,12 @@ De geometrische afbakening van het veiligheidsregiogebied waarbinnen de geometri
 
 
 <section class="notoc">
-<h5>Overzicht Relatiesoorten</h5>    
+<h5>Overzicht Relatiesoorten</h5>
 <table style="width: 100%">
 <colgroup style="width: 25%"></colgroup>
 <colgroup style="width: 50%"></colgroup>
-<colgroup style="width: 15%"></colgroup>
-<colgroup style="width: 10%"></colgroup>
+<colgroup style="width: 18%"></colgroup>
+<colgroup style="width: 7%"></colgroup>
 <tbody>
 <tr>
   <th>Naam</th>
@@ -981,15 +1039,19 @@ De geometrische afbakening van het rijksgebied waarbinnen de geometrie van het p
 <colgroup style="width: 70%"></colgroup>
 <tr>
 <th>Identificatie</th>
-<td>http://modellen.geostandaarden.nl/def/imso#Provinciegebied.ligtInRijksgebied</td>
+<td>http://modellen.geostandaarden.nl/def/imso#ligtInRijksgebied</td>
 </tr>
 <tr>
 <th>Naam</th>
 <td>ligtInRijksgebied</td>
 </tr>
 <tr>
+<th>Alias</th>
+<td>ligt in rijksgebied</td>
+</tr>
+<tr>
 <th>Herkomst</th>
-<td>IMDiSGeo</td>
+<td>IMSO</td>
 </tr>
 <tr>
 <th>Definitie</th>
@@ -997,11 +1059,11 @@ De geometrische afbakening van het rijksgebied waarbinnen de geometrie van het p
 </tr>
 <tr>
 <th>Herkomst definitie</th>
-<td>IMDiSGeo</td>
+<td>IMSO</td>
 </tr>
 <tr>
 <th>Datum opname</th>
-<td>20-04-2022</td>
+<td>2022-04-20</td>
 </tr>
 <tr>
 <th>Identificerend</th>
@@ -1013,7 +1075,7 @@ De geometrische afbakening van het rijksgebied waarbinnen de geometrie van het p
 </tr>
 <tr>
 <th>Kardinaliteit relatie bron</th>
-<td>1..1</td>
+<td>1</td>
 </tr>
 <tr>
 <th>Bron</th>
@@ -1044,7 +1106,7 @@ De geometrische afbakening van het rijksgebied waarbinnen de geometrie van het p
 </tr>
 <tr>
 <th>Herkomst</th>
-<td>IMDiSGeo</td>
+<td>IMSO</td>
 </tr>
 <tr>
 <th>Definitie</th>
@@ -1088,6 +1150,10 @@ De geometrische afbakening van het rijksgebied waarbinnen de geometrie van het p
 <td>
 <a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_op_land">BestuurlijkGebiedOpLand</a>
 </td>
+</tr>
+<tr>
+<th>Datum opname</th>
+<td>2022-04-20</td>
 </tr>
 <tr>
 <th>Mixin</th>
@@ -1167,6 +1233,10 @@ Dit gebied is ook wel bekend als “de 12-mijlszone”. In het Eems-Dollard gebi
 </td>
 </tr>
 <tr>
+<th>Datum opname</th>
+<td>2022-06-01</td>
+</tr>
+<tr>
 <th>Mixin</th>
 <td>Nee</td>
 </tr>
@@ -1240,6 +1310,10 @@ Dit gebied is ook wel bekend als “de 12-mijlszone”. In het Eems-Dollard gebi
 <td>
 <a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_op_zee">BestuurlijkGebiedOpZee</a>
 </td>
+</tr>
+<tr>
+<th>Datum opname</th>
+<td>2022-06-01</td>
 </tr>
 <tr>
 <th>Mixin</th>
@@ -1321,6 +1395,10 @@ Dit gebied is ook wel bekend als “de 12-mijlszone”. In het Eems-Dollard gebi
 </td>
 </tr>
 <tr>
+<th>Datum opname</th>
+<td>2022-06-01</td>
+</tr>
+<tr>
 <th>Mixin</th>
 <td>Nee</td>
 </tr>
@@ -1398,6 +1476,10 @@ Binnen het Europese deel van het Rijk kent deze dezelfde contour als de Nederlan
 </td>
 </tr>
 <tr>
+<th>Datum opname</th>
+<td>2022-06-01</td>
+</tr>
+<tr>
 <th>Mixin</th>
 <td>Nee</td>
 </tr>
@@ -1429,7 +1511,7 @@ Binnen het Europese deel van het Rijk kent deze dezelfde contour als de Nederlan
 </tr>
 <tr>
 <th>Herkomst</th>
-<td>IMDiSGeo</td>
+<td>IMSO</td>
 </tr>
 <tr>
 <th>Definitie</th>
@@ -1479,6 +1561,10 @@ Deze grens is inclusief de grote wateren die niet door de waterschappen beheerd 
 </td>
 </tr>
 <tr>
+<th>Datum opname</th>
+<td>2022-05-11</td>
+</tr>
+<tr>
 <th>Mixin</th>
 <td>Nee</td>
 </tr>
@@ -1510,7 +1596,7 @@ Deze grens is inclusief de grote wateren die niet door de waterschappen beheerd 
 </tr>
 <tr>
 <th>Herkomst</th>
-<td>IMDiSGeo</td>
+<td>IMSO</td>
 </tr>
 <tr>
 <th>Definitie</th>
@@ -1552,6 +1638,10 @@ Deze grens is inclusief de grote wateren die niet door de waterschappen beheerd 
 </td>
 </tr>
 <tr>
+<th>Datum opname</th>
+<td>2022-05-11</td>
+</tr>
+<tr>
 <th>Mixin</th>
 <td>Nee</td>
 </tr>
@@ -1587,6 +1677,10 @@ Deze grens is inclusief de grote wateren die niet door de waterschappen beheerd 
 <tr>
 <th>Herkomst</th>
 <td>EMSO</td>
+</tr>
+<tr>
+<th>Definitie</th>
+<td>Keuze uit een vlak- of multivlakgeometrie.</td>
 </tr>
 <tr>
 <th>Herkomst definitie</th>
@@ -1644,6 +1738,18 @@ Deze grens is inclusief de grote wateren die niet door de waterschappen beheerd 
 <td>Type bestuurlijk gebied</td>
 </tr>
 <tr>
+<th>Herkomst</th>
+<td>IMSO</td>
+</tr>
+<tr>
+<th>Definitie</th>
+<td>Categorisering van een bestuurlijk gebied.</td>
+</tr>
+<tr>
+<th>Herkomst definitie</th>
+<td>IMSO</td>
+</tr>
+<tr>
 <th>Datum opname</th>
 <td>2022-06-01</td>
 </tr>
@@ -1653,7 +1759,7 @@ Deze grens is inclusief de grote wateren die niet door de waterschappen beheerd 
 
 
 <section class="notoc">
-<h5>Overzicht waarden</h5>    
+<h5>Overzicht waarden</h5>
 <table style="width: 100%">
 <colgroup style="width: 25%"></colgroup>
 <colgroup style="width: 75%"></colgroup>
@@ -1758,7 +1864,7 @@ waterschapsgebied</td>
 
 
 <section class="notoc">
-<h5>Overzicht waarden</h5>    
+<h5>Overzicht waarden</h5>
 <table style="width: 100%">
 <colgroup style="width: 25%"></colgroup>
 <colgroup style="width: 75%"></colgroup>
@@ -1771,7 +1877,6 @@ waterschapsgebied</td>
 <td>
 Ontwerp</td>
 <td>
--- Defintie -
 Object waarvan de vaststelling wordt voorbereid.</td>
 <tr>
 <td>
@@ -1837,12 +1942,12 @@ Object dat door het bevoegd gezag is ingetrokken op grond van wet- of regelgevin
 
 
 <section class="notoc">
-<h5>Overzicht attribuutsoorten</h5>    
+<h5>Overzicht attribuutsoorten</h5>
 <table style="width: 100%">
 <colgroup style="width: 25%"></colgroup>
 <colgroup style="width: 50%"></colgroup>
-<colgroup style="width: 15%"></colgroup>
-<colgroup style="width: 10%"></colgroup>
+<colgroup style="width: 18%"></colgroup>
+<colgroup style="width: 7%"></colgroup>
 <tbody>
 <tr>
   <th>Naam</th>
@@ -1852,15 +1957,27 @@ Object dat door het bevoegd gezag is ingetrokken op grond van wet- of regelgevin
 </tr>
 <tr>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_overheidsorganisatie_attribuutsoort_officiele_naam_incl_soort">officieleNaamInclSoort</a>
+<a class="link" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_overheidsorganisatie_attribuutsoort_naam">naam</a>
 </td>
 <td>
-</td>
+De voorkeursnaam van de organisatie</td>
 <td>
 <a class="external-link" href="https://docs.geostandaarden.nl/mim/mim/#primitief-datatype-1"> CharacterString</a>
 </td>
 <td>
-1..1</td>
+1</td>
+</tr>
+<tr>
+<td>
+<a class="link" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_overheidsorganisatie_attribuutsoort_officiele_naam_incl_soort">officieleNaamInclSoort</a>
+</td>
+<td>
+De officiële naam van de organisatie met soortaanduiding, bijvoorbeeld &#39;gemeente &#39;s-Gravenhage&#39;</td>
+<td>
+<a class="external-link" href="https://docs.geostandaarden.nl/mim/mim/#primitief-datatype-1"> CharacterString</a>
+</td>
+<td>
+0..1</td>
 </tr>
 <tr>
 <td>
@@ -1872,7 +1989,7 @@ De organisatiecode.</td>
 <a class="external-link" href="https://docs.geostandaarden.nl/mim/mim/#primitief-datatype-1"> CharacterString</a>
 </td>
 <td>
-1..1</td>
+1</td>
 </tr>
 </tbody>
 </table>
@@ -1883,18 +2000,34 @@ De organisatiecode.</td>
 
 <section class="notoc">
 <h5>Details attribuutsoorten</h5>
-<section class="notoc" id="informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_overheidsorganisatie_attribuutsoort_officiele_naam_incl_soort">
-<h6>officieleNaamInclSoort</h6>
+<section class="notoc" id="informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_overheidsorganisatie_attribuutsoort_naam">
+<h6>naam</h6>
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
 <colgroup style="width: 70%"></colgroup>
 <tr>
 <th>Identificatie</th>
-<td>http://modellen.geostandaarden.nl/def/imso#Overheidsorganisatie.officieleNaamInclSoort</td>
+<td>http://www.w3.org/2000/01/rdf-schema#label</td>
 </tr>
 <tr>
 <th>Naam</th>
-<td>officieleNaamInclSoort</td>
+<td>naam</td>
+</tr>
+<tr>
+<th>Herkomst</th>
+<td>TOOI - Ontologie 1.6.2</td>
+</tr>
+<tr>
+<th>Definitie</th>
+<td>De voorkeursnaam van de organisatie</td>
+</tr>
+<tr>
+<th>Herkomst definitie</th>
+<td>TOOI - Ontologie 1.6.2</td>
+</tr>
+<tr>
+<th>Datum opname</th>
+<td>2025-09-10</td>
 </tr>
 <tr>
 <th>Identificerend</th>
@@ -1902,7 +2035,56 @@ De organisatiecode.</td>
 </tr>
 <tr>
 <th>Kardinaliteit</th>
-<td>1..1</td>
+<td>1</td>
+</tr>
+<tr>
+<th>Indicatie classificerend</th>
+<td>Nee</td>
+</tr>
+<tbody>
+</tbody>
+</table>
+</section>
+<section class="notoc" id="informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_overheidsorganisatie_attribuutsoort_officiele_naam_incl_soort">
+<h6>officieleNaamInclSoort</h6>
+<table style="width: 100%">
+<colgroup style="width: 30%"></colgroup>
+<colgroup style="width: 70%"></colgroup>
+<tr>
+<th>Identificatie</th>
+<td>https://identifier.overheid.nl/tooi/def/ont/officieleNaamInclSoort</td>
+</tr>
+<tr>
+<th>Naam</th>
+<td>officieleNaamInclSoort</td>
+</tr>
+<tr>
+<th>Alias</th>
+<td>Officiële naam inclusief soort</td>
+</tr>
+<tr>
+<th>Herkomst</th>
+<td>TOOI - Ontologie 1.6.2</td>
+</tr>
+<tr>
+<th>Definitie</th>
+<td>De officiële naam van de organisatie met soortaanduiding, bijvoorbeeld &#39;gemeente &#39;s-Gravenhage&#39;</td>
+</tr>
+<tr>
+<th>Herkomst definitie</th>
+<td>TOOI - Ontologie 1.6.2</td>
+</tr>
+<tr>
+<th>Datum opname</th>
+<td>2022-03-30</td>
+</tr>
+<tr>
+<th>Identificerend</th>
+<td>Nee</td>
+</tr>
+<tr>
+<th>Kardinaliteit</th>
+<td>0..1</td>
 </tr>
 <tr>
 <th>Indicatie classificerend</th>
@@ -1919,11 +2101,15 @@ De organisatiecode.</td>
 <colgroup style="width: 70%"></colgroup>
 <tr>
 <th>Identificatie</th>
-<td>http://modellen.geostandaarden.nl/def/imso#Overheidsorganisatie.organisatiecode</td>
+<td>https://identifier.overheid.nl/tooi/def/ont/organisatiecode</td>
 </tr>
 <tr>
 <th>Naam</th>
 <td>organisatiecode</td>
+</tr>
+<tr>
+<th>Alias</th>
+<td>Organisatiecode</td>
 </tr>
 <tr>
 <th>Herkomst</th>
@@ -1942,12 +2128,16 @@ De organisatiecode.</td>
 <td>Deze is uniek voor elke organisatie en fungeert bovendien als local name (gegeven de namespace-conventies binnen de registers).</td>
 </tr>
 <tr>
+<th>Datum opname</th>
+<td>2022-03-30</td>
+</tr>
+<tr>
 <th>Identificerend</th>
 <td>Nee</td>
 </tr>
 <tr>
 <th>Kardinaliteit</th>
-<td>1..1</td>
+<td>1</td>
 </tr>
 <tr>
 <th>Indicatie classificerend</th>
@@ -2001,7 +2191,7 @@ De organisatiecode.</td>
 </tr>
 <tr>
 <th>Datum opname</th>
-<td>30-03-2022</td>
+<td>2022-03-30</td>
 </tr>
 <tbody>
 </tbody>
@@ -2025,6 +2215,10 @@ De organisatiecode.</td>
 </td>
 </tr>
 <tr>
+<th>Datum opname</th>
+<td>2022-03-30</td>
+</tr>
+<tr>
 <th>Mixin</th>
 <td>Nee</td>
 </tr>
@@ -2034,12 +2228,12 @@ De organisatiecode.</td>
 </section>
 
 <section class="notoc">
-<h5>Overzicht attribuutsoorten</h5>    
+<h5>Overzicht attribuutsoorten</h5>
 <table style="width: 100%">
 <colgroup style="width: 25%"></colgroup>
 <colgroup style="width: 50%"></colgroup>
-<colgroup style="width: 15%"></colgroup>
-<colgroup style="width: 10%"></colgroup>
+<colgroup style="width: 18%"></colgroup>
+<colgroup style="width: 7%"></colgroup>
 <tbody>
 <tr>
   <th>Naam</th>
@@ -2057,7 +2251,7 @@ Categorie waartoe het betreffende openbaar lichaam behoort.</td>
 <a class="link" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_enumeratie_type_regionaal_openbaar_lichaam">TypeRegionaalOpenbaarLichaam</a>
 </td>
 <td>
-1..1</td>
+1</td>
 </tr>
 </tbody>
 </table>
@@ -2065,12 +2259,12 @@ Categorie waartoe het betreffende openbaar lichaam behoort.</td>
 
 
 <section class="notoc">
-<h5>Overzicht Relatiesoorten</h5>    
+<h5>Overzicht Relatiesoorten</h5>
 <table style="width: 100%">
 <colgroup style="width: 25%"></colgroup>
 <colgroup style="width: 50%"></colgroup>
-<colgroup style="width: 15%"></colgroup>
-<colgroup style="width: 10%"></colgroup>
+<colgroup style="width: 18%"></colgroup>
+<colgroup style="width: 7%"></colgroup>
 <tbody>
 <tr>
   <th>Naam</th>
@@ -2088,7 +2282,7 @@ Relatie die aangeeft dat bestuurder het gebied bestuurt bestuurt.</td>
 <a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied">BestuurlijkGebied</a>
 </td>
 <td>
-1..1</td>
+0..*</td>
 </tr>
 </tbody>
 </table>
@@ -2104,7 +2298,7 @@ Relatie die aangeeft dat bestuurder het gebied bestuurt bestuurt.</td>
 <colgroup style="width: 70%"></colgroup>
 <tr>
 <th>Identificatie</th>
-<td>http://modellen.geostandaarden.nl/def/imso#RegionaalOpenbaarLichaam.type</td>
+<td>http://modellen.geostandaarden.nl/def/imso#type</td>
 </tr>
 <tr>
 <th>Naam</th>
@@ -2112,7 +2306,7 @@ Relatie die aangeeft dat bestuurder het gebied bestuurt bestuurt.</td>
 </tr>
 <tr>
 <th>Herkomst</th>
-<td>IMDiSGeo</td>
+<td>IMSO</td>
 </tr>
 <tr>
 <th>Definitie</th>
@@ -2120,11 +2314,11 @@ Relatie die aangeeft dat bestuurder het gebied bestuurt bestuurt.</td>
 </tr>
 <tr>
 <th>Herkomst definitie</th>
-<td>IMDiSGeo</td>
+<td>IMSO</td>
 </tr>
 <tr>
 <th>Datum opname</th>
-<td>17-08-2022</td>
+<td>2022-08-17</td>
 </tr>
 <tr>
 <th>Identificerend</th>
@@ -2132,7 +2326,7 @@ Relatie die aangeeft dat bestuurder het gebied bestuurt bestuurt.</td>
 </tr>
 <tr>
 <th>Kardinaliteit</th>
-<td>1..1</td>
+<td>1</td>
 </tr>
 <tr>
 <th>Indicatie classificerend</th>
@@ -2153,15 +2347,31 @@ Relatie die aangeeft dat bestuurder het gebied bestuurt bestuurt.</td>
 <colgroup style="width: 70%"></colgroup>
 <tr>
 <th>Identificatie</th>
-<td>http://modellen.geostandaarden.nl/def/imso#RegionaalOpenbaarLichaam.bestuurtGebied</td>
+<td>http://modellen.geostandaarden.nl/def/imso#bestuurtGebied</td>
 </tr>
 <tr>
 <th>Naam</th>
 <td>bestuurtGebied</td>
 </tr>
 <tr>
+<th>Alias</th>
+<td>bestuurt gebied</td>
+</tr>
+<tr>
+<th>Herkomst</th>
+<td>IMSO</td>
+</tr>
+<tr>
 <th>Definitie</th>
 <td>Relatie die aangeeft dat bestuurder het gebied bestuurt bestuurt.</td>
+</tr>
+<tr>
+<th>Herkomst definitie</th>
+<td>IMSO</td>
+</tr>
+<tr>
+<th>Datum opname</th>
+<td>2022-03-30</td>
 </tr>
 <tr>
 <th>Identificerend</th>
@@ -2169,11 +2379,11 @@ Relatie die aangeeft dat bestuurder het gebied bestuurt bestuurt.</td>
 </tr>
 <tr>
 <th>Kardinaliteit</th>
-<td>1..1</td>
+<td>0..*</td>
 </tr>
 <tr>
 <th>Kardinaliteit relatie bron</th>
-<td>0..*</td>
+<td>1</td>
 </tr>
 <tr>
 <th>Bron</th>
@@ -2244,6 +2454,10 @@ Relatie die aangeeft dat bestuurder het gebied bestuurt bestuurt.</td>
 </td>
 </tr>
 <tr>
+<th>Datum opname</th>
+<td>2022-05-11</td>
+</tr>
+<tr>
 <th>Mixin</th>
 <td>Nee</td>
 </tr>
@@ -2255,12 +2469,12 @@ Relatie die aangeeft dat bestuurder het gebied bestuurt bestuurt.</td>
 
 
 <section class="notoc">
-<h5>Overzicht Relatiesoorten</h5>    
+<h5>Overzicht Relatiesoorten</h5>
 <table style="width: 100%">
 <colgroup style="width: 25%"></colgroup>
 <colgroup style="width: 50%"></colgroup>
-<colgroup style="width: 15%"></colgroup>
-<colgroup style="width: 10%"></colgroup>
+<colgroup style="width: 18%"></colgroup>
+<colgroup style="width: 7%"></colgroup>
 <tbody>
 <tr>
   <th>Naam</th>
@@ -2278,7 +2492,7 @@ Ruimte waarover de gemeente op basis van wet- of regelgeving de politieke regie 
 <a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_gemeentegebied">Gemeentegebied</a>
 </td>
 <td>
-1..1</td>
+1</td>
 </tr>
 </tbody>
 </table>
@@ -2295,15 +2509,31 @@ Ruimte waarover de gemeente op basis van wet- of regelgeving de politieke regie 
 <colgroup style="width: 70%"></colgroup>
 <tr>
 <th>Identificatie</th>
-<td>http://modellen.geostandaarden.nl/def/imso#Gemeente.bestuurtGemeentegebied</td>
+<td>http://modellen.geostandaarden.nl/def/imso#bestuurtGemeentegebied</td>
 </tr>
 <tr>
 <th>Naam</th>
 <td>bestuurtGemeentegebied</td>
 </tr>
 <tr>
+<th>Alias</th>
+<td>bestuurt gemeentegebied</td>
+</tr>
+<tr>
+<th>Herkomst</th>
+<td>IMSO</td>
+</tr>
+<tr>
 <th>Definitie</th>
 <td>Ruimte waarover de gemeente op basis van wet- of regelgeving de politieke regie voert.</td>
+</tr>
+<tr>
+<th>Herkomst definitie</th>
+<td>IMSO</td>
+</tr>
+<tr>
+<th>Datum opname</th>
+<td>2022-03-30</td>
 </tr>
 <tr>
 <th>Identificerend</th>
@@ -2311,11 +2541,11 @@ Ruimte waarover de gemeente op basis van wet- of regelgeving de politieke regie 
 </tr>
 <tr>
 <th>Kardinaliteit</th>
-<td>1..1</td>
+<td>1</td>
 </tr>
 <tr>
 <th>Kardinaliteit relatie bron</th>
-<td>1..1</td>
+<td>1</td>
 </tr>
 <tr>
 <th>Bron</th>
@@ -2386,6 +2616,10 @@ Ruimte waarover de gemeente op basis van wet- of regelgeving de politieke regie 
 </td>
 </tr>
 <tr>
+<th>Datum opname</th>
+<td>2022-04-20</td>
+</tr>
+<tr>
 <th>Mixin</th>
 <td>Nee</td>
 </tr>
@@ -2397,12 +2631,12 @@ Ruimte waarover de gemeente op basis van wet- of regelgeving de politieke regie 
 
 
 <section class="notoc">
-<h5>Overzicht Relatiesoorten</h5>    
+<h5>Overzicht Relatiesoorten</h5>
 <table style="width: 100%">
 <colgroup style="width: 25%"></colgroup>
 <colgroup style="width: 50%"></colgroup>
-<colgroup style="width: 15%"></colgroup>
-<colgroup style="width: 10%"></colgroup>
+<colgroup style="width: 18%"></colgroup>
+<colgroup style="width: 7%"></colgroup>
 <tbody>
 <tr>
   <th>Naam</th>
@@ -2420,7 +2654,7 @@ Ruimte waarover de provincie op basis van wet- of regelgeving de politieke regie
 <a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_provinciegebied">Provinciegebied</a>
 </td>
 <td>
-1..1</td>
+1</td>
 </tr>
 </tbody>
 </table>
@@ -2437,15 +2671,31 @@ Ruimte waarover de provincie op basis van wet- of regelgeving de politieke regie
 <colgroup style="width: 70%"></colgroup>
 <tr>
 <th>Identificatie</th>
-<td>http://modellen.geostandaarden.nl/def/imso#Provincie.bestuurtProvinciegebied</td>
+<td>http://modellen.geostandaarden.nl/def/imso#bestuurtProvinciegebied</td>
 </tr>
 <tr>
 <th>Naam</th>
 <td>bestuurtProvinciegebied</td>
 </tr>
 <tr>
+<th>Alias</th>
+<td>bestuurt provinciegebied</td>
+</tr>
+<tr>
+<th>Herkomst</th>
+<td>EMSO</td>
+</tr>
+<tr>
 <th>Definitie</th>
 <td>Ruimte waarover de provincie op basis van wet- of regelgeving de politieke regie voert.</td>
+</tr>
+<tr>
+<th>Herkomst definitie</th>
+<td>EMSO</td>
+</tr>
+<tr>
+<th>Datum opname</th>
+<td>2022-04-20</td>
 </tr>
 <tr>
 <th>Identificerend</th>
@@ -2453,11 +2703,11 @@ Ruimte waarover de provincie op basis van wet- of regelgeving de politieke regie
 </tr>
 <tr>
 <th>Kardinaliteit</th>
-<td>1..1</td>
+<td>1</td>
 </tr>
 <tr>
 <th>Kardinaliteit relatie bron</th>
-<td>1..1</td>
+<td>1</td>
 </tr>
 <tr>
 <th>Bron</th>
@@ -2532,6 +2782,10 @@ Ruimte waarover de provincie op basis van wet- of regelgeving de politieke regie
 </td>
 </tr>
 <tr>
+<th>Datum opname</th>
+<td>2022-04-20</td>
+</tr>
+<tr>
 <th>Mixin</th>
 <td>Nee</td>
 </tr>
@@ -2543,12 +2797,12 @@ Ruimte waarover de provincie op basis van wet- of regelgeving de politieke regie
 
 
 <section class="notoc">
-<h5>Overzicht Relatiesoorten</h5>    
+<h5>Overzicht Relatiesoorten</h5>
 <table style="width: 100%">
 <colgroup style="width: 25%"></colgroup>
 <colgroup style="width: 50%"></colgroup>
-<colgroup style="width: 15%"></colgroup>
-<colgroup style="width: 10%"></colgroup>
+<colgroup style="width: 18%"></colgroup>
+<colgroup style="width: 7%"></colgroup>
 <tbody>
 <tr>
   <th>Naam</th>
@@ -2566,7 +2820,7 @@ Ruimte waarover het Rijk op basis van wet- of regelgeving de politieke regie voe
 <a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_aansluitende_zone">AansluitendeZone</a>
 </td>
 <td>
-1..1</td>
+1</td>
 </tr>
 <tr>
 <td>
@@ -2578,7 +2832,7 @@ Ruimte van de zeebodem en de ondergrond daarvan, buiten en grenzend aan de terri
 <a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_continentaal_plat">ContinentaalPlat</a>
 </td>
 <td>
-1..1</td>
+1</td>
 </tr>
 <tr>
 <td>
@@ -2590,7 +2844,7 @@ Ruimte waarover het Rijk op basis van wet- of regelgeving de politieke regie voe
 <a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_rijksgebied">Rijksgebied</a>
 </td>
 <td>
-1..1</td>
+1</td>
 </tr>
 <tr>
 <td>
@@ -2602,7 +2856,7 @@ Ruimte waarover het Rijk op basis van wet- of regelgeving de politieke regie voe
 <a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_territoriale_zee">TerritorialeZee</a>
 </td>
 <td>
-1..1</td>
+1</td>
 </tr>
 <tr>
 <td>
@@ -2614,7 +2868,7 @@ Ruimte waarover het Rijk op basis van wet- of regelgeving de politieke regie voe
 <a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_exclusieve_economische_zone">ExclusieveEconomischeZone</a>
 </td>
 <td>
-1..1</td>
+1</td>
 </tr>
 </tbody>
 </table>
@@ -2631,15 +2885,31 @@ Ruimte waarover het Rijk op basis van wet- of regelgeving de politieke regie voe
 <colgroup style="width: 70%"></colgroup>
 <tr>
 <th>Identificatie</th>
-<td>http://modellen.geostandaarden.nl/def/imso#Rijk.bestuurtAansluitendeZone</td>
+<td>http://modellen.geostandaarden.nl/def/imso#bestuurtAansluitendeZone</td>
 </tr>
 <tr>
 <th>Naam</th>
 <td>bestuurtAansluitendeZone</td>
 </tr>
 <tr>
+<th>Alias</th>
+<td>bestuurt aansluitende zone</td>
+</tr>
+<tr>
+<th>Herkomst</th>
+<td>EMSO</td>
+</tr>
+<tr>
 <th>Definitie</th>
 <td>Ruimte waarover het Rijk op basis van wet- of regelgeving de politieke regie voert op zee, tot 24 zeemijlen vanaf de laagwaterlijn.</td>
+</tr>
+<tr>
+<th>Herkomst definitie</th>
+<td>EMSO</td>
+</tr>
+<tr>
+<th>Datum opname</th>
+<td>2022-04-20</td>
 </tr>
 <tr>
 <th>Identificerend</th>
@@ -2647,11 +2917,11 @@ Ruimte waarover het Rijk op basis van wet- of regelgeving de politieke regie voe
 </tr>
 <tr>
 <th>Kardinaliteit</th>
-<td>1..1</td>
+<td>1</td>
 </tr>
 <tr>
 <th>Kardinaliteit relatie bron</th>
-<td>1..1</td>
+<td>1</td>
 </tr>
 <tr>
 <th>Bron</th>
@@ -2670,15 +2940,31 @@ Ruimte waarover het Rijk op basis van wet- of regelgeving de politieke regie voe
 <colgroup style="width: 70%"></colgroup>
 <tr>
 <th>Identificatie</th>
-<td>http://modellen.geostandaarden.nl/def/imso#Rijk.bestuurtContinentaalPlat</td>
+<td>http://modellen.geostandaarden.nl/def/imso#bestuurtContinentaalPlat</td>
 </tr>
 <tr>
 <th>Naam</th>
 <td>bestuurtContinentaalPlat</td>
 </tr>
 <tr>
+<th>Alias</th>
+<td>bestuurt continentaal plat</td>
+</tr>
+<tr>
+<th>Herkomst</th>
+<td>EMSO</td>
+</tr>
+<tr>
 <th>Definitie</th>
 <td>Ruimte van de zeebodem en de ondergrond daarvan, buiten en grenzend aan de territoriale zee, waarover het Rijk op basis van wet- of regelgeving de politieke regie voert</td>
+</tr>
+<tr>
+<th>Herkomst definitie</th>
+<td>EMSO</td>
+</tr>
+<tr>
+<th>Datum opname</th>
+<td>2022-04-20</td>
 </tr>
 <tr>
 <th>Identificerend</th>
@@ -2686,11 +2972,11 @@ Ruimte waarover het Rijk op basis van wet- of regelgeving de politieke regie voe
 </tr>
 <tr>
 <th>Kardinaliteit</th>
-<td>1..1</td>
+<td>1</td>
 </tr>
 <tr>
 <th>Kardinaliteit relatie bron</th>
-<td>1..1</td>
+<td>1</td>
 </tr>
 <tr>
 <th>Bron</th>
@@ -2709,15 +2995,31 @@ Ruimte waarover het Rijk op basis van wet- of regelgeving de politieke regie voe
 <colgroup style="width: 70%"></colgroup>
 <tr>
 <th>Identificatie</th>
-<td>http://modellen.geostandaarden.nl/def/imso#Rijk.bestuurtRijksgebied</td>
+<td>http://modellen.geostandaarden.nl/def/imso#bestuurtRijksgebied</td>
 </tr>
 <tr>
 <th>Naam</th>
 <td>bestuurtRijksgebied</td>
 </tr>
 <tr>
+<th>Alias</th>
+<td>bestuurt rijksgebied</td>
+</tr>
+<tr>
+<th>Herkomst</th>
+<td>EMSO</td>
+</tr>
+<tr>
 <th>Definitie</th>
 <td>Ruimte waarover het Rijk op basis van wet- of regelgeving de politieke regie voert op land.</td>
+</tr>
+<tr>
+<th>Herkomst definitie</th>
+<td>EMSO</td>
+</tr>
+<tr>
+<th>Datum opname</th>
+<td>2022-04-20</td>
 </tr>
 <tr>
 <th>Identificerend</th>
@@ -2725,11 +3027,11 @@ Ruimte waarover het Rijk op basis van wet- of regelgeving de politieke regie voe
 </tr>
 <tr>
 <th>Kardinaliteit</th>
-<td>1..1</td>
+<td>1</td>
 </tr>
 <tr>
 <th>Kardinaliteit relatie bron</th>
-<td>1..1</td>
+<td>1</td>
 </tr>
 <tr>
 <th>Bron</th>
@@ -2748,15 +3050,31 @@ Ruimte waarover het Rijk op basis van wet- of regelgeving de politieke regie voe
 <colgroup style="width: 70%"></colgroup>
 <tr>
 <th>Identificatie</th>
-<td>http://modellen.geostandaarden.nl/def/imso#Rijk.bestuurtTerritorialeZee</td>
+<td>http://modellen.geostandaarden.nl/def/imso#bestuurtTerritorialeZee</td>
 </tr>
 <tr>
 <th>Naam</th>
 <td>bestuurtTerritorialeZee</td>
 </tr>
 <tr>
+<th>Alias</th>
+<td>bestuurt territoriale zee</td>
+</tr>
+<tr>
+<th>Herkomst</th>
+<td>EMSO</td>
+</tr>
+<tr>
 <th>Definitie</th>
 <td>Ruimte waarover het Rijk op basis van wet- of regelgeving de politieke regie voert op zee, tot 12 zeemijlen uit de kust.</td>
+</tr>
+<tr>
+<th>Herkomst definitie</th>
+<td>EMSO</td>
+</tr>
+<tr>
+<th>Datum opname</th>
+<td>2022-04-20</td>
 </tr>
 <tr>
 <th>Identificerend</th>
@@ -2764,11 +3082,11 @@ Ruimte waarover het Rijk op basis van wet- of regelgeving de politieke regie voe
 </tr>
 <tr>
 <th>Kardinaliteit</th>
-<td>1..1</td>
+<td>1</td>
 </tr>
 <tr>
 <th>Kardinaliteit relatie bron</th>
-<td>1..1</td>
+<td>1</td>
 </tr>
 <tr>
 <th>Bron</th>
@@ -2787,15 +3105,31 @@ Ruimte waarover het Rijk op basis van wet- of regelgeving de politieke regie voe
 <colgroup style="width: 70%"></colgroup>
 <tr>
 <th>Identificatie</th>
-<td>http://modellen.geostandaarden.nl/def/imso#Rijk.bestuurtExclusieveEconomischeZone</td>
+<td>http://modellen.geostandaarden.nl/def/imso#bestuurtExclusieveEconomischeZone</td>
 </tr>
 <tr>
 <th>Naam</th>
 <td>bestuurtExclusieveEconomischeZone</td>
 </tr>
 <tr>
+<th>Alias</th>
+<td>bestuurt exclusieve economische zone</td>
+</tr>
+<tr>
+<th>Herkomst</th>
+<td>EMSO</td>
+</tr>
+<tr>
 <th>Definitie</th>
 <td>Ruimte waarover het Rijk op basis van wet- of regelgeving de politieke regie voert op zee, tot 200 zeemijlen vanaf de laagwaterlijn.</td>
+</tr>
+<tr>
+<th>Herkomst definitie</th>
+<td>EMSO</td>
+</tr>
+<tr>
+<th>Datum opname</th>
+<td>2022-04-20</td>
 </tr>
 <tr>
 <th>Identificerend</th>
@@ -2803,11 +3137,11 @@ Ruimte waarover het Rijk op basis van wet- of regelgeving de politieke regie voe
 </tr>
 <tr>
 <th>Kardinaliteit</th>
-<td>1..1</td>
+<td>1</td>
 </tr>
 <tr>
 <th>Kardinaliteit relatie bron</th>
-<td>1..1</td>
+<td>1</td>
 </tr>
 <tr>
 <th>Bron</th>
@@ -2878,6 +3212,10 @@ Ruimte waarover het Rijk op basis van wet- of regelgeving de politieke regie voe
 </td>
 </tr>
 <tr>
+<th>Datum opname</th>
+<td>2022-05-11</td>
+</tr>
+<tr>
 <th>Mixin</th>
 <td>Nee</td>
 </tr>
@@ -2889,12 +3227,12 @@ Ruimte waarover het Rijk op basis van wet- of regelgeving de politieke regie voe
 
 
 <section class="notoc">
-<h5>Overzicht Relatiesoorten</h5>    
+<h5>Overzicht Relatiesoorten</h5>
 <table style="width: 100%">
 <colgroup style="width: 25%"></colgroup>
 <colgroup style="width: 50%"></colgroup>
-<colgroup style="width: 15%"></colgroup>
-<colgroup style="width: 10%"></colgroup>
+<colgroup style="width: 18%"></colgroup>
+<colgroup style="width: 7%"></colgroup>
 <tbody>
 <tr>
   <th>Naam</th>
@@ -2912,7 +3250,7 @@ Ruimte waarover het waterschap op basis van wet- of regelgeving de politieke reg
 <a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_waterschapsgebied">Waterschapsgebied</a>
 </td>
 <td>
-1..1</td>
+1</td>
 </tr>
 </tbody>
 </table>
@@ -2929,15 +3267,31 @@ Ruimte waarover het waterschap op basis van wet- of regelgeving de politieke reg
 <colgroup style="width: 70%"></colgroup>
 <tr>
 <th>Identificatie</th>
-<td>http://modellen.geostandaarden.nl/def/imso#Waterschap.bestuurtWaterschapsgebied</td>
+<td>http://modellen.geostandaarden.nl/def/imso#bestuurtWaterschapsgebied</td>
 </tr>
 <tr>
 <th>Naam</th>
 <td>bestuurtWaterschapsgebied</td>
 </tr>
 <tr>
+<th>Alias</th>
+<td>bestuurt waterschapsgebied</td>
+</tr>
+<tr>
+<th>Herkomst</th>
+<td>EMSO</td>
+</tr>
+<tr>
 <th>Definitie</th>
 <td>Ruimte waarover het waterschap op basis van wet- of regelgeving de politieke regie voert.</td>
+</tr>
+<tr>
+<th>Herkomst definitie</th>
+<td>EMSO</td>
+</tr>
+<tr>
+<th>Datum opname</th>
+<td>2022-04-20</td>
 </tr>
 <tr>
 <th>Identificerend</th>
@@ -2945,11 +3299,11 @@ Ruimte waarover het waterschap op basis van wet- of regelgeving de politieke reg
 </tr>
 <tr>
 <th>Kardinaliteit</th>
-<td>1..1</td>
+<td>1</td>
 </tr>
 <tr>
 <th>Kardinaliteit relatie bron</th>
-<td>1..1</td>
+<td>1</td>
 </tr>
 <tr>
 <th>Bron</th>
@@ -3020,6 +3374,10 @@ Ruimte waarover het waterschap op basis van wet- of regelgeving de politieke reg
 </td>
 </tr>
 <tr>
+<th>Datum opname</th>
+<td>2022-05-11</td>
+</tr>
+<tr>
 <th>Mixin</th>
 <td>Nee</td>
 </tr>
@@ -3031,12 +3389,12 @@ Ruimte waarover het waterschap op basis van wet- of regelgeving de politieke reg
 
 
 <section class="notoc">
-<h5>Overzicht Relatiesoorten</h5>    
+<h5>Overzicht Relatiesoorten</h5>
 <table style="width: 100%">
 <colgroup style="width: 25%"></colgroup>
 <colgroup style="width: 50%"></colgroup>
-<colgroup style="width: 15%"></colgroup>
-<colgroup style="width: 10%"></colgroup>
+<colgroup style="width: 18%"></colgroup>
+<colgroup style="width: 7%"></colgroup>
 <tbody>
 <tr>
   <th>Naam</th>
@@ -3054,7 +3412,7 @@ Ruimte waarover de veiligheidsregio  op basis van wet- of regelgeving de politie
 <a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_veiligheidsregiogebied">Veiligheidsregiogebied</a>
 </td>
 <td>
-1..1</td>
+1</td>
 </tr>
 </tbody>
 </table>
@@ -3071,15 +3429,31 @@ Ruimte waarover de veiligheidsregio  op basis van wet- of regelgeving de politie
 <colgroup style="width: 70%"></colgroup>
 <tr>
 <th>Identificatie</th>
-<td>http://modellen.geostandaarden.nl/def/imso#Veiligheidsregio.bestuurtVeiligheidsregiogebied</td>
+<td>http://modellen.geostandaarden.nl/def/imso#bestuurtVeiligheidsregiogebied</td>
 </tr>
 <tr>
 <th>Naam</th>
 <td>bestuurtVeiligheidsregiogebied</td>
 </tr>
 <tr>
+<th>Alias</th>
+<td>bestuurt veiligheidsregiogebied</td>
+</tr>
+<tr>
+<th>Herkomst</th>
+<td>EMSO</td>
+</tr>
+<tr>
 <th>Definitie</th>
 <td>Ruimte waarover de veiligheidsregio  op basis van wet- of regelgeving de politieke regie voert van brandweerzorg, rampenbeheersing, crisisbeheersing, geneeskundige hulpverlening en handhaving van de openbare orde en veiligheid.</td>
+</tr>
+<tr>
+<th>Herkomst definitie</th>
+<td>EMSO</td>
+</tr>
+<tr>
+<th>Datum opname</th>
+<td>2022-05-11</td>
 </tr>
 <tr>
 <th>Identificerend</th>
@@ -3087,11 +3461,11 @@ Ruimte waarover de veiligheidsregio  op basis van wet- of regelgeving de politie
 </tr>
 <tr>
 <th>Kardinaliteit</th>
-<td>1..1</td>
+<td>1</td>
 </tr>
 <tr>
 <th>Kardinaliteit relatie bron</th>
-<td>1..1</td>
+<td>1</td>
 </tr>
 <tr>
 <th>Bron</th>
@@ -3131,6 +3505,18 @@ Ruimte waarover de veiligheidsregio  op basis van wet- of regelgeving de politie
 <td>Type regionaal openbaar lichaam</td>
 </tr>
 <tr>
+<th>Herkomst</th>
+<td>IMSO</td>
+</tr>
+<tr>
+<th>Definitie</th>
+<td>Categorisering van een regionaal openbaar lichaam.</td>
+</tr>
+<tr>
+<th>Herkomst definitie</th>
+<td>IMSO</td>
+</tr>
+<tr>
 <th>Datum opname</th>
 <td>2022-06-01</td>
 </tr>
@@ -3140,7 +3526,7 @@ Ruimte waarover de veiligheidsregio  op basis van wet- of regelgeving de politie
 
 
 <section class="notoc">
-<h5>Overzicht waarden</h5>    
+<h5>Overzicht waarden</h5>
 <table style="width: 100%">
 <colgroup style="width: 25%"></colgroup>
 <colgroup style="width: 75%"></colgroup>
@@ -3363,19 +3749,3 @@ waterschap</td>
 </tbody>
 </table>
 </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
