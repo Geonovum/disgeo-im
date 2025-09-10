@@ -9,5 +9,5 @@ Bij het modelleren van bestuurlijke gebieden zijn de volgende principes gehantee
 1. Een 'Registratieve ruimte' is een subklasse van een NEN3610:2022-objecttype 'Geo-object'.
 1. Een 'Geo-object' beschikt over de attributen 'identificatie' en 'domein', aan de hand waarvan alle subklassen geïdentificeerd kunnen worden.
 1. Het objecttype 'Openbare lichaam' heeft in dit model geen superklasse.
-1. Een 'Bestuurlijk gebied' bestaat uit de subklassen 'Territoriaal-' of 'Maritiem bestuurlijk gebied'. Hiermee maakt het model onderscheid tussen bestuurlijke gebieden op land en op zee.
+1. Een 'Bestuurlijk gebied' bestaat uit de subklassen 'Bestuurlijk gebied op land' of 'Bestuurlijk gebied op zee'. Hiermee maakt het model onderscheid tussen bestuurlijke gebieden op land en op zee.
 1. Een 'Bestuurlijk gebied' wordt altijd bestuurt door openbaar lichaam van hetzelfde type (bijv. 'Gemeente' bestuurt een 'Gemeentegebied').

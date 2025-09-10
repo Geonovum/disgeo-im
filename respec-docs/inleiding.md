@@ -1,13 +1,12 @@
 # Inleiding
 
-<!-- Het IMSO beschrijft hoe objecten in de fysieke werkelijkheid met elkaar samenhangen. Hierin kunnen de basisregistratie adressen en gebouwen (BAG) en de basisregistratie grootschalige topografie (BGT) in samenhang bevraagd worden. Daarnaast is het de bedoeling dat ook het gedeelte van de WOZ-administratie waarin objectgegevens zijn opgenomen en een aantal basisgegevens uit aanpalende registraties hieraan gekoppeld worden. Ook zijn er belangrijke raakvlakken met de basisregistratie topografie (BRT) en het Nationaal Wegenbestand. -->
+Het Informatiemodel Samenhangende Objecten (IMSO) beschrijft hoe objecten in de fysieke werkelijkheid, zoals vastgelegd in verschillende geo-basisregistraties, met elkaar samenhangen. Dit model maakt het mogelijk om gegevens uit onder andere de Basisregistratie Adressen en Gebouwen (BAG), de Basisregistratie Grootschalige Topografie (BGT), de Basisregistratie Topografie (BRT) en delen van de Waarde Onroerende Zaken (WOZ) in samenhang te bevragen en te gebruiken. 
 
-TODO
+Een belangrijk onderdeel van het IMSO is het thema Bestuurlijke Gebieden. Dit thema beschrijft de afbakening en relaties van bestuurlijke gebieden, zoals gemeenten, provincies, waterschappen en maritieme zones, en hun relatie tot de verantwoordelijke overheidsorganisaties.
 
 ## Doel
 
-<!-- Tussen verschillende informatiemodellen van de geo-basisregistraties heeft in de loop van de jaren afstemming plaatsgevonden. Toch is er nog steeds sprake van een gebrekkige aansluiting tussen deze verschillende informatiemodellen. Met het IMSO wordt beoogd om meer samenhang aan te brengen tussen de verschillende objecttypen en de eigenschappen die daarover worden bijgehouden. Hiermee kunnen bijhoudingsprocessen worden vereenvoudigd, de informatievoorziening flexibeler worden opgezet en de wensen van gebruikers om meer samenhangende informatie worden ingewilligd. -->
-TODO?
+Het IMSO beoogt meer samenhang aan te brengen tussen verschillende objecttypen en hun eigenschappen binnen de geo-basisregistraties. Hierdoor kunnen bijhoudingsprocessen worden vereenvoudigd, de informatievoorziening flexibeler worden ingericht en wordt beter voldaan aan de behoefte aan samenhangende informatie.
 
 ## Achtergrond en scope
 
