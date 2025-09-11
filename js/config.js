@@ -40,7 +40,7 @@ let respecConfig = {
 
   //-- publishDate is verplicht -------------------------------------------------------
   //-- NB: in de werkversie uitzetten, want dan pakt Respec de pushdate ---------------
-  publishDate: "2025-05-16",
+  //publishDate: "2025-05-16",
   //eventueel is het mogelijk een versienummer mee te geven, maar bij Geonovum werken we gewoonlijk alleen met datum als onderdeel van de permanente URI.
   //publishVersion: "0.0.2",
   //previousVersion: "0.0.1",
@@ -54,7 +54,7 @@ let respecConfig = {
   editors: 
   [
     {
-      name:       "Gerard Trouborst",
+      name:       "Linda van den Brink",
       company:    "Geonovum",
       companyURL: "https://www.geonovum.nl"
     },
@@ -65,11 +65,6 @@ let respecConfig = {
   authors: 
   [
     {
-      name:       "Gabriella Wiersma",
-      company:    "Geonovum",
-      companyURL: "https://www.geonovum.nl"
-    }, 
-    {
       name:       "Linda van den Brink",
       company:    "Geonovum",
       companyURL: "https://www.geonovum.nl"
@@ -78,12 +73,7 @@ let respecConfig = {
       name:       "Pano Maria",
       company:    "Skemu",
       companyURL: "https://skemu.com/"
-    },
-    {
-      name:       "Gerard Trouborst",
-      company:    "Geonovum",
-      companyURL: "https://www.geonovum.nl"
-    },
+    },    
   ],
 
   //neem hier de URL van de github repository op waar het respec document in staat
