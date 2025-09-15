@@ -1609,7 +1609,7 @@ Deze grens is inclusief de grote wateren die niet door de waterschappen beheerd 
 <tr>
 <th>Begrip</th>
 <td>
-<a href="http://begrippen.geostandaarden.nl/disgeo/id/begrip/veiligheidregiogebied">http://begrippen.geostandaarden.nl/disgeo/id/begrip/veiligheidregiogebied</a>
+<a href="http://begrippen.geostandaarden.nl/disgeo/id/begrip/veiligheidsregiogebied">http://begrippen.geostandaarden.nl/disgeo/id/begrip/veiligheidsregiogebied</a>
 </td>
 </tr>
 <tr>
@@ -1933,6 +1933,11 @@ Object dat door het bevoegd gezag is ingetrokken op grond van wet- of regelgevin
 <td>TOOI - Ontologie 1.6.2</td>
 </tr>
 <tr>
+<th>Begrip</th>
+<td>
+<a href="http://begrippen.geostandaarden.nl/disgeo/id/begrip/overheidsorganisatie">http://begrippen.geostandaarden.nl/disgeo/id/begrip/overheidsorganisatie</a>
+</td>
+<tr>
 <th>Datum opname</th>
 <td>2022-03-30</td>
 </tr>
@@ -2128,6 +2133,12 @@ De organisatiecode.</td>
 <td>Deze is uniek voor elke organisatie en fungeert bovendien als local name (gegeven de namespace-conventies binnen de registers).</td>
 </tr>
 <tr>
+<th>Begrip</th>
+<td>
+<a href="http://begrippen.geostandaarden.nl/disgeo/id/begrip/organisatiecode">http://begrippen.geostandaarden.nl/disgeo/id/begrip/organisatiecode</a>
+</td>
+</tr>
+<tr>
 <th>Datum opname</th>
 <td>2022-03-30</td>
 </tr>
@@ -2186,7 +2197,7 @@ De organisatiecode.</td>
 <tr>
 <th>Begrip</th>
 <td>
-<a href="http://begrippen.geostandaarden.nl/disgeo/id/begrip/openbaar_lichaam">http://begrippen.geostandaarden.nl/disgeo/id/begrip/openbaar_lichaam</a>
+<a href="http://begrippen.geostandaarden.nl/disgeo/id/begrip/regionaal_openbaar_lichaam">http://begrippen.geostandaarden.nl/disgeo/id/begrip/regionaal_openbaar_lichaam</a>
 </td>
 </tr>
 <tr>
@@ -2399,6 +2410,8 @@ Relatie die aangeeft dat bestuurder het gebied bestuurt bestuurt.</td>
 
 #### Gemeente {#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_gemeente}
 
+<div data-include-format="markdown" data-include="model-docs/gemeente-detail.md"></div>
+
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
 <colgroup style="width: 70%"></colgroup>
@@ -2561,6 +2574,8 @@ Ruimte waarover de gemeente op basis van wet- of regelgeving de politieke regie 
 
 #### Provincie {#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_provincie}
 
+<div data-include-format="markdown" data-include="model-docs/provincie-detail.md"></div>
+
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
 <colgroup style="width: 70%"></colgroup>
@@ -2722,6 +2737,8 @@ Ruimte waarover de provincie op basis van wet- of regelgeving de politieke regie
 </section>
 
 #### Rijk {#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_rijk}
+
+<div data-include-format="markdown" data-include="model-docs/rijk-detail.md"></div>
 
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
@@ -3157,6 +3174,8 @@ Ruimte waarover het Rijk op basis van wet- of regelgeving de politieke regie voe
 
 #### Waterschap {#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_waterschap}
 
+<div data-include-format="markdown" data-include="model-docs/waterschap-detail.md"></div>
+
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
 <colgroup style="width: 70%"></colgroup>
@@ -3318,6 +3337,8 @@ Ruimte waarover het waterschap op basis van wet- of regelgeving de politieke reg
 </section>
 
 #### Veiligheidsregio {#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_veiligheidsregio}
+
+<div data-include-format="markdown" data-include="model-docs/veiligheidsregio-detail.md"></div>
 
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
