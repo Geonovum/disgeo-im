@@ -36,14 +36,6 @@ De levenscyclus van een bestuurlijk gebied volgt de levencyclus is afhankelijk v
 Een regionaal openbaar lichaam is een overheidsorganisatie die bepaalde taken uitvoert binnen een bepaald _ruimtelijk_ gebied. De belangrijkste regionale openbare lichamen zijn het Rijk, de provincies, de gemeenten en de waterschappen, maar ook veiligheidsregio's behoren hiertoe.
 Regionale openbare lichamen hebben met elkaar gemeen dat ze een bestuursgebied hebben — andere overheidsorganisaties hebben dat niet. [[TOOI-ONT-1.6.2]]
 
-<!-- <aside class="example" title="Definiëren van Openbaar Lichaam">
-   <p>In wetgeving wordt een <i>Openbaar lichaam</i> weliswaar niet gedefinieerd, maar het komt er wel in voor. Uit verschillende wetsartikelen valt af te leiden wat ermee bedoeld wordt (zie: voorbeeld). Uit <a href="https://wetten.overheid.nl/jci1.3:c:BWBR0004287&artikel=6&z=2022-05-01&g=2022-05-01">artikel 6 van de bekendmakingswet</a>, valt, in combinatie met de artikelen 1 en 2, af te leiden wat een <i>Openbaar lichaam</i> is:</p>
-
-   <p><q><i>Algemeen verbindende voorschriften</i>, (...) <i>vastgesteld door een bestuursorgaan dat behoort tot een van de in artikel 2, eerste tot en met vierde lid, genoemde openbare lichamen, of de in artikel 2, vijfde lid, genoemde openbare lichamen,</i> (...), <i>worden bekendgemaakt door plaatsing in het door dat openbaar lichaam,</i> (...) <i>uitgegeven publicatieblad</i>."</q></p>
-
-   <p>Verder zijn er naast de bekende openbare lichamen, ook minder bekende, zoals wanneer voor de heffing of de invordering van gemeentelijke belastingen een gemeenschappelijke regeling is getroffen en bij die regeling een openbaar lichaam is ingesteld. Dat betekent dat een aantal gemeenten samenwerken om de gemeentelijke belastingen binnen te halen en daarvoor een gezamenlijke organisatie hebben opgericht. Vooralsnog blijven deze typen openbare lichamen de bijbehorende bestuurlijke gebieden in het model buiten beschouwing. Bovendien is een gemeente, net als een provincie en een waterschap, ook nog een (publiekrechtelijke) rechtspersoon. Ook dit valt buiten beschouwing.</p>
-</aside> -->
-
 #### Bestuurlijk gebied
 Een *bestuurlijk gebied*, ook wel bestuursgebied genoemd, is het grondgebied waarover het bestuursorgaan haar invloed uitoefent. Een bestuurlijk gebied is dus niet hetzelfde als het voor het gebied verantwoordelijke bestuur. Het _gebied_ en het _bestuur_ zijn weliswaar aan elkaar gerelateerd, maar hebben hun eigen unieke eigenschappen. Een bestuurlijk gebied heeft zelf geen naam, maar alleen een ruimtelijke aanduiding in de vorm van een geometrie. De naam waarmee men in het dagelijkse spraakgebruik het grondgebied associeert, is de formele naam van het gerelateerde openbare lichaam, bijvoorbeeld 'Apeldoorn' of 'Zeeland'.
 
