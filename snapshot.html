@@ -146,17 +146,6 @@ dd{margin-left:0}
 img.license{float:left;padding-right:5px;background:0 0}
 </style>
 <meta name="color-scheme" content="light">
-<style>
-ul.index{columns:30ch;column-gap:1.5em}
-ul.index li{list-style:inherit}
-ul.index li span{color:inherit;cursor:pointer;white-space:normal}
-#index-defined-here ul.index li{font-size:.9rem}
-ul.index code{color:inherit}
-#index-defined-here .print-only{display:none}
-@media print{
-#index-defined-here .print-only{display:initial}
-}
-</style>
 <meta name="description" content="Bestuurlijke gebieden zijn die gebieden waarbinnen het Rijk, gemeenten, provincies, waterschappen en samenwerkingsverbanden zoals veiligheidsregio’s bestuurlijke verantwoordelijkheid uitoefenen. Ook de grenzen op zee die de maritieme zones ruimtelijk afbakenen, beschouwen wij als onderdeel van de bestuurlijke gebieden. Hieronder vallen de territoriale zee, de aansluitende en economische zone en het continentaal plat.">
 <style>
 
@@ -579,7 +568,7 @@ ul.index code{color:inherit}
     <h2>
       Geonovum Informatiemodel<br>
       Document
-      <time class="dt-published" datetime="2025-09-16">16 september 2025</time>
+      <time class="dt-published" datetime="2025-09-22">22 september 2025</time>
     </h2>
     <dl>
       
@@ -622,7 +611,7 @@ ul.index code{color:inherit}
   <section id="abstract" data-format="markdown" class="introductory"><h2>Samenvatting</h2><p>Bestuurlijke gebieden zijn die gebieden waarbinnen het Rijk, gemeenten, provincies, waterschappen en samenwerkingsverbanden zoals veiligheidsregio’s bestuurlijke verantwoordelijkheid uitoefenen. Ook de grenzen op zee die de maritieme zones ruimtelijk afbakenen, beschouwen wij als onderdeel van de bestuurlijke gebieden. Hieronder vallen de territoriale zee, de aansluitende en economische zone en het continentaal plat.</p>
 <p>Dit conceptueel informatiemodel beschrijft deze bestuurlijke gebieden en de organisaties die deze gebieden besturen.</p>
 </section>        
-  <section id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is een document zonder officiële status.</p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#inleiding"><bdi class="secno">1. </bdi>Inleiding</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#doel"><bdi class="secno">1.1 </bdi>Doel</a></li><li class="tocline"><a class="tocxref" href="#achtergrond-en-scope"><bdi class="secno">1.2 </bdi>Achtergrond en scope</a></li><li class="tocline"><a class="tocxref" href="#leeswijzer"><bdi class="secno">1.3 </bdi>Leeswijzer</a></li></ol></li><li class="tocline"><a class="tocxref" href="#algemeen"><bdi class="secno">2. </bdi>Algemeen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#levenscyclus"><bdi class="secno">2.1 </bdi>Levenscyclus</a></li><li class="tocline"><a class="tocxref" href="#geometrie"><bdi class="secno">2.2 </bdi>Geometrie</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#aansluiting-op-basismodel-geo-informatie-nen3610"><bdi class="secno">2.2.1 </bdi>Aansluiting op Basismodel Geo-informatie (NEN3610)</a></li><li class="tocline"><a class="tocxref" href="#geometrietypen"><bdi class="secno">2.2.2 </bdi>Geometrietypen</a></li><li class="tocline"><a class="tocxref" href="#dimensies"><bdi class="secno">2.2.3 </bdi>Dimensies</a></li><li class="tocline"><a class="tocxref" href="#coordinaatreferentiesystemen"><bdi class="secno">2.2.4 </bdi>Coordinaatreferentiesystemen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#aanlevering"><bdi class="secno">2.2.4.1 </bdi>Aanlevering</a></li><li class="tocline"><a class="tocxref" href="#uitlevering"><bdi class="secno">2.2.4.2 </bdi>Uitlevering</a></li><li class="tocline"><a class="tocxref" href="#bestuurlijk-gebied"><bdi class="secno">2.2.4.3 </bdi>Bestuurlijk gebied</a></li></ol></li><li class="tocline"><a class="tocxref" href="#ruimtelijke-relaties"><bdi class="secno">2.2.5 </bdi>Ruimtelijke relaties</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#overzicht"><bdi class="secno">3. </bdi>Overzicht</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#naam-en-acroniemen"><bdi class="secno">3.1 </bdi>Naam en Acroniemen</a></li><li class="tocline"><a class="tocxref" href="#algemene-beschrijving-van-het-disgeo-informatiemodel"><bdi class="secno">3.2 </bdi>Algemene beschrijving van het DiSGeo informatiemodel</a></li><li class="tocline"><a class="tocxref" href="#beschrijving-inhoud"><bdi class="secno">3.3 </bdi>Beschrijving inhoud</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#bestuurlijke-gebieden"><bdi class="secno">3.3.1 </bdi>Bestuurlijke gebieden</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#levenscyclus-en-tijdlijnen-bestuurlijk-gebied"><bdi class="secno">3.3.1.1 </bdi>Levenscyclus en tijdlijnen Bestuurlijk gebied</a></li><li class="tocline"><a class="tocxref" href="#regionaal-openbaar-lichaam"><bdi class="secno">3.3.1.2 </bdi>Regionaal Openbaar Lichaam</a></li><li class="tocline"><a class="tocxref" href="#bestuurlijk-gebied-0"><bdi class="secno">3.3.1.3 </bdi>Bestuurlijk gebied</a></li><li class="tocline"><a class="tocxref" href="#geometrie-0"><bdi class="secno">3.3.1.4 </bdi>Geometrie</a></li><li class="tocline"><a class="tocxref" href="#land-en-zee"><bdi class="secno">3.3.1.5 </bdi>Land en Zee</a></li></ol></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#informatiemodel-informatiemodel-samenhangende-objecten-bestuurlijke-gebieden"><bdi class="secno">4. </bdi>Informatiemodel Informatiemodel Samenhangende Objecten - Bestuurlijke gebieden</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#domein-bestuurlijk-gebied"><bdi class="secno">4.1 </bdi>Domein Bestuurlijk gebied</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#objecttypen"><bdi class="secno">4.1.1 </bdi>Objecttypen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_registratieve_ruimte"><bdi class="secno">4.1.1.1 </bdi>RegistratieveRuimte</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied"><bdi class="secno">4.1.1.2 </bdi>BestuurlijkGebied</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_op_land"><bdi class="secno">4.1.1.3 </bdi>BestuurlijkGebiedOpLand</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_op_zee"><bdi class="secno">4.1.1.4 </bdi>BestuurlijkGebiedOpZee</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_gemeentegebied"><bdi class="secno">4.1.1.5 </bdi>Gemeentegebied</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_provinciegebied"><bdi class="secno">4.1.1.6 </bdi>Provinciegebied</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_rijksgebied"><bdi class="secno">4.1.1.7 </bdi>Rijksgebied</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_territoriale_zee"><bdi class="secno">4.1.1.8 </bdi>TerritorialeZee</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_aansluitende_zone"><bdi class="secno">4.1.1.9 </bdi>AansluitendeZone</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_exclusieve_economische_zone"><bdi class="secno">4.1.1.10 </bdi>ExclusieveEconomischeZone</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_continentaal_plat"><bdi class="secno">4.1.1.11 </bdi>ContinentaalPlat</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_waterschapsgebied"><bdi class="secno">4.1.1.12 </bdi>Waterschapsgebied</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_veiligheidsregiogebied"><bdi class="secno">4.1.1.13 </bdi>Veiligheidsregiogebied</a></li></ol></li><li class="tocline"><a class="tocxref" href="#keuzen-tussen-datatypen"><bdi class="secno">4.1.2 </bdi>Keuzen tussen datatypen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_keuze_datatype__vlak_of_multivlak"><bdi class="secno">4.1.2.1 </bdi>VlakOfMultivlak</a></li></ol></li><li class="tocline"><a class="tocxref" href="#enumeraties"><bdi class="secno">4.1.3 </bdi>Enumeraties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_enumeratie_type_bestuurlijk_gebied"><bdi class="secno">4.1.3.1 </bdi>TypeBestuurlijkGebied</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_enumeratie_status_registratieve_ruimte"><bdi class="secno">4.1.3.2 </bdi>StatusRegistratieveRuimte</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#domein-openbaar-lichaam"><bdi class="secno">4.2 </bdi>Domein Openbaar lichaam</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#objecttypen-0"><bdi class="secno">4.2.1 </bdi>Objecttypen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_overheidsorganisatie"><bdi class="secno">4.2.1.1 </bdi>Overheidsorganisatie</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_regionaal_openbaar_lichaam"><bdi class="secno">4.2.1.2 </bdi>RegionaalOpenbaarLichaam</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_gemeente"><bdi class="secno">4.2.1.3 </bdi>Gemeente</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_provincie"><bdi class="secno">4.2.1.4 </bdi>Provincie</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_rijk"><bdi class="secno">4.2.1.5 </bdi>Rijk</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_waterschap"><bdi class="secno">4.2.1.6 </bdi>Waterschap</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_veiligheidsregio"><bdi class="secno">4.2.1.7 </bdi>Veiligheidsregio</a></li></ol></li><li class="tocline"><a class="tocxref" href="#enumeraties-0"><bdi class="secno">4.2.2 </bdi>Enumeraties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_enumeratie_type_regionaal_openbaar_lichaam"><bdi class="secno">4.2.2.1 </bdi>TypeRegionaalOpenbaarLichaam</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#extern-nen-3610-2022-basismodel-geo-informatie"><bdi class="secno">4.3 </bdi>Extern NEN 3610:2022 - Basismodel geo-informatie</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#objecttypen-1"><bdi class="secno">4.3.1 </bdi>Objecttypen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#informatiemodel_nen3610_domein_semantisch_model_objecttype_geo_object"><bdi class="secno">4.3.1.1 </bdi>GeoObject</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_nen3610_domein_semantisch_model_objecttype_virtuele_ruimte"><bdi class="secno">4.3.1.2 </bdi>VirtueleRuimte</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_nen3610_domein_semantisch_model_objecttype_registratieve_ruimte"><bdi class="secno">4.3.1.3 </bdi>RegistratieveRuimte</a></li></ol></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#glossary"><bdi class="secno">A. </bdi>Algemene Termen en definities</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#bestuurlijke-gebieden-0"><bdi class="secno">A.1 </bdi>Bestuurlijke gebieden</a></li><li class="tocline"><a class="tocxref" href="#informatiemodeldomein"><bdi class="secno">A.2 </bdi>Informatiemodeldomein</a></li><li class="tocline"><a class="tocxref" href="#algemene-symbolen-en-afkortingen"><bdi class="secno">A.3 </bdi>Algemene Symbolen en afkortingen</a></li></ol></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">B. </bdi>Conformiteit</a></li><li class="tocline"><a class="tocxref" href="#tof"><bdi class="secno">C. </bdi>Lijst met figuren</a></li><li class="tocline"><a class="tocxref" href="#index"><bdi class="secno">D. </bdi>Index</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#index-defined-here"><bdi class="secno">D.1 </bdi>Begrippen gedefinieerd door deze specificatie</a></li><li class="tocline"><a class="tocxref" href="#index-defined-elsewhere"><bdi class="secno">D.2 </bdi>Begrippen gedefinieerd door verwijzing</a></li></ol></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">E. </bdi>Referenties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#normatieve-referenties"><bdi class="secno">E.1 </bdi>Normatieve referenties</a></li></ol></li></ol></nav>
+  <section id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is een document zonder officiële status.</p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#inleiding"><bdi class="secno">1. </bdi>Inleiding</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#doel"><bdi class="secno">1.1 </bdi>Doel</a></li><li class="tocline"><a class="tocxref" href="#achtergrond-en-scope"><bdi class="secno">1.2 </bdi>Achtergrond en scope</a></li><li class="tocline"><a class="tocxref" href="#leeswijzer"><bdi class="secno">1.3 </bdi>Leeswijzer</a></li></ol></li><li class="tocline"><a class="tocxref" href="#algemeen"><bdi class="secno">2. </bdi>Algemeen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#levenscyclus"><bdi class="secno">2.1 </bdi>Levenscyclus</a></li><li class="tocline"><a class="tocxref" href="#geometrie"><bdi class="secno">2.2 </bdi>Geometrie</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#aansluiting-op-basismodel-geo-informatie-nen3610"><bdi class="secno">2.2.1 </bdi>Aansluiting op Basismodel Geo-informatie (NEN3610)</a></li><li class="tocline"><a class="tocxref" href="#geometrietypen"><bdi class="secno">2.2.2 </bdi>Geometrietypen</a></li><li class="tocline"><a class="tocxref" href="#dimensies"><bdi class="secno">2.2.3 </bdi>Dimensies</a></li><li class="tocline"><a class="tocxref" href="#coordinaatreferentiesystemen"><bdi class="secno">2.2.4 </bdi>Coordinaatreferentiesystemen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#aanlevering"><bdi class="secno">2.2.4.1 </bdi>Aanlevering</a></li><li class="tocline"><a class="tocxref" href="#uitlevering"><bdi class="secno">2.2.4.2 </bdi>Uitlevering</a></li><li class="tocline"><a class="tocxref" href="#bestuurlijk-gebied"><bdi class="secno">2.2.4.3 </bdi>Bestuurlijk gebied</a></li></ol></li><li class="tocline"><a class="tocxref" href="#ruimtelijke-relaties"><bdi class="secno">2.2.5 </bdi>Ruimtelijke relaties</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#overzicht"><bdi class="secno">3. </bdi>Overzicht</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#naam-en-acroniemen"><bdi class="secno">3.1 </bdi>Naam en Acroniemen</a></li><li class="tocline"><a class="tocxref" href="#algemene-beschrijving-van-het-disgeo-informatiemodel"><bdi class="secno">3.2 </bdi>Algemene beschrijving van het DiSGeo informatiemodel</a></li><li class="tocline"><a class="tocxref" href="#beschrijving-inhoud"><bdi class="secno">3.3 </bdi>Beschrijving inhoud</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#bestuurlijke-gebieden"><bdi class="secno">3.3.1 </bdi>Bestuurlijke gebieden</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#levenscyclus-en-tijdlijnen-bestuurlijk-gebied"><bdi class="secno">3.3.1.1 </bdi>Levenscyclus en tijdlijnen Bestuurlijk gebied</a></li><li class="tocline"><a class="tocxref" href="#regionaal-openbaar-lichaam"><bdi class="secno">3.3.1.2 </bdi>Regionaal Openbaar Lichaam</a></li><li class="tocline"><a class="tocxref" href="#bestuurlijk-gebied-0"><bdi class="secno">3.3.1.3 </bdi>Bestuurlijk gebied</a></li><li class="tocline"><a class="tocxref" href="#geometrie-0"><bdi class="secno">3.3.1.4 </bdi>Geometrie</a></li><li class="tocline"><a class="tocxref" href="#land-en-zee"><bdi class="secno">3.3.1.5 </bdi>Land en Zee</a></li></ol></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#informatiemodel-informatiemodel-samenhangende-objecten-bestuurlijke-gebieden"><bdi class="secno">4. </bdi>Informatiemodel Informatiemodel Samenhangende Objecten - Bestuurlijke gebieden</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#domein-bestuurlijk-gebied"><bdi class="secno">4.1 </bdi>Domein Bestuurlijk gebied</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#objecttypen"><bdi class="secno">4.1.1 </bdi>Objecttypen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_registratieve_ruimte"><bdi class="secno">4.1.1.1 </bdi>RegistratieveRuimte</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied"><bdi class="secno">4.1.1.2 </bdi>BestuurlijkGebied</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_op_land"><bdi class="secno">4.1.1.3 </bdi>BestuurlijkGebiedOpLand</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_op_zee"><bdi class="secno">4.1.1.4 </bdi>BestuurlijkGebiedOpZee</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_gemeentegebied"><bdi class="secno">4.1.1.5 </bdi>Gemeentegebied</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_provinciegebied"><bdi class="secno">4.1.1.6 </bdi>Provinciegebied</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_rijksgebied"><bdi class="secno">4.1.1.7 </bdi>Rijksgebied</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_waterschapsgebied"><bdi class="secno">4.1.1.8 </bdi>Waterschapsgebied</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_veiligheidsregiogebied"><bdi class="secno">4.1.1.9 </bdi>Veiligheidsregiogebied</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_territoriale_zee"><bdi class="secno">4.1.1.10 </bdi>TerritorialeZee</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_aansluitende_zone"><bdi class="secno">4.1.1.11 </bdi>AansluitendeZone</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_exclusieve_economische_zone"><bdi class="secno">4.1.1.12 </bdi>ExclusieveEconomischeZone</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_continentaal_plat"><bdi class="secno">4.1.1.13 </bdi>ContinentaalPlat</a></li></ol></li><li class="tocline"><a class="tocxref" href="#keuzen-tussen-datatypen"><bdi class="secno">4.1.2 </bdi>Keuzen tussen datatypen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_keuze_datatype__vlak_of_multivlak"><bdi class="secno">4.1.2.1 </bdi>VlakOfMultivlak</a></li></ol></li><li class="tocline"><a class="tocxref" href="#enumeraties"><bdi class="secno">4.1.3 </bdi>Enumeraties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_enumeratie_type_bestuurlijk_gebied"><bdi class="secno">4.1.3.1 </bdi>TypeBestuurlijkGebied</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_enumeratie_status_registratieve_ruimte"><bdi class="secno">4.1.3.2 </bdi>StatusRegistratieveRuimte</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#domein-openbaar-lichaam"><bdi class="secno">4.2 </bdi>Domein Openbaar lichaam</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#objecttypen-0"><bdi class="secno">4.2.1 </bdi>Objecttypen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_overheidsorganisatie"><bdi class="secno">4.2.1.1 </bdi>Overheidsorganisatie</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_regionaal_openbaar_lichaam"><bdi class="secno">4.2.1.2 </bdi>RegionaalOpenbaarLichaam</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_gemeente"><bdi class="secno">4.2.1.3 </bdi>Gemeente</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_provincie"><bdi class="secno">4.2.1.4 </bdi>Provincie</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_rijk"><bdi class="secno">4.2.1.5 </bdi>Rijk</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_waterschap"><bdi class="secno">4.2.1.6 </bdi>Waterschap</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_veiligheidsregio"><bdi class="secno">4.2.1.7 </bdi>Veiligheidsregio</a></li></ol></li><li class="tocline"><a class="tocxref" href="#enumeraties-0"><bdi class="secno">4.2.2 </bdi>Enumeraties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_enumeratie_type_regionaal_openbaar_lichaam"><bdi class="secno">4.2.2.1 </bdi>TypeRegionaalOpenbaarLichaam</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#extern-nen-3610-2022-basismodel-geo-informatie"><bdi class="secno">4.3 </bdi>Extern NEN 3610:2022 - Basismodel geo-informatie</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#objecttypen-1"><bdi class="secno">4.3.1 </bdi>Objecttypen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#informatiemodel_nen3610_domein_semantisch_model_objecttype_geo_object"><bdi class="secno">4.3.1.1 </bdi>GeoObject</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_nen3610_domein_semantisch_model_objecttype_virtuele_ruimte"><bdi class="secno">4.3.1.2 </bdi>VirtueleRuimte</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_nen3610_domein_semantisch_model_objecttype_registratieve_ruimte"><bdi class="secno">4.3.1.3 </bdi>RegistratieveRuimte</a></li></ol></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">5. </bdi>Conformiteit</a></li><li class="tocline"><a class="tocxref" href="#tof"><bdi class="secno">6. </bdi>Lijst met figuren</a></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">A. </bdi>Referenties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#normatieve-referenties"><bdi class="secno">A.1 </bdi>Normatieve referenties</a></li></ol></li></ol></nav>
 
   
   <section id="inleiding"><div class="header-wrapper"><h2 id="x1-inleiding"><bdi class="secno">1. </bdi>Inleiding</h2><a class="self-link" href="#inleiding" aria-label="Permalink for Section 1."></a></div>
@@ -935,8 +924,6 @@ De volgende paragrafen beschrijven welke eisen op het [<cite><a class="bibref" d
 </section><section id="regionaal-openbaar-lichaam"><div class="header-wrapper"><h5 id="x3-3-1-2-regionaal-openbaar-lichaam"><bdi class="secno">3.3.1.2 </bdi>Regionaal Openbaar Lichaam</h5><a class="self-link" href="#regionaal-openbaar-lichaam" aria-label="Permalink for Section 3.3.1.2"></a></div>
 <p>Een regionaal openbaar lichaam is een overheidsorganisatie die bepaalde taken uitvoert binnen een bepaald <em>ruimtelijk</em> gebied. De belangrijkste regionale openbare lichamen zijn het Rijk, de provincies, de gemeenten en de waterschappen, maar ook veiligheidsregio's behoren hiertoe.
 Regionale openbare lichamen hebben met elkaar gemeen dat ze een bestuursgebied hebben — andere overheidsorganisaties hebben dat niet. [<cite><a class="bibref" data-link-type="biblio" href="#bib-tooi-ont-1.6.2" title="TOOI - Ontologie 1.6.2">TOOI-ONT-1.6.2</a></cite>]</p>
-
-
 </section><section id="bestuurlijk-gebied-0"><div class="header-wrapper"><h5 id="x3-3-1-3-bestuurlijk-gebied"><bdi class="secno">3.3.1.3 </bdi>Bestuurlijk gebied</h5><a class="self-link" href="#bestuurlijk-gebied-0" aria-label="Permalink for Section 3.3.1.3"></a></div>
 <p>Een <em>bestuurlijk gebied</em>, ook wel bestuursgebied genoemd, is het grondgebied waarover het bestuursorgaan haar invloed uitoefent. Een bestuurlijk gebied is dus niet hetzelfde als het voor het gebied verantwoordelijke bestuur. Het <em>gebied</em> en het <em>bestuur</em> zijn weliswaar aan elkaar gerelateerd, maar hebben hun eigen unieke eigenschappen. Een bestuurlijk gebied heeft zelf geen naam, maar alleen een ruimtelijke aanduiding in de vorm van een geometrie. De naam waarmee men in het dagelijkse spraakgebruik het grondgebied associeert, is de formele naam van het gerelateerde openbare lichaam, bijvoorbeeld 'Apeldoorn' of 'Zeeland'.</p>
 </section><section id="geometrie-0"><div class="header-wrapper"><h5 id="x3-3-1-4-geometrie"><bdi class="secno">3.3.1.4 </bdi>Geometrie</h5><a class="self-link" href="#geometrie-0" aria-label="Permalink for Section 3.3.1.4"></a></div>
@@ -979,7 +966,7 @@ Regionale openbare lichamen hebben met elkaar gemeen dat ze een bestuursgebied h
 </div>
 
 <section id="objecttypen"><div class="header-wrapper"><h4 id="x4-1-1-objecttypen"><bdi class="secno">4.1.1 </bdi>Objecttypen</h4><a class="self-link" href="#objecttypen" aria-label="Permalink for Section 4.1.1"></a></div>
-<section id="registratieveruimte"><div class="header-wrapper"><h5 id="informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_registratieve_ruimte"><bdi class="secno">4.1.1.1 </bdi>RegistratieveRuimte</h5><a class="self-link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_registratieve_ruimte" aria-label="Permalink for Section 4.1.1.1"></a></div><table style="width: 100%">
+<section id="registratieveruimte"><div class="header-wrapper"><h5 id="informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_registratieve_ruimte"><bdi class="secno">4.1.1.1 </bdi>RegistratieveRuimte</h5><a class="self-link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_registratieve_ruimte" aria-label="Permalink for Section 4.1.1.1"></a></div><table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
 <colgroup style="width: 70%"></colgroup>
 <tbody><tr>
@@ -1041,7 +1028,7 @@ Regionale openbare lichamen hebben met elkaar gemeen dat ze een bestuursgebied h
 </section>
 
 <section class="notoc"><div class="header-wrapper"><h6 id="overzicht-attribuutsoorten">Overzicht attribuutsoorten</h6><a class="self-link" href="#overzicht-attribuutsoorten" aria-label="Permalink for this Section"></a></div>
-
+    
 <table style="width: 100%">
 <colgroup style="width: 25%"></colgroup>
 <colgroup style="width: 50%"></colgroup>
@@ -1056,12 +1043,12 @@ Regionale openbare lichamen hebben met elkaar gemeen dat ze een bestuursgebied h
 </tr>
 <tr>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_registratieve_ruimte_attribuutsoort_status">status</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_registratieve_ruimte_attribuutsoort_status">status</a>
 </td>
 <td>
 Fase van de levenscyclus waarin een bestuurlijk gebied zich bevindt.</td>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_enumeratie_status_registratieve_ruimte">StatusRegistratieveRuimte</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_enumeratie_status_registratieve_ruimte">StatusRegistratieveRuimte</a>
 </td>
 <td>
 1</td>
@@ -1075,7 +1062,7 @@ Fase van de levenscyclus waarin een bestuurlijk gebied zich bevindt.</td>
 
 <section class="notoc"><div class="header-wrapper"><h6 id="details-attribuutsoorten">Details attribuutsoorten</h6><a class="self-link" href="#details-attribuutsoorten" aria-label="Permalink for this Section"></a></div>
 
-<section class="notoc" id="informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_registratieve_ruimte_attribuutsoort_status"><div class="header-wrapper"><h6 id="status">status</h6><a class="self-link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_registratieve_ruimte_attribuutsoort_status" aria-label="Permalink for this Section"></a></div>
+<section class="notoc" id="informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_registratieve_ruimte_attribuutsoort_status"><div class="header-wrapper"><h6 id="status">status</h6><a class="self-link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_registratieve_ruimte_attribuutsoort_status" aria-label="Permalink for this Section"></a></div>
 
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
@@ -1123,7 +1110,7 @@ Fase van de levenscyclus waarin een bestuurlijk gebied zich bevindt.</td>
 </section>
 
 
-</section><section id="bestuurlijkgebied"><div class="header-wrapper"><h5 id="informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied"><bdi class="secno">4.1.1.2 </bdi>BestuurlijkGebied</h5><a class="self-link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied" aria-label="Permalink for Section 4.1.1.2"></a></div><div><p>
+</section><section id="bestuurlijkgebied"><div class="header-wrapper"><h5 id="informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied"><bdi class="secno">4.1.1.2 </bdi>BestuurlijkGebied</h5><a class="self-link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied" aria-label="Permalink for Section 4.1.1.2"></a></div><div><p>
       </p><figure id="fig-bestuurlijk-gebied-detail">
         <img src="model-docs/media/bestuurlijk_gebied-detail.png" alt="Bestuurlijk gebied - detail">
         <figcaption><a class="self-link" href="#fig-bestuurlijk-gebied-detail">Figuur <bdi class="figno">6</bdi></a> <span class="fig-title">Bestuurlijk gebied - detail</span></figcaption>
@@ -1191,13 +1178,13 @@ Fase van de levenscyclus waarin een bestuurlijk gebied zich bevindt.</td>
 <tbody><tr>
 <th>Subtype</th>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied">BestuurlijkGebied</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied">BestuurlijkGebied</a>
 </td>
 </tr>
 <tr>
 <th>Supertype</th>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_registratieve_ruimte">RegistratieveRuimte</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_registratieve_ruimte">RegistratieveRuimte</a>
 </td>
 </tr>
 <tr>
@@ -1214,7 +1201,7 @@ Fase van de levenscyclus waarin een bestuurlijk gebied zich bevindt.</td>
 </section>
 
 <section class="notoc"><div class="header-wrapper"><h6 id="overzicht-attribuutsoorten-0">Overzicht attribuutsoorten</h6><a class="self-link" href="#overzicht-attribuutsoorten-0" aria-label="Permalink for this Section"></a></div>
-
+    
 <table style="width: 100%">
 <colgroup style="width: 25%"></colgroup>
 <colgroup style="width: 50%"></colgroup>
@@ -1229,24 +1216,24 @@ Fase van de levenscyclus waarin een bestuurlijk gebied zich bevindt.</td>
 </tr>
 <tr>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_attribuutsoort_geometrie">geometrie</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_attribuutsoort_geometrie">geometrie</a>
 </td>
 <td>
 Geometrische representatie van een gebied op land dat door een openbaar lichaam wordt bestuurd.</td>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_keuze_datatype__vlak_of_multivlak">VlakOfMultivlak</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_keuze_datatype__vlak_of_multivlak">VlakOfMultivlak</a>
 </td>
 <td>
 1</td>
 </tr>
 <tr>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_attribuutsoort_type">type</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_attribuutsoort_type">type</a>
 </td>
 <td>
 Categorie waartoe het betreffende bestuurlijke gebied behoort.</td>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_enumeratie_type_bestuurlijk_gebied">TypeBestuurlijkGebied</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_enumeratie_type_bestuurlijk_gebied">TypeBestuurlijkGebied</a>
 </td>
 <td>
 1</td>
@@ -1257,7 +1244,7 @@ Categorie waartoe het betreffende bestuurlijke gebied behoort.</td>
 
 
 <section class="notoc"><div class="header-wrapper"><h6 id="overzicht-relatiesoorten">Overzicht Relatiesoorten</h6><a class="self-link" href="#overzicht-relatiesoorten" aria-label="Permalink for this Section"></a></div>
-
+    
 <table style="width: 100%">
 <colgroup style="width: 25%"></colgroup>
 <colgroup style="width: 50%"></colgroup>
@@ -1272,24 +1259,24 @@ Categorie waartoe het betreffende bestuurlijke gebied behoort.</td>
 </tr>
 <tr>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_relatiesoort_wordt_bestuurd_door">wordtBestuurdDoor</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_relatiesoort_wordt_bestuurd_door">wordtBestuurdDoor</a>
 </td>
 <td>
 Relatie die aangeeft dat het gebied bestuurt wordt door de bestuurder.</td>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_regionaal_openbaar_lichaam">RegionaalOpenbaarLichaam</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_regionaal_openbaar_lichaam">RegionaalOpenbaarLichaam</a>
 </td>
 <td>
 1</td>
 </tr>
 <tr>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_relatiesoort_ligt_in_bestuurlijk_gebied">ligtInBestuurlijkGebied</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_relatiesoort_ligt_in_bestuurlijk_gebied">ligtInBestuurlijkGebied</a>
 </td>
 <td>
 De geometrische afbakening van het bevattendGebied, waarbinnen de geometrie van het bevatteGebied, zich moet bevinden, en/of mee moet samenvallen.</td>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied">BestuurlijkGebied</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied">BestuurlijkGebied</a>
 </td>
 <td>
 0..*</td>
@@ -1301,7 +1288,7 @@ De geometrische afbakening van het bevattendGebied, waarbinnen de geometrie van 
 
 <section class="notoc"><div class="header-wrapper"><h6 id="details-attribuutsoorten-0">Details attribuutsoorten</h6><a class="self-link" href="#details-attribuutsoorten-0" aria-label="Permalink for this Section"></a></div>
 
-<section class="notoc" id="informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_attribuutsoort_geometrie"><div class="header-wrapper"><h6 id="geometrie-1">geometrie</h6><a class="self-link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_attribuutsoort_geometrie" aria-label="Permalink for this Section"></a></div>
+<section class="notoc" id="informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_attribuutsoort_geometrie"><div class="header-wrapper"><h6 id="geometrie-1">geometrie</h6><a class="self-link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_attribuutsoort_geometrie" aria-label="Permalink for this Section"></a></div>
 
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
@@ -1346,7 +1333,7 @@ De geometrische afbakening van het bevattendGebied, waarbinnen de geometrie van 
 </tbody>
 </table>
 </section>
-<section class="notoc" id="informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_attribuutsoort_type"><div class="header-wrapper"><h6 id="type">type</h6><a class="self-link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_attribuutsoort_type" aria-label="Permalink for this Section"></a></div>
+<section class="notoc" id="informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_attribuutsoort_type"><div class="header-wrapper"><h6 id="type">type</h6><a class="self-link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_attribuutsoort_type" aria-label="Permalink for this Section"></a></div>
 
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
@@ -1395,7 +1382,7 @@ De geometrische afbakening van het bevattendGebied, waarbinnen de geometrie van 
 
 <section class="notoc"><div class="header-wrapper"><h6 id="details-relatiesoorten">Details Relatiesoorten</h6><a class="self-link" href="#details-relatiesoorten" aria-label="Permalink for this Section"></a></div>
 
-<section class="notoc" id="informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_relatiesoort_wordt_bestuurd_door"><div class="header-wrapper"><h6 id="wordtbestuurddoor">wordtBestuurdDoor</h6><a class="self-link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_relatiesoort_wordt_bestuurd_door" aria-label="Permalink for this Section"></a></div>
+<section class="notoc" id="informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_relatiesoort_wordt_bestuurd_door"><div class="header-wrapper"><h6 id="wordtbestuurddoor">wordtBestuurdDoor</h6><a class="self-link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_relatiesoort_wordt_bestuurd_door" aria-label="Permalink for this Section"></a></div>
 
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
@@ -1443,14 +1430,14 @@ De geometrische afbakening van het bevattendGebied, waarbinnen de geometrie van 
 <tr>
 <th>Bron</th>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied">BestuurlijkGebied</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied">BestuurlijkGebied</a>
 </td>
 </tr>
 </tbody><tbody>
 </tbody>
 </table>
 </section>
-<section class="notoc" id="informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_relatiesoort_ligt_in_bestuurlijk_gebied"><div class="header-wrapper"><h6 id="ligtinbestuurlijkgebied">ligtInBestuurlijkGebied</h6><a class="self-link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_relatiesoort_ligt_in_bestuurlijk_gebied" aria-label="Permalink for this Section"></a></div>
+<section class="notoc" id="informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_relatiesoort_ligt_in_bestuurlijk_gebied"><div class="header-wrapper"><h6 id="ligtinbestuurlijkgebied">ligtInBestuurlijkGebied</h6><a class="self-link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_relatiesoort_ligt_in_bestuurlijk_gebied" aria-label="Permalink for this Section"></a></div>
 
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
@@ -1506,7 +1493,7 @@ De geometrische afbakening van het bevattendGebied, waarbinnen de geometrie van 
 <tr>
 <th>Bron</th>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied">BestuurlijkGebied</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied">BestuurlijkGebied</a>
 </td>
 </tr>
 </tbody><tbody>
@@ -1515,7 +1502,7 @@ De geometrische afbakening van het bevattendGebied, waarbinnen de geometrie van 
 </section>
 </section>
 
-</section><section id="bestuurlijkgebiedopland"><div class="header-wrapper"><h5 id="informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_op_land"><bdi class="secno">4.1.1.3 </bdi>BestuurlijkGebiedOpLand</h5><a class="self-link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_op_land" aria-label="Permalink for Section 4.1.1.3"></a></div><table style="width: 100%">
+</section><section id="bestuurlijkgebiedopland"><div class="header-wrapper"><h5 id="informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_op_land"><bdi class="secno">4.1.1.3 </bdi>BestuurlijkGebiedOpLand</h5><a class="self-link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_op_land" aria-label="Permalink for Section 4.1.1.3"></a></div><table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
 <colgroup style="width: 70%"></colgroup>
 <tbody><tr>
@@ -1532,7 +1519,7 @@ De geometrische afbakening van het bevattendGebied, waarbinnen de geometrie van 
 </tr>
 <tr>
 <th>Definitie</th>
-<td>Bestuurlijk gebied op land.</td>
+<td>Een bestuurlijk gebied op land is een bestuurlijk gebied dat geheel op het land ligt.</td>
 </tr>
 <tr>
 <th>Herkomst definitie</th>
@@ -1564,13 +1551,13 @@ De geometrische afbakening van het bevattendGebied, waarbinnen de geometrie van 
 <tbody><tr>
 <th>Subtype</th>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_op_land">BestuurlijkGebiedOpLand</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_op_land">BestuurlijkGebiedOpLand</a>
 </td>
 </tr>
 <tr>
 <th>Supertype</th>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied">BestuurlijkGebied</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied">BestuurlijkGebied</a>
 </td>
 </tr>
 <tr>
@@ -1592,7 +1579,7 @@ De geometrische afbakening van het bevattendGebied, waarbinnen de geometrie van 
 
 
 
-</section><section id="bestuurlijkgebiedopzee"><div class="header-wrapper"><h5 id="informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_op_zee"><bdi class="secno">4.1.1.4 </bdi>BestuurlijkGebiedOpZee</h5><a class="self-link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_op_zee" aria-label="Permalink for Section 4.1.1.4"></a></div><table style="width: 100%">
+</section><section id="bestuurlijkgebiedopzee"><div class="header-wrapper"><h5 id="informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_op_zee"><bdi class="secno">4.1.1.4 </bdi>BestuurlijkGebiedOpZee</h5><a class="self-link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_op_zee" aria-label="Permalink for Section 4.1.1.4"></a></div><table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
 <colgroup style="width: 70%"></colgroup>
 <tbody><tr>
@@ -1609,7 +1596,7 @@ De geometrische afbakening van het bevattendGebied, waarbinnen de geometrie van 
 </tr>
 <tr>
 <th>Definitie</th>
-<td>Bestuurlijk gebied op zee.</td>
+<td>Een bestuurlijk gebied op zee is een bestuurlijk gebied dat geheel op zee ligt.</td>
 </tr>
 <tr>
 <th>Herkomst definitie</th>
@@ -1641,13 +1628,13 @@ De geometrische afbakening van het bevattendGebied, waarbinnen de geometrie van 
 <tbody><tr>
 <th>Subtype</th>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_op_zee">BestuurlijkGebiedOpZee</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_op_zee">BestuurlijkGebiedOpZee</a>
 </td>
 </tr>
 <tr>
 <th>Supertype</th>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied">BestuurlijkGebied</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied">BestuurlijkGebied</a>
 </td>
 </tr>
 <tr>
@@ -1669,7 +1656,7 @@ De geometrische afbakening van het bevattendGebied, waarbinnen de geometrie van 
 
 
 
-</section><section id="gemeentegebied"><div class="header-wrapper"><h5 id="informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_gemeentegebied"><bdi class="secno">4.1.1.5 </bdi>Gemeentegebied</h5><a class="self-link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_gemeentegebied" aria-label="Permalink for Section 4.1.1.5"></a></div><div><p>
+</section><section id="gemeentegebied"><div class="header-wrapper"><h5 id="informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_gemeentegebied"><bdi class="secno">4.1.1.5 </bdi>Gemeentegebied</h5><a class="self-link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_gemeentegebied" aria-label="Permalink for Section 4.1.1.5"></a></div><div><p>
       </p><figure id="fig-gemeentegebied-detail">
         <img src="model-docs/media/gemeentegebied-detail.png" alt="Gemeentegebied - detail">
         <figcaption><a class="self-link" href="#fig-gemeentegebied-detail">Figuur <bdi class="figno">7</bdi></a> <span class="fig-title">Gemeentegebied - detail</span></figcaption>
@@ -1737,13 +1724,13 @@ De geometrische afbakening van het bevattendGebied, waarbinnen de geometrie van 
 <tbody><tr>
 <th>Subtype</th>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_gemeentegebied">Gemeentegebied</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_gemeentegebied">Gemeentegebied</a>
 </td>
 </tr>
 <tr>
 <th>Supertype</th>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_op_land">BestuurlijkGebiedOpLand</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_op_land">BestuurlijkGebiedOpLand</a>
 </td>
 </tr>
 <tr>
@@ -1762,7 +1749,7 @@ De geometrische afbakening van het bevattendGebied, waarbinnen de geometrie van 
 
 
 <section class="notoc"><div class="header-wrapper"><h6 id="overzicht-relatiesoorten-0">Overzicht Relatiesoorten</h6><a class="self-link" href="#overzicht-relatiesoorten-0" aria-label="Permalink for this Section"></a></div>
-
+    
 <table style="width: 100%">
 <colgroup style="width: 25%"></colgroup>
 <colgroup style="width: 50%"></colgroup>
@@ -1777,27 +1764,39 @@ De geometrische afbakening van het bevattendGebied, waarbinnen de geometrie van 
 </tr>
 <tr>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_gemeentegebied_relatiesoort_ligt_in_provinciegebied">ligtInProvinciegebied</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_gemeentegebied_relatiesoort_ligt_in_provinciegebied">ligtInProvinciegebied</a>
 </td>
 <td>
 De geometrische afbakening van het provinciegebied waarbinnen de geometrie van het gemeentegebied zich moet bevinden, en/of mee moet samenvallen.</td>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_provinciegebied">Provinciegebied</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_provinciegebied">Provinciegebied</a>
 </td>
 <td>
 1..*</td>
 </tr>
 <tr>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_gemeentegebied_relatiesoort_ligt_in_veiligheidsregiogebied">ligtInVeiligheidsregiogebied</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_gemeentegebied_relatiesoort_ligt_in_veiligheidsregiogebied">ligtInVeiligheidsregiogebied</a>
 </td>
 <td>
 De geometrische afbakening van het veiligheidsregiogebied waarbinnen de geometrie van het gemeentegebied zich moet bevinden, en/of mee moet samenvallen.</td>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_veiligheidsregiogebied">Veiligheidsregiogebied</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_veiligheidsregiogebied">Veiligheidsregiogebied</a>
 </td>
 <td>
 1..*</td>
+</tr>
+<tr>
+<td>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_gemeentegebied_relatiesoort_wordt_bestuurd_door_gemeente">wordtBestuurdDoorGemeente</a>
+</td>
+<td>
+Relatie die aangeeft dat het gebied bestuurt wordt door een gemeente.</td>
+<td>
+<a class="link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_gemeente">Gemeente</a>
+</td>
+<td>
+1</td>
 </tr>
 </tbody>
 </table>
@@ -1807,7 +1806,7 @@ De geometrische afbakening van het veiligheidsregiogebied waarbinnen de geometri
 
 <section class="notoc"><div class="header-wrapper"><h6 id="details-relatiesoorten-0">Details Relatiesoorten</h6><a class="self-link" href="#details-relatiesoorten-0" aria-label="Permalink for this Section"></a></div>
 
-<section class="notoc" id="informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_gemeentegebied_relatiesoort_ligt_in_provinciegebied"><div class="header-wrapper"><h6 id="ligtinprovinciegebied">ligtInProvinciegebied</h6><a class="self-link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_gemeentegebied_relatiesoort_ligt_in_provinciegebied" aria-label="Permalink for this Section"></a></div>
+<section class="notoc" id="informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_gemeentegebied_relatiesoort_ligt_in_provinciegebied"><div class="header-wrapper"><h6 id="ligtinprovinciegebied">ligtInProvinciegebied</h6><a class="self-link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_gemeentegebied_relatiesoort_ligt_in_provinciegebied" aria-label="Permalink for this Section"></a></div>
 
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
@@ -1855,14 +1854,14 @@ De geometrische afbakening van het veiligheidsregiogebied waarbinnen de geometri
 <tr>
 <th>Bron</th>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_gemeentegebied">Gemeentegebied</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_gemeentegebied">Gemeentegebied</a>
 </td>
 </tr>
 </tbody><tbody>
 </tbody>
 </table>
 </section>
-<section class="notoc" id="informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_gemeentegebied_relatiesoort_ligt_in_veiligheidsregiogebied"><div class="header-wrapper"><h6 id="ligtinveiligheidsregiogebied">ligtInVeiligheidsregiogebied</h6><a class="self-link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_gemeentegebied_relatiesoort_ligt_in_veiligheidsregiogebied" aria-label="Permalink for this Section"></a></div>
+<section class="notoc" id="informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_gemeentegebied_relatiesoort_ligt_in_veiligheidsregiogebied"><div class="header-wrapper"><h6 id="ligtinveiligheidsregiogebied">ligtInVeiligheidsregiogebied</h6><a class="self-link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_gemeentegebied_relatiesoort_ligt_in_veiligheidsregiogebied" aria-label="Permalink for this Section"></a></div>
 
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
@@ -1910,8 +1909,57 @@ De geometrische afbakening van het veiligheidsregiogebied waarbinnen de geometri
 <tr>
 <th>Bron</th>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_gemeentegebied">Gemeentegebied</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_gemeentegebied">Gemeentegebied</a>
 </td>
+</tr>
+</tbody><tbody>
+</tbody>
+</table>
+</section>
+<section class="notoc" id="informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_gemeentegebied_relatiesoort_wordt_bestuurd_door_gemeente"><div class="header-wrapper"><h6 id="wordtbestuurddoorgemeente">wordtBestuurdDoorGemeente</h6><a class="self-link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_gemeentegebied_relatiesoort_wordt_bestuurd_door_gemeente" aria-label="Permalink for this Section"></a></div>
+
+<table style="width: 100%">
+<colgroup style="width: 30%"></colgroup>
+<colgroup style="width: 70%"></colgroup>
+<tbody><tr>
+<th>Identificatie</th>
+<td>http://modellen.geostandaarden.nl/def/imso#wordtBestuurdDoorGemeente</td>
+</tr>
+<tr>
+<th>Naam</th>
+<td>wordtBestuurdDoorGemeente</td>
+</tr>
+<tr>
+<th>Alias</th>
+<td>wordt bestuurd door gemeente</td>
+</tr>
+<tr>
+<th>Herkomst</th>
+<td>IMSO</td>
+</tr>
+<tr>
+<th>Definitie</th>
+<td>Relatie die aangeeft dat het gebied bestuurt wordt door een gemeente.</td>
+</tr>
+<tr>
+<th>Herkomst definitie</th>
+<td>IMSO</td>
+</tr>
+<tr>
+<th>Datum opname</th>
+<td>2025-09-19</td>
+</tr>
+<tr>
+<th>Identificerend</th>
+<td>Nee</td>
+</tr>
+<tr>
+<th>Kardinaliteit</th>
+<td>1</td>
+</tr>
+<tr>
+<th>Kardinaliteit relatie bron</th>
+<td>1</td>
 </tr>
 </tbody><tbody>
 </tbody>
@@ -1919,7 +1967,27 @@ De geometrische afbakening van het veiligheidsregiogebied waarbinnen de geometri
 </section>
 </section>
 
-</section><section id="provinciegebied"><div class="header-wrapper"><h5 id="informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_provinciegebied"><bdi class="secno">4.1.1.6 </bdi>Provinciegebied</h5><a class="self-link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_provinciegebied" aria-label="Permalink for Section 4.1.1.6"></a></div><table style="width: 100%">
+</section><section id="provinciegebied"><div class="header-wrapper"><h5 id="informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_provinciegebied"><bdi class="secno">4.1.1.6 </bdi>Provinciegebied</h5><a class="self-link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_provinciegebied" aria-label="Permalink for Section 4.1.1.6"></a></div><div><p>
+      </p><figure id="fig-provinciegebied-detail">
+        <img src="model-docs/media/provinciegebied-detail.png" alt="Provinciegebied - detail">
+        <figcaption><a class="self-link" href="#fig-provinciegebied-detail">Figuur <bdi class="figno">8</bdi></a> <span class="fig-title">Provinciegebied - detail</span></figcaption>
+      </figure>
+    <p></p>
+<p>Het Europese deel van Nederland bestaat uit 12 provincies. Zij vormen de bestuurslaag tussen de rijksoverheid en de Nederlandse gemeenten. De bestuurslaag duidt het informatiemodel aan met '<strong>Provincie</strong>'. Het gebied waarover de provincie het bestuur uitoefent heet het '<strong>Provinciegebied</strong>'.</p>
+<p>Bij het modelleren zijn de volgende principes gehanteerd.</p>
+<ol>
+<li>Het openbare lichaam 'provincie' voert het bestuur over één provinciegebied.</li>
+<li>Een provincie heeft een provinciecode.</li>
+<li>Het provinciegebied wordt aangeduid met een geometrie die bestaat uit één of meerdere vlakken.</li>
+<li>Een provinciegebied wordt samengesteld uit (één of) meerdere gemeentegebieden.</li>
+<li>Een provinciegebied ligt altijd in een/het rijksgebied.De geometrie van een provinciegebied valt dus volledig binnen het Rijksgebied.</li>
+<li>De geometrieën van alle provinciegebieden sluiten naadloos op elkaar aan, zonder gaten en zonder overlap.</li>
+<li>De geometrieën van alle provinciegebieden bedekken gezamenlijk het gehele oppervlak van het rijksgebied.</li>
+<li>De relatie(s) tussen de openbare lichamen onderling vallen vooralsnog buiten de scope van dit model.</li>
+</ol>
+</div>
+
+<table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
 <colgroup style="width: 70%"></colgroup>
 <tbody><tr>
@@ -1968,13 +2036,13 @@ De geometrische afbakening van het veiligheidsregiogebied waarbinnen de geometri
 <tbody><tr>
 <th>Subtype</th>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_provinciegebied">Provinciegebied</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_provinciegebied">Provinciegebied</a>
 </td>
 </tr>
 <tr>
 <th>Supertype</th>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_op_land">BestuurlijkGebiedOpLand</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_op_land">BestuurlijkGebiedOpLand</a>
 </td>
 </tr>
 <tr>
@@ -1993,7 +2061,7 @@ De geometrische afbakening van het veiligheidsregiogebied waarbinnen de geometri
 
 
 <section class="notoc"><div class="header-wrapper"><h6 id="overzicht-relatiesoorten-1">Overzicht Relatiesoorten</h6><a class="self-link" href="#overzicht-relatiesoorten-1" aria-label="Permalink for this Section"></a></div>
-
+    
 <table style="width: 100%">
 <colgroup style="width: 25%"></colgroup>
 <colgroup style="width: 50%"></colgroup>
@@ -2008,15 +2076,27 @@ De geometrische afbakening van het veiligheidsregiogebied waarbinnen de geometri
 </tr>
 <tr>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_provinciegebied_relatiesoort_ligt_in_rijksgebied">ligtInRijksgebied</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_provinciegebied_relatiesoort_ligt_in_rijksgebied">ligtInRijksgebied</a>
 </td>
 <td>
 De geometrische afbakening van het rijksgebied waarbinnen de geometrie van het provinciegebied zich moet bevinden, en/of mee moet samenvallen.</td>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_rijksgebied">Rijksgebied</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_rijksgebied">Rijksgebied</a>
 </td>
 <td>
 1..*</td>
+</tr>
+<tr>
+<td>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_provinciegebied_relatiesoort_wordt_bestuurd_door_provincie">wordtBestuurdDoorProvincie</a>
+</td>
+<td>
+Relatie die aangeeft dat het gebied bestuurt wordt door een provincie.</td>
+<td>
+<a class="link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_provincie">Provincie</a>
+</td>
+<td>
+1</td>
 </tr>
 </tbody>
 </table>
@@ -2026,7 +2106,7 @@ De geometrische afbakening van het rijksgebied waarbinnen de geometrie van het p
 
 <section class="notoc"><div class="header-wrapper"><h6 id="details-relatiesoorten-1">Details Relatiesoorten</h6><a class="self-link" href="#details-relatiesoorten-1" aria-label="Permalink for this Section"></a></div>
 
-<section class="notoc" id="informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_provinciegebied_relatiesoort_ligt_in_rijksgebied"><div class="header-wrapper"><h6 id="ligtinrijksgebied">ligtInRijksgebied</h6><a class="self-link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_provinciegebied_relatiesoort_ligt_in_rijksgebied" aria-label="Permalink for this Section"></a></div>
+<section class="notoc" id="informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_provinciegebied_relatiesoort_ligt_in_rijksgebied"><div class="header-wrapper"><h6 id="ligtinrijksgebied">ligtInRijksgebied</h6><a class="self-link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_provinciegebied_relatiesoort_ligt_in_rijksgebied" aria-label="Permalink for this Section"></a></div>
 
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
@@ -2074,8 +2154,57 @@ De geometrische afbakening van het rijksgebied waarbinnen de geometrie van het p
 <tr>
 <th>Bron</th>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_provinciegebied">Provinciegebied</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_provinciegebied">Provinciegebied</a>
 </td>
+</tr>
+</tbody><tbody>
+</tbody>
+</table>
+</section>
+<section class="notoc" id="informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_provinciegebied_relatiesoort_wordt_bestuurd_door_provincie"><div class="header-wrapper"><h6 id="wordtbestuurddoorprovincie">wordtBestuurdDoorProvincie</h6><a class="self-link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_provinciegebied_relatiesoort_wordt_bestuurd_door_provincie" aria-label="Permalink for this Section"></a></div>
+
+<table style="width: 100%">
+<colgroup style="width: 30%"></colgroup>
+<colgroup style="width: 70%"></colgroup>
+<tbody><tr>
+<th>Identificatie</th>
+<td>http://modellen.geostandaarden.nl/def/imso#wordtBestuurdDoorProvincie</td>
+</tr>
+<tr>
+<th>Naam</th>
+<td>wordtBestuurdDoorProvincie</td>
+</tr>
+<tr>
+<th>Alias</th>
+<td>wordt bestuurd door provincie</td>
+</tr>
+<tr>
+<th>Herkomst</th>
+<td>IMSO</td>
+</tr>
+<tr>
+<th>Definitie</th>
+<td>Relatie die aangeeft dat het gebied bestuurt wordt door een provincie.</td>
+</tr>
+<tr>
+<th>Herkomst definitie</th>
+<td>IMSO</td>
+</tr>
+<tr>
+<th>Datum opname</th>
+<td>2025-09-19</td>
+</tr>
+<tr>
+<th>Identificerend</th>
+<td>Nee</td>
+</tr>
+<tr>
+<th>Kardinaliteit</th>
+<td>1</td>
+</tr>
+<tr>
+<th>Kardinaliteit relatie bron</th>
+<td>1</td>
 </tr>
 </tbody><tbody>
 </tbody>
@@ -2083,10 +2212,10 @@ De geometrische afbakening van het rijksgebied waarbinnen de geometrie van het p
 </section>
 </section>
 
-</section><section id="rijksgebied"><div class="header-wrapper"><h5 id="informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_rijksgebied"><bdi class="secno">4.1.1.7 </bdi>Rijksgebied</h5><a class="self-link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_rijksgebied" aria-label="Permalink for Section 4.1.1.7"></a></div><div><p>
+</section><section id="rijksgebied"><div class="header-wrapper"><h5 id="informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_rijksgebied"><bdi class="secno">4.1.1.7 </bdi>Rijksgebied</h5><a class="self-link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_rijksgebied" aria-label="Permalink for Section 4.1.1.7"></a></div><div><p>
       </p><figure id="fig-rijksgebied-detail">
         <img src="model-docs/media/rijksgebied-detail.png" alt="Rijksgebied - detail">
-        <figcaption><a class="self-link" href="#fig-rijksgebied-detail">Figuur <bdi class="figno">8</bdi></a> <span class="fig-title">Rijksgebied - detail</span></figcaption>
+        <figcaption><a class="self-link" href="#fig-rijksgebied-detail">Figuur <bdi class="figno">9</bdi></a> <span class="fig-title">Rijksgebied - detail</span></figcaption>
       </figure>
     <p></p>
 <p>Het Rijk, ook wel de Rijksoverheid, voert de wettelijke taken uit op nationaal niveau. Het openbare lichaam '<strong>Rijk</strong>' bestaat uit alle ministeries, de daartoe behorende uitvoeringsorganisaties, inspecties en Hoge colleges van Staat. Het grondgebied waarover de het Rijk regeert is in het model het '<strong>Rijksgebied</strong>'. De bestuurlijke invloedsveer van het Rijk, strekt zich tevens uit over zee, waarvan het territorium wordt afgebakend door een viertal type maritieme zones. Dit zijn specialisaties van het «feature­Type» 'Maritime­Zone' (INSPIRE, Annex I, Administrative Units):</p>
@@ -2152,13 +2281,13 @@ De geometrische afbakening van het rijksgebied waarbinnen de geometrie van het p
 <tbody><tr>
 <th>Subtype</th>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_rijksgebied">Rijksgebied</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_rijksgebied">Rijksgebied</a>
 </td>
 </tr>
 <tr>
 <th>Supertype</th>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_op_land">BestuurlijkGebiedOpLand</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_op_land">BestuurlijkGebiedOpLand</a>
 </td>
 </tr>
 <tr>
@@ -2176,330 +2305,95 @@ De geometrische afbakening van het rijksgebied waarbinnen de geometrie van het p
 
 
 
-
-
-
-
-</section><section id="territorialezee"><div class="header-wrapper"><h5 id="informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_territoriale_zee"><bdi class="secno">4.1.1.8 </bdi>TerritorialeZee</h5><a class="self-link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_territoriale_zee" aria-label="Permalink for Section 4.1.1.8"></a></div><p></p><table style="width: 100%">
-<colgroup style="width: 30%"></colgroup>
-<colgroup style="width: 70%"></colgroup>
-<tbody><tr>
-<th>Identificatie</th>
-<td>http://modellen.geostandaarden.nl/def/imso#TerritorialeZee</td>
-</tr>
-<tr>
-<th>Naam</th>
-<td>TerritorialeZee</td>
-</tr>
-<tr>
-<th>Herkomst</th>
-<td>EMSO</td>
-</tr>
-<tr>
-<th>Definitie</th>
-<td>Het gebied vanaf de laagwaterlijn tot 12 zeemijl uit de kust dat behoort bij het Rijk.</td>
-</tr>
-<tr>
-<th>Herkomst definitie</th>
-<td>Wet grenzen Nederlandse territoriale zee</td>
-</tr>
-<tr>
-<th>Toelichting</th>
-<td>Het betreft hier de territoriale zee zoals nu reeds wordt vastgelegd door de Dienst der Hydrografie. Dit was tot nu toe nog geen onderdeel van een basisregistratie.
-
-<p>Dit gebied is ook wel bekend als “de 12-mijlszone”. In het Eems-Dollard gebied is er tussen Nederland en Duitsland geen formeel grensverdrag en dus geen wederzijds bevestigde begrenzing van de territoriale zee.</p></td>
-</tr>
-<tr>
-<th>Begrip</th>
-<td>
-<a href="http://begrippen.geostandaarden.nl/disgeo/id/begrip/nederlandse_territoriale_zee">http://begrippen.geostandaarden.nl/disgeo/id/begrip/nederlandse_territoriale_zee</a>
-</td>
-</tr>
-<tr>
-<th>Datum opname</th>
-<td>2022-06-01</td>
-</tr>
-</tbody><tbody>
-</tbody>
-</table>
-
-<section class="notoc"><div class="header-wrapper"><h6 id="overzicht-generalisaties-6">Overzicht generalisaties</h6><a class="self-link" href="#overzicht-generalisaties-6" aria-label="Permalink for this Section"></a></div>
-
+<section class="notoc"><div class="header-wrapper"><h6 id="overzicht-relatiesoorten-2">Overzicht Relatiesoorten</h6><a class="self-link" href="#overzicht-relatiesoorten-2" aria-label="Permalink for this Section"></a></div>
+    
 <table style="width: 100%">
-<colgroup style="width: 30%"></colgroup>
-<colgroup style="width: 70%"></colgroup>
-<tbody><tr>
-<th>Subtype</th>
+<colgroup style="width: 25%"></colgroup>
+<colgroup style="width: 50%"></colgroup>
+<colgroup style="width: 18%"></colgroup>
+<colgroup style="width: 7%"></colgroup>
+<tbody>
+<tr>
+  <th>Naam</th>
+  <th>Definitie</th>
+  <th>Type</th>
+  <th>Kard</th>
+</tr>
+<tr>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_territoriale_zee">TerritorialeZee</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_rijksgebied_relatiesoort_wordt_bestuurd_door_rijk">wordtBestuurdDoorRijk</a>
 </td>
-</tr>
-<tr>
-<th>Supertype</th>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_op_zee">BestuurlijkGebiedOpZee</a>
+Relatie die aangeeft dat het gebied bestuurt wordt door een rijk.</td>
+<td>
+<a class="link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_rijk">Rijk</a>
 </td>
+<td>
+1</td>
 </tr>
-<tr>
-<th>Datum opname</th>
-<td>2022-06-01</td>
-</tr>
-<tr>
-<th>Mixin</th>
-<td>Nee</td>
-</tr>
-</tbody><tbody>
 </tbody>
 </table>
 </section>
 
 
 
+<section class="notoc"><div class="header-wrapper"><h6 id="details-relatiesoorten-2">Details Relatiesoorten</h6><a class="self-link" href="#details-relatiesoorten-2" aria-label="Permalink for this Section"></a></div>
 
-
-
-
-</section><section id="aansluitendezone"><div class="header-wrapper"><h5 id="informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_aansluitende_zone"><bdi class="secno">4.1.1.9 </bdi>AansluitendeZone</h5><a class="self-link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_aansluitende_zone" aria-label="Permalink for Section 4.1.1.9"></a></div><table style="width: 100%">
-<colgroup style="width: 30%"></colgroup>
-<colgroup style="width: 70%"></colgroup>
-<tbody><tr>
-<th>Identificatie</th>
-<td>http://modellen.geostandaarden.nl/def/imso#AansluitendeZone</td>
-</tr>
-<tr>
-<th>Naam</th>
-<td>AansluitendeZone</td>
-</tr>
-<tr>
-<th>Herkomst</th>
-<td>EMSO</td>
-</tr>
-<tr>
-<th>Definitie</th>
-<td>Het gebied buiten en grenzend aan de territoriale zee dat zich niet verder uitstrekt dan 24 zeemijlen vanaf de laagwaterlijn</td>
-</tr>
-<tr>
-<th>Herkomst definitie</th>
-<td>Rijkswet instelling aansluitende zone</td>
-</tr>
-<tr>
-<th>Toelichting</th>
-<td>Het betreft hier de aansluitende zone zoals nu reeds wordt vastgelegd door de Dienst der Hydrografie. Dit was tot nu toe nog geen onderdeel van een basisregistratie.</td>
-</tr>
-<tr>
-<th>Begrip</th>
-<td>
-<a href="http://begrippen.geostandaarden.nl/disgeo/id/begrip/nederlandse_aansluitende_zone">http://begrippen.geostandaarden.nl/disgeo/id/begrip/nederlandse_aansluitende_zone</a>
-</td>
-</tr>
-<tr>
-<th>Datum opname</th>
-<td>2022-06-01</td>
-</tr>
-</tbody><tbody>
-</tbody>
-</table>
-
-<section class="notoc"><div class="header-wrapper"><h6 id="overzicht-generalisaties-7">Overzicht generalisaties</h6><a class="self-link" href="#overzicht-generalisaties-7" aria-label="Permalink for this Section"></a></div>
+<section class="notoc" id="informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_rijksgebied_relatiesoort_wordt_bestuurd_door_rijk"><div class="header-wrapper"><h6 id="wordtbestuurddoorrijk">wordtBestuurdDoorRijk</h6><a class="self-link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_rijksgebied_relatiesoort_wordt_bestuurd_door_rijk" aria-label="Permalink for this Section"></a></div>
 
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
 <colgroup style="width: 70%"></colgroup>
 <tbody><tr>
-<th>Subtype</th>
-<td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_aansluitende_zone">AansluitendeZone</a>
-</td>
-</tr>
-<tr>
-<th>Supertype</th>
-<td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_op_zee">BestuurlijkGebiedOpZee</a>
-</td>
-</tr>
-<tr>
-<th>Datum opname</th>
-<td>2022-06-01</td>
-</tr>
-<tr>
-<th>Mixin</th>
-<td>Nee</td>
-</tr>
-</tbody><tbody>
-</tbody>
-</table>
-</section>
-
-
-
-
-
-
-
-</section><section id="exclusieveeconomischezone"><div class="header-wrapper"><h5 id="informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_exclusieve_economische_zone"><bdi class="secno">4.1.1.10 </bdi>ExclusieveEconomischeZone</h5><a class="self-link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_exclusieve_economische_zone" aria-label="Permalink for Section 4.1.1.10"></a></div><table style="width: 100%">
-<colgroup style="width: 30%"></colgroup>
-<colgroup style="width: 70%"></colgroup>
-<tbody><tr>
 <th>Identificatie</th>
-<td>http://modellen.geostandaarden.nl/def/imso#ExclusieveEconomischeZone</td>
+<td>http://modellen.geostandaarden.nl/def/imso#wordtBestuurdDoorRijk</td>
 </tr>
 <tr>
 <th>Naam</th>
-<td>ExclusieveEconomischeZone</td>
+<td>wordtBestuurdDoorRijk</td>
 </tr>
 <tr>
 <th>Alias</th>
-<td>EEZ</td>
+<td>wordt bestuurd door rijk</td>
 </tr>
 <tr>
 <th>Herkomst</th>
-<td>EMSO</td>
+<td>IMSO</td>
 </tr>
 <tr>
 <th>Definitie</th>
-<td>Het gebied buiten en grenzend aan de territoriale zee dat zich niet verder uitstrekt dan tweehonderd zeemijlen vanaf de laagwaterlijn.</td>
+<td>Relatie die aangeeft dat het gebied bestuurt wordt door een rijk.</td>
 </tr>
 <tr>
 <th>Herkomst definitie</th>
-<td>Rijkswet instelling exclusieve economische zone</td>
-</tr>
-<tr>
-<th>Toelichting</th>
-<td>Het betreft hier de Nederlandse exclusieve economische zone zoals nu reeds wordt vastgelegd door de Dienst der Hydrografie. Dit was tot nu toe nog geen onderdeel van een basisregistratie.</td>
-</tr>
-<tr>
-<th>Begrip</th>
-<td>
-<a href="http://begrippen.geostandaarden.nl/disgeo/id/begrip/nederlandse_exclusieve_economische_zone">http://begrippen.geostandaarden.nl/disgeo/id/begrip/nederlandse_exclusieve_economische_zone</a>
-</td>
+<td>IMSO</td>
 </tr>
 <tr>
 <th>Datum opname</th>
-<td>2022-06-01</td>
-</tr>
-</tbody><tbody>
-</tbody>
-</table>
-
-<section class="notoc"><div class="header-wrapper"><h6 id="overzicht-generalisaties-8">Overzicht generalisaties</h6><a class="self-link" href="#overzicht-generalisaties-8" aria-label="Permalink for this Section"></a></div>
-
-<table style="width: 100%">
-<colgroup style="width: 30%"></colgroup>
-<colgroup style="width: 70%"></colgroup>
-<tbody><tr>
-<th>Subtype</th>
-<td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_exclusieve_economische_zone">ExclusieveEconomischeZone</a>
-</td>
+<td>2025-09-19</td>
 </tr>
 <tr>
-<th>Supertype</th>
-<td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_op_zee">BestuurlijkGebiedOpZee</a>
-</td>
-</tr>
-<tr>
-<th>Datum opname</th>
-<td>2022-06-01</td>
-</tr>
-<tr>
-<th>Mixin</th>
+<th>Identificerend</th>
 <td>Nee</td>
+</tr>
+<tr>
+<th>Kardinaliteit</th>
+<td>1</td>
+</tr>
+<tr>
+<th>Kardinaliteit relatie bron</th>
+<td>1</td>
 </tr>
 </tbody><tbody>
 </tbody>
 </table>
 </section>
-
-
-
-
-
-
-
-</section><section id="continentaalplat"><div class="header-wrapper"><h5 id="informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_continentaal_plat"><bdi class="secno">4.1.1.11 </bdi>ContinentaalPlat</h5><a class="self-link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_continentaal_plat" aria-label="Permalink for Section 4.1.1.11"></a></div><p></p><table style="width: 100%">
-<colgroup style="width: 30%"></colgroup>
-<colgroup style="width: 70%"></colgroup>
-<tbody><tr>
-<th>Identificatie</th>
-<td>http://modellen.geostandaarden.nl/def/imso#ContinentaalPlat</td>
-</tr>
-<tr>
-<th>Naam</th>
-<td>ContinentaalPlat</td>
-</tr>
-<tr>
-<th>Herkomst</th>
-<td>EMSO</td>
-</tr>
-<tr>
-<th>Definitie</th>
-<td>Het onder de Noordzee gelegen deel van de zeebodem en de ondergrond daarvan, waarop het Koninkrijk soevereine rechten heeft, en gelegen is buiten en grenzend aan de territoriale zee.</td>
-</tr>
-<tr>
-<th>Herkomst definitie</th>
-<td>Mijnwet continentaal plat</td>
-</tr>
-<tr>
-<th>Toelichting</th>
-<td>Het betreft hier het Nederlandse continentaal plat zoals nu reeds wordt vastgelegd door de Dienst der Hydrografie. Dit was tot nu toe nog geen onderdeel van een basisregistratie.
-
-<p>Binnen het Europese deel van het Rijk kent deze dezelfde contour als de Nederlandse Exclusieve Economische Zone.</p></td>
-</tr>
-<tr>
-<th>Begrip</th>
-<td>
-<a href="http://begrippen.geostandaarden.nl/disgeo/id/begrip/nederlandse_continentaal_plat">http://begrippen.geostandaarden.nl/disgeo/id/begrip/nederlandse_continentaal_plat</a>
-</td>
-</tr>
-<tr>
-<th>Datum opname</th>
-<td>2022-06-01</td>
-</tr>
-</tbody><tbody>
-</tbody>
-</table>
-
-<section class="notoc"><div class="header-wrapper"><h6 id="overzicht-generalisaties-9">Overzicht generalisaties</h6><a class="self-link" href="#overzicht-generalisaties-9" aria-label="Permalink for this Section"></a></div>
-
-<table style="width: 100%">
-<colgroup style="width: 30%"></colgroup>
-<colgroup style="width: 70%"></colgroup>
-<tbody><tr>
-<th>Subtype</th>
-<td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_continentaal_plat">ContinentaalPlat</a>
-</td>
-</tr>
-<tr>
-<th>Supertype</th>
-<td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_op_zee">BestuurlijkGebiedOpZee</a>
-</td>
-</tr>
-<tr>
-<th>Datum opname</th>
-<td>2022-06-01</td>
-</tr>
-<tr>
-<th>Mixin</th>
-<td>Nee</td>
-</tr>
-</tbody><tbody>
-</tbody>
-</table>
 </section>
 
-
-
-
-
-
-
-</section><section id="waterschapsgebied"><div class="header-wrapper"><h5 id="informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_waterschapsgebied"><bdi class="secno">4.1.1.12 </bdi>Waterschapsgebied</h5><a class="self-link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_waterschapsgebied" aria-label="Permalink for Section 4.1.1.12"></a></div><div><p>
+</section><section id="waterschapsgebied"><div class="header-wrapper"><h5 id="informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_waterschapsgebied"><bdi class="secno">4.1.1.8 </bdi>Waterschapsgebied</h5><a class="self-link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_waterschapsgebied" aria-label="Permalink for Section 4.1.1.8"></a></div><div><p>
       </p><figure id="fig-waterschapesgebied-detail">
         <img src="model-docs/media/waterschapsgebied-detail.png" alt="Waterschapsgebied - detail">
-        <figcaption><a class="self-link" href="#fig-waterschapesgebied-detail">Figuur <bdi class="figno">9</bdi></a> <span class="fig-title">Waterschapesgebied - detail</span></figcaption>
+        <figcaption><a class="self-link" href="#fig-waterschapesgebied-detail">Figuur <bdi class="figno">10</bdi></a> <span class="fig-title">Waterschapesgebied - detail</span></figcaption>
       </figure>
     <p></p>
 <p>Net als de Rijksoverheid, de provincies en de gemeenten, is een waterschap een overheidsorganisatie. Het zorgt voor het waterbeheer in een bepaald gebied. Tot haar taken behoren het beschermen tegen overstromingen, het zorgen voor schoon water in sloten, rivieren, meren en beken én het beheren van de hoeveelheid water. De verzameling van bestuursorganen van een waterschap, worden in dit model aangeduid met het openbare lichaam '<strong>Waterschap</strong>'. Het grondgebied waarover het waterschap haar bestuur uitoefent, heet in het model het '<strong>Waterschapsgebied</strong>'.</p>
@@ -2557,7 +2451,7 @@ De geometrische afbakening van het rijksgebied waarbinnen de geometrie van het p
 </tbody>
 </table>
 
-<section class="notoc"><div class="header-wrapper"><h6 id="overzicht-generalisaties-10">Overzicht generalisaties</h6><a class="self-link" href="#overzicht-generalisaties-10" aria-label="Permalink for this Section"></a></div>
+<section class="notoc"><div class="header-wrapper"><h6 id="overzicht-generalisaties-6">Overzicht generalisaties</h6><a class="self-link" href="#overzicht-generalisaties-6" aria-label="Permalink for this Section"></a></div>
 
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
@@ -2565,13 +2459,13 @@ De geometrische afbakening van het rijksgebied waarbinnen de geometrie van het p
 <tbody><tr>
 <th>Subtype</th>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_waterschapsgebied">Waterschapsgebied</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_waterschapsgebied">Waterschapsgebied</a>
 </td>
 </tr>
 <tr>
 <th>Supertype</th>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_op_land">BestuurlijkGebiedOpLand</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_op_land">BestuurlijkGebiedOpLand</a>
 </td>
 </tr>
 <tr>
@@ -2589,14 +2483,95 @@ De geometrische afbakening van het rijksgebied waarbinnen de geometrie van het p
 
 
 
+<section class="notoc"><div class="header-wrapper"><h6 id="overzicht-relatiesoorten-3">Overzicht Relatiesoorten</h6><a class="self-link" href="#overzicht-relatiesoorten-3" aria-label="Permalink for this Section"></a></div>
+    
+<table style="width: 100%">
+<colgroup style="width: 25%"></colgroup>
+<colgroup style="width: 50%"></colgroup>
+<colgroup style="width: 18%"></colgroup>
+<colgroup style="width: 7%"></colgroup>
+<tbody>
+<tr>
+  <th>Naam</th>
+  <th>Definitie</th>
+  <th>Type</th>
+  <th>Kard</th>
+</tr>
+<tr>
+<td>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_waterschapsgebied_relatiesoort_wordt_bestuurd_door_waterschap">wordtBestuurdDoorWaterschap</a>
+</td>
+<td>
+Relatie die aangeeft dat het gebied bestuurt wordt door een waterschap.</td>
+<td>
+<a class="link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_waterschap">Waterschap</a>
+</td>
+<td>
+1</td>
+</tr>
+</tbody>
+</table>
+</section>
 
 
 
+<section class="notoc"><div class="header-wrapper"><h6 id="details-relatiesoorten-3">Details Relatiesoorten</h6><a class="self-link" href="#details-relatiesoorten-3" aria-label="Permalink for this Section"></a></div>
 
-</section><section id="veiligheidsregiogebied"><div class="header-wrapper"><h5 id="informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_veiligheidsregiogebied"><bdi class="secno">4.1.1.13 </bdi>Veiligheidsregiogebied</h5><a class="self-link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_veiligheidsregiogebied" aria-label="Permalink for Section 4.1.1.13"></a></div><div><p>
+<section class="notoc" id="informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_waterschapsgebied_relatiesoort_wordt_bestuurd_door_waterschap"><div class="header-wrapper"><h6 id="wordtbestuurddoorwaterschap">wordtBestuurdDoorWaterschap</h6><a class="self-link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_waterschapsgebied_relatiesoort_wordt_bestuurd_door_waterschap" aria-label="Permalink for this Section"></a></div>
+
+<table style="width: 100%">
+<colgroup style="width: 30%"></colgroup>
+<colgroup style="width: 70%"></colgroup>
+<tbody><tr>
+<th>Identificatie</th>
+<td>http://modellen.geostandaarden.nl/def/imso#wordtBestuurdDoorWaterschap</td>
+</tr>
+<tr>
+<th>Naam</th>
+<td>wordtBestuurdDoorWaterschap</td>
+</tr>
+<tr>
+<th>Alias</th>
+<td>wordt bestuurd door waterschap</td>
+</tr>
+<tr>
+<th>Herkomst</th>
+<td>IMSO</td>
+</tr>
+<tr>
+<th>Definitie</th>
+<td>Relatie die aangeeft dat het gebied bestuurt wordt door een waterschap.</td>
+</tr>
+<tr>
+<th>Herkomst definitie</th>
+<td>IMSO</td>
+</tr>
+<tr>
+<th>Datum opname</th>
+<td>2025-09-19</td>
+</tr>
+<tr>
+<th>Identificerend</th>
+<td>Nee</td>
+</tr>
+<tr>
+<th>Kardinaliteit</th>
+<td>1</td>
+</tr>
+<tr>
+<th>Kardinaliteit relatie bron</th>
+<td>1</td>
+</tr>
+</tbody><tbody>
+</tbody>
+</table>
+</section>
+</section>
+
+</section><section id="veiligheidsregiogebied"><div class="header-wrapper"><h5 id="informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_veiligheidsregiogebied"><bdi class="secno">4.1.1.9 </bdi>Veiligheidsregiogebied</h5><a class="self-link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_veiligheidsregiogebied" aria-label="Permalink for Section 4.1.1.9"></a></div><div><p>
       </p><figure id="fig-veiligheidsregiogebied-detail">
         <img src="model-docs/media/veiligheidsregiogebied-detail.png" alt="Veiligheidsregiogebied - detail">
-        <figcaption><a class="self-link" href="#fig-veiligheidsregiogebied-detail">Figuur <bdi class="figno">10</bdi></a> <span class="fig-title">Veiligheidsregiogebied - detail</span></figcaption>
+        <figcaption><a class="self-link" href="#fig-veiligheidsregiogebied-detail">Figuur <bdi class="figno">11</bdi></a> <span class="fig-title">Veiligheidsregiogebied - detail</span></figcaption>
       </figure>
     <p></p>
 <p>Nederland is opgedeeld in 25 veiligheidsregio's. Zij zorgen voor de veiligheid van de inwoners én bezoekers van het gebied. Dit doen zij door te zorgen voor de aanwezigheid van hulpverleningsdiensten, evenals het maken van afspraken over de aanpak van rampen en crises. Een '<strong>Veiligheidsregio</strong>' is een openbaarlichaam, met het '<strong>Veiligheidsregiogebied</strong>' als haar bestuurlijk gebied.</p>
@@ -2646,7 +2621,7 @@ De geometrische afbakening van het rijksgebied waarbinnen de geometrie van het p
 </tbody>
 </table>
 
-<section class="notoc"><div class="header-wrapper"><h6 id="overzicht-generalisaties-11">Overzicht generalisaties</h6><a class="self-link" href="#overzicht-generalisaties-11" aria-label="Permalink for this Section"></a></div>
+<section class="notoc"><div class="header-wrapper"><h6 id="overzicht-generalisaties-7">Overzicht generalisaties</h6><a class="self-link" href="#overzicht-generalisaties-7" aria-label="Permalink for this Section"></a></div>
 
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
@@ -2654,13 +2629,13 @@ De geometrische afbakening van het rijksgebied waarbinnen de geometrie van het p
 <tbody><tr>
 <th>Subtype</th>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_veiligheidsregiogebied">Veiligheidsregiogebied</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_veiligheidsregiogebied">Veiligheidsregiogebied</a>
 </td>
 </tr>
 <tr>
 <th>Supertype</th>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_op_land">BestuurlijkGebiedOpLand</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_op_land">BestuurlijkGebiedOpLand</a>
 </td>
 </tr>
 <tr>
@@ -2678,15 +2653,736 @@ De geometrische afbakening van het rijksgebied waarbinnen de geometrie van het p
 
 
 
+<section class="notoc"><div class="header-wrapper"><h6 id="overzicht-relatiesoorten-4">Overzicht Relatiesoorten</h6><a class="self-link" href="#overzicht-relatiesoorten-4" aria-label="Permalink for this Section"></a></div>
+    
+<table style="width: 100%">
+<colgroup style="width: 25%"></colgroup>
+<colgroup style="width: 50%"></colgroup>
+<colgroup style="width: 18%"></colgroup>
+<colgroup style="width: 7%"></colgroup>
+<tbody>
+<tr>
+  <th>Naam</th>
+  <th>Definitie</th>
+  <th>Type</th>
+  <th>Kard</th>
+</tr>
+<tr>
+<td>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_veiligheidsregiogebied_relatiesoort_wordt_bestuurd_door_veiligheidsregio">wordtBestuurdDoorVeiligheidsregio</a>
+</td>
+<td>
+Relatie die aangeeft dat het gebied bestuurt wordt door een veiligheidsregio.</td>
+<td>
+<a class="link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_veiligheidsregio">Veiligheidsregio</a>
+</td>
+<td>
+1</td>
+</tr>
+</tbody>
+</table>
+</section>
 
 
 
+<section class="notoc"><div class="header-wrapper"><h6 id="details-relatiesoorten-4">Details Relatiesoorten</h6><a class="self-link" href="#details-relatiesoorten-4" aria-label="Permalink for this Section"></a></div>
+
+<section class="notoc" id="informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_veiligheidsregiogebied_relatiesoort_wordt_bestuurd_door_veiligheidsregio"><div class="header-wrapper"><h6 id="wordtbestuurddoorveiligheidsregio">wordtBestuurdDoorVeiligheidsregio</h6><a class="self-link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_veiligheidsregiogebied_relatiesoort_wordt_bestuurd_door_veiligheidsregio" aria-label="Permalink for this Section"></a></div>
+
+<table style="width: 100%">
+<colgroup style="width: 30%"></colgroup>
+<colgroup style="width: 70%"></colgroup>
+<tbody><tr>
+<th>Identificatie</th>
+<td>http://modellen.geostandaarden.nl/def/imso#wordtBestuurdDoorVeiligheidsregio</td>
+</tr>
+<tr>
+<th>Naam</th>
+<td>wordtBestuurdDoorVeiligheidsregio</td>
+</tr>
+<tr>
+<th>Alias</th>
+<td>wordt bestuurd door veiligheidsregio</td>
+</tr>
+<tr>
+<th>Herkomst</th>
+<td>IMSO</td>
+</tr>
+<tr>
+<th>Definitie</th>
+<td>Relatie die aangeeft dat het gebied bestuurt wordt door een veiligheidsregio.</td>
+</tr>
+<tr>
+<th>Herkomst definitie</th>
+<td>IMSO</td>
+</tr>
+<tr>
+<th>Datum opname</th>
+<td>2025-09-19</td>
+</tr>
+<tr>
+<th>Identificerend</th>
+<td>Nee</td>
+</tr>
+<tr>
+<th>Kardinaliteit</th>
+<td>1</td>
+</tr>
+<tr>
+<th>Kardinaliteit relatie bron</th>
+<td>1</td>
+</tr>
+</tbody><tbody>
+</tbody>
+</table>
+</section>
+</section>
+
+</section><section id="territorialezee"><div class="header-wrapper"><h5 id="informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_territoriale_zee"><bdi class="secno">4.1.1.10 </bdi>TerritorialeZee</h5><a class="self-link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_territoriale_zee" aria-label="Permalink for Section 4.1.1.10"></a></div><p></p><table style="width: 100%">
+<colgroup style="width: 30%"></colgroup>
+<colgroup style="width: 70%"></colgroup>
+<tbody><tr>
+<th>Identificatie</th>
+<td>http://modellen.geostandaarden.nl/def/imso#TerritorialeZee</td>
+</tr>
+<tr>
+<th>Naam</th>
+<td>TerritorialeZee</td>
+</tr>
+<tr>
+<th>Herkomst</th>
+<td>EMSO</td>
+</tr>
+<tr>
+<th>Definitie</th>
+<td>Het gebied vanaf de laagwaterlijn tot 12 zeemijl uit de kust dat behoort bij het Rijk.</td>
+</tr>
+<tr>
+<th>Herkomst definitie</th>
+<td>Wet grenzen Nederlandse territoriale zee</td>
+</tr>
+<tr>
+<th>Toelichting</th>
+<td>Het betreft hier de territoriale zee zoals nu reeds wordt vastgelegd door de Dienst der Hydrografie. Dit was tot nu toe nog geen onderdeel van een basisregistratie.
+
+<p>Dit gebied is ook wel bekend als “de 12-mijlszone”. In het Eems-Dollard gebied is er tussen Nederland en Duitsland geen formeel grensverdrag en dus geen wederzijds bevestigde begrenzing van de territoriale zee.</p></td>
+</tr>
+<tr>
+<th>Begrip</th>
+<td>
+<a href="http://begrippen.geostandaarden.nl/disgeo/id/begrip/nederlandse_territoriale_zee">http://begrippen.geostandaarden.nl/disgeo/id/begrip/nederlandse_territoriale_zee</a>
+</td>
+</tr>
+<tr>
+<th>Datum opname</th>
+<td>2022-06-01</td>
+</tr>
+</tbody><tbody>
+</tbody>
+</table>
+
+<section class="notoc"><div class="header-wrapper"><h6 id="overzicht-generalisaties-8">Overzicht generalisaties</h6><a class="self-link" href="#overzicht-generalisaties-8" aria-label="Permalink for this Section"></a></div>
+
+<table style="width: 100%">
+<colgroup style="width: 30%"></colgroup>
+<colgroup style="width: 70%"></colgroup>
+<tbody><tr>
+<th>Subtype</th>
+<td>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_territoriale_zee">TerritorialeZee</a>
+</td>
+</tr>
+<tr>
+<th>Supertype</th>
+<td>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_op_zee">BestuurlijkGebiedOpZee</a>
+</td>
+</tr>
+<tr>
+<th>Datum opname</th>
+<td>2022-06-01</td>
+</tr>
+<tr>
+<th>Mixin</th>
+<td>Nee</td>
+</tr>
+</tbody><tbody>
+</tbody>
+</table>
+</section>
+
+
+
+<section class="notoc"><div class="header-wrapper"><h6 id="overzicht-relatiesoorten-5">Overzicht Relatiesoorten</h6><a class="self-link" href="#overzicht-relatiesoorten-5" aria-label="Permalink for this Section"></a></div>
+    
+<table style="width: 100%">
+<colgroup style="width: 25%"></colgroup>
+<colgroup style="width: 50%"></colgroup>
+<colgroup style="width: 18%"></colgroup>
+<colgroup style="width: 7%"></colgroup>
+<tbody>
+<tr>
+  <th>Naam</th>
+  <th>Definitie</th>
+  <th>Type</th>
+  <th>Kard</th>
+</tr>
+<tr>
+<td>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_territoriale_zee_relatiesoort_wordt_bestuurd_door_rijk">wordtBestuurdDoorRijk</a>
+</td>
+<td>
+Relatie die aangeeft dat het gebied bestuurt wordt door een rijk.</td>
+<td>
+<a class="link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_rijk">Rijk</a>
+</td>
+<td>
+1</td>
+</tr>
+</tbody>
+</table>
+</section>
+
+
+
+<section class="notoc"><div class="header-wrapper"><h6 id="details-relatiesoorten-5">Details Relatiesoorten</h6><a class="self-link" href="#details-relatiesoorten-5" aria-label="Permalink for this Section"></a></div>
+
+<section class="notoc" id="informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_territoriale_zee_relatiesoort_wordt_bestuurd_door_rijk"><div class="header-wrapper"><h6 id="wordtbestuurddoorrijk-0">wordtBestuurdDoorRijk</h6><a class="self-link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_territoriale_zee_relatiesoort_wordt_bestuurd_door_rijk" aria-label="Permalink for this Section"></a></div>
+
+<table style="width: 100%">
+<colgroup style="width: 30%"></colgroup>
+<colgroup style="width: 70%"></colgroup>
+<tbody><tr>
+<th>Identificatie</th>
+<td>http://modellen.geostandaarden.nl/def/imso#wordtBestuurdDoorRijk</td>
+</tr>
+<tr>
+<th>Naam</th>
+<td>wordtBestuurdDoorRijk</td>
+</tr>
+<tr>
+<th>Alias</th>
+<td>wordt bestuurd door rijk</td>
+</tr>
+<tr>
+<th>Herkomst</th>
+<td>IMSO</td>
+</tr>
+<tr>
+<th>Definitie</th>
+<td>Relatie die aangeeft dat het gebied bestuurt wordt door een rijk.</td>
+</tr>
+<tr>
+<th>Herkomst definitie</th>
+<td>IMSO</td>
+</tr>
+<tr>
+<th>Datum opname</th>
+<td>2025-09-19</td>
+</tr>
+<tr>
+<th>Identificerend</th>
+<td>Nee</td>
+</tr>
+<tr>
+<th>Kardinaliteit</th>
+<td>1</td>
+</tr>
+<tr>
+<th>Kardinaliteit relatie bron</th>
+<td>1</td>
+</tr>
+</tbody><tbody>
+</tbody>
+</table>
+</section>
+</section>
+
+</section><section id="aansluitendezone"><div class="header-wrapper"><h5 id="informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_aansluitende_zone"><bdi class="secno">4.1.1.11 </bdi>AansluitendeZone</h5><a class="self-link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_aansluitende_zone" aria-label="Permalink for Section 4.1.1.11"></a></div><table style="width: 100%">
+<colgroup style="width: 30%"></colgroup>
+<colgroup style="width: 70%"></colgroup>
+<tbody><tr>
+<th>Identificatie</th>
+<td>http://modellen.geostandaarden.nl/def/imso#AansluitendeZone</td>
+</tr>
+<tr>
+<th>Naam</th>
+<td>AansluitendeZone</td>
+</tr>
+<tr>
+<th>Herkomst</th>
+<td>EMSO</td>
+</tr>
+<tr>
+<th>Definitie</th>
+<td>Het gebied buiten en grenzend aan de territoriale zee dat zich niet verder uitstrekt dan 24 zeemijlen vanaf de laagwaterlijn</td>
+</tr>
+<tr>
+<th>Herkomst definitie</th>
+<td>Rijkswet instelling aansluitende zone</td>
+</tr>
+<tr>
+<th>Toelichting</th>
+<td>Het betreft hier de aansluitende zone zoals nu reeds wordt vastgelegd door de Dienst der Hydrografie. Dit was tot nu toe nog geen onderdeel van een basisregistratie.</td>
+</tr>
+<tr>
+<th>Begrip</th>
+<td>
+<a href="http://begrippen.geostandaarden.nl/disgeo/id/begrip/nederlandse_aansluitende_zone">http://begrippen.geostandaarden.nl/disgeo/id/begrip/nederlandse_aansluitende_zone</a>
+</td>
+</tr>
+<tr>
+<th>Datum opname</th>
+<td>2022-06-01</td>
+</tr>
+</tbody><tbody>
+</tbody>
+</table>
+
+<section class="notoc"><div class="header-wrapper"><h6 id="overzicht-generalisaties-9">Overzicht generalisaties</h6><a class="self-link" href="#overzicht-generalisaties-9" aria-label="Permalink for this Section"></a></div>
+
+<table style="width: 100%">
+<colgroup style="width: 30%"></colgroup>
+<colgroup style="width: 70%"></colgroup>
+<tbody><tr>
+<th>Subtype</th>
+<td>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_aansluitende_zone">AansluitendeZone</a>
+</td>
+</tr>
+<tr>
+<th>Supertype</th>
+<td>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_op_zee">BestuurlijkGebiedOpZee</a>
+</td>
+</tr>
+<tr>
+<th>Datum opname</th>
+<td>2022-06-01</td>
+</tr>
+<tr>
+<th>Mixin</th>
+<td>Nee</td>
+</tr>
+</tbody><tbody>
+</tbody>
+</table>
+</section>
+
+
+
+<section class="notoc"><div class="header-wrapper"><h6 id="overzicht-relatiesoorten-6">Overzicht Relatiesoorten</h6><a class="self-link" href="#overzicht-relatiesoorten-6" aria-label="Permalink for this Section"></a></div>
+    
+<table style="width: 100%">
+<colgroup style="width: 25%"></colgroup>
+<colgroup style="width: 50%"></colgroup>
+<colgroup style="width: 18%"></colgroup>
+<colgroup style="width: 7%"></colgroup>
+<tbody>
+<tr>
+  <th>Naam</th>
+  <th>Definitie</th>
+  <th>Type</th>
+  <th>Kard</th>
+</tr>
+<tr>
+<td>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_aansluitende_zone_relatiesoort_wordt_bestuurd_door_rijk">wordtBestuurdDoorRijk</a>
+</td>
+<td>
+Relatie die aangeeft dat het gebied bestuurt wordt door een rijk.</td>
+<td>
+<a class="link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_rijk">Rijk</a>
+</td>
+<td>
+1</td>
+</tr>
+</tbody>
+</table>
+</section>
+
+
+
+<section class="notoc"><div class="header-wrapper"><h6 id="details-relatiesoorten-6">Details Relatiesoorten</h6><a class="self-link" href="#details-relatiesoorten-6" aria-label="Permalink for this Section"></a></div>
+
+<section class="notoc" id="informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_aansluitende_zone_relatiesoort_wordt_bestuurd_door_rijk"><div class="header-wrapper"><h6 id="wordtbestuurddoorrijk-1">wordtBestuurdDoorRijk</h6><a class="self-link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_aansluitende_zone_relatiesoort_wordt_bestuurd_door_rijk" aria-label="Permalink for this Section"></a></div>
+
+<table style="width: 100%">
+<colgroup style="width: 30%"></colgroup>
+<colgroup style="width: 70%"></colgroup>
+<tbody><tr>
+<th>Identificatie</th>
+<td>http://modellen.geostandaarden.nl/def/imso#wordtBestuurdDoorRijk</td>
+</tr>
+<tr>
+<th>Naam</th>
+<td>wordtBestuurdDoorRijk</td>
+</tr>
+<tr>
+<th>Alias</th>
+<td>wordt bestuurd door rijk</td>
+</tr>
+<tr>
+<th>Herkomst</th>
+<td>IMSO</td>
+</tr>
+<tr>
+<th>Definitie</th>
+<td>Relatie die aangeeft dat het gebied bestuurt wordt door een rijk.</td>
+</tr>
+<tr>
+<th>Herkomst definitie</th>
+<td>IMSO</td>
+</tr>
+<tr>
+<th>Datum opname</th>
+<td>2025-09-19</td>
+</tr>
+<tr>
+<th>Identificerend</th>
+<td>Nee</td>
+</tr>
+<tr>
+<th>Kardinaliteit</th>
+<td>1</td>
+</tr>
+<tr>
+<th>Kardinaliteit relatie bron</th>
+<td>1</td>
+</tr>
+</tbody><tbody>
+</tbody>
+</table>
+</section>
+</section>
+
+</section><section id="exclusieveeconomischezone"><div class="header-wrapper"><h5 id="informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_exclusieve_economische_zone"><bdi class="secno">4.1.1.12 </bdi>ExclusieveEconomischeZone</h5><a class="self-link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_exclusieve_economische_zone" aria-label="Permalink for Section 4.1.1.12"></a></div><table style="width: 100%">
+<colgroup style="width: 30%"></colgroup>
+<colgroup style="width: 70%"></colgroup>
+<tbody><tr>
+<th>Identificatie</th>
+<td>http://modellen.geostandaarden.nl/def/imso#ExclusieveEconomischeZone</td>
+</tr>
+<tr>
+<th>Naam</th>
+<td>ExclusieveEconomischeZone</td>
+</tr>
+<tr>
+<th>Alias</th>
+<td>EEZ</td>
+</tr>
+<tr>
+<th>Herkomst</th>
+<td>EMSO</td>
+</tr>
+<tr>
+<th>Definitie</th>
+<td>Het gebied buiten en grenzend aan de territoriale zee dat zich niet verder uitstrekt dan tweehonderd zeemijlen vanaf de laagwaterlijn.</td>
+</tr>
+<tr>
+<th>Herkomst definitie</th>
+<td>Rijkswet instelling exclusieve economische zone</td>
+</tr>
+<tr>
+<th>Toelichting</th>
+<td>Het betreft hier de Nederlandse exclusieve economische zone zoals nu reeds wordt vastgelegd door de Dienst der Hydrografie. Dit was tot nu toe nog geen onderdeel van een basisregistratie.</td>
+</tr>
+<tr>
+<th>Begrip</th>
+<td>
+<a href="http://begrippen.geostandaarden.nl/disgeo/id/begrip/nederlandse_exclusieve_economische_zone">http://begrippen.geostandaarden.nl/disgeo/id/begrip/nederlandse_exclusieve_economische_zone</a>
+</td>
+</tr>
+<tr>
+<th>Datum opname</th>
+<td>2022-06-01</td>
+</tr>
+</tbody><tbody>
+</tbody>
+</table>
+
+<section class="notoc"><div class="header-wrapper"><h6 id="overzicht-generalisaties-10">Overzicht generalisaties</h6><a class="self-link" href="#overzicht-generalisaties-10" aria-label="Permalink for this Section"></a></div>
+
+<table style="width: 100%">
+<colgroup style="width: 30%"></colgroup>
+<colgroup style="width: 70%"></colgroup>
+<tbody><tr>
+<th>Subtype</th>
+<td>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_exclusieve_economische_zone">ExclusieveEconomischeZone</a>
+</td>
+</tr>
+<tr>
+<th>Supertype</th>
+<td>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_op_zee">BestuurlijkGebiedOpZee</a>
+</td>
+</tr>
+<tr>
+<th>Datum opname</th>
+<td>2022-06-01</td>
+</tr>
+<tr>
+<th>Mixin</th>
+<td>Nee</td>
+</tr>
+</tbody><tbody>
+</tbody>
+</table>
+</section>
+
+
+
+<section class="notoc"><div class="header-wrapper"><h6 id="overzicht-relatiesoorten-7">Overzicht Relatiesoorten</h6><a class="self-link" href="#overzicht-relatiesoorten-7" aria-label="Permalink for this Section"></a></div>
+    
+<table style="width: 100%">
+<colgroup style="width: 25%"></colgroup>
+<colgroup style="width: 50%"></colgroup>
+<colgroup style="width: 18%"></colgroup>
+<colgroup style="width: 7%"></colgroup>
+<tbody>
+<tr>
+  <th>Naam</th>
+  <th>Definitie</th>
+  <th>Type</th>
+  <th>Kard</th>
+</tr>
+<tr>
+<td>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_exclusieve_economische_zone_relatiesoort_wordt_bestuurd_door_rijk">wordtBestuurdDoorRijk</a>
+</td>
+<td>
+Relatie die aangeeft dat het gebied bestuurt wordt door een rijk.</td>
+<td>
+<a class="link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_rijk">Rijk</a>
+</td>
+<td>
+1</td>
+</tr>
+</tbody>
+</table>
+</section>
+
+
+
+<section class="notoc"><div class="header-wrapper"><h6 id="details-relatiesoorten-7">Details Relatiesoorten</h6><a class="self-link" href="#details-relatiesoorten-7" aria-label="Permalink for this Section"></a></div>
+
+<section class="notoc" id="informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_exclusieve_economische_zone_relatiesoort_wordt_bestuurd_door_rijk"><div class="header-wrapper"><h6 id="wordtbestuurddoorrijk-2">wordtBestuurdDoorRijk</h6><a class="self-link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_exclusieve_economische_zone_relatiesoort_wordt_bestuurd_door_rijk" aria-label="Permalink for this Section"></a></div>
+
+<table style="width: 100%">
+<colgroup style="width: 30%"></colgroup>
+<colgroup style="width: 70%"></colgroup>
+<tbody><tr>
+<th>Identificatie</th>
+<td>http://modellen.geostandaarden.nl/def/imso#wordtBestuurdDoorRijk</td>
+</tr>
+<tr>
+<th>Naam</th>
+<td>wordtBestuurdDoorRijk</td>
+</tr>
+<tr>
+<th>Alias</th>
+<td>wordt bestuurd door rijk</td>
+</tr>
+<tr>
+<th>Herkomst</th>
+<td>IMSO</td>
+</tr>
+<tr>
+<th>Definitie</th>
+<td>Relatie die aangeeft dat het gebied bestuurt wordt door een rijk.</td>
+</tr>
+<tr>
+<th>Herkomst definitie</th>
+<td>IMSO</td>
+</tr>
+<tr>
+<th>Datum opname</th>
+<td>2025-09-19</td>
+</tr>
+<tr>
+<th>Identificerend</th>
+<td>Nee</td>
+</tr>
+<tr>
+<th>Kardinaliteit</th>
+<td>1</td>
+</tr>
+<tr>
+<th>Kardinaliteit relatie bron</th>
+<td>1</td>
+</tr>
+</tbody><tbody>
+</tbody>
+</table>
+</section>
+</section>
+
+</section><section id="continentaalplat"><div class="header-wrapper"><h5 id="informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_continentaal_plat"><bdi class="secno">4.1.1.13 </bdi>ContinentaalPlat</h5><a class="self-link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_continentaal_plat" aria-label="Permalink for Section 4.1.1.13"></a></div><p></p><table style="width: 100%">
+<colgroup style="width: 30%"></colgroup>
+<colgroup style="width: 70%"></colgroup>
+<tbody><tr>
+<th>Identificatie</th>
+<td>http://modellen.geostandaarden.nl/def/imso#ContinentaalPlat</td>
+</tr>
+<tr>
+<th>Naam</th>
+<td>ContinentaalPlat</td>
+</tr>
+<tr>
+<th>Herkomst</th>
+<td>EMSO</td>
+</tr>
+<tr>
+<th>Definitie</th>
+<td>Het onder de Noordzee gelegen deel van de zeebodem en de ondergrond daarvan, waarop het Koninkrijk soevereine rechten heeft, en gelegen is buiten en grenzend aan de territoriale zee.</td>
+</tr>
+<tr>
+<th>Herkomst definitie</th>
+<td>Mijnwet continentaal plat</td>
+</tr>
+<tr>
+<th>Toelichting</th>
+<td>Het betreft hier het Nederlandse continentaal plat zoals nu reeds wordt vastgelegd door de Dienst der Hydrografie. Dit was tot nu toe nog geen onderdeel van een basisregistratie.
+
+<p>Binnen het Europese deel van het Rijk kent deze dezelfde contour als de Nederlandse Exclusieve Economische Zone.</p></td>
+</tr>
+<tr>
+<th>Begrip</th>
+<td>
+<a href="http://begrippen.geostandaarden.nl/disgeo/id/begrip/nederlandse_continentaal_plat">http://begrippen.geostandaarden.nl/disgeo/id/begrip/nederlandse_continentaal_plat</a>
+</td>
+</tr>
+<tr>
+<th>Datum opname</th>
+<td>2022-06-01</td>
+</tr>
+</tbody><tbody>
+</tbody>
+</table>
+
+<section class="notoc"><div class="header-wrapper"><h6 id="overzicht-generalisaties-11">Overzicht generalisaties</h6><a class="self-link" href="#overzicht-generalisaties-11" aria-label="Permalink for this Section"></a></div>
+
+<table style="width: 100%">
+<colgroup style="width: 30%"></colgroup>
+<colgroup style="width: 70%"></colgroup>
+<tbody><tr>
+<th>Subtype</th>
+<td>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_continentaal_plat">ContinentaalPlat</a>
+</td>
+</tr>
+<tr>
+<th>Supertype</th>
+<td>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_op_zee">BestuurlijkGebiedOpZee</a>
+</td>
+</tr>
+<tr>
+<th>Datum opname</th>
+<td>2022-06-01</td>
+</tr>
+<tr>
+<th>Mixin</th>
+<td>Nee</td>
+</tr>
+</tbody><tbody>
+</tbody>
+</table>
+</section>
+
+
+
+<section class="notoc"><div class="header-wrapper"><h6 id="overzicht-relatiesoorten-8">Overzicht Relatiesoorten</h6><a class="self-link" href="#overzicht-relatiesoorten-8" aria-label="Permalink for this Section"></a></div>
+    
+<table style="width: 100%">
+<colgroup style="width: 25%"></colgroup>
+<colgroup style="width: 50%"></colgroup>
+<colgroup style="width: 18%"></colgroup>
+<colgroup style="width: 7%"></colgroup>
+<tbody>
+<tr>
+  <th>Naam</th>
+  <th>Definitie</th>
+  <th>Type</th>
+  <th>Kard</th>
+</tr>
+<tr>
+<td>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_continentaal_plat_relatiesoort_wordt_bestuurd_door_rijk">wordtBestuurdDoorRijk</a>
+</td>
+<td>
+Relatie die aangeeft dat het gebied bestuurt wordt door een rijk.</td>
+<td>
+<a class="link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_rijk">Rijk</a>
+</td>
+<td>
+1</td>
+</tr>
+</tbody>
+</table>
+</section>
+
+
+
+<section class="notoc"><div class="header-wrapper"><h6 id="details-relatiesoorten-8">Details Relatiesoorten</h6><a class="self-link" href="#details-relatiesoorten-8" aria-label="Permalink for this Section"></a></div>
+
+<section class="notoc" id="informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_continentaal_plat_relatiesoort_wordt_bestuurd_door_rijk"><div class="header-wrapper"><h6 id="wordtbestuurddoorrijk-3">wordtBestuurdDoorRijk</h6><a class="self-link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_continentaal_plat_relatiesoort_wordt_bestuurd_door_rijk" aria-label="Permalink for this Section"></a></div>
+
+<table style="width: 100%">
+<colgroup style="width: 30%"></colgroup>
+<colgroup style="width: 70%"></colgroup>
+<tbody><tr>
+<th>Identificatie</th>
+<td>http://modellen.geostandaarden.nl/def/imso#wordtBestuurdDoorRijk</td>
+</tr>
+<tr>
+<th>Naam</th>
+<td>wordtBestuurdDoorRijk</td>
+</tr>
+<tr>
+<th>Alias</th>
+<td>wordt bestuurd door rijk</td>
+</tr>
+<tr>
+<th>Herkomst</th>
+<td>IMSO</td>
+</tr>
+<tr>
+<th>Definitie</th>
+<td>Relatie die aangeeft dat het gebied bestuurt wordt door een rijk.</td>
+</tr>
+<tr>
+<th>Herkomst definitie</th>
+<td>IMSO</td>
+</tr>
+<tr>
+<th>Datum opname</th>
+<td>2025-09-19</td>
+</tr>
+<tr>
+<th>Identificerend</th>
+<td>Nee</td>
+</tr>
+<tr>
+<th>Kardinaliteit</th>
+<td>1</td>
+</tr>
+<tr>
+<th>Kardinaliteit relatie bron</th>
+<td>1</td>
+</tr>
+</tbody><tbody>
+</tbody>
+</table>
+</section>
+</section>
 
 
 
 
 </section></section><section id="keuzen-tussen-datatypen"><div class="header-wrapper"><h4 id="x4-1-2-keuzen-tussen-datatypen"><bdi class="secno">4.1.2 </bdi>Keuzen tussen datatypen</h4><a class="self-link" href="#keuzen-tussen-datatypen" aria-label="Permalink for Section 4.1.2"></a></div>
-<section id="vlakofmultivlak"><div class="header-wrapper"><h5 id="informatiemodel_imsor_cm_domein_bestuurlijk_gebied_keuze_datatype__vlak_of_multivlak"><bdi class="secno">4.1.2.1 </bdi>VlakOfMultivlak</h5><a class="self-link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_keuze_datatype__vlak_of_multivlak" aria-label="Permalink for Section 4.1.2.1"></a></div><table style="width: 100%">
+<section id="vlakofmultivlak"><div class="header-wrapper"><h5 id="informatiemodel_imso_cm_domein_bestuurlijk_gebied_keuze_datatype__vlak_of_multivlak"><bdi class="secno">4.1.2.1 </bdi>VlakOfMultivlak</h5><a class="self-link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_keuze_datatype__vlak_of_multivlak" aria-label="Permalink for Section 4.1.2.1"></a></div><table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
 <colgroup style="width: 70%"></colgroup>
 <tbody><tr>
@@ -2742,7 +3438,7 @@ De geometrische afbakening van het rijksgebied waarbinnen de geometrie van het p
 
 
 </section></section><section id="enumeraties"><div class="header-wrapper"><h4 id="x4-1-3-enumeraties"><bdi class="secno">4.1.3 </bdi>Enumeraties</h4><a class="self-link" href="#enumeraties" aria-label="Permalink for Section 4.1.3"></a></div>
-<section id="typebestuurlijkgebied"><div class="header-wrapper"><h5 id="informatiemodel_imsor_cm_domein_bestuurlijk_gebied_enumeratie_type_bestuurlijk_gebied"><bdi class="secno">4.1.3.1 </bdi>TypeBestuurlijkGebied</h5><a class="self-link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_enumeratie_type_bestuurlijk_gebied" aria-label="Permalink for Section 4.1.3.1"></a></div><table style="width: 100%">
+<section id="typebestuurlijkgebied"><div class="header-wrapper"><h5 id="informatiemodel_imso_cm_domein_bestuurlijk_gebied_enumeratie_type_bestuurlijk_gebied"><bdi class="secno">4.1.3.1 </bdi>TypeBestuurlijkGebied</h5><a class="self-link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_enumeratie_type_bestuurlijk_gebied" aria-label="Permalink for Section 4.1.3.1"></a></div><table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
 <colgroup style="width: 70%"></colgroup>
 <tbody><tr>
@@ -2779,7 +3475,7 @@ De geometrische afbakening van het rijksgebied waarbinnen de geometrie van het p
 
 
 <section class="notoc"><div class="header-wrapper"><h6 id="overzicht-waarden">Overzicht waarden</h6><a class="self-link" href="#overzicht-waarden" aria-label="Permalink for this Section"></a></div>
-
+    
 <table style="width: 100%">
 <colgroup style="width: 25%"></colgroup>
 <colgroup style="width: 75%"></colgroup>
@@ -2839,7 +3535,7 @@ waterschapsgebied</td>
 
 </section>
 
-</section><section id="statusregistratieveruimte"><div class="header-wrapper"><h5 id="informatiemodel_imsor_cm_domein_bestuurlijk_gebied_enumeratie_status_registratieve_ruimte"><bdi class="secno">4.1.3.2 </bdi>StatusRegistratieveRuimte</h5><a class="self-link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_enumeratie_status_registratieve_ruimte" aria-label="Permalink for Section 4.1.3.2"></a></div><table style="width: 100%">
+</section><section id="statusregistratieveruimte"><div class="header-wrapper"><h5 id="informatiemodel_imso_cm_domein_bestuurlijk_gebied_enumeratie_status_registratieve_ruimte"><bdi class="secno">4.1.3.2 </bdi>StatusRegistratieveRuimte</h5><a class="self-link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_enumeratie_status_registratieve_ruimte" aria-label="Permalink for Section 4.1.3.2"></a></div><table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
 <colgroup style="width: 70%"></colgroup>
 <tbody><tr>
@@ -2882,7 +3578,7 @@ waterschapsgebied</td>
 
 
 <section class="notoc"><div class="header-wrapper"><h6 id="overzicht-waarden-0">Overzicht waarden</h6><a class="self-link" href="#overzicht-waarden-0" aria-label="Permalink for this Section"></a></div>
-
+    
 <table style="width: 100%">
 <colgroup style="width: 25%"></colgroup>
 <colgroup style="width: 75%"></colgroup>
@@ -2923,11 +3619,11 @@ Object dat door het bevoegd gezag is ingetrokken op grond van wet- of regelgevin
 <p>
       </p><figure id="fig-domein-openbaar-lichaam">
         <img src="model-docs/media/openbaar_lichaam.png" alt="Openbaar lichaam">
-        <figcaption><a class="self-link" href="#fig-domein-openbaar-lichaam">Figuur <bdi class="figno">11</bdi></a> <span class="fig-title">Domein Openbaar lichaam</span></figcaption>
+        <figcaption><a class="self-link" href="#fig-domein-openbaar-lichaam">Figuur <bdi class="figno">12</bdi></a> <span class="fig-title">Domein Openbaar lichaam</span></figcaption>
       </figure>
     <p></p>
 <section id="objecttypen-0"><div class="header-wrapper"><h4 id="x4-2-1-objecttypen"><bdi class="secno">4.2.1 </bdi>Objecttypen</h4><a class="self-link" href="#objecttypen-0" aria-label="Permalink for Section 4.2.1"></a></div>
-<section id="overheidsorganisatie"><div class="header-wrapper"><h5 id="informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_overheidsorganisatie"><bdi class="secno">4.2.1.1 </bdi>Overheidsorganisatie</h5><a class="self-link" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_overheidsorganisatie" aria-label="Permalink for Section 4.2.1.1"></a></div><table style="width: 100%">
+<section id="overheidsorganisatie"><div class="header-wrapper"><h5 id="informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_overheidsorganisatie"><bdi class="secno">4.2.1.1 </bdi>Overheidsorganisatie</h5><a class="self-link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_overheidsorganisatie" aria-label="Permalink for Section 4.2.1.1"></a></div><table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
 <colgroup style="width: 70%"></colgroup>
 <tbody><tr>
@@ -2955,7 +3651,8 @@ Object dat door het bevoegd gezag is ingetrokken op grond van wet- of regelgevin
 <td>
 <a href="http://begrippen.geostandaarden.nl/disgeo/id/begrip/overheidsorganisatie">http://begrippen.geostandaarden.nl/disgeo/id/begrip/overheidsorganisatie</a>
 </td>
-</tr><tr>
+</tr>
+<tr>
 <th>Datum opname</th>
 <td>2022-03-30</td>
 </tr>
@@ -2965,7 +3662,7 @@ Object dat door het bevoegd gezag is ingetrokken op grond van wet- of regelgevin
 
 
 <section class="notoc"><div class="header-wrapper"><h6 id="overzicht-attribuutsoorten-1">Overzicht attribuutsoorten</h6><a class="self-link" href="#overzicht-attribuutsoorten-1" aria-label="Permalink for this Section"></a></div>
-
+    
 <table style="width: 100%">
 <colgroup style="width: 25%"></colgroup>
 <colgroup style="width: 50%"></colgroup>
@@ -2980,7 +3677,7 @@ Object dat door het bevoegd gezag is ingetrokken op grond van wet- of regelgevin
 </tr>
 <tr>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_overheidsorganisatie_attribuutsoort_naam">naam</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_overheidsorganisatie_attribuutsoort_naam">naam</a>
 </td>
 <td>
 De voorkeursnaam van de organisatie</td>
@@ -2992,7 +3689,7 @@ De voorkeursnaam van de organisatie</td>
 </tr>
 <tr>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_overheidsorganisatie_attribuutsoort_officiele_naam_incl_soort">officieleNaamInclSoort</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_overheidsorganisatie_attribuutsoort_officiele_naam_incl_soort">officieleNaamInclSoort</a>
 </td>
 <td>
 De officiële naam van de organisatie met soortaanduiding, bijvoorbeeld 'gemeente 's-Gravenhage'</td>
@@ -3004,7 +3701,7 @@ De officiële naam van de organisatie met soortaanduiding, bijvoorbeeld 'gemeent
 </tr>
 <tr>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_overheidsorganisatie_attribuutsoort_organisatiecode">organisatiecode</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_overheidsorganisatie_attribuutsoort_organisatiecode">organisatiecode</a>
 </td>
 <td>
 De organisatiecode.</td>
@@ -3023,7 +3720,7 @@ De organisatiecode.</td>
 
 <section class="notoc"><div class="header-wrapper"><h6 id="details-attribuutsoorten-1">Details attribuutsoorten</h6><a class="self-link" href="#details-attribuutsoorten-1" aria-label="Permalink for this Section"></a></div>
 
-<section class="notoc" id="informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_overheidsorganisatie_attribuutsoort_naam"><div class="header-wrapper"><h6 id="naam">naam</h6><a class="self-link" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_overheidsorganisatie_attribuutsoort_naam" aria-label="Permalink for this Section"></a></div>
+<section class="notoc" id="informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_overheidsorganisatie_attribuutsoort_naam"><div class="header-wrapper"><h6 id="naam">naam</h6><a class="self-link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_overheidsorganisatie_attribuutsoort_naam" aria-label="Permalink for this Section"></a></div>
 
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
@@ -3068,7 +3765,7 @@ De organisatiecode.</td>
 </tbody>
 </table>
 </section>
-<section class="notoc" id="informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_overheidsorganisatie_attribuutsoort_officiele_naam_incl_soort"><div class="header-wrapper"><h6 id="officielenaaminclsoort">officieleNaamInclSoort</h6><a class="self-link" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_overheidsorganisatie_attribuutsoort_officiele_naam_incl_soort" aria-label="Permalink for this Section"></a></div>
+<section class="notoc" id="informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_overheidsorganisatie_attribuutsoort_officiele_naam_incl_soort"><div class="header-wrapper"><h6 id="officielenaaminclsoort">officieleNaamInclSoort</h6><a class="self-link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_overheidsorganisatie_attribuutsoort_officiele_naam_incl_soort" aria-label="Permalink for this Section"></a></div>
 
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
@@ -3117,7 +3814,7 @@ De organisatiecode.</td>
 </tbody>
 </table>
 </section>
-<section class="notoc" id="informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_overheidsorganisatie_attribuutsoort_organisatiecode"><div class="header-wrapper"><h6 id="organisatiecode">organisatiecode</h6><a class="self-link" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_overheidsorganisatie_attribuutsoort_organisatiecode" aria-label="Permalink for this Section"></a></div>
+<section class="notoc" id="informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_overheidsorganisatie_attribuutsoort_organisatiecode"><div class="header-wrapper"><h6 id="organisatiecode">organisatiecode</h6><a class="self-link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_overheidsorganisatie_attribuutsoort_organisatiecode" aria-label="Permalink for this Section"></a></div>
 
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
@@ -3179,7 +3876,7 @@ De organisatiecode.</td>
 </section>
 
 
-</section><section id="regionaalopenbaarlichaam"><div class="header-wrapper"><h5 id="informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_regionaal_openbaar_lichaam"><bdi class="secno">4.2.1.2 </bdi>RegionaalOpenbaarLichaam</h5><a class="self-link" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_regionaal_openbaar_lichaam" aria-label="Permalink for Section 4.2.1.2"></a></div><table style="width: 100%">
+</section><section id="regionaalopenbaarlichaam"><div class="header-wrapper"><h5 id="informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_regionaal_openbaar_lichaam"><bdi class="secno">4.2.1.2 </bdi>RegionaalOpenbaarLichaam</h5><a class="self-link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_regionaal_openbaar_lichaam" aria-label="Permalink for Section 4.2.1.2"></a></div><table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
 <colgroup style="width: 70%"></colgroup>
 <tbody><tr>
@@ -3232,13 +3929,13 @@ De organisatiecode.</td>
 <tbody><tr>
 <th>Subtype</th>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_regionaal_openbaar_lichaam">RegionaalOpenbaarLichaam</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_regionaal_openbaar_lichaam">RegionaalOpenbaarLichaam</a>
 </td>
 </tr>
 <tr>
 <th>Supertype</th>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_overheidsorganisatie">Overheidsorganisatie</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_overheidsorganisatie">Overheidsorganisatie</a>
 </td>
 </tr>
 <tr>
@@ -3255,7 +3952,7 @@ De organisatiecode.</td>
 </section>
 
 <section class="notoc"><div class="header-wrapper"><h6 id="overzicht-attribuutsoorten-2">Overzicht attribuutsoorten</h6><a class="self-link" href="#overzicht-attribuutsoorten-2" aria-label="Permalink for this Section"></a></div>
-
+    
 <table style="width: 100%">
 <colgroup style="width: 25%"></colgroup>
 <colgroup style="width: 50%"></colgroup>
@@ -3270,12 +3967,12 @@ De organisatiecode.</td>
 </tr>
 <tr>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_regionaal_openbaar_lichaam_attribuutsoort_type">type</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_regionaal_openbaar_lichaam_attribuutsoort_type">type</a>
 </td>
 <td>
 Categorie waartoe het betreffende openbaar lichaam behoort.</td>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_enumeratie_type_regionaal_openbaar_lichaam">TypeRegionaalOpenbaarLichaam</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_enumeratie_type_regionaal_openbaar_lichaam">TypeRegionaalOpenbaarLichaam</a>
 </td>
 <td>
 1</td>
@@ -3285,8 +3982,8 @@ Categorie waartoe het betreffende openbaar lichaam behoort.</td>
 </section>
 
 
-<section class="notoc"><div class="header-wrapper"><h6 id="overzicht-relatiesoorten-2">Overzicht Relatiesoorten</h6><a class="self-link" href="#overzicht-relatiesoorten-2" aria-label="Permalink for this Section"></a></div>
-
+<section class="notoc"><div class="header-wrapper"><h6 id="overzicht-relatiesoorten-9">Overzicht Relatiesoorten</h6><a class="self-link" href="#overzicht-relatiesoorten-9" aria-label="Permalink for this Section"></a></div>
+    
 <table style="width: 100%">
 <colgroup style="width: 25%"></colgroup>
 <colgroup style="width: 50%"></colgroup>
@@ -3301,12 +3998,12 @@ Categorie waartoe het betreffende openbaar lichaam behoort.</td>
 </tr>
 <tr>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_regionaal_openbaar_lichaam_relatiesoort_bestuurt_gebied">bestuurtGebied</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_regionaal_openbaar_lichaam_relatiesoort_bestuurt_gebied">bestuurtGebied</a>
 </td>
 <td>
 Relatie die aangeeft dat bestuurder het gebied bestuurt bestuurt.</td>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied">BestuurlijkGebied</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied">BestuurlijkGebied</a>
 </td>
 <td>
 0..*</td>
@@ -3318,7 +4015,7 @@ Relatie die aangeeft dat bestuurder het gebied bestuurt bestuurt.</td>
 
 <section class="notoc"><div class="header-wrapper"><h6 id="details-attribuutsoorten-2">Details attribuutsoorten</h6><a class="self-link" href="#details-attribuutsoorten-2" aria-label="Permalink for this Section"></a></div>
 
-<section class="notoc" id="informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_regionaal_openbaar_lichaam_attribuutsoort_type"><div class="header-wrapper"><h6 id="type-0">type</h6><a class="self-link" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_regionaal_openbaar_lichaam_attribuutsoort_type" aria-label="Permalink for this Section"></a></div>
+<section class="notoc" id="informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_regionaal_openbaar_lichaam_attribuutsoort_type"><div class="header-wrapper"><h6 id="type-0">type</h6><a class="self-link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_regionaal_openbaar_lichaam_attribuutsoort_type" aria-label="Permalink for this Section"></a></div>
 
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
@@ -3365,9 +4062,9 @@ Relatie die aangeeft dat bestuurder het gebied bestuurt bestuurt.</td>
 </section>
 </section>
 
-<section class="notoc"><div class="header-wrapper"><h6 id="details-relatiesoorten-2">Details Relatiesoorten</h6><a class="self-link" href="#details-relatiesoorten-2" aria-label="Permalink for this Section"></a></div>
+<section class="notoc"><div class="header-wrapper"><h6 id="details-relatiesoorten-9">Details Relatiesoorten</h6><a class="self-link" href="#details-relatiesoorten-9" aria-label="Permalink for this Section"></a></div>
 
-<section class="notoc" id="informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_regionaal_openbaar_lichaam_relatiesoort_bestuurt_gebied"><div class="header-wrapper"><h6 id="bestuurtgebied">bestuurtGebied</h6><a class="self-link" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_regionaal_openbaar_lichaam_relatiesoort_bestuurt_gebied" aria-label="Permalink for this Section"></a></div>
+<section class="notoc" id="informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_regionaal_openbaar_lichaam_relatiesoort_bestuurt_gebied"><div class="header-wrapper"><h6 id="bestuurtgebied">bestuurtGebied</h6><a class="self-link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_regionaal_openbaar_lichaam_relatiesoort_bestuurt_gebied" aria-label="Permalink for this Section"></a></div>
 
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
@@ -3415,7 +4112,7 @@ Relatie die aangeeft dat bestuurder het gebied bestuurt bestuurt.</td>
 <tr>
 <th>Bron</th>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_regionaal_openbaar_lichaam">RegionaalOpenbaarLichaam</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_regionaal_openbaar_lichaam">RegionaalOpenbaarLichaam</a>
 </td>
 </tr>
 </tbody><tbody>
@@ -3424,10 +4121,10 @@ Relatie die aangeeft dat bestuurder het gebied bestuurt bestuurt.</td>
 </section>
 </section>
 
-</section><section id="gemeente"><div class="header-wrapper"><h5 id="informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_gemeente"><bdi class="secno">4.2.1.3 </bdi>Gemeente</h5><a class="self-link" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_gemeente" aria-label="Permalink for Section 4.2.1.3"></a></div><div><p>
+</section><section id="gemeente"><div class="header-wrapper"><h5 id="informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_gemeente"><bdi class="secno">4.2.1.3 </bdi>Gemeente</h5><a class="self-link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_gemeente" aria-label="Permalink for Section 4.2.1.3"></a></div><div><p>
       </p><figure id="fig-gemeente-detail">
         <img src="model-docs/media/gemeente-detail.png" alt="Gemeente - detail">
-        <figcaption><a class="self-link" href="#fig-gemeente-detail">Figuur <bdi class="figno">12</bdi></a> <span class="fig-title">Gemeente - detail</span></figcaption>
+        <figcaption><a class="self-link" href="#fig-gemeente-detail">Figuur <bdi class="figno">13</bdi></a> <span class="fig-title">Gemeente - detail</span></figcaption>
       </figure>
     <p></p>
 </div>
@@ -3477,13 +4174,13 @@ Relatie die aangeeft dat bestuurder het gebied bestuurt bestuurt.</td>
 <tbody><tr>
 <th>Subtype</th>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_gemeente">Gemeente</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_gemeente">Gemeente</a>
 </td>
 </tr>
 <tr>
 <th>Supertype</th>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_regionaal_openbaar_lichaam">RegionaalOpenbaarLichaam</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_regionaal_openbaar_lichaam">RegionaalOpenbaarLichaam</a>
 </td>
 </tr>
 <tr>
@@ -3501,8 +4198,8 @@ Relatie die aangeeft dat bestuurder het gebied bestuurt bestuurt.</td>
 
 
 
-<section class="notoc"><div class="header-wrapper"><h6 id="overzicht-relatiesoorten-3">Overzicht Relatiesoorten</h6><a class="self-link" href="#overzicht-relatiesoorten-3" aria-label="Permalink for this Section"></a></div>
-
+<section class="notoc"><div class="header-wrapper"><h6 id="overzicht-relatiesoorten-10">Overzicht Relatiesoorten</h6><a class="self-link" href="#overzicht-relatiesoorten-10" aria-label="Permalink for this Section"></a></div>
+    
 <table style="width: 100%">
 <colgroup style="width: 25%"></colgroup>
 <colgroup style="width: 50%"></colgroup>
@@ -3517,12 +4214,12 @@ Relatie die aangeeft dat bestuurder het gebied bestuurt bestuurt.</td>
 </tr>
 <tr>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_gemeente_relatiesoort_bestuurt_gemeentegebied">bestuurtGemeentegebied</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_gemeente_relatiesoort_bestuurt_gemeentegebied">bestuurtGemeentegebied</a>
 </td>
 <td>
 Ruimte waarover de gemeente op basis van wet- of regelgeving de politieke regie voert.</td>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_gemeentegebied">Gemeentegebied</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_gemeentegebied">Gemeentegebied</a>
 </td>
 <td>
 1</td>
@@ -3533,9 +4230,9 @@ Ruimte waarover de gemeente op basis van wet- of regelgeving de politieke regie 
 
 
 
-<section class="notoc"><div class="header-wrapper"><h6 id="details-relatiesoorten-3">Details Relatiesoorten</h6><a class="self-link" href="#details-relatiesoorten-3" aria-label="Permalink for this Section"></a></div>
+<section class="notoc"><div class="header-wrapper"><h6 id="details-relatiesoorten-10">Details Relatiesoorten</h6><a class="self-link" href="#details-relatiesoorten-10" aria-label="Permalink for this Section"></a></div>
 
-<section class="notoc" id="informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_gemeente_relatiesoort_bestuurt_gemeentegebied"><div class="header-wrapper"><h6 id="bestuurtgemeentegebied">bestuurtGemeentegebied</h6><a class="self-link" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_gemeente_relatiesoort_bestuurt_gemeentegebied" aria-label="Permalink for this Section"></a></div>
+<section class="notoc" id="informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_gemeente_relatiesoort_bestuurt_gemeentegebied"><div class="header-wrapper"><h6 id="bestuurtgemeentegebied">bestuurtGemeentegebied</h6><a class="self-link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_gemeente_relatiesoort_bestuurt_gemeentegebied" aria-label="Permalink for this Section"></a></div>
 
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
@@ -3583,7 +4280,7 @@ Ruimte waarover de gemeente op basis van wet- of regelgeving de politieke regie 
 <tr>
 <th>Bron</th>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_gemeente">Gemeente</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_gemeente">Gemeente</a>
 </td>
 </tr>
 </tbody><tbody>
@@ -3592,10 +4289,10 @@ Ruimte waarover de gemeente op basis van wet- of regelgeving de politieke regie 
 </section>
 </section>
 
-</section><section id="provincie"><div class="header-wrapper"><h5 id="informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_provincie"><bdi class="secno">4.2.1.4 </bdi>Provincie</h5><a class="self-link" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_provincie" aria-label="Permalink for Section 4.2.1.4"></a></div><div><p>
+</section><section id="provincie"><div class="header-wrapper"><h5 id="informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_provincie"><bdi class="secno">4.2.1.4 </bdi>Provincie</h5><a class="self-link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_provincie" aria-label="Permalink for Section 4.2.1.4"></a></div><div><p>
       </p><figure id="fig-provincie-detail">
         <img src="model-docs/media/provincie-detail.png" alt="Provincie - detail">
-        <figcaption><a class="self-link" href="#fig-provincie-detail">Figuur <bdi class="figno">13</bdi></a> <span class="fig-title">Provincie - detail</span></figcaption>
+        <figcaption><a class="self-link" href="#fig-provincie-detail">Figuur <bdi class="figno">14</bdi></a> <span class="fig-title">Provincie - detail</span></figcaption>
       </figure>
     <p></p>
 </div>
@@ -3645,13 +4342,13 @@ Ruimte waarover de gemeente op basis van wet- of regelgeving de politieke regie 
 <tbody><tr>
 <th>Subtype</th>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_provincie">Provincie</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_provincie">Provincie</a>
 </td>
 </tr>
 <tr>
 <th>Supertype</th>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_regionaal_openbaar_lichaam">RegionaalOpenbaarLichaam</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_regionaal_openbaar_lichaam">RegionaalOpenbaarLichaam</a>
 </td>
 </tr>
 <tr>
@@ -3669,8 +4366,8 @@ Ruimte waarover de gemeente op basis van wet- of regelgeving de politieke regie 
 
 
 
-<section class="notoc"><div class="header-wrapper"><h6 id="overzicht-relatiesoorten-4">Overzicht Relatiesoorten</h6><a class="self-link" href="#overzicht-relatiesoorten-4" aria-label="Permalink for this Section"></a></div>
-
+<section class="notoc"><div class="header-wrapper"><h6 id="overzicht-relatiesoorten-11">Overzicht Relatiesoorten</h6><a class="self-link" href="#overzicht-relatiesoorten-11" aria-label="Permalink for this Section"></a></div>
+    
 <table style="width: 100%">
 <colgroup style="width: 25%"></colgroup>
 <colgroup style="width: 50%"></colgroup>
@@ -3685,12 +4382,12 @@ Ruimte waarover de gemeente op basis van wet- of regelgeving de politieke regie 
 </tr>
 <tr>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_provincie_relatiesoort_bestuurt_provinciegebied">bestuurtProvinciegebied</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_provincie_relatiesoort_bestuurt_provinciegebied">bestuurtProvinciegebied</a>
 </td>
 <td>
 Ruimte waarover de provincie op basis van wet- of regelgeving de politieke regie voert.</td>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_provinciegebied">Provinciegebied</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_provinciegebied">Provinciegebied</a>
 </td>
 <td>
 1</td>
@@ -3701,9 +4398,9 @@ Ruimte waarover de provincie op basis van wet- of regelgeving de politieke regie
 
 
 
-<section class="notoc"><div class="header-wrapper"><h6 id="details-relatiesoorten-4">Details Relatiesoorten</h6><a class="self-link" href="#details-relatiesoorten-4" aria-label="Permalink for this Section"></a></div>
+<section class="notoc"><div class="header-wrapper"><h6 id="details-relatiesoorten-11">Details Relatiesoorten</h6><a class="self-link" href="#details-relatiesoorten-11" aria-label="Permalink for this Section"></a></div>
 
-<section class="notoc" id="informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_provincie_relatiesoort_bestuurt_provinciegebied"><div class="header-wrapper"><h6 id="bestuurtprovinciegebied">bestuurtProvinciegebied</h6><a class="self-link" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_provincie_relatiesoort_bestuurt_provinciegebied" aria-label="Permalink for this Section"></a></div>
+<section class="notoc" id="informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_provincie_relatiesoort_bestuurt_provinciegebied"><div class="header-wrapper"><h6 id="bestuurtprovinciegebied">bestuurtProvinciegebied</h6><a class="self-link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_provincie_relatiesoort_bestuurt_provinciegebied" aria-label="Permalink for this Section"></a></div>
 
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
@@ -3751,7 +4448,7 @@ Ruimte waarover de provincie op basis van wet- of regelgeving de politieke regie
 <tr>
 <th>Bron</th>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_provincie">Provincie</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_provincie">Provincie</a>
 </td>
 </tr>
 </tbody><tbody>
@@ -3760,10 +4457,10 @@ Ruimte waarover de provincie op basis van wet- of regelgeving de politieke regie
 </section>
 </section>
 
-</section><section id="rijk"><div class="header-wrapper"><h5 id="informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_rijk"><bdi class="secno">4.2.1.5 </bdi>Rijk</h5><a class="self-link" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_rijk" aria-label="Permalink for Section 4.2.1.5"></a></div><div><p>
+</section><section id="rijk"><div class="header-wrapper"><h5 id="informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_rijk"><bdi class="secno">4.2.1.5 </bdi>Rijk</h5><a class="self-link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_rijk" aria-label="Permalink for Section 4.2.1.5"></a></div><div><p>
       </p><figure id="fig-rijk-detail">
         <img src="model-docs/media/rijk-detail.png" alt="Rijk - detail">
-        <figcaption><a class="self-link" href="#fig-rijk-detail">Figuur <bdi class="figno">14</bdi></a> <span class="fig-title">Rijk - detail</span></figcaption>
+        <figcaption><a class="self-link" href="#fig-rijk-detail">Figuur <bdi class="figno">15</bdi></a> <span class="fig-title">Rijk - detail</span></figcaption>
       </figure>
     <p></p>
 </div>
@@ -3817,13 +4514,13 @@ Ruimte waarover de provincie op basis van wet- of regelgeving de politieke regie
 <tbody><tr>
 <th>Subtype</th>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_rijk">Rijk</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_rijk">Rijk</a>
 </td>
 </tr>
 <tr>
 <th>Supertype</th>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_regionaal_openbaar_lichaam">RegionaalOpenbaarLichaam</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_regionaal_openbaar_lichaam">RegionaalOpenbaarLichaam</a>
 </td>
 </tr>
 <tr>
@@ -3841,8 +4538,8 @@ Ruimte waarover de provincie op basis van wet- of regelgeving de politieke regie
 
 
 
-<section class="notoc"><div class="header-wrapper"><h6 id="overzicht-relatiesoorten-5">Overzicht Relatiesoorten</h6><a class="self-link" href="#overzicht-relatiesoorten-5" aria-label="Permalink for this Section"></a></div>
-
+<section class="notoc"><div class="header-wrapper"><h6 id="overzicht-relatiesoorten-12">Overzicht Relatiesoorten</h6><a class="self-link" href="#overzicht-relatiesoorten-12" aria-label="Permalink for this Section"></a></div>
+    
 <table style="width: 100%">
 <colgroup style="width: 25%"></colgroup>
 <colgroup style="width: 50%"></colgroup>
@@ -3857,60 +4554,60 @@ Ruimte waarover de provincie op basis van wet- of regelgeving de politieke regie
 </tr>
 <tr>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_rijk_relatiesoort_bestuurt_aansluitende_zone">bestuurtAansluitendeZone</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_rijk_relatiesoort_bestuurt_aansluitende_zone">bestuurtAansluitendeZone</a>
 </td>
 <td>
 Ruimte waarover het Rijk op basis van wet- of regelgeving de politieke regie voert op zee, tot 24 zeemijlen vanaf de laagwaterlijn.</td>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_aansluitende_zone">AansluitendeZone</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_aansluitende_zone">AansluitendeZone</a>
 </td>
 <td>
 1</td>
 </tr>
 <tr>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_rijk_relatiesoort_bestuurt_continentaal_plat">bestuurtContinentaalPlat</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_rijk_relatiesoort_bestuurt_continentaal_plat">bestuurtContinentaalPlat</a>
 </td>
 <td>
 Ruimte van de zeebodem en de ondergrond daarvan, buiten en grenzend aan de territoriale zee, waarover het Rijk op basis van wet- of regelgeving de politieke regie voert</td>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_continentaal_plat">ContinentaalPlat</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_continentaal_plat">ContinentaalPlat</a>
 </td>
 <td>
 1</td>
 </tr>
 <tr>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_rijk_relatiesoort_bestuurt_rijksgebied">bestuurtRijksgebied</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_rijk_relatiesoort_bestuurt_rijksgebied">bestuurtRijksgebied</a>
 </td>
 <td>
 Ruimte waarover het Rijk op basis van wet- of regelgeving de politieke regie voert op land.</td>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_rijksgebied">Rijksgebied</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_rijksgebied">Rijksgebied</a>
 </td>
 <td>
 1</td>
 </tr>
 <tr>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_rijk_relatiesoort_bestuurt_territoriale_zee">bestuurtTerritorialeZee</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_rijk_relatiesoort_bestuurt_territoriale_zee">bestuurtTerritorialeZee</a>
 </td>
 <td>
 Ruimte waarover het Rijk op basis van wet- of regelgeving de politieke regie voert op zee, tot 12 zeemijlen uit de kust.</td>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_territoriale_zee">TerritorialeZee</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_territoriale_zee">TerritorialeZee</a>
 </td>
 <td>
 1</td>
 </tr>
 <tr>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_rijk_relatiesoort_bestuurt_exclusieve_economische_zone">bestuurtExclusieveEconomischeZone</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_rijk_relatiesoort_bestuurt_exclusieve_economische_zone">bestuurtExclusieveEconomischeZone</a>
 </td>
 <td>
 Ruimte waarover het Rijk op basis van wet- of regelgeving de politieke regie voert op zee, tot 200 zeemijlen vanaf de laagwaterlijn.</td>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_exclusieve_economische_zone">ExclusieveEconomischeZone</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_exclusieve_economische_zone">ExclusieveEconomischeZone</a>
 </td>
 <td>
 1</td>
@@ -3921,9 +4618,9 @@ Ruimte waarover het Rijk op basis van wet- of regelgeving de politieke regie voe
 
 
 
-<section class="notoc"><div class="header-wrapper"><h6 id="details-relatiesoorten-5">Details Relatiesoorten</h6><a class="self-link" href="#details-relatiesoorten-5" aria-label="Permalink for this Section"></a></div>
+<section class="notoc"><div class="header-wrapper"><h6 id="details-relatiesoorten-12">Details Relatiesoorten</h6><a class="self-link" href="#details-relatiesoorten-12" aria-label="Permalink for this Section"></a></div>
 
-<section class="notoc" id="informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_rijk_relatiesoort_bestuurt_aansluitende_zone"><div class="header-wrapper"><h6 id="bestuurtaansluitendezone">bestuurtAansluitendeZone</h6><a class="self-link" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_rijk_relatiesoort_bestuurt_aansluitende_zone" aria-label="Permalink for this Section"></a></div>
+<section class="notoc" id="informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_rijk_relatiesoort_bestuurt_aansluitende_zone"><div class="header-wrapper"><h6 id="bestuurtaansluitendezone">bestuurtAansluitendeZone</h6><a class="self-link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_rijk_relatiesoort_bestuurt_aansluitende_zone" aria-label="Permalink for this Section"></a></div>
 
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
@@ -3971,14 +4668,14 @@ Ruimte waarover het Rijk op basis van wet- of regelgeving de politieke regie voe
 <tr>
 <th>Bron</th>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_rijk">Rijk</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_rijk">Rijk</a>
 </td>
 </tr>
 </tbody><tbody>
 </tbody>
 </table>
 </section>
-<section class="notoc" id="informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_rijk_relatiesoort_bestuurt_continentaal_plat"><div class="header-wrapper"><h6 id="bestuurtcontinentaalplat">bestuurtContinentaalPlat</h6><a class="self-link" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_rijk_relatiesoort_bestuurt_continentaal_plat" aria-label="Permalink for this Section"></a></div>
+<section class="notoc" id="informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_rijk_relatiesoort_bestuurt_continentaal_plat"><div class="header-wrapper"><h6 id="bestuurtcontinentaalplat">bestuurtContinentaalPlat</h6><a class="self-link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_rijk_relatiesoort_bestuurt_continentaal_plat" aria-label="Permalink for this Section"></a></div>
 
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
@@ -4026,14 +4723,14 @@ Ruimte waarover het Rijk op basis van wet- of regelgeving de politieke regie voe
 <tr>
 <th>Bron</th>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_rijk">Rijk</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_rijk">Rijk</a>
 </td>
 </tr>
 </tbody><tbody>
 </tbody>
 </table>
 </section>
-<section class="notoc" id="informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_rijk_relatiesoort_bestuurt_rijksgebied"><div class="header-wrapper"><h6 id="bestuurtrijksgebied">bestuurtRijksgebied</h6><a class="self-link" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_rijk_relatiesoort_bestuurt_rijksgebied" aria-label="Permalink for this Section"></a></div>
+<section class="notoc" id="informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_rijk_relatiesoort_bestuurt_rijksgebied"><div class="header-wrapper"><h6 id="bestuurtrijksgebied">bestuurtRijksgebied</h6><a class="self-link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_rijk_relatiesoort_bestuurt_rijksgebied" aria-label="Permalink for this Section"></a></div>
 
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
@@ -4081,14 +4778,14 @@ Ruimte waarover het Rijk op basis van wet- of regelgeving de politieke regie voe
 <tr>
 <th>Bron</th>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_rijk">Rijk</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_rijk">Rijk</a>
 </td>
 </tr>
 </tbody><tbody>
 </tbody>
 </table>
 </section>
-<section class="notoc" id="informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_rijk_relatiesoort_bestuurt_territoriale_zee"><div class="header-wrapper"><h6 id="bestuurtterritorialezee">bestuurtTerritorialeZee</h6><a class="self-link" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_rijk_relatiesoort_bestuurt_territoriale_zee" aria-label="Permalink for this Section"></a></div>
+<section class="notoc" id="informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_rijk_relatiesoort_bestuurt_territoriale_zee"><div class="header-wrapper"><h6 id="bestuurtterritorialezee">bestuurtTerritorialeZee</h6><a class="self-link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_rijk_relatiesoort_bestuurt_territoriale_zee" aria-label="Permalink for this Section"></a></div>
 
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
@@ -4136,14 +4833,14 @@ Ruimte waarover het Rijk op basis van wet- of regelgeving de politieke regie voe
 <tr>
 <th>Bron</th>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_rijk">Rijk</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_rijk">Rijk</a>
 </td>
 </tr>
 </tbody><tbody>
 </tbody>
 </table>
 </section>
-<section class="notoc" id="informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_rijk_relatiesoort_bestuurt_exclusieve_economische_zone"><div class="header-wrapper"><h6 id="bestuurtexclusieveeconomischezone">bestuurtExclusieveEconomischeZone</h6><a class="self-link" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_rijk_relatiesoort_bestuurt_exclusieve_economische_zone" aria-label="Permalink for this Section"></a></div>
+<section class="notoc" id="informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_rijk_relatiesoort_bestuurt_exclusieve_economische_zone"><div class="header-wrapper"><h6 id="bestuurtexclusieveeconomischezone">bestuurtExclusieveEconomischeZone</h6><a class="self-link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_rijk_relatiesoort_bestuurt_exclusieve_economische_zone" aria-label="Permalink for this Section"></a></div>
 
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
@@ -4191,7 +4888,7 @@ Ruimte waarover het Rijk op basis van wet- of regelgeving de politieke regie voe
 <tr>
 <th>Bron</th>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_rijk">Rijk</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_rijk">Rijk</a>
 </td>
 </tr>
 </tbody><tbody>
@@ -4200,10 +4897,10 @@ Ruimte waarover het Rijk op basis van wet- of regelgeving de politieke regie voe
 </section>
 </section>
 
-</section><section id="waterschap"><div class="header-wrapper"><h5 id="informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_waterschap"><bdi class="secno">4.2.1.6 </bdi>Waterschap</h5><a class="self-link" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_waterschap" aria-label="Permalink for Section 4.2.1.6"></a></div><div><p>
+</section><section id="waterschap"><div class="header-wrapper"><h5 id="informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_waterschap"><bdi class="secno">4.2.1.6 </bdi>Waterschap</h5><a class="self-link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_waterschap" aria-label="Permalink for Section 4.2.1.6"></a></div><div><p>
       </p><figure id="fig-vwaterschapeiligheidsregio-detail">
         <img src="model-docs/media/waterschap-detail.png" alt="Waterschap - detail">
-        <figcaption><a class="self-link" href="#fig-vwaterschapeiligheidsregio-detail">Figuur <bdi class="figno">15</bdi></a> <span class="fig-title">VWaterschapeiligheidsregio - detail</span></figcaption>
+        <figcaption><a class="self-link" href="#fig-vwaterschapeiligheidsregio-detail">Figuur <bdi class="figno">16</bdi></a> <span class="fig-title">VWaterschapeiligheidsregio - detail</span></figcaption>
       </figure>
     <p></p>
 </div>
@@ -4253,13 +4950,13 @@ Ruimte waarover het Rijk op basis van wet- of regelgeving de politieke regie voe
 <tbody><tr>
 <th>Subtype</th>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_waterschap">Waterschap</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_waterschap">Waterschap</a>
 </td>
 </tr>
 <tr>
 <th>Supertype</th>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_regionaal_openbaar_lichaam">RegionaalOpenbaarLichaam</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_regionaal_openbaar_lichaam">RegionaalOpenbaarLichaam</a>
 </td>
 </tr>
 <tr>
@@ -4277,8 +4974,8 @@ Ruimte waarover het Rijk op basis van wet- of regelgeving de politieke regie voe
 
 
 
-<section class="notoc"><div class="header-wrapper"><h6 id="overzicht-relatiesoorten-6">Overzicht Relatiesoorten</h6><a class="self-link" href="#overzicht-relatiesoorten-6" aria-label="Permalink for this Section"></a></div>
-
+<section class="notoc"><div class="header-wrapper"><h6 id="overzicht-relatiesoorten-13">Overzicht Relatiesoorten</h6><a class="self-link" href="#overzicht-relatiesoorten-13" aria-label="Permalink for this Section"></a></div>
+    
 <table style="width: 100%">
 <colgroup style="width: 25%"></colgroup>
 <colgroup style="width: 50%"></colgroup>
@@ -4293,12 +4990,12 @@ Ruimte waarover het Rijk op basis van wet- of regelgeving de politieke regie voe
 </tr>
 <tr>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_waterschap_relatiesoort_bestuurt_waterschapsgebied">bestuurtWaterschapsgebied</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_waterschap_relatiesoort_bestuurt_waterschapsgebied">bestuurtWaterschapsgebied</a>
 </td>
 <td>
 Ruimte waarover het waterschap op basis van wet- of regelgeving de politieke regie voert.</td>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_waterschapsgebied">Waterschapsgebied</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_waterschapsgebied">Waterschapsgebied</a>
 </td>
 <td>
 1</td>
@@ -4309,9 +5006,9 @@ Ruimte waarover het waterschap op basis van wet- of regelgeving de politieke reg
 
 
 
-<section class="notoc"><div class="header-wrapper"><h6 id="details-relatiesoorten-6">Details Relatiesoorten</h6><a class="self-link" href="#details-relatiesoorten-6" aria-label="Permalink for this Section"></a></div>
+<section class="notoc"><div class="header-wrapper"><h6 id="details-relatiesoorten-13">Details Relatiesoorten</h6><a class="self-link" href="#details-relatiesoorten-13" aria-label="Permalink for this Section"></a></div>
 
-<section class="notoc" id="informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_waterschap_relatiesoort_bestuurt_waterschapsgebied"><div class="header-wrapper"><h6 id="bestuurtwaterschapsgebied">bestuurtWaterschapsgebied</h6><a class="self-link" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_waterschap_relatiesoort_bestuurt_waterschapsgebied" aria-label="Permalink for this Section"></a></div>
+<section class="notoc" id="informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_waterschap_relatiesoort_bestuurt_waterschapsgebied"><div class="header-wrapper"><h6 id="bestuurtwaterschapsgebied">bestuurtWaterschapsgebied</h6><a class="self-link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_waterschap_relatiesoort_bestuurt_waterschapsgebied" aria-label="Permalink for this Section"></a></div>
 
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
@@ -4359,7 +5056,7 @@ Ruimte waarover het waterschap op basis van wet- of regelgeving de politieke reg
 <tr>
 <th>Bron</th>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_waterschap">Waterschap</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_waterschap">Waterschap</a>
 </td>
 </tr>
 </tbody><tbody>
@@ -4368,10 +5065,10 @@ Ruimte waarover het waterschap op basis van wet- of regelgeving de politieke reg
 </section>
 </section>
 
-</section><section id="veiligheidsregio"><div class="header-wrapper"><h5 id="informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_veiligheidsregio"><bdi class="secno">4.2.1.7 </bdi>Veiligheidsregio</h5><a class="self-link" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_veiligheidsregio" aria-label="Permalink for Section 4.2.1.7"></a></div><div><p>
+</section><section id="veiligheidsregio"><div class="header-wrapper"><h5 id="informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_veiligheidsregio"><bdi class="secno">4.2.1.7 </bdi>Veiligheidsregio</h5><a class="self-link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_veiligheidsregio" aria-label="Permalink for Section 4.2.1.7"></a></div><div><p>
       </p><figure id="fig-veiligheidsregio-detail">
         <img src="model-docs/media/veiligheidsregio-detail.png" alt="Veiligheidsregio - detail">
-        <figcaption><a class="self-link" href="#fig-veiligheidsregio-detail">Figuur <bdi class="figno">16</bdi></a> <span class="fig-title">Veiligheidsregio - detail</span></figcaption>
+        <figcaption><a class="self-link" href="#fig-veiligheidsregio-detail">Figuur <bdi class="figno">17</bdi></a> <span class="fig-title">Veiligheidsregio - detail</span></figcaption>
       </figure>
     <p></p>
 </div>
@@ -4421,13 +5118,13 @@ Ruimte waarover het waterschap op basis van wet- of regelgeving de politieke reg
 <tbody><tr>
 <th>Subtype</th>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_veiligheidsregio">Veiligheidsregio</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_veiligheidsregio">Veiligheidsregio</a>
 </td>
 </tr>
 <tr>
 <th>Supertype</th>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_regionaal_openbaar_lichaam">RegionaalOpenbaarLichaam</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_regionaal_openbaar_lichaam">RegionaalOpenbaarLichaam</a>
 </td>
 </tr>
 <tr>
@@ -4445,8 +5142,8 @@ Ruimte waarover het waterschap op basis van wet- of regelgeving de politieke reg
 
 
 
-<section class="notoc"><div class="header-wrapper"><h6 id="overzicht-relatiesoorten-7">Overzicht Relatiesoorten</h6><a class="self-link" href="#overzicht-relatiesoorten-7" aria-label="Permalink for this Section"></a></div>
-
+<section class="notoc"><div class="header-wrapper"><h6 id="overzicht-relatiesoorten-14">Overzicht Relatiesoorten</h6><a class="self-link" href="#overzicht-relatiesoorten-14" aria-label="Permalink for this Section"></a></div>
+    
 <table style="width: 100%">
 <colgroup style="width: 25%"></colgroup>
 <colgroup style="width: 50%"></colgroup>
@@ -4461,12 +5158,12 @@ Ruimte waarover het waterschap op basis van wet- of regelgeving de politieke reg
 </tr>
 <tr>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_veiligheidsregio_relatiesoort_bestuurt_veiligheidsregiogebied">bestuurtVeiligheidsregiogebied</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_veiligheidsregio_relatiesoort_bestuurt_veiligheidsregiogebied">bestuurtVeiligheidsregiogebied</a>
 </td>
 <td>
 Ruimte waarover de veiligheidsregio  op basis van wet- of regelgeving de politieke regie voert van brandweerzorg, rampenbeheersing, crisisbeheersing, geneeskundige hulpverlening en handhaving van de openbare orde en veiligheid.</td>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_bestuurlijk_gebied_objecttype_veiligheidsregiogebied">Veiligheidsregiogebied</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_veiligheidsregiogebied">Veiligheidsregiogebied</a>
 </td>
 <td>
 1</td>
@@ -4477,9 +5174,9 @@ Ruimte waarover de veiligheidsregio  op basis van wet- of regelgeving de politie
 
 
 
-<section class="notoc"><div class="header-wrapper"><h6 id="details-relatiesoorten-7">Details Relatiesoorten</h6><a class="self-link" href="#details-relatiesoorten-7" aria-label="Permalink for this Section"></a></div>
+<section class="notoc"><div class="header-wrapper"><h6 id="details-relatiesoorten-14">Details Relatiesoorten</h6><a class="self-link" href="#details-relatiesoorten-14" aria-label="Permalink for this Section"></a></div>
 
-<section class="notoc" id="informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_veiligheidsregio_relatiesoort_bestuurt_veiligheidsregiogebied"><div class="header-wrapper"><h6 id="bestuurtveiligheidsregiogebied">bestuurtVeiligheidsregiogebied</h6><a class="self-link" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_veiligheidsregio_relatiesoort_bestuurt_veiligheidsregiogebied" aria-label="Permalink for this Section"></a></div>
+<section class="notoc" id="informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_veiligheidsregio_relatiesoort_bestuurt_veiligheidsregiogebied"><div class="header-wrapper"><h6 id="bestuurtveiligheidsregiogebied">bestuurtVeiligheidsregiogebied</h6><a class="self-link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_veiligheidsregio_relatiesoort_bestuurt_veiligheidsregiogebied" aria-label="Permalink for this Section"></a></div>
 
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
@@ -4527,7 +5224,7 @@ Ruimte waarover de veiligheidsregio  op basis van wet- of regelgeving de politie
 <tr>
 <th>Bron</th>
 <td>
-<a class="link" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_objecttype_veiligheidsregio">Veiligheidsregio</a>
+<a class="link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_veiligheidsregio">Veiligheidsregio</a>
 </td>
 </tr>
 </tbody><tbody>
@@ -4543,7 +5240,7 @@ Ruimte waarover de veiligheidsregio  op basis van wet- of regelgeving de politie
 
 
 </section></section><section id="enumeraties-0"><div class="header-wrapper"><h4 id="x4-2-2-enumeraties"><bdi class="secno">4.2.2 </bdi>Enumeraties</h4><a class="self-link" href="#enumeraties-0" aria-label="Permalink for Section 4.2.2"></a></div>
-<section id="typeregionaalopenbaarlichaam"><div class="header-wrapper"><h5 id="informatiemodel_imsor_cm_domein_openbaar_lichaam_enumeratie_type_regionaal_openbaar_lichaam"><bdi class="secno">4.2.2.1 </bdi>TypeRegionaalOpenbaarLichaam</h5><a class="self-link" href="#informatiemodel_imsor_cm_domein_openbaar_lichaam_enumeratie_type_regionaal_openbaar_lichaam" aria-label="Permalink for Section 4.2.2.1"></a></div><table style="width: 100%">
+<section id="typeregionaalopenbaarlichaam"><div class="header-wrapper"><h5 id="informatiemodel_imso_cm_domein_openbaar_lichaam_enumeratie_type_regionaal_openbaar_lichaam"><bdi class="secno">4.2.2.1 </bdi>TypeRegionaalOpenbaarLichaam</h5><a class="self-link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_enumeratie_type_regionaal_openbaar_lichaam" aria-label="Permalink for Section 4.2.2.1"></a></div><table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
 <colgroup style="width: 70%"></colgroup>
 <tbody><tr>
@@ -4580,7 +5277,7 @@ Ruimte waarover de veiligheidsregio  op basis van wet- of regelgeving de politie
 
 
 <section class="notoc"><div class="header-wrapper"><h6 id="overzicht-waarden-1">Overzicht waarden</h6><a class="self-link" href="#overzicht-waarden-1" aria-label="Permalink for this Section"></a></div>
-
+    
 <table style="width: 100%">
 <colgroup style="width: 25%"></colgroup>
 <colgroup style="width: 75%"></colgroup>
@@ -4626,7 +5323,7 @@ waterschap</td>
 <p>
       </p><figure id="fig-extern-nen-3610-2022-basismodel-geo-informatie">
         <img src="model-docs/media/nen_3610_2022_-_basismodel_geo-informatie.png" alt="NEN 3610:2022 - Basismodel geo-informatie">
-        <figcaption><a class="self-link" href="#fig-extern-nen-3610-2022-basismodel-geo-informatie">Figuur <bdi class="figno">17</bdi></a> <span class="fig-title">Extern NEN 3610:2022 - Basismodel geo-informatie</span></figcaption>
+        <figcaption><a class="self-link" href="#fig-extern-nen-3610-2022-basismodel-geo-informatie">Figuur <bdi class="figno">18</bdi></a> <span class="fig-title">Extern NEN 3610:2022 - Basismodel geo-informatie</span></figcaption>
       </figure>
     <p></p>
 <section id="objecttypen-1"><div class="header-wrapper"><h4 id="x4-3-1-objecttypen"><bdi class="secno">4.3.1 </bdi>Objecttypen</h4><a class="self-link" href="#objecttypen-1" aria-label="Permalink for Section 4.3.1"></a></div>
@@ -4804,223 +5501,8 @@ waterschap</td>
   
 
   
-  <section id="glossary" class="appendix" data-format="markdown"><div class="header-wrapper"><h2 id="a-algemene-termen-en-definities"><bdi class="secno">A. </bdi>Algemene Termen en definities</h2><a class="self-link" href="#glossary" aria-label="Permalink for Appendix A."></a></div>
-<section id="bestuurlijke-gebieden-0"><div class="header-wrapper"><h3 id="a-1-bestuurlijke-gebieden"><bdi class="secno">A.1 </bdi>Bestuurlijke gebieden</h3><a class="self-link" href="#bestuurlijke-gebieden-0" aria-label="Permalink for Appendix A.1"></a></div>
-<div class="issue" id="issue-container-number-1"><div role="heading" class="issue-title marker" id="h-issue" aria-level="4"><span>Issue 1</span></div><aside class="">Verwijzen naar <a href="https://begrippen.geostandaarden.nl/sor/nl/">DiSGeo thesaurus</a></aside></div>
-
-<div class="note" role="note" id="issue-container-generatedID-1"><div role="heading" class="note-title marker" id="h-note-0" aria-level="4"><span>Noot</span></div><aside class="">
-   Let op: de term <b>bestuurlijk gebied</b> ontbreekt op dit moment nog.
-</aside></div>
-
-<table>
-<thead>
-<tr>
-<th><strong>Termen</strong></th>
-<th><strong>Definities</strong></th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>Bestuurlijk gebied</strong></td>
-<td>...</td>
-</tr>
-<tr>
-<td><strong>Gemeente</strong></td>
-<td>...</td>
-</tr>
-<tr>
-<td><strong>Gemeentegebied</strong></td>
-<td>...</td>
-</tr>
-<tr>
-<td><strong>Openbaar lichaam</strong></td>
-<td>...</td>
-</tr>
-<tr>
-<td><strong>Registratieve ruimte</strong></td>
-<td>...</td>
-</tr>
-<tr>
-<td><strong>Provincie</strong></td>
-<td>...</td>
-</tr>
-<tr>
-<td><strong>Provinciegebied</strong></td>
-<td>...</td>
-</tr>
-<tr>
-<td><strong>Rijk</strong></td>
-<td>...</td>
-</tr>
-<tr>
-<td><strong>Rijksgebied</strong></td>
-<td>...</td>
-</tr>
-</tbody></table>
-</section><section id="informatiemodeldomein"><div class="header-wrapper"><h3 id="a-2-informatiemodeldomein"><bdi class="secno">A.2 </bdi>Informatiemodeldomein</h3><a class="self-link" href="#informatiemodeldomein" aria-label="Permalink for Appendix A.2"></a></div>
-<div class="issue" id="issue-container-number-2"><div role="heading" class="issue-title marker" id="h-issue-0" aria-level="4"><span>Issue 2</span></div><aside class="">Verwijzen naar <a href="https://begrippen.geostandaarden.nl/nen3610/nl/"> NEN3610 thesaurus</a>.</aside></div>
-
-<table>
-<thead>
-<tr>
-<th><strong>Termen</strong></th>
-<th><strong>Definities</strong></th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>Annotatie</strong></td>
-<td>Elke toevoeging op een kaartbeeld voor verduidelijking</td>
-</tr>
-<tr>
-<td><strong>Applicatieschema</strong></td>
-<td>Informatiemodel dat gegevens beschrijft die worden gebruikt door een of meer applicaties.</td>
-</tr>
-<tr>
-<td><strong>Relatie</strong></td>
-<td>Semantische relatie tussen twee of meer geo-objecten die samenhang tussen hun instanties weergeeft.</td>
-</tr>
-<tr>
-<td><strong>Attribuutsoort</strong></td>
-<td>Kenmerk van een geo-object.</td>
-</tr>
-<tr>
-<td><strong>Attribuutwaarde</strong></td>
-<td>Waarde die een attribuutsoort aanneemt.</td>
-</tr>
-<tr>
-<td><strong>Coördinaat</strong></td>
-<td>Getal in een sequentie van n getallen om de positie van een punt in een n-dimensionale ruimte te bepalen.</td>
-</tr>
-<tr>
-<td><strong>Coördinaatreferentiesysteem</strong></td>
-<td>Coördinaatsysteem dat aan een object is gerelateerd door een datum.</td>
-</tr>
-<tr>
-<td><strong>Coördinaatsysteem</strong></td>
-<td>Set van wiskundige regels voor het toekennen van coördinaten aan punten.</td>
-</tr>
-<tr>
-<td><strong>Datatype</strong></td>
-<td>Een beschrijving van de structuur waaraan een waarde, oftewel de data zelf, aan moet voldoen.</td>
-</tr>
-<tr>
-<td><strong>Diepte</strong></td>
-<td>Afstand van een punt tot een gekozen referentievlak neerwaarts gemeten langs een lijn welke loodrecht op dat referentievlak staat.</td>
-</tr>
-<tr>
-<td><strong>Domeinmodel</strong></td>
-<td>Formele definitie van een subset van objecten, attributen, relaties en regels in een bepaald domein.</td>
-</tr>
-<tr>
-<td><strong>Geo-informatie</strong></td>
-<td>Informatie met een directe of indirecte referentie naar een plaats ten opzichte van de aarde (bijvoorbeeld ten opzichte van het aardoppervlak) OPMERKING: Geo-informatie is synoniem aan geografische informatie.</td>
-</tr>
-<tr>
-<td><strong>Geo-object</strong></td>
-<td>Abstractie van een fenomeen in de werkelijkheid dat direct of indirect is geassocieerd met een locatie relatief ten opzichte van de aarde. (bijvoorbeeld ten opzichte van het aardoppervlak)</td>
-</tr>
-<tr>
-<td><strong>Georeferentie</strong></td>
-<td>Locatie van een ruimtelijk object vastgelegd in een ruimtelijk referentiesysteem.</td>
-</tr>
-<tr>
-<td><strong>Informatiemodel</strong></td>
-<td>Formele definitie van objecten, attributen, relaties en regels in een bepaald domein. OPMERKING: Domein is in dit verband: een kennisgebied of activiteit gekarakteriseerd door een verzameling van concepten en begrippen</td>
-</tr>
-<tr>
-<td><strong>Instantie</strong></td>
-<td>Benoemd, identificeerbaar object uit een objecttype.</td>
-</tr>
-<tr>
-<td><strong>Keuze</strong></td>
-<td>Een keuze tussen twee attribuutsoorten zoals bedoeld in het MIM.</td>
-</tr>
-<tr>
-<td><strong>Label</strong></td>
-<td>Tekst of getal dat een eigenschap omschrijft of kwantificeert en als annotatie op een kaartbeeld wordt afgebeeld</td>
-</tr>
-<tr>
-<td><strong>Namespace</strong></td>
-<td>Collectie van namen die in XML documenten gebruikt worden als objecttype- en attribuutsoortnamen OPMERKING: Een namespace wordt geïdentificeerd door een URI.</td>
-</tr>
-<tr>
-<td><strong>Objecttype</strong></td>
-<td>Verzameling van objecten met dezelfde eigenschappen. OPMERKING: Ook wel feature class genoemd.</td>
-</tr>
-<tr>
-<td><strong>Rasterformaat</strong></td>
-<td>Representatie van beeld middel een gewoonlijk rechthoekig patroon van parallelle lijnen.</td>
-</tr>
-<tr>
-<td><strong>Registratie</strong></td>
-<td>Op nationaal niveau geïdentificeerde en erkende gegevensverzameling. OPMERKING: Een basisregistratie is een registratie.</td>
-</tr>
-<tr>
-<td><strong>Representatie</strong></td>
-<td>Inhoudelijk vastleggen van de werkelijkheid. OPMERKING: Het informatiemodel is een representatie van de werkelijkheid.</td>
-</tr>
-<tr>
-<td><strong>Ruimtelijk referentiesysteem</strong></td>
-<td>Model (systeem) voor identificatie van een positie (locatie) in de werkelijkheid OPMERKING: Identificatie van een positie kan door coördinaten (directe locatie) en door geografische identificatoren (indirecte locatie).</td>
-</tr>
-<tr>
-<td><strong>Vectorformaat</strong></td>
-<td>Representatie van geometrie middels geometrische primitieven.</td>
-</tr>
-<tr>
-<td><strong>Waardelijst</strong></td>
-<td>Lijst van waarden.</td>
-</tr>
-<tr>
-<td><strong>Werkelijkheid</strong></td>
-<td>Beeld van de echte of hypothetische wereld die alles van belang omvat.</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-</tr>
-</tbody></table>
-</section><section id="algemene-symbolen-en-afkortingen"><div class="header-wrapper"><h3 id="a-3-algemene-symbolen-en-afkortingen"><bdi class="secno">A.3 </bdi>Algemene Symbolen en afkortingen</h3><a class="self-link" href="#algemene-symbolen-en-afkortingen" aria-label="Permalink for Appendix A.3"></a></div>
-<p>Lijst van afkortingen en acroniemen die worden gehanteerd in deze
-dataspecificatie.</p>
-<table>
-<thead>
-<tr>
-<th><strong>Afkortingen</strong></th>
-<th><strong>Betekenissen</strong></th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>GML</strong></td>
-<td>Geography Markup Language</td>
-</tr>
-<tr>
-<td><strong>MIM</strong></td>
-<td>Metamodel Informatie Modellering</td>
-</tr>
-<tr>
-<td><strong>UML</strong></td>
-<td>Unified Modeling Language</td>
-</tr>
-<tr>
-<td><strong>WFS</strong></td>
-<td>Web Feature Service</td>
-</tr>
-<tr>
-<td><strong>XML</strong></td>
-<td>Extensible Markup Language</td>
-</tr>
-<tr>
-<td><strong>BAG</strong></td>
-<td>Basisregistratie Adressen en Gebouwen</td>
-</tr>
-<tr>
-<td><strong>INSPIRE</strong></td>
-<td>Infrastructure For Spatial Information In Europe</td>
-</tr>
-</tbody></table>
-<div class="issue" id="issue-container-number-3"><div role="heading" class="issue-title marker" id="h-issue-1" aria-level="4"><span>Issue 3</span></div><aside class="">Verwijzen naar algemeen begrippenkader op begrippen.geostandaarden.nl</aside></div></section></section>
-  <section id="conformance"><div class="header-wrapper"><h2 id="b-conformiteit"><bdi class="secno">B. </bdi>Conformiteit</h2><a class="self-link" href="#conformance" aria-label="Permalink for Section B."></a></div><p>Naast onderdelen die als niet normatief gemarkeerd zijn, zijn ook alle diagrammen, voorbeelden, en noten in dit document niet normatief. Verder is alles in dit document normatief.</p></section>
-  <section id="tof"><div class="header-wrapper"><h2 id="c-lijst-met-figuren"><bdi class="secno">C. </bdi>Lijst met figuren</h2><a class="self-link" href="#tof" aria-label="Permalink for Section C."></a></div><ul class="tof">
+  <section id="conformance"><div class="header-wrapper"><h2 id="x5-conformiteit"><bdi class="secno">5. </bdi>Conformiteit</h2><a class="self-link" href="#conformance" aria-label="Permalink for Section 5."></a></div><p>Naast onderdelen die als niet normatief gemarkeerd zijn, zijn ook alle diagrammen, voorbeelden, en noten in dit document niet normatief. Verder is alles in dit document normatief.</p></section>
+  <section id="tof"><div class="header-wrapper"><h2 id="x6-lijst-met-figuren"><bdi class="secno">6. </bdi>Lijst met figuren</h2><a class="self-link" href="#tof" aria-label="Permalink for Section 6."></a></div><ul class="tof">
         <li class="tofline">
     <a class="tocxref" href="#fig-bestuurlijk-gebied-als-specialisatie-van-registratieve-ruimte"><span class="self-link">Figuur <bdi class="figno">1</bdi></span> <span class="fig-title">Bestuurlijk gebied als specialisatie van Registratieve Ruimte</span></a>
   </li><li class="tofline">
@@ -5037,43 +5519,35 @@ dataspecificatie.</p>
   </li><li class="tofline">
     <a class="tocxref" href="#fig-gemeentegebied-detail"><span class="self-link">Figuur <bdi class="figno">7</bdi></span> <span class="fig-title">Gemeentegebied - detail</span></a>
   </li><li class="tofline">
-    <a class="tocxref" href="#fig-rijksgebied-detail"><span class="self-link">Figuur <bdi class="figno">8</bdi></span> <span class="fig-title">Rijksgebied - detail</span></a>
+    <a class="tocxref" href="#fig-provinciegebied-detail"><span class="self-link">Figuur <bdi class="figno">8</bdi></span> <span class="fig-title">Provinciegebied - detail</span></a>
   </li><li class="tofline">
-    <a class="tocxref" href="#fig-waterschapesgebied-detail"><span class="self-link">Figuur <bdi class="figno">9</bdi></span> <span class="fig-title">Waterschapesgebied - detail</span></a>
+    <a class="tocxref" href="#fig-rijksgebied-detail"><span class="self-link">Figuur <bdi class="figno">9</bdi></span> <span class="fig-title">Rijksgebied - detail</span></a>
   </li><li class="tofline">
-    <a class="tocxref" href="#fig-veiligheidsregiogebied-detail"><span class="self-link">Figuur <bdi class="figno">10</bdi></span> <span class="fig-title">Veiligheidsregiogebied - detail</span></a>
+    <a class="tocxref" href="#fig-waterschapesgebied-detail"><span class="self-link">Figuur <bdi class="figno">10</bdi></span> <span class="fig-title">Waterschapesgebied - detail</span></a>
   </li><li class="tofline">
-    <a class="tocxref" href="#fig-domein-openbaar-lichaam"><span class="self-link">Figuur <bdi class="figno">11</bdi></span> <span class="fig-title">Domein Openbaar lichaam</span></a>
+    <a class="tocxref" href="#fig-veiligheidsregiogebied-detail"><span class="self-link">Figuur <bdi class="figno">11</bdi></span> <span class="fig-title">Veiligheidsregiogebied - detail</span></a>
   </li><li class="tofline">
-    <a class="tocxref" href="#fig-gemeente-detail"><span class="self-link">Figuur <bdi class="figno">12</bdi></span> <span class="fig-title">Gemeente - detail</span></a>
+    <a class="tocxref" href="#fig-domein-openbaar-lichaam"><span class="self-link">Figuur <bdi class="figno">12</bdi></span> <span class="fig-title">Domein Openbaar lichaam</span></a>
   </li><li class="tofline">
-    <a class="tocxref" href="#fig-provincie-detail"><span class="self-link">Figuur <bdi class="figno">13</bdi></span> <span class="fig-title">Provincie - detail</span></a>
+    <a class="tocxref" href="#fig-gemeente-detail"><span class="self-link">Figuur <bdi class="figno">13</bdi></span> <span class="fig-title">Gemeente - detail</span></a>
   </li><li class="tofline">
-    <a class="tocxref" href="#fig-rijk-detail"><span class="self-link">Figuur <bdi class="figno">14</bdi></span> <span class="fig-title">Rijk - detail</span></a>
+    <a class="tocxref" href="#fig-provincie-detail"><span class="self-link">Figuur <bdi class="figno">14</bdi></span> <span class="fig-title">Provincie - detail</span></a>
   </li><li class="tofline">
-    <a class="tocxref" href="#fig-vwaterschapeiligheidsregio-detail"><span class="self-link">Figuur <bdi class="figno">15</bdi></span> <span class="fig-title">VWaterschapeiligheidsregio - detail</span></a>
+    <a class="tocxref" href="#fig-rijk-detail"><span class="self-link">Figuur <bdi class="figno">15</bdi></span> <span class="fig-title">Rijk - detail</span></a>
   </li><li class="tofline">
-    <a class="tocxref" href="#fig-veiligheidsregio-detail"><span class="self-link">Figuur <bdi class="figno">16</bdi></span> <span class="fig-title">Veiligheidsregio - detail</span></a>
+    <a class="tocxref" href="#fig-vwaterschapeiligheidsregio-detail"><span class="self-link">Figuur <bdi class="figno">16</bdi></span> <span class="fig-title">VWaterschapeiligheidsregio - detail</span></a>
   </li><li class="tofline">
-    <a class="tocxref" href="#fig-extern-nen-3610-2022-basismodel-geo-informatie"><span class="self-link">Figuur <bdi class="figno">17</bdi></span> <span class="fig-title">Extern NEN 3610:2022 - Basismodel geo-informatie</span></a>
+    <a class="tocxref" href="#fig-veiligheidsregio-detail"><span class="self-link">Figuur <bdi class="figno">17</bdi></span> <span class="fig-title">Veiligheidsregio - detail</span></a>
+  </li><li class="tofline">
+    <a class="tocxref" href="#fig-extern-nen-3610-2022-basismodel-geo-informatie"><span class="self-link">Figuur <bdi class="figno">18</bdi></span> <span class="fig-title">Extern NEN 3610:2022 - Basismodel geo-informatie</span></a>
   </li>
       </ul></section>
-  <section id="index" class="appendix"><div class="header-wrapper"><h2 id="d-index"><bdi class="secno">D. </bdi>Index</h2><a class="self-link" href="#index" aria-label="Permalink for Appendix D."></a></div><section id="index-defined-here">
-    <div class="header-wrapper"><h3 id="d-1-begrippen-gedefinieerd-door-deze-specificatie"><bdi class="secno">D.1 </bdi>Begrippen gedefinieerd door deze specificatie</h3><a class="self-link" href="#index-defined-here" aria-label="Permalink for Appendix D.1"></a></div>
-    <ul class="index">
-    
-  </ul>
-  </section><section id="index-defined-elsewhere">
-    <div class="header-wrapper"><h3 id="d-2-begrippen-gedefinieerd-door-verwijzing"><bdi class="secno">D.2 </bdi>Begrippen gedefinieerd door verwijzing</h3><a class="self-link" href="#index-defined-elsewhere" aria-label="Permalink for Appendix D.2"></a></div>
-    <ul class="index">
-    
-  </ul>
-  </section></section>
+  
 
 
 
-<section id="references" class="appendix"><div class="header-wrapper"><h2 id="e-referenties"><bdi class="secno">E. </bdi>Referenties</h2><a class="self-link" href="#references" aria-label="Permalink for Appendix E."></a></div><section id="normatieve-referenties">
-    <div class="header-wrapper"><h3 id="e-1-normatieve-referenties"><bdi class="secno">E.1 </bdi>Normatieve referenties</h3><a class="self-link" href="#normatieve-referenties" aria-label="Permalink for Appendix E.1"></a></div>
+<section id="references" class="appendix"><div class="header-wrapper"><h2 id="a-referenties"><bdi class="secno">A. </bdi>Referenties</h2><a class="self-link" href="#references" aria-label="Permalink for Appendix A."></a></div><section id="normatieve-referenties">
+    <div class="header-wrapper"><h3 id="a-1-normatieve-referenties"><bdi class="secno">A.1 </bdi>Normatieve referenties</h3><a class="self-link" href="#normatieve-referenties" aria-label="Permalink for Appendix A.1"></a></div>
     <dl class="bibliography"><dt id="bib-disgeo-mod">[disgeo-mod]</dt><dd>
       <a href="https://geonovum.github.io/disgeo-imsor/modelleerprincipes/"><cite>Modelleerprincipes samenhangende objectenregistratie</cite></a>.  Geonovum. 22 Augustus 2022. Werkversie. URL: <a href="https://geonovum.github.io/disgeo-imsor/modelleerprincipes/">https://geonovum.github.io/disgeo-imsor/modelleerprincipes/</a>
     </dd><dt id="bib-emso">[EMSO]</dt><dd>
