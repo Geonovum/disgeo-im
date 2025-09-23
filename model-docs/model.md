@@ -862,11 +862,11 @@ Relatie die aangeeft dat het gebied bestuurt wordt door een gemeente.</td>
 </tr>
 <tr>
 <th>Kardinaliteit</th>
-<td>1..*</td>
+<td>1</td>
 </tr>
 <tr>
 <th>Kardinaliteit relatie bron</th>
-<td>1</td>
+<td>1..*</td>
 </tr>
 <tr>
 <th>Bron</th>
@@ -917,11 +917,11 @@ Relatie die aangeeft dat het gebied bestuurt wordt door een gemeente.</td>
 </tr>
 <tr>
 <th>Kardinaliteit</th>
-<td>1..*</td>
+<td>1</td>
 </tr>
 <tr>
 <th>Kardinaliteit relatie bron</th>
-<td>1</td>
+<td>1..*</td>
 </tr>
 <tr>
 <th>Bron</th>
@@ -1146,11 +1146,11 @@ Relatie die aangeeft dat het gebied bestuurt wordt door een provincie.</td>
 </tr>
 <tr>
 <th>Kardinaliteit</th>
-<td>1..*</td>
+<td>1</td>
 </tr>
 <tr>
 <th>Kardinaliteit relatie bron</th>
-<td>1</td>
+<td>1..*</td>
 </tr>
 <tr>
 <th>Bron</th>
