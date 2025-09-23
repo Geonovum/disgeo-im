@@ -1,4 +1,4 @@
-![Veiligheidsregiogebied - detail](model-docs/media/veiligheidsregiogebied-detail.png "Veiligheidsregiogebied - detail")
+![Veiligheidsregiogebied - detail](data/media/veiligheidsregiogebied-detail.png "Veiligheidsregiogebied - detail")
 
 Nederland is opgedeeld in 25 veiligheidsregio's. Zij zorgen voor de veiligheid van de inwoners én bezoekers van het gebied. Dit doen zij door te zorgen voor de aanwezigheid van hulpverleningsdiensten, evenals het maken van afspraken over de aanpak van rampen en crises. Een '**Veiligheidsregio**' is een openbaarlichaam, met het '**Veiligheidsregiogebied**' als haar bestuurlijk gebied.
 

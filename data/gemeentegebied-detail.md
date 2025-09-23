@@ -1,4 +1,4 @@
-![Gemeentegebied - detail](model-docs/media/gemeentegebied-detail.png "Gemeentegebied - detail")
+![Gemeentegebied - detail](data/media/gemeentegebied-detail.png "Gemeentegebied - detail")
 
 Het Europese deel van Nederland is [opgedeeld in gemeenten](https://www.rijksoverheid.nl/onderwerpen/gemeenten/gemeentelijke-herindeling) . Het model onderscheidt het objecttype '**Gemeente**' als het regionaal openbare lichaam dat het bestuur uitoefent over het bijbehorende '**Gemeentegebied**'.
 

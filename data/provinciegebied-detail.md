@@ -1,4 +1,4 @@
-![Provinciegebied - detail](model-docs/media/provinciegebied-detail.png "Provinciegebied - detail")
+![Provinciegebied - detail](data/media/provinciegebied-detail.png "Provinciegebied - detail")
 
 Het Europese deel van Nederland bestaat uit 12 provincies. Zij vormen de bestuurslaag tussen de rijksoverheid en de Nederlandse gemeenten. De bestuurslaag duidt het informatiemodel aan met '**Provincie**'. Het gebied waarover de provincie het bestuur uitoefent heet het '**Provinciegebied**'.
 

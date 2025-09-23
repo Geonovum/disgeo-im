@@ -1,4 +1,4 @@
-![Waterschapsgebied - detail](model-docs/media/waterschapsgebied-detail.png "Waterschapesgebied - detail")
+![Waterschapsgebied - detail](data/media/waterschapsgebied-detail.png "Waterschapesgebied - detail")
 
 Net als de Rijksoverheid, de provincies en de gemeenten, is een waterschap een overheidsorganisatie. Het zorgt voor het waterbeheer in een bepaald gebied. Tot haar taken behoren het beschermen tegen overstromingen, het zorgen voor schoon water in sloten, rivieren, meren en beken én het beheren van de hoeveelheid water. De verzameling van bestuursorganen van een waterschap, worden in dit model aangeduid met het openbare lichaam '**Waterschap**'. Het grondgebied waarover het waterschap haar bestuur uitoefent, heet in het model het '**Waterschapsgebied**'.
 

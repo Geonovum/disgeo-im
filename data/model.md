@@ -1,9 +1,9 @@
 # Informatiemodel Informatiemodel Samenhangende Objecten - Bestuurlijke gebieden
 ## Domein Bestuurlijk gebied
 
-![Bestuurlijk gebied](model-docs/media/bestuurlijk_gebied.png "Domein Bestuurlijk gebied")
+![Bestuurlijk gebied](data/media/bestuurlijk_gebied.png "Domein Bestuurlijk gebied")
 
-<div data-include-format="markdown" data-include="model-docs/model-overzicht.md"></div>
+<div data-include-format="markdown" data-include="data/model-overzicht.md"></div>
 
 ### Objecttypen
 
@@ -155,7 +155,7 @@ Fase van de levenscyclus waarin een bestuurlijk gebied zich bevindt.</td>
 
 #### BestuurlijkGebied {#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied}
 
-<div data-include-format="markdown" data-include="model-docs/bestuurlijk-gebied-detail.md"></div>
+<div data-include-format="markdown" data-include="data/bestuurlijk-gebied-detail.md"></div>
 
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
@@ -690,7 +690,7 @@ De geometrische afbakening van het bevattendGebied, waarbinnen de geometrie van 
 
 #### Gemeentegebied {#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_gemeentegebied}
 
-<div data-include-format="markdown" data-include="model-docs/gemeentegebied-detail.md"></div>
+<div data-include-format="markdown" data-include="data/gemeentegebied-detail.md"></div>
 
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
@@ -986,7 +986,7 @@ Relatie die aangeeft dat het gebied bestuurt wordt door een gemeente.</td>
 
 #### Provinciegebied {#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_provinciegebied}
 
-<div data-include-format="markdown" data-include="model-docs/provinciegebied-detail.md"></div>
+<div data-include-format="markdown" data-include="data/provinciegebied-detail.md"></div>
 
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
@@ -1215,7 +1215,7 @@ Relatie die aangeeft dat het gebied bestuurt wordt door een provincie.</td>
 
 #### Rijksgebied {#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_rijksgebied}
 
-<div data-include-format="markdown" data-include="model-docs/rijksgebied-detail.md"></div>
+<div data-include-format="markdown" data-include="data/rijksgebied-detail.md"></div>
 
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
@@ -1377,7 +1377,7 @@ Relatie die aangeeft dat het gebied bestuurt wordt door een rijk.</td>
 
 #### Waterschapsgebied {#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_waterschapsgebied}
 
-<div data-include-format="markdown" data-include="model-docs/waterschapsgebied-detail.md"></div>
+<div data-include-format="markdown" data-include="data/waterschapsgebied-detail.md"></div>
 
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
@@ -1543,7 +1543,7 @@ Relatie die aangeeft dat het gebied bestuurt wordt door een waterschap.</td>
 
 #### Veiligheidsregiogebied {#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_veiligheidsregiogebied}
 
-<div data-include-format="markdown" data-include="model-docs/veiligheidsregiogebied-detail.md"></div>
+<div data-include-format="markdown" data-include="data/veiligheidsregiogebied-detail.md"></div>
 
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
@@ -2594,7 +2594,7 @@ Object dat door het bevoegd gezag is ingetrokken op grond van wet- of regelgevin
 
 ## Domein Openbaar lichaam
 
-![Openbaar lichaam](model-docs/media/openbaar_lichaam.png "Domein Openbaar lichaam")
+![Openbaar lichaam](data/media/openbaar_lichaam.png "Domein Openbaar lichaam")
 
 ### Objecttypen
 
@@ -3102,7 +3102,7 @@ Relatie die aangeeft dat bestuurder het gebied bestuurt bestuurt.</td>
 
 #### Gemeente {#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_gemeente}
 
-<div data-include-format="markdown" data-include="model-docs/gemeente-detail.md"></div>
+<div data-include-format="markdown" data-include="data/gemeente-detail.md"></div>
 
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
@@ -3266,7 +3266,7 @@ Ruimte waarover de gemeente op basis van wet- of regelgeving de politieke regie 
 
 #### Provincie {#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_provincie}
 
-<div data-include-format="markdown" data-include="model-docs/provincie-detail.md"></div>
+<div data-include-format="markdown" data-include="data/provincie-detail.md"></div>
 
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
@@ -3430,7 +3430,7 @@ Ruimte waarover de provincie op basis van wet- of regelgeving de politieke regie
 
 #### Rijk {#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_rijk}
 
-<div data-include-format="markdown" data-include="model-docs/rijk-detail.md"></div>
+<div data-include-format="markdown" data-include="data/rijk-detail.md"></div>
 
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
@@ -3866,7 +3866,7 @@ Ruimte waarover het Rijk op basis van wet- of regelgeving de politieke regie voe
 
 #### Waterschap {#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_waterschap}
 
-<div data-include-format="markdown" data-include="model-docs/waterschap-detail.md"></div>
+<div data-include-format="markdown" data-include="data/waterschap-detail.md"></div>
 
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
@@ -4030,7 +4030,7 @@ Ruimte waarover het waterschap op basis van wet- of regelgeving de politieke reg
 
 #### Veiligheidsregio {#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_veiligheidsregio}
 
-<div data-include-format="markdown" data-include="model-docs/veiligheidsregio-detail.md"></div>
+<div data-include-format="markdown" data-include="data/veiligheidsregio-detail.md"></div>
 
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
@@ -4283,7 +4283,7 @@ waterschap</td>
 
 ## Extern NEN 3610:2022 - Basismodel geo-informatie
 
-![NEN 3610:2022 - Basismodel geo-informatie](model-docs/media/nen_3610_2022_-_basismodel_geo-informatie.png "Extern NEN 3610:2022 - Basismodel geo-informatie")
+![NEN 3610:2022 - Basismodel geo-informatie](data/media/nen_3610_2022_-_basismodel_geo-informatie.png "Extern NEN 3610:2022 - Basismodel geo-informatie")
 
 ### Objecttypen
 

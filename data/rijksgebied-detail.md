@@ -1,4 +1,4 @@
-![Rijksgebied - detail](model-docs/media/rijksgebied-detail.png "Rijksgebied - detail")
+![Rijksgebied - detail](data/media/rijksgebied-detail.png "Rijksgebied - detail")
 
 Het Rijk, ook wel de Rijksoverheid, voert de wettelijke taken uit op nationaal niveau. Het openbare lichaam '**Rijk**' bestaat uit alle ministeries, de daartoe behorende uitvoeringsorganisaties, inspecties en Hoge colleges van Staat. Het grondgebied waarover de het Rijk regeert is in het model het '**Rijksgebied**'. De bestuurlijke invloedsveer van het Rijk, strekt zich tevens uit over zee, waarvan het territorium wordt afgebakend door een viertal type maritieme zones. Dit zijn specialisaties van het «feature­Type» 'Maritime­Zone' (INSPIRE, Annex I, Administrative Units):
 

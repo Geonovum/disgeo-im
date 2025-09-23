@@ -1,4 +1,4 @@
-![Bestuurlijk gebied - detail](model-docs/media/bestuurlijk_gebied-detail.png "Bestuurlijk gebied - detail")
+![Bestuurlijk gebied - detail](data/media/bestuurlijk_gebied-detail.png "Bestuurlijk gebied - detail")
 
 Bestuurlijke gebieden, ook wel bestuursgebieden genoemd, zijn registratieve ruimten die op basis van wet- of regelgeving als eenheid gelden van bestuurlijke verantwoordelijkheid.
 
