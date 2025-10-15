@@ -9,4 +9,4 @@ Bij het modelleren zijn de volgende principes gehanteerd:
 3. Een waterschapsgebied wordt aangeduid met een geometrie die bestaat uit één of meerdere vlakken.
 4. Een waterschapsgebied wordt onafhankelijk van andere bestuurlijke gebieden samengesteld.
 
-Waterschappen onderscheiden drie typen 'grenzen'. Voor het aanduiden van het '**Waterschapsgebied**', wordt de **administratieve grens** gebruikt.
+Waterschappen onderscheiden meerdere typen 'grenzen'. Voor het aanduiden van het '**Waterschapsgebied**', wordt de **administratieve grens** gebruikt.

@@ -37,13 +37,13 @@ Een regionaal openbaar lichaam is een overheidsorganisatie die bepaalde taken ui
 Regionale openbare lichamen hebben met elkaar gemeen dat ze een bestuursgebied hebben — andere overheidsorganisaties hebben dat niet. [[TOOI-ONT-1.6.2]]
 
 #### Bestuurlijk gebied
-Een *bestuurlijk gebied*, ook wel bestuursgebied genoemd, is het grondgebied waarover het bestuursorgaan haar invloed uitoefent. Een bestuurlijk gebied is dus niet hetzelfde als het voor het gebied verantwoordelijke bestuur. Het _gebied_ en het _bestuur_ zijn weliswaar aan elkaar gerelateerd, maar hebben hun eigen unieke eigenschappen. Een bestuurlijk gebied heeft zelf geen naam, maar alleen een ruimtelijke aanduiding in de vorm van een geometrie. De naam waarmee men in het dagelijkse spraakgebruik het grondgebied associeert, is de formele naam van het gerelateerde openbare lichaam, bijvoorbeeld 'Apeldoorn' of 'Zeeland'.
+Een *bestuurlijk gebied*, ook wel bestuursgebied genoemd, is het grondgebied waarover het bestuursorgaan haar invloed uitoefent. Een bestuurlijk gebied is dus niet hetzelfde als het voor het gebied verantwoordelijke bestuur. Het _gebied_ en het _bestuur_ zijn weliswaar aan elkaar gerelateerd, maar hebben hun eigen unieke eigenschappen. Een bestuurlijk gebied heeft een ruimtelijke aanduiding in de vorm van een geometrie en kan ook een naam toegewezen krijgen. De naam waarmee men in het dagelijkse spraakgebruik het grondgebied associeert, is meestal de formele naam van het gerelateerde openbare lichaam, bijvoorbeeld 'Apeldoorn' of 'Zeeland'.
 
 #### Geometrie
 Dit model legt de geometrie vast van een bestuurlijk gebied. Die geometrie komt voort uit een grensbeschrijving, die zelf geen onderdeel van dit model is. Verder heeft een bestuurlijk gebied in dit model <i>altijd</i> een geometrie, terwijl in werkelijkheid de geometrie van een bestuurlijke gebied uiterlijk twee maanden na een wijzigingsvoorstel beschikbaar is. Daardoor komt het voor dat een (nieuw) openbaar lichaam tijdelijk geen (concept) geometrie heeft. Maar, vanuit het geo-domein lijkt het vooralsnog weinig waarde te hebben om deze tijdelijke situatie vast te leggen. Daarom stelt het model dat een openbaar lichaam altijd een geometrie heeft. Dit betekent dat een openbaar lichaam en het gerelateerde bestuurlijke gebied gelijktijdig worden opgenomen.
 
 #### Land en Zee
-Elke instantie van een openbaar lichaam heeft in de regel één bestuurlijk gebied. Een uitzondering hierop is het openbare lichaam _Rijk_. Naast een bestuurlijk gebied op land (in dit model het _Rijksgebied_), bestuurt het Rijk ook vier gebieden op zee; zogenaamde maritieme zones. In totaal onderscheid dit model vijf typen bestuurlijke gebieden die onder de bestuurlijke verantwoordelijkheid van het Rijk vallen.
+Een regionaal openbaar lichaam heeft vaak maar één bestuurlijk gebied. Een uitzondering hierop is het openbare lichaam _Rijk_. Naast een bestuurlijk gebied op land (in dit model het _Rijksgebied_), bestuurt het Rijk ook vier gebieden op zee; zogenaamde maritieme zones. In totaal onderscheid dit model vijf typen bestuurlijke gebieden die onder de bestuurlijke verantwoordelijkheid van het Rijk vallen.
 
 <aside class="example" title="Maritieme Zones">
 
@@ -51,8 +51,8 @@ Elke instantie van een openbaar lichaam heeft in de regel één bestuurlijk gebi
 
    <ul>
       <li><i>Territoriale zee</i> (tot 12 mijl uit de kust)</li>
-      <li><i>Aansluitende zone</i> (12 tot 24 mijl uit de kust)</li>
-      <li><i>Exclusieve economische zone</i> (tot 200 mijl uit de kust)</li>
+      <li><i>Aansluitende zone</i> (van 12 tot 24 mijl uit de kust)</li>
+      <li><i>Exclusieve economische zone</i> (van 12 tot 200 mijl uit de kust)</li>
       <li><i>Continentaal plat</i> (de zeebodem)</li>
    </ul>
 
@@ -60,7 +60,7 @@ Elke instantie van een openbaar lichaam heeft in de regel één bestuurlijk gebi
       <a href="media/bestuurlijke_gebieden_maritieme_zones_nl.jpg" target="_blank">
          <img src="media/bestuurlijke_gebieden_maritieme_zones_nl.jpg" alt="Infographic Stresstest">
       </a>
-      <figcaption>Bestuurlijke gebieden op zee: Nederlandse maritieme zones</a>)
+      <figcaption>Bestuurlijke gebieden op zee</a>
       </figcaption>
    </figure>
 
