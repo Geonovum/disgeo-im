@@ -4527,7 +4527,7 @@ Waterschap</td>
 <colgroup style="width: 70%"></colgroup>
 <tr>
 <th>Identificatie</th>
-<td>urn:modelelement:NEN%203610:2022%20-%20Basismodel%20geo-informatie:GeoObject</td>
+<td>http://modellen.geostandaarden.nl/def/nen3610#GeoObject</td>
 </tr>
 <tr>
 <th>Naam</th>
@@ -4571,7 +4571,7 @@ Waterschap</td>
 <colgroup style="width: 70%"></colgroup>
 <tr>
 <th>Identificatie</th>
-<td>urn:modelelement:NEN%203610:2022%20-%20Basismodel%20geo-informatie:VirtueleRuimte</td>
+<td>http://modellen.geostandaarden.nl/def/nen3610#VirtueleRuimte</td>
 </tr>
 <tr>
 <th>Naam</th>
@@ -4640,7 +4640,7 @@ Waterschap</td>
 <colgroup style="width: 70%"></colgroup>
 <tr>
 <th>Identificatie</th>
-<td>urn:modelelement:NEN%203610:2022%20-%20Basismodel%20geo-informatie:RegistratieveRuimte</td>
+<td>http://modellen.geostandaarden.nl/def/nen3610#RegistratieveRuimte</td>
 </tr>
 <tr>
 <th>Naam</th>
