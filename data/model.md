@@ -39,7 +39,7 @@
 <tr>
 <th>Begrip</th>
 <td>
-<a href="http://begrippen.geostandaarden.nl/disgeo/id/begrip/registratieve_ruimte ">http://begrippen.geostandaarden.nl/disgeo/id/begrip/registratieve_ruimte </a>
+<a href="http://begrippen.geostandaarden.nl/disgeo/id/begrip/registratieve_ruimte">http://begrippen.geostandaarden.nl/disgeo/id/begrip/registratieve_ruimte</a>
 </td>
 </tr>
 <tr>
@@ -2619,7 +2619,7 @@ Waterschapsgebied</td>
 <tr>
 <th>Begrip</th>
 <td>
-<a href="http://begrippen.geostandaarden.nl/disgeo/id/begrip/levensfase ">http://begrippen.geostandaarden.nl/disgeo/id/begrip/levensfase </a>
+<a href="http://begrippen.geostandaarden.nl/disgeo/id/begrip/levensfase">http://begrippen.geostandaarden.nl/disgeo/id/begrip/levensfase</a>
 </td>
 </tr>
 <tr>
