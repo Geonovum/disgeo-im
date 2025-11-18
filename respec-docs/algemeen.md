@@ -113,7 +113,7 @@ Het [[EMSO]] hanteert ten aanzien van dimensies tegenstrijdige uitgangspunten. E
 
 Hoofdstuk 5 tot en met 8 in het [[EMSO]] geven per geo-informatieobject aan welk geometrietype van toepassing is. `RegistratieveRuimte` (waar `BestuurlijkGebied` onderdeel van is) wordt tweedimensionaal vastgelegd. Hiervoor zijn de geometrietypen `GM_Surface` (_vlak_) of `GM_MultiSurface` (_multi-vlak_) geschikt. Het hoofdstuk [[[#informatiemodel-informatiemodel-samenhangende-objecten-bestuurlijke-gebieden]]] van dit document beschrijft per geo-informatieobjecttype in detail hoe het [[EMSO]] dit vormgeeft.
 
-### Coordinaatreferentiesystemen
+### Coördinaatreferentiesystemen
 
 Het Basismodel Geo-informatie [[NEN3610-2022]] stelt iedere geometrische dataset/geometrie moet zijn voorzien van een verwijzing naar het coördinaatreferentiesysteem waarin de coördinaten van de gemetrie zijn beschreven. Welk coördinaatreferentiesysteem in een situatie van toepassing is, wordt bepaald door verschillende factoren, zoals: dimensionaliteit van de gebruikte primitieven, dimensionaliteit van de ruimte en het toepassingsgebied. De dimensionaliteit van primitieven en ruimte zijn in de vorige twee paragrafen toegelicht.
 
