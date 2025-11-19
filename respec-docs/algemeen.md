@@ -158,7 +158,7 @@ Voor het CRS van **3D-geometrieen** gelden de volgende EPSG-codes:
 
 #### Uitlevering
 
-Bij uitlevering in RD zijn dezelfde realisaties beschikbaar als bij aanlevering. Bij uitlevering in ETRS89 kan de geometrie, naast als dezelfde realisaties als bij aanlevering, ook als de geografisch ensemble van CRS-en worden opgevraagd.
+Bij uitlevering in RD zijn dezelfde realisaties beschikbaar als bij aanlevering. Bij uitlevering in ETRS89 kan de geometrie, naast als dezelfde realisaties als bij aanlevering, ook als de geografisch ensemble van CRS-en worden opgevraagd. Aanbovolen wordt om dan in de metadata te vermelden dat het de de realisatie ETRF2000 betreft.
 
 | CRS-Naam      | Code  | URI                                             |
 |--------------|-------|-------------------------------------------------|
@@ -174,7 +174,7 @@ Uitlevering via de WGS 84 CRSen is ook mogelijk via nultransformatie [zoals besc
 | WGS 84       | CRS84  | http://www.opengis.net/def/crs/OGC/1.3/CRS84    |
 | WGS 84h      | CRS84h | http://www.opengis.net/def/crs/OGC/0/CRS84h     |
 
-Hierbij zijn de OGC-codes CRS84 en CRS84h respectievelijk de long-lat-varianten van de 2D en 3D WGS84-realisaties met de EPSG-codes 4326 en 4979.
+Hierbij zijn de OGC-codes CRS84 en CRS84h respectievelijk de long-lat-varianten van de 2D en 3D WGS84-realisaties met de EPSG-codes 4326 en 4979. Aanbevolen wordt om in de metadata dan te vermelden dat een nultransformatie vanaf ETRF2000 gebruikt is. 
 
 #### Bestuurlijk gebied
 
