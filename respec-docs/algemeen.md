@@ -147,14 +147,14 @@ Voor het CRS van **2D-geometrieen** gelden de volgende EPSG-codes:
 | CRS-Naam | Code  | URI                                             |
 |----------|-------|-------------------------------------------------|
 | RD       | 28992 | http://www.opengis.net/def/crs/EPSG/9.9.1/28992 |
-| ETRF2000 | 7931  | http://www.opengis.net/def/crs/EPSG/9.9.1/7931  |
+| ETRF2000 | 9067  | http://www.opengis.net/def/crs/EPSG/9.9.1/7931  |
 
 Voor het CRS van **3D-geometrieen** gelden de volgende EPSG-codes:
 
 | CRS-Naam | Code  | URI                                             |
 |----------|-------|-------------------------------------------------|
 | RDNAP    | 7415  | http://www.opengis.net/def/crs/EPSG/9.9.1/7415  |
-| ETRF2000 | 9067  | http://www.opengis.net/def/crs/EPSG/9.9.1/9067  |
+| ETRF2000 | 7931  | http://www.opengis.net/def/crs/EPSG/9.9.1/9067  |
 
 #### Uitlevering
 
