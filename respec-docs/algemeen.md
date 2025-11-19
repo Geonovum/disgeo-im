@@ -160,21 +160,21 @@ Voor het CRS van **3D-geometrieen** gelden de volgende EPSG-codes:
 
 Bij uitlevering in RD zijn dezelfde realisaties beschikbaar als bij aanlevering. Bij uitlevering in ETRS89 kan de geometrie, naast als dezelfde realisaties als bij aanlevering, ook als de geografisch ensemble van CRS-en worden opgevraagd.
 
-| CRS-Naam | Code  | URI                                             |
-|----------|-------|-------------------------------------------------|
-| ETRS89   | 4258  | http://www.opengis.net/def/crs/EPSG/9.9.1/4258  |
-| ETRS89   | 4937  | http://www.opengis.net/def/crs/EPSG/9.9.1/4937  |
+| CRS-Naam      | Code  | URI                                             |
+|--------------|-------|-------------------------------------------------|
+| ETRS89 (2D)  | 4258  | http://www.opengis.net/def/crs/EPSG/9.9.1/4258  |
+| ETRS89 (3D)  | 4937  | http://www.opengis.net/def/crs/EPSG/9.9.1/4937  |
 
 Uitlevering via de WGS 84 CRSen is ook mogelijk via nultransformatie [zoals beschreven](https://docs.geostandaarden.nl/crs/crs/#wgs-84-gelijkstellen-aan-etrs89-nultransformatie) in [[gebruik-crs]]. Het gaat specifiek om:
 
-| CRS-Naam | Code   | URI                                             |
-|----------|--------|-------------------------------------------------|
-| WGS 84   | 4326   | http://www.opengis.net/def/crs/EPSG/9.9.1/4326  |
-| WGS 84   | 4979   | http://www.opengis.net/def/crs/EPSG/9.9.1/4979  |
-| WGS 84   | CRS84  | http://www.opengis.net/def/crs/OGC/1.3/CRS84    |
-| WGS 84h  | CRS84h | http://www.opengis.net/def/crs/OGC/0/CRS84h     |
+| CRS-Naam     | Code   | URI                                             |
+|--------------|--------|-------------------------------------------------|
+| WGS 84 (2D)  | 4326   | http://www.opengis.net/def/crs/EPSG/9.9.1/4326  |
+| WGS 84 (3D)  | 4979   | http://www.opengis.net/def/crs/EPSG/9.9.1/4979  |
+| WGS 84       | CRS84  | http://www.opengis.net/def/crs/OGC/1.3/CRS84    |
+| WGS 84h      | CRS84h | http://www.opengis.net/def/crs/OGC/0/CRS84h     |
 
-Hierbij zijn CRS84 en CRS84h respectievelijk de long-lat-varianten van de WGS84-realisaties met de EPSG-codes 4326 en 4979.
+Hierbij zijn de OGC-codes CRS84 en CRS84h respectievelijk de long-lat-varianten van de 2D en 3D WGS84-realisaties met de EPSG-codes 4326 en 4979.
 
 #### Bestuurlijk gebied
 
