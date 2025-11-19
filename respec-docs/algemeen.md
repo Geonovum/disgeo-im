@@ -117,10 +117,10 @@ Hoofdstuk 5 tot en met 8 in het [[EMSO]] geven per geo-informatieobject aan welk
 
 Het Basismodel Geo-informatie [[NEN3610-2022]] stelt iedere geometrische dataset/geometrie moet zijn voorzien van een verwijzing naar het coördinaatreferentiesysteem waarin de coördinaten van de gemetrie zijn beschreven. Welk coördinaatreferentiesysteem in een situatie van toepassing is, wordt bepaald door verschillende factoren, zoals: dimensionaliteit van de gebruikte primitieven, dimensionaliteit van de ruimte en het toepassingsgebied. De dimensionaliteit van primitieven en ruimte zijn in de vorige twee paragrafen toegelicht.
 
-Het toepassingsgebied beschrijft het deel van het van het aardoppervlak waarop het [[EMSO]] van toepassing is. Dit betreft het Nederlands grondgebied. In het informatiemodel worden alleen objecten opgenomen die gelegen zijn binnen <q>het Europese grondgebied van het Koninkrijk der Nederlanden, inclusief de daarbij behorende <a href="#land-en-zee">territoriale wateren</a></q> en Baarle-Hertog [[EMSO]]. Op basis van deze criteria zijn de volgende vier typen [coördinaatsystemen](https://definities.geostandaarden.nl/nen3610-2022/nl/page/coordinaatsysteem) relevant:
+Het toepassingsgebied beschrijft het deel van het van het aardoppervlak waarop het [[EMSO]] van toepassing is. Dit betreft het Nederlands grondgebied. In het informatiemodel worden alleen objecten opgenomen die gelegen zijn binnen <q>het Europese grondgebied van het Koninkrijk der Nederlanden, inclusief de daarbij behorende <a href="#land-en-zee">territoriale wateren</a></q> en Baarle-Hertog [[EMSO]]. Op basis van deze criteria zijn de volgende vier [coördinaatsystemen](https://definities.geostandaarden.nl/nen3610-2022/nl/page/coordinaatsysteem) relevant:
 
-- World Geodetic System 1984 (**WGS 84**) gebaseerd op ITRS, gebruikt voor GPS
-- European Terrestrial Reference System 1989 (**ETRS89**)
+- World Geodetic System 1984 (**WGS 84**) onnauwkeurige realisatie van ITRS, gebruikt voor het Amerikaanse GPS
+- European Terrestrial Reference System 1989 (**ETRS89**) nauwkeurige realisatie van ITRS op epoche 1989.00, gebruikt in Europa
 - Nederlandse Stelsel van de Rijksdriehoeksmeting (**RD**)
 - Linear Reference Systems (**LRS**), zie: [[ISO-19148]], [INSPIRE](https://inspire.ec.europa.eu/id/document/tg/tn), [Richtlijn BPS](https://wetten.overheid.nl/BWBR0015962/2003-12-05)
 - Gebruikersinformatie Wegkenmerkendatabase WKD (niet meer online beschikbaar)
