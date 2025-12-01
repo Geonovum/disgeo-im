@@ -77,7 +77,7 @@ Het [[EMSO]] legt geometrie vast als eigenschap van een object. De geometrie rep
 Het volstaat om een ISO 19107-geometrietype toe te passen in het informatiemodel. Raadpleeg voor een uitgebreidere toelichting op dit onderwerp hoofdstuk 2 van de handreiking _Geometrie in model en GML_ [[GIMEG]]. Dit legt inhoudelijk uit hoe het geometriemodel uit ISO 19107 [[ISO-19107-2019]] kan worden toegepast en wat het geldende Nederlands profiel is. De toepassing van de ISO 19107-geometrietypen, zorgt ervoor dat het geometrietype helder is en dat zowel de coördinaten als het coördinatenstelsel kunnen worden opgenomen. In het bijzonder eist het [[EMSO]] [aansluiting op ISO 19125](https://docs.geostandaarden.nl/disgeo/emso/#:~:text=Hierbij%20is%20voor%20geometrie%20aansluiting%20op%20Simple%20Features%20(ISO19125)%20voorgeschreven) Simple Features. Deze standaard maakt een selectie uit het ISO 19107 geometriemodel. Het neemt daaruit alleen de meest gebruikelijke geometrietypen over. 
 
 Het [[EMSO]] schrijft expliciet aansluiting op de ISO-standaard _Simple Features_ voor ([[ISO-19125]])._Simple Features_ gebruikt geometrietypen uit de veel uitgebreidere standaard ISO 19107. De typen uit dit model hanteren we doorgaans als `«Primitief datatype»`. Het Geometrie-object, waarvan alle specifieke geometrietypen zoals _punt_, _lijn_, _vlak_ en _volume_ afgeleid zijn, heeft veel kenmerken en operaties. Belangrijk hier zijn: 
-- `SRID`: dit modelleert de verwijzing naar het _Spatial Reference System_, in ons geval het _coördinaatreferentiesysteem_ (CRS, zie: [Coordinaatreferentiesystemen](#coordinaatreferentiesystemen). 
+- `SRID`: dit modelleert de verwijzing naar het _Spatial Reference System_, in ons geval het _coördinaatreferentiesysteem_ (CRS, zie: [Coördinaatreferentiesystemen](#coördinaatreferentiesystemen). 
 - `metadata`: optioneel attribuut voor het opnemen van verwijzingen naar documentatie die informatie geeft over de implementatie van het geometrie-object. Dit kunnen we wellicht gebruiken voor bijvoorbeeld de gerealiseerde nauwkeurigheid van de geometrie.
 
 <aside class="note" title="Spatial Reference System vs. Coördinaatreferentiesysteem">
@@ -113,14 +113,14 @@ Het [[EMSO]] hanteert ten aanzien van dimensies tegenstrijdige uitgangspunten. E
 
 Hoofdstuk 5 tot en met 8 in het [[EMSO]] geven per geo-informatieobject aan welk geometrietype van toepassing is. `RegistratieveRuimte` (waar `BestuurlijkGebied` onderdeel van is) wordt tweedimensionaal vastgelegd. Hiervoor zijn de geometrietypen `GM_Surface` (_vlak_) of `GM_MultiSurface` (_multi-vlak_) geschikt. Het hoofdstuk [[[#informatiemodel-informatiemodel-samenhangende-objecten-bestuurlijke-gebieden]]] van dit document beschrijft per geo-informatieobjecttype in detail hoe het [[EMSO]] dit vormgeeft.
 
-### Coordinaatreferentiesystemen
+### Coördinaatreferentiesystemen
 
 Het Basismodel Geo-informatie [[NEN3610-2022]] stelt iedere geometrische dataset/geometrie moet zijn voorzien van een verwijzing naar het coördinaatreferentiesysteem waarin de coördinaten van de gemetrie zijn beschreven. Welk coördinaatreferentiesysteem in een situatie van toepassing is, wordt bepaald door verschillende factoren, zoals: dimensionaliteit van de gebruikte primitieven, dimensionaliteit van de ruimte en het toepassingsgebied. De dimensionaliteit van primitieven en ruimte zijn in de vorige twee paragrafen toegelicht.
 
-Het toepassingsgebied beschrijft het deel van het van het aardoppervlak waarop het [[EMSO]] van toepassing is. Dit betreft het Nederlands grondgebied. In het informatiemodel worden alleen objecten opgenomen die gelegen zijn binnen <q>het Europese grondgebied van het Koninkrijk der Nederlanden, inclusief de daarbij behorende <a href="#land-en-zee">territoriale wateren</a></q> en Baarle-Hertog [[EMSO]]. Op basis van deze criteria zijn de volgende vier typen [coördinatiesystemen](https://definities.geostandaarden.nl/nen3610-2022/nl/page/coordinaatsysteem) zijn relevant:
+Het toepassingsgebied beschrijft het deel van het van het aardoppervlak waarop het [[EMSO]] van toepassing is. Dit betreft het Nederlands grondgebied. In het informatiemodel worden alleen objecten opgenomen die gelegen zijn binnen <q>het Europese grondgebied van het Koninkrijk der Nederlanden, inclusief de daarbij behorende <a href="#land-en-zee">territoriale wateren</a></q> en Baarle-Hertog [[EMSO]]. Op basis van deze criteria zijn de volgende vier [coördinaatsystemen](https://definities.geostandaarden.nl/nen3610-2022/nl/page/coordinaatsysteem) relevant:
 
-- World Geodetic System 1984 (**WGS 84**) gebaseerd op ITRS, gebruikt voor GPS
-- European Terrestrial Reference System 1989 (**ETRS89**)
+- World Geodetic System 1984 (**WGS 84**) onnauwkeurige realisatie van ITRS, gebruikt voor het Amerikaanse GPS
+- European Terrestrial Reference System 1989 (**ETRS89**) nauwkeurige realisatie van ITRS op epoche 1989.00, gebruikt in Europa
 - Nederlandse Stelsel van de Rijksdriehoeksmeting (**RD**)
 - Linear Reference Systems (**LRS**), zie: [[ISO-19148]], [INSPIRE](https://inspire.ec.europa.eu/id/document/tg/tn), [Richtlijn BPS](https://wetten.overheid.nl/BWBR0015962/2003-12-05)
 - Gebruikersinformatie Wegkenmerkendatabase WKD (niet meer online beschikbaar)
@@ -140,41 +140,41 @@ De onderstaande figuur is een schematische weergave van de ondersteunde CRS-en b
 
 Het _toepassingsgebied_ en de _dimensie_ bepalen welke CRS-en bij aanlevering van geometrieën geldig zijn. Wat betreft het _toepassingsgebied_ zijn er objecten die vallen binnen het Europese deel van Nederland en objecten die vallen binnen de Nederlandse Exclusieve Economische Zone (EEZ) van de Noordzee. Aan de andere kant bestaat er onderscheid in de _dimensie_ van geometrieën. Sommige geometrieën zijn 2-dimensionaal, anderen 3-dimensionaal. Voor objecten binnen het Europese deel van Nederland gelden de volgende CRS-en: _**RD**_ en _**ETRS89**_. Voor gebieden op zee is nog geen besluit genomen.
 
-Er zijn verschillende implementaties van ETRS89 in omloop. Het [[EMSO]] neemt het [advies](https://docs.geostandaarden.nl/crs/crs/#realisaties-van-etrs89-en-evrs) het _Regional Reference Frame Sub-Commission for Europe_ (EUREF), om de **ETRF2000-realisatie** te gebruiken. Verder wordt bij aanlevering rekening gehouden met een **lijnlengte van maximaal 200 meter**. Dit besluit volgt het langelijnenadvies van het NSGI, dat is [overgenomen](https://docs.geostandaarden.nl/crs/crs/#vormvastheid) in [[gebruik-crs]] in verband met compatibiliteit met **RDNAPTRANS™**.
+Er zijn verschillende realisaties van ETRS89 in omloop. Het [[EMSO]] neemt het [advies](https://docs.geostandaarden.nl/crs/crs/#realisaties-van-etrs89-en-evrs) het _Regional Reference Frame Sub-Commission for Europe_ (EUREF), om de **ETRF2000-realisatie** te gebruiken. Verder wordt bij aanlevering rekening gehouden met een **lijnlengte van maximaal 200 meter**. Dit besluit volgt het langelijnenadvies van de NSGI, dat is [overgenomen](https://docs.geostandaarden.nl/crs/crs/#vormvastheid) in [[gebruik-crs]] in verband met compatibiliteit met **RDNAPTRANS™**.
 
 Voor het CRS van **2D-geometrieen** gelden de volgende EPSG-codes:
 
 | CRS-Naam | Code  | URI                                             |
 |----------|-------|-------------------------------------------------|
 | RD       | 28992 | http://www.opengis.net/def/crs/EPSG/9.9.1/28992 |
-| ETRF2000 | 7931  | http://www.opengis.net/def/crs/EPSG/9.9.1/7931  |
+| ETRF2000 | 9067  | http://www.opengis.net/def/crs/EPSG/9.9.1/9067  |
 
 Voor het CRS van **3D-geometrieen** gelden de volgende EPSG-codes:
 
 | CRS-Naam | Code  | URI                                             |
 |----------|-------|-------------------------------------------------|
 | RDNAP    | 7415  | http://www.opengis.net/def/crs/EPSG/9.9.1/7415  |
-| ETRF2000 | 9067  | http://www.opengis.net/def/crs/EPSG/9.9.1/9067  |
+| ETRF2000 | 7931  | http://www.opengis.net/def/crs/EPSG/9.9.1/7931  |
 
 #### Uitlevering
 
-Bij uitlevering in RD zijn dezelfde realisaties beschikbaar als bij aanlevering. Bij uitlevering in ETRS89 kan de geometrie, naast als dezelfde realisaties als bij aanlevering, ook als de geografisch ensemble van CRS-en worden opgevraagd.
+Bij uitlevering in RD zijn dezelfde realisaties beschikbaar als bij aanlevering. Bij uitlevering in ETRS89 kan de geometrie, naast als dezelfde realisaties als bij aanlevering, ook als de geografisch ensemble van CRS-en worden opgevraagd. Aanbovolen wordt om dan in de metadata te vermelden dat het de de realisatie ETRF2000 betreft.
 
-| CRS-Naam | Code  | URI                                             |
-|----------|-------|-------------------------------------------------|
-| ETRS89   | 4258  | http://www.opengis.net/def/crs/EPSG/9.9.1/4258  |
-| ETRS89   | 4937  | http://www.opengis.net/def/crs/EPSG/9.9.1/4937  |
+| CRS-Naam      | Code  | URI                                             |
+|--------------|-------|-------------------------------------------------|
+| ETRS89 (2D)  | 4258  | http://www.opengis.net/def/crs/EPSG/9.9.1/4258  |
+| ETRS89 (3D)  | 4937  | http://www.opengis.net/def/crs/EPSG/9.9.1/4937  |
 
 Uitlevering via de WGS 84 CRSen is ook mogelijk via nultransformatie [zoals beschreven](https://docs.geostandaarden.nl/crs/crs/#wgs-84-gelijkstellen-aan-etrs89-nultransformatie) in [[gebruik-crs]]. Het gaat specifiek om:
 
-| CRS-Naam | Code   | URI                                             |
-|----------|--------|-------------------------------------------------|
-| WGS 84   | 4326   | http://www.opengis.net/def/crs/EPSG/9.9.1/4326  |
-| WGS 84   | 4979   | http://www.opengis.net/def/crs/EPSG/9.9.1/4979  |
-| WGS 84   | CRS84  | http://www.opengis.net/def/crs/OGC/1.3/CRS84    |
-| WGS 84h  | CRS84h | http://www.opengis.net/def/crs/OGC/0/CRS84h     |
+| CRS-Naam     | Code   | URI                                             |
+|--------------|--------|-------------------------------------------------|
+| WGS 84 (2D)  | 4326   | http://www.opengis.net/def/crs/EPSG/9.9.1/4326  |
+| WGS 84 (3D)  | 4979   | http://www.opengis.net/def/crs/EPSG/9.9.1/4979  |
+| WGS 84       | CRS84  | http://www.opengis.net/def/crs/OGC/1.3/CRS84    |
+| WGS 84h      | CRS84h | http://www.opengis.net/def/crs/OGC/0/CRS84h     |
 
-Hierbij zijn CRS84 en CRS84h respectievelijk de long-lat-varianten van de WGS84-realisaties met de EPSG-codes 4326 en 4979.
+Hierbij zijn de OGC-codes CRS84 en CRS84h respectievelijk de long-lat-varianten van de 2D en 3D WGS84-realisaties met de EPSG-codes 4326 en 4979. Aanbevolen wordt om in de metadata dan te vermelden dat een nultransformatie vanaf ETRF2000 gebruikt is. 
 
 #### Bestuurlijk gebied
 
