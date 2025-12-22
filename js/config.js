@@ -99,9 +99,15 @@ let respecConfig = {
       {
         title:      "Maritieme Zones en Zeegrenzen",
         href:       "https://www.defensie.nl/onderwerpen/hydrografie/maritieme-zones-en-zeegrenzen",
-        status:     "Versie ter vaststelling",
         date:       "2022-04-04",
         publisher:  "Ministerie van Defensie",
+      },
+    "UNCLOS":
+      {
+        title:      "United Nations Convention on the Law of the Sea",
+        href:       "https://www.un.org/depts/los/convention_agreements/texts/unclos/unclos_e.pdf",
+        date:       "1994-11-16",
+        publisher:  "United Nations",
       },
     "EMSO":
       {

@@ -133,12 +133,12 @@ De onderstaande figuur is een schematische weergave van de ondersteunde CRS-en b
 </figure>
 
 <aside class="ednote" title="snippets">
-  <p>Hieronder uitwerking in <code><a href="https://definities.geostandaarden.nl/nen3610-2022/nl/page/coordinaatreferentiesysteem">coördinaatreferentiesystemen</a></code> per zee, land, dimensionaltiet en aan- danwel uitlevering.</p>
+  <p>Hieronder uitwerking in <code><a href="https://definities.geostandaarden.nl/nen3610-2022/nl/page/coordinaatreferentiesysteem">coördinaatreferentiesystemen</a></code> per dimensionaliteit en aan- danwel uitlevering.</p>
 </aside>
 
 #### Aanlevering
 
-Het _toepassingsgebied_ en de _dimensie_ bepalen welke CRS-en bij aanlevering van geometrieën geldig zijn. Wat betreft het _toepassingsgebied_ zijn er objecten die vallen binnen het Europese deel van Nederland en objecten die vallen binnen de Nederlandse Exclusieve Economische Zone (EEZ) van de Noordzee. Aan de andere kant bestaat er onderscheid in de _dimensie_ van geometrieën. Sommige geometrieën zijn 2-dimensionaal, anderen 3-dimensionaal. Voor objecten binnen het Europese deel van Nederland gelden de volgende CRS-en: _**RD**_ en _**ETRS89**_. Voor gebieden op zee is nog geen besluit genomen.
+Het _toepassingsgebied_ en de _dimensie_ bepalen welke CRS-en bij aanlevering van geometrieën geldig zijn. Aan de ene kant bestaat er onderscheid in de _dimensie_ van geometrieën: sommige geometrieën zijn 2-dimensionaal, anderen 3-dimensionaal. Voor objecten gelden de volgende CRS-en: _**RD**_ en _**ETRS89**_.
 
 Er zijn verschillende realisaties van ETRS89 in omloop. Het [[EMSO]] neemt het [advies](https://docs.geostandaarden.nl/crs/crs/#realisaties-van-etrs89-en-evrs) het _Regional Reference Frame Sub-Commission for Europe_ (EUREF), om de **ETRF2000-realisatie** te gebruiken. Verder wordt bij aanlevering rekening gehouden met een **lijnlengte van maximaal 200 meter**. Dit besluit volgt het langelijnenadvies van de NSGI, dat is [overgenomen](https://docs.geostandaarden.nl/crs/crs/#vormvastheid) in [[gebruik-crs]] in verband met compatibiliteit met **RDNAPTRANS™**.
 
@@ -178,16 +178,13 @@ Hierbij zijn de OGC-codes CRS84 en CRS84h respectievelijk de long-lat-varianten 
 
 #### Bestuurlijk gebied
 
-Binnen het thema bestuurlijk gebied bevatten een aantal objecten een geometrie die binnen het Europese deel van Nederland valt. In het informatiemodel zijn deze gebieden geclassificeerd als 'bestuurlijk gebied op land': 
+Het thema bestuurlijk gebied bevat de volgende objecttypen:
 
  - Rijksgebied
  - Gemeentegebied
  - Provinciegebied
  - Waterschapsgebied
  - Veiligheidsregiogebied
-
-Het openbaar lichaam Rijk bestuurt ook een aantal gebieden op zee. Deze objecten zijn reeds onderdeel van het informatiemodel, maar het is nog niet duidelijk welke CRS-en daarvoor gelden. De gebieden worden op deze plek genoemd, maar niet verder uitgewerkt in de rest van de paragraaf. De volgende objecten zijn geclassificeerd als 'bestuurlijk gebied op zee':
-
  - Territoriale Zee
  - Aansluitende Zone
  - Exclusieve Economische Zone

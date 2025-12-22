@@ -42,27 +42,26 @@ Een *bestuurlijk gebied*, ook wel bestuursgebied genoemd, is het grondgebied waa
 #### Geometrie
 Dit model legt de geometrie vast van een bestuurlijk gebied. Die geometrie komt voort uit een grensbeschrijving, die zelf geen onderdeel van dit model is. Verder heeft een bestuurlijk gebied in dit model <i>altijd</i> een geometrie, terwijl in werkelijkheid de geometrie van een bestuurlijke gebied uiterlijk twee maanden na een wijzigingsvoorstel beschikbaar is. Daardoor komt het voor dat een (nieuw) openbaar lichaam tijdelijk geen (concept) geometrie heeft. Maar, vanuit het geo-domein lijkt het vooralsnog weinig waarde te hebben om deze tijdelijke situatie vast te leggen. Daarom stelt het model dat een openbaar lichaam altijd een geometrie heeft. Dit betekent dat een openbaar lichaam en het gerelateerde bestuurlijke gebied gelijktijdig worden opgenomen.
 
-#### Land en Zee
-Een regionaal openbaar lichaam heeft vaak maar één bestuurlijk gebied. Een uitzondering hierop is het openbaar lichaam _Rijk_. Naast een bestuurlijk gebied op land (in dit model het _Rijksgebied_), bestuurt het Rijk ook vier gebieden op zee; zogenaamde maritieme zones. In totaal onderscheid dit model vijf typen bestuurlijke gebieden die onder de bestuurlijke verantwoordelijkheid van het Rijk vallen.
+#### Maritieme zones
+Een regionaal openbaar lichaam heeft vaak maar één bestuurlijk gebied. Een uitzondering hierop is het openbaar lichaam _Rijk_. Naast het _Rijksgebied_ bestuurt het Rijk ook vier gebieden op zee; zogenaamde maritieme zones. In totaal onderscheidt dit model vijf typen bestuurlijke gebieden die onder de bestuurlijke verantwoordelijkheid van het Rijk vallen.
 
 <aside class="example" title="Maritieme Zones">
 
-   Maritieme Zones worden vastgesteld uitgaande van de laagwaterlijn (ook wel: normale basislijn). Deze lijn markeert waar de zee droogvalt als het eb is. De indeling van de maritieme zones die hieruit volgt, is gebaseerd op het Zeerechten verdrag van de Verenigde Naties. Op basis van afstand tot de normale basislijn worden de volgende vier zones onderscheden:
+   Maritieme zones worden vastgesteld uitgaande van de laagwaterlijn (ook wel: normale basislijn). Deze lijn markeert waar de zee droogvalt als het eb is. De indeling van de maritieme zones is gebaseerd op het Zeerechtverdrag van de Verenigde Naties ([[UNCLOS]]). Op basis van afstand tot de normale basislijn worden de volgende vier zones onderscheiden:
 
    <ul>
-      <li><i>Territoriale zee</i> (tot 12 mijl uit de kust)</li>
-      <li><i>Aansluitende zone</i> (van 12 tot 24 mijl uit de kust)</li>
-      <li><i>Exclusieve economische zone</i> (van 12 tot 200 mijl uit de kust)</li>
-      <li><i>Continentaal plat</i> (de zeebodem)</li>
+      <li><i>Territoriale zee</i> (0-12 zeemijl uit de kust): Hier oefent Nederland volledige soevereiniteit uit.</li>
+      <li><i>Aansluitende zone</i> (12-24 zeemijl uit de kust): Hier kan Nederland controle uitoefenen om overtredingen van douane-, fiscale-, immigratie- of gezondheidswetten te voorkomen.</li>
+      <li><i>Exclusieve economische zone</i> (12-200 zeemijl uit de kust): Hier heeft Nederland exclusieve rechten voor de exploitatie van natuurlijke rijkdommen.</li>
+      <li><i>Continentaal plat</i> (de zeebodem en ondergrond): Hier heeft Nederland soevereine rechten voor de exploratie en exploitatie van delfstoffen.</li>
    </ul>
 
    <figure>
       <a href="media/bestuurlijke_gebieden_maritieme_zones_nl.jpg" target="_blank">
-         <img src="media/bestuurlijke_gebieden_maritieme_zones_nl.jpg" alt="Infographic Stresstest">
+         <img src="media/bestuurlijke_gebieden_maritieme_zones_nl.jpg" alt="Maritieme zones van Nederland">
       </a>
-      <figcaption>Bestuurlijke gebieden op zee</a>
-      </figcaption>
+      <figcaption>Maritieme zones van Nederland</figcaption>
    </figure>
 
-   Daarnaast bestaan er nog de rechte basislijnen. Deze zijn door Nederland in 1985 vastgesteld in de Wet grenzen Nederlandse territoriale zee. Deze lijnen scheiden de territoriale zee van het land en de binnenwateren [<cite><a class="bibref" href="#bib-dienst-hydrografie">Dienst-Hydrografie</a></cite>].
+   De grenzen van deze zones zijn vastgesteld in verdragen met België, Duitsland en het Verenigd Koninkrijk. Daarnaast bestaan er nog de rechte basislijnen. Deze zijn door Nederland in 1985 vastgesteld in de Wet grenzen Nederlandse territoriale zee. Deze lijnen scheiden de territoriale zee van het land en de binnenwateren [<cite><a class="bibref" href="#bib-dienst-hydrografie">Dienst-Hydrografie</a></cite>].
 </aside>
