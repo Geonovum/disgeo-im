@@ -4,7 +4,7 @@ Nederland is opgedeeld in 25 veiligheidsregio's. Zij zorgen voor de veiligheid v
 
 Bij het modelleren zijn de volgende principes gehanteerd:
 
-1. Het openbare lichaam 'Veiligheidsregio' voert het bestuur over één 'Veiligheidsregiogebied'.
+1. Het openbaar lichaam 'Veiligheidsregio' voert het bestuur over één 'Veiligheidsregiogebied'.
 1. Een 'Veiligheidsregio' heeft een unieke 'veiligheidsregiocode'.
 1. Een 'Veiligheidsregiogebied' wordt aangeduid met een geometrie die bestaat uit één of meerdere vlakken.
 1. In een 'Veiligheidsregiogebied', liggen altijd één of meerdere gemeenten.

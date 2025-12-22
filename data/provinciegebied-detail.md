@@ -4,7 +4,7 @@ Het Europese deel van Nederland bestaat uit 12 provincies. Zij vormen de bestuur
 
 Bij het modelleren zijn de volgende principes gehanteerd.
 
-1. Het openbare lichaam 'provincie' voert het bestuur over één provinciegebied.
+1. Het openbaar lichaam 'provincie' voert het bestuur over één provinciegebied.
 1. Een provincie heeft een provinciecode.
 1. Het provinciegebied wordt aangeduid met een geometrie die bestaat uit één of meerdere vlakken.
 1. Een provinciegebied wordt samengesteld uit (één of) meerdere gemeentegebieden.
