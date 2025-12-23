@@ -4,10 +4,10 @@ Het Europese deel van Nederland is [opgedeeld in gemeenten](https://www.rijksove
 
 Bij het modelleren zijn de volgende principes gehanteerd.
 
-1. Het openbaar lichaam 'gemeente' voert het bestuur over één gemeentegebied.
-1. Een gemeente heeft een gemeentecode.
-1. Het gemeentegebied wordt aangeduid met een geometrie die bestaat uit één of meerdere vlakken.
-1. De geometrieën van alle gemeentegebieden sluiten naadloos op elkaar aan, zonder gaten en zonder overlap.
-1. Een gemeentegebied ligt altijd in één provinciegebied. De geometrie van een gemeentegebied valt dus volledig binnen een provinciegebied.
-1. De geometrieën van alle gemeentegebieden die liggen in het dezelfde provinciegebied, bedekken gezamenlijk het gehele oppervlak van dat provinciegebied.
+1. Een 'Gemeente' is een 'Regionaal openbaar lichaam'.
+1. Een 'Gemeente' heeft één 'Gemeentegebied'.
+1. Een 'Gemeentegebied' wordt aangeduid met een geometrie die bestaat uit één of meerdere vlakken.
+1. De geometrieën van alle 'Gemeentegebieden' sluiten naadloos op elkaar aan, zonder gaten en zonder overlap.
+1. Een 'Gemeentegebied' ligt altijd in één 'Provinciegebied'. De geometrie van een 'Gemeentegebied' valt dus volledig binnen een 'Provinciegebied'.
+1. De geometrieën van alle 'Gemeentegebieden' die liggen in hetzelfde 'Provinciegebied', bedekken gezamenlijk het gehele oppervlak van dat 'Provinciegebied'.
 1. Een 'Gemeentegebied' ligt altijd in één 'Veiligheidsregiogebied'.
