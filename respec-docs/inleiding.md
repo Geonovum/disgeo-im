@@ -1,16 +1,46 @@
 # Inleiding
 
-Het Informatiemodel Samenhangende Objecten (IMSO) beschrijft hoe objecten in de fysieke werkelijkheid, zoals vastgelegd in verschillende geo-basisregistraties, met elkaar samenhangen. Dit model maakt het mogelijk om gegevens uit onder andere de Basisregistratie Adressen en Gebouwen (BAG), de Basisregistratie Grootschalige Topografie (BGT), de Basisregistratie Topografie (BRT) en delen van de Waarde Onroerende Zaken (WOZ) in samenhang te bevragen en te gebruiken. 
-
-Een belangrijk onderdeel van het IMSO is het thema Bestuurlijke Gebieden. Dit thema beschrijft de afbakening en relaties van bestuurlijke gebieden, zoals gemeenten, provincies, waterschappen en maritieme zones, en hun relatie tot de verantwoordelijke overheidsorganisaties.
+Dit document beschrijft het Informatiemodel Samenhangende Objecten (IMSO) voor het thema *Bestuurlijke Gebieden*. Het model definieert bestuurlijke gebieden zoals gemeenten, provincies, waterschappen en maritieme zones, en hun relatie tot de verantwoordelijke overheidsorganisaties.
 
 ## Doel
 
-Het IMSO beoogt meer samenhang aan te brengen tussen verschillende objecttypen en hun eigenschappen binnen de geo-basisregistraties. Hierdoor kunnen bijhoudingsprocessen worden vereenvoudigd, de informatievoorziening flexibeler worden ingericht en wordt beter voldaan aan de behoefte aan samenhangende informatie.
+Het IMSO beoogt geo-informatie in samenhang beschikbaar te maken. Voor het thema Bestuurlijke Gebieden betekent dit:
+- Een eenduidige definitie van bestuurlijke gebieden en hun geometrie
+- Een heldere relatie tussen gebieden en de openbare lichamen die erover besturen
+- Een basis voor het beantwoorden van vragen als: "Waar ligt de grens?" en "Welk openbaar lichaam is verantwoordelijk voor dit gebied?"
 
 ## Achtergrond en scope
 
-De achtergrond, rationale en scope van dit informatiemodel worden beschreven in een serie scope documenten, één per thema, die in de loop der tijd beschikbaar komen. Een algemene schets van de gewenste inhoud staat in het document "DiSGeo : Eisen aan model samenhangende objectenregistratie" [[EMSO]]. Verder is beschikbaar het scopedocument [Bestuurlijke Gebieden](https://geonovum.github.io/disgeo-scope/bestuurlijkegebieden/). Overige scopedocumenten worden ontwikkeld in de [GitHub repository voor DiSGeo scopedocumenten](https://github.com/Geonovum/disgeo-scope/).
+### IMSO en Zicht op Nederland
+
+Het Informatiemodel Samenhangende Objecten (IMSO) wordt ontwikkeld vanuit de visie dat geo-informatie in samenhang beschikbaar moet zijn. Deze visie is onderdeel van het programma [Zicht op Nederland](https://zichtopnl.nl/) (ZON), waarin overheidspartijen in de GI-beraad samenwerken aan betrouwbare en breed beschikbare ruimtelijke informatie.
+
+Centraal in deze visie staat het gedachtegoed dat **data en datakoppelbaarheid** voorop staan, in plaats van de afzonderlijke registraties. Dit betekent:
+
+- **Meer afstemming bij gelijksoortige data**: harmonisatie in de manier waarop gelijksoortige objecten in verschillende geo-registraties worden vastgelegd
+- **Samenhang tussen data**: uniforme standaarden voor objectidentificatie en historiemodellen die het mogelijk maken om gegevens uit verschillende bronnen met elkaar te verbinden
+- **Flexibele uitbouw**: ontkoppeling van data-ontwikkeling en ICT-infrastructuur, zodat toekomstige behoeften kunnen worden geaccommodeerd
+
+Het document "Eisen aan model samenhangende objectenregistratie" ([[EMSO]]) beschrijft de uitgangspunten voor het modelleren van geo-objecten in samenhang. Het IMSO past deze uitgangspunten toe.
+
+### Bestuurlijke Gebieden als eerste thema
+
+Het IMSO wordt uitgewerkt per thema. Het eerste thema dat is uitgewerkt is *Bestuurlijke Gebieden*.
+
+De keuze voor dit thema komt voort uit:
+- De behoefte aan een samenhangende voorziening voor bestuurlijke gebieden
+- Het gebruik in verschillende registraties en informatieproducten, zoals bijvoorbeeld in het Digitaal Stelsel Omgevingswet (DSO), waar bestuurlijke grenzen bepalen wie het bevoegd gezag is
+- De wens om te kunnen beantwoorden: "Wie is het bevoegd gezag op deze locatie?" en "Waar ligt de grens tussen bestuurlijke gebieden?"
+
+<aside class="note" title="Scope van dit document">
+   Dit document beschrijft het onderdeel *Bestuurlijke Gebieden* van het IMSO. Het gaat om de gebieden zelf (met hun geometrie) en hun relaties met de overheidsorganisaties die over deze gebieden bestuur uitoefenen. Voor gedetailleerde informatie over overheidsorganisaties wordt verwezen naar het Register van Overheidsorganisaties (ROO) en TOOI.
+</aside>
+
+### Scopedocumenten
+
+De achtergrond, rationale en scope van elk thema worden beschreven in scopedocumenten:
+- [Bestuurlijke Gebieden](https://geonovum.github.io/disgeo-scope/bestuurlijkegebieden/) - het eerste uitgewerkte thema
+- Overige scopedocumenten worden ontwikkeld in de [GitHub repository voor DiSGeo scopedocumenten](https://github.com/Geonovum/disgeo-scope/)
 
 ## Leeswijzer
 

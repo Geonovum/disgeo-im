@@ -47,6 +47,8 @@ let respecConfig = {
   //-- Voor dit blok geldt: alleen als er eerdere versies zijn en altijd beiden aan/uit! 
   previousPublishDate: "2025-05-16",
   previousMaturity: "basis",
+
+  preProcess: [window.respecMermaid.createFigures],
   
   //-- de namen van de Editor(s) / Redacteur(en)---------------------------------------
   //-- vul in: per Editor: name:, company:, companyURL: -------------------------------
@@ -210,13 +212,29 @@ let respecConfig = {
         date:       "2022-06-13", 
         editors:    "Ronald Bokhove", 
       },
-    "TOOI-ONT-1.6.2": 
+    "TOOI-ONT-1.6.2":
       {
         title:      "TOOI - Ontologie 1.6.2",
         href:       "https://standaarden.overheid.nl/tooi/doc/tooi-ontologie-1.6.2/",
         status:     "Vastgestelde versie",
         publisher:  "Kennis- en Exploitatiecentrum voor Officiële Overheidspublicaties (KOOP)",
         date:       "04 juli 2025",
+      },
+    "DSO-CIM-OW":
+      {
+        title:      "Conceptueel Informatiemodel Omgevingswet (CIM-OW)",
+        href:       "https://geonovum.github.io/dso-cim-ow/",
+        status:     "Werkversie",
+        publisher:  "Geonovum",
+        date:       "29 oktober 2025",
+      },
+    "DSO-CIM-ORG":
+      {
+        title:      "Conceptueel Informatiemodel Organisaties (CIM-ORG)",
+        href:       "https://geonovum.github.io/dso-cim-org/",
+        status:     "Werkversie",
+        publisher:  "Geonovum",
+        date:       "27 november 2025",
       },
 
 // onderstaande lijst is een kopie van localBiblio document generieke onderwerpen
