@@ -32,15 +32,26 @@ De keuze voor dit thema komt voort uit:
 - Het gebruik in verschillende registraties en informatieproducten, zoals bijvoorbeeld in het Digitaal Stelsel Omgevingswet (DSO), waar bestuurlijke grenzen bepalen wie het bevoegd gezag is
 - De wens om te kunnen beantwoorden: "Wie is het bevoegd gezag op deze locatie?" en "Waar ligt de grens tussen bestuurlijke gebieden?"
 
-<aside class="note" title="Scope van dit document">
-   Dit document beschrijft het onderdeel *Bestuurlijke Gebieden* van het IMSO. Het gaat om de gebieden zelf (met hun geometrie) en hun relaties met de overheidsorganisaties die over deze gebieden bestuur uitoefenen. Voor gedetailleerde informatie over overheidsorganisaties wordt verwezen naar het Register van Overheidsorganisaties (ROO) en TOOI.
-</aside>
+### Scope informatiemodel
 
-### Scopedocumenten
+Dit informatiemodel beschrijft bestuurlijke gebieden (met hun geometrie) en hun relatie met de openbare lichamen die erover bestuur uitoefenen. Voor gedetailleerde informatie over overheidsorganisaties wordt verwezen naar het Register van Overheidsorganisaties (ROO) en TOOI.
 
-De achtergrond, rationale en scope van elk thema worden beschreven in scopedocumenten:
-- [Bestuurlijke Gebieden](https://geonovum.github.io/disgeo-scope/bestuurlijkegebieden/) - het eerste uitgewerkte thema
-- Overige scopedocumenten worden ontwikkeld in de [GitHub repository voor DiSGeo scopedocumenten](https://github.com/Geonovum/disgeo-scope/)
+De volgende typen bestuurlijke gebieden zijn in scope:
+
+- Rijksgebied
+- Provinciegebied
+- Gemeentegebied
+- Waterschapsgebied
+- Veiligheidsregiogebied
+- Maritieme zones: territoriale zee, aansluitende zone, exclusieve economische zone en het continentaal plat
+
+De achtergrond, rationale en volledige scope-afbakening worden beschreven in het [scopedocument Bestuurlijke Gebieden](https://geonovum.github.io/disgeo-scope/bestuurlijkegebieden/). Overige scopedocumenten worden ontwikkeld in de [GitHub repository voor DiSGeo scopedocumenten](https://github.com/Geonovum/disgeo-scope/).
+
+#### Samenwerkingsorganisaties in scope
+
+Naast veiligheidsregio's bestaan er diverse andere typen samenwerkingsorganisatie, zoals omgevingsdiensten, GGD's en recreatieschappen. In deze eerste versie van het informatiemodel zijn **veiligheidsregio's** het enige type samenwerkingsorganisatie in scope.
+
+In toekomstige versies kunnen andere typen samenwerkingsorganisatie worden toegevoegd, mits dit organisatietypen zijn die ook *regionaal openbaar lichaam* zijn met een eigen *bestuurlijk gebied*. 
 
 ## Leeswijzer
 
