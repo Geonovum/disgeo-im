@@ -2,8 +2,49 @@
 
 ## Levenscyclus
 
-Objecttypen kunnen, wanneer relevant, een levenscyclusstatus, ookwel levensfase, worden toebedeeld. Hiermee wordt het mogelijk om aan te geven in welke fase een object verkeert. Door de oogharen heen kijkend kun je stellen dat er sprake kan zijn van een planfase, een aanwezigheidsfase en een afwezigheidsfase. De concrete invulling van de levensfasen kan per objecttype worden ingevuld. 
+Objecttypen kunnen, wanneer relevant, een levenscyclusstatus, ookwel levensfase, worden toebedeeld. Hiermee wordt het mogelijk om aan te geven in welke fase een object verkeert. Door de oogharen heen kijkend kun je stellen dat er sprake kan zijn van een planfase, een aanwezigheidsfase en een afwezigheidsfase. De concrete invulling van de levensfasen kan per objecttype worden ingevuld.
 De levenscyclus begint op het gedefinieerde ontstaansmoment, dat per objecttype kan verschillen. Zo is voor bepaalde objecttypen een planstatus relevant, terwijl dit voor andere objecttypen minder relevant lijkt. Wanneer een object niet meer bestaat in die werkelijkheid, bereikt het een eindfase.
+
+<section class="informative">
+
+### Tijdlijnen en actualiteit
+
+Deze sectie beschrijft hoe het historiemodel van [[NEN3610-2022]] wordt toegepast op het logisch modelniveau. De tijdlijnen zijn geen onderdeel van dit conceptueel model, maar worden hier informatief beschreven omdat ze relevant zijn voor het begrijpen van actualiteit en historie van bestuurlijke gebieden.
+
+Voor het beheren en gebruiken van gegevens over bestuurlijke gebieden is het belangrijk om te kunnen bepalen welke gegevens op een bepaald moment geldig zijn. Op logisch modelniveau wordt daarvoor het historiemodel van [[NEN3610-2022]] toegepast.
+
+<section class="informative">
+
+#### Versies en tijdlijnen
+
+In de levenscyclus van objecten kunnen kenmerken veranderen. Om deze veranderingen te kunnen vastleggen en raadplegen, worden *versies* van objecten bijgehouden. Elke versie wordt beschreven door een *registratieobject* met twee tijdlijnen:
+
+- **Tijdlijn geldigheid**: beschrijft de periode waarin een object in de werkelijkheid bestaat of geldig is. Hiervoor worden de eigenschappen `beginGeldigheid` en `eindGeldigheid` gebruikt.
+- **Tijdlijn registratie**: beschrijft de periode waarin een versie van de gegevens in de registratie bestaat. Hiervoor worden de eigenschappen `tijdstipRegistratie` en `eindRegistratie` gebruikt.
+
+<figure>
+   <img src="media/nen3610-registratiegegevens.png" alt="NEN 3610 Registratiegegevens"/>
+   <figcaption>NEN 3610:2022 - Registratiegegevens</figcaption>
+</figure>
+
+</section>
+
+<section class="informative">
+
+#### Actuele gegevens en tijdreizen
+
+Met behulp van de tijdlijn geldigheid kan een afnemer bepalen welke gegevens *actueel* (nu geldig) zijn:
+
+- **Actueel**: gegevens waarvan de `beginGeldigheid` in het verleden ligt en `eindGeldigheid` leeg is of in de toekomst ligt.
+- **Tijdreizen**: door een specifieke datum op te geven kunnen gegevens worden opgevraagd die op dat moment geldig waren.
+
+<aside class="example" title="Gemeentelijke herindeling">
+   Bij een gemeentelijke herindeling wordt de nieuwe gemeentegrens vastgesteld door de provincie. De `beginGeldigheid` van het nieuwe gemeentegebied is de datum waarop de herindeling ingaat (vaak 1 januari). Tot die datum blijft het oude gemeentegebied actueel. Afnemers kunnen zo zowel de huidige als toekomstige situatie raadplegen.
+</aside>
+
+</section>
+
+</section>
 
 <!-- ## Identificatie
 
