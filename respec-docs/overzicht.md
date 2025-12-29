@@ -63,6 +63,12 @@ Een regionaal openbaar lichaam heeft vaak maar één bestuurlijk gebied. Een uit
    De grenzen van deze zones zijn vastgesteld in verdragen met België, Duitsland en het Verenigd Koninkrijk. Daarnaast bestaan er nog de rechte basislijnen. Deze zijn door Nederland in 1985 vastgesteld in de Wet grenzen Nederlandse territoriale zee. Deze lijnen scheiden de territoriale zee van het land en de binnenwateren [<cite><a class="bibref" href="#bib-dienst-hydrografie">Dienst-Hydrografie</a></cite>].
 </aside>
 
+#### Rijksgrens en Eems-Dollard
+
+De Rijksgrens in het Eems-Dollard gebied volgt de equidistantielijn volgens de Nederlandse rechtsopvatting. Deze grens is vastgesteld "sans préjudice" conform [artikel 4 van het Westereemsverdrag](https://wetten.overheid.nl/jci1.3:c:BWBV0006411&hoofdstuk=I&artikel=4&z=2018-07-01&g=2018-07-01), wat betekent dat de juridische standpunten van beide landen worden voorbehouden.
+
+Voor de weergave van de Rijksgrens op kaarten en in registraties wordt het gebied begrensd door de Westereemsverdragslijn en de equidistantielijn als Nederlands grondgebied weergegeven.
+
 ## IMSO in context
 
 De bestuurlijke gebieden in dit informatiemodel hebben relaties met objecten in andere standaarden en registraties. Deze sectie beschrijft de belangrijkste relaties en hoe de gegevens uit verschillende bronnen samenhangen.
