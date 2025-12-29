@@ -72,8 +72,8 @@ let respecConfig = {
     }, 
     {
       name:       "Pano Maria",
-      company:    "Skemu",
-      companyURL: "https://skemu.com/"
+      company:    "ModelDesk",
+      companyURL: "https://modeldesk.io/"
     },    
   ],
 
