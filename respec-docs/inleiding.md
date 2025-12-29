@@ -23,9 +23,9 @@ Centraal in deze visie staat het gedachtegoed dat **data en datakoppelbaarheid**
 
 Het document "Eisen aan model samenhangende objectenregistratie" ([[EMSO]]) beschrijft de uitgangspunten voor het modelleren van geo-objecten in samenhang. Het IMSO past deze uitgangspunten toe.
 
-### Bestuurlijke Gebieden als eerste thema
+### Bestuurlijke Gebieden
 
-Het IMSO wordt uitgewerkt per thema. Het eerste thema dat is uitgewerkt is *Bestuurlijke Gebieden*.
+Het IMSO wordt uitgewerkt per thema. Dit document beschrijft het thema *Bestuurlijke Gebieden*.
 
 De keuze voor dit thema komt voort uit:
 - De behoefte aan een samenhangende voorziening voor bestuurlijke gebieden

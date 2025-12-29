@@ -5,7 +5,7 @@
 IMSO - Informatiemodel Samenhangende Objecten
 
 ## Algemene beschrijving
-Het Informatiemodel Samenhangende Objecten (IMSO) wordt per thema uitgewerkt. Dit document beschrijft het thema *Bestuurlijke Gebieden*: de ruimtelijke gebieden waarover regionale openbare lichamen bestuur uitoefenen, en hun geometrie. 
+Het Informatiemodel Samenhangende Objecten (IMSO) wordt per thema uitgewerkt. Dit document beschrijft het thema *Bestuurlijke Gebieden*: de ruimtelijke gebieden waarover regionale openbare lichamen bestuur uitoefenen, en hun geometrie.
 
 ## Beschrijving inhoud
 
@@ -16,13 +16,7 @@ Er is een belangrijke relatie tussen een [regionaal openbaar lichaam](#informati
 
 #### Levenscyclus en tijdlijnen Bestuurlijk gebied
 
-Bestuurlijk gebied is een van de specifiekere vormen van Registratieve ruimte. De levenscyclusstatussen van een Registratieve Ruimte bestaan uit:
-* `Ontwerp` - Object waarvan de vaststelling wordt voorbereid
-* `Niet gerealiseerd` - Object waarvan de voorbereiding niet heeft geleid tot vaststelling
-* `Vastgesteld` - Object dat door het bevoegd gezag is benoemd of afgebakend op grond van wet- of regelgeving
-* `Ingetrokken` - Object dat door het bevoegd gezag is ingetrokken op grond van wet- of regelgeving
-
-In het algemeen kun je stellen dat objectlevenscycli in het [[EMSO]] op hoofdlijnen een levenscyclus kent van planfase naar aanwezigheidsfase, naar afwezigheidsfase.
+Bestuurlijk gebied is een van de specifiekere vormen van Registratieve ruimte. Zie [Levenscyclusstatussen Registratieve Ruimte](#levenscyclusstatussen-registratieve-ruimte) voor de algemene levenscyclusstatussen.
 
 Ook voor bestuurlijke gebieden worden deze 4 levenscyclusstatussen ondersteund. Het moet echter nog blijken of er behoefte is aan een planfase voor bestuurlijke gebieden. Een mogelijke toepassing zou kunnen zijn dat een herindelingsplan nog voor vaststelling zijn weerslag krijgt in de registratie, in de vorm van bestuurlijke gebieden met de status `Ontwerp`.
 
@@ -30,7 +24,34 @@ De status `Vastgesteld` is de status die aangeeft dat een bestuurlijk gebied bes
 
 De status `Ingetrokken` is de eindstatus van een bestuurlijk gebied. Dit komt overeen met de afwezigheidsfase.
 
-De levenscyclus van een bestuurlijk gebied volgt de levencyclus is afhankelijk van het bestaan van het besturende regionaal openbaar lichaam.
+De levenscyclus van een bestuurlijk gebied is afhankelijk van het bestaan van het besturende regionaal openbaar lichaam.
+
+<section class="informative">
+
+##### Tijdlijnen en actualiteit
+
+Voor het beheren en gebruiken van gegevens over bestuurlijke gebieden is het belangrijk om te kunnen bepalen welke gegevens op een bepaald moment geldig zijn. Op logisch modelniveau wordt daarvoor het historiemodel van [[NEN3610-2022]] toegepast.
+
+In de levenscyclus van objecten kunnen kenmerken veranderen. Om deze veranderingen te kunnen vastleggen en raadplegen, worden *versies* van objecten bijgehouden. Elke versie wordt beschreven door een *registratieobject* met twee tijdlijnen:
+
+- **Tijdlijn geldigheid**: beschrijft de periode waarin een object in de werkelijkheid bestaat of geldig is. Hiervoor worden de eigenschappen `beginGeldigheid` en `eindGeldigheid` gebruikt.
+- **Tijdlijn registratie**: beschrijft de periode waarin een versie van de gegevens in de registratie bestaat. Hiervoor worden de eigenschappen `tijdstipRegistratie` en `eindRegistratie` gebruikt.
+
+<figure>
+   <img src="media/nen3610-registratiegegevens.png" alt="NEN 3610 Registratiegegevens"/>
+   <figcaption>NEN 3610:2022 - Registratiegegevens</figcaption>
+</figure>
+
+Met behulp van de tijdlijn geldigheid kan een afnemer bepalen welke gegevens *actueel* (nu geldig) zijn:
+
+- **Actueel**: gegevens waarvan de `beginGeldigheid` in het verleden ligt en `eindGeldigheid` leeg is of in de toekomst ligt.
+- **Tijdreizen**: door een specifieke datum op te geven kunnen gegevens worden opgevraagd die op dat moment geldig waren.
+
+<aside class="example" title="Gemeentelijke herindeling">
+   Bij een gemeentelijke herindeling wordt de nieuwe gemeentegrens vastgesteld door de provincie. De `beginGeldigheid` van het nieuwe gemeentegebied is de datum waarop de herindeling ingaat (vaak 1 januari). Tot die datum blijft het oude gemeentegebied actueel. Afnemers kunnen zo zowel de huidige als toekomstige situatie raadplegen.
+</aside>
+
+</section>
 
 #### Regionaal Openbaar Lichaam
 Een regionaal openbaar lichaam is een overheidsorganisatie die bepaalde taken uitvoert binnen een bepaald _ruimtelijk_ gebied. De belangrijkste regionale openbaar lichamen zijn het Rijk, de provincies, de gemeenten en de waterschappen, maar ook veiligheidsregio's behoren hiertoe.
@@ -69,7 +90,7 @@ De Rijksgrens in het Eems-Dollard gebied volgt de equidistantielijn volgens de N
 
 Voor de weergave van de Rijksgrens op kaarten en in registraties wordt het gebied begrensd door de Westereemsverdragslijn en de equidistantielijn als Nederlands grondgebied weergegeven.
 
-## IMSO in context
+## IMSO Bestuurlijke gebieden in context
 
 De bestuurlijke gebieden in dit informatiemodel hebben relaties met objecten in andere standaarden en registraties. Deze sectie beschrijft de belangrijkste relaties en hoe de gegevens uit verschillende bronnen samenhangen.
 

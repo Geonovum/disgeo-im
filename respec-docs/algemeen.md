@@ -5,52 +5,21 @@
 Objecttypen kunnen, wanneer relevant, een levenscyclusstatus, ookwel levensfase, worden toebedeeld. Hiermee wordt het mogelijk om aan te geven in welke fase een object verkeert. Door de oogharen heen kijkend kun je stellen dat er sprake kan zijn van een planfase, een aanwezigheidsfase en een afwezigheidsfase. De concrete invulling van de levensfasen kan per objecttype worden ingevuld.
 De levenscyclus begint op het gedefinieerde ontstaansmoment, dat per objecttype kan verschillen. Zo is voor bepaalde objecttypen een planstatus relevant, terwijl dit voor andere objecttypen minder relevant lijkt. Wanneer een object niet meer bestaat in die werkelijkheid, bereikt het een eindfase.
 
-<section class="informative">
+### Levenscyclusstatussen Registratieve Ruimte
 
-### Tijdlijnen en actualiteit
+De levenscyclusstatussen van een Registratieve Ruimte bestaan uit:
+* `Ontwerp` - Object waarvan de vaststelling wordt voorbereid
+* `Niet gerealiseerd` - Object waarvan de voorbereiding niet heeft geleid tot vaststelling
+* `Vastgesteld` - Object dat door het bevoegd gezag is benoemd of afgebakend op grond van wet- of regelgeving
+* `Ingetrokken` - Object dat door het bevoegd gezag is ingetrokken op grond van wet- of regelgeving
 
-Deze sectie beschrijft hoe het historiemodel van [[NEN3610-2022]] wordt toegepast op het logisch modelniveau. De tijdlijnen zijn geen onderdeel van dit conceptueel model, maar worden hier informatief beschreven omdat ze relevant zijn voor het begrijpen van actualiteit en historie van bestuurlijke gebieden.
-
-Voor het beheren en gebruiken van gegevens over bestuurlijke gebieden is het belangrijk om te kunnen bepalen welke gegevens op een bepaald moment geldig zijn. Op logisch modelniveau wordt daarvoor het historiemodel van [[NEN3610-2022]] toegepast.
-
-<section class="informative">
-
-#### Versies en tijdlijnen
-
-In de levenscyclus van objecten kunnen kenmerken veranderen. Om deze veranderingen te kunnen vastleggen en raadplegen, worden *versies* van objecten bijgehouden. Elke versie wordt beschreven door een *registratieobject* met twee tijdlijnen:
-
-- **Tijdlijn geldigheid**: beschrijft de periode waarin een object in de werkelijkheid bestaat of geldig is. Hiervoor worden de eigenschappen `beginGeldigheid` en `eindGeldigheid` gebruikt.
-- **Tijdlijn registratie**: beschrijft de periode waarin een versie van de gegevens in de registratie bestaat. Hiervoor worden de eigenschappen `tijdstipRegistratie` en `eindRegistratie` gebruikt.
-
-<figure>
-   <img src="media/nen3610-registratiegegevens.png" alt="NEN 3610 Registratiegegevens"/>
-   <figcaption>NEN 3610:2022 - Registratiegegevens</figcaption>
-</figure>
-
-</section>
-
-<section class="informative">
-
-#### Actuele gegevens en tijdreizen
-
-Met behulp van de tijdlijn geldigheid kan een afnemer bepalen welke gegevens *actueel* (nu geldig) zijn:
-
-- **Actueel**: gegevens waarvan de `beginGeldigheid` in het verleden ligt en `eindGeldigheid` leeg is of in de toekomst ligt.
-- **Tijdreizen**: door een specifieke datum op te geven kunnen gegevens worden opgevraagd die op dat moment geldig waren.
-
-<aside class="example" title="Gemeentelijke herindeling">
-   Bij een gemeentelijke herindeling wordt de nieuwe gemeentegrens vastgesteld door de provincie. De `beginGeldigheid` van het nieuwe gemeentegebied is de datum waarop de herindeling ingaat (vaak 1 januari). Tot die datum blijft het oude gemeentegebied actueel. Afnemers kunnen zo zowel de huidige als toekomstige situatie raadplegen.
-</aside>
-
-</section>
-
-</section>
+In het algemeen kun je stellen dat objectlevenscycli in het [[EMSO]] op hoofdlijnen een levenscyclus kent van planfase naar aanwezigheidsfase, naar afwezigheidsfase.
 
 <!-- ## Identificatie
 
 <aside class="issue">Deze paragraaf wordt verplaatst naar de documentatie van het logisch model.</aside>
 
-Voor de identificatie van objecten maken we gebruik van het identificatiepatroon van de [[NEN3610-2022]]. (<a href="#nen3610-identificatie"></a>) 
+Voor de identificatie van objecten maken we gebruik van het identificatiepatroon van de [[NEN3610-2022]]. (<a href="#nen3610-identificatie"></a>)
 
 <figure id="nen3610-identificatie">
   <img src="media/nen3610-identificatie.png" alt="nen3610-identificatie">
@@ -78,7 +47,7 @@ Voor de representatie van de _locatie_, _oriëntatie_ en _vorm_ van een object u
 
 Het [[EMSO]] gebruikt gestandaardiseerde geometrietypen uit [[ISO-19107-2003]]. Dit voorziet zowel in de opname van de coördinaten van de geometrie, als van het coördinaten<i>stelsel</i>. Van sommige objecten is de onderlinge relatie van belang; ook wel ruimtelijke relaties genoemd. De BGT-gegevenscatalogus beschrijft bijvoorbeeld welke objecten samen een [landsdekkend geheel](https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#meetgegevens) vormen.
 
-Bovendien heeft een geometrische representatie vaak ook kwaliteitskenmerken, bijvoorbeeld ten aanzien van _nauwkeurigheid_ en _inwinregels_. Dit document formuleert geen kwaliteitseisen. Het uitgangspunt is dat deze in de bronregistraties zelf gehanteerd worden. Van de gegevens die via het informatiemodel, óf daarop gebaseerde productmodellen, worden uitgewisseld, kan daarom een bepaalde kwaliteit verwacht worden. Deze gegevenskwaliteit is een uitgangspunt voor de uiteindelijk uitgewisselde gegevens. 
+Bovendien heeft een geometrische representatie vaak ook kwaliteitskenmerken, bijvoorbeeld ten aanzien van _nauwkeurigheid_ en _inwinregels_. Dit document formuleert geen kwaliteitseisen. Het uitgangspunt is dat deze in de bronregistraties zelf gehanteerd worden. Van de gegevens die via het informatiemodel, óf daarop gebaseerde productmodellen, worden uitgewisseld, kan daarom een bepaalde kwaliteit verwacht worden. Deze gegevenskwaliteit is een uitgangspunt voor de uiteindelijk uitgewisselde gegevens.
 
 Samengevat legt het informatiemodel de volgende informatie over een geometrie vast: [type](#geometrietypen), [dimensie](#dimensies), [coordinaatreferentiesysteem (CRS)](#coordinaatreferentiesystemen), [ruimtelijke relaties](#ruimtelijke-relaties) en [Kwaliteitskenmerken](#kwaliteit) (o.a. nauwkeurigheid, inwinregels en topologische regels).
 De volgende paragrafen beschrijven welke eisen op het [[EMSO]] van toepassing zijn én hoe die concreet worden vastgelegd. De eisen en uitgangspunten zijn op zichzelf geen onderdeel van dit document. We verwijzen hiervoor vanuit de tekst naar de betreffende documentatie. Indien niet aanwezig en de eis op zichzelf mogelijk onvoldoende helder is, bevat dit hoofdstuk een korte uitleg over de totstandkomming, of interpretatie van een eis.
@@ -90,7 +59,7 @@ Het [[EMSO]] valt binnen het toepassingsgebied van het Basismodel Geo-informatie
 Het semantische model van NEN3610 bestaat uit een aantal objecttypen die objecten uit de werkelijkheid op hoofdlijn classificeren. In het [[EMSO]] zijn de objecttypen, voor zover dit past, gemodelleerd als specialisatie van het NEN3610 objecttype Geo-Object of (bij voorkeur) een specialisatie van Geo-object. De verbinding met deze semantische klassen is opgenomen in het conceptueel model.
 
 <aside class="example" title="Koppeling IM DiSGeo aan semantische klassen NEN3610">
-   In het model voor Bestuurlijke gebieden is <code>BestuurlijkGebied</code> gemodelleerd als een specialisatie van het objecttype <code>RegistratieveRuimte</code>, die op haar beurt gemodellerd is als specialisatie van <code>NEN3610:RegistratieveRuimte</code>. Bestuurlijke gebieden zijn, volgens hun beschrijving in het [[EMSO]]: 
+   In het model voor Bestuurlijke gebieden is <code>BestuurlijkGebied</code> gemodelleerd als een specialisatie van het objecttype <code>RegistratieveRuimte</code>, die op haar beurt gemodellerd is als specialisatie van <code>NEN3610:RegistratieveRuimte</code>. Bestuurlijke gebieden zijn, volgens hun beschrijving in het [[EMSO]]:
 
    <p>[...] <q><i>registratieve ruimten die op basis van wet- of regelgeving als eenheid gelden van politiek/bestuurlijke verantwoordelijkheid. Dit betreft bijvoorbeeld de gebieden behorende bij de vier formele bestuurslagen uit de Grondwet (Rijk, provincie, waterschap, gemeente), maar kan ook gebieden van bestuurlijke samenwerkingsverbanden met eigen politiek/bestuurlijke verantwoordelijkheid omvatten. Een voorbeeld daarvan betreft de veiligheidsregio’s.</i></q></p>
 
@@ -115,14 +84,14 @@ Het [[EMSO]] legt geometrie vast als eigenschap van een object. De geometrie rep
 | Vlak         | `GM_Surface`                | `GM_MultiSurface`           |
 | Volume       | `GM_Solid`                  | `GM_MultiSolid`             |
 
-Het volstaat om een ISO 19107-geometrietype toe te passen in het informatiemodel. Raadpleeg voor een uitgebreidere toelichting op dit onderwerp hoofdstuk 2 van de handreiking _Geometrie in model en GML_ [[GIMEG]]. Dit legt inhoudelijk uit hoe het geometriemodel uit ISO 19107 [[ISO-19107-2019]] kan worden toegepast en wat het geldende Nederlands profiel is. De toepassing van de ISO 19107-geometrietypen, zorgt ervoor dat het geometrietype helder is en dat zowel de coördinaten als het coördinatenstelsel kunnen worden opgenomen. In het bijzonder eist het [[EMSO]] [aansluiting op ISO 19125](https://docs.geostandaarden.nl/disgeo/emso/#:~:text=Hierbij%20is%20voor%20geometrie%20aansluiting%20op%20Simple%20Features%20(ISO19125)%20voorgeschreven) Simple Features. Deze standaard maakt een selectie uit het ISO 19107 geometriemodel. Het neemt daaruit alleen de meest gebruikelijke geometrietypen over. 
+Het volstaat om een ISO 19107-geometrietype toe te passen in het informatiemodel. Raadpleeg voor een uitgebreidere toelichting op dit onderwerp hoofdstuk 2 van de handreiking _Geometrie in model en GML_ [[GIMEG]]. Dit legt inhoudelijk uit hoe het geometriemodel uit ISO 19107 [[ISO-19107-2019]] kan worden toegepast en wat het geldende Nederlands profiel is. De toepassing van de ISO 19107-geometrietypen, zorgt ervoor dat het geometrietype helder is en dat zowel de coördinaten als het coördinatenstelsel kunnen worden opgenomen. In het bijzonder eist het [[EMSO]] [aansluiting op ISO 19125](https://docs.geostandaarden.nl/disgeo/emso/#:~:text=Hierbij%20is%20voor%20geometrie%20aansluiting%20op%20Simple%20Features%20(ISO19125)%20voorgeschreven) Simple Features. Deze standaard maakt een selectie uit het ISO 19107 geometriemodel. Het neemt daaruit alleen de meest gebruikelijke geometrietypen over.
 
-Het [[EMSO]] schrijft expliciet aansluiting op de ISO-standaard _Simple Features_ voor ([[ISO-19125]])._Simple Features_ gebruikt geometrietypen uit de veel uitgebreidere standaard ISO 19107. De typen uit dit model hanteren we doorgaans als `«Primitief datatype»`. Het Geometrie-object, waarvan alle specifieke geometrietypen zoals _punt_, _lijn_, _vlak_ en _volume_ afgeleid zijn, heeft veel kenmerken en operaties. Belangrijk hier zijn: 
-- `SRID`: dit modelleert de verwijzing naar het _Spatial Reference System_, in ons geval het _coördinaatreferentiesysteem_ (CRS, zie: [Coördinaatreferentiesystemen](#coördinaatreferentiesystemen). 
+Het [[EMSO]] schrijft expliciet aansluiting op de ISO-standaard _Simple Features_ voor ([[ISO-19125]])._Simple Features_ gebruikt geometrietypen uit de veel uitgebreidere standaard ISO 19107. De typen uit dit model hanteren we doorgaans als `«Primitief datatype»`. Het Geometrie-object, waarvan alle specifieke geometrietypen zoals _punt_, _lijn_, _vlak_ en _volume_ afgeleid zijn, heeft veel kenmerken en operaties. Belangrijk hier zijn:
+- `SRID`: dit modelleert de verwijzing naar het _Spatial Reference System_, in ons geval het _coördinaatreferentiesysteem_ (CRS, zie: [Coördinaatreferentiesystemen](#coördinaatreferentiesystemen).
 - `metadata`: optioneel attribuut voor het opnemen van verwijzingen naar documentatie die informatie geeft over de implementatie van het geometrie-object. Dit kunnen we wellicht gebruiken voor bijvoorbeeld de gerealiseerde nauwkeurigheid van de geometrie.
 
 <aside class="note" title="Spatial Reference System vs. Coördinaatreferentiesysteem">
-   <i>Spatial reference system</i> is een breder begrip dan <i>coördinaatreferentiesysteem</i>. Het gaat om een algemene locatieaanduiding, een <i>ruimtelijk referentiesysteem</i> dat niet alleen op basis van coördinaten kan werken maar bijvoorbeeld ook op basis van geografische naam of adres. 
+   <i>Spatial reference system</i> is een breder begrip dan <i>coördinaatreferentiesysteem</i>. Het gaat om een algemene locatieaanduiding, een <i>ruimtelijk referentiesysteem</i> dat niet alleen op basis van coördinaten kan werken maar bijvoorbeeld ook op basis van geografische naam of adres.
 </aside>
 
 Het [[EMSO]] hanteert altijd [expliciete geometrie](https://docs.geostandaarden.nl/disgeo/emso/#:~:text=De%20SOR%20hanteert,naar%203D%20geometrie.). Hierdoor zijn betere analyses en kwaliteitscontroles mogelijk. Bovendien maakt dit het optrekken van 2D-geometrie naar 3D-geometrie mogelijk. Dit in tegenstelling tot modellen met geparametriseerde geometriebeschrijvingen in CAD- of BIM-modellen (impliciete geometrie).
@@ -150,7 +119,7 @@ Het EMSO schrijft voor dat moet worden voorgesorteerd op de mogelijkheid om de [
 
 Dit betekent dat het model ruimte moet bieden aan 3D-primitieven in een 3D-ruimte. Hieruit volgt dat het [[EMSO]] in zijn totaliteit beschouwd moet worden als een 3D-model. Het verschilt per onderwerp of een uitwerking in 2D (bijv. `BestuurlijkGebied`), 2.5D (bijv. `Verharding`), danwel 3D(bijv. `Gebouw`) nodig is.
 
-Het [[EMSO]] hanteert ten aanzien van dimensies tegenstrijdige uitgangspunten. Enerzijds eist het aansluiting op ISO 19125, dat het model beprekt tot 2D-primitieven. Anderzijds eist het EMSO dat het model voorsorteert op driedimensionale objectbeschrijving. Het [[EMSO]] interpreteert deze uitganspunten als volgt: _ISO 19125 is leidend voor 2D-objecten en ISO-19107 voor bogen en 3D-objecten_. 
+Het [[EMSO]] hanteert ten aanzien van dimensies tegenstrijdige uitgangspunten. Enerzijds eist het aansluiting op ISO 19125, dat het model beprekt tot 2D-primitieven. Anderzijds eist het EMSO dat het model voorsorteert op driedimensionale objectbeschrijving. Het [[EMSO]] interpreteert deze uitganspunten als volgt: _ISO 19125 is leidend voor 2D-objecten en ISO-19107 voor bogen en 3D-objecten_.
 
 Hoofdstuk 5 tot en met 8 in het [[EMSO]] geven per geo-informatieobject aan welk geometrietype van toepassing is. `RegistratieveRuimte` (waar `BestuurlijkGebied` onderdeel van is) wordt tweedimensionaal vastgelegd. Hiervoor zijn de geometrietypen `GM_Surface` (_vlak_) of `GM_MultiSurface` (_multi-vlak_) geschikt. Het hoofdstuk [[[#informatiemodel-informatiemodel-samenhangende-objecten-bestuurlijke-gebieden]]] van dit document beschrijft per geo-informatieobjecttype in detail hoe het [[EMSO]] dit vormgeeft.
 
@@ -215,21 +184,7 @@ Uitlevering via de WGS 84 CRSen is ook mogelijk via nultransformatie [zoals besc
 | WGS 84       | CRS84  | http://www.opengis.net/def/crs/OGC/1.3/CRS84    |
 | WGS 84h      | CRS84h | http://www.opengis.net/def/crs/OGC/0/CRS84h     |
 
-Hierbij zijn de OGC-codes CRS84 en CRS84h respectievelijk de long-lat-varianten van de 2D en 3D WGS84-realisaties met de EPSG-codes 4326 en 4979. Aanbevolen wordt om in de metadata dan te vermelden dat een nultransformatie vanaf ETRF2000 gebruikt is. 
-
-#### Bestuurlijk gebied
-
-Het thema bestuurlijk gebied bevat de volgende objecttypen:
-
- - Rijksgebied
- - Gemeentegebied
- - Provinciegebied
- - Waterschapsgebied
- - Veiligheidsregiogebied
- - Territoriale Zee
- - Aansluitende Zone
- - Exclusieve Economische Zone
- - Continentaal Plat
+Hierbij zijn de OGC-codes CRS84 en CRS84h respectievelijk de long-lat-varianten van de 2D en 3D WGS84-realisaties met de EPSG-codes 4326 en 4979. Aanbevolen wordt om in de metadata dan te vermelden dat een nultransformatie vanaf ETRF2000 gebruikt is.
 
 ### Ruimtelijke relaties
 
@@ -246,7 +201,7 @@ Voor ruimtelijke relaties tussen de objecten kunnen we gebruik maken van het _Di
 
 Deze relaties zijn beperkt tot een 2D-model en daarmee alleen van toepassing op geometrietypen `punt`, `lijn` of `vlak`.
 
-<!-- Omdat er in het [[EMSO]] meer met 3D wordt gewerkt, worden de topologische regels complexer. Ze worden echter ook secundair aan de representatie van de werkelijke verhouding tussen objecten. Uit EMSO: 
+<!-- Omdat er in het [[EMSO]] meer met 3D wordt gewerkt, worden de topologische regels complexer. Ze worden echter ook secundair aan de representatie van de werkelijke verhouding tussen objecten. Uit EMSO:
 Het EMSO stelt dat het <q><i>belangrijker</i> [is] <i>om ervoor te zorgen dat objecten die zich in de werkelijkheid op een bepaalde wijze tot elkaar verhouden (bijvoorbeeld een verharding ligt bovenop een overbrugging) ook in de registratie op deze wijze tot elkaar verhouden (bijvoorbeeld dat uit de z-coördinaten van de verharding en de overbrugging blijkt dat de verharding bovenop de overbrugging ligt). De exacte uitwerking van deze relaties in topologie-regels zal later in het traject verder worden opgepakt</i></q>.
 
 Het [[EMSO]] beschrijft de uitwisseling van gegevens uit verschillende geo-basisregistraties. Voor deze basisregistraties gelden reeds bestaande regels ten aanzien van de topologische kwaliteit. De kwaliteit van de gegevens van de bronregistraties werkt zodoende door in het informatiemodel en de productmodellen van DiSGeo. Het [[EMSO]] formuleert wel een aantal duidelijke regels. Destijds was namelijk de gedachte dat het [[EMSO]] zou resulteren in een Samenhangende Objectenregistratie (SOR). In de huidige situatie is dat niet het geval. DiSGeo stelt daarom geen (andere of aanvullende) eisen of regels aan de topologie.
@@ -292,7 +247,7 @@ Per `«attribuutsoort»` geven we de toegestane kwaliteit voor de positionele ju
 
 <!-- Daar staat het omschreven als: <q><i>de mate waarin de opgeslagen coördinaten overeenkomen met de waarden in de werkelijkheid, of de geaccepteerde afwijking</i></q> ([BGT](https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#:~:text=Onder%20positionele%20nauwkeurigheid%20verstaat%20men%20de%20mate%20waarin%20de%20opgeslagen%20co%C3%B6rdinaten%20overeenkomen%20met%20de%20waarden%20in%20de%20werkelijkheid%20of%20de%20geaccepteerde%20afwijking.)). -->
 
-<!-- Een optie is om dit in een tabel vóór in de gegevenscatalogus op te nemen, zoals gedaan in de BGT catalogus op p. 23. 
+<!-- Een optie is om dit in een tabel vóór in de gegevenscatalogus op te nemen, zoals gedaan in de BGT catalogus op p. 23.
 
 <aside class="example" title="Nauwkeurigheidseisen in de BGT-catalogus">
 <figure>
@@ -303,7 +258,7 @@ Per `«attribuutsoort»` geven we de toegestane kwaliteit voor de positionele ju
 
 <!-- #### Inwinregels
 
-Het semantisch model van NEN3016 doet geen uitspraak over de vastlegging per objecttype, omdat specifieke geometrische vastlgegging sterk afhankelijk is van gebruikersbehoeften en kunnen verschillen per toepassingsdomein. Uitspraken over de geometrische vastleggin zullen daarom worden opgenomen in de vorm van inwinregels in sectormodellen. Deze regels <q>geven aan welke punten van een object ingemeten moeten worden en waar geometrie van een geregistreerd object aan moet voldoen. Het leidt tot een vastgestelde geometrische weergave gericht op een specifieke toepassing</q>, stelt NEN3610. 
+Het semantisch model van NEN3016 doet geen uitspraak over de vastlegging per objecttype, omdat specifieke geometrische vastlgegging sterk afhankelijk is van gebruikersbehoeften en kunnen verschillen per toepassingsdomein. Uitspraken over de geometrische vastleggin zullen daarom worden opgenomen in de vorm van inwinregels in sectormodellen. Deze regels <q>geven aan welke punten van een object ingemeten moeten worden en waar geometrie van een geregistreerd object aan moet voldoen. Het leidt tot een vastgestelde geometrische weergave gericht op een specifieke toepassing</q>, stelt NEN3610.
 
 Verreweg de meeste objecttypen in die in DiS-Geo een rol spelen hebben in hun huidige registratie al enige vorm van inwinregels. Omdat dit vaak omvangrijke instructies zijn, zijn ze meestal in tekst uitgeschreven in een apart handboek of hoofdstuk van de gegevenscatalogus. Via de tagged value `inwinregels` relateren we deze teksten aan de bijbehorende modelelementen (annotatie). MIM heeft hiervoor geen metadata-element. Daarom breidt DiSGeo het stereotype `«attribuutsoort»` uit MIM uit met het  metadata-element `inwinregels`. De waarde van de tagged value `inwinregels` is een `URI`. Deze tagged value wordt alleen ingevuld bij attribuutsoorten met een geometrietype als domein. -->
 
@@ -311,13 +266,13 @@ Verreweg de meeste objecttypen in die in DiS-Geo een rol spelen hebben in hun hu
 
 <!-- ### Generalisatie
 
-Met *generaliseren*  bedoelen we het zinvol weglaten, vereenvoudigen, verplaatsen, vergroten, symboliseren en/of aggregeren van de geometrie van objecten. In [[EMSO]] wordt gesteld dat er geen noodzaak is voor (identificeerbare) gegeneraliseerde objecttypen. Gegeneraliseerde geometrieën worden alleen gebruikt voor visualisatie. 
+Met *generaliseren*  bedoelen we het zinvol weglaten, vereenvoudigen, verplaatsen, vergroten, symboliseren en/of aggregeren van de geometrie van objecten. In [[EMSO]] wordt gesteld dat er geen noodzaak is voor (identificeerbare) gegeneraliseerde objecttypen. Gegeneraliseerde geometrieën worden alleen gebruikt voor visualisatie.
 
-Een voorbeeld van gegeneraliseerde geometrie zijn de grenzen van bestuurlijke gebieden op hogere kaartschalen (1:10.000, 1:50.000 enz). Deze zijn minder gedetailleerd, bevatten minder punten en zijn geschikt om te bekijken op bepaalde 'zoomniveau's'. Bij het uitwisselen van geodata op het web is generalisatie belangrijk omdat een polygoon, afhankeljik van de mate van detail, erg veel punten kan bevatten, wat performanceproblemen kan veroorzaken. 
+Een voorbeeld van gegeneraliseerde geometrie zijn de grenzen van bestuurlijke gebieden op hogere kaartschalen (1:10.000, 1:50.000 enz). Deze zijn minder gedetailleerd, bevatten minder punten en zijn geschikt om te bekijken op bepaalde 'zoomniveau's'. Bij het uitwisselen van geodata op het web is generalisatie belangrijk omdat een polygoon, afhankeljik van de mate van detail, erg veel punten kan bevatten, wat performanceproblemen kan veroorzaken.
 
-De belangrijkste geometrie om op te nemen is de niet-gegeneraliseerde geometrie. Dit is de meest nauwkeurige geometrie. Bijvoorbeeld gemeente- en provinciegrenzen zijn gebaseerd op de Kadastrale grenzen, die knikken bevatten daar waar andere grenzen snijden of daar waar de grens een fysiek object volgt. De niet-gegeneraliseerde geometrie bevat deze knikken. Bij gegeneraliseerde geometrie worden deze weg gehaald voor een rustiger beeld of om het aantal punten te reduceren. Bestuurlijke grenzen van ten minste gemeenten, provincies en het Rijk worden gegeneraliseerd en bewaard in een registratie ten behoeve van het aanbieden van de TOPNL kaart op verschillende schalen.  
+De belangrijkste geometrie om op te nemen is de niet-gegeneraliseerde geometrie. Dit is de meest nauwkeurige geometrie. Bijvoorbeeld gemeente- en provinciegrenzen zijn gebaseerd op de Kadastrale grenzen, die knikken bevatten daar waar andere grenzen snijden of daar waar de grens een fysiek object volgt. De niet-gegeneraliseerde geometrie bevat deze knikken. Bij gegeneraliseerde geometrie worden deze weg gehaald voor een rustiger beeld of om het aantal punten te reduceren. Bestuurlijke grenzen van ten minste gemeenten, provincies en het Rijk worden gegeneraliseerd en bewaard in een registratie ten behoeve van het aanbieden van de TOPNL kaart op verschillende schalen.
 
-Gegeneraliseerde geometrieën zijn afgeleide gegevens. De bron is een meer nauwkeurige geometrie. Dit roept de vraag op of deze afgeleide gegevens in het informatiemodel moeten worden opgenomen. Sowieso zijn het niet-authentieke gegevens. Enigszins vergelijkbaar is de standaard CityGML [[CityGML3]] waarin één objecttype meerdere geometrie eigenschappen heeft, één voor elk *Level of Detail* (LoD). CityGML is een uitwisselstandaard voor 3D geodata waarbij het gebruikelijk is om meerdere LoD's bij één object niet alleen op te slaan, maar ook gezamenlijk uit te wisselen in een bestand. Een viewer kan dan op basis van bijvoorbeeld de nabijheid van objecten kiezen voor het meest geschikte LoD.  
+Gegeneraliseerde geometrieën zijn afgeleide gegevens. De bron is een meer nauwkeurige geometrie. Dit roept de vraag op of deze afgeleide gegevens in het informatiemodel moeten worden opgenomen. Sowieso zijn het niet-authentieke gegevens. Enigszins vergelijkbaar is de standaard CityGML [[CityGML3]] waarin één objecttype meerdere geometrie eigenschappen heeft, één voor elk *Level of Detail* (LoD). CityGML is een uitwisselstandaard voor 3D geodata waarbij het gebruikelijk is om meerdere LoD's bij één object niet alleen op te slaan, maar ook gezamenlijk uit te wisselen in een bestand. Een viewer kan dan op basis van bijvoorbeeld de nabijheid van objecten kiezen voor het meest geschikte LoD.
 
 In producten op basis van de geobasisregistraties zal de gebruiker echter doorgaans gegevens in één bepaalde schaal willen bekijken of ontvangen. Daarom is het uitgangspunt vooralsnog dat we bij objecttypen één geometrie-attribuut modelleren, ook als er geometrieën op meerdere schalen zullen bestaan. Het is wel nodig om bij de geometrie een aantal gegevens op te nemen:
 - Het schaalniveau; conform [[NLISO19115]] noemen we dit de 'toepassingsschaal'. Dit is nodig zodat de gebruiker de gewenste schaal kan opvragen en kan zien voor welke schaal een geometrie geschikt is.
@@ -335,7 +290,7 @@ Conform de _Spatial Data on the Web Best Practices_ [[SDW-BP]], [Best Practide 6
 
 #### Tijdlijnen van informatieobjecten
 
-Een informatieobject is een set gegevens die een beschrijving geeft van een object in de te beschrijven werkelijkheid (hierna werkelijkheid). [[NEN3610-2022]] biedt eigenschappen om van informatieobjecten uit te drukken wat de tijdlijnen geldigheid en registratie zijn. (<a href="#nen3610-registratiegegevens"></a>) 
+Een informatieobject is een set gegevens die een beschrijving geeft van een object in de te beschrijven werkelijkheid (hierna werkelijkheid). [[NEN3610-2022]] biedt eigenschappen om van informatieobjecten uit te drukken wat de tijdlijnen geldigheid en registratie zijn. (<a href="#nen3610-registratiegegevens"></a>)
 
 <figure id="nen3610-registratiegegevens">
   <img src="media/nen3610-registratiegegevens.png" alt="nen3610-registratiegegevens">
@@ -355,7 +310,7 @@ De tijdlijn registratie beschrijft wanneer (de gegevens in) een informatieobject
 
 Op het niveau van het informatieobject kunnen we ook uitdrukken wat hiervan de status is in de registratie. We onderscheiden hier twee statussen:
 * `Actief` geeft aan dat een informatieobject daadwerkelijk meedoet in de registratie.
-* `Afgevoerd` geeft aan dat een informatieobject niet meer actief is in de registratie. 
+* `Afgevoerd` geeft aan dat een informatieobject niet meer actief is in de registratie.
 
 Een informatieobject wat actief is in de registratie kun je vinden op het de tijdlijn geldigheid. Een informatieobject wat niet meer actief is kun je alleen vinden langs de tijdlijn registratie.
 
@@ -391,7 +346,7 @@ Voor de herkomst van een informatieobject kunnen we een informatieobject als een
 
 ###### Modelleerpatroon voor brongegevens
 
-Een belangrijk doel van herkomst is gegevens herleidbaar kunnen maken naar de bron waarop ze gebaseerd zijn, en naar de actoren die eindverantwoordelijk zijn voor deze gegevens. 
+Een belangrijk doel van herkomst is gegevens herleidbaar kunnen maken naar de bron waarop ze gebaseerd zijn, en naar de actoren die eindverantwoordelijk zijn voor deze gegevens.
 
 De [[EMSO]] stelt eisen aan de bronverwijzing als metadata van informatieobjecten. Zie de volgende passage uit [[EMSO]]:
 
@@ -410,7 +365,7 @@ We hebben dus een aanknopingspunt voor bron- en herkomstmetagegevens nodig dat w
 
 De [[NEN3610-2022]] schrijft al voor hoe tijdlijnen en versieinformatie van informatieobjecten uitgedrukt kunnen worden, los van de directe gegevens over het object middels het construct `Registratie`.
 
-In dit patroon nemen we `Registratie` als aanknopingspunt voor opname van verdere bron- en herkomstgegevens. Dit doen we door `Registratie` als het object met herkomst te beschouwen. 
+In dit patroon nemen we `Registratie` als aanknopingspunt voor opname van verdere bron- en herkomstgegevens. Dit doen we door `Registratie` als het object met herkomst te beschouwen.
 
 <figure id="metadata-model-brongegevens">
   <img src="media/metadata-model-brongegevens.png" alt="metadata-model-brongegevens">
