@@ -56,6 +56,12 @@
 <colgroup style="width: 30%"></colgroup>
 <colgroup style="width: 70%"></colgroup>
 <tr>
+<th>Subtype</th>
+<td>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_registratieve_ruimte">RegistratieveRuimte</a>
+</td>
+</tr>
+<tr>
 <th>Supertype</th>
 <td>
 <a class="link" href="#informatiemodel_nen3610_domein_semantisch_model_objecttype_registratieve_ruimte">RegistratieveRuimte (NEN 3610:2022 - Basismodel geo-informatie)</a>
@@ -646,6 +652,12 @@ De geometrische afbakening van het bevattendGebied, waarbinnen de geometrie van 
 <colgroup style="width: 30%"></colgroup>
 <colgroup style="width: 70%"></colgroup>
 <tr>
+<th>Subtype</th>
+<td>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_gemeentegebied">Gemeentegebied</a>
+</td>
+</tr>
+<tr>
 <th>Supertype</th>
 <td>
 <a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied">BestuurlijkGebied</a>
@@ -879,6 +891,12 @@ Relatie die aangeeft dat dit object een gemeentegebied van een regionaal openbaa
 <th>Kardinaliteit relatie bron</th>
 <td>1</td>
 </tr>
+<tr>
+<th>Bron</th>
+<td>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_gemeentegebied">Gemeentegebied</a>
+</td>
+</tr>
 <tbody>
 </tbody>
 </table>
@@ -935,6 +953,12 @@ Relatie die aangeeft dat dit object een gemeentegebied van een regionaal openbaa
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
 <colgroup style="width: 70%"></colgroup>
+<tr>
+<th>Subtype</th>
+<td>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_provinciegebied">Provinciegebied</a>
+</td>
+</tr>
 <tr>
 <th>Supertype</th>
 <td>
@@ -1102,6 +1126,12 @@ Relatie die aangeeft dat dit object een provinciegebied van een regionaal openba
 <th>Kardinaliteit relatie bron</th>
 <td>1</td>
 </tr>
+<tr>
+<th>Bron</th>
+<td>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_provinciegebied">Provinciegebied</a>
+</td>
+</tr>
 <tbody>
 </tbody>
 </table>
@@ -1158,6 +1188,12 @@ Relatie die aangeeft dat dit object een provinciegebied van een regionaal openba
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
 <colgroup style="width: 70%"></colgroup>
+<tr>
+<th>Subtype</th>
+<td>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_rijksgebied">Rijksgebied</a>
+</td>
+</tr>
 <tr>
 <th>Supertype</th>
 <td>
@@ -1258,6 +1294,12 @@ Relatie die aangeeft dat dit object een rijksgebied van een regionaal openbaar l
 <th>Kardinaliteit relatie bron</th>
 <td>1</td>
 </tr>
+<tr>
+<th>Bron</th>
+<td>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_rijksgebied">Rijksgebied</a>
+</td>
+</tr>
 <tbody>
 </tbody>
 </table>
@@ -1318,6 +1360,12 @@ Dit gebied is inclusief de grote wateren die niet door de waterschappen beheerd 
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
 <colgroup style="width: 70%"></colgroup>
+<tr>
+<th>Subtype</th>
+<td>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_waterschapsgebied">Waterschapsgebied</a>
+</td>
+</tr>
 <tr>
 <th>Supertype</th>
 <td>
@@ -1418,6 +1466,12 @@ Relatie die aangeeft dat dit object een waterschapsgebied van een regionaal open
 <th>Kardinaliteit relatie bron</th>
 <td>1</td>
 </tr>
+<tr>
+<th>Bron</th>
+<td>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_waterschapsgebied">Waterschapsgebied</a>
+</td>
+</tr>
 <tbody>
 </tbody>
 </table>
@@ -1470,6 +1524,12 @@ Relatie die aangeeft dat dit object een waterschapsgebied van een regionaal open
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
 <colgroup style="width: 70%"></colgroup>
+<tr>
+<th>Subtype</th>
+<td>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_veiligheidsregiogebied">Veiligheidsregiogebied</a>
+</td>
+</tr>
 <tr>
 <th>Supertype</th>
 <td>
@@ -1570,6 +1630,12 @@ Relatie die aangeeft dat dit object een veiligheidsregiogebied van een regionaal
 <th>Kardinaliteit relatie bron</th>
 <td>1</td>
 </tr>
+<tr>
+<th>Bron</th>
+<td>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_veiligheidsregiogebied">Veiligheidsregiogebied</a>
+</td>
+</tr>
 <tbody>
 </tbody>
 </table>
@@ -1624,6 +1690,12 @@ Relatie die aangeeft dat dit object een veiligheidsregiogebied van een regionaal
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
 <colgroup style="width: 70%"></colgroup>
+<tr>
+<th>Subtype</th>
+<td>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_maritieme_zone">MaritiemeZone</a>
+</td>
+</tr>
 <tr>
 <th>Supertype</th>
 <td>
@@ -1703,6 +1775,12 @@ Dit gebied is ook wel bekend als “de 12-mijlszone”. In het Eems-Dollard gebi
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
 <colgroup style="width: 70%"></colgroup>
+<tr>
+<th>Subtype</th>
+<td>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_territoriale_zee">TerritorialeZee</a>
+</td>
+</tr>
 <tr>
 <th>Supertype</th>
 <td>
@@ -1803,6 +1881,12 @@ Relatie die aangeeft dat dit object een territoriale zee van een regionaal openb
 <th>Kardinaliteit relatie bron</th>
 <td>1</td>
 </tr>
+<tr>
+<th>Bron</th>
+<td>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_territoriale_zee">TerritorialeZee</a>
+</td>
+</tr>
 <tbody>
 </tbody>
 </table>
@@ -1861,6 +1945,12 @@ Relatie die aangeeft dat dit object een territoriale zee van een regionaal openb
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
 <colgroup style="width: 70%"></colgroup>
+<tr>
+<th>Subtype</th>
+<td>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_aansluitende_zone">AansluitendeZone</a>
+</td>
+</tr>
 <tr>
 <th>Supertype</th>
 <td>
@@ -1961,6 +2051,12 @@ Relatie die aangeeft dat dit object een aansluitende zone van een regionaal open
 <th>Kardinaliteit relatie bron</th>
 <td>1</td>
 </tr>
+<tr>
+<th>Bron</th>
+<td>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_aansluitende_zone">AansluitendeZone</a>
+</td>
+</tr>
 <tbody>
 </tbody>
 </table>
@@ -2019,6 +2115,12 @@ Relatie die aangeeft dat dit object een aansluitende zone van een regionaal open
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
 <colgroup style="width: 70%"></colgroup>
+<tr>
+<th>Subtype</th>
+<td>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_exclusieve_economische_zone">ExclusieveEconomischeZone</a>
+</td>
+</tr>
 <tr>
 <th>Supertype</th>
 <td>
@@ -2119,6 +2221,12 @@ Relatie die aangeeft dat dit object een exclusieve economische zone van een regi
 <th>Kardinaliteit relatie bron</th>
 <td>1</td>
 </tr>
+<tr>
+<th>Bron</th>
+<td>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_exclusieve_economische_zone">ExclusieveEconomischeZone</a>
+</td>
+</tr>
 <tbody>
 </tbody>
 </table>
@@ -2179,6 +2287,12 @@ Binnen het Europese deel van het Rijk kent deze dezelfde contour als de Nederlan
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
 <colgroup style="width: 70%"></colgroup>
+<tr>
+<th>Subtype</th>
+<td>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_continentaal_plat">ContinentaalPlat</a>
+</td>
+</tr>
 <tr>
 <th>Supertype</th>
 <td>
@@ -2278,6 +2392,12 @@ Relatie die aangeeft dat dit object een continentaal plat van een regionaal open
 <tr>
 <th>Kardinaliteit relatie bron</th>
 <td>1</td>
+</tr>
+<tr>
+<th>Bron</th>
+<td>
+<a class="link" href="#informatiemodel_imso_cm_domein_bestuurlijk_gebied_objecttype_continentaal_plat">ContinentaalPlat</a>
+</td>
 </tr>
 <tbody>
 </tbody>
@@ -3083,6 +3203,12 @@ Relatie die aangeeft dat het regionaal openbaar lichaam het bestuurlijk gebied h
 <colgroup style="width: 30%"></colgroup>
 <colgroup style="width: 70%"></colgroup>
 <tr>
+<th>Subtype</th>
+<td>
+<a class="link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_samenwerkingsorganisatie">Samenwerkingsorganisatie</a>
+</td>
+</tr>
+<tr>
 <th>Supertype</th>
 <td>
 <a class="link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_overheidsorganisatie">Overheidsorganisatie</a>
@@ -3156,6 +3282,12 @@ Relatie die aangeeft dat het regionaal openbaar lichaam het bestuurlijk gebied h
 <colgroup style="width: 30%"></colgroup>
 <colgroup style="width: 70%"></colgroup>
 <tr>
+<th>Subtype</th>
+<td>
+<a class="link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_openbaar_lichaam_uit_gemeenschappelijke_regeling">OpenbaarLichaamUitGemeenschappelijkeRegeling</a>
+</td>
+</tr>
+<tr>
 <th>Supertype</th>
 <td>
 <a class="link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_samenwerkingsorganisatie">Samenwerkingsorganisatie</a>
@@ -3175,6 +3307,12 @@ Relatie die aangeeft dat het regionaal openbaar lichaam het bestuurlijk gebied h
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
 <colgroup style="width: 70%"></colgroup>
+<tr>
+<th>Subtype</th>
+<td>
+<a class="link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_openbaar_lichaam_uit_gemeenschappelijke_regeling">OpenbaarLichaamUitGemeenschappelijkeRegeling</a>
+</td>
+</tr>
 <tr>
 <th>Supertype</th>
 <td>
@@ -4174,6 +4312,12 @@ Waterschapsgebied waarin het waterschap op basis van wet- of regelgeving bepaald
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
 <colgroup style="width: 70%"></colgroup>
+<tr>
+<th>Subtype</th>
+<td>
+<a class="link" href="#informatiemodel_imso_cm_domein_openbaar_lichaam_objecttype_veiligheidsregio">Veiligheidsregio</a>
+</td>
+</tr>
 <tr>
 <th>Supertype</th>
 <td>
